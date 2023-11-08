@@ -100,6 +100,30 @@ class Net(nn.Module):
         return x
 
 
+# def test_model(model, test_loader):
+#     model.eval()
+#     test_losses = []
+#     test_preds = []
+#     test_targets = []
+#     criterion = nn.MSELoss()
+
+#     with torch.no_grad():
+#         for inputs, targets in test_loader:
+#             outputs = model(inputs)
+#             loss = criterion(outputs, targets.unsqueeze(1))
+#             test_losses.append(loss.item())
+#             test_preds.extend(
+#                 outputs.cpu().numpy()
+#             )  # Move predictions back to CPU for consistency
+#             test_targets.extend(
+#                 targets.cpu().numpy()
+#             )  # Move targets back to CPU for consistency
+
+#     r2 = r2_score(test_targets, test_preds)
+
+#     return r2
+
+
 def main():
     print("PyTorch version:", torch.__version__)
     print("Torchvision version:", torchvision.__version__)
@@ -255,12 +279,12 @@ def main():
                     train_targets = torch.tensor(
                         ys_train.values, dtype=torch.float32
                     ).to(device)
-                    val_inputs = torch.tensor(xs_val.values, dtype=torch.float32).to(
-                        device
-                    )
-                    val_targets = torch.tensor(ys_val.values, dtype=torch.float32).to(
-                        device
-                    )
+                    # val_inputs = torch.tensor(xs_val.values, dtype=torch.float32).to(
+                    #     device
+                    # )
+                    # val_targets = torch.tensor(ys_val.values, dtype=torch.float32).to(
+                    #     device
+                    # )
                     test_inputs = torch.tensor(xs_test.values, dtype=torch.float32).to(
                         device
                     )
@@ -270,12 +294,12 @@ def main():
 
                     # Create data loaders
                     train_dataset = MarketDataset(train_inputs, train_targets)
-                    val_dataset = MarketDataset(val_inputs, val_targets)
+                    # val_dataset = MarketDataset(val_inputs, val_targets)
                     test_dataset = MarketDataset(test_inputs, test_targets)
                     train_loader = DataLoader(
                         train_dataset, batch_size=32, shuffle=True
                     )
-                    val_loader = DataLoader(val_dataset, batch_size=32)
+                    # val_loader = DataLoader(val_dataset, batch_size=32)
                     test_loader = DataLoader(test_dataset, batch_size=32)
 
                     input_neurons = train_inputs.shape[1]
@@ -290,7 +314,7 @@ def main():
                         hidden_layers,
                         neurons_per_layer,
                         dropout,
-                    )
+                    ).to(device)
 
                     criterion = nn.MSELoss()
                     learning_rate = 0.005
@@ -299,24 +323,6 @@ def main():
                     model.load_state_dict(global_model.state_dict())
 
                     train_losses = []
-                    val_losses = []
-                    train_rmse_list = []
-                    val_rmse_list = []
-                    mae_train_list = []
-                    rmse_train_list = []
-                    mape_train_list = []
-                    mse_train_list = []
-                    r2_train_list = []
-                    mae_val_list = []
-                    rmse_val_list = []
-                    mape_val_list = []
-                    mse_val_list = []
-                    r2_val_list = []
-                    mae_test_list = []
-                    rmse_test_list = []
-                    mape_test_list = []
-                    mse_test_list = []
-                    r2_test_list = []
 
                     for epoch in range(num_epochs):
                         train_losses = []
@@ -335,12 +341,14 @@ def main():
                     # Use model to generate predictions for the test dataset
                     client_models.append(model.state_dict())
 
-                    # Use model to generate predictions for the test dataset
+                    # # Use model to generate predictions for the test dataset
                     model.eval()
                     with torch.no_grad():
                         test_preds = model(test_inputs)
 
-                    r2 = r2_score(test_targets.numpy(), test_preds.numpy())
+                    r2 = r2_score(test_targets.cpu().numpy(), test_preds.cpu().numpy())
+                    # Testing phase
+                    # r2 = test_model(model, test_loader)
 
                     # Save the R2 value for the current round and iteration
                     # Save the R2 value for the current round and iteration
