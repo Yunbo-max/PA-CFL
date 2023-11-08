@@ -4,6 +4,7 @@
 # @File:similarity_calculation.py
 # @Software:PyCharm
 import warnings
+
 warnings.filterwarnings("ignore")
 
 import torch
@@ -48,8 +49,9 @@ from sklearn.metrics import (
     auc,
 )
 
-# Set the random seed 
-torch.manual_seed(42)  
+# Set the random seed
+torch.manual_seed(42)
+
 
 # Define a custom dataset class
 class MarketDataset(Dataset):
@@ -64,51 +66,6 @@ class MarketDataset(Dataset):
         input_data = self.inputs[idx]
         target = self.targets[idx]
         return input_data, target
-
-
-# Set the number of clients, rounds, and epochs
-sheet_name = [
-    "0",
-    "1",
-    "2",
-    "3",
-    "5",
-    "6",
-    "7",
-    "9",
-    "10",
-    "12",
-    "14",
-    "16",
-    "17",
-    "22",
-]
-
-region_map = {
-    0: "Southeast Asia",
-    1: "South Asia",
-    2: "Oceania",
-    3: "Eastern Asia",
-    4: "West Asia",
-    5: "West of USA",
-    6: "US Center",
-    7: "West Africa",
-    8: "Central Africa",
-    9: "North Africa",
-    10: "Western Europe",
-    11: "Northern Europe",
-    12: "Central America",
-    13: "Caribbean",
-    14: "South America",
-    15: "East Africa",
-    16: "Southern Europe",
-    17: "East of USA",
-    18: "Canada",
-    19: "Southern Africa",
-    20: "Central Asia",
-    21: "Eastern Europe",
-    22: "South of USA",
-}
 
 
 # Define the neural network model
@@ -142,309 +99,419 @@ class Net(nn.Module):
         return x
 
 
-# Set the parameters for the model
-input_neurons = 25
-output_neurons = 1
-hidden_layers = 4
-neurons_per_layer = 64
-dropout = 0.3
-
-# Initialize a shared global model
-global_model = Net(
-    input_neurons, output_neurons, hidden_layers, neurons_per_layer, dropout
-)
-
-# Open the HDF5 file
-file = h5py.File(
-    "market_data.h5",
-    "r",
-)
-
-# Get the number of clients from sheet_name
-num_clients = len(sheet_name)
-
-# Set the number of iterations,rounds,epochs for federated learning
-num_round = [i for i in range(3,100)]
-num_epochs = 10
-num_iterations = 10
-
-# Initialize an empty similarity matrix to store similarity values for each pair of clients
-similarity_matrix_total1 = np.zeros((len(sheet_name), len(sheet_name)))
-similarity_matrix_total2 = np.zeros((len(sheet_name), len(sheet_name)))
-similarity_matrix_total3 = np.zeros((len(sheet_name), len(sheet_name)))
+def train(model, device, train_loader, optimizer, epoch):
+    model.train()
+    for batch_idx, (data, target) in enumerate(train_loader):
+        data, target = data.to(device), target.to(device)
+        optimizer.zero_grad()
+        output = model(data)
+        loss = F.nll_loss(output, target)
+        loss.backward()
+        optimizer.step()
+        if batch_idx % 10 == 0:
+            print(
+                "Train Epoch: {} [{}/{} ({:.0f}%)]\tLoss: {:.6f}".format(
+                    epoch,
+                    batch_idx * len(data),
+                    len(train_loader.dataset),
+                    100.0 * batch_idx / len(train_loader),
+                    loss.item(),
+                )
+            )
 
 
-# Initialize an empty similarity matrix to store similarity values for each pair of clients for each iteration
-similarity_matrix_total = np.zeros((len(sheet_name), len(sheet_name), num_iterations))
+def test(model, device, test_loader):
+    model.eval()
+    test_loss = 0
+    correct = 0
+    with torch.no_grad():
+        for data, target in test_loader:
+            data, target = data.to(device), target.to(device)
+            output = model(data)
+            test_loss += F.nll_loss(
+                output, target, reduction="sum"
+            ).item()  # sum up batch loss
+            pred = output.argmax(
+                dim=1, keepdim=True
+            )  # get the index of the max log-probability
+            correct += pred.eq(target.view_as(pred)).sum().item()
+
+    test_loss /= len(test_loader.dataset)
+
+    print(
+        "\nTest set: Average loss: {:.4f}, Accuracy: {}/{} ({:.0f}%)\n".format(
+            test_loss,
+            correct,
+            len(test_loader.dataset),
+            100.0 * correct / len(test_loader.dataset),
+        )
+    )
 
 
-for num_rounds in num_round:
-    print(f"testing {num_rounds }")
-    # Perform federated learning
+def main():
+    print("PyTorch version:", torch.__version__)
+    print("Torchvision version:", torchvision.__version__)
 
-    # Initialize a dictionary to store metrics for each client, round, and iteration
-    metrics = {
-        client: {"r2": [[[] for _ in range(num_rounds)] for _ in range(num_iterations)]}
-        for client in sheet_name
+    device = torch.device("mps")
+    print("Using Device: ", device)
+
+    # Set the number of clients, rounds, and epochs
+    sheet_name = [
+        "0",
+        "1",
+        "2",
+        "3",
+        "5",
+        "6",
+        "7",
+        "9",
+        "10",
+        "12",
+        "14",
+        "16",
+        "17",
+        "22",
+    ]
+
+    region_map = {
+        0: "Southeast Asia",
+        1: "South Asia",
+        2: "Oceania",
+        3: "Eastern Asia",
+        4: "West Asia",
+        5: "West of USA",
+        6: "US Center",
+        7: "West Africa",
+        8: "Central Africa",
+        9: "North Africa",
+        10: "Western Europe",
+        11: "Northern Europe",
+        12: "Central America",
+        13: "Caribbean",
+        14: "South America",
+        15: "East Africa",
+        16: "Southern Europe",
+        17: "East of USA",
+        18: "Canada",
+        19: "Southern Africa",
+        20: "Central Asia",
+        21: "Eastern Europe",
+        22: "South of USA",
     }
 
-    # Initialize a list to store the feature matrices for each iteration
-    all_feature_matrices = []
+    # Set the parameters for the model
+    input_neurons = 25
+    output_neurons = 1
+    hidden_layers = 4
+    neurons_per_layer = 64
+    dropout = 0.3
 
-    # Initialize a list to store the similarity matrices for each iteration
-    similarity_matrices = []
+    # Initialize a shared global model
+    global_model = Net(
+        input_neurons, output_neurons, hidden_layers, neurons_per_layer, dropout
+    )
 
-    for iteration in range(num_iterations):
-        print(f"Iteration {iteration + 1}/{num_iterations}")
+    # Open the HDF5 file
+    file = h5py.File(
+        "market_data.h5",
+        "r",
+    )
 
-        # Initialize a shared global model
-        global_model = Net(
-            input_neurons, output_neurons, hidden_layers, neurons_per_layer, dropout
-        )
+    # Get the number of clients from sheet_name
+    num_clients = len(sheet_name)
 
-        # Initialize an empty list to store the client models for this round
-        client_models = []
+    # Set the number of iterations,rounds,epochs for federated learning
+    num_round = [i for i in range(3, 100)]
+    num_epochs = 10
+    num_iterations = 10
 
-        for round in range(num_rounds):
-            print(f"Round {round + 1}/{num_rounds}")
+    # # Initialize an empty similarity matrix to store similarity values for each pair of clients
+    # similarity_matrix_total1 = np.zeros((len(sheet_name), len(sheet_name)))
+    # similarity_matrix_total2 = np.zeros((len(sheet_name), len(sheet_name)))
+    # similarity_matrix_total3 = np.zeros((len(sheet_name), len(sheet_name)))
 
-            for client in sheet_name:
-                # Load the state dict of the global model to the client model
-                model = Net(
-                    input_neurons,
-                    output_neurons,
-                    hidden_layers,
-                    neurons_per_layer,
-                    dropout,
-                )
-                model.load_state_dict(global_model.state_dict())
+    # Initialize an empty similarity matrix to store similarity values for each pair of clients for each iteration
+    similarity_matrix_total = np.zeros(
+        (len(sheet_name), len(sheet_name), num_iterations)
+    )
 
-                dataset = file[client][:]
-                dataset = pd.DataFrame(dataset)
+    for num_rounds in num_round:
+        print(f"testing {num_rounds }")
+        # Perform federated learning
 
-                # Read the column names from the attributes
-                column_names = file[client].attrs["columns"]
+        # Initialize a dictionary to store metrics for each client, round, and iteration
+        metrics = {
+            client: {
+                "r2": [[[] for _ in range(num_rounds)] for _ in range(num_iterations)]
+            }
+            for client in sheet_name
+        }
 
-                # Assign column names to the dataset
-                dataset.columns = column_names
+        # Initialize a list to store the feature matrices for each iteration
+        all_feature_matrices = []
 
-                dataset = dataset.drop(columns=["Region Index"])
+        # Initialize a list to store the similarity matrices for each iteration
+        similarity_matrices = []
 
-                # Preprocess the data
-                train_data = dataset
-                xs = train_data.drop(["Sales"], axis=1)
-                ys = train_data["Sales"]
-                xs_train, xs_test, ys_train, ys_test = train_test_split(
-                    xs, ys, test_size=0.3, random_state=42
-                )
+        for iteration in range(num_iterations):
+            print(f"Iteration {iteration + 1}/{num_iterations}")
 
-                # Split training set into training and validation sets
-                xs_train, xs_val, ys_train, ys_val = train_test_split(
-                    xs_train, ys_train, test_size=0.2, random_state=42
-                )
+            # Initialize a shared global model
+            global_model = Net(
+                input_neurons, output_neurons, hidden_layers, neurons_per_layer, dropout
+            ).to(device)
 
-                # Convert data to tensors
-                train_inputs = torch.tensor(xs_train.values, dtype=torch.float32)
-                train_targets = torch.tensor(ys_train.values, dtype=torch.float32)
-                val_inputs = torch.tensor(xs_val.values, dtype=torch.float32)
-                val_targets = torch.tensor(ys_val.values, dtype=torch.float32)
-                test_inputs = torch.tensor(xs_test.values, dtype=torch.float32)
-                test_targets = torch.tensor(ys_test.values, dtype=torch.float32)
+            # Initialize an empty list to store the client models for this round
+            client_models = []
 
-                # Create data loaders
-                train_dataset = MarketDataset(train_inputs, train_targets)
-                val_dataset = MarketDataset(val_inputs, val_targets)
-                test_dataset = MarketDataset(test_inputs, test_targets)
-                train_loader = DataLoader(train_dataset, batch_size=32, shuffle=True)
-                val_loader = DataLoader(val_dataset, batch_size=32)
-                test_loader = DataLoader(test_dataset, batch_size=32)
+            for round in range(num_rounds):
+                print(f"Round {round + 1}/{num_rounds}")
 
-                # Define the neural network model
-                class Net(nn.Module):
-                    def __init__(
-                        self,
+                for client in sheet_name:
+                    # Load the state dict of the global model to the client model
+                    model = Net(
                         input_neurons,
                         output_neurons,
                         hidden_layers,
                         neurons_per_layer,
                         dropout,
-                    ):
-                        super(Net, self).__init__()
+                    ).to(device)
 
-                        self.input_neurons = input_neurons
-                        self.output_neurons = output_neurons
-                        self.hidden_layers = hidden_layers
-                        self.neurons_per_layer = neurons_per_layer
-                        self.dropout = dropout
+                    model.load_state_dict(global_model.state_dict())
 
-                        self.layers = nn.ModuleList()
-                        self.layers.append(nn.Linear(input_neurons, neurons_per_layer))
-                        self.layers.append(nn.ReLU())
+                    dataset = file[client][:]
+                    dataset = pd.DataFrame(dataset)
 
-                        for _ in range(hidden_layers):
-                            self.layers.append(
-                                nn.Linear(neurons_per_layer, neurons_per_layer)
-                            )
-                            self.layers.append(nn.ReLU())
-                            self.layers.append(nn.Dropout(p=dropout))
+                    # Read the column names from the attributes
+                    column_names = file[client].attrs["columns"]
 
-                        self.layers.append(nn.Linear(neurons_per_layer, output_neurons))
+                    # Assign column names to the dataset
+                    dataset.columns = column_names
 
-                    def forward(self, x):
-                        x = x.view(-1, self.input_neurons)
-                        for layer in self.layers:
-                            x = layer(x)
-                        return x
+                    dataset = dataset.drop(columns=["Region Index"])
 
-                input_neurons = train_inputs.shape[1]
-                output_neurons = 1
-                hidden_layers = 4
-                neurons_per_layer = 64
-                dropout = 0.3
-                model = Net(
-                    input_neurons,
-                    output_neurons,
-                    hidden_layers,
-                    neurons_per_layer,
-                    dropout,
-                )
+                    # Preprocess the data
+                    train_data = dataset
+                    xs = train_data.drop(["Sales"], axis=1)
+                    ys = train_data["Sales"]
+                    xs_train, xs_test, ys_train, ys_test = train_test_split(
+                        xs, ys, test_size=0.3, random_state=42
+                    )
 
-                criterion = nn.MSELoss()
-                learning_rate = 0.005
-                optimizer = optim.Adam(model.parameters(), lr=learning_rate)
+                    # Split training set into training and validation sets
+                    xs_train, xs_val, ys_train, ys_val = train_test_split(
+                        xs_train, ys_train, test_size=0.2, random_state=42
+                    )
 
-                train_losses = []
-                val_losses = []
-                train_rmse_list = []
-                val_rmse_list = []
-                mae_train_list = []
-                rmse_train_list = []
-                mape_train_list = []
-                mse_train_list = []
-                r2_train_list = []
-                mae_val_list = []
-                rmse_val_list = []
-                mape_val_list = []
-                mse_val_list = []
-                r2_val_list = []
-                mae_test_list = []
-                rmse_test_list = []
-                mape_test_list = []
-                mse_test_list = []
-                r2_test_list = []
+                    # Convert data to tensors
+                    train_inputs = torch.tensor(xs_train.values, dtype=torch.float32)
+                    train_targets = torch.tensor(ys_train.values, dtype=torch.float32)
+                    val_inputs = torch.tensor(xs_val.values, dtype=torch.float32)
+                    val_targets = torch.tensor(ys_val.values, dtype=torch.float32)
+                    test_inputs = torch.tensor(xs_test.values, dtype=torch.float32)
+                    test_targets = torch.tensor(ys_test.values, dtype=torch.float32)
 
-                for epoch in range(num_epochs):
+                    # Create data loaders
+                    train_dataset = MarketDataset(train_inputs, train_targets)
+                    val_dataset = MarketDataset(val_inputs, val_targets)
+                    test_dataset = MarketDataset(test_inputs, test_targets)
+                    train_loader = DataLoader(
+                        train_dataset, batch_size=32, shuffle=True
+                    )
+                    val_loader = DataLoader(val_dataset, batch_size=32)
+                    test_loader = DataLoader(test_dataset, batch_size=32)
+
+                    # # Define the neural network model
+                    # class Net(nn.Module):
+                    #     def __init__(
+                    #         self,
+                    #         input_neurons,
+                    #         output_neurons,
+                    #         hidden_layers,
+                    #         neurons_per_layer,
+                    #         dropout,
+                    #     ):
+                    #         super(Net, self).__init__()
+
+                    #         self.input_neurons = input_neurons
+                    #         self.output_neurons = output_neurons
+                    #         self.hidden_layers = hidden_layers
+                    #         self.neurons_per_layer = neurons_per_layer
+                    #         self.dropout = dropout
+
+                    #         self.layers = nn.ModuleList()
+                    #         self.layers.append(nn.Linear(input_neurons, neurons_per_layer))
+                    #         self.layers.append(nn.ReLU())
+
+                    #         for _ in range(hidden_layers):
+                    #             self.layers.append(
+                    #                 nn.Linear(neurons_per_layer, neurons_per_layer)
+                    #             )
+                    #             self.layers.append(nn.ReLU())
+                    #             self.layers.append(nn.Dropout(p=dropout))
+
+                    #         self.layers.append(nn.Linear(neurons_per_layer, output_neurons))
+
+                    #     def forward(self, x):
+                    #         x = x.view(-1, self.input_neurons)
+                    #         for layer in self.layers:
+                    #             x = layer(x)
+                    #         return x
+
+                    input_neurons = train_inputs.shape[1]
+                    output_neurons = 1
+                    hidden_layers = 4
+                    neurons_per_layer = 64
+                    dropout = 0.3
+                    model = Net(
+                        input_neurons,
+                        output_neurons,
+                        hidden_layers,
+                        neurons_per_layer,
+                        dropout,
+                    )
+
+                    criterion = nn.MSELoss()
+                    learning_rate = 0.005
+                    optimizer = optim.Adam(model.parameters(), lr=learning_rate)
+
                     train_losses = []
-                    model.train()
+                    val_losses = []
+                    train_rmse_list = []
+                    val_rmse_list = []
+                    mae_train_list = []
+                    rmse_train_list = []
+                    mape_train_list = []
+                    mse_train_list = []
+                    r2_train_list = []
+                    mae_val_list = []
+                    rmse_val_list = []
+                    mape_val_list = []
+                    mse_val_list = []
+                    r2_val_list = []
+                    mae_test_list = []
+                    rmse_test_list = []
+                    mape_test_list = []
+                    mse_test_list = []
+                    r2_test_list = []
 
-                    for inputs, targets in train_loader:
-                        optimizer.zero_grad()
-                        outputs = model(inputs)
-                        loss = criterion(outputs, targets.unsqueeze(1))
-                        loss.backward()
-                        optimizer.step()
-                        train_losses.append(loss.item())
+                    for epoch in range(num_epochs):
+                        train_losses = []
+                        model.train()
 
-                    epoch_loss = np.mean(train_losses)
+                        for inputs, targets in train_loader:
+                            optimizer.zero_grad()
+                            outputs = model(inputs)
+                            loss = criterion(outputs, targets.unsqueeze(1))
+                            loss.backward()
+                            optimizer.step()
+                            train_losses.append(loss.item())
 
-                # Use model to generate predictions for the test dataset
-                client_models.append(model.state_dict())
+                        epoch_loss = np.mean(train_losses)
 
-                # Use model to generate predictions for the test dataset
-                model.eval()
-                with torch.no_grad():
-                    test_preds = model(test_inputs)
+                    # Use model to generate predictions for the test dataset
+                    client_models.append(model.state_dict())
 
-                r2 = r2_score(test_targets.numpy(), test_preds.numpy())
+                    # Use model to generate predictions for the test dataset
+                    model.eval()
+                    with torch.no_grad():
+                        test_preds = model(test_inputs)
 
-                # Save the R2 value for the current round and iteration
-                # Save the R2 value for the current round and iteration
-                metrics[client]["r2"][iteration][round] = r2
+                    r2 = r2_score(test_targets.numpy(), test_preds.numpy())
 
-            # Average the weights across all clients after each round
-            averaged_weights = {
-                k: sum(d[k] for d in client_models) / num_clients
-                for k in client_models[0].keys()
-            }
+                    # Save the R2 value for the current round and iteration
+                    # Save the R2 value for the current round and iteration
+                    metrics[client]["r2"][iteration][round] = r2
 
-            # Update the global model
-            global_model.load_state_dict(averaged_weights)
+                # Average the weights across all clients after each round
+                averaged_weights = {
+                    k: sum(d[k] for d in client_models) / num_clients
+                    for k in client_models[0].keys()
+                }
 
-        # Create the feature matrix for the current iteration and all rounds
-        feature_matrix = np.array(
-            [
-                [metrics[client]["r2"][iteration][r] for r in range(num_rounds)]
-                for client in sheet_name
-            ]
-        )
+                # Update the global model
+                global_model.load_state_dict(averaged_weights)
 
-        # print(feature_matrix)
+            # Create the feature matrix for the current iteration and all rounds
+            feature_matrix = np.array(
+                [
+                    [metrics[client]["r2"][iteration][r] for r in range(num_rounds)]
+                    for client in sheet_name
+                ]
+            )
 
-        # Check if the feature matrix is empty (no valid R2 values)
-        if feature_matrix.size == 0:
-            print("No valid data in the feature matrix. Skipping this iteration.")
-            continue
+            # Check if the feature matrix is empty (no valid R2 values)
+            if feature_matrix.size == 0:
+                print("No valid data in the feature matrix. Skipping this iteration.")
+                continue
 
-        # Append the feature matrix to the list after adding an additional dimension
-        all_feature_matrices.append(np.expand_dims(feature_matrix, axis=2))
+            # Append the feature matrix to the list after adding an additional dimension
+            all_feature_matrices.append(np.expand_dims(feature_matrix, axis=2))
 
-        # Concatenate the feature matrices along the third dimension to have shape (num_clients, num_rounds, num_iterations)
-        feature_matrix_total = np.concatenate(all_feature_matrices, axis=2)
+            # Concatenate the feature matrices along the third dimension to have shape (num_clients, num_rounds, num_iterations)
+            feature_matrix_total = np.concatenate(all_feature_matrices, axis=2)
 
-        # Step 2: Standardize the Data
-        scaler = StandardScaler()
+            # Step 2: Standardize the Data
+            scaler = StandardScaler()
 
-        # Flatten the last two dimensions
-        flattened_data = feature_matrix_total.reshape(feature_matrix_total.shape[0], -1)
-        normalized_data = scaler.fit_transform(flattened_data)
+            # Flatten the last two dimensions
+            flattened_data = feature_matrix_total.reshape(
+                feature_matrix_total.shape[0], -1
+            )
+            normalized_data = scaler.fit_transform(flattened_data)
 
-        # Compute Pairwise Similarity using Sigmoid Kernel for the current iteration
-        similarity_matrix_total = sigmoid_kernel(normalized_data)
-        # print(similarity_matrix_total)
+            # Compute Pairwise Similarity using Sigmoid Kernel for the current iteration
+            similarity_matrix_total = sigmoid_kernel(normalized_data)
+            # print(similarity_matrix_total)
 
-        # Append the similarity matrix to the list of similarity matrices
-        similarity_matrices.append(similarity_matrix_total)
+            # Append the similarity matrix to the list of similarity matrices
+            similarity_matrices.append(similarity_matrix_total)
 
-    import numpy as np
+        import numpy as np
 
-    # Assuming similarity_matrices is a list of similarity matrices
-    # Calculate the variance for each (i, j) position across similarity matrices
-    variances = np.var(similarity_matrices, axis=0)
+        # Assuming similarity_matrices is a list of similarity matrices
+        # Calculate the variance for each (i, j) position across similarity matrices
+        variances = np.var(similarity_matrices, axis=0)
 
-    # Calculate the mean for each (i, j) position across similarity matrices
-    means = np.mean(similarity_matrices, axis=0)
+        # Calculate the mean for each (i, j) position across similarity matrices
+        means = np.mean(similarity_matrices, axis=0)
 
-    # Calculate the standard deviation for each (i, j) position across similarity matrices
-    std_devs = np.std(similarity_matrices, axis=0)
+        # Calculate the standard deviation for each (i, j) position across similarity matrices
+        std_devs = np.std(similarity_matrices, axis=0)
 
-    if num_rounds == 3:
-        # Create dataframes for variances, means, and standard deviations
-        variances_df = pd.DataFrame(variances)
-        means_df = pd.DataFrame(means)
-        std_devs_df = pd.DataFrame(std_devs)
-    else:
-        new_variances_df = pd.DataFrame(variances)
-        new_means_df = pd.DataFrame(means)
-        new_std_devs_df = pd.DataFrame(
-            std_devs
-        )  # Create dataframes for variances, means, and standard deviations
-        # Concatenate the new row with the existing dataframe
-        variances_df = pd.concat([variances_df, new_variances_df], ignore_index=True)
-        means_df = pd.concat([means_df, new_means_df], ignore_index=True)
-        std_devs_df = pd.concat([std_devs_df, new_std_devs_df], ignore_index=True)
+        if num_rounds == 3:
+            # Create dataframes for variances, means, and standard deviations
+            variances_df = pd.DataFrame(variances)
+            means_df = pd.DataFrame(means)
+            std_devs_df = pd.DataFrame(std_devs)
+        else:
+            new_variances_df = pd.DataFrame(variances)
+            new_means_df = pd.DataFrame(means)
+            new_std_devs_df = pd.DataFrame(
+                std_devs
+            )  # Create dataframes for variances, means, and standard deviations
+            # Concatenate the new row with the existing dataframe
+            variances_df = pd.concat(
+                [variances_df, new_variances_df], ignore_index=True
+            )
+            means_df = pd.concat([means_df, new_means_df], ignore_index=True)
+            std_devs_df = pd.concat([std_devs_df, new_std_devs_df], ignore_index=True)
+
+    print(variances_df)
+
+    print(means_df)
+
+    print(std_devs_df)
+
+    # Save variances_df to a CSV file
+    variances_df.to_csv("variances.csv", index=False)
+
+    # Save means_df to a CSV file
+    means_df.to_csv("means.csv", index=False)
+
+    # Save std_devs_df to a CSV file
+    std_devs_df.to_csv("std_devs.csv", index=False)
 
 
-print(variances_df)
-
-print(means_df)
-
-print(std_devs_df)
-
-# Save variances_df to a CSV file
-variances_df.to_csv("variances.csv", index=False)
-
-# Save means_df to a CSV file
-means_df.to_csv("means.csv", index=False)
-
-# Save std_devs_df to a CSV file
-std_devs_df.to_csv("std_devs.csv", index=False)
+if __name__ == "__main__":
+    main()
