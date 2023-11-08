@@ -198,7 +198,7 @@ def main():
 
     # Set the number of iterations,rounds,epochs for federated learning
     num_round = [i for i in range(3, 100)]
-    num_epochs = 10
+    num_epochs = 5
     num_iterations = 10
 
     # # Initialize an empty similarity matrix to store similarity values for each pair of clients
@@ -279,12 +279,12 @@ def main():
                     train_targets = torch.tensor(
                         ys_train.values, dtype=torch.float32
                     ).to(device)
-                    # val_inputs = torch.tensor(xs_val.values, dtype=torch.float32).to(
-                    #     device
-                    # )
-                    # val_targets = torch.tensor(ys_val.values, dtype=torch.float32).to(
-                    #     device
-                    # )
+                    val_inputs = torch.tensor(xs_val.values, dtype=torch.float32).to(
+                        device
+                    )
+                    val_targets = torch.tensor(ys_val.values, dtype=torch.float32).to(
+                        device
+                    )
                     test_inputs = torch.tensor(xs_test.values, dtype=torch.float32).to(
                         device
                     )
@@ -296,8 +296,9 @@ def main():
                     train_dataset = MarketDataset(train_inputs, train_targets)
                     # val_dataset = MarketDataset(val_inputs, val_targets)
                     test_dataset = MarketDataset(test_inputs, test_targets)
+
                     train_loader = DataLoader(
-                        train_dataset, batch_size=32, shuffle=True
+                        train_dataset, batch_size=64, shuffle=True
                     )
                     # val_loader = DataLoader(val_dataset, batch_size=32)
                     test_loader = DataLoader(test_dataset, batch_size=32)
@@ -346,15 +347,37 @@ def main():
                         train_losses = []
                         model.train()
 
-                        for inputs, targets in train_loader:
+                        for batch_inputs, batch_targets in train_loader:
                             optimizer.zero_grad()
-                            outputs = model(inputs)
-                            loss = criterion(outputs, targets.unsqueeze(1))
+                            batch_inputs = batch_inputs.to(device)
+                            batch_targets = batch_targets.to(device)
+                            outputs = model(batch_inputs)
+                            loss = criterion(outputs, batch_targets.unsqueeze(1))
                             loss.backward()
                             optimizer.step()
                             train_losses.append(loss.item())
 
+                        # Calculate metrics or print loss for the epoch if needed
                         epoch_loss = np.mean(train_losses)
+
+                        # Print and flush the output
+                        print(f"Epoch {epoch+1}/{num_epochs}, Loss: {epoch_loss:.4f}")
+                        sys.stdout.flush()  # Explicitly flush the output
+
+                    # for epoch in range(num_epochs):
+                    #     train_losses = []
+                    #     model.train()
+
+                    #     # Inside the training loop:
+                    #     for inputs, targets in train_loader:
+                    #         optimizer.zero_grad()
+                    #         inputs = inputs.to(device)  # Move inputs to device
+                    #         targets = targets.to(device)  # Move targets to device
+                    #         outputs = model(inputs)
+                    #         loss = criterion(outputs, targets.unsqueeze(1))
+                    #         loss.backward()
+                    #         optimizer.step()
+                    #         train_losses.append(loss.item())
 
                     # Use model to generate predictions for the test dataset
                     client_models.append(model.state_dict())
@@ -362,9 +385,16 @@ def main():
                     # Use model to generate predictions for the test dataset
                     model.eval()
                     with torch.no_grad():
+                        test_inputs = test_inputs.to(
+                            device
+                        )  # Move test inputs to device
                         test_preds = model(test_inputs)
 
-                    r2 = r2_score(test_targets.numpy(), test_preds.numpy())
+                    # Move tensors to the CPU and then convert to NumPy arrays
+                    # Calculate the R-squared (R2) score
+                    test_targets_np = test_targets.cpu().numpy()
+                    test_preds_np = test_preds.cpu().numpy()
+                    r2 = r2_score(test_targets_np, test_preds_np)
 
                     # Save the R2 value for the current round and iteration
                     # Save the R2 value for the current round and iteration
