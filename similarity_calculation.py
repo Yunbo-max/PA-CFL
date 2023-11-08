@@ -4,36 +4,25 @@
 # @File:similarity_calculation.py
 # @Software:PyCharm
 import warnings
-from sklearn.preprocessing import LabelEncoder
-import matplotlib.pyplot as plt
-import seaborn as sns
-import wandb
-import matplotlib.pyplot as plt
-from sklearn.metrics.pairwise import sigmoid_kernel
-
-
-# Hiding the warnings
 warnings.filterwarnings("ignore")
-import wandb
 
+import torch
 import h5py
-
 import pandas as pd
 import numpy as np
 import torch
 import torch.nn as nn
 import torch.optim as optim
-from torch.utils.data import Dataset, DataLoader
+import matplotlib.pyplot as plt
+
+
+from torch.utils.data import Dataset, DataLoader, TensorDataset
+from sklearn.metrics.pairwise import sigmoid_kernel
+from sklearn.preprocessing import LabelEncoder
 from sklearn.metrics import r2_score
 from sklearn.cluster import KMeans
-from mpl_toolkits.mplot3d import Axes3D
-import matplotlib.pyplot as plt
-import pandas as pd
-import numpy as np
-import xgboost as xgb
-import lightgbm as lgb
-from sklearn.model_selection import train_test_split, cross_val_score, cross_val_predict
-from sklearn import svm, metrics, tree, preprocessing, linear_model
+from sklearn.model_selection import train_test_split
+from sklearn import metrics
 from sklearn.preprocessing import MinMaxScaler, StandardScaler
 from sklearn.linear_model import (
     Ridge,
@@ -58,24 +47,9 @@ from sklearn.metrics import (
     roc_curve,
     auc,
 )
-import torch
-import torch.nn as nn
-import torch.optim as optim
-from torch.utils.data import Dataset, DataLoader, TensorDataset
-from sklearn.metrics import mean_absolute_error, mean_squared_error
-import numpy as np
-from tensorboardX import SummaryWriter
-from sklearn.model_selection import train_test_split
-import warnings
-from sklearn.preprocessing import LabelEncoder
-import matplotlib.pyplot as plt
-import seaborn as sns
 
-torch.manual_seed(42)  # Set the random seed to 42 (you can use any integer)
-
-# Hiding the warnings
-warnings.filterwarnings("ignore")
-
+# Set the random seed 
+torch.manual_seed(42)  
 
 # Define a custom dataset class
 class MarketDataset(Dataset):
@@ -92,12 +66,7 @@ class MarketDataset(Dataset):
         return input_data, target
 
 
-import h5py
-from torch_geometric.data import Data
-from torch_geometric.nn import GCNConv
-
 # Set the number of clients, rounds, and epochs
-# sheet_name = ['0', '1', '2']
 sheet_name = [
     "0",
     "1",
@@ -114,8 +83,6 @@ sheet_name = [
     "17",
     "22",
 ]
-num_round = [i for i in range(3, 101)]
-num_epochs = 10
 
 region_map = {
     0: "Southeast Asia",
@@ -196,8 +163,9 @@ file = h5py.File(
 # Get the number of clients from sheet_name
 num_clients = len(sheet_name)
 
-
-# Set the number of iterations for federated learning
+# Set the number of iterations,rounds,epochs for federated learning
+num_round = [i for i in range(3,100)]
+num_epochs = 10
 num_iterations = 10
 
 # Initialize an empty similarity matrix to store similarity values for each pair of clients
@@ -205,9 +173,7 @@ similarity_matrix_total1 = np.zeros((len(sheet_name), len(sheet_name)))
 similarity_matrix_total2 = np.zeros((len(sheet_name), len(sheet_name)))
 similarity_matrix_total3 = np.zeros((len(sheet_name), len(sheet_name)))
 
-# Initialize a dictionary to store metrics for each client and each iteration
-# Initialize a dictionary to store metrics for each client and each iteration
-# Initialize a dictionary to store metrics for each client, round, and iteration
+
 # Initialize an empty similarity matrix to store similarity values for each pair of clients for each iteration
 similarity_matrix_total = np.zeros((len(sheet_name), len(sheet_name), num_iterations))
 
@@ -482,53 +448,3 @@ means_df.to_csv("means.csv", index=False)
 
 # Save std_devs_df to a CSV file
 std_devs_df.to_csv("std_devs.csv", index=False)
-
-
-# # Calculate other statistical values as needed (e.g., max, min, median, etc.)
-# # For example, to calculate the maximum value for each (i, j) position:
-# max_values = np.max(similarity_matrices, axis=0)
-
-# # To calculate the minimum value for each (i, j) position:
-# min_values = np.min(similarity_matrices, axis=0)
-
-# # To calculate the median for each (i, j) position:
-# medians = np.median(similarity_matrices, axis=0)
-
-# You can use these computed values (variances, means, std_devs, max_values, min_values, medians) as needed for your analysis.
-
-# import numpy as np
-# import matplotlib.pyplot as plt
-
-# Assuming you have computed the variances, means, std_devs, max_values, min_values, and medians as shown in the previous response
-
-# # Define a function to create a heatmap for a given statistic
-# def create_heatmap(data, title):
-#     plt.figure(figsize=(10, 8))
-#     plt.imshow(data, cmap='viridis', aspect='auto')
-#     plt.title(title)
-#     plt.colorbar()
-#     plt.show()
-
-# # Create heatmaps for variances, means, standard deviations, max values, min values, and medians
-# create_heatmap(variances, 'Variances')
-# create_heatmap(means, 'Means')
-# create_heatmap(std_devs, 'Standard Deviations')
-# create_heatmap(max_values, 'Maximum Values')
-# create_heatmap(min_values, 'Minimum Values')
-# create_heatmap(medians, 'Medians')
-
-
-# # Save the similarity matrices for each iteration
-# for iteration, similarity_matrix in enumerate(similarity_matrices):
-#     np.save(f'similarity_matrix_total{iteration + 1}_3rounds.npy', similarity_matrix)
-#     print('The {iteration} similarity_matrix is',iteration,similarity_matrix)
-
-# # Save the similarity matrices for each iteration
-# for iteration, similarity_matrix in enumerate(similarity_matrices):
-#     np.save(f'similarity_matrix_total{iteration + 1}_5rounds.npy', similarity_matrix)
-#     print('The {iteration} similarity_matrix is',iteration,similarity_matrix)
-
-# # Save the similarity matrices for each iteration
-# for iteration, similarity_matrix in enumerate(similarity_matrices):
-#     np.save(f'similarity_matrix_total{iteration + 1}_10rounds.npy', similarity_matrix)
-#     print('The {iteration} similarity_matrix is',iteration,similarity_matrix)
