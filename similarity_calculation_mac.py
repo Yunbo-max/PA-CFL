@@ -198,7 +198,7 @@ def main():
 
     # Set the number of iterations,rounds,epochs for federated learning
     num_round = [i for i in range(3, 100)]
-    num_epochs = 10
+    num_epochs = 5
     num_iterations = 10
 
     # # Initialize an empty similarity matrix to store similarity values for each pair of clients
@@ -359,7 +359,10 @@ def main():
 
                         # Calculate metrics or print loss for the epoch if needed
                         epoch_loss = np.mean(train_losses)
+
+                        # Print and flush the output
                         print(f"Epoch {epoch+1}/{num_epochs}, Loss: {epoch_loss:.4f}")
+                        sys.stdout.flush()  # Explicitly flush the output
 
                     # for epoch in range(num_epochs):
                     #     train_losses = []
