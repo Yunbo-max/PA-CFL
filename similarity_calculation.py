@@ -114,7 +114,7 @@ sheet_name = [
     "17",
     "22",
 ]
-num_round = [2, 3, 4]
+num_round = [i for i in range(3, 101)]
 num_epochs = 10
 
 region_map = {
@@ -451,7 +451,7 @@ for num_rounds in num_round:
     # Calculate the standard deviation for each (i, j) position across similarity matrices
     std_devs = np.std(similarity_matrices, axis=0)
 
-    if num_rounds == 2:
+    if num_rounds == 3:
         # Create dataframes for variances, means, and standard deviations
         variances_df = pd.DataFrame(variances)
         means_df = pd.DataFrame(means)
@@ -475,13 +475,13 @@ print(means_df)
 print(std_devs_df)
 
 # Save variances_df to a CSV file
-variances_df.to_csv("variances1-3.csv", index=False)
+variances_df.to_csv("variances.csv", index=False)
 
 # Save means_df to a CSV file
-means_df.to_csv("means1-3.csv", index=False)
+means_df.to_csv("means.csv", index=False)
 
 # Save std_devs_df to a CSV file
-std_devs_df.to_csv("std_devs1-3.csv", index=False)
+std_devs_df.to_csv("std_devs.csv", index=False)
 
 
 # # Calculate other statistical values as needed (e.g., max, min, median, etc.)
