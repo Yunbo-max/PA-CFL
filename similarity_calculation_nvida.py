@@ -128,7 +128,7 @@ def main():
     print("PyTorch version:", torch.__version__)
     print("Torchvision version:", torchvision.__version__)
 
-    device = torch.device("mps")
+    device = torch.device("cuda")
     print("Using Device: ", device)
 
     # Set the number of clients, rounds, and epochs
@@ -182,10 +182,10 @@ def main():
     neurons_per_layer = 64
     dropout = 0.3
 
-    # Initialize a shared global model
-    global_model = Net(
-        input_neurons, output_neurons, hidden_layers, neurons_per_layer, dropout
-    )
+    # # Initialize a shared global model
+    # global_model = Net(
+    #     input_neurons, output_neurons, hidden_layers, neurons_per_layer, dropout
+    # )
 
     # Open the HDF5 file
     file = h5py.File(
@@ -235,7 +235,7 @@ def main():
             # Initialize a shared global model
             global_model = Net(
                 input_neurons, output_neurons, hidden_layers, neurons_per_layer, dropout
-            )
+            ).to(device)
 
             # Initialize an empty list to store the client models for this round
             client_models = []
@@ -323,6 +323,24 @@ def main():
                     model.load_state_dict(global_model.state_dict())
 
                     train_losses = []
+                    val_losses = []
+                    train_rmse_list = []
+                    val_rmse_list = []
+                    mae_train_list = []
+                    rmse_train_list = []
+                    mape_train_list = []
+                    mse_train_list = []
+                    r2_train_list = []
+                    mae_val_list = []
+                    rmse_val_list = []
+                    mape_val_list = []
+                    mse_val_list = []
+                    r2_val_list = []
+                    mae_test_list = []
+                    rmse_test_list = []
+                    mape_test_list = []
+                    mse_test_list = []
+                    r2_test_list = []
 
                     for epoch in range(num_epochs):
                         train_losses = []
@@ -341,14 +359,12 @@ def main():
                     # Use model to generate predictions for the test dataset
                     client_models.append(model.state_dict())
 
-                    # # Use model to generate predictions for the test dataset
+                    # Use model to generate predictions for the test dataset
                     model.eval()
                     with torch.no_grad():
                         test_preds = model(test_inputs)
 
-                    r2 = r2_score(test_targets.cpu().numpy(), test_preds.cpu().numpy())
-                    # Testing phase
-                    # r2 = test_model(model, test_loader)
+                    r2 = r2_score(test_targets.numpy(), test_preds.numpy())
 
                     # Save the R2 value for the current round and iteration
                     # Save the R2 value for the current round and iteration
