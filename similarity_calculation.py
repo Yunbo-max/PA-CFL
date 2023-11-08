@@ -15,6 +15,7 @@ import torch
 import torch.nn as nn
 import torch.optim as optim
 import matplotlib.pyplot as plt
+import torchvision
 
 
 from torch.utils.data import Dataset, DataLoader, TensorDataset
@@ -97,55 +98,6 @@ class Net(nn.Module):
         for layer in self.layers:
             x = layer(x)
         return x
-
-
-def train(model, device, train_loader, optimizer, epoch):
-    model.train()
-    for batch_idx, (data, target) in enumerate(train_loader):
-        data, target = data.to(device), target.to(device)
-        optimizer.zero_grad()
-        output = model(data)
-        loss = F.nll_loss(output, target)
-        loss.backward()
-        optimizer.step()
-        if batch_idx % 10 == 0:
-            print(
-                "Train Epoch: {} [{}/{} ({:.0f}%)]\tLoss: {:.6f}".format(
-                    epoch,
-                    batch_idx * len(data),
-                    len(train_loader.dataset),
-                    100.0 * batch_idx / len(train_loader),
-                    loss.item(),
-                )
-            )
-
-
-def test(model, device, test_loader):
-    model.eval()
-    test_loss = 0
-    correct = 0
-    with torch.no_grad():
-        for data, target in test_loader:
-            data, target = data.to(device), target.to(device)
-            output = model(data)
-            test_loss += F.nll_loss(
-                output, target, reduction="sum"
-            ).item()  # sum up batch loss
-            pred = output.argmax(
-                dim=1, keepdim=True
-            )  # get the index of the max log-probability
-            correct += pred.eq(target.view_as(pred)).sum().item()
-
-    test_loss /= len(test_loader.dataset)
-
-    print(
-        "\nTest set: Average loss: {:.4f}, Accuracy: {}/{} ({:.0f}%)\n".format(
-            test_loss,
-            correct,
-            len(test_loader.dataset),
-            100.0 * correct / len(test_loader.dataset),
-        )
-    )
 
 
 def main():
@@ -259,25 +211,18 @@ def main():
             # Initialize a shared global model
             global_model = Net(
                 input_neurons, output_neurons, hidden_layers, neurons_per_layer, dropout
-            ).to(device)
+            )
 
             # Initialize an empty list to store the client models for this round
             client_models = []
 
             for round in range(num_rounds):
+                # Initialize an empty list to store the client models for this round
+                client_models = []
                 print(f"Round {round + 1}/{num_rounds}")
 
                 for client in sheet_name:
                     # Load the state dict of the global model to the client model
-                    model = Net(
-                        input_neurons,
-                        output_neurons,
-                        hidden_layers,
-                        neurons_per_layer,
-                        dropout,
-                    ).to(device)
-
-                    model.load_state_dict(global_model.state_dict())
 
                     dataset = file[client][:]
                     dataset = pd.DataFrame(dataset)
@@ -304,12 +249,24 @@ def main():
                     )
 
                     # Convert data to tensors
-                    train_inputs = torch.tensor(xs_train.values, dtype=torch.float32)
-                    train_targets = torch.tensor(ys_train.values, dtype=torch.float32)
-                    val_inputs = torch.tensor(xs_val.values, dtype=torch.float32)
-                    val_targets = torch.tensor(ys_val.values, dtype=torch.float32)
-                    test_inputs = torch.tensor(xs_test.values, dtype=torch.float32)
-                    test_targets = torch.tensor(ys_test.values, dtype=torch.float32)
+                    train_inputs = torch.tensor(
+                        xs_train.values, dtype=torch.float32
+                    ).to(device)
+                    train_targets = torch.tensor(
+                        ys_train.values, dtype=torch.float32
+                    ).to(device)
+                    val_inputs = torch.tensor(xs_val.values, dtype=torch.float32).to(
+                        device
+                    )
+                    val_targets = torch.tensor(ys_val.values, dtype=torch.float32).to(
+                        device
+                    )
+                    test_inputs = torch.tensor(xs_test.values, dtype=torch.float32).to(
+                        device
+                    )
+                    test_targets = torch.tensor(ys_test.values, dtype=torch.float32).to(
+                        device
+                    )
 
                     # Create data loaders
                     train_dataset = MarketDataset(train_inputs, train_targets)
@@ -321,48 +278,12 @@ def main():
                     val_loader = DataLoader(val_dataset, batch_size=32)
                     test_loader = DataLoader(test_dataset, batch_size=32)
 
-                    # # Define the neural network model
-                    # class Net(nn.Module):
-                    #     def __init__(
-                    #         self,
-                    #         input_neurons,
-                    #         output_neurons,
-                    #         hidden_layers,
-                    #         neurons_per_layer,
-                    #         dropout,
-                    #     ):
-                    #         super(Net, self).__init__()
-
-                    #         self.input_neurons = input_neurons
-                    #         self.output_neurons = output_neurons
-                    #         self.hidden_layers = hidden_layers
-                    #         self.neurons_per_layer = neurons_per_layer
-                    #         self.dropout = dropout
-
-                    #         self.layers = nn.ModuleList()
-                    #         self.layers.append(nn.Linear(input_neurons, neurons_per_layer))
-                    #         self.layers.append(nn.ReLU())
-
-                    #         for _ in range(hidden_layers):
-                    #             self.layers.append(
-                    #                 nn.Linear(neurons_per_layer, neurons_per_layer)
-                    #             )
-                    #             self.layers.append(nn.ReLU())
-                    #             self.layers.append(nn.Dropout(p=dropout))
-
-                    #         self.layers.append(nn.Linear(neurons_per_layer, output_neurons))
-
-                    #     def forward(self, x):
-                    #         x = x.view(-1, self.input_neurons)
-                    #         for layer in self.layers:
-                    #             x = layer(x)
-                    #         return x
-
                     input_neurons = train_inputs.shape[1]
                     output_neurons = 1
                     hidden_layers = 4
                     neurons_per_layer = 64
                     dropout = 0.3
+
                     model = Net(
                         input_neurons,
                         output_neurons,
@@ -374,6 +295,8 @@ def main():
                     criterion = nn.MSELoss()
                     learning_rate = 0.005
                     optimizer = optim.Adam(model.parameters(), lr=learning_rate)
+
+                    model.load_state_dict(global_model.state_dict())
 
                     train_losses = []
                     val_losses = []
@@ -440,6 +363,8 @@ def main():
                 ]
             )
 
+            # print(feature_matrix)
+
             # Check if the feature matrix is empty (no valid R2 values)
             if feature_matrix.size == 0:
                 print("No valid data in the feature matrix. Skipping this iteration.")
@@ -466,8 +391,6 @@ def main():
 
             # Append the similarity matrix to the list of similarity matrices
             similarity_matrices.append(similarity_matrix_total)
-
-        import numpy as np
 
         # Assuming similarity_matrices is a list of similarity matrices
         # Calculate the variance for each (i, j) position across similarity matrices
