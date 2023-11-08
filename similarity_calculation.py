@@ -189,7 +189,7 @@ global_model = Net(
 
 # Open the HDF5 file
 file = h5py.File(
-    "/Users/yunbo-max/Desktop/Papers/PFL_Optimiozation/market_data.h5",
+    "market_data.h5",
     "r",
 )
 
