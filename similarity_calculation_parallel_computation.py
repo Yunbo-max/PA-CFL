@@ -135,8 +135,7 @@ class Net(nn.Module):
 
 # Define the parallel function to process a single client
 @ray.remote
-def process_client(client, device):
-    client_models = []
+def process_client(client, device, client_models):
     # Set the number of clients, rounds, and epochs
     sheet_name = [
         "0",
@@ -184,14 +183,15 @@ def process_client(client, device):
     client_id = int(client)
     # Open the HDF5 file inside the function
     file = h5py.File("market_data.h5", "r")
-    dataset = file[sheet_name[client_id]][
-        :
-    ]  # Use client_id to access the correct dataset
+    dataset = file[client][:]
+
+    # Use client_id to access the correct dataset
 
     dataset = pd.DataFrame(dataset)
 
     # Read the column names from the attributes
-    column_names = file[sheet_name[client_id]].attrs["columns"]  # Use client_id here
+    # Read the column names from the attributes
+    column_names = file[client].attrs["columns"]
 
     # Assign column names to the dataset
     dataset.columns = column_names
@@ -303,9 +303,6 @@ def process_client(client, device):
     #         train_losses.append(loss.item())
 
     # Use model to generate predictions for the test dataset
-    client_models.append(model.state_dict())
-
-    # Use model to generate predictions for the test dataset
     model.eval()
     with torch.no_grad():
         test_inputs = test_inputs.to(device)  # Move test inputs to device
@@ -317,7 +314,9 @@ def process_client(client, device):
     test_preds_np = test_preds.cpu().numpy()
     r2 = r2_score(test_targets_np, test_preds_np)
 
-    return r2
+    client_models.append(model.state_dict())
+
+    return r2, model.state_dict()
 
 
 def main():
@@ -405,6 +404,8 @@ def main():
         print(f"testing {num_rounds }")
         # Perform federated learning
 
+        all_r2_values = []
+
         # Initialize a dictionary to store metrics for each client, round, and iteration
         metrics = {
             client: {
@@ -427,8 +428,15 @@ def main():
                 input_neurons, output_neurons, hidden_layers, neurons_per_layer, dropout
             ).to(device)
 
+            # Define the model variable here
+            model = Net(
+                input_neurons, output_neurons, hidden_layers, neurons_per_layer, dropout
+            ).to(device)
+
             # Initialize an empty list to store the client models for this round
             client_models = []
+
+            futures = []
 
             for round in range(num_rounds):
                 # Initialize an empty list to store the client models for this round
@@ -440,35 +448,40 @@ def main():
 
                 # Submit tasks to process each client in parallel
                 for client in sheet_name:
-                    future = process_client.remote(client, device)
+                    future = process_client.remote(client, device, client_models)
                     futures.append(future)
 
                 # Retrieve the results from completed tasks
                 results = ray.get(futures)
 
                 # Process the results as needed
-                for client, r2 in zip(sheet_name, results):
+                for client, (r2, model_parameter) in zip(sheet_name, results):
                     print(f"Client {client} - R2 Score: {r2}")
+                    client_models.append(model_parameter)
 
-                # Shutdown Ray when finished
-                ray.shutdown()
+                    metrics[client]["r2"][iteration][round] = r2
 
-                for client in sheet_name:
                     # Load the state dict of the global model to the client model
                     model.load_state_dict(global_model.state_dict())
 
-                    # Save the R2 value for the current round and iteration
-                    # Save the R2 value for the current round and iteration
-                    metrics[client]["r2"][iteration][round] = r2
+                # for client in sheet_name:
+                #     # Load the state dict of the global model to the client model
+                #     model.load_state_dict(global_model.state_dict())
+                # print(client_models)
+                if client_models == []:
+                    continue
 
-                # Average the weights across all clients after each round
-                averaged_weights = {
-                    k: sum(d[k] for d in client_models) / num_clients
-                    for k in client_models[0].keys()
-                }
+                else:
+                    # Average the weights across all clients after each round
+                    averaged_weights = {
+                        k: sum(d[k] for d in client_models) / num_clients
+                        for k in client_models[0].keys()
+                    }
 
                 # Update the global model
                 global_model.load_state_dict(averaged_weights)
+
+            # print(feature_matrix)
 
             # Create the feature matrix for the current iteration and all rounds
             feature_matrix = np.array(
@@ -517,6 +530,9 @@ def main():
         # Calculate the standard deviation for each (i, j) position across similarity matrices
         std_devs = np.std(similarity_matrices, axis=0)
 
+        print(variances)
+        print(type(variances))
+
         if num_rounds == 3:
             # Create dataframes for variances, means, and standard deviations
             variances_df = pd.DataFrame(variances)
@@ -549,6 +565,9 @@ def main():
 
     # Save std_devs_df to a CSV file
     std_devs_df.to_csv("std_devs.csv", index=False)
+
+    # Shutdown Ray when finished
+    ray.shutdown()
 
 
 if __name__ == "__main__":
