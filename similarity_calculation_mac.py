@@ -16,7 +16,7 @@ import torch.nn as nn
 import torch.optim as optim
 import matplotlib.pyplot as plt
 import torchvision
-
+import sys  # Import the sys module
 
 from torch.utils.data import Dataset, DataLoader, TensorDataset
 from sklearn.metrics.pairwise import sigmoid_kernel
@@ -128,7 +128,7 @@ def main():
     print("PyTorch version:", torch.__version__)
     print("Torchvision version:", torchvision.__version__)
 
-    device = torch.device("mps")
+    device = torch.device("cpu")
     print("Using Device: ", device)
 
     # Set the number of clients, rounds, and epochs
