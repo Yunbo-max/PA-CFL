@@ -16,6 +16,7 @@ import torch.nn as nn
 import torch.optim as optim
 import matplotlib.pyplot as plt
 import torchvision
+import sys  # Import the sys module
 
 
 from torch.utils.data import Dataset, DataLoader, TensorDataset
@@ -54,6 +55,11 @@ from sklearn.metrics import (
 torch.manual_seed(42)
 
 import ray
+
+
+num_round = [i for i in range(3, 100)]
+num_epochs = 5
+num_iterations = 10
 
 
 # Define a custom dataset class
@@ -129,7 +135,8 @@ class Net(nn.Module):
 
 # Define the parallel function to process a single client
 @ray.remote
-def process_client(client_id):
+def process_client(client, device):
+    client_models = []
     # Set the number of clients, rounds, and epochs
     sheet_name = [
         "0",
@@ -173,13 +180,18 @@ def process_client(client_id):
         21: "Eastern Europe",
         22: "South of USA",
     }
+
+    client_id = int(client)
     # Open the HDF5 file inside the function
     file = h5py.File("market_data.h5", "r")
-    dataset = file[client][:]
+    dataset = file[sheet_name[client_id]][
+        :
+    ]  # Use client_id to access the correct dataset
+
     dataset = pd.DataFrame(dataset)
 
     # Read the column names from the attributes
-    column_names = file[client].attrs["columns"]
+    column_names = file[sheet_name[client_id]].attrs["columns"]  # Use client_id here
 
     # Assign column names to the dataset
     dataset.columns = column_names
@@ -318,6 +330,8 @@ def main():
     device = torch.device("mps")
     print("Using Device: ", device)
 
+    # Set the number of iterations,rounds,epochs for federated learning
+
     # Set the number of clients, rounds, and epochs
     sheet_name = [
         "0",
@@ -377,11 +391,6 @@ def main():
     # Get the number of clients from sheet_name
     num_clients = len(sheet_name)
 
-    # Set the number of iterations,rounds,epochs for federated learning
-    num_round = [i for i in range(3, 100)]
-    num_epochs = 5
-    num_iterations = 10
-
     # # Initialize an empty similarity matrix to store similarity values for each pair of clients
     # similarity_matrix_total1 = np.zeros((len(sheet_name), len(sheet_name)))
     # similarity_matrix_total2 = np.zeros((len(sheet_name), len(sheet_name)))
@@ -431,7 +440,7 @@ def main():
 
                 # Submit tasks to process each client in parallel
                 for client in sheet_name:
-                    future = process_client.remote(client)
+                    future = process_client.remote(client, device)
                     futures.append(future)
 
                 # Retrieve the results from completed tasks

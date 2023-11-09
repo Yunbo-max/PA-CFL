@@ -16,6 +16,7 @@ import torch.nn as nn
 import torch.optim as optim
 import matplotlib.pyplot as plt
 import torchvision
+import sys  # Import the sys module
 
 
 from torch.utils.data import Dataset, DataLoader, TensorDataset
