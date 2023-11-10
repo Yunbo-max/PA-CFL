@@ -17,7 +17,11 @@ import torch.optim as optim
 import matplotlib.pyplot as plt
 import torchvision
 import sys  # Import the sys module
+import logging
+import os
 
+# Configure the logging settings
+logging.basicConfig(filename="optimsed_fl_ray_final2.log", level=logging.INFO)
 
 from torch.utils.data import Dataset, DataLoader, TensorDataset
 from sklearn.metrics.pairwise import sigmoid_kernel
@@ -106,31 +110,6 @@ class Net(nn.Module):
         for layer in self.layers:
             x = layer(x)
         return x
-
-
-# def test_model(model, test_loader):
-#     model.eval()
-#     test_losses = []
-#     test_preds = []
-#     test_targets = []
-#     criterion = nn.MSELoss()
-
-#     with torch.no_grad():
-#         for inputs, targets in test_loader:
-#             outputs = model(inputs)
-#             loss = criterion(outputs, targets.unsqueeze(1))
-#             test_losses.append(loss.item())
-#             test_preds.extend(
-#                 outputs.cpu().numpy()
-#             )  # Move predictions back to CPU for consistency
-#             test_targets.extend(
-#                 targets.cpu().numpy()
-#             )  # Move targets back to CPU for consistency
-
-#     r2 = r2_score(test_targets, test_preds)
-
-
-#     return r2
 
 
 # Define the parallel function to process a single client
@@ -286,6 +265,8 @@ def process_client(client, device, client_models):
         # Print and flush the output
         print(f"Epoch {epoch+1}/{num_epochs}, Loss: {epoch_loss:.4f}")
         sys.stdout.flush()  # Explicitly flush the output
+        # Log epoch loss
+        logging.info(f"(Epoch {epoch+1}/{num_epochs}, Loss: {epoch_loss:.4f}")
 
     # for epoch in range(num_epochs):
     #     train_losses = []
@@ -313,6 +294,10 @@ def process_client(client, device, client_models):
     test_targets_np = test_targets.cpu().numpy()
     test_preds_np = test_preds.cpu().numpy()
     r2 = r2_score(test_targets_np, test_preds_np)
+    sys.stdout.flush()  # Explicitly flush the output
+
+    # Log the R2 score for this client
+    logging.info(f"Client {client} - R2 Score: {r2}")
 
     client_models.append(model.state_dict())
 
@@ -321,7 +306,7 @@ def process_client(client, device, client_models):
 
 def main():
     # Initialize Ray
-    ray.init(ignore_reinit_error=True)
+    ray.init(ignore_reinit_error=True, logging_level=logging.INFO)
 
     print("PyTorch version:", torch.__version__)
     print("Torchvision version:", torchvision.__version__)
@@ -551,20 +536,26 @@ def main():
             means_df = pd.concat([means_df, new_means_df], ignore_index=True)
             std_devs_df = pd.concat([std_devs_df, new_std_devs_df], ignore_index=True)
 
+            # Log variances_df to the log file
+        logging.info("Variances Dataframe:")
+        with pd.option_context("display.max_rows", None, "display.max_columns", None):
+            logging.info(variances_df)
+
+        # Log means_df to the log file
+        logging.info("Means Dataframe:")
+        with pd.option_context("display.max_rows", None, "display.max_columns", None):
+            logging.info(means_df)
+
+        # Log std_devs_df to the log file
+        logging.info("Standard Deviations Dataframe:")
+        with pd.option_context("display.max_rows", None, "display.max_columns", None):
+            logging.info(std_devs_df)
+
     print(variances_df)
 
     print(means_df)
 
     print(std_devs_df)
-
-    # Save variances_df to a CSV file
-    variances_df.to_csv("variances.csv", index=False)
-
-    # Save means_df to a CSV file
-    means_df.to_csv("means.csv", index=False)
-
-    # Save std_devs_df to a CSV file
-    std_devs_df.to_csv("std_devs.csv", index=False)
 
     # Shutdown Ray when finished
     ray.shutdown()
