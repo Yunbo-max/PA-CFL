@@ -20,6 +20,7 @@ import sys  # Import the sys module
 
 import logging.config
 import yaml
+import os
 
 
 def setup_logging():
@@ -117,7 +118,7 @@ def main():
     print("PyTorch version:", torch.__version__)
     print("Torchvision version:", torchvision.__version__)
 
-    device = torch.device("cpu")
+    device = torch.device("mps")
     print("Using Device: ", device)
 
     # Set the number of clients, rounds, and epochs
@@ -187,7 +188,7 @@ def main():
 
     # Set the number of iterations,rounds,epochs for federated learning
     num_round = [i for i in range(3, 100)]
-    num_epochs = 5
+    num_epochs = 50
     num_iterations = 10
 
     # # Initialize an empty similarity matrix to store similarity values for each pair of clients
@@ -383,11 +384,13 @@ def main():
                         )  # Move test inputs to device
                         test_preds = model(test_inputs)
 
-                    # Move tensors to the CPU and then convert to NumPy arrays
-                    # Calculate the R-squared (R2) score
-                    test_targets_np = test_targets.cpu().numpy()
-                    test_preds_np = test_preds.cpu().numpy()
-                    r2 = r2_score(test_targets_np, test_preds_np)
+                    # Calculate the R2 score using PyTorch operations on the GPU
+                    ss_residual = torch.sum((test_targets - test_preds) ** 2).to(device)
+                    ss_total = torch.sum(
+                        (test_targets - torch.mean(test_targets)) ** 2
+                    ).to(device)
+                    r2 = 1 - (ss_residual / ss_total)
+                    r2 = r2.item()  # Convert the result to a Python float
 
                     # Log the R2 score for this client
                     logger = logging.getLogger(__name__)

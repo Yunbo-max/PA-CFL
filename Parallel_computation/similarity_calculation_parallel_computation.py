@@ -17,11 +17,16 @@ import torch.optim as optim
 import matplotlib.pyplot as plt
 import torchvision
 import sys  # Import the sys module
-import logging
+import logging.config
+import yaml
 import os
 
-# Configure the logging settings
-logging.basicConfig(filename="optimsed_fl_ray_final2.log", level=logging.INFO)
+
+def setup_logging():
+    with open("logging_config_ray.yaml", "r") as config_file:
+        config = yaml.safe_load(config_file)
+    logging.config.dictConfig(config)
+
 
 from torch.utils.data import Dataset, DataLoader, TensorDataset
 from sklearn.metrics.pairwise import sigmoid_kernel
@@ -264,9 +269,8 @@ def process_client(client, device, client_models):
 
         # Print and flush the output
         print(f"Epoch {epoch+1}/{num_epochs}, Loss: {epoch_loss:.4f}")
-        sys.stdout.flush()  # Explicitly flush the output
-        # Log epoch loss
-        logging.info(f"(Epoch {epoch+1}/{num_epochs}, Loss: {epoch_loss:.4f}")
+        logger = logging.getLogger(__name__)
+        logger.info(f"(Epoch {epoch+1}/{num_epochs}, Loss: {epoch_loss:.4f}")
 
     # for epoch in range(num_epochs):
     #     train_losses = []
@@ -295,10 +299,9 @@ def process_client(client, device, client_models):
     test_preds_np = test_preds.cpu().numpy()
     r2 = r2_score(test_targets_np, test_preds_np)
 
-    sys.stdout.flush()  # Explicitly flush the output
-
     # Log the R2 score for this client
-    logging.info(f"Client {client} - R2 Score: {r2}")
+    logger = logging.getLogger(__name__)
+    logger.info(f"Client {client} - R2 Score: {r2}")
 
     client_models.append(model.state_dict())
 
@@ -312,7 +315,7 @@ def main():
     print("PyTorch version:", torch.__version__)
     print("Torchvision version:", torchvision.__version__)
 
-    device = torch.device("mps")
+    device = torch.device("cpu")
     print("Using Device: ", device)
 
     # Set the number of iterations,rounds,epochs for federated learning
@@ -537,26 +540,21 @@ def main():
             means_df = pd.concat([means_df, new_means_df], ignore_index=True)
             std_devs_df = pd.concat([std_devs_df, new_std_devs_df], ignore_index=True)
 
-            # Log variances_df to the log file
-        logging.info("Variances Dataframe:")
+        # Log variances_df to the log file
+        logger = logging.getLogger(__name__)
+        logger.info("Variances Dataframe:")
         with pd.option_context("display.max_rows", None, "display.max_columns", None):
-            logging.info(variances_df)
+            logger.info(variances_df)
 
         # Log means_df to the log file
-        logging.info("Means Dataframe:")
+        logger.info("Means Dataframe:")
         with pd.option_context("display.max_rows", None, "display.max_columns", None):
-            logging.info(means_df)
+            logger.info(means_df)
 
         # Log std_devs_df to the log file
-        logging.info("Standard Deviations Dataframe:")
+        logger.info("Standard Deviations Dataframe:")
         with pd.option_context("display.max_rows", None, "display.max_columns", None):
-            logging.info(std_devs_df)
-
-    print(variances_df)
-
-    print(means_df)
-
-    print(std_devs_df)
+            logger.info(std_devs_df)
 
     # Shutdown Ray when finished
     ray.shutdown()
