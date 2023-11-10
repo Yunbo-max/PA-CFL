@@ -18,6 +18,19 @@ import matplotlib.pyplot as plt
 import torchvision
 import sys  # Import the sys module
 
+import logging.config
+import yaml
+
+
+def setup_logging():
+    with open("logging_config.yaml", "r") as config_file:
+        config = yaml.safe_load(config_file)
+    logging.config.dictConfig(config)
+
+
+# Call the setup_logging function before any logging statements in your code
+setup_logging()
+
 from torch.utils.data import Dataset, DataLoader, TensorDataset
 from sklearn.metrics.pairwise import sigmoid_kernel
 from sklearn.preprocessing import LabelEncoder
@@ -100,30 +113,6 @@ class Net(nn.Module):
         return x
 
 
-# def test_model(model, test_loader):
-#     model.eval()
-#     test_losses = []
-#     test_preds = []
-#     test_targets = []
-#     criterion = nn.MSELoss()
-
-#     with torch.no_grad():
-#         for inputs, targets in test_loader:
-#             outputs = model(inputs)
-#             loss = criterion(outputs, targets.unsqueeze(1))
-#             test_losses.append(loss.item())
-#             test_preds.extend(
-#                 outputs.cpu().numpy()
-#             )  # Move predictions back to CPU for consistency
-#             test_targets.extend(
-#                 targets.cpu().numpy()
-#             )  # Move targets back to CPU for consistency
-
-#     r2 = r2_score(test_targets, test_preds)
-
-#     return r2
-
-
 def main():
     print("PyTorch version:", torch.__version__)
     print("Torchvision version:", torchvision.__version__)
@@ -189,7 +178,7 @@ def main():
 
     # Open the HDF5 file
     file = h5py.File(
-        "market_data.h5",
+        "Data/market_data.h5",
         "r",
     )
 
@@ -362,7 +351,11 @@ def main():
 
                         # Print and flush the output
                         print(f"Epoch {epoch+1}/{num_epochs}, Loss: {epoch_loss:.4f}")
-                        sys.stdout.flush()  # Explicitly flush the output
+
+                        logger = logging.getLogger(__name__)
+                        logger.info(
+                            f"(Epoch {epoch+1}/{num_epochs}, Loss: {epoch_loss:.4f}"
+                        )
 
                     # for epoch in range(num_epochs):
                     #     train_losses = []
@@ -395,6 +388,10 @@ def main():
                     test_targets_np = test_targets.cpu().numpy()
                     test_preds_np = test_preds.cpu().numpy()
                     r2 = r2_score(test_targets_np, test_preds_np)
+
+                    # Log the R2 score for this client
+                    logger = logging.getLogger(__name__)
+                    logger.info(f"Client {client} - R2 Score: {r2}")
 
                     # Save the R2 value for the current round and iteration
                     # Save the R2 value for the current round and iteration
@@ -474,20 +471,21 @@ def main():
             means_df = pd.concat([means_df, new_means_df], ignore_index=True)
             std_devs_df = pd.concat([std_devs_df, new_std_devs_df], ignore_index=True)
 
-    print(variances_df)
+        # Log variances_df to the log file
+        logger = logging.getLogger(__name__)
+        logger.info("Variances Dataframe:")
+        with pd.option_context("display.max_rows", None, "display.max_columns", None):
+            logger.info(variances_df)
 
-    print(means_df)
+        # Log means_df to the log file
+        logger.info("Means Dataframe:")
+        with pd.option_context("display.max_rows", None, "display.max_columns", None):
+            logger.info(means_df)
 
-    print(std_devs_df)
-
-    # Save variances_df to a CSV file
-    variances_df.to_csv("variances.csv", index=False)
-
-    # Save means_df to a CSV file
-    means_df.to_csv("means.csv", index=False)
-
-    # Save std_devs_df to a CSV file
-    std_devs_df.to_csv("std_devs.csv", index=False)
+        # Log std_devs_df to the log file
+        logger.info("Standard Deviations Dataframe:")
+        with pd.option_context("display.max_rows", None, "display.max_columns", None):
+            logger.info(std_devs_df)
 
 
 if __name__ == "__main__":

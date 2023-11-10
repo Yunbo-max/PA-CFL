@@ -18,6 +18,12 @@ import matplotlib.pyplot as plt
 import torchvision
 import sys  # Import the sys module
 
+import logging
+import os
+
+# Configure the logging settings
+logging.basicConfig(filename="optimsed_fl_ray_final2.log", level=logging.INFO)
+
 
 from torch.utils.data import Dataset, DataLoader, TensorDataset
 from sklearn.metrics.pairwise import sigmoid_kernel
@@ -190,7 +196,7 @@ def main():
 
     # Open the HDF5 file
     file = h5py.File(
-        "market_data.h5",
+        "Data/market_data.h5",
         "r",
     )
 
@@ -969,20 +975,20 @@ def main():
             means_df = pd.concat([means_df, new_means_df], ignore_index=True)
             std_devs_df = pd.concat([std_devs_df, new_std_devs_df], ignore_index=True)
 
-    print(variances_df)
+            # Log variances_df to the log file
+        logging.info("Variances Dataframe:")
+        with pd.option_context("display.max_rows", None, "display.max_columns", None):
+            logging.info(variances_df)
 
-    print(means_df)
+        # Log means_df to the log file
+        logging.info("Means Dataframe:")
+        with pd.option_context("display.max_rows", None, "display.max_columns", None):
+            logging.info(means_df)
 
-    print(std_devs_df)
-
-    # Save variances_df to a CSV file
-    variances_df.to_csv("variances.csv", index=False)
-
-    # Save means_df to a CSV file
-    means_df.to_csv("means.csv", index=False)
-
-    # Save std_devs_df to a CSV file
-    std_devs_df.to_csv("std_devs.csv", index=False)
+        # Log std_devs_df to the log file
+        logging.info("Standard Deviations Dataframe:")
+        with pd.option_context("display.max_rows", None, "display.max_columns", None):
+            logging.info(std_devs_df)
 
 
 if __name__ == "__main__":

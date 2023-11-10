@@ -161,7 +161,7 @@ def process_client(client, device, client_models):
 
     client_id = int(client)
     # Open the HDF5 file inside the function
-    file = h5py.File("market_data.h5", "r")
+    file = h5py.File("Data/market_data.h5", "r")
     dataset = file[client][:]
 
     # Use client_id to access the correct dataset
@@ -294,6 +294,7 @@ def process_client(client, device, client_models):
     test_targets_np = test_targets.cpu().numpy()
     test_preds_np = test_preds.cpu().numpy()
     r2 = r2_score(test_targets_np, test_preds_np)
+
     sys.stdout.flush()  # Explicitly flush the output
 
     # Log the R2 score for this client
