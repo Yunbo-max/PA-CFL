@@ -23,9 +23,15 @@ import os
 
 
 def setup_logging():
-    with open("logging_config_ray.yaml", "r") as config_file:
+    script_dir = os.path.dirname(os.path.realpath(__file__))
+    config_path = os.path.join(script_dir, "logging_config_ray.yaml")
+    with open(config_path, "r") as config_file:
         config = yaml.safe_load(config_file)
     logging.config.dictConfig(config)
+
+
+# Call the setup_logging function before any logging statements in your code
+setup_logging()
 
 
 from torch.utils.data import Dataset, DataLoader, TensorDataset
@@ -289,23 +295,38 @@ def process_client(client, device, client_models):
 
     # Use model to generate predictions for the test dataset
     model.eval()
+    r2_scores = []
     with torch.no_grad():
-        test_inputs = test_inputs.to(device)  # Move test inputs to device
-        test_preds = model(test_inputs)
+        for test_inputs, test_targets in test_loader:
+            test_targets = test_targets.to(device)  # Move test targets to device
+            test_preds = model(test_inputs)
 
-    # Move tensors to the CPU and then convert to NumPy arrays
-    # Calculate the R-squared (R2) score
-    test_targets_np = test_targets.cpu().numpy()
-    test_preds_np = test_preds.cpu().numpy()
-    r2 = r2_score(test_targets_np, test_preds_np)
+            # Calculate the testing loss
+            testing_loss = criterion(test_preds, test_targets.unsqueeze(1)).item()
 
-    # Log the R2 score for this client
-    logger = logging.getLogger(__name__)
-    logger.info(f"Client {client} - R2 Score: {r2}")
+            # Move tensors to the CPU and then convert to NumPy arrays
+            test_targets_np = test_targets.cpu().numpy()
+            test_preds_np = test_preds.cpu().numpy()
+
+            # Calculate the R-squared (R2) score using scikit-learn
+            r2 = r2_score(test_targets_np, test_preds_np)
+
+            r2_scores.append(r2)
+
+            # Print and log the testing loss and R2 score
+            print(f"Testing Loss: {testing_loss:.4f}, R2 Score: {r2:.4f}")
+            logger = logging.getLogger(__name__)
+            logger.info(f"Testing Loss: {testing_loss:.4f}, R2 Score: {r2:.4f}")
+
+        # Calculate the average R2 score
+        average_r2 = np.mean(r2_scores)
+        # Log the R2 score for this client
+        logger = logging.getLogger(__name__)
+        logger.info(f"Client {client} - R2 Score: {average_r2}")
 
     client_models.append(model.state_dict())
 
-    return r2, model.state_dict()
+    return average_r2, model.state_dict()
 
 
 def main():

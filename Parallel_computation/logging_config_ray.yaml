@@ -11,7 +11,7 @@ handlers:
     class: logging.FileHandler
     level: INFO
     formatter: simple
-    filename: optimised_fl_ray_10_11.log
+    filename: Parallel_computation/optimised_fl_ray_10_11.log
 loggers:
   __main__:  # Assuming your script uses __name__ as the logger name
     level: DEBUG  # Adjust the level as needed

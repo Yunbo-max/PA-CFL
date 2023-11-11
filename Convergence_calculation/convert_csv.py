@@ -2,7 +2,7 @@ import pandas as pd
 import re
 
 # Read the log file
-with open("./optimsed_fl_ray_final.log", "r") as file:
+with open("./Parallel_computation/optimised_fl_ray_10_11.log", "r") as file:
     log_data = file.readlines()
 
 # Extract data from the log
