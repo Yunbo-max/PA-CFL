@@ -116,78 +116,6 @@ class Net(nn.Module):
         return x
 
 
-# Set the number of clients, rounds, and epochs
-sheet_name = [
-    "0",
-    "1",
-    "2",
-    "3",
-    "5",
-    "6",
-    "7",
-    "9",
-    "10",
-    "12",
-    "14",
-    "16",
-    "17",
-    "22",
-]
-
-region_map = {
-    0: "Southeast Asia",
-    1: "South Asia",
-    2: "Oceania",
-    3: "Eastern Asia",
-    4: "West Asia",
-    5: "West of USA",
-    6: "US Center",
-    7: "West Africa",
-    8: "Central Africa",
-    9: "North Africa",
-    10: "Western Europe",
-    11: "Northern Europe",
-    12: "Central America",
-    13: "Caribbean",
-    14: "South America",
-    15: "East Africa",
-    16: "Southern Europe",
-    17: "East of USA",
-    18: "Canada",
-    19: "Southern Africa",
-    20: "Central Asia",
-    21: "Eastern Europe",
-    22: "South of USA",
-}
-
-# # Initialize a shared global model
-# global_model = Net(
-#     input_neurons, output_neurons, hidden_layers, neurons_per_layer, dropout
-# )
-
-# Open the HDF5 file
-file = h5py.File(
-    "Data/market_data.h5",
-    "r",
-)
-
-# Get the number of clients from sheet_name
-num_clients = len(sheet_name)
-
-# Set the number of iterations,rounds,epochs for federated learning
-num_round = [i for i in range(3, 100)]
-num_epochs = 5
-num_iterations = 10
-
-# # Initialize an empty similarity matrix to store similarity values for each pair of clients
-# similarity_matrix_total1 = np.zeros((len(sheet_name), len(sheet_name)))
-# similarity_matrix_total2 = np.zeros((len(sheet_name), len(sheet_name)))
-# similarity_matrix_total3 = np.zeros((len(sheet_name), len(sheet_name)))
-
-# Initialize an empty similarity matrix to store similarity values for each pair of clients for each iteration
-similarity_matrix_total = np.zeros((len(sheet_name), len(sheet_name), num_iterations))
-
-
 def train(model, device, train_loader, optimizer, epoch, criterion):
     train_losses = []
     model.train()
@@ -292,8 +220,81 @@ def main():
     print("PyTorch version:", torch.__version__)
     print("Torchvision version:", torchvision.__version__)
 
-    device = torch.device("mps")
+    device = torch.device("cpu")
     print("Using Device: ", device)
+
+    # Set the number of clients, rounds, and epochs
+    sheet_name = [
+        "0",
+        "1",
+        "2",
+        "3",
+        "5",
+        "6",
+        "7",
+        "9",
+        "10",
+        "12",
+        "14",
+        "16",
+        "17",
+        "22",
+    ]
+
+    region_map = {
+        0: "Southeast Asia",
+        1: "South Asia",
+        2: "Oceania",
+        3: "Eastern Asia",
+        4: "West Asia",
+        5: "West of USA",
+        6: "US Center",
+        7: "West Africa",
+        8: "Central Africa",
+        9: "North Africa",
+        10: "Western Europe",
+        11: "Northern Europe",
+        12: "Central America",
+        13: "Caribbean",
+        14: "South America",
+        15: "East Africa",
+        16: "Southern Europe",
+        17: "East of USA",
+        18: "Canada",
+        19: "Southern Africa",
+        20: "Central Asia",
+        21: "Eastern Europe",
+        22: "South of USA",
+    }
+
+    # # Initialize a shared global model
+    # global_model = Net(
+    #     input_neurons, output_neurons, hidden_layers, neurons_per_layer, dropout
+    # )
+
+    # Open the HDF5 file
+    file = h5py.File(
+        "Data/market_data.h5",
+        "r",
+    )
+
+    # Get the number of clients from sheet_name
+    num_clients = len(sheet_name)
+
+    # Set the number of iterations,rounds,epochs for federated learning
+    num_round = [i for i in range(3, 100)]
+    num_epochs = 5
+    num_iterations = 10
+
+    # # Initialize an empty similarity matrix to store similarity values for each pair of clients
+    # similarity_matrix_total1 = np.zeros((len(sheet_name), len(sheet_name)))
+    # similarity_matrix_total2 = np.zeros((len(sheet_name), len(sheet_name)))
+    # similarity_matrix_total3 = np.zeros((len(sheet_name), len(sheet_name)))
+
+    # Initialize an empty similarity matrix to store similarity values for each pair of clients for each iteration
+    similarity_matrix_total = np.zeros(
+        (len(sheet_name), len(sheet_name), num_iterations)
+    )
 
     for num_rounds in num_round:
         print(f"testing {num_rounds }")
