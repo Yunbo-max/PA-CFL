@@ -24,7 +24,7 @@ import os
 
 def setup_logging():
     script_dir = os.path.dirname(os.path.realpath(__file__))
-    config_path = os.path.join(script_dir, "logging_config_ray.yaml")
+    config_path = os.path.join(script_dir, "logging_config.yaml")
     with open(config_path, "r") as config_file:
         config = yaml.safe_load(config_file)
     logging.config.dictConfig(config)
@@ -237,24 +237,6 @@ def process_client(client, device, client_models):
     optimizer = optim.Adam(model.parameters(), lr=learning_rate)
 
     train_losses = []
-    val_losses = []
-    train_rmse_list = []
-    val_rmse_list = []
-    mae_train_list = []
-    rmse_train_list = []
-    mape_train_list = []
-    mse_train_list = []
-    r2_train_list = []
-    mae_val_list = []
-    rmse_val_list = []
-    mape_val_list = []
-    mse_val_list = []
-    r2_val_list = []
-    mae_test_list = []
-    rmse_test_list = []
-    mape_test_list = []
-    mse_test_list = []
-    r2_test_list = []
 
     for epoch in range(num_epochs):
         train_losses = []
@@ -321,7 +303,7 @@ def main():
     print("PyTorch version:", torch.__version__)
     print("Torchvision version:", torchvision.__version__)
 
-    device = torch.device("cpu")
+    device = torch.device("cuda")
     print("Using Device: ", device)
 
     # Set the number of iterations,rounds,epochs for federated learning
