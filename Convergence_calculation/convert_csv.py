@@ -4,7 +4,9 @@ import os
 
 
 # Read the log file
-with open("../PFL_Optimiozation/optimised_fl_mac.log", "r") as file:
+with open(
+    "../PFL_Optimiozation/Clusters_Computation_cuda/optimised_fl_mac.log", "r"
+) as file:
     log_data = file.readlines()
 
 # Extract data from the log
@@ -58,6 +60,8 @@ print("Standard Deviations DataFrame Shape:", std_dev_df.shape)
 output_folder = "/Users/yunbo-max/Desktop/Papers/PFL_Optimiozation/Output/excel"
 
 # Save DataFrames to CSV files with relative paths
-variances_df.to_csv("../PFL_Optimiozation/Output/excel/variances_data.csv", index=False)
-means_df.to_csv("../PFL_Optimiozation/Output/excel/means_data.csv", index=False)
-std_dev_df.to_csv("../PFL_Optimiozation/Output/excel/std_dev_data.csv", index=False)
+variances_df.to_csv(
+    "../PFL_Optimiozation/Output/excel/variances_data_100.csv", index=False
+)
+means_df.to_csv("../PFL_Optimiozation/Output/excel/means_data_100.csv", index=False)
+std_dev_df.to_csv("../PFL_Optimiozation/Output/excel/std_dev_data_100.csv", index=False)
