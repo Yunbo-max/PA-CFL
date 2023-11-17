@@ -167,7 +167,7 @@ region_map = {
 
 # Open the HDF5 file
 file = h5py.File(
-    "Data/market_data.h5",
+    "market_data.h5",
     "r",
 )
 

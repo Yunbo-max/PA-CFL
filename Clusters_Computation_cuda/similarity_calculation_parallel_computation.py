@@ -172,7 +172,7 @@ def process_client(client, device, client_models):
 
     client_id = int(client)
     # Open the HDF5 file inside the function
-    file = h5py.File("Data/market_data.h5", "r")
+    file = h5py.File("market_data.h5", "r")
     dataset = file[client][:]
 
     # Use client_id to access the correct dataset
@@ -298,12 +298,12 @@ def process_client(client, device, client_models):
 
 def main():
     # Initialize Ray
-    ray.init(ignore_reinit_error=True, logging_level=logging.INFO)
-
+    
+    ray.init(logging_level=logging.INFO)
     print("PyTorch version:", torch.__version__)
     print("Torchvision version:", torchvision.__version__)
 
-    device = torch.device("cuda")
+    device = torch.device("cpu")
     print("Using Device: ", device)
 
     # Set the number of iterations,rounds,epochs for federated learning
