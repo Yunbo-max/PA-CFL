@@ -196,16 +196,10 @@ def process_client(client, device, client_models):
         xs, ys, test_size=0.3, random_state=42
     )
 
-    # Split training set into training and validation sets
-    xs_train, xs_val, ys_train, ys_val = train_test_split(
-        xs_train, ys_train, test_size=0.2, random_state=42
-    )
 
     # Convert data to tensors
     train_inputs = torch.tensor(xs_train.values, dtype=torch.float32).to(device)
     train_targets = torch.tensor(ys_train.values, dtype=torch.float32).to(device)
-    val_inputs = torch.tensor(xs_val.values, dtype=torch.float32).to(device)
-    val_targets = torch.tensor(ys_val.values, dtype=torch.float32).to(device)
     test_inputs = torch.tensor(xs_test.values, dtype=torch.float32).to(device)
     test_targets = torch.tensor(ys_test.values, dtype=torch.float32).to(device)
 
@@ -514,8 +508,7 @@ def main():
             # Concatenate the feature matrices along the third dimension to have shape (num_clients, num_rounds, num_iterations)
             feature_matrix_total = np.concatenate(all_feature_matrices, axis=2)
 
-            # Step 2: Standardize the Data
-            scaler = StandardScaler()
+
 
             # Flatten the last two dimensions
             flattened_data = feature_matrix_total.reshape(
