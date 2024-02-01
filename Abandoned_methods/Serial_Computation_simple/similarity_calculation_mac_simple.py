@@ -23,16 +23,16 @@ import yaml
 import os
 
 
-def setup_logging():
-    script_dir = os.path.dirname(os.path.realpath(__file__))
-    config_path = os.path.join(script_dir, "logging_config.yaml")
-    with open(config_path, "r") as config_file:
-        config = yaml.safe_load(config_file)
-    logging.config.dictConfig(config)
+# def setup_logging():
+#     script_dir = os.path.dirname(os.path.realpath(__file__))
+#     config_path = os.path.join(script_dir, "logging_config.yaml")
+#     with open(config_path, "r") as config_file:
+#         config = yaml.safe_load(config_file)
+#     logging.config.dictConfig(config)
 
 
-# Call the setup_logging function before any logging statements in your code
-setup_logging()
+# # Call the setup_logging function before any logging statements in your code
+# setup_logging()
 
 from torch.utils.data import Dataset, DataLoader, TensorDataset
 from sklearn.metrics.pairwise import sigmoid_kernel
@@ -175,7 +175,7 @@ file = h5py.File(
 num_clients = len(sheet_name)
 
 # Set the number of iterations,rounds,epochs for federated learning
-num_round = [i for i in range(3, 50)]
+num_round = [10]
 num_epochs = 5
 num_iterations = 10
 
@@ -296,6 +296,11 @@ def main():
     device = torch.device("cpu")
     print("Using Device: ", device)
 
+    # Initialize a dictionary to store the final round R2 values for each client
+    final_round_r2 = {client: [] for client in sheet_name}
+
+    num_rounds = 10  # Set the number of rounds
+
     for num_rounds in num_round:
         print(f"testing {num_rounds }")
         # Perform federated learning
@@ -377,6 +382,10 @@ def main():
                     # Save the R2 value for the current round and iteration
                     metrics[client]["r2"][iteration][round] = r2
 
+                    # Record the final round R2 value for each client
+                    if round == num_rounds - 1:
+                        final_round_r2[client].append(r2)
+
                 # Average the weights across all clients after each round
                 averaged_weights = {
                     k: sum(d[k] for d in client_models) / num_clients
@@ -407,63 +416,13 @@ def main():
             # Concatenate the feature matrices along the third dimension to have shape (num_clients, num_rounds, num_iterations)
             feature_matrix_total = np.concatenate(all_feature_matrices, axis=2)
 
-            # Step 2: Standardize the Data
-            scaler = StandardScaler()
+    # Print the final round R2 values for each client
+    print("Final Round R2 Values:")
+    for client, r2_values in final_round_r2.items():
+        print(f"Client {client}: {r2_values}")
 
-            # Flatten the last two dimensions
-            flattened_data = feature_matrix_total.reshape(
-                feature_matrix_total.shape[0], -1
-            )
-
-            normalized_data = scaler.fit_transform(flattened_data)
-
-            # Compute Pairwise Similarity using Sigmoid Kernel for the current iteration
-            similarity_matrix_total = sigmoid_kernel(normalized_data)
-            # print(similarity_matrix_total)
-
-            # Append the similarity matrix to the list of similarity matrices
-            similarity_matrices.append(similarity_matrix_total)
-
-        # Assuming similarity_matrices is a list of similarity matrices
-        # Calculate the variance for each (i, j) position across similarity matrices
-        variances = np.var(similarity_matrices, axis=0)
-
-        # Calculate the mean for each (i, j) position across similarity matrices
-        means = np.mean(similarity_matrices, axis=0)
-
-        # Calculate the standard deviation for each (i, j) position across similarity matrices
-        std_devs = np.std(similarity_matrices, axis=0)
-
-        if num_rounds == 3:
-            # Create dataframes for variances, means, and standard deviations
-            variances_df = pd.DataFrame(variances)
-            means_df = pd.DataFrame(means)
-            std_devs_df = pd.DataFrame(std_devs)
-        else:
-            new_variances_df = pd.DataFrame(variances)
-            new_means_df = pd.DataFrame(means)
-            new_std_devs_df = pd.DataFrame(
-                std_devs
-            )  # Create dataframes for variances, means, and standard deviations
-            # Concatenate the new row with the existing dataframe
-            variances_df = pd.concat(
-                [variances_df, new_variances_df], ignore_index=True
-            )
-            means_df = pd.concat([means_df, new_means_df], ignore_index=True)
-            std_devs_df = pd.concat([std_devs_df, new_std_devs_df], ignore_index=True)
-
-        # Log variances_df to the log file
-        logger = logging.getLogger(__name__)
-        logger.info("Variances Dataframe:")
-        logger.info(variances_df.to_string())
-
-        # Log means_df to the log file
-        logger.info("Means Dataframe:")
-        logger.info(means_df.to_string())
-
-        # Log std_devs_df to the log file (assuming you have std_devs_df)
-        logger.info("Standard Deviations Dataframe:")
-        logger.info(std_devs_df.to_string())
+if __name__ == "__main__":
+    main()
 
 
 if __name__ == "__main__":
