@@ -2,13 +2,14 @@
 # @Author: Yunbo
 # @Date:   2024-02-11 12:31:58
 # @Last Modified by:   Yunbo
-# @Last Modified time: 2024-02-11 12:33:49
+# @Last Modified time: 2024-02-11 14:38:58
 import pickle
-from Data_Process import CustomDataset
 from torch.utils.data import Dataset, DataLoader
+from Data_Process import CustomDataset
+
 
 # Read datasets from disk
-with open('datasets.pkl', 'rb') as f:
+with open('./Data_prepare/datasets.pkl', 'rb') as f:
     loaded_datasets = pickle.load(f)
 
 # Accessing the datasets for each Order Region
