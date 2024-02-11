@@ -1,17 +1,8 @@
-# -*- coding = utf-8 -*-
-# @time:08/07/2023 08:12
-# Author:Yunbo Long
-# @File:split.py
-# @Software:PyCharm
-# -*- coding = utf-8 -*-
-# @time:08/07/2023 01:50
-# Author:Yunbo Long
-# @File:split.py
-# @Software:PyCharm
+{
+    "fileheader.author": "JanKinCai",
+}
 
 import pandas as pd
-import h5py
-
 import pandas as pd
 
 # Read the integrated_train_data.csv file
