@@ -1,8 +1,9 @@
-# -*- coding = utf-8 -*-
-# @time:04/08/2023 10:58
-# Author:Yunbo Long
-# @File:similarity_calculation.py
-# @Software:PyCharm
+# -*- coding: utf-8 -*-
+# @Author: Yunbo
+# @Date:   2024-02-01 20:19:10
+# @Last Modified by:   Yunbo
+# @Last Modified time: 2024-02-11 11:50:35
+
 import warnings
 
 warnings.filterwarnings("ignore")
