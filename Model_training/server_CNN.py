@@ -2,7 +2,7 @@
 # @Author: Yunbo
 # @Date:   2024-02-12 13:58:32
 # @Last Modified by:   Yunbo
-# @Last Modified time: 2024-02-12 14:28:53
+# @Last Modified time: 2024-02-12 15:58:06
 # -*- coding = utf-8 -*-
 # @time:03/07/2023 09:32
 # Author:Yunbo Long
@@ -294,7 +294,7 @@ strategy = fl.server.strategy.FedAvg(
 
 # Start Flower server for four rounds of federated learning
 fl.server.start_server(
-    server_address="0.0.0.0:8091",
+    server_address="0.0.0.0:8093",
     config=fl.server.ServerConfig(num_rounds=100),
     strategy=strategy,
 )

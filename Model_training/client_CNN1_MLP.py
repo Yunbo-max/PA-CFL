@@ -2,7 +2,7 @@
 # @Author: Yunbo
 # @Date:   2024-01-24 10:28:47
 # @Last Modified by:   Yunbo
-# @Last Modified time: 2024-02-12 14:27:50
+# @Last Modified time: 2024-02-12 15:51:14
 # -*- coding = utf-8 -*-
 # @time:05/07/2023 18:11
 # Author:Yunbo Long
@@ -86,7 +86,7 @@ from scipy.stats import wasserstein_distance
 
 
 # Load datasets from the pickle file
-file_path = 'Model_training/Data_prepare/datasets.pkl'
+file_path = 'Data_prepare/datasets.pkl'
 with open(file_path, 'rb') as f:
     datasets = pickle.load(f)
 
@@ -121,7 +121,7 @@ region_map = {
 
 sheet_names = ['0', '1', '2', '3', '5', '6', '7', '9', '10', '12', '14', '16', '17', '22']
 
-sheet_name = '2'
+sheet_name = '1'
 
 value = region_map[float(sheet_name)]
 config = {"region": value}
@@ -399,6 +399,6 @@ class RegressionClient(fl.client.NumPyClient):
 
 # Create the client and start the client
 fl.client.start_numpy_client(
-    server_address="127.0.0.1:8090",
+    server_address="127.0.0.1:8093",
     client=RegressionClient()
 )

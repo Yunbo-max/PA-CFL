@@ -1,3 +1,8 @@
+# -*- coding: utf-8 -*-
+# @Author: Yunbo
+# @Date:   2024-02-12 13:58:32
+# @Last Modified by:   Yunbo
+# @Last Modified time: 2024-02-12 15:47:30
 # -*- coding = utf-8 -*-
 # @time:05/07/2023 18:11
 # Author:Yunbo Long
@@ -111,7 +116,7 @@ key = 3
 value = region_map[key]
 print(value)
 
-sheet_name = '2'
+sheet_name = '10'
 
 value = region_map[float(sheet_name)]
 config = {"region": value}

@@ -1,0 +1,4 @@
+torch.Size([8118, 27])
+torch.Size([8118])
+INFO flwr 2024-02-12 15:57:23,545 | grpc.py:52 | Opened insecure gRPC connection (no certificates were passed)
+DEBUG flwr 2024-02-12 15:57:23,550 | connection.py:42 | ChannelConnectivity.IDLE

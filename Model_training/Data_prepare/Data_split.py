@@ -2,7 +2,7 @@
 # @Author: Yunbo
 # @Date:   2024-02-11 00:22:54
 # @Last Modified by:   Yunbo
-# @Last Modified time: 2024-02-12 13:16:03
+# @Last Modified time: 2024-02-12 15:54:48
 import pandas as pd
 import numpy as np
 from sklearn.model_selection import train_test_split
@@ -32,7 +32,7 @@ class CustomDataset(Dataset):
         return feature, label
 
 
-from sklearn.preprocessing import LabelEncoder, OneHotEncoder, StandardScaler
+from sklearn.preprocessing import LabelEncoder
 
 def preprocess_data(data):
 
@@ -76,29 +76,28 @@ def preprocess_data(data):
         x=le.fit_transform(x)
         return x
 
-    # Exclude datetime columns from label encoding
-    # datetime_columns = ['order date (DateOrders)', 'shipping date (DateOrders)']
-    # data_encoded = data.drop(datetime_columns, axis=1)
+
 
     # Apply label encoding to remaining columns
     data_encoded = label_data.apply(Labelencoder_feature)
 
     data = pd.concat([data_encoded, data], axis=1)
 
-    data=data[['Benefit per order', 'Order Id', 'Order Customer Id', 'Order Item Id',
- 'Order Item Quantity', 'Department Id', 'Order Item Total', 'Category Id',
- 'shipping_month', 'Product Card Id', 'Product Name',
- 'Order Item Cardprod Id', 'order date (DateOrders)', 'Order State',
- 'Order Item Discount' ,'Market', 'Department Name', 'order_week_day',
- 'Product Category Id', 'order_year' ,'order_month' ,'Category Name',
- 'shipping_year' ,'Order City' ,'Days for shipment (scheduled)',
- 'Customer Segment' ,'Customer Full Name']]
+    data_final=data[['Benefit per order', 'Order Id', 'Order Customer Id', 'Order Item Id',
+    'Order Item Quantity', 'Department Id', 'Order Item Total', 'Category Id',
+    'shipping_month', 'Product Card Id', 'Product Name',
+    'Order Item Cardprod Id', 'order date (DateOrders)', 'Order State',
+    'Order Item Discount' ,'Market', 'Department Name', 'order_week_day',
+    'Product Category Id', 'order_year' ,'order_month' ,'Category Name',
+    'shipping_year' ,'Order City' ,'Days for shipment (scheduled)',
+    'Customer Segment' ,'Customer Full Name']]
     # Add new features and preprocess data
     
     print("After preprocessing:")
-    print(data.shape)
+    print(data_final.head(10))
+    print(data_final.values)
 
-    return data, label_y
+    return data_final, label_y
 
 
 def split_and_save_dataset(dataset, folder_path):
@@ -108,13 +107,18 @@ def split_and_save_dataset(dataset, folder_path):
         X_test = 0
 
         # Split data
-        X_train, X_test = train_test_split(data_region, test_size=0.1, random_state=42)
+        X_train, X_test = train_test_split(data_region, test_size=0.2, random_state=42)
         
         # Preprocess train data
         X_train, train_label_data = preprocess_data(X_train)
+        print(X_train.head(10))
+
         
         # Preprocess test data
         X_test, test_label_data = preprocess_data(X_test)
+
+
+        print("----------------",X_train.values)
         
         # Concatenate features and labels into a single DataFrame
         train_data = pd.concat([X_train, train_label_data], axis=1)
@@ -123,6 +127,7 @@ def split_and_save_dataset(dataset, folder_path):
         # Print the shape of the data for each region
         print(f"Region: {region}, Train shape: {train_data.shape}, Test shape: {test_data.shape}")
         
+        print(X_train.values)
         # Create CustomDataset objects for train and test data
         train_dataset = CustomDataset(X_train.values, train_label_data.values)
         test_dataset = CustomDataset(X_test.values, test_label_data.values)

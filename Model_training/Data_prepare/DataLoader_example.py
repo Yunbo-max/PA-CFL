@@ -2,7 +2,7 @@
 # @Author: Yunbo
 # @Date:   2024-02-11 12:23:32
 # @Last Modified by:   Yunbo
-# @Last Modified time: 2024-02-12 11:07:46
+# @Last Modified time: 2024-02-12 14:53:04
 
 import pickle
 from Data_split import CustomDataset
@@ -18,6 +18,7 @@ train_dataset_canada = datasets['Canada']['train']
 train_features, _ = train_dataset_canada[:]
 
 # Print the shape of the matrix
+print("feature matrix:", train_features)
 print("Shape of the feature matrix:", train_features.shape)
 # # Iterate over each region
 # for region, data in datasets.items():
