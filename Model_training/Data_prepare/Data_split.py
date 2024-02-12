@@ -2,7 +2,7 @@
 # @Author: Yunbo
 # @Date:   2024-02-11 00:22:54
 # @Last Modified by:   Yunbo
-# @Last Modified time: 2024-02-12 00:38:03
+# @Last Modified time: 2024-02-12 11:31:46
 import pandas as pd
 import numpy as np
 from sklearn.model_selection import train_test_split
@@ -19,37 +19,32 @@ import warnings
 warnings.filterwarnings("ignore")
 
 class CustomDataset(Dataset):
-    def __init__(self, data):
-        # Convert all columns to numeric type if possible
-        self.data = data.apply(pd.to_numeric, errors='ignore')
+    def __init__(self, features, labels):
+        self.features = features
+        self.labels = labels
     
     def __len__(self):
-        return len(self.data)
+        return len(self.features)
     
     def __getitem__(self, idx):
-        # Get features and labels
-        features = torch.tensor(self.data.iloc[idx, :-1].values, dtype=torch.float32)
-        label = torch.tensor(self.data.iloc[idx, -1], dtype=torch.float32)  # Assuming the label is a single value
-        return features, label
+        feature = self.features[idx]
+        label = self.labels[idx]
+        return feature, label
 
 
 from sklearn.preprocessing import LabelEncoder, OneHotEncoder, StandardScaler
 
 def preprocess_data(data):
 
-    print("Before preprocessing:")
-    print(data.dtypes)
-
-
+ 
     # Add new features
     data['TotalPrice'] = data['Order Item Quantity'] * data['Sales per customer']
     data['Customer Zipcode'] = data['Customer Zipcode'].fillna(0)
     data['operation time'] = (pd.DatetimeIndex(data['shipping date (DateOrders)']) - pd.DatetimeIndex(data['order date (DateOrders)'])).total_seconds() / (60*60)  
 
-    data = dataset.drop(
+    data = data.drop(
     ['Customer Email', 'Customer Id', 'Customer Password', 'Customer Fname', 'Customer Lname',
       'Product Description', 'Product Image', 'Order Zipcode','Product Status','Order Profit Per Order','Product Price','shipping date (DateOrders)'], axis=1)
-
 
 
     # Extract datetime features
@@ -64,7 +59,7 @@ def preprocess_data(data):
     
     for col in categorical_columns:
         data[col] = label_encoder.fit_transform(data[col])
-    
+
     
     # # One-hot encoding for category_data2
     # category_data2 = pd.get_dummies(data[['Customer Full Name','Type','Category Name','Customer City','Customer Country',
@@ -75,6 +70,7 @@ def preprocess_data(data):
     # Standardize numerical features
     scaler = StandardScaler()
     data[data.select_dtypes(include=['float64', 'int64']).columns] = scaler.fit_transform(data.select_dtypes(include=['float64', 'int64']))
+
     
     # Extract label_data
     label_data = data['Sales']
@@ -85,14 +81,17 @@ def preprocess_data(data):
     # Add new features and preprocess data
     
     print("After preprocessing:")
-    print(data.dtypes)
-    
+    print(data.shape)
+
     return data, label_data
 
 
 def split_and_save_dataset(dataset, folder_path):
     datasets = {}
     for region, data_region in dataset.groupby('Order Region'):
+        X_train=0
+        X_test = 0
+
         # Split data
         X_train, X_test = train_test_split(data_region, test_size=0.2, random_state=42)
         
@@ -106,17 +105,22 @@ def split_and_save_dataset(dataset, folder_path):
         train_data = pd.concat([X_train, train_label_data], axis=1)
         test_data = pd.concat([X_test, test_label_data], axis=1)
         
-        # Create CustomDataset objects for train and test data
-        train_dataset = CustomDataset(train_data)
-        test_dataset = CustomDataset(test_data)
+        # Print the shape of the data for each region
+        print(f"Region: {region}, Train shape: {train_data.shape}, Test shape: {test_data.shape}")
         
-        # Store datasets
+        # Create CustomDataset objects for train and test data
+        train_dataset = CustomDataset(X_train.values, train_label_data.values)
+        test_dataset = CustomDataset(X_test.values, test_label_data.values)
+        
+        # Store datasets for each region separately
         datasets[region] = {'train': train_dataset, 'test': test_dataset}
     
     # Save datasets to disk
     file_path = os.path.join(folder_path, 'datasets.pkl')
     with open(file_path, 'wb') as f:
         pickle.dump(datasets, f)
+
+
 
 
 # Example usage:
