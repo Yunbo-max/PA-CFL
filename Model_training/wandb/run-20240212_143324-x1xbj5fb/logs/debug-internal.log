@@ -87,3 +87,12 @@
 2024-02-12 14:35:49,582 DEBUG   HandlerThread:14324 [handler.py:handle_request():146] handle_request: status_report
 2024-02-12 14:35:54,491 DEBUG   SenderThread:14324 [sender.py:send():382] send: stats
 2024-02-12 14:35:55,493 DEBUG   HandlerThread:14324 [handler.py:handle_request():146] handle_request: status_report
+2024-02-12 14:36:00,512 DEBUG   HandlerThread:14324 [handler.py:handle_request():146] handle_request: status_report
+2024-02-12 14:36:05,529 DEBUG   HandlerThread:14324 [handler.py:handle_request():146] handle_request: status_report
+2024-02-12 14:36:10,546 DEBUG   HandlerThread:14324 [handler.py:handle_request():146] handle_request: status_report
+2024-02-12 14:36:15,562 DEBUG   HandlerThread:14324 [handler.py:handle_request():146] handle_request: status_report
+2024-02-12 14:36:16,831 INFO    memory    :14324 [interfaces.py:monitor():140] Process proc.memory.rssMB has exited.
+2024-02-12 14:36:16,840 DEBUG   SystemMonitor:14324 [system_monitor.py:_start():179] Finished system metrics aggregation loop
+2024-02-12 14:36:16,840 DEBUG   SystemMonitor:14324 [system_monitor.py:_start():183] Publishing last batch of metrics
+2024-02-12 14:36:16,873 DEBUG   SenderThread:14324 [sender.py:send():382] send: stats
+2024-02-12 14:36:18,157 INFO    MainThread:14324 [internal.py:handle_exit():76] Internal process exited

@@ -559,3 +559,13 @@
 2024-02-12 14:35:47,355 DEBUG   HandlerThread:13901 [handler.py:handle_request():146] handle_request: status_report
 2024-02-12 14:35:52,378 DEBUG   HandlerThread:13901 [handler.py:handle_request():146] handle_request: status_report
 2024-02-12 14:35:57,403 DEBUG   HandlerThread:13901 [handler.py:handle_request():146] handle_request: status_report
+2024-02-12 14:36:02,422 DEBUG   HandlerThread:13901 [handler.py:handle_request():146] handle_request: status_report
+2024-02-12 14:36:07,445 DEBUG   HandlerThread:13901 [handler.py:handle_request():146] handle_request: status_report
+2024-02-12 14:36:12,460 DEBUG   HandlerThread:13901 [handler.py:handle_request():146] handle_request: status_report
+2024-02-12 14:36:14,353 DEBUG   SenderThread:13901 [sender.py:send():382] send: stats
+2024-02-12 14:36:17,031 INFO    cpu       :13901 [interfaces.py:monitor():140] Process cpu has exited.
+2024-02-12 14:36:17,031 DEBUG   SystemMonitor:13901 [system_monitor.py:_start():179] Finished system metrics aggregation loop
+2024-02-12 14:36:17,034 DEBUG   SystemMonitor:13901 [system_monitor.py:_start():183] Publishing last batch of metrics
+2024-02-12 14:36:17,036 DEBUG   SenderThread:13901 [sender.py:send():382] send: stats
+2024-02-12 14:36:18,038 DEBUG   HandlerThread:13901 [handler.py:handle_request():146] handle_request: status_report
+2024-02-12 14:36:18,734 INFO    MainThread:13901 [internal.py:handle_exit():76] Internal process exited

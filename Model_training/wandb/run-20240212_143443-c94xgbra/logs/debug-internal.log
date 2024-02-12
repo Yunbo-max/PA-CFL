@@ -452,3 +452,13 @@
 2024-02-12 14:35:46,396 INFO    Thread-13 :14618 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/yunbo/Documents/GitHub/PFL_Optimiozation/Model_training/wandb/run-20240212_143443-c94xgbra/files/config.yaml
 2024-02-12 14:35:51,376 DEBUG   HandlerThread:14618 [handler.py:handle_request():146] handle_request: status_report
 2024-02-12 14:35:56,393 DEBUG   HandlerThread:14618 [handler.py:handle_request():146] handle_request: status_report
+2024-02-12 14:36:01,408 DEBUG   HandlerThread:14618 [handler.py:handle_request():146] handle_request: status_report
+2024-02-12 14:36:06,431 DEBUG   HandlerThread:14618 [handler.py:handle_request():146] handle_request: status_report
+2024-02-12 14:36:11,456 DEBUG   HandlerThread:14618 [handler.py:handle_request():146] handle_request: status_report
+2024-02-12 14:36:14,212 DEBUG   SenderThread:14618 [sender.py:send():382] send: stats
+2024-02-12 14:36:17,226 DEBUG   HandlerThread:14618 [handler.py:handle_request():146] handle_request: status_report
+2024-02-12 14:36:18,396 INFO    cpu       :14618 [interfaces.py:monitor():140] Process cpu has exited.
+2024-02-12 14:36:18,396 DEBUG   SystemMonitor:14618 [system_monitor.py:_start():179] Finished system metrics aggregation loop
+2024-02-12 14:36:18,396 DEBUG   SystemMonitor:14618 [system_monitor.py:_start():183] Publishing last batch of metrics
+2024-02-12 14:36:18,397 DEBUG   SenderThread:14618 [sender.py:send():382] send: stats
+2024-02-12 14:36:19,554 INFO    MainThread:14618 [internal.py:handle_exit():76] Internal process exited

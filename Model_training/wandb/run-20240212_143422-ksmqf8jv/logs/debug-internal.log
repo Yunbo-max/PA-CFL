@@ -156,3 +156,8 @@
 2024-02-12 14:35:51,747 DEBUG   HandlerThread:14549 [handler.py:handle_request():146] handle_request: status_report
 2024-02-12 14:35:52,477 DEBUG   SenderThread:14549 [sender.py:send():382] send: stats
 2024-02-12 14:35:57,491 DEBUG   HandlerThread:14549 [handler.py:handle_request():146] handle_request: status_report
+2024-02-12 14:36:02,513 DEBUG   HandlerThread:14549 [handler.py:handle_request():146] handle_request: status_report
+2024-02-12 14:36:07,535 DEBUG   HandlerThread:14549 [handler.py:handle_request():146] handle_request: status_report
+2024-02-12 14:36:12,557 DEBUG   HandlerThread:14549 [handler.py:handle_request():146] handle_request: status_report
+2024-02-12 14:36:17,568 DEBUG   HandlerThread:14549 [handler.py:handle_request():146] handle_request: status_report
+2024-02-12 14:36:17,950 INFO    MainThread:14549 [internal.py:handle_exit():76] Internal process exited
