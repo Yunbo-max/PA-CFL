@@ -2,7 +2,7 @@
 # @Author: Yunbo
 # @Date:   2024-02-11 15:39:33
 # @Last Modified by:   Yunbo
-# @Last Modified time: 2024-02-12 13:53:52
+# @Last Modified time: 2024-02-12 14:07:55
 import pickle
 import xgboost as xgb
 import numpy as np
@@ -64,11 +64,12 @@ region_names = [region_map[int(sheet)].strip() for sheet in sheet_names]
 
 
 # Iterate over each region
+from sklearn.preprocessing import StandardScaler
+
+# Iterate over each region
 for region, data in datasets.items():
     print(region)
     if region.strip() in region_names:
-
-
         print(f"Training XGBoost model for region: {region}")
         
         # Access dataset for a specific region
@@ -76,11 +77,15 @@ for region, data in datasets.items():
         
         # Get train data for the region
         train_features, train_labels = train_dataset[:]
-        print(train_features.shape)
+        
+        # Perform scaling
+        scaler = StandardScaler()
+        train_features_scaled = scaler.fit_transform(train_features)
+        
         
         # Train XGBoost model
         model = xgb.XGBRegressor(objective='reg:squarederror', random_state=42)
-        model.fit(train_features, train_labels)
+        model.fit(train_features_scaled, train_labels)
         
         # Store feature importance scores for this region
         feature_importance_scores.append(model.feature_importances_)

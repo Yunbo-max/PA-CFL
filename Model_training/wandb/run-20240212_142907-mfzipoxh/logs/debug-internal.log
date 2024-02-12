@@ -1,0 +1,256 @@
+2024-02-12 14:29:07,711 INFO    StreamThr :13811 [internal.py:wandb_internal():86] W&B internal server running at pid: 13811, started at: 2024-02-12 14:29:07.710772
+2024-02-12 14:29:07,712 DEBUG   HandlerThread:13811 [handler.py:handle_request():146] handle_request: status
+2024-02-12 14:29:07,716 INFO    WriterThread:13811 [datastore.py:open_for_write():87] open: /Users/yunbo/Documents/GitHub/PFL_Optimiozation/Model_training/wandb/run-20240212_142907-mfzipoxh/run-mfzipoxh.wandb
+2024-02-12 14:29:07,716 DEBUG   SenderThread:13811 [sender.py:send():382] send: header
+2024-02-12 14:29:07,736 DEBUG   SenderThread:13811 [sender.py:send():382] send: run
+2024-02-12 14:29:08,088 INFO    SenderThread:13811 [dir_watcher.py:__init__():211] watching files in: /Users/yunbo/Documents/GitHub/PFL_Optimiozation/Model_training/wandb/run-20240212_142907-mfzipoxh/files
+2024-02-12 14:29:08,088 INFO    SenderThread:13811 [sender.py:_start_run_threads():1136] run started: mfzipoxh with start time 1707748147.711261
+2024-02-12 14:29:08,098 DEBUG   HandlerThread:13811 [handler.py:handle_request():146] handle_request: check_version
+2024-02-12 14:29:08,099 DEBUG   SenderThread:13811 [sender.py:send_request():409] send_request: check_version
+2024-02-12 14:29:08,170 DEBUG   HandlerThread:13811 [handler.py:handle_request():146] handle_request: run_start
+2024-02-12 14:29:08,176 DEBUG   HandlerThread:13811 [system_info.py:__init__():27] System info init
+2024-02-12 14:29:08,176 DEBUG   HandlerThread:13811 [system_info.py:__init__():42] System info init done
+2024-02-12 14:29:08,176 INFO    HandlerThread:13811 [system_monitor.py:start():194] Starting system monitor
+2024-02-12 14:29:08,176 INFO    SystemMonitor:13811 [system_monitor.py:_start():158] Starting system asset monitoring threads
+2024-02-12 14:29:08,176 INFO    HandlerThread:13811 [system_monitor.py:probe():214] Collecting system info
+2024-02-12 14:29:08,177 INFO    SystemMonitor:13811 [interfaces.py:start():190] Started cpu monitoring
+2024-02-12 14:29:08,177 DEBUG   HandlerThread:13811 [system_info.py:probe():151] Probing system
+2024-02-12 14:29:08,177 INFO    SystemMonitor:13811 [interfaces.py:start():190] Started disk monitoring
+2024-02-12 14:29:08,180 INFO    SystemMonitor:13811 [interfaces.py:start():190] Started gpuapple monitoring
+2024-02-12 14:29:08,182 INFO    SystemMonitor:13811 [interfaces.py:start():190] Started memory monitoring
+2024-02-12 14:29:08,182 INFO    SystemMonitor:13811 [interfaces.py:start():190] Started network monitoring
+2024-02-12 14:29:08,187 DEBUG   HandlerThread:13811 [system_info.py:_probe_git():136] Probing git
+2024-02-12 14:29:08,206 DEBUG   HandlerThread:13811 [system_info.py:_probe_git():144] Probing git done
+2024-02-12 14:29:08,206 DEBUG   HandlerThread:13811 [system_info.py:probe():199] Probing system done
+2024-02-12 14:29:08,207 DEBUG   HandlerThread:13811 [system_monitor.py:probe():223] {'os': 'macOS-14.2-arm64-arm-64bit', 'python': '3.9.18', 'heartbeatAt': '2024-02-12T14:29:08.177401', 'startedAt': '2024-02-12T14:29:07.698722', 'docker': None, 'cuda': None, 'args': (), 'state': 'running', 'program': '/Users/yunbo/Documents/GitHub/PFL_Optimiozation/Model_training/server_CNN.py', 'codePathLocal': 'server_CNN.py', 'codePath': 'Model_training/server_CNN.py', 'git': {'remote': 'https://github.com/Yunbo-max/PFL_Optimiozation.git', 'commit': 'e1fc6dc49fc97a51df4800f7e9cabd47be15356e'}, 'email': '82950147+Yunbo-max@users.noreply.github.com', 'root': '/Users/yunbo/Documents/GitHub/PFL_Optimiozation', 'host': 'dhcp-10-249-115-199.eduroam.wireless.private.cam.ac.uk', 'username': 'yunbo', 'executable': '/Users/yunbo/anaconda3/envs/basic/bin/python', 'cpu_count': 10, 'cpu_count_logical': 10, 'disk': {'/': {'total': 460.4317207336426, 'used': 140.09934997558594}}, 'gpuapple': {'type': 'arm', 'vendor': 'Apple'}, 'memory': {'total': 16.0}}
+2024-02-12 14:29:08,207 INFO    HandlerThread:13811 [system_monitor.py:probe():224] Finished collecting system info
+2024-02-12 14:29:08,207 INFO    HandlerThread:13811 [system_monitor.py:probe():227] Publishing system info
+2024-02-12 14:29:08,207 DEBUG   HandlerThread:13811 [system_info.py:_save_conda():208] Saving list of conda packages installed into the current environment
+2024-02-12 14:29:09,094 INFO    Thread-13 :13811 [dir_watcher.py:_on_file_created():271] file/dir created: /Users/yunbo/Documents/GitHub/PFL_Optimiozation/Model_training/wandb/run-20240212_142907-mfzipoxh/files/conda-environment.yaml
+2024-02-12 14:29:13,309 DEBUG   HandlerThread:13811 [system_info.py:_save_conda():220] Saving conda packages done
+2024-02-12 14:29:13,310 INFO    HandlerThread:13811 [system_monitor.py:probe():229] Finished publishing system info
+2024-02-12 14:29:13,317 DEBUG   HandlerThread:13811 [handler.py:handle_request():146] handle_request: status_report
+2024-02-12 14:29:13,317 DEBUG   HandlerThread:13811 [handler.py:handle_request():146] handle_request: keepalive
+2024-02-12 14:29:13,318 DEBUG   SenderThread:13811 [sender.py:send():382] send: files
+2024-02-12 14:29:13,318 INFO    SenderThread:13811 [sender.py:_save_file():1403] saving file wandb-metadata.json with policy now
+2024-02-12 14:29:13,323 DEBUG   HandlerThread:13811 [handler.py:handle_request():146] handle_request: python_packages
+2024-02-12 14:29:13,323 DEBUG   HandlerThread:13811 [handler.py:handle_request():146] handle_request: stop_status
+2024-02-12 14:29:13,324 DEBUG   SenderThread:13811 [sender.py:send_request():409] send_request: python_packages
+2024-02-12 14:29:13,324 DEBUG   HandlerThread:13811 [handler.py:handle_request():146] handle_request: internal_messages
+2024-02-12 14:29:13,324 DEBUG   SenderThread:13811 [sender.py:send_request():409] send_request: stop_status
+2024-02-12 14:29:13,539 DEBUG   SenderThread:13811 [sender.py:send():382] send: telemetry
+2024-02-12 14:29:13,819 INFO    wandb-upload_0:13811 [upload_job.py:push():131] Uploaded file /var/folders/_y/0xw7_0ss0s3f4kfhj9xl96zw0000gn/T/tmpqv1wlskiwandb/v5d6griz-wandb-metadata.json
+2024-02-12 14:29:14,113 INFO    Thread-13 :13811 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/yunbo/Documents/GitHub/PFL_Optimiozation/Model_training/wandb/run-20240212_142907-mfzipoxh/files/conda-environment.yaml
+2024-02-12 14:29:14,113 INFO    Thread-13 :13811 [dir_watcher.py:_on_file_created():271] file/dir created: /Users/yunbo/Documents/GitHub/PFL_Optimiozation/Model_training/wandb/run-20240212_142907-mfzipoxh/files/wandb-metadata.json
+2024-02-12 14:29:14,114 INFO    Thread-13 :13811 [dir_watcher.py:_on_file_created():271] file/dir created: /Users/yunbo/Documents/GitHub/PFL_Optimiozation/Model_training/wandb/run-20240212_142907-mfzipoxh/files/requirements.txt
+2024-02-12 14:29:14,114 INFO    Thread-13 :13811 [dir_watcher.py:_on_file_created():271] file/dir created: /Users/yunbo/Documents/GitHub/PFL_Optimiozation/Model_training/wandb/run-20240212_142907-mfzipoxh/files/output.log
+2024-02-12 14:29:16,124 INFO    Thread-13 :13811 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/yunbo/Documents/GitHub/PFL_Optimiozation/Model_training/wandb/run-20240212_142907-mfzipoxh/files/output.log
+2024-02-12 14:29:18,554 DEBUG   HandlerThread:13811 [handler.py:handle_request():146] handle_request: status_report
+2024-02-12 14:29:23,569 DEBUG   HandlerThread:13811 [handler.py:handle_request():146] handle_request: status_report
+2024-02-12 14:29:28,337 DEBUG   HandlerThread:13811 [handler.py:handle_request():146] handle_request: stop_status
+2024-02-12 14:29:28,337 DEBUG   HandlerThread:13811 [handler.py:handle_request():146] handle_request: internal_messages
+2024-02-12 14:29:28,339 DEBUG   SenderThread:13811 [sender.py:send_request():409] send_request: stop_status
+2024-02-12 14:29:29,504 DEBUG   HandlerThread:13811 [handler.py:handle_request():146] handle_request: status_report
+2024-02-12 14:29:34,522 DEBUG   HandlerThread:13811 [handler.py:handle_request():146] handle_request: status_report
+2024-02-12 14:29:39,536 DEBUG   HandlerThread:13811 [handler.py:handle_request():146] handle_request: status_report
+2024-02-12 14:29:40,229 INFO    Thread-13 :13811 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/yunbo/Documents/GitHub/PFL_Optimiozation/Model_training/wandb/run-20240212_142907-mfzipoxh/files/config.yaml
+2024-02-12 14:29:43,335 DEBUG   HandlerThread:13811 [handler.py:handle_request():146] handle_request: internal_messages
+2024-02-12 14:29:43,335 DEBUG   HandlerThread:13811 [handler.py:handle_request():146] handle_request: stop_status
+2024-02-12 14:29:43,336 DEBUG   SenderThread:13811 [sender.py:send_request():409] send_request: stop_status
+2024-02-12 14:29:45,525 DEBUG   HandlerThread:13811 [handler.py:handle_request():146] handle_request: status_report
+2024-02-12 14:29:50,545 DEBUG   HandlerThread:13811 [handler.py:handle_request():146] handle_request: status_report
+2024-02-12 14:29:55,569 DEBUG   HandlerThread:13811 [handler.py:handle_request():146] handle_request: status_report
+2024-02-12 14:29:58,340 DEBUG   HandlerThread:13811 [handler.py:handle_request():146] handle_request: stop_status
+2024-02-12 14:29:58,341 DEBUG   HandlerThread:13811 [handler.py:handle_request():146] handle_request: internal_messages
+2024-02-12 14:29:58,341 DEBUG   SenderThread:13811 [sender.py:send_request():409] send_request: stop_status
+2024-02-12 14:30:00,602 DEBUG   HandlerThread:13811 [handler.py:handle_request():146] handle_request: status_report
+2024-02-12 14:30:05,617 DEBUG   HandlerThread:13811 [handler.py:handle_request():146] handle_request: status_report
+2024-02-12 14:30:08,188 DEBUG   SystemMonitor:13811 [system_monitor.py:_start():172] Starting system metrics aggregation loop
+2024-02-12 14:30:08,193 DEBUG   SenderThread:13811 [sender.py:send():382] send: telemetry
+2024-02-12 14:30:08,193 DEBUG   SenderThread:13811 [sender.py:send():382] send: stats
+2024-02-12 14:30:11,225 DEBUG   HandlerThread:13811 [handler.py:handle_request():146] handle_request: status_report
+2024-02-12 14:30:12,362 INFO    Thread-13 :13811 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/yunbo/Documents/GitHub/PFL_Optimiozation/Model_training/wandb/run-20240212_142907-mfzipoxh/files/config.yaml
+2024-02-12 14:30:13,343 DEBUG   HandlerThread:13811 [handler.py:handle_request():146] handle_request: internal_messages
+2024-02-12 14:30:13,343 DEBUG   HandlerThread:13811 [handler.py:handle_request():146] handle_request: stop_status
+2024-02-12 14:30:13,347 DEBUG   SenderThread:13811 [sender.py:send_request():409] send_request: stop_status
+2024-02-12 14:30:16,629 DEBUG   HandlerThread:13811 [handler.py:handle_request():146] handle_request: status_report
+2024-02-12 14:30:22,409 INFO    Thread-13 :13811 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/yunbo/Documents/GitHub/PFL_Optimiozation/Model_training/wandb/run-20240212_142907-mfzipoxh/files/output.log
+2024-02-12 14:30:22,613 DEBUG   HandlerThread:13811 [handler.py:handle_request():146] handle_request: status_report
+2024-02-12 14:30:27,629 DEBUG   HandlerThread:13811 [handler.py:handle_request():146] handle_request: status_report
+2024-02-12 14:30:28,341 DEBUG   HandlerThread:13811 [handler.py:handle_request():146] handle_request: internal_messages
+2024-02-12 14:30:28,345 DEBUG   HandlerThread:13811 [handler.py:handle_request():146] handle_request: stop_status
+2024-02-12 14:30:28,346 DEBUG   SenderThread:13811 [sender.py:send_request():409] send_request: stop_status
+2024-02-12 14:30:33,621 DEBUG   HandlerThread:13811 [handler.py:handle_request():146] handle_request: status_report
+2024-02-12 14:30:38,202 DEBUG   SenderThread:13811 [sender.py:send():382] send: stats
+2024-02-12 14:30:39,206 DEBUG   HandlerThread:13811 [handler.py:handle_request():146] handle_request: status_report
+2024-02-12 14:30:43,347 DEBUG   HandlerThread:13811 [handler.py:handle_request():146] handle_request: stop_status
+2024-02-12 14:30:43,347 DEBUG   HandlerThread:13811 [handler.py:handle_request():146] handle_request: internal_messages
+2024-02-12 14:30:43,348 DEBUG   SenderThread:13811 [sender.py:send_request():409] send_request: stop_status
+2024-02-12 14:30:44,655 DEBUG   HandlerThread:13811 [handler.py:handle_request():146] handle_request: status_report
+2024-02-12 14:30:49,675 DEBUG   HandlerThread:13811 [handler.py:handle_request():146] handle_request: status_report
+2024-02-12 14:30:54,693 DEBUG   HandlerThread:13811 [handler.py:handle_request():146] handle_request: status_report
+2024-02-12 14:30:58,351 DEBUG   HandlerThread:13811 [handler.py:handle_request():146] handle_request: stop_status
+2024-02-12 14:30:58,351 DEBUG   HandlerThread:13811 [handler.py:handle_request():146] handle_request: internal_messages
+2024-02-12 14:30:58,351 DEBUG   SenderThread:13811 [sender.py:send_request():409] send_request: stop_status
+2024-02-12 14:31:00,606 DEBUG   HandlerThread:13811 [handler.py:handle_request():146] handle_request: status_report
+2024-02-12 14:31:05,622 DEBUG   HandlerThread:13811 [handler.py:handle_request():146] handle_request: status_report
+2024-02-12 14:31:08,201 DEBUG   SenderThread:13811 [sender.py:send():382] send: stats
+2024-02-12 14:31:08,589 INFO    Thread-13 :13811 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/yunbo/Documents/GitHub/PFL_Optimiozation/Model_training/wandb/run-20240212_142907-mfzipoxh/files/output.log
+2024-02-12 14:31:11,060 DEBUG   HandlerThread:13811 [handler.py:handle_request():146] handle_request: status_report
+2024-02-12 14:31:11,830 DEBUG   HandlerThread:13811 [handler.py:handle_request():146] handle_request: partial_history
+2024-02-12 14:31:11,832 DEBUG   SenderThread:13811 [sender.py:send():382] send: history
+2024-02-12 14:31:11,832 DEBUG   SenderThread:13811 [sender.py:send_request():409] send_request: summary_record
+2024-02-12 14:31:11,832 INFO    SenderThread:13811 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-02-12 14:31:12,602 INFO    Thread-13 :13811 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/yunbo/Documents/GitHub/PFL_Optimiozation/Model_training/wandb/run-20240212_142907-mfzipoxh/files/output.log
+2024-02-12 14:31:12,602 INFO    Thread-13 :13811 [dir_watcher.py:_on_file_created():271] file/dir created: /Users/yunbo/Documents/GitHub/PFL_Optimiozation/Model_training/wandb/run-20240212_142907-mfzipoxh/files/wandb-summary.json
+2024-02-12 14:31:13,354 DEBUG   HandlerThread:13811 [handler.py:handle_request():146] handle_request: stop_status
+2024-02-12 14:31:13,355 DEBUG   HandlerThread:13811 [handler.py:handle_request():146] handle_request: internal_messages
+2024-02-12 14:31:13,355 DEBUG   SenderThread:13811 [sender.py:send_request():409] send_request: stop_status
+2024-02-12 14:31:14,613 INFO    Thread-13 :13811 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/yunbo/Documents/GitHub/PFL_Optimiozation/Model_training/wandb/run-20240212_142907-mfzipoxh/files/output.log
+2024-02-12 14:31:16,199 DEBUG   HandlerThread:13811 [handler.py:handle_request():146] handle_request: partial_history
+2024-02-12 14:31:16,201 DEBUG   HandlerThread:13811 [handler.py:handle_request():146] handle_request: status_report
+2024-02-12 14:31:16,201 DEBUG   SenderThread:13811 [sender.py:send():382] send: history
+2024-02-12 14:31:16,201 DEBUG   SenderThread:13811 [sender.py:send_request():409] send_request: summary_record
+2024-02-12 14:31:16,202 INFO    SenderThread:13811 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-02-12 14:31:16,623 INFO    Thread-13 :13811 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/yunbo/Documents/GitHub/PFL_Optimiozation/Model_training/wandb/run-20240212_142907-mfzipoxh/files/wandb-summary.json
+2024-02-12 14:31:18,633 INFO    Thread-13 :13811 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/yunbo/Documents/GitHub/PFL_Optimiozation/Model_training/wandb/run-20240212_142907-mfzipoxh/files/output.log
+2024-02-12 14:31:20,461 DEBUG   HandlerThread:13811 [handler.py:handle_request():146] handle_request: partial_history
+2024-02-12 14:31:20,463 DEBUG   SenderThread:13811 [sender.py:send():382] send: history
+2024-02-12 14:31:20,463 DEBUG   SenderThread:13811 [sender.py:send_request():409] send_request: summary_record
+2024-02-12 14:31:20,463 INFO    SenderThread:13811 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-02-12 14:31:20,643 INFO    Thread-13 :13811 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/yunbo/Documents/GitHub/PFL_Optimiozation/Model_training/wandb/run-20240212_142907-mfzipoxh/files/wandb-summary.json
+2024-02-12 14:31:21,467 DEBUG   HandlerThread:13811 [handler.py:handle_request():146] handle_request: status_report
+2024-02-12 14:31:22,653 INFO    Thread-13 :13811 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/yunbo/Documents/GitHub/PFL_Optimiozation/Model_training/wandb/run-20240212_142907-mfzipoxh/files/output.log
+2024-02-12 14:31:24,559 DEBUG   HandlerThread:13811 [handler.py:handle_request():146] handle_request: partial_history
+2024-02-12 14:31:24,561 DEBUG   SenderThread:13811 [sender.py:send():382] send: history
+2024-02-12 14:31:24,561 DEBUG   SenderThread:13811 [sender.py:send_request():409] send_request: summary_record
+2024-02-12 14:31:24,562 INFO    SenderThread:13811 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-02-12 14:31:24,660 INFO    Thread-13 :13811 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/yunbo/Documents/GitHub/PFL_Optimiozation/Model_training/wandb/run-20240212_142907-mfzipoxh/files/wandb-summary.json
+2024-02-12 14:31:26,568 DEBUG   HandlerThread:13811 [handler.py:handle_request():146] handle_request: status_report
+2024-02-12 14:31:26,671 INFO    Thread-13 :13811 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/yunbo/Documents/GitHub/PFL_Optimiozation/Model_training/wandb/run-20240212_142907-mfzipoxh/files/output.log
+2024-02-12 14:31:28,355 DEBUG   HandlerThread:13811 [handler.py:handle_request():146] handle_request: stop_status
+2024-02-12 14:31:28,356 DEBUG   SenderThread:13811 [sender.py:send_request():409] send_request: stop_status
+2024-02-12 14:31:28,359 DEBUG   HandlerThread:13811 [handler.py:handle_request():146] handle_request: internal_messages
+2024-02-12 14:31:28,737 DEBUG   HandlerThread:13811 [handler.py:handle_request():146] handle_request: partial_history
+2024-02-12 14:31:28,738 DEBUG   SenderThread:13811 [sender.py:send():382] send: history
+2024-02-12 14:31:28,738 DEBUG   SenderThread:13811 [sender.py:send_request():409] send_request: summary_record
+2024-02-12 14:31:28,739 INFO    SenderThread:13811 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-02-12 14:31:29,682 INFO    Thread-13 :13811 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/yunbo/Documents/GitHub/PFL_Optimiozation/Model_training/wandb/run-20240212_142907-mfzipoxh/files/wandb-summary.json
+2024-02-12 14:31:30,687 INFO    Thread-13 :13811 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/yunbo/Documents/GitHub/PFL_Optimiozation/Model_training/wandb/run-20240212_142907-mfzipoxh/files/output.log
+2024-02-12 14:31:31,755 DEBUG   HandlerThread:13811 [handler.py:handle_request():146] handle_request: status_report
+2024-02-12 14:31:32,984 DEBUG   HandlerThread:13811 [handler.py:handle_request():146] handle_request: partial_history
+2024-02-12 14:31:32,986 DEBUG   SenderThread:13811 [sender.py:send():382] send: history
+2024-02-12 14:31:32,986 DEBUG   SenderThread:13811 [sender.py:send_request():409] send_request: summary_record
+2024-02-12 14:31:32,987 INFO    SenderThread:13811 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-02-12 14:31:33,698 INFO    Thread-13 :13811 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/yunbo/Documents/GitHub/PFL_Optimiozation/Model_training/wandb/run-20240212_142907-mfzipoxh/files/wandb-summary.json
+2024-02-12 14:31:34,702 INFO    Thread-13 :13811 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/yunbo/Documents/GitHub/PFL_Optimiozation/Model_training/wandb/run-20240212_142907-mfzipoxh/files/output.log
+2024-02-12 14:31:36,885 DEBUG   HandlerThread:13811 [handler.py:handle_request():146] handle_request: status_report
+2024-02-12 14:31:37,155 DEBUG   HandlerThread:13811 [handler.py:handle_request():146] handle_request: partial_history
+2024-02-12 14:31:37,157 DEBUG   SenderThread:13811 [sender.py:send():382] send: history
+2024-02-12 14:31:37,158 DEBUG   SenderThread:13811 [sender.py:send_request():409] send_request: summary_record
+2024-02-12 14:31:37,158 INFO    SenderThread:13811 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-02-12 14:31:37,713 INFO    Thread-13 :13811 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/yunbo/Documents/GitHub/PFL_Optimiozation/Model_training/wandb/run-20240212_142907-mfzipoxh/files/wandb-summary.json
+2024-02-12 14:31:38,207 DEBUG   SenderThread:13811 [sender.py:send():382] send: stats
+2024-02-12 14:31:38,718 INFO    Thread-13 :13811 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/yunbo/Documents/GitHub/PFL_Optimiozation/Model_training/wandb/run-20240212_142907-mfzipoxh/files/output.log
+2024-02-12 14:31:41,423 DEBUG   HandlerThread:13811 [handler.py:handle_request():146] handle_request: partial_history
+2024-02-12 14:31:41,425 DEBUG   SenderThread:13811 [sender.py:send():382] send: history
+2024-02-12 14:31:41,425 DEBUG   SenderThread:13811 [sender.py:send_request():409] send_request: summary_record
+2024-02-12 14:31:41,427 INFO    SenderThread:13811 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-02-12 14:31:41,730 INFO    Thread-13 :13811 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/yunbo/Documents/GitHub/PFL_Optimiozation/Model_training/wandb/run-20240212_142907-mfzipoxh/files/wandb-summary.json
+2024-02-12 14:31:42,433 DEBUG   HandlerThread:13811 [handler.py:handle_request():146] handle_request: status_report
+2024-02-12 14:31:42,731 INFO    Thread-13 :13811 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/yunbo/Documents/GitHub/PFL_Optimiozation/Model_training/wandb/run-20240212_142907-mfzipoxh/files/output.log
+2024-02-12 14:31:43,360 DEBUG   HandlerThread:13811 [handler.py:handle_request():146] handle_request: stop_status
+2024-02-12 14:31:43,360 DEBUG   SenderThread:13811 [sender.py:send_request():409] send_request: stop_status
+2024-02-12 14:31:43,363 DEBUG   HandlerThread:13811 [handler.py:handle_request():146] handle_request: internal_messages
+2024-02-12 14:31:45,490 DEBUG   HandlerThread:13811 [handler.py:handle_request():146] handle_request: partial_history
+2024-02-12 14:31:45,492 DEBUG   SenderThread:13811 [sender.py:send():382] send: history
+2024-02-12 14:31:45,492 DEBUG   SenderThread:13811 [sender.py:send_request():409] send_request: summary_record
+2024-02-12 14:31:45,493 INFO    SenderThread:13811 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-02-12 14:31:45,744 INFO    Thread-13 :13811 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/yunbo/Documents/GitHub/PFL_Optimiozation/Model_training/wandb/run-20240212_142907-mfzipoxh/files/wandb-summary.json
+2024-02-12 14:31:46,749 INFO    Thread-13 :13811 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/yunbo/Documents/GitHub/PFL_Optimiozation/Model_training/wandb/run-20240212_142907-mfzipoxh/files/output.log
+2024-02-12 14:31:47,498 DEBUG   HandlerThread:13811 [handler.py:handle_request():146] handle_request: status_report
+2024-02-12 14:31:49,714 DEBUG   HandlerThread:13811 [handler.py:handle_request():146] handle_request: partial_history
+2024-02-12 14:31:49,715 DEBUG   SenderThread:13811 [sender.py:send():382] send: history
+2024-02-12 14:31:49,716 DEBUG   SenderThread:13811 [sender.py:send_request():409] send_request: summary_record
+2024-02-12 14:31:49,716 INFO    SenderThread:13811 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-02-12 14:31:49,758 INFO    Thread-13 :13811 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/yunbo/Documents/GitHub/PFL_Optimiozation/Model_training/wandb/run-20240212_142907-mfzipoxh/files/wandb-summary.json
+2024-02-12 14:31:50,759 INFO    Thread-13 :13811 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/yunbo/Documents/GitHub/PFL_Optimiozation/Model_training/wandb/run-20240212_142907-mfzipoxh/files/output.log
+2024-02-12 14:31:52,728 DEBUG   HandlerThread:13811 [handler.py:handle_request():146] handle_request: status_report
+2024-02-12 14:31:54,031 DEBUG   HandlerThread:13811 [handler.py:handle_request():146] handle_request: partial_history
+2024-02-12 14:31:54,032 DEBUG   SenderThread:13811 [sender.py:send():382] send: history
+2024-02-12 14:31:54,033 DEBUG   SenderThread:13811 [sender.py:send_request():409] send_request: summary_record
+2024-02-12 14:31:54,033 INFO    SenderThread:13811 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-02-12 14:31:54,776 INFO    Thread-13 :13811 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/yunbo/Documents/GitHub/PFL_Optimiozation/Model_training/wandb/run-20240212_142907-mfzipoxh/files/output.log
+2024-02-12 14:31:54,776 INFO    Thread-13 :13811 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/yunbo/Documents/GitHub/PFL_Optimiozation/Model_training/wandb/run-20240212_142907-mfzipoxh/files/wandb-summary.json
+2024-02-12 14:31:56,786 INFO    Thread-13 :13811 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/yunbo/Documents/GitHub/PFL_Optimiozation/Model_training/wandb/run-20240212_142907-mfzipoxh/files/output.log
+2024-02-12 14:31:57,976 DEBUG   HandlerThread:13811 [handler.py:handle_request():146] handle_request: status_report
+2024-02-12 14:31:58,259 DEBUG   HandlerThread:13811 [handler.py:handle_request():146] handle_request: partial_history
+2024-02-12 14:31:58,261 DEBUG   SenderThread:13811 [sender.py:send():382] send: history
+2024-02-12 14:31:58,261 DEBUG   SenderThread:13811 [sender.py:send_request():409] send_request: summary_record
+2024-02-12 14:31:58,261 INFO    SenderThread:13811 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-02-12 14:31:58,365 DEBUG   HandlerThread:13811 [handler.py:handle_request():146] handle_request: stop_status
+2024-02-12 14:31:58,365 DEBUG   SenderThread:13811 [sender.py:send_request():409] send_request: stop_status
+2024-02-12 14:31:58,367 DEBUG   HandlerThread:13811 [handler.py:handle_request():146] handle_request: internal_messages
+2024-02-12 14:31:58,796 INFO    Thread-13 :13811 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/yunbo/Documents/GitHub/PFL_Optimiozation/Model_training/wandb/run-20240212_142907-mfzipoxh/files/wandb-summary.json
+2024-02-12 14:32:00,807 INFO    Thread-13 :13811 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/yunbo/Documents/GitHub/PFL_Optimiozation/Model_training/wandb/run-20240212_142907-mfzipoxh/files/output.log
+2024-02-12 14:32:02,517 DEBUG   HandlerThread:13811 [handler.py:handle_request():146] handle_request: partial_history
+2024-02-12 14:32:02,518 DEBUG   SenderThread:13811 [sender.py:send():382] send: history
+2024-02-12 14:32:02,519 DEBUG   SenderThread:13811 [sender.py:send_request():409] send_request: summary_record
+2024-02-12 14:32:02,519 INFO    SenderThread:13811 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-02-12 14:32:02,817 INFO    Thread-13 :13811 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/yunbo/Documents/GitHub/PFL_Optimiozation/Model_training/wandb/run-20240212_142907-mfzipoxh/files/wandb-summary.json
+2024-02-12 14:32:03,525 DEBUG   HandlerThread:13811 [handler.py:handle_request():146] handle_request: status_report
+2024-02-12 14:32:04,820 INFO    Thread-13 :13811 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/yunbo/Documents/GitHub/PFL_Optimiozation/Model_training/wandb/run-20240212_142907-mfzipoxh/files/output.log
+2024-02-12 14:32:08,211 DEBUG   SenderThread:13811 [sender.py:send():382] send: stats
+2024-02-12 14:32:08,837 INFO    Thread-13 :13811 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/yunbo/Documents/GitHub/PFL_Optimiozation/Model_training/wandb/run-20240212_142907-mfzipoxh/files/output.log
+2024-02-12 14:32:09,216 DEBUG   HandlerThread:13811 [handler.py:handle_request():146] handle_request: status_report
+2024-02-12 14:32:14,235 DEBUG   HandlerThread:13811 [handler.py:handle_request():146] handle_request: status_report
+2024-02-12 14:32:19,257 DEBUG   HandlerThread:13811 [handler.py:handle_request():146] handle_request: status_report
+2024-02-12 14:32:24,279 DEBUG   HandlerThread:13811 [handler.py:handle_request():146] handle_request: status_report
+2024-02-12 14:32:29,290 DEBUG   HandlerThread:13811 [handler.py:handle_request():146] handle_request: status_report
+2024-02-12 14:32:34,314 DEBUG   HandlerThread:13811 [handler.py:handle_request():146] handle_request: status_report
+2024-02-12 14:32:38,217 DEBUG   SenderThread:13811 [sender.py:send():382] send: stats
+2024-02-12 14:32:40,226 DEBUG   HandlerThread:13811 [handler.py:handle_request():146] handle_request: status_report
+2024-02-12 14:32:45,252 DEBUG   HandlerThread:13811 [handler.py:handle_request():146] handle_request: status_report
+2024-02-12 14:32:50,271 DEBUG   HandlerThread:13811 [handler.py:handle_request():146] handle_request: status_report
+2024-02-12 14:32:55,295 DEBUG   HandlerThread:13811 [handler.py:handle_request():146] handle_request: status_report
+2024-02-12 14:33:00,312 DEBUG   HandlerThread:13811 [handler.py:handle_request():146] handle_request: status_report
+2024-02-12 14:33:05,331 DEBUG   HandlerThread:13811 [handler.py:handle_request():146] handle_request: status_report
+2024-02-12 14:33:08,222 DEBUG   SenderThread:13811 [sender.py:send():382] send: stats
+2024-02-12 14:33:11,231 DEBUG   HandlerThread:13811 [handler.py:handle_request():146] handle_request: status_report
+2024-02-12 14:33:16,250 DEBUG   HandlerThread:13811 [handler.py:handle_request():146] handle_request: status_report
+2024-02-12 14:33:21,270 DEBUG   HandlerThread:13811 [handler.py:handle_request():146] handle_request: status_report
+2024-02-12 14:33:26,292 DEBUG   HandlerThread:13811 [handler.py:handle_request():146] handle_request: status_report
+2024-02-12 14:33:31,320 DEBUG   HandlerThread:13811 [handler.py:handle_request():146] handle_request: status_report
+2024-02-12 14:33:36,342 DEBUG   HandlerThread:13811 [handler.py:handle_request():146] handle_request: status_report
+2024-02-12 14:33:38,230 DEBUG   SenderThread:13811 [sender.py:send():382] send: stats
+2024-02-12 14:33:42,247 DEBUG   HandlerThread:13811 [handler.py:handle_request():146] handle_request: status_report
+2024-02-12 14:33:47,271 DEBUG   HandlerThread:13811 [handler.py:handle_request():146] handle_request: status_report
+2024-02-12 14:33:52,291 DEBUG   HandlerThread:13811 [handler.py:handle_request():146] handle_request: status_report
+2024-02-12 14:33:57,310 DEBUG   HandlerThread:13811 [handler.py:handle_request():146] handle_request: status_report
+2024-02-12 14:34:02,326 DEBUG   HandlerThread:13811 [handler.py:handle_request():146] handle_request: status_report
+2024-02-12 14:34:07,340 DEBUG   HandlerThread:13811 [handler.py:handle_request():146] handle_request: status_report
+2024-02-12 14:34:08,233 DEBUG   SenderThread:13811 [sender.py:send():382] send: stats
+2024-02-12 14:34:13,253 DEBUG   HandlerThread:13811 [handler.py:handle_request():146] handle_request: status_report
+2024-02-12 14:34:18,277 DEBUG   HandlerThread:13811 [handler.py:handle_request():146] handle_request: status_report
+2024-02-12 14:34:23,298 DEBUG   HandlerThread:13811 [handler.py:handle_request():146] handle_request: status_report
+2024-02-12 14:34:28,316 DEBUG   HandlerThread:13811 [handler.py:handle_request():146] handle_request: status_report
+2024-02-12 14:34:33,341 DEBUG   HandlerThread:13811 [handler.py:handle_request():146] handle_request: status_report
+2024-02-12 14:34:38,238 DEBUG   SenderThread:13811 [sender.py:send():382] send: stats
+2024-02-12 14:34:39,242 DEBUG   HandlerThread:13811 [handler.py:handle_request():146] handle_request: status_report
+2024-02-12 14:34:44,263 DEBUG   HandlerThread:13811 [handler.py:handle_request():146] handle_request: status_report
+2024-02-12 14:34:49,289 DEBUG   HandlerThread:13811 [handler.py:handle_request():146] handle_request: status_report
+2024-02-12 14:34:54,310 DEBUG   HandlerThread:13811 [handler.py:handle_request():146] handle_request: status_report
+2024-02-12 14:34:59,331 DEBUG   HandlerThread:13811 [handler.py:handle_request():146] handle_request: status_report
+2024-02-12 14:35:04,358 DEBUG   HandlerThread:13811 [handler.py:handle_request():146] handle_request: status_report
+2024-02-12 14:35:08,244 DEBUG   SenderThread:13811 [sender.py:send():382] send: stats
+2024-02-12 14:35:10,254 DEBUG   HandlerThread:13811 [handler.py:handle_request():146] handle_request: status_report
+2024-02-12 14:35:15,272 DEBUG   HandlerThread:13811 [handler.py:handle_request():146] handle_request: status_report
+2024-02-12 14:35:20,290 DEBUG   HandlerThread:13811 [handler.py:handle_request():146] handle_request: status_report
+2024-02-12 14:35:25,301 DEBUG   HandlerThread:13811 [handler.py:handle_request():146] handle_request: status_report
+2024-02-12 14:35:30,323 DEBUG   HandlerThread:13811 [handler.py:handle_request():146] handle_request: status_report
+2024-02-12 14:35:35,341 DEBUG   HandlerThread:13811 [handler.py:handle_request():146] handle_request: status_report
+2024-02-12 14:35:38,249 DEBUG   SenderThread:13811 [sender.py:send():382] send: stats
+2024-02-12 14:35:41,265 DEBUG   HandlerThread:13811 [handler.py:handle_request():146] handle_request: status_report
+2024-02-12 14:35:46,284 DEBUG   HandlerThread:13811 [handler.py:handle_request():146] handle_request: status_report
+2024-02-12 14:35:51,309 DEBUG   HandlerThread:13811 [handler.py:handle_request():146] handle_request: status_report
+2024-02-12 14:35:56,324 DEBUG   HandlerThread:13811 [handler.py:handle_request():146] handle_request: status_report
