@@ -362,3 +362,4 @@ R2 (test data): -1.6433184052230634
 loss (test data): 32608.180771832554
 Epoch 1/10, Loss: 1256.6643
 Epoch 2/10, Loss: 6.3615
+Epoch 3/10, Loss: 3.4904
