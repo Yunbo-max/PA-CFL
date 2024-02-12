@@ -2,7 +2,7 @@
 # @Author: Yunbo
 # @Date:   2024-01-24 10:28:47
 # @Last Modified by:   Yunbo
-# @Last Modified time: 2024-02-12 15:48:16
+# @Last Modified time: 2024-02-12 20:38:03
 # -*- coding = utf-8 -*-
 # @time:05/07/2023 18:11
 # Author:Yunbo Long
@@ -121,7 +121,7 @@ region_map = {
 
 sheet_names = ['0', '1', '2', '3', '5', '6', '7', '9', '10', '12', '14', '16', '17', '22']
 
-sheet_name = '10'
+sheet_name = '3'
 
 value = region_map[float(sheet_name)]
 config = {"region": value}
@@ -131,7 +131,7 @@ wandb.init(project='ISMM_512', config=config)
 # Iterate over each region
 for region, data in datasets.items():
 
-    if region == 'Western Europe':
+    if region == 'Eastern Asia':
 
 
         # Access dataset for a specific region
@@ -399,6 +399,6 @@ class RegressionClient(fl.client.NumPyClient):
 
 # Create the client and start the client
 fl.client.start_numpy_client(
-    server_address="127.0.0.1:8093",
+    server_address="127.0.0.1:8094",
     client=RegressionClient()
 )

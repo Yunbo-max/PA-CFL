@@ -2,7 +2,7 @@
 # @Author: Yunbo
 # @Date:   2024-02-12 12:15:09
 # @Last Modified by:   Yunbo
-# @Last Modified time: 2024-02-12 13:01:49
+# @Last Modified time: 2024-02-12 20:37:09
 
 
 import pandas as pd
@@ -69,8 +69,6 @@ target=data['Sales']
 data=data.drop(columns=['shipping date (DateOrders)','Sales per customer','Order Region','shipping_week_day','order_week_day','Customer Full Name','Sales','Type','Delivery Status','Category Name','Customer City','Customer Country','Customer Segment','Customer State','Customer Street','Department Name','Market','Order City','Order Country','order date (DateOrders)','Order Region','Order State','Order Status','Product Name','shipping date (DateOrders)','Shipping Mode','Order Region','Order Item Product Price','TotalPrice','order date (DateOrders)'])
 
 
-
-
 def Labelencoder_feature(x):
     le=LabelEncoder()
     x=le.fit_transform(x)
@@ -99,8 +97,6 @@ print(data.shape)
 plt.figure(figsize=(100, 50))
 sns.heatmap(correlation_matrix, annot=True, fmt=".3f", cmap="BuPu")
 plt.show()
-
-
 
 
 #Feature Selection based on importance
