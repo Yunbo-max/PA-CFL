@@ -2,7 +2,7 @@
 # @Author: Yunbo
 # @Date:   2024-02-11 00:22:54
 # @Last Modified by:   Yunbo
-# @Last Modified time: 2024-02-11 17:31:08
+# @Last Modified time: 2024-02-12 00:38:03
 import pandas as pd
 import numpy as np
 from sklearn.model_selection import train_test_split
@@ -30,12 +30,7 @@ class CustomDataset(Dataset):
         # Get features and labels
         features = torch.tensor(self.data.iloc[idx, :-1].values, dtype=torch.float32)
         label = torch.tensor(self.data.iloc[idx, -1], dtype=torch.float32)  # Assuming the label is a single value
-        
-        print("Features for idx {}: {}".format(idx, features))
-            
-
         return features, label
-
 
 
 from sklearn.preprocessing import LabelEncoder, OneHotEncoder, StandardScaler
@@ -44,7 +39,7 @@ def preprocess_data(data):
 
     print("Before preprocessing:")
     print(data.dtypes)
-    
+
 
     # Add new features
     data['TotalPrice'] = data['Order Item Quantity'] * data['Sales per customer']
@@ -95,7 +90,6 @@ def preprocess_data(data):
     return data, label_data
 
 
-
 def split_and_save_dataset(dataset, folder_path):
     datasets = {}
     for region, data_region in dataset.groupby('Order Region'):
@@ -108,9 +102,13 @@ def split_and_save_dataset(dataset, folder_path):
         # Preprocess test data
         X_test, test_label_data = preprocess_data(X_test)
         
+        # Concatenate features and labels into a single DataFrame
+        train_data = pd.concat([X_train, train_label_data], axis=1)
+        test_data = pd.concat([X_test, test_label_data], axis=1)
+        
         # Create CustomDataset objects for train and test data
-        train_dataset = CustomDataset(pd.concat([X_train, train_label_data], axis=1))
-        test_dataset = CustomDataset(pd.concat([X_test, test_label_data], axis=1))
+        train_dataset = CustomDataset(train_data)
+        test_dataset = CustomDataset(test_data)
         
         # Store datasets
         datasets[region] = {'train': train_dataset, 'test': test_dataset}
