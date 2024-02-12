@@ -2,7 +2,7 @@
 # @Author: Yunbo
 # @Date:   2024-02-11 15:39:33
 # @Last Modified by:   Yunbo
-# @Last Modified time: 2024-02-12 12:06:47
+# @Last Modified time: 2024-02-12 13:53:52
 import pickle
 import xgboost as xgb
 import numpy as np
@@ -122,7 +122,7 @@ def calculate_emd(prob_dist1, prob_dist2):
 # Calculate similarity matrix using Earth Mover's Distance
 for i in range(num_regions):
     for j in range(i + 1, num_regions):
-        emd_value = calculate_emd(normalized_feature_importance[i], normalized_feature_importance[j])
+        emd_value = calculate_emd(feature_importance_scores[i], feature_importance_scores[j])
         similarity_matrix_xgboost[i, j] = emd_value
         similarity_matrix_xgboost[j, i] = emd_value
 
@@ -165,7 +165,7 @@ from scipy.cluster.hierarchy import linkage, fcluster
 linkage_matrix = linkage(emd_distances, method='average')  # You can adjust the method as desired
 
 # Perform agglomerative clustering
-num_clusters = 3  # Set the number of clusters as desired
+num_clusters = 6  # Set the number of clusters as desired
 cluster_labels = fcluster(linkage_matrix, num_clusters, criterion='maxclust')
 
 # Print cluster labels for each region
@@ -174,3 +174,57 @@ for region, label in zip(region_names, cluster_labels):
 
 
 
+from sklearn.metrics import silhouette_score, calinski_harabasz_score, davies_bouldin_score
+import matplotlib.pyplot as plt
+from sklearn.preprocessing import MinMaxScaler
+
+# Initialize lists to store silhouette scores and other metrics
+silhouette_scores = []
+calinski_harabasz_scores = []
+davies_bouldin_scores = []
+
+# Range of number of clusters to evaluate
+num_clusters_range = range(2, 10)
+
+for num_clusters in num_clusters_range:
+    # Perform agglomerative clustering
+    cluster_labels = fcluster(linkage_matrix, num_clusters, criterion='maxclust')
+    
+    # Calculate silhouette score
+    silhouette = silhouette_score(emd_distances, cluster_labels)
+    silhouette_scores.append(silhouette)
+    
+    # Calculate Calinski-Harabasz score
+    ch_score = calinski_harabasz_score(emd_distances, cluster_labels)
+    calinski_harabasz_scores.append(ch_score)
+    
+    # Calculate Davies-Bouldin score
+    db_score = davies_bouldin_score(emd_distances, cluster_labels)
+    davies_bouldin_scores.append(db_score)
+
+# Plotting silhouette score
+plt.figure(figsize=(10, 6))
+plt.plot(num_clusters_range, silhouette_scores, marker='o')
+plt.title('Silhouette Score vs. Number of Clusters')
+plt.xlabel('Number of Clusters')
+plt.ylabel('Silhouette Score')
+plt.xticks(num_clusters_range)
+plt.grid(True)
+plt.show()
+
+# Scale Davies-Bouldin scores
+scaler = MinMaxScaler()
+davies_bouldin_scores_scaled = scaler.fit_transform(np.array(davies_bouldin_scores).reshape(-1, 1)).flatten()
+calinski_harabasz_scores = scaler.fit_transform(np.array(calinski_harabasz_scores).reshape(-1, 1)).flatten()
+
+# Plotting both evaluation metrics
+plt.figure(figsize=(10, 6))
+plt.plot(num_clusters_range, calinski_harabasz_scores, marker='o', label='Calinski-Harabasz Score')
+plt.plot(num_clusters_range, davies_bouldin_scores_scaled, marker='o', label='Scaled Davies-Bouldin Score')
+plt.title('Calinski-Harabasz and Davies-Bouldin Scores vs. Number of Clusters')
+plt.xlabel('Number of Clusters')
+plt.ylabel('Score')
+plt.xticks(num_clusters_range)
+plt.legend()
+plt.grid(True)
+plt.show()

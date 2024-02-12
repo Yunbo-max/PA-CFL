@@ -2,7 +2,7 @@
 # @Author: Yunbo
 # @Date:   2024-02-11 00:22:54
 # @Last Modified by:   Yunbo
-# @Last Modified time: 2024-02-12 11:31:46
+# @Last Modified time: 2024-02-12 13:16:03
 import pandas as pd
 import numpy as np
 from sklearn.model_selection import train_test_split
@@ -36,54 +36,69 @@ from sklearn.preprocessing import LabelEncoder, OneHotEncoder, StandardScaler
 
 def preprocess_data(data):
 
- 
-    # Add new features
-    data['TotalPrice'] = data['Order Item Quantity'] * data['Sales per customer']
-    data['Customer Zipcode'] = data['Customer Zipcode'].fillna(0)
-    data['operation time'] = (pd.DatetimeIndex(data['shipping date (DateOrders)']) - pd.DatetimeIndex(data['order date (DateOrders)'])).total_seconds() / (60*60)  
+    data['Customer Full Name'] = data['Customer Fname'].astype(str) + data['Customer Lname'].astype(str)
+    data['TotalPrice'] = data['Order Item Quantity'] * data[
+        'Sales per customer']  # Multiplying item price * Order quantity
+
+
 
     data = data.drop(
-    ['Customer Email', 'Customer Id', 'Customer Password', 'Customer Fname', 'Customer Lname',
-      'Product Description', 'Product Image', 'Order Zipcode','Product Status','Order Profit Per Order','Product Price','shipping date (DateOrders)'], axis=1)
+        ['Customer Email', 'Customer Id', 'Customer Password', 'Customer Fname', 'Customer Lname',
+        'Product Description', 'Product Image', 'Order Zipcode','Product Status','Order Profit Per Order','Product Price'], axis=1)
+
+    data['Customer Zipcode'] = data['Customer Zipcode'].fillna(0)  # Filling NaN columns with zero
 
 
-    # Extract datetime features
+
     data['order_year'] = pd.DatetimeIndex(data['order date (DateOrders)']).year
     data['order_month'] = pd.DatetimeIndex(data['order date (DateOrders)']).month
     data['order_week_day'] = pd.DatetimeIndex(data['order date (DateOrders)']).day_name()
     data['order_hour'] = pd.DatetimeIndex(data['order date (DateOrders)']).hour
-    
-    # Label encoding for categorical columns
-    label_encoder = LabelEncoder()
-    categorical_columns = ['Delivery Status', 'Order Status', 'Shipping Mode','Type','Category Name','Customer City','Customer Country', 'Customer Segment','Customer State','Customer Street','Department Name', 'Market','Order City','Order Country','Order State','Product Name','order_week_day',]
-    
-    for col in categorical_columns:
-        data[col] = label_encoder.fit_transform(data[col])
+    # data['order_second'] = pd.DatetimeIndex(data['order date (DateOrders)'])
 
-    
-    # # One-hot encoding for category_data2
-    # category_data2 = pd.get_dummies(data[['Customer Full Name','Type','Category Name','Customer City','Customer Country',
-    #                                        'Customer Segment','Customer State','Customer Street','Department Name',
-    #                                        'Market','Order City','Order Country','order_week_day',
-    #                                        'Order State','Product Name']])
-    
-    # Standardize numerical features
-    scaler = StandardScaler()
-    data[data.select_dtypes(include=['float64', 'int64']).columns] = scaler.fit_transform(data.select_dtypes(include=['float64', 'int64']))
+    data['shipping_year'] = pd.DatetimeIndex(data['shipping date (DateOrders)']).year
+    data['shipping_month'] = pd.DatetimeIndex(data['shipping date (DateOrders)']).month
+    data['shipping_week_day'] = pd.DatetimeIndex(data['shipping date (DateOrders)']).day_name()
+    data['shipping_hour'] = pd.DatetimeIndex(data['shipping date (DateOrders)']).hour
 
-    
-    # Extract label_data
-    label_data = data['Sales']
-    
-    # Drop irrelevant columns
-    data = data.drop(columns=['Sales','order date (DateOrders)','Order Region'])
 
+    label_data = data[['shipping_week_day','order_week_day','Customer Full Name','Type','Delivery Status','Category Name','Customer City','Customer Country','Customer Segment','Customer State','Customer Street','Department Name','Market','Order City','Order Country','order date (DateOrders)','Order State','Order Status','Product Name','Shipping Mode']]
+
+
+    label_y=data['Sales']
+
+    data=data.drop(columns=['shipping date (DateOrders)','Sales per customer','Order Region','shipping_week_day','order_week_day','Customer Full Name','Sales','Type','Delivery Status','Category Name','Customer City','Customer Country','Customer Segment','Customer State','Customer Street','Department Name','Market','Order City','Order Country','order date (DateOrders)','Order Region','Order State','Order Status','Product Name','shipping date (DateOrders)','Shipping Mode','Order Region','Order Item Product Price','TotalPrice','order date (DateOrders)'])
+
+
+
+    def Labelencoder_feature(x):
+        le=LabelEncoder()
+        x=le.fit_transform(x)
+        return x
+
+    # Exclude datetime columns from label encoding
+    # datetime_columns = ['order date (DateOrders)', 'shipping date (DateOrders)']
+    # data_encoded = data.drop(datetime_columns, axis=1)
+
+    # Apply label encoding to remaining columns
+    data_encoded = label_data.apply(Labelencoder_feature)
+
+    data = pd.concat([data_encoded, data], axis=1)
+
+    data=data[['Benefit per order', 'Order Id', 'Order Customer Id', 'Order Item Id',
+ 'Order Item Quantity', 'Department Id', 'Order Item Total', 'Category Id',
+ 'shipping_month', 'Product Card Id', 'Product Name',
+ 'Order Item Cardprod Id', 'order date (DateOrders)', 'Order State',
+ 'Order Item Discount' ,'Market', 'Department Name', 'order_week_day',
+ 'Product Category Id', 'order_year' ,'order_month' ,'Category Name',
+ 'shipping_year' ,'Order City' ,'Days for shipment (scheduled)',
+ 'Customer Segment' ,'Customer Full Name']]
     # Add new features and preprocess data
     
     print("After preprocessing:")
     print(data.shape)
 
-    return data, label_data
+    return data, label_y
 
 
 def split_and_save_dataset(dataset, folder_path):
@@ -93,7 +108,7 @@ def split_and_save_dataset(dataset, folder_path):
         X_test = 0
 
         # Split data
-        X_train, X_test = train_test_split(data_region, test_size=0.2, random_state=42)
+        X_train, X_test = train_test_split(data_region, test_size=0.1, random_state=42)
         
         # Preprocess train data
         X_train, train_label_data = preprocess_data(X_train)
