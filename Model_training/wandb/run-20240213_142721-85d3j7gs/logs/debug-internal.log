@@ -332,3 +332,5 @@
 2024-02-13 14:31:55,926 DEBUG   HandlerThread:35077 [handler.py:handle_request():146] handle_request: status_report
 2024-02-13 14:32:00,949 DEBUG   HandlerThread:35077 [handler.py:handle_request():146] handle_request: status_report
 2024-02-13 14:32:05,974 DEBUG   HandlerThread:35077 [handler.py:handle_request():146] handle_request: status_report
+2024-02-13 14:32:10,990 DEBUG   HandlerThread:35077 [handler.py:handle_request():146] handle_request: status_report
+2024-02-13 14:32:16,007 DEBUG   HandlerThread:35077 [handler.py:handle_request():146] handle_request: status_report
