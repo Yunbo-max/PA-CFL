@@ -145,3 +145,4 @@ DEBUG flwr 2024-02-13 14:28:21,280 | server.py:187 | evaluate_round 34 received 
 DEBUG flwr 2024-02-13 14:28:21,281 | server.py:222 | fit_round 35: strategy sampled 2 clients (out of 2)
 DEBUG flwr 2024-02-13 14:28:22,567 | server.py:236 | fit_round 35 received 2 results and 0 failures
 DEBUG flwr 2024-02-13 14:28:22,568 | server.py:173 | evaluate_round 35: strategy sampled 2 clients (out of 2)
+DEBUG flwr 2024-02-13 14:28:22,912 | server.py:187 | evaluate_round 35 received 1 results and 1 failures

@@ -334,3 +334,49 @@
 2024-02-13 14:32:05,974 DEBUG   HandlerThread:35077 [handler.py:handle_request():146] handle_request: status_report
 2024-02-13 14:32:10,990 DEBUG   HandlerThread:35077 [handler.py:handle_request():146] handle_request: status_report
 2024-02-13 14:32:16,007 DEBUG   HandlerThread:35077 [handler.py:handle_request():146] handle_request: status_report
+2024-02-13 14:32:21,028 DEBUG   HandlerThread:35077 [handler.py:handle_request():146] handle_request: status_report
+2024-02-13 14:32:21,917 DEBUG   SenderThread:35077 [sender.py:send():382] send: stats
+2024-02-13 14:32:26,937 DEBUG   HandlerThread:35077 [handler.py:handle_request():146] handle_request: status_report
+2024-02-13 14:32:31,959 DEBUG   HandlerThread:35077 [handler.py:handle_request():146] handle_request: status_report
+2024-02-13 14:32:36,978 DEBUG   HandlerThread:35077 [handler.py:handle_request():146] handle_request: status_report
+2024-02-13 14:32:41,999 DEBUG   HandlerThread:35077 [handler.py:handle_request():146] handle_request: status_report
+2024-02-13 14:32:47,022 DEBUG   HandlerThread:35077 [handler.py:handle_request():146] handle_request: status_report
+2024-02-13 14:32:51,923 DEBUG   SenderThread:35077 [sender.py:send():382] send: stats
+2024-02-13 14:32:52,928 DEBUG   HandlerThread:35077 [handler.py:handle_request():146] handle_request: status_report
+2024-02-13 14:32:57,939 DEBUG   HandlerThread:35077 [handler.py:handle_request():146] handle_request: status_report
+2024-02-13 14:33:02,960 DEBUG   HandlerThread:35077 [handler.py:handle_request():146] handle_request: status_report
+2024-02-13 14:33:07,973 DEBUG   HandlerThread:35077 [handler.py:handle_request():146] handle_request: status_report
+2024-02-13 14:33:12,995 DEBUG   HandlerThread:35077 [handler.py:handle_request():146] handle_request: status_report
+2024-02-13 14:33:18,012 DEBUG   HandlerThread:35077 [handler.py:handle_request():146] handle_request: status_report
+2024-02-13 14:33:21,929 DEBUG   SenderThread:35077 [sender.py:send():382] send: stats
+2024-02-13 14:33:23,744 WARNING StreamThr :35077 [internal.py:is_dead():414] Internal process exiting, parent pid 35066 disappeared
+2024-02-13 14:33:23,744 ERROR   StreamThr :35077 [internal.py:wandb_internal():152] Internal process shutdown.
+2024-02-13 14:33:23,934 INFO    HandlerThread:35077 [handler.py:finish():869] shutting down handler
+2024-02-13 14:33:23,935 INFO    HandlerThread:35077 [system_monitor.py:finish():203] Stopping system monitor
+2024-02-13 14:33:23,936 INFO    WriterThread:35077 [datastore.py:close():296] close: /Users/yunbo/Documents/GitHub/PFL_Optimiozation/Model_training/wandb/run-20240213_142721-85d3j7gs/run-85d3j7gs.wandb
+2024-02-13 14:33:23,937 INFO    SenderThread:35077 [sender.py:finish():1572] shutting down sender
+2024-02-13 14:33:23,937 DEBUG   SystemMonitor:35077 [system_monitor.py:_start():179] Finished system metrics aggregation loop
+2024-02-13 14:33:23,938 DEBUG   SystemMonitor:35077 [system_monitor.py:_start():183] Publishing last batch of metrics
+2024-02-13 14:33:23,939 INFO    HandlerThread:35077 [interfaces.py:finish():202] Joined cpu monitor
+2024-02-13 14:33:23,940 INFO    HandlerThread:35077 [interfaces.py:finish():202] Joined disk monitor
+2024-02-13 14:33:23,940 INFO    HandlerThread:35077 [interfaces.py:finish():202] Joined gpuapple monitor
+2024-02-13 14:33:23,940 INFO    HandlerThread:35077 [interfaces.py:finish():202] Joined memory monitor
+2024-02-13 14:33:23,940 INFO    HandlerThread:35077 [interfaces.py:finish():202] Joined network monitor
+2024-02-13 14:33:24,469 INFO    SenderThread:35077 [dir_watcher.py:finish():358] shutting down directory watcher
+2024-02-13 14:33:25,296 INFO    SenderThread:35077 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/yunbo/Documents/GitHub/PFL_Optimiozation/Model_training/wandb/run-20240213_142721-85d3j7gs/files/output.log
+2024-02-13 14:33:25,297 INFO    SenderThread:35077 [dir_watcher.py:finish():388] scan: /Users/yunbo/Documents/GitHub/PFL_Optimiozation/Model_training/wandb/run-20240213_142721-85d3j7gs/files
+2024-02-13 14:33:25,298 INFO    SenderThread:35077 [dir_watcher.py:finish():402] scan save: /Users/yunbo/Documents/GitHub/PFL_Optimiozation/Model_training/wandb/run-20240213_142721-85d3j7gs/files/requirements.txt requirements.txt
+2024-02-13 14:33:25,299 INFO    SenderThread:35077 [dir_watcher.py:finish():402] scan save: /Users/yunbo/Documents/GitHub/PFL_Optimiozation/Model_training/wandb/run-20240213_142721-85d3j7gs/files/output.log output.log
+2024-02-13 14:33:25,305 INFO    SenderThread:35077 [dir_watcher.py:finish():402] scan save: /Users/yunbo/Documents/GitHub/PFL_Optimiozation/Model_training/wandb/run-20240213_142721-85d3j7gs/files/config.yaml config.yaml
+2024-02-13 14:33:25,306 INFO    SenderThread:35077 [dir_watcher.py:finish():402] scan save: /Users/yunbo/Documents/GitHub/PFL_Optimiozation/Model_training/wandb/run-20240213_142721-85d3j7gs/files/wandb-summary.json wandb-summary.json
+2024-02-13 14:33:25,311 INFO    SenderThread:35077 [dir_watcher.py:finish():402] scan save: /Users/yunbo/Documents/GitHub/PFL_Optimiozation/Model_training/wandb/run-20240213_142721-85d3j7gs/files/conda-environment.yaml conda-environment.yaml
+2024-02-13 14:33:25,315 INFO    SenderThread:35077 [dir_watcher.py:finish():402] scan save: /Users/yunbo/Documents/GitHub/PFL_Optimiozation/Model_training/wandb/run-20240213_142721-85d3j7gs/files/wandb-metadata.json wandb-metadata.json
+2024-02-13 14:33:25,316 INFO    SenderThread:35077 [file_pusher.py:finish():175] shutting down file pusher
+2024-02-13 14:33:25,318 INFO    SenderThread:35077 [file_pusher.py:join():181] waiting for file pusher
+2024-02-13 14:33:25,717 INFO    wandb-upload_1:35077 [upload_job.py:push():131] Uploaded file /Users/yunbo/Documents/GitHub/PFL_Optimiozation/Model_training/wandb/run-20240213_142721-85d3j7gs/files/output.log
+2024-02-13 14:33:25,728 INFO    wandb-upload_0:35077 [upload_job.py:push():131] Uploaded file /Users/yunbo/Documents/GitHub/PFL_Optimiozation/Model_training/wandb/run-20240213_142721-85d3j7gs/files/requirements.txt
+2024-02-13 14:33:25,770 INFO    wandb-upload_3:35077 [upload_job.py:push():131] Uploaded file /Users/yunbo/Documents/GitHub/PFL_Optimiozation/Model_training/wandb/run-20240213_142721-85d3j7gs/files/wandb-summary.json
+2024-02-13 14:33:25,770 INFO    wandb-upload_2:35077 [upload_job.py:push():131] Uploaded file /Users/yunbo/Documents/GitHub/PFL_Optimiozation/Model_training/wandb/run-20240213_142721-85d3j7gs/files/config.yaml
+2024-02-13 14:33:25,770 INFO    wandb-upload_4:35077 [upload_job.py:push():131] Uploaded file /Users/yunbo/Documents/GitHub/PFL_Optimiozation/Model_training/wandb/run-20240213_142721-85d3j7gs/files/conda-environment.yaml
+2024-02-13 14:33:26,296 INFO    MainThread:35077 [internal.py:handle_exit():76] Internal process exited
+2024-02-13 14:33:26,325 INFO    SenderThread:35077 [file_stream.py:finish():595] file stream finish called
