@@ -1,8 +1,0 @@
-Traceback (most recent call last):
-  File "/Users/yunbo/Documents/GitHub/PFL_Optimiozation/Model_training/client_CNN1_MLP.py", line 147, in <module>
-    xs_train = scaler.fit_transform(train_features)
-NameError: name 'train_features' is not defined
-Traceback (most recent call last):
-  File "/Users/yunbo/Documents/GitHub/PFL_Optimiozation/Model_training/client_CNN1_MLP.py", line 147, in <module>
-    xs_train = scaler.fit_transform(train_features)
-NameError: name 'train_features' is not defined

@@ -1,0 +1,8 @@
+Traceback (most recent call last):
+  File "/Users/yunbo/Documents/GitHub/PFL_Optimiozation/Model_training/4_clusters/client.py", line 207, in <module>
+    from opacus import PrivacyEngine
+ModuleNotFoundError: No module named 'opacus'
+Traceback (most recent call last):
+  File "/Users/yunbo/Documents/GitHub/PFL_Optimiozation/Model_training/4_clusters/client.py", line 207, in <module>
+    from opacus import PrivacyEngine
+ModuleNotFoundError: No module named 'opacus'

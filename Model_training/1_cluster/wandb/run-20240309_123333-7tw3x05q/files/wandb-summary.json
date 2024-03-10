@@ -1,0 +1,1 @@
+{"Communication Time": 3.2966930866241455, "_timestamp": 1709991890.9183629, "_runtime": 4277.772405862808, "_step": 199, "RMSE (test data)": 98.90971374511719, "MAE (test data)": 78.3863296508789, "MAPE (test data)": 101.19037628173828, "MSE (test data)": 9783.1318359375, "R2 (test data)": 0.5873418509785023, "loss(test data)": 9783.131048964056, "_wandb": {"runtime": 4277}}

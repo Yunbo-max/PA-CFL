@@ -1,0 +1,46 @@
+INFO flwr 2024-03-10 10:21:14,695 | grpc.py:52 | Opened insecure gRPC connection (no certificates were passed)
+03/10/2024 10:21:14:INFO:Opened insecure gRPC connection (no certificates were passed)
+DEBUG flwr 2024-03-10 10:21:14,702 | connection.py:42 | ChannelConnectivity.IDLE
+03/10/2024 10:21:14:DEBUG:ChannelConnectivity.IDLE
+DEBUG flwr 2024-03-10 10:21:14,705 | connection.py:42 | ChannelConnectivity.CONNECTING
+03/10/2024 10:21:14:DEBUG:ChannelConnectivity.CONNECTING
+DEBUG flwr 2024-03-10 10:21:34,703 | connection.py:42 | ChannelConnectivity.TRANSIENT_FAILURE
+03/10/2024 10:21:34:DEBUG:ChannelConnectivity.TRANSIENT_FAILURE
+DEBUG flwr 2024-03-10 10:21:34,909 | connection.py:141 | gRPC channel closed
+03/10/2024 10:21:34:DEBUG:gRPC channel closed
+Traceback (most recent call last):
+  File "/Users/yunbo/Documents/GitHub/PFL_Optimiozation/Model_training/4_clusters/client.py", line 398, in <module>
+    fl.client.start_numpy_client(server_address=config["server_address"], client=RegressionClient())
+  File "/Users/yunbo/anaconda3/envs/basic/lib/python3.9/site-packages/flwr/client/app.py", line 401, in start_numpy_client
+    start_client(
+  File "/Users/yunbo/anaconda3/envs/basic/lib/python3.9/site-packages/flwr/client/app.py", line 275, in start_client
+    task_ins = receive()
+  File "/Users/yunbo/anaconda3/envs/basic/lib/python3.9/site-packages/flwr/client/grpc_client/connection.py", line 118, in receive
+    server_message = next(server_message_iterator)
+  File "/Users/yunbo/anaconda3/envs/basic/lib/python3.9/site-packages/grpc/_channel.py", line 540, in __next__
+    return self._next()
+  File "/Users/yunbo/anaconda3/envs/basic/lib/python3.9/site-packages/grpc/_channel.py", line 966, in _next
+    raise self
+grpc._channel._MultiThreadedRendezvous: <_MultiThreadedRendezvous of RPC that terminated with:
+	status = StatusCode.UNAVAILABLE
+	details = "failed to connect to all addresses; last error: UNKNOWN: ipv4:127.0.0.1:8811: connection attempt timed out before receiving SETTINGS frame"
+	debug_error_string = "UNKNOWN:Error received from peer  {created_time:"2024-03-10T10:21:34.702757+00:00", grpc_status:14, grpc_message:"failed to connect to all addresses; last error: UNKNOWN: ipv4:127.0.0.1:8811: connection attempt timed out before receiving SETTINGS frame"}"
+>
+Traceback (most recent call last):
+  File "/Users/yunbo/Documents/GitHub/PFL_Optimiozation/Model_training/4_clusters/client.py", line 398, in <module>
+    fl.client.start_numpy_client(server_address=config["server_address"], client=RegressionClient())
+  File "/Users/yunbo/anaconda3/envs/basic/lib/python3.9/site-packages/flwr/client/app.py", line 401, in start_numpy_client
+    start_client(
+  File "/Users/yunbo/anaconda3/envs/basic/lib/python3.9/site-packages/flwr/client/app.py", line 275, in start_client
+    task_ins = receive()
+  File "/Users/yunbo/anaconda3/envs/basic/lib/python3.9/site-packages/flwr/client/grpc_client/connection.py", line 118, in receive
+    server_message = next(server_message_iterator)
+  File "/Users/yunbo/anaconda3/envs/basic/lib/python3.9/site-packages/grpc/_channel.py", line 540, in __next__
+    return self._next()
+  File "/Users/yunbo/anaconda3/envs/basic/lib/python3.9/site-packages/grpc/_channel.py", line 966, in _next
+    raise self
+grpc._channel._MultiThreadedRendezvous: <_MultiThreadedRendezvous of RPC that terminated with:
+	status = StatusCode.UNAVAILABLE
+	details = "failed to connect to all addresses; last error: UNKNOWN: ipv4:127.0.0.1:8811: connection attempt timed out before receiving SETTINGS frame"
+	debug_error_string = "UNKNOWN:Error received from peer  {created_time:"2024-03-10T10:21:34.702757+00:00", grpc_status:14, grpc_message:"failed to connect to all addresses; last error: UNKNOWN: ipv4:127.0.0.1:8811: connection attempt timed out before receiving SETTINGS frame"}"
+>

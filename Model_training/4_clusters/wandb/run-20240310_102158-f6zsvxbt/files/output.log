@@ -1,0 +1,76 @@
+INFO flwr 2024-03-10 10:22:10,268 | grpc.py:52 | Opened insecure gRPC connection (no certificates were passed)
+03/10/2024 10:22:10:INFO:Opened insecure gRPC connection (no certificates were passed)
+DEBUG flwr 2024-03-10 10:22:10,276 | connection.py:42 | ChannelConnectivity.IDLE
+03/10/2024 10:22:10:DEBUG:ChannelConnectivity.IDLE
+DEBUG flwr 2024-03-10 10:22:10,278 | connection.py:42 | ChannelConnectivity.READY
+03/10/2024 10:22:10:DEBUG:ChannelConnectivity.READY
+Epoch 1/5, Loss: 50406.2890
+Epoch 2/5, Loss: 45591.9006
+Epoch 3/5, Loss: 18510.0689
+Epoch 4/5, Loss: 14499.3363
+Epoch 5/5, Loss: 13961.4993
+Performance Metrics:
+RMSE (test data): 62.55731964111328
+MAE (test data): 48.98472213745117
+MAPE (test data): 84.04275178909302
+MSE (test data): 3913.41845703125
+R2 (test data): 0.6724055848090892
+loss (test data): 3913.418599991946
+DEBUG flwr 2024-03-10 10:23:34,032 | connection.py:141 | gRPC channel closed
+03/10/2024 10:23:34:DEBUG:gRPC channel closed
+Traceback (most recent call last):
+  File "/Users/yunbo/Documents/GitHub/PFL_Optimiozation/Model_training/4_clusters/client.py", line 398, in <module>
+    fl.client.start_numpy_client(server_address=config["server_address"], client=RegressionClient())
+  File "/Users/yunbo/anaconda3/envs/basic/lib/python3.9/site-packages/flwr/client/app.py", line 401, in start_numpy_client
+    start_client(
+  File "/Users/yunbo/anaconda3/envs/basic/lib/python3.9/site-packages/flwr/client/app.py", line 294, in start_client
+    bwd_msg: Bwd = app(fwd=fwd_msg)
+  File "/Users/yunbo/anaconda3/envs/basic/lib/python3.9/site-packages/flwr/client/flower.py", line 82, in __call__
+    task_res = handle(
+  File "/Users/yunbo/anaconda3/envs/basic/lib/python3.9/site-packages/flwr/client/message_handler/message_handler.py", line 117, in handle
+    client_msg = handle_legacy_message(client_fn, server_msg)
+  File "/Users/yunbo/anaconda3/envs/basic/lib/python3.9/site-packages/flwr/client/message_handler/message_handler.py", line 155, in handle_legacy_message
+    return _evaluate(client, server_msg.evaluate_ins)
+  File "/Users/yunbo/anaconda3/envs/basic/lib/python3.9/site-packages/flwr/client/message_handler/message_handler.py", line 227, in _evaluate
+    evaluate_res = maybe_call_evaluate(
+  File "/Users/yunbo/anaconda3/envs/basic/lib/python3.9/site-packages/flwr/client/client.py", line 243, in maybe_call_evaluate
+    return client.evaluate(evaluate_ins)
+  File "/Users/yunbo/anaconda3/envs/basic/lib/python3.9/site-packages/flwr/client/numpy_client.py", line 251, in _evaluate
+    results = self.numpy_client.evaluate(parameters, ins.config)  # type: ignore
+  File "/Users/yunbo/Documents/GitHub/PFL_Optimiozation/Model_training/4_clusters/client.py", line 371, in evaluate
+    wandb.log({'Scatter Plot': wandb.Image('scatter_plot7.png')})
+  File "/Users/yunbo/anaconda3/envs/basic/lib/python3.9/site-packages/wandb/sdk/data_types/image.py", line 177, in __init__
+    self._initialize_from_path(data_or_path)
+  File "/Users/yunbo/anaconda3/envs/basic/lib/python3.9/site-packages/wandb/sdk/data_types/image.py", line 276, in _initialize_from_path
+    self._image = pil_image.open(path)
+  File "/Users/yunbo/anaconda3/envs/basic/lib/python3.9/site-packages/PIL/Image.py", line 3280, in open
+    raise UnidentifiedImageError(msg)
+PIL.UnidentifiedImageError: cannot identify image file 'scatter_plot7.png'
+Traceback (most recent call last):
+  File "/Users/yunbo/Documents/GitHub/PFL_Optimiozation/Model_training/4_clusters/client.py", line 398, in <module>
+    fl.client.start_numpy_client(server_address=config["server_address"], client=RegressionClient())
+  File "/Users/yunbo/anaconda3/envs/basic/lib/python3.9/site-packages/flwr/client/app.py", line 401, in start_numpy_client
+    start_client(
+  File "/Users/yunbo/anaconda3/envs/basic/lib/python3.9/site-packages/flwr/client/app.py", line 294, in start_client
+    bwd_msg: Bwd = app(fwd=fwd_msg)
+  File "/Users/yunbo/anaconda3/envs/basic/lib/python3.9/site-packages/flwr/client/flower.py", line 82, in __call__
+    task_res = handle(
+  File "/Users/yunbo/anaconda3/envs/basic/lib/python3.9/site-packages/flwr/client/message_handler/message_handler.py", line 117, in handle
+    client_msg = handle_legacy_message(client_fn, server_msg)
+  File "/Users/yunbo/anaconda3/envs/basic/lib/python3.9/site-packages/flwr/client/message_handler/message_handler.py", line 155, in handle_legacy_message
+    return _evaluate(client, server_msg.evaluate_ins)
+  File "/Users/yunbo/anaconda3/envs/basic/lib/python3.9/site-packages/flwr/client/message_handler/message_handler.py", line 227, in _evaluate
+    evaluate_res = maybe_call_evaluate(
+  File "/Users/yunbo/anaconda3/envs/basic/lib/python3.9/site-packages/flwr/client/client.py", line 243, in maybe_call_evaluate
+    return client.evaluate(evaluate_ins)
+  File "/Users/yunbo/anaconda3/envs/basic/lib/python3.9/site-packages/flwr/client/numpy_client.py", line 251, in _evaluate
+    results = self.numpy_client.evaluate(parameters, ins.config)  # type: ignore
+  File "/Users/yunbo/Documents/GitHub/PFL_Optimiozation/Model_training/4_clusters/client.py", line 371, in evaluate
+    wandb.log({'Scatter Plot': wandb.Image('scatter_plot7.png')})
+  File "/Users/yunbo/anaconda3/envs/basic/lib/python3.9/site-packages/wandb/sdk/data_types/image.py", line 177, in __init__
+    self._initialize_from_path(data_or_path)
+  File "/Users/yunbo/anaconda3/envs/basic/lib/python3.9/site-packages/wandb/sdk/data_types/image.py", line 276, in _initialize_from_path
+    self._image = pil_image.open(path)
+  File "/Users/yunbo/anaconda3/envs/basic/lib/python3.9/site-packages/PIL/Image.py", line 3280, in open
+    raise UnidentifiedImageError(msg)
+PIL.UnidentifiedImageError: cannot identify image file 'scatter_plot7.png'

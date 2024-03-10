@@ -1,0 +1,49 @@
+INFO flwr 2024-03-10 10:07:09,897 | grpc.py:52 | Opened insecure gRPC connection (no certificates were passed)
+DEBUG flwr 2024-03-10 10:07:09,908 | connection.py:42 | ChannelConnectivity.IDLE
+DEBUG flwr 2024-03-10 10:07:09,920 | connection.py:42 | ChannelConnectivity.CONNECTING
+DEBUG flwr 2024-03-10 10:07:09,920 | connection.py:42 | ChannelConnectivity.READY
+DEBUG flwr 2024-03-10 10:07:10,329 | connection.py:141 | gRPC channel closed
+Traceback (most recent call last):
+  File "/Users/yunbo/Documents/GitHub/PFL_Optimiozation/Model_training/4_clusters/client.py", line 393, in <module>
+    fl.client.start_numpy_client(server_address=config["server_address"], client=RegressionClient())
+  File "/Users/yunbo/anaconda3/envs/basic/lib/python3.9/site-packages/flwr/client/app.py", line 401, in start_numpy_client
+    start_client(
+  File "/Users/yunbo/anaconda3/envs/basic/lib/python3.9/site-packages/flwr/client/app.py", line 294, in start_client
+    bwd_msg: Bwd = app(fwd=fwd_msg)
+  File "/Users/yunbo/anaconda3/envs/basic/lib/python3.9/site-packages/flwr/client/flower.py", line 82, in __call__
+    task_res = handle(
+  File "/Users/yunbo/anaconda3/envs/basic/lib/python3.9/site-packages/flwr/client/message_handler/message_handler.py", line 117, in handle
+    client_msg = handle_legacy_message(client_fn, server_msg)
+  File "/Users/yunbo/anaconda3/envs/basic/lib/python3.9/site-packages/flwr/client/message_handler/message_handler.py", line 153, in handle_legacy_message
+    return _fit(client, server_msg.fit_ins)
+  File "/Users/yunbo/anaconda3/envs/basic/lib/python3.9/site-packages/flwr/client/message_handler/message_handler.py", line 212, in _fit
+    fit_res = maybe_call_fit(
+  File "/Users/yunbo/anaconda3/envs/basic/lib/python3.9/site-packages/flwr/client/client.py", line 223, in maybe_call_fit
+    return client.fit(fit_ins)
+  File "/Users/yunbo/anaconda3/envs/basic/lib/python3.9/site-packages/flwr/client/numpy_client.py", line 227, in _fit
+    results = self.numpy_client.fit(parameters, ins.config)  # type: ignore
+  File "/Users/yunbo/Documents/GitHub/PFL_Optimiozation/Model_training/4_clusters/client.py", line 219, in fit
+    model = SalesPredictionCNN()
+NameError: name 'SalesPredictionCNN' is not defined
+Traceback (most recent call last):
+  File "/Users/yunbo/Documents/GitHub/PFL_Optimiozation/Model_training/4_clusters/client.py", line 393, in <module>
+    fl.client.start_numpy_client(server_address=config["server_address"], client=RegressionClient())
+  File "/Users/yunbo/anaconda3/envs/basic/lib/python3.9/site-packages/flwr/client/app.py", line 401, in start_numpy_client
+    start_client(
+  File "/Users/yunbo/anaconda3/envs/basic/lib/python3.9/site-packages/flwr/client/app.py", line 294, in start_client
+    bwd_msg: Bwd = app(fwd=fwd_msg)
+  File "/Users/yunbo/anaconda3/envs/basic/lib/python3.9/site-packages/flwr/client/flower.py", line 82, in __call__
+    task_res = handle(
+  File "/Users/yunbo/anaconda3/envs/basic/lib/python3.9/site-packages/flwr/client/message_handler/message_handler.py", line 117, in handle
+    client_msg = handle_legacy_message(client_fn, server_msg)
+  File "/Users/yunbo/anaconda3/envs/basic/lib/python3.9/site-packages/flwr/client/message_handler/message_handler.py", line 153, in handle_legacy_message
+    return _fit(client, server_msg.fit_ins)
+  File "/Users/yunbo/anaconda3/envs/basic/lib/python3.9/site-packages/flwr/client/message_handler/message_handler.py", line 212, in _fit
+    fit_res = maybe_call_fit(
+  File "/Users/yunbo/anaconda3/envs/basic/lib/python3.9/site-packages/flwr/client/client.py", line 223, in maybe_call_fit
+    return client.fit(fit_ins)
+  File "/Users/yunbo/anaconda3/envs/basic/lib/python3.9/site-packages/flwr/client/numpy_client.py", line 227, in _fit
+    results = self.numpy_client.fit(parameters, ins.config)  # type: ignore
+  File "/Users/yunbo/Documents/GitHub/PFL_Optimiozation/Model_training/4_clusters/client.py", line 219, in fit
+    model = SalesPredictionCNN()
+NameError: name 'SalesPredictionCNN' is not defined

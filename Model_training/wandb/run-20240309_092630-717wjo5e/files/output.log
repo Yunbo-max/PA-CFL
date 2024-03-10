@@ -1,0 +1,4 @@
+Traceback (most recent call last):
+  File "/Users/yunbo/Documents/GitHub/PFL_Optimiozation/Model_training/server_CNN.py", line 288, in <module>
+    evaluate_fn=get_evaluate_fn(model, args.toy),
+NameError: name 'get_evaluate_fn' is not defined

@@ -1,0 +1,19 @@
+INFO flwr 2024-03-10 10:26:31,003 | grpc.py:52 | Opened insecure gRPC connection (no certificates were passed)
+03/10/2024 10:26:31:INFO:Opened insecure gRPC connection (no certificates were passed)
+DEBUG flwr 2024-03-10 10:26:31,023 | connection.py:42 | ChannelConnectivity.IDLE
+03/10/2024 10:26:31:DEBUG:ChannelConnectivity.IDLE
+DEBUG flwr 2024-03-10 10:26:31,026 | connection.py:42 | ChannelConnectivity.CONNECTING
+03/10/2024 10:26:31:DEBUG:ChannelConnectivity.CONNECTING
+DEBUG flwr 2024-03-10 10:26:31,048 | connection.py:42 | ChannelConnectivity.READY
+03/10/2024 10:26:31:DEBUG:ChannelConnectivity.READY
+Epoch 1/5, Loss: 49674.3948
+Epoch 2/5, Loss: 38460.1016
+Epoch 3/5, Loss: 14587.0688
+Epoch 4/5, Loss: 14926.8263
+Epoch 5/5, Loss: 13188.6281
+Performance Metrics:
+RMSE (test data): 64.59796905517578
+MAE (test data): 51.411190032958984
+MAPE (test data): 83.62618684768677
+MSE (test data): 4172.8974609375
+R2 (test data): 0.6457728978397066

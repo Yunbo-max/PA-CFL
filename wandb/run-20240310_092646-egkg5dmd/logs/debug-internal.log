@@ -1,0 +1,437 @@
+2024-03-10 09:26:47,553 INFO    StreamThr :5939 [internal.py:wandb_internal():86] W&B internal server running at pid: 5939, started at: 2024-03-10 09:26:47.552473
+2024-03-10 09:26:47,554 DEBUG   HandlerThread:5939 [handler.py:handle_request():146] handle_request: status
+2024-03-10 09:26:47,555 INFO    WriterThread:5939 [datastore.py:open_for_write():87] open: /Users/yunbo/Documents/GitHub/PFL_Optimiozation/wandb/run-20240310_092646-egkg5dmd/run-egkg5dmd.wandb
+2024-03-10 09:26:47,556 DEBUG   SenderThread:5939 [sender.py:send():382] send: header
+2024-03-10 09:26:47,556 DEBUG   SenderThread:5939 [sender.py:send():382] send: run
+2024-03-10 09:26:47,914 INFO    SenderThread:5939 [dir_watcher.py:__init__():211] watching files in: /Users/yunbo/Documents/GitHub/PFL_Optimiozation/wandb/run-20240310_092646-egkg5dmd/files
+2024-03-10 09:26:47,915 INFO    SenderThread:5939 [sender.py:_start_run_threads():1136] run started: egkg5dmd with start time 1710062806.5886
+2024-03-10 09:26:47,929 DEBUG   HandlerThread:5939 [handler.py:handle_request():146] handle_request: check_version
+2024-03-10 09:26:47,930 DEBUG   SenderThread:5939 [sender.py:send_request():409] send_request: check_version
+2024-03-10 09:26:48,010 DEBUG   HandlerThread:5939 [handler.py:handle_request():146] handle_request: run_start
+2024-03-10 09:26:48,013 DEBUG   HandlerThread:5939 [system_info.py:__init__():27] System info init
+2024-03-10 09:26:48,013 DEBUG   HandlerThread:5939 [system_info.py:__init__():42] System info init done
+2024-03-10 09:26:48,013 INFO    HandlerThread:5939 [system_monitor.py:start():194] Starting system monitor
+2024-03-10 09:26:48,014 INFO    SystemMonitor:5939 [system_monitor.py:_start():158] Starting system asset monitoring threads
+2024-03-10 09:26:48,014 INFO    HandlerThread:5939 [system_monitor.py:probe():214] Collecting system info
+2024-03-10 09:26:48,014 DEBUG   HandlerThread:5939 [system_info.py:probe():151] Probing system
+2024-03-10 09:26:48,015 INFO    SystemMonitor:5939 [interfaces.py:start():190] Started cpu monitoring
+2024-03-10 09:26:48,023 INFO    SystemMonitor:5939 [interfaces.py:start():190] Started disk monitoring
+2024-03-10 09:26:48,025 INFO    SystemMonitor:5939 [interfaces.py:start():190] Started gpuapple monitoring
+2024-03-10 09:26:48,041 INFO    SystemMonitor:5939 [interfaces.py:start():190] Started memory monitoring
+2024-03-10 09:26:48,043 INFO    SystemMonitor:5939 [interfaces.py:start():190] Started network monitoring
+2024-03-10 09:26:48,044 DEBUG   HandlerThread:5939 [system_info.py:_probe_git():136] Probing git
+2024-03-10 09:26:48,074 DEBUG   HandlerThread:5939 [system_info.py:_probe_git():144] Probing git done
+2024-03-10 09:26:48,074 DEBUG   HandlerThread:5939 [system_info.py:probe():199] Probing system done
+2024-03-10 09:26:48,074 DEBUG   HandlerThread:5939 [system_monitor.py:probe():223] {'os': 'macOS-14.2-arm64-arm-64bit', 'python': '3.9.18', 'heartbeatAt': '2024-03-10T09:26:48.015298', 'startedAt': '2024-03-10T09:26:46.583349', 'docker': None, 'cuda': None, 'args': (), 'state': 'running', 'program': '/Users/yunbo/Documents/GitHub/PFL_Optimiozation/Local_learning/MLP_locl.py', 'codePathLocal': 'Local_learning/MLP_locl.py', 'codePath': 'Local_learning/MLP_locl.py', 'git': {'remote': 'https://github.com/Yunbo-max/PFL_Optimiozation.git', 'commit': '406fded0406405b436908435d22a52c9b01b0299'}, 'email': '82950147+Yunbo-max@users.noreply.github.com', 'root': '/Users/yunbo/Documents/GitHub/PFL_Optimiozation', 'host': 'dhcp-10-249-98-185.eduroam.wireless.private.cam.ac.uk', 'username': 'yunbo', 'executable': '/Users/yunbo/anaconda3/envs/basic/bin/python', 'cpu_count': 10, 'cpu_count_logical': 10, 'disk': {'/': {'total': 460.4317207336426, 'used': 158.2711296081543}}, 'gpuapple': {'type': 'arm', 'vendor': 'Apple'}, 'memory': {'total': 16.0}}
+2024-03-10 09:26:48,074 INFO    HandlerThread:5939 [system_monitor.py:probe():224] Finished collecting system info
+2024-03-10 09:26:48,074 INFO    HandlerThread:5939 [system_monitor.py:probe():227] Publishing system info
+2024-03-10 09:26:48,074 DEBUG   HandlerThread:5939 [system_info.py:_save_conda():208] Saving list of conda packages installed into the current environment
+2024-03-10 09:26:48,920 INFO    Thread-219:5939 [dir_watcher.py:_on_file_created():271] file/dir created: /Users/yunbo/Documents/GitHub/PFL_Optimiozation/wandb/run-20240310_092646-egkg5dmd/files/conda-environment.yaml
+2024-03-10 09:26:53,671 DEBUG   HandlerThread:5939 [system_info.py:_save_conda():220] Saving conda packages done
+2024-03-10 09:26:53,672 INFO    HandlerThread:5939 [system_monitor.py:probe():229] Finished publishing system info
+2024-03-10 09:26:53,672 DEBUG   HandlerThread:5939 [handler.py:handle_request():146] handle_request: status_report
+2024-03-10 09:26:53,672 DEBUG   HandlerThread:5939 [handler.py:handle_request():146] handle_request: keepalive
+2024-03-10 09:26:53,673 DEBUG   SenderThread:5939 [sender.py:send():382] send: files
+2024-03-10 09:26:53,673 INFO    SenderThread:5939 [sender.py:_save_file():1403] saving file wandb-metadata.json with policy now
+2024-03-10 09:26:53,679 DEBUG   HandlerThread:5939 [handler.py:handle_request():146] handle_request: python_packages
+2024-03-10 09:26:53,679 DEBUG   SenderThread:5939 [sender.py:send_request():409] send_request: python_packages
+2024-03-10 09:26:53,680 DEBUG   HandlerThread:5939 [handler.py:handle_request():146] handle_request: stop_status
+2024-03-10 09:26:53,680 DEBUG   HandlerThread:5939 [handler.py:handle_request():146] handle_request: internal_messages
+2024-03-10 09:26:53,681 DEBUG   SenderThread:5939 [sender.py:send_request():409] send_request: stop_status
+2024-03-10 09:26:53,832 DEBUG   HandlerThread:5939 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-10 09:26:53,905 DEBUG   SenderThread:5939 [sender.py:send():382] send: telemetry
+2024-03-10 09:26:53,910 DEBUG   SenderThread:5939 [sender.py:send():382] send: history
+2024-03-10 09:26:53,910 DEBUG   SenderThread:5939 [sender.py:send_request():409] send_request: summary_record
+2024-03-10 09:26:53,910 INFO    SenderThread:5939 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-03-10 09:26:53,943 DEBUG   HandlerThread:5939 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-10 09:26:53,944 DEBUG   SenderThread:5939 [sender.py:send():382] send: files
+2024-03-10 09:26:53,945 INFO    SenderThread:5939 [sender.py:_save_file():1403] saving file media/images/Scatter Plot_1_b9b75fcf73ec3dbbe797.png with policy now
+2024-03-10 09:26:53,945 DEBUG   SenderThread:5939 [sender.py:send():382] send: history
+2024-03-10 09:26:53,945 DEBUG   SenderThread:5939 [sender.py:send_request():409] send_request: summary_record
+2024-03-10 09:26:53,945 INFO    SenderThread:5939 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-03-10 09:26:53,945 INFO    Thread-219:5939 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/yunbo/Documents/GitHub/PFL_Optimiozation/wandb/run-20240310_092646-egkg5dmd/files/conda-environment.yaml
+2024-03-10 09:26:53,946 INFO    Thread-219:5939 [dir_watcher.py:_on_file_created():271] file/dir created: /Users/yunbo/Documents/GitHub/PFL_Optimiozation/wandb/run-20240310_092646-egkg5dmd/files/requirements.txt
+2024-03-10 09:26:53,946 INFO    Thread-219:5939 [dir_watcher.py:_on_file_created():271] file/dir created: /Users/yunbo/Documents/GitHub/PFL_Optimiozation/wandb/run-20240310_092646-egkg5dmd/files/output.log
+2024-03-10 09:26:53,946 INFO    Thread-219:5939 [dir_watcher.py:_on_file_created():271] file/dir created: /Users/yunbo/Documents/GitHub/PFL_Optimiozation/wandb/run-20240310_092646-egkg5dmd/files/media/images/Scatter Plot_1_b9b75fcf73ec3dbbe797.png
+2024-03-10 09:26:53,946 INFO    Thread-219:5939 [dir_watcher.py:_on_file_created():271] file/dir created: /Users/yunbo/Documents/GitHub/PFL_Optimiozation/wandb/run-20240310_092646-egkg5dmd/files/wandb-summary.json
+2024-03-10 09:26:53,946 INFO    Thread-219:5939 [dir_watcher.py:_on_file_created():271] file/dir created: /Users/yunbo/Documents/GitHub/PFL_Optimiozation/wandb/run-20240310_092646-egkg5dmd/files/wandb-metadata.json
+2024-03-10 09:26:53,946 INFO    Thread-219:5939 [dir_watcher.py:_on_file_created():271] file/dir created: /Users/yunbo/Documents/GitHub/PFL_Optimiozation/wandb/run-20240310_092646-egkg5dmd/files/media
+2024-03-10 09:26:53,947 INFO    Thread-219:5939 [dir_watcher.py:_on_file_created():271] file/dir created: /Users/yunbo/Documents/GitHub/PFL_Optimiozation/wandb/run-20240310_092646-egkg5dmd/files/media/images
+2024-03-10 09:26:54,040 DEBUG   HandlerThread:5939 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-10 09:26:54,041 DEBUG   SenderThread:5939 [sender.py:send():382] send: files
+2024-03-10 09:26:54,041 INFO    SenderThread:5939 [sender.py:_save_file():1403] saving file media/images/Distribution Plot_2_abe262af9995ac137629.png with policy now
+2024-03-10 09:26:54,042 DEBUG   SenderThread:5939 [sender.py:send():382] send: history
+2024-03-10 09:26:54,042 DEBUG   SenderThread:5939 [sender.py:send_request():409] send_request: summary_record
+2024-03-10 09:26:54,042 INFO    SenderThread:5939 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-03-10 09:26:54,121 DEBUG   HandlerThread:5939 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-10 09:26:54,122 DEBUG   SenderThread:5939 [sender.py:send():382] send: history
+2024-03-10 09:26:54,123 DEBUG   SenderThread:5939 [sender.py:send_request():409] send_request: summary_record
+2024-03-10 09:26:54,123 INFO    SenderThread:5939 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-03-10 09:26:54,165 INFO    wandb-upload_0:5939 [upload_job.py:push():131] Uploaded file /var/folders/_y/0xw7_0ss0s3f4kfhj9xl96zw0000gn/T/tmpa1z__lxywandb/ijg4mh09-wandb-metadata.json
+2024-03-10 09:26:54,210 DEBUG   HandlerThread:5939 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-10 09:26:54,210 DEBUG   SenderThread:5939 [sender.py:send():382] send: files
+2024-03-10 09:26:54,211 INFO    SenderThread:5939 [sender.py:_save_file():1403] saving file media/images/Scatter Plot_4_708a42d3ff37ecc72d6b.png with policy now
+2024-03-10 09:26:54,211 DEBUG   SenderThread:5939 [sender.py:send():382] send: history
+2024-03-10 09:26:54,212 DEBUG   SenderThread:5939 [sender.py:send_request():409] send_request: summary_record
+2024-03-10 09:26:54,212 INFO    SenderThread:5939 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-03-10 09:26:54,299 DEBUG   HandlerThread:5939 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-10 09:26:54,300 DEBUG   SenderThread:5939 [sender.py:send():382] send: files
+2024-03-10 09:26:54,300 INFO    SenderThread:5939 [sender.py:_save_file():1403] saving file media/images/Distribution Plot_5_be674764add2098a9d1d.png with policy now
+2024-03-10 09:26:54,301 DEBUG   SenderThread:5939 [sender.py:send():382] send: history
+2024-03-10 09:26:54,301 DEBUG   SenderThread:5939 [sender.py:send_request():409] send_request: summary_record
+2024-03-10 09:26:54,302 INFO    SenderThread:5939 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-03-10 09:26:54,437 INFO    wandb-upload_1:5939 [upload_job.py:push():131] Uploaded file /var/folders/_y/0xw7_0ss0s3f4kfhj9xl96zw0000gn/T/tmpa1z__lxywandb/thuy8f4y-media/images/Scatter Plot_1_b9b75fcf73ec3dbbe797.png
+2024-03-10 09:26:54,469 DEBUG   HandlerThread:5939 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-10 09:26:54,471 DEBUG   SenderThread:5939 [sender.py:send():382] send: history
+2024-03-10 09:26:54,471 DEBUG   SenderThread:5939 [sender.py:send_request():409] send_request: summary_record
+2024-03-10 09:26:54,472 INFO    SenderThread:5939 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-03-10 09:26:54,479 INFO    wandb-upload_2:5939 [upload_job.py:push():131] Uploaded file /var/folders/_y/0xw7_0ss0s3f4kfhj9xl96zw0000gn/T/tmpa1z__lxywandb/51twg6in-media/images/Distribution Plot_2_abe262af9995ac137629.png
+2024-03-10 09:26:54,514 DEBUG   HandlerThread:5939 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-10 09:26:54,514 DEBUG   SenderThread:5939 [sender.py:send():382] send: files
+2024-03-10 09:26:54,514 INFO    SenderThread:5939 [sender.py:_save_file():1403] saving file media/images/Scatter Plot_7_e7a8822a73e43d324680.png with policy now
+2024-03-10 09:26:54,514 DEBUG   SenderThread:5939 [sender.py:send():382] send: history
+2024-03-10 09:26:54,514 DEBUG   SenderThread:5939 [sender.py:send_request():409] send_request: summary_record
+2024-03-10 09:26:54,515 INFO    SenderThread:5939 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-03-10 09:26:54,599 DEBUG   HandlerThread:5939 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-10 09:26:54,600 DEBUG   SenderThread:5939 [sender.py:send():382] send: files
+2024-03-10 09:26:54,600 INFO    SenderThread:5939 [sender.py:_save_file():1403] saving file media/images/Distribution Plot_8_6e0c2425290f93139dbd.png with policy now
+2024-03-10 09:26:54,600 DEBUG   SenderThread:5939 [sender.py:send():382] send: history
+2024-03-10 09:26:54,601 DEBUG   SenderThread:5939 [sender.py:send_request():409] send_request: summary_record
+2024-03-10 09:26:54,601 INFO    SenderThread:5939 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-03-10 09:26:54,690 INFO    wandb-upload_0:5939 [upload_job.py:push():131] Uploaded file /var/folders/_y/0xw7_0ss0s3f4kfhj9xl96zw0000gn/T/tmpa1z__lxywandb/n5czyyew-media/images/Scatter Plot_4_708a42d3ff37ecc72d6b.png
+2024-03-10 09:26:54,706 DEBUG   HandlerThread:5939 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-10 09:26:54,708 DEBUG   SenderThread:5939 [sender.py:send():382] send: history
+2024-03-10 09:26:54,708 DEBUG   SenderThread:5939 [sender.py:send_request():409] send_request: summary_record
+2024-03-10 09:26:54,708 INFO    SenderThread:5939 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-03-10 09:26:54,770 INFO    wandb-upload_3:5939 [upload_job.py:push():131] Uploaded file /var/folders/_y/0xw7_0ss0s3f4kfhj9xl96zw0000gn/T/tmpa1z__lxywandb/vlrkeba1-media/images/Distribution Plot_5_be674764add2098a9d1d.png
+2024-03-10 09:26:54,790 DEBUG   HandlerThread:5939 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-10 09:26:54,790 DEBUG   SenderThread:5939 [sender.py:send():382] send: files
+2024-03-10 09:26:54,790 INFO    SenderThread:5939 [sender.py:_save_file():1403] saving file media/images/Scatter Plot_10_36fceeefe3c3d51f92bb.png with policy now
+2024-03-10 09:26:54,791 DEBUG   SenderThread:5939 [sender.py:send():382] send: history
+2024-03-10 09:26:54,791 DEBUG   SenderThread:5939 [sender.py:send_request():409] send_request: summary_record
+2024-03-10 09:26:54,792 INFO    SenderThread:5939 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-03-10 09:26:54,886 DEBUG   HandlerThread:5939 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-10 09:26:54,887 DEBUG   SenderThread:5939 [sender.py:send():382] send: files
+2024-03-10 09:26:54,888 INFO    SenderThread:5939 [sender.py:_save_file():1403] saving file media/images/Distribution Plot_11_6332485f55d612153e26.png with policy now
+2024-03-10 09:26:54,888 DEBUG   SenderThread:5939 [sender.py:send():382] send: history
+2024-03-10 09:26:54,888 DEBUG   SenderThread:5939 [sender.py:send_request():409] send_request: summary_record
+2024-03-10 09:26:54,889 INFO    SenderThread:5939 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-03-10 09:26:54,953 INFO    Thread-219:5939 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/yunbo/Documents/GitHub/PFL_Optimiozation/wandb/run-20240310_092646-egkg5dmd/files/wandb-summary.json
+2024-03-10 09:26:54,953 INFO    Thread-219:5939 [dir_watcher.py:_on_file_created():271] file/dir created: /Users/yunbo/Documents/GitHub/PFL_Optimiozation/wandb/run-20240310_092646-egkg5dmd/files/media/images/Distribution Plot_2_abe262af9995ac137629.png
+2024-03-10 09:26:54,953 INFO    Thread-219:5939 [dir_watcher.py:_on_file_created():271] file/dir created: /Users/yunbo/Documents/GitHub/PFL_Optimiozation/wandb/run-20240310_092646-egkg5dmd/files/media/images/Distribution Plot_5_be674764add2098a9d1d.png
+2024-03-10 09:26:54,954 INFO    Thread-219:5939 [dir_watcher.py:_on_file_created():271] file/dir created: /Users/yunbo/Documents/GitHub/PFL_Optimiozation/wandb/run-20240310_092646-egkg5dmd/files/media/images/Scatter Plot_10_36fceeefe3c3d51f92bb.png
+2024-03-10 09:26:54,954 INFO    Thread-219:5939 [dir_watcher.py:_on_file_created():271] file/dir created: /Users/yunbo/Documents/GitHub/PFL_Optimiozation/wandb/run-20240310_092646-egkg5dmd/files/media/images/Scatter Plot_4_708a42d3ff37ecc72d6b.png
+2024-03-10 09:26:54,954 INFO    Thread-219:5939 [dir_watcher.py:_on_file_created():271] file/dir created: /Users/yunbo/Documents/GitHub/PFL_Optimiozation/wandb/run-20240310_092646-egkg5dmd/files/media/images/Distribution Plot_8_6e0c2425290f93139dbd.png
+2024-03-10 09:26:54,954 INFO    Thread-219:5939 [dir_watcher.py:_on_file_created():271] file/dir created: /Users/yunbo/Documents/GitHub/PFL_Optimiozation/wandb/run-20240310_092646-egkg5dmd/files/media/images/Distribution Plot_11_6332485f55d612153e26.png
+2024-03-10 09:26:54,954 INFO    Thread-219:5939 [dir_watcher.py:_on_file_created():271] file/dir created: /Users/yunbo/Documents/GitHub/PFL_Optimiozation/wandb/run-20240310_092646-egkg5dmd/files/media/images/Scatter Plot_7_e7a8822a73e43d324680.png
+2024-03-10 09:26:54,954 INFO    Thread-219:5939 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/yunbo/Documents/GitHub/PFL_Optimiozation/wandb/run-20240310_092646-egkg5dmd/files/media/images
+2024-03-10 09:26:54,980 INFO    wandb-upload_2:5939 [upload_job.py:push():131] Uploaded file /var/folders/_y/0xw7_0ss0s3f4kfhj9xl96zw0000gn/T/tmpa1z__lxywandb/cc3ynasp-media/images/Scatter Plot_7_e7a8822a73e43d324680.png
+2024-03-10 09:26:54,993 INFO    wandb-upload_1:5939 [upload_job.py:push():131] Uploaded file /var/folders/_y/0xw7_0ss0s3f4kfhj9xl96zw0000gn/T/tmpa1z__lxywandb/b70p568e-media/images/Scatter Plot_1_b9b75fcf73ec3dbbe797.png
+2024-03-10 09:26:55,043 DEBUG   HandlerThread:5939 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-10 09:26:55,045 DEBUG   SenderThread:5939 [sender.py:send():382] send: history
+2024-03-10 09:26:55,045 DEBUG   SenderThread:5939 [sender.py:send_request():409] send_request: summary_record
+2024-03-10 09:26:55,045 INFO    SenderThread:5939 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-03-10 09:26:55,068 INFO    wandb-upload_4:5939 [upload_job.py:push():131] Uploaded file /var/folders/_y/0xw7_0ss0s3f4kfhj9xl96zw0000gn/T/tmpa1z__lxywandb/23wcttzr-media/images/Distribution Plot_8_6e0c2425290f93139dbd.png
+2024-03-10 09:26:55,128 DEBUG   HandlerThread:5939 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-10 09:26:55,128 DEBUG   SenderThread:5939 [sender.py:send():382] send: files
+2024-03-10 09:26:55,128 INFO    SenderThread:5939 [sender.py:_save_file():1403] saving file media/images/Scatter Plot_13_df25f9837676886334a1.png with policy now
+2024-03-10 09:26:55,128 DEBUG   SenderThread:5939 [sender.py:send():382] send: history
+2024-03-10 09:26:55,128 DEBUG   SenderThread:5939 [sender.py:send_request():409] send_request: summary_record
+2024-03-10 09:26:55,129 INFO    SenderThread:5939 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-03-10 09:26:55,240 DEBUG   HandlerThread:5939 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-10 09:26:55,241 DEBUG   SenderThread:5939 [sender.py:send():382] send: files
+2024-03-10 09:26:55,241 INFO    SenderThread:5939 [sender.py:_save_file():1403] saving file media/images/Distribution Plot_14_b5369523d20431cceb31.png with policy now
+2024-03-10 09:26:55,242 DEBUG   SenderThread:5939 [sender.py:send():382] send: history
+2024-03-10 09:26:55,242 DEBUG   SenderThread:5939 [sender.py:send_request():409] send_request: summary_record
+2024-03-10 09:26:55,242 INFO    SenderThread:5939 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-03-10 09:26:55,260 INFO    wandb-upload_0:5939 [upload_job.py:push():131] Uploaded file /var/folders/_y/0xw7_0ss0s3f4kfhj9xl96zw0000gn/T/tmpa1z__lxywandb/u8xk8tff-media/images/Scatter Plot_10_36fceeefe3c3d51f92bb.png
+2024-03-10 09:26:55,307 INFO    wandb-upload_3:5939 [upload_job.py:push():131] Uploaded file /var/folders/_y/0xw7_0ss0s3f4kfhj9xl96zw0000gn/T/tmpa1z__lxywandb/w0lzser5-media/images/Distribution Plot_11_6332485f55d612153e26.png
+2024-03-10 09:26:55,352 DEBUG   HandlerThread:5939 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-10 09:26:55,354 DEBUG   SenderThread:5939 [sender.py:send():382] send: history
+2024-03-10 09:26:55,354 DEBUG   SenderThread:5939 [sender.py:send_request():409] send_request: summary_record
+2024-03-10 09:26:55,355 INFO    SenderThread:5939 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-03-10 09:26:55,366 INFO    wandb-upload_5:5939 [upload_job.py:push():131] Uploaded file /var/folders/_y/0xw7_0ss0s3f4kfhj9xl96zw0000gn/T/tmpa1z__lxywandb/i2p95b1h-media/images/Distribution Plot_2_abe262af9995ac137629.png
+2024-03-10 09:26:55,428 DEBUG   SenderThread:5939 [sender.py:send():382] send: files
+2024-03-10 09:26:55,428 DEBUG   HandlerThread:5939 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-10 09:26:55,428 INFO    SenderThread:5939 [sender.py:_save_file():1403] saving file media/images/Scatter Plot_16_0636bf91252e21dc520e.png with policy now
+2024-03-10 09:26:55,429 DEBUG   SenderThread:5939 [sender.py:send():382] send: history
+2024-03-10 09:26:55,430 DEBUG   SenderThread:5939 [sender.py:send_request():409] send_request: summary_record
+2024-03-10 09:26:55,430 INFO    SenderThread:5939 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-03-10 09:26:55,472 INFO    wandb-upload_6:5939 [upload_job.py:push():131] Uploaded file /var/folders/_y/0xw7_0ss0s3f4kfhj9xl96zw0000gn/T/tmpa1z__lxywandb/i9yhn26n-media/images/Distribution Plot_5_be674764add2098a9d1d.png
+2024-03-10 09:26:55,534 DEBUG   HandlerThread:5939 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-10 09:26:55,534 DEBUG   SenderThread:5939 [sender.py:send():382] send: files
+2024-03-10 09:26:55,535 INFO    SenderThread:5939 [sender.py:_save_file():1403] saving file media/images/Distribution Plot_17_5c9170dffbf63dd372f1.png with policy now
+2024-03-10 09:26:55,535 DEBUG   SenderThread:5939 [sender.py:send():382] send: history
+2024-03-10 09:26:55,536 DEBUG   SenderThread:5939 [sender.py:send_request():409] send_request: summary_record
+2024-03-10 09:26:55,536 INFO    SenderThread:5939 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-03-10 09:26:55,546 INFO    wandb-upload_7:5939 [upload_job.py:push():131] Uploaded file /var/folders/_y/0xw7_0ss0s3f4kfhj9xl96zw0000gn/T/tmpa1z__lxywandb/q02fciaz-media/images/Scatter Plot_4_708a42d3ff37ecc72d6b.png
+2024-03-10 09:26:55,568 INFO    wandb-upload_2:5939 [upload_job.py:push():131] Uploaded file /var/folders/_y/0xw7_0ss0s3f4kfhj9xl96zw0000gn/T/tmpa1z__lxywandb/4h1abhh8-media/images/Scatter Plot_13_df25f9837676886334a1.png
+2024-03-10 09:26:55,614 DEBUG   HandlerThread:5939 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-10 09:26:55,615 DEBUG   SenderThread:5939 [sender.py:send():382] send: history
+2024-03-10 09:26:55,615 DEBUG   SenderThread:5939 [sender.py:send_request():409] send_request: summary_record
+2024-03-10 09:26:55,616 INFO    SenderThread:5939 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-03-10 09:26:55,669 INFO    wandb-upload_4:5939 [upload_job.py:push():131] Uploaded file /var/folders/_y/0xw7_0ss0s3f4kfhj9xl96zw0000gn/T/tmpa1z__lxywandb/xqxsgtet-media/images/Distribution Plot_14_b5369523d20431cceb31.png
+2024-03-10 09:26:55,715 DEBUG   HandlerThread:5939 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-10 09:26:55,715 DEBUG   SenderThread:5939 [sender.py:send():382] send: files
+2024-03-10 09:26:55,718 INFO    SenderThread:5939 [sender.py:_save_file():1403] saving file media/images/Scatter Plot_19_8d21c9214ba38fae99d4.png with policy now
+2024-03-10 09:26:55,720 DEBUG   SenderThread:5939 [sender.py:send():382] send: history
+2024-03-10 09:26:55,721 DEBUG   SenderThread:5939 [sender.py:send_request():409] send_request: summary_record
+2024-03-10 09:26:55,722 INFO    SenderThread:5939 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-03-10 09:26:55,773 INFO    wandb-upload_1:5939 [upload_job.py:push():131] Uploaded file /var/folders/_y/0xw7_0ss0s3f4kfhj9xl96zw0000gn/T/tmpa1z__lxywandb/bv3kkevr-media/images/Scatter Plot_7_e7a8822a73e43d324680.png
+2024-03-10 09:26:55,831 DEBUG   HandlerThread:5939 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-10 09:26:55,832 DEBUG   SenderThread:5939 [sender.py:send():382] send: files
+2024-03-10 09:26:55,832 INFO    SenderThread:5939 [sender.py:_save_file():1403] saving file media/images/Distribution Plot_20_e5b0fad16d2670fdffc0.png with policy now
+2024-03-10 09:26:55,832 DEBUG   SenderThread:5939 [sender.py:send():382] send: history
+2024-03-10 09:26:55,832 DEBUG   SenderThread:5939 [sender.py:send_request():409] send_request: summary_record
+2024-03-10 09:26:55,833 INFO    SenderThread:5939 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-03-10 09:26:55,859 INFO    wandb-upload_5:5939 [upload_job.py:push():131] Uploaded file /var/folders/_y/0xw7_0ss0s3f4kfhj9xl96zw0000gn/T/tmpa1z__lxywandb/zg7qep6z-media/images/Scatter Plot_16_0636bf91252e21dc520e.png
+2024-03-10 09:26:55,870 INFO    wandb-upload_0:5939 [upload_job.py:push():131] Uploaded file /var/folders/_y/0xw7_0ss0s3f4kfhj9xl96zw0000gn/T/tmpa1z__lxywandb/yihszk3q-media/images/Scatter Plot_10_36fceeefe3c3d51f92bb.png
+2024-03-10 09:26:55,900 INFO    wandb-upload_3:5939 [upload_job.py:push():131] Uploaded file /var/folders/_y/0xw7_0ss0s3f4kfhj9xl96zw0000gn/T/tmpa1z__lxywandb/316s68ex-media/images/Distribution Plot_8_6e0c2425290f93139dbd.png
+2024-03-10 09:26:56,010 INFO    Thread-219:5939 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/yunbo/Documents/GitHub/PFL_Optimiozation/wandb/run-20240310_092646-egkg5dmd/files/wandb-summary.json
+2024-03-10 09:26:56,010 INFO    Thread-219:5939 [dir_watcher.py:_on_file_created():271] file/dir created: /Users/yunbo/Documents/GitHub/PFL_Optimiozation/wandb/run-20240310_092646-egkg5dmd/files/media/images/Distribution Plot_14_b5369523d20431cceb31.png
+2024-03-10 09:26:56,011 INFO    Thread-219:5939 [dir_watcher.py:_on_file_created():271] file/dir created: /Users/yunbo/Documents/GitHub/PFL_Optimiozation/wandb/run-20240310_092646-egkg5dmd/files/media/images/Distribution Plot_20_e5b0fad16d2670fdffc0.png
+2024-03-10 09:26:56,011 INFO    Thread-219:5939 [dir_watcher.py:_on_file_created():271] file/dir created: /Users/yunbo/Documents/GitHub/PFL_Optimiozation/wandb/run-20240310_092646-egkg5dmd/files/media/images/Scatter Plot_13_df25f9837676886334a1.png
+2024-03-10 09:26:56,011 INFO    Thread-219:5939 [dir_watcher.py:_on_file_created():271] file/dir created: /Users/yunbo/Documents/GitHub/PFL_Optimiozation/wandb/run-20240310_092646-egkg5dmd/files/media/images/Scatter Plot_16_0636bf91252e21dc520e.png
+2024-03-10 09:26:56,011 INFO    Thread-219:5939 [dir_watcher.py:_on_file_created():271] file/dir created: /Users/yunbo/Documents/GitHub/PFL_Optimiozation/wandb/run-20240310_092646-egkg5dmd/files/media/images/Distribution Plot_17_5c9170dffbf63dd372f1.png
+2024-03-10 09:26:56,011 INFO    Thread-219:5939 [dir_watcher.py:_on_file_created():271] file/dir created: /Users/yunbo/Documents/GitHub/PFL_Optimiozation/wandb/run-20240310_092646-egkg5dmd/files/media/images/Scatter Plot_19_8d21c9214ba38fae99d4.png
+2024-03-10 09:26:56,011 INFO    Thread-219:5939 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/yunbo/Documents/GitHub/PFL_Optimiozation/wandb/run-20240310_092646-egkg5dmd/files/media/images
+2024-03-10 09:26:56,020 INFO    wandb-upload_8:5939 [upload_job.py:push():131] Uploaded file /var/folders/_y/0xw7_0ss0s3f4kfhj9xl96zw0000gn/T/tmpa1z__lxywandb/t9wztxmy-media/images/Distribution Plot_17_5c9170dffbf63dd372f1.png
+2024-03-10 09:26:56,026 INFO    wandb-upload_6:5939 [upload_job.py:push():131] Uploaded file /var/folders/_y/0xw7_0ss0s3f4kfhj9xl96zw0000gn/T/tmpa1z__lxywandb/wtygd385-media/images/Distribution Plot_11_6332485f55d612153e26.png
+2024-03-10 09:26:56,040 DEBUG   HandlerThread:5939 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-10 09:26:56,040 DEBUG   SenderThread:5939 [sender.py:send():382] send: history
+2024-03-10 09:26:56,040 DEBUG   SenderThread:5939 [sender.py:send_request():409] send_request: summary_record
+2024-03-10 09:26:56,041 INFO    SenderThread:5939 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-03-10 09:26:56,124 DEBUG   HandlerThread:5939 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-10 09:26:56,124 DEBUG   SenderThread:5939 [sender.py:send():382] send: files
+2024-03-10 09:26:56,124 INFO    SenderThread:5939 [sender.py:_save_file():1403] saving file media/images/Scatter Plot_22_15c10a095d7bf2c9e95c.png with policy now
+2024-03-10 09:26:56,124 DEBUG   SenderThread:5939 [sender.py:send():382] send: history
+2024-03-10 09:26:56,124 DEBUG   SenderThread:5939 [sender.py:send_request():409] send_request: summary_record
+2024-03-10 09:26:56,125 INFO    SenderThread:5939 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-03-10 09:26:56,153 INFO    wandb-upload_7:5939 [upload_job.py:push():131] Uploaded file /var/folders/_y/0xw7_0ss0s3f4kfhj9xl96zw0000gn/T/tmpa1z__lxywandb/2sgu577v-media/images/Scatter Plot_19_8d21c9214ba38fae99d4.png
+2024-03-10 09:26:56,239 DEBUG   SenderThread:5939 [sender.py:send():382] send: files
+2024-03-10 09:26:56,239 DEBUG   HandlerThread:5939 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-10 09:26:56,239 INFO    SenderThread:5939 [sender.py:_save_file():1403] saving file media/images/Distribution Plot_23_4fa749534a9ad538f4c7.png with policy now
+2024-03-10 09:26:56,240 DEBUG   SenderThread:5939 [sender.py:send():382] send: history
+2024-03-10 09:26:56,240 DEBUG   SenderThread:5939 [sender.py:send_request():409] send_request: summary_record
+2024-03-10 09:26:56,241 INFO    SenderThread:5939 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-03-10 09:26:56,320 INFO    wandb-upload_4:5939 [upload_job.py:push():131] Uploaded file /var/folders/_y/0xw7_0ss0s3f4kfhj9xl96zw0000gn/T/tmpa1z__lxywandb/36dtqxtf-media/images/Distribution Plot_20_e5b0fad16d2670fdffc0.png
+2024-03-10 09:26:56,403 DEBUG   HandlerThread:5939 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-10 09:26:56,404 DEBUG   SenderThread:5939 [sender.py:send():382] send: history
+2024-03-10 09:26:56,404 DEBUG   SenderThread:5939 [sender.py:send_request():409] send_request: summary_record
+2024-03-10 09:26:56,404 INFO    SenderThread:5939 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-03-10 09:26:56,486 DEBUG   SenderThread:5939 [sender.py:send():382] send: files
+2024-03-10 09:26:56,486 DEBUG   HandlerThread:5939 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-10 09:26:56,486 INFO    SenderThread:5939 [sender.py:_save_file():1403] saving file media/images/Scatter Plot_25_970d8c716688b6eb4182.png with policy now
+2024-03-10 09:26:56,487 DEBUG   SenderThread:5939 [sender.py:send():382] send: history
+2024-03-10 09:26:56,487 DEBUG   SenderThread:5939 [sender.py:send_request():409] send_request: summary_record
+2024-03-10 09:26:56,487 INFO    SenderThread:5939 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-03-10 09:26:56,523 INFO    wandb-upload_3:5939 [upload_job.py:push():131] Uploaded file /var/folders/_y/0xw7_0ss0s3f4kfhj9xl96zw0000gn/T/tmpa1z__lxywandb/jidlbx3t-media/images/Scatter Plot_16_0636bf91252e21dc520e.png
+2024-03-10 09:26:56,542 INFO    wandb-upload_5:5939 [upload_job.py:push():131] Uploaded file /var/folders/_y/0xw7_0ss0s3f4kfhj9xl96zw0000gn/T/tmpa1z__lxywandb/dfdc48jh-media/images/Scatter Plot_13_df25f9837676886334a1.png
+2024-03-10 09:26:56,545 INFO    wandb-upload_6:5939 [upload_job.py:push():131] Uploaded file /var/folders/_y/0xw7_0ss0s3f4kfhj9xl96zw0000gn/T/tmpa1z__lxywandb/1sjs8don-media/images/Distribution Plot_17_5c9170dffbf63dd372f1.png
+2024-03-10 09:26:56,617 INFO    wandb-upload_0:5939 [upload_job.py:push():131] Uploaded file /var/folders/_y/0xw7_0ss0s3f4kfhj9xl96zw0000gn/T/tmpa1z__lxywandb/55mivuv0-media/images/Scatter Plot_22_15c10a095d7bf2c9e95c.png
+2024-03-10 09:26:56,632 DEBUG   HandlerThread:5939 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-10 09:26:56,632 DEBUG   SenderThread:5939 [sender.py:send():382] send: files
+2024-03-10 09:26:56,632 INFO    SenderThread:5939 [sender.py:_save_file():1403] saving file media/images/Distribution Plot_26_ee2b968340f02cdd6f39.png with policy now
+2024-03-10 09:26:56,633 DEBUG   SenderThread:5939 [sender.py:send():382] send: history
+2024-03-10 09:26:56,633 DEBUG   SenderThread:5939 [sender.py:send_request():409] send_request: summary_record
+2024-03-10 09:26:56,634 INFO    SenderThread:5939 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-03-10 09:26:56,654 INFO    wandb-upload_1:5939 [upload_job.py:push():131] Uploaded file /var/folders/_y/0xw7_0ss0s3f4kfhj9xl96zw0000gn/T/tmpa1z__lxywandb/liorjppd-media/images/Distribution Plot_14_b5369523d20431cceb31.png
+2024-03-10 09:26:56,708 INFO    wandb-upload_2:5939 [upload_job.py:push():131] Uploaded file /var/folders/_y/0xw7_0ss0s3f4kfhj9xl96zw0000gn/T/tmpa1z__lxywandb/gn6bdlui-media/images/Distribution Plot_23_4fa749534a9ad538f4c7.png
+2024-03-10 09:26:56,733 DEBUG   HandlerThread:5939 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-10 09:26:56,734 DEBUG   SenderThread:5939 [sender.py:send():382] send: history
+2024-03-10 09:26:56,735 DEBUG   SenderThread:5939 [sender.py:send_request():409] send_request: summary_record
+2024-03-10 09:26:56,735 INFO    SenderThread:5939 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-03-10 09:26:56,815 DEBUG   SenderThread:5939 [sender.py:send():382] send: files
+2024-03-10 09:26:56,815 DEBUG   HandlerThread:5939 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-10 09:26:56,815 INFO    SenderThread:5939 [sender.py:_save_file():1403] saving file media/images/Scatter Plot_28_af84da235be53f46b3d0.png with policy now
+2024-03-10 09:26:56,816 DEBUG   SenderThread:5939 [sender.py:send():382] send: history
+2024-03-10 09:26:56,816 DEBUG   SenderThread:5939 [sender.py:send_request():409] send_request: summary_record
+2024-03-10 09:26:56,816 INFO    SenderThread:5939 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-03-10 09:26:56,855 INFO    wandb-upload_7:5939 [upload_job.py:push():131] Uploaded file /var/folders/_y/0xw7_0ss0s3f4kfhj9xl96zw0000gn/T/tmpa1z__lxywandb/ahs29f74-media/images/Scatter Plot_19_8d21c9214ba38fae99d4.png
+2024-03-10 09:26:56,945 INFO    wandb-upload_4:5939 [upload_job.py:push():131] Uploaded file /var/folders/_y/0xw7_0ss0s3f4kfhj9xl96zw0000gn/T/tmpa1z__lxywandb/2uo4avy5-media/images/Scatter Plot_25_970d8c716688b6eb4182.png
+2024-03-10 09:26:56,993 INFO    Thread-219:5939 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/yunbo/Documents/GitHub/PFL_Optimiozation/wandb/run-20240310_092646-egkg5dmd/files/wandb-summary.json
+2024-03-10 09:26:56,993 INFO    Thread-219:5939 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/yunbo/Documents/GitHub/PFL_Optimiozation/wandb/run-20240310_092646-egkg5dmd/files/output.log
+2024-03-10 09:26:56,994 INFO    Thread-219:5939 [dir_watcher.py:_on_file_created():271] file/dir created: /Users/yunbo/Documents/GitHub/PFL_Optimiozation/wandb/run-20240310_092646-egkg5dmd/files/media/images/Distribution Plot_23_4fa749534a9ad538f4c7.png
+2024-03-10 09:26:56,994 INFO    Thread-219:5939 [dir_watcher.py:_on_file_created():271] file/dir created: /Users/yunbo/Documents/GitHub/PFL_Optimiozation/wandb/run-20240310_092646-egkg5dmd/files/media/images/Scatter Plot_25_970d8c716688b6eb4182.png
+2024-03-10 09:26:56,995 INFO    Thread-219:5939 [dir_watcher.py:_on_file_created():271] file/dir created: /Users/yunbo/Documents/GitHub/PFL_Optimiozation/wandb/run-20240310_092646-egkg5dmd/files/media/images/Distribution Plot_26_ee2b968340f02cdd6f39.png
+2024-03-10 09:26:56,995 INFO    Thread-219:5939 [dir_watcher.py:_on_file_created():271] file/dir created: /Users/yunbo/Documents/GitHub/PFL_Optimiozation/wandb/run-20240310_092646-egkg5dmd/files/media/images/Scatter Plot_28_af84da235be53f46b3d0.png
+2024-03-10 09:26:56,995 INFO    Thread-219:5939 [dir_watcher.py:_on_file_created():271] file/dir created: /Users/yunbo/Documents/GitHub/PFL_Optimiozation/wandb/run-20240310_092646-egkg5dmd/files/media/images/Scatter Plot_22_15c10a095d7bf2c9e95c.png
+2024-03-10 09:26:56,995 INFO    Thread-219:5939 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/yunbo/Documents/GitHub/PFL_Optimiozation/wandb/run-20240310_092646-egkg5dmd/files/media/images
+2024-03-10 09:26:57,009 INFO    wandb-upload_8:5939 [upload_job.py:push():131] Uploaded file /var/folders/_y/0xw7_0ss0s3f4kfhj9xl96zw0000gn/T/tmpa1z__lxywandb/32h0iv50-media/images/Distribution Plot_20_e5b0fad16d2670fdffc0.png
+2024-03-10 09:26:57,062 INFO    wandb-upload_3:5939 [upload_job.py:push():131] Uploaded file /var/folders/_y/0xw7_0ss0s3f4kfhj9xl96zw0000gn/T/tmpa1z__lxywandb/irfxmsu8-media/images/Distribution Plot_26_ee2b968340f02cdd6f39.png
+2024-03-10 09:26:57,137 DEBUG   SenderThread:5939 [sender.py:send():382] send: files
+2024-03-10 09:26:57,137 INFO    SenderThread:5939 [sender.py:_save_file():1403] saving file media/images/Distribution Plot_29_9b7cb560d42c3b173bbd.png with policy now
+2024-03-10 09:26:57,138 DEBUG   HandlerThread:5939 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-10 09:26:57,139 DEBUG   SenderThread:5939 [sender.py:send():382] send: history
+2024-03-10 09:26:57,139 DEBUG   SenderThread:5939 [sender.py:send_request():409] send_request: summary_record
+2024-03-10 09:26:57,140 INFO    SenderThread:5939 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-03-10 09:26:57,140 DEBUG   SenderThread:5939 [sender.py:send():382] send: telemetry
+2024-03-10 09:26:57,140 DEBUG   SenderThread:5939 [sender.py:send():382] send: exit
+2024-03-10 09:26:57,140 INFO    SenderThread:5939 [sender.py:send_exit():589] handling exit code: 0
+2024-03-10 09:26:57,140 INFO    SenderThread:5939 [sender.py:send_exit():591] handling runtime: 9
+2024-03-10 09:26:57,140 INFO    SenderThread:5939 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-03-10 09:26:57,141 INFO    SenderThread:5939 [sender.py:send_exit():597] send defer
+2024-03-10 09:26:57,141 DEBUG   HandlerThread:5939 [handler.py:handle_request():146] handle_request: defer
+2024-03-10 09:26:57,141 INFO    HandlerThread:5939 [handler.py:handle_request_defer():172] handle defer: 0
+2024-03-10 09:26:57,142 DEBUG   SenderThread:5939 [sender.py:send_request():409] send_request: defer
+2024-03-10 09:26:57,142 INFO    SenderThread:5939 [sender.py:send_request_defer():613] handle sender defer: 0
+2024-03-10 09:26:57,142 INFO    SenderThread:5939 [sender.py:transition_state():617] send defer: 1
+2024-03-10 09:26:57,142 DEBUG   HandlerThread:5939 [handler.py:handle_request():146] handle_request: defer
+2024-03-10 09:26:57,142 INFO    HandlerThread:5939 [handler.py:handle_request_defer():172] handle defer: 1
+2024-03-10 09:26:57,142 DEBUG   SenderThread:5939 [sender.py:send_request():409] send_request: defer
+2024-03-10 09:26:57,142 INFO    SenderThread:5939 [sender.py:send_request_defer():613] handle sender defer: 1
+2024-03-10 09:26:57,142 INFO    SenderThread:5939 [sender.py:transition_state():617] send defer: 2
+2024-03-10 09:26:57,142 DEBUG   HandlerThread:5939 [handler.py:handle_request():146] handle_request: defer
+2024-03-10 09:26:57,142 INFO    HandlerThread:5939 [handler.py:handle_request_defer():172] handle defer: 2
+2024-03-10 09:26:57,142 INFO    HandlerThread:5939 [system_monitor.py:finish():203] Stopping system monitor
+2024-03-10 09:26:57,143 DEBUG   SystemMonitor:5939 [system_monitor.py:_start():172] Starting system metrics aggregation loop
+2024-03-10 09:26:57,143 DEBUG   SystemMonitor:5939 [system_monitor.py:_start():179] Finished system metrics aggregation loop
+2024-03-10 09:26:57,143 DEBUG   SystemMonitor:5939 [system_monitor.py:_start():183] Publishing last batch of metrics
+2024-03-10 09:26:57,143 INFO    HandlerThread:5939 [interfaces.py:finish():202] Joined cpu monitor
+2024-03-10 09:26:57,143 INFO    HandlerThread:5939 [interfaces.py:finish():202] Joined disk monitor
+2024-03-10 09:26:57,235 INFO    wandb-upload_6:5939 [upload_job.py:push():131] Uploaded file /var/folders/_y/0xw7_0ss0s3f4kfhj9xl96zw0000gn/T/tmpa1z__lxywandb/ixkh8c62-media/images/Scatter Plot_28_af84da235be53f46b3d0.png
+2024-03-10 09:26:57,321 INFO    HandlerThread:5939 [interfaces.py:finish():202] Joined gpuapple monitor
+2024-03-10 09:26:57,321 INFO    HandlerThread:5939 [interfaces.py:finish():202] Joined memory monitor
+2024-03-10 09:26:57,321 INFO    HandlerThread:5939 [interfaces.py:finish():202] Joined network monitor
+2024-03-10 09:26:57,321 DEBUG   SenderThread:5939 [sender.py:send_request():409] send_request: defer
+2024-03-10 09:26:57,322 INFO    SenderThread:5939 [sender.py:send_request_defer():613] handle sender defer: 2
+2024-03-10 09:26:57,322 INFO    SenderThread:5939 [sender.py:transition_state():617] send defer: 3
+2024-03-10 09:26:57,322 DEBUG   SenderThread:5939 [sender.py:send():382] send: telemetry
+2024-03-10 09:26:57,322 DEBUG   HandlerThread:5939 [handler.py:handle_request():146] handle_request: defer
+2024-03-10 09:26:57,322 DEBUG   SenderThread:5939 [sender.py:send():382] send: stats
+2024-03-10 09:26:57,322 INFO    HandlerThread:5939 [handler.py:handle_request_defer():172] handle defer: 3
+2024-03-10 09:26:57,322 DEBUG   SenderThread:5939 [sender.py:send_request():409] send_request: defer
+2024-03-10 09:26:57,322 INFO    SenderThread:5939 [sender.py:send_request_defer():613] handle sender defer: 3
+2024-03-10 09:26:57,322 INFO    SenderThread:5939 [sender.py:transition_state():617] send defer: 4
+2024-03-10 09:26:57,322 DEBUG   HandlerThread:5939 [handler.py:handle_request():146] handle_request: defer
+2024-03-10 09:26:57,322 INFO    HandlerThread:5939 [handler.py:handle_request_defer():172] handle defer: 4
+2024-03-10 09:26:57,322 DEBUG   SenderThread:5939 [sender.py:send_request():409] send_request: defer
+2024-03-10 09:26:57,323 INFO    SenderThread:5939 [sender.py:send_request_defer():613] handle sender defer: 4
+2024-03-10 09:26:57,323 INFO    SenderThread:5939 [sender.py:transition_state():617] send defer: 5
+2024-03-10 09:26:57,323 DEBUG   HandlerThread:5939 [handler.py:handle_request():146] handle_request: defer
+2024-03-10 09:26:57,323 INFO    HandlerThread:5939 [handler.py:handle_request_defer():172] handle defer: 5
+2024-03-10 09:26:57,323 DEBUG   SenderThread:5939 [sender.py:send():382] send: summary
+2024-03-10 09:26:57,323 INFO    SenderThread:5939 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-03-10 09:26:57,323 DEBUG   SenderThread:5939 [sender.py:send_request():409] send_request: defer
+2024-03-10 09:26:57,323 INFO    SenderThread:5939 [sender.py:send_request_defer():613] handle sender defer: 5
+2024-03-10 09:26:57,323 INFO    SenderThread:5939 [sender.py:transition_state():617] send defer: 6
+2024-03-10 09:26:57,324 DEBUG   HandlerThread:5939 [handler.py:handle_request():146] handle_request: defer
+2024-03-10 09:26:57,324 INFO    HandlerThread:5939 [handler.py:handle_request_defer():172] handle defer: 6
+2024-03-10 09:26:57,324 DEBUG   SenderThread:5939 [sender.py:send_request():409] send_request: defer
+2024-03-10 09:26:57,324 INFO    SenderThread:5939 [sender.py:send_request_defer():613] handle sender defer: 6
+2024-03-10 09:26:57,325 DEBUG   HandlerThread:5939 [handler.py:handle_request():146] handle_request: status_report
+2024-03-10 09:26:57,470 INFO    SenderThread:5939 [sender.py:transition_state():617] send defer: 7
+2024-03-10 09:26:57,470 DEBUG   HandlerThread:5939 [handler.py:handle_request():146] handle_request: defer
+2024-03-10 09:26:57,470 INFO    HandlerThread:5939 [handler.py:handle_request_defer():172] handle defer: 7
+2024-03-10 09:26:57,470 DEBUG   SenderThread:5939 [sender.py:send_request():409] send_request: defer
+2024-03-10 09:26:57,470 INFO    SenderThread:5939 [sender.py:send_request_defer():613] handle sender defer: 7
+2024-03-10 09:26:57,497 INFO    wandb-upload_2:5939 [upload_job.py:push():131] Uploaded file /var/folders/_y/0xw7_0ss0s3f4kfhj9xl96zw0000gn/T/tmpa1z__lxywandb/qckac27y-media/images/Scatter Plot_25_970d8c716688b6eb4182.png
+2024-03-10 09:26:57,499 INFO    wandb-upload_7:5939 [upload_job.py:push():131] Uploaded file /var/folders/_y/0xw7_0ss0s3f4kfhj9xl96zw0000gn/T/tmpa1z__lxywandb/pl5cob1r-media/images/Scatter Plot_22_15c10a095d7bf2c9e95c.png
+2024-03-10 09:26:57,503 INFO    wandb-upload_5:5939 [upload_job.py:push():131] Uploaded file /var/folders/_y/0xw7_0ss0s3f4kfhj9xl96zw0000gn/T/tmpa1z__lxywandb/9odhw69y-media/images/Distribution Plot_23_4fa749534a9ad538f4c7.png
+2024-03-10 09:26:57,570 INFO    wandb-upload_1:5939 [upload_job.py:push():131] Uploaded file /var/folders/_y/0xw7_0ss0s3f4kfhj9xl96zw0000gn/T/tmpa1z__lxywandb/g4pnemlc-media/images/Distribution Plot_29_9b7cb560d42c3b173bbd.png
+2024-03-10 09:26:57,749 INFO    wandb-upload_4:5939 [upload_job.py:push():131] Uploaded file /var/folders/_y/0xw7_0ss0s3f4kfhj9xl96zw0000gn/T/tmpa1z__lxywandb/h4197o6w-media/images/Distribution Plot_26_ee2b968340f02cdd6f39.png
+2024-03-10 09:26:57,999 INFO    Thread-219:5939 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/yunbo/Documents/GitHub/PFL_Optimiozation/wandb/run-20240310_092646-egkg5dmd/files/config.yaml
+2024-03-10 09:26:57,999 INFO    Thread-219:5939 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/yunbo/Documents/GitHub/PFL_Optimiozation/wandb/run-20240310_092646-egkg5dmd/files/wandb-summary.json
+2024-03-10 09:26:57,999 INFO    Thread-219:5939 [dir_watcher.py:_on_file_created():271] file/dir created: /Users/yunbo/Documents/GitHub/PFL_Optimiozation/wandb/run-20240310_092646-egkg5dmd/files/media/images/Distribution Plot_29_9b7cb560d42c3b173bbd.png
+2024-03-10 09:26:57,999 INFO    Thread-219:5939 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/yunbo/Documents/GitHub/PFL_Optimiozation/wandb/run-20240310_092646-egkg5dmd/files/media/images
+2024-03-10 09:26:58,001 INFO    wandb-upload_3:5939 [upload_job.py:push():131] Uploaded file /var/folders/_y/0xw7_0ss0s3f4kfhj9xl96zw0000gn/T/tmpa1z__lxywandb/z1bp2fqd-media/images/Scatter Plot_28_af84da235be53f46b3d0.png
+2024-03-10 09:26:58,026 INFO    SenderThread:5939 [sender.py:transition_state():617] send defer: 8
+2024-03-10 09:26:58,027 DEBUG   HandlerThread:5939 [handler.py:handle_request():146] handle_request: defer
+2024-03-10 09:26:58,027 INFO    HandlerThread:5939 [handler.py:handle_request_defer():172] handle defer: 8
+2024-03-10 09:26:58,027 DEBUG   SenderThread:5939 [sender.py:send_request():409] send_request: defer
+2024-03-10 09:26:58,027 INFO    SenderThread:5939 [sender.py:send_request_defer():613] handle sender defer: 8
+2024-03-10 09:26:58,027 INFO    SenderThread:5939 [job_builder.py:build():296] Attempting to build job artifact
+2024-03-10 09:26:58,027 INFO    SenderThread:5939 [job_builder.py:_get_source_type():426] is repo sourced job
+2024-03-10 09:26:58,028 INFO    SenderThread:5939 [job_builder.py:build():402] adding wandb-job metadata file
+2024-03-10 09:26:58,031 INFO    SenderThread:5939 [sender.py:transition_state():617] send defer: 9
+2024-03-10 09:26:58,031 DEBUG   HandlerThread:5939 [handler.py:handle_request():146] handle_request: defer
+2024-03-10 09:26:58,031 DEBUG   SenderThread:5939 [sender.py:send():382] send: artifact
+2024-03-10 09:26:58,031 INFO    HandlerThread:5939 [handler.py:handle_request_defer():172] handle defer: 9
+2024-03-10 09:26:58,139 DEBUG   HandlerThread:5939 [handler.py:handle_request():146] handle_request: poll_exit
+2024-03-10 09:26:58,499 INFO    wandb-upload_6:5939 [upload_job.py:push():131] Uploaded file /var/folders/_y/0xw7_0ss0s3f4kfhj9xl96zw0000gn/T/tmpa1z__lxywandb/3bfmkgop-media/images/Distribution Plot_29_9b7cb560d42c3b173bbd.png
+2024-03-10 09:26:58,716 INFO    SenderThread:5939 [sender.py:send_artifact():1494] sent artifact job-https___github.com_Yunbo-max_PFL_Optimiozation.git_Local_learning_MLP_locl.py - {'id': 'QXJ0aWZhY3Q6NzUwMDMzNTI3', 'state': 'COMMITTED', 'artifactSequence': {'id': 'QXJ0aWZhY3RDb2xsZWN0aW9uOjE0NzM2ODA0OA==', 'latestArtifact': {'id': 'QXJ0aWZhY3Q6NzUwMDMzNTI3', 'versionIndex': 0}}}
+2024-03-10 09:26:58,716 DEBUG   SenderThread:5939 [sender.py:send_request():409] send_request: defer
+2024-03-10 09:26:58,716 INFO    SenderThread:5939 [sender.py:send_request_defer():613] handle sender defer: 9
+2024-03-10 09:26:58,716 INFO    SenderThread:5939 [dir_watcher.py:finish():358] shutting down directory watcher
+2024-03-10 09:26:59,005 INFO    SenderThread:5939 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/yunbo/Documents/GitHub/PFL_Optimiozation/wandb/run-20240310_092646-egkg5dmd/files/output.log
+2024-03-10 09:26:59,005 INFO    SenderThread:5939 [dir_watcher.py:finish():388] scan: /Users/yunbo/Documents/GitHub/PFL_Optimiozation/wandb/run-20240310_092646-egkg5dmd/files
+2024-03-10 09:26:59,006 INFO    SenderThread:5939 [dir_watcher.py:finish():402] scan save: /Users/yunbo/Documents/GitHub/PFL_Optimiozation/wandb/run-20240310_092646-egkg5dmd/files/requirements.txt requirements.txt
+2024-03-10 09:26:59,006 INFO    SenderThread:5939 [dir_watcher.py:finish():402] scan save: /Users/yunbo/Documents/GitHub/PFL_Optimiozation/wandb/run-20240310_092646-egkg5dmd/files/output.log output.log
+2024-03-10 09:26:59,006 INFO    SenderThread:5939 [dir_watcher.py:finish():402] scan save: /Users/yunbo/Documents/GitHub/PFL_Optimiozation/wandb/run-20240310_092646-egkg5dmd/files/config.yaml config.yaml
+2024-03-10 09:26:59,006 INFO    SenderThread:5939 [dir_watcher.py:finish():402] scan save: /Users/yunbo/Documents/GitHub/PFL_Optimiozation/wandb/run-20240310_092646-egkg5dmd/files/wandb-summary.json wandb-summary.json
+2024-03-10 09:26:59,010 INFO    SenderThread:5939 [dir_watcher.py:finish():402] scan save: /Users/yunbo/Documents/GitHub/PFL_Optimiozation/wandb/run-20240310_092646-egkg5dmd/files/conda-environment.yaml conda-environment.yaml
+2024-03-10 09:26:59,013 INFO    SenderThread:5939 [dir_watcher.py:finish():402] scan save: /Users/yunbo/Documents/GitHub/PFL_Optimiozation/wandb/run-20240310_092646-egkg5dmd/files/wandb-metadata.json wandb-metadata.json
+2024-03-10 09:26:59,017 INFO    SenderThread:5939 [dir_watcher.py:finish():402] scan save: /Users/yunbo/Documents/GitHub/PFL_Optimiozation/wandb/run-20240310_092646-egkg5dmd/files/media/images/Distribution Plot_5_be674764add2098a9d1d.png media/images/Distribution Plot_5_be674764add2098a9d1d.png
+2024-03-10 09:26:59,018 INFO    SenderThread:5939 [dir_watcher.py:finish():402] scan save: /Users/yunbo/Documents/GitHub/PFL_Optimiozation/wandb/run-20240310_092646-egkg5dmd/files/media/images/Scatter Plot_28_af84da235be53f46b3d0.png media/images/Scatter Plot_28_af84da235be53f46b3d0.png
+2024-03-10 09:26:59,018 INFO    SenderThread:5939 [dir_watcher.py:finish():402] scan save: /Users/yunbo/Documents/GitHub/PFL_Optimiozation/wandb/run-20240310_092646-egkg5dmd/files/media/images/Distribution Plot_17_5c9170dffbf63dd372f1.png media/images/Distribution Plot_17_5c9170dffbf63dd372f1.png
+2024-03-10 09:26:59,018 INFO    SenderThread:5939 [dir_watcher.py:finish():402] scan save: /Users/yunbo/Documents/GitHub/PFL_Optimiozation/wandb/run-20240310_092646-egkg5dmd/files/media/images/Scatter Plot_7_e7a8822a73e43d324680.png media/images/Scatter Plot_7_e7a8822a73e43d324680.png
+2024-03-10 09:26:59,018 INFO    SenderThread:5939 [dir_watcher.py:finish():402] scan save: /Users/yunbo/Documents/GitHub/PFL_Optimiozation/wandb/run-20240310_092646-egkg5dmd/files/media/images/Scatter Plot_1_b9b75fcf73ec3dbbe797.png media/images/Scatter Plot_1_b9b75fcf73ec3dbbe797.png
+2024-03-10 09:26:59,018 INFO    SenderThread:5939 [dir_watcher.py:finish():402] scan save: /Users/yunbo/Documents/GitHub/PFL_Optimiozation/wandb/run-20240310_092646-egkg5dmd/files/media/images/Distribution Plot_8_6e0c2425290f93139dbd.png media/images/Distribution Plot_8_6e0c2425290f93139dbd.png
+2024-03-10 09:26:59,018 INFO    SenderThread:5939 [dir_watcher.py:finish():402] scan save: /Users/yunbo/Documents/GitHub/PFL_Optimiozation/wandb/run-20240310_092646-egkg5dmd/files/media/images/Scatter Plot_4_708a42d3ff37ecc72d6b.png media/images/Scatter Plot_4_708a42d3ff37ecc72d6b.png
+2024-03-10 09:26:59,019 INFO    SenderThread:5939 [dir_watcher.py:finish():402] scan save: /Users/yunbo/Documents/GitHub/PFL_Optimiozation/wandb/run-20240310_092646-egkg5dmd/files/media/images/Distribution Plot_11_6332485f55d612153e26.png media/images/Distribution Plot_11_6332485f55d612153e26.png
+2024-03-10 09:26:59,019 INFO    SenderThread:5939 [dir_watcher.py:finish():402] scan save: /Users/yunbo/Documents/GitHub/PFL_Optimiozation/wandb/run-20240310_092646-egkg5dmd/files/media/images/Distribution Plot_23_4fa749534a9ad538f4c7.png media/images/Distribution Plot_23_4fa749534a9ad538f4c7.png
+2024-03-10 09:26:59,019 INFO    SenderThread:5939 [dir_watcher.py:finish():402] scan save: /Users/yunbo/Documents/GitHub/PFL_Optimiozation/wandb/run-20240310_092646-egkg5dmd/files/media/images/Distribution Plot_2_abe262af9995ac137629.png media/images/Distribution Plot_2_abe262af9995ac137629.png
+2024-03-10 09:26:59,019 INFO    SenderThread:5939 [dir_watcher.py:finish():402] scan save: /Users/yunbo/Documents/GitHub/PFL_Optimiozation/wandb/run-20240310_092646-egkg5dmd/files/media/images/Scatter Plot_13_df25f9837676886334a1.png media/images/Scatter Plot_13_df25f9837676886334a1.png
+2024-03-10 09:26:59,019 INFO    SenderThread:5939 [dir_watcher.py:finish():402] scan save: /Users/yunbo/Documents/GitHub/PFL_Optimiozation/wandb/run-20240310_092646-egkg5dmd/files/media/images/Scatter Plot_25_970d8c716688b6eb4182.png media/images/Scatter Plot_25_970d8c716688b6eb4182.png
+2024-03-10 09:26:59,019 INFO    SenderThread:5939 [dir_watcher.py:finish():402] scan save: /Users/yunbo/Documents/GitHub/PFL_Optimiozation/wandb/run-20240310_092646-egkg5dmd/files/media/images/Scatter Plot_22_15c10a095d7bf2c9e95c.png media/images/Scatter Plot_22_15c10a095d7bf2c9e95c.png
+2024-03-10 09:26:59,019 INFO    SenderThread:5939 [dir_watcher.py:finish():402] scan save: /Users/yunbo/Documents/GitHub/PFL_Optimiozation/wandb/run-20240310_092646-egkg5dmd/files/media/images/Scatter Plot_16_0636bf91252e21dc520e.png media/images/Scatter Plot_16_0636bf91252e21dc520e.png
+2024-03-10 09:26:59,019 INFO    SenderThread:5939 [dir_watcher.py:finish():402] scan save: /Users/yunbo/Documents/GitHub/PFL_Optimiozation/wandb/run-20240310_092646-egkg5dmd/files/media/images/Distribution Plot_14_b5369523d20431cceb31.png media/images/Distribution Plot_14_b5369523d20431cceb31.png
+2024-03-10 09:26:59,019 INFO    SenderThread:5939 [dir_watcher.py:finish():402] scan save: /Users/yunbo/Documents/GitHub/PFL_Optimiozation/wandb/run-20240310_092646-egkg5dmd/files/media/images/Scatter Plot_19_8d21c9214ba38fae99d4.png media/images/Scatter Plot_19_8d21c9214ba38fae99d4.png
+2024-03-10 09:26:59,019 INFO    SenderThread:5939 [dir_watcher.py:finish():402] scan save: /Users/yunbo/Documents/GitHub/PFL_Optimiozation/wandb/run-20240310_092646-egkg5dmd/files/media/images/Scatter Plot_10_36fceeefe3c3d51f92bb.png media/images/Scatter Plot_10_36fceeefe3c3d51f92bb.png
+2024-03-10 09:26:59,019 INFO    SenderThread:5939 [dir_watcher.py:finish():402] scan save: /Users/yunbo/Documents/GitHub/PFL_Optimiozation/wandb/run-20240310_092646-egkg5dmd/files/media/images/Distribution Plot_20_e5b0fad16d2670fdffc0.png media/images/Distribution Plot_20_e5b0fad16d2670fdffc0.png
+2024-03-10 09:26:59,019 INFO    SenderThread:5939 [dir_watcher.py:finish():402] scan save: /Users/yunbo/Documents/GitHub/PFL_Optimiozation/wandb/run-20240310_092646-egkg5dmd/files/media/images/Distribution Plot_26_ee2b968340f02cdd6f39.png media/images/Distribution Plot_26_ee2b968340f02cdd6f39.png
+2024-03-10 09:26:59,019 INFO    SenderThread:5939 [dir_watcher.py:finish():402] scan save: /Users/yunbo/Documents/GitHub/PFL_Optimiozation/wandb/run-20240310_092646-egkg5dmd/files/media/images/Distribution Plot_29_9b7cb560d42c3b173bbd.png media/images/Distribution Plot_29_9b7cb560d42c3b173bbd.png
+2024-03-10 09:26:59,019 INFO    SenderThread:5939 [sender.py:transition_state():617] send defer: 10
+2024-03-10 09:26:59,020 DEBUG   SenderThread:5939 [sender.py:send_request():409] send_request: poll_exit
+2024-03-10 09:26:59,020 DEBUG   HandlerThread:5939 [handler.py:handle_request():146] handle_request: defer
+2024-03-10 09:26:59,020 INFO    HandlerThread:5939 [handler.py:handle_request_defer():172] handle defer: 10
+2024-03-10 09:26:59,021 DEBUG   SenderThread:5939 [sender.py:send_request():409] send_request: defer
+2024-03-10 09:26:59,021 INFO    SenderThread:5939 [sender.py:send_request_defer():613] handle sender defer: 10
+2024-03-10 09:26:59,021 INFO    SenderThread:5939 [file_pusher.py:finish():175] shutting down file pusher
+2024-03-10 09:26:59,145 DEBUG   HandlerThread:5939 [handler.py:handle_request():146] handle_request: poll_exit
+2024-03-10 09:26:59,148 DEBUG   SenderThread:5939 [sender.py:send_request():409] send_request: poll_exit
+2024-03-10 09:26:59,353 INFO    wandb-upload_4:5939 [upload_job.py:push():131] Uploaded file /Users/yunbo/Documents/GitHub/PFL_Optimiozation/wandb/run-20240310_092646-egkg5dmd/files/wandb-summary.json
+2024-03-10 09:26:59,367 INFO    wandb-upload_5:5939 [upload_job.py:push():131] Uploaded file /Users/yunbo/Documents/GitHub/PFL_Optimiozation/wandb/run-20240310_092646-egkg5dmd/files/config.yaml
+2024-03-10 09:26:59,367 INFO    wandb-upload_2:5939 [upload_job.py:push():131] Uploaded file /Users/yunbo/Documents/GitHub/PFL_Optimiozation/wandb/run-20240310_092646-egkg5dmd/files/requirements.txt
+2024-03-10 09:26:59,381 INFO    wandb-upload_3:5939 [upload_job.py:push():131] Uploaded file /Users/yunbo/Documents/GitHub/PFL_Optimiozation/wandb/run-20240310_092646-egkg5dmd/files/conda-environment.yaml
+2024-03-10 09:26:59,384 INFO    wandb-upload_7:5939 [upload_job.py:push():131] Uploaded file /Users/yunbo/Documents/GitHub/PFL_Optimiozation/wandb/run-20240310_092646-egkg5dmd/files/output.log
+2024-03-10 09:26:59,589 INFO    Thread-218:5939 [sender.py:transition_state():617] send defer: 11
+2024-03-10 09:26:59,590 DEBUG   HandlerThread:5939 [handler.py:handle_request():146] handle_request: defer
+2024-03-10 09:26:59,590 INFO    HandlerThread:5939 [handler.py:handle_request_defer():172] handle defer: 11
+2024-03-10 09:26:59,591 DEBUG   SenderThread:5939 [sender.py:send_request():409] send_request: defer
+2024-03-10 09:26:59,591 INFO    SenderThread:5939 [sender.py:send_request_defer():613] handle sender defer: 11
+2024-03-10 09:26:59,591 INFO    SenderThread:5939 [file_pusher.py:join():181] waiting for file pusher
+2024-03-10 09:26:59,592 INFO    SenderThread:5939 [sender.py:transition_state():617] send defer: 12
+2024-03-10 09:26:59,592 DEBUG   HandlerThread:5939 [handler.py:handle_request():146] handle_request: defer
+2024-03-10 09:26:59,592 INFO    HandlerThread:5939 [handler.py:handle_request_defer():172] handle defer: 12
+2024-03-10 09:26:59,592 DEBUG   SenderThread:5939 [sender.py:send_request():409] send_request: defer
+2024-03-10 09:26:59,592 INFO    SenderThread:5939 [sender.py:send_request_defer():613] handle sender defer: 12
+2024-03-10 09:26:59,593 INFO    SenderThread:5939 [file_stream.py:finish():595] file stream finish called
+2024-03-10 09:26:59,729 INFO    SenderThread:5939 [file_stream.py:finish():599] file stream finish is done
+2024-03-10 09:26:59,730 INFO    SenderThread:5939 [sender.py:transition_state():617] send defer: 13
+2024-03-10 09:26:59,730 DEBUG   HandlerThread:5939 [handler.py:handle_request():146] handle_request: defer
+2024-03-10 09:26:59,730 INFO    HandlerThread:5939 [handler.py:handle_request_defer():172] handle defer: 13
+2024-03-10 09:26:59,731 DEBUG   SenderThread:5939 [sender.py:send_request():409] send_request: defer
+2024-03-10 09:26:59,731 INFO    SenderThread:5939 [sender.py:send_request_defer():613] handle sender defer: 13
+2024-03-10 09:26:59,731 INFO    SenderThread:5939 [sender.py:transition_state():617] send defer: 14
+2024-03-10 09:26:59,732 DEBUG   HandlerThread:5939 [handler.py:handle_request():146] handle_request: defer
+2024-03-10 09:26:59,732 DEBUG   SenderThread:5939 [sender.py:send():382] send: final
+2024-03-10 09:26:59,733 INFO    HandlerThread:5939 [handler.py:handle_request_defer():172] handle defer: 14
+2024-03-10 09:26:59,733 DEBUG   SenderThread:5939 [sender.py:send():382] send: footer
+2024-03-10 09:26:59,733 DEBUG   SenderThread:5939 [sender.py:send_request():409] send_request: defer
+2024-03-10 09:26:59,733 INFO    SenderThread:5939 [sender.py:send_request_defer():613] handle sender defer: 14
+2024-03-10 09:26:59,736 DEBUG   HandlerThread:5939 [handler.py:handle_request():146] handle_request: poll_exit
+2024-03-10 09:26:59,736 DEBUG   SenderThread:5939 [sender.py:send_request():409] send_request: poll_exit
+2024-03-10 09:26:59,738 DEBUG   HandlerThread:5939 [handler.py:handle_request():146] handle_request: internal_messages
+2024-03-10 09:26:59,740 DEBUG   HandlerThread:5939 [handler.py:handle_request():146] handle_request: server_info
+2024-03-10 09:26:59,741 DEBUG   HandlerThread:5939 [handler.py:handle_request():146] handle_request: get_summary
+2024-03-10 09:26:59,742 DEBUG   HandlerThread:5939 [handler.py:handle_request():146] handle_request: sampled_history
+2024-03-10 09:26:59,742 DEBUG   SenderThread:5939 [sender.py:send_request():409] send_request: server_info
+2024-03-10 09:26:59,744 DEBUG   HandlerThread:5939 [handler.py:handle_request():146] handle_request: job_info
+2024-03-10 09:26:59,882 DEBUG   SenderThread:5939 [sender.py:send_request():409] send_request: job_info
+2024-03-10 09:26:59,885 DEBUG   HandlerThread:5939 [handler.py:handle_request():146] handle_request: shutdown
+2024-03-10 09:26:59,885 INFO    HandlerThread:5939 [handler.py:finish():869] shutting down handler
+2024-03-10 09:27:00,753 INFO    WriterThread:5939 [datastore.py:close():296] close: /Users/yunbo/Documents/GitHub/PFL_Optimiozation/wandb/run-20240310_092646-egkg5dmd/run-egkg5dmd.wandb
+2024-03-10 09:27:00,886 INFO    SenderThread:5939 [sender.py:finish():1572] shutting down sender
+2024-03-10 09:27:00,887 INFO    SenderThread:5939 [file_pusher.py:finish():175] shutting down file pusher
+2024-03-10 09:27:00,887 INFO    SenderThread:5939 [file_pusher.py:join():181] waiting for file pusher

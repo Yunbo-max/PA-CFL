@@ -1,0 +1,1741 @@
+wandb: Currently logged in as: longyunbo218 (digitalai). Use `wandb login --relogin` to force relogin
+wandb: wandb version 0.16.4 is available!  To upgrade, please run:
+wandb:  $ pip install wandb --upgrade
+wandb: Tracking run with wandb version 0.16.2
+wandb: Run data is saved locally in /Users/yunbo/Documents/GitHub/PFL_Optimiozation/Model_training/1_cluster/wandb/run-20240309_123333-xypgs7i9
+wandb: Run `wandb offline` to turn off syncing.
+wandb: Syncing run icy-firefly-23
+wandb: ⭐️ View project at https://wandb.ai/digitalai/CFL
+wandb: 🚀 View run at https://wandb.ai/digitalai/CFL/runs/xypgs7i9
+INFO flwr 2024-03-09 12:33:57,123 | grpc.py:52 | Opened insecure gRPC connection (no certificates were passed)
+DEBUG flwr 2024-03-09 12:33:57,136 | connection.py:42 | ChannelConnectivity.IDLE
+DEBUG flwr 2024-03-09 12:33:57,137 | connection.py:42 | ChannelConnectivity.READY
+Epoch 1/10, Loss: 19278.6135
+Epoch 2/10, Loss: 3787.3366
+Epoch 3/10, Loss: 3336.1333
+Epoch 4/10, Loss: 2939.7348
+Epoch 5/10, Loss: 2935.1653
+Epoch 6/10, Loss: 2684.0574
+Epoch 7/10, Loss: 3014.2047
+Epoch 8/10, Loss: 2622.1784
+Epoch 9/10, Loss: 2473.4768
+Epoch 10/10, Loss: 2327.9239
+Performance Metrics:
+RMSE (test data): 118.7401351928711
+MAE (test data): 100.4866714477539
+MAPE (test data): 61.46684288978577
+MSE (test data): 14099.2197265625
+R2 (test data): -0.22866714253280152
+loss (test data): 14099.219937020966
+Epoch 1/10, Loss: 987.6504
+Epoch 2/10, Loss: 47.6096
+Epoch 3/10, Loss: 33.0162
+Epoch 4/10, Loss: 21.4948
+Epoch 5/10, Loss: 15.2806
+Epoch 6/10, Loss: 12.4146
+Epoch 7/10, Loss: 10.9831
+Epoch 8/10, Loss: 8.1888
+Epoch 9/10, Loss: 7.7923
+Epoch 10/10, Loss: 5.6026
+Performance Metrics:
+RMSE (test data): 48.19227981567383
+MAE (test data): 33.90388488769531
+MAPE (test data): 114.0019178390503
+MSE (test data): 2322.495849609375
+R2 (test data): 0.7976076401979565
+loss (test data): 2322.495845426623
+Epoch 1/10, Loss: 284.0859
+Epoch 2/10, Loss: 25.7669
+Epoch 3/10, Loss: 22.3662
+Epoch 4/10, Loss: 19.6271
+Epoch 5/10, Loss: 16.5727
+Epoch 6/10, Loss: 12.1119
+Epoch 7/10, Loss: 11.2483
+Epoch 8/10, Loss: 5.8107
+Epoch 9/10, Loss: 4.7152
+Epoch 10/10, Loss: 4.5459
+Performance Metrics:
+RMSE (test data): 134.06234741210938
+MAE (test data): 108.28902435302734
+MAPE (test data): 162.54149675369263
+MSE (test data): 17972.712890625
+R2 (test data): -0.5662201198817307
+loss (test data): 17972.712799044748
+Epoch 1/10, Loss: 2204.4149
+Epoch 2/10, Loss: 42.8710
+Epoch 3/10, Loss: 23.4106
+Epoch 4/10, Loss: 14.8372
+Epoch 5/10, Loss: 10.6954
+Epoch 6/10, Loss: 8.7607
+Epoch 7/10, Loss: 7.3728
+Epoch 8/10, Loss: 6.6010
+Epoch 9/10, Loss: 6.1991
+Epoch 10/10, Loss: 5.1793
+Performance Metrics:
+RMSE (test data): 144.69509887695312
+MAE (test data): 122.40483856201172
+MAPE (test data): 172.31885194778442
+MSE (test data): 20936.673828125
+R2 (test data): -0.8245126335079829
+loss (test data): 20936.67495350541
+Epoch 1/10, Loss: 2458.4657
+Epoch 2/10, Loss: 24.1731
+Epoch 3/10, Loss: 10.7663
+Epoch 4/10, Loss: 8.3549
+Epoch 5/10, Loss: 6.5819
+Epoch 6/10, Loss: 6.0877
+Epoch 7/10, Loss: 5.3771
+Epoch 8/10, Loss: 5.3790
+Epoch 9/10, Loss: 4.5338
+Epoch 10/10, Loss: 4.3836
+Performance Metrics:
+RMSE (test data): 139.90811157226562
+MAE (test data): 119.76885223388672
+MAPE (test data): 168.76678466796875
+MSE (test data): 19574.279296875
+R2 (test data): -0.705787596227329
+loss (test data): 19574.27985516231
+Epoch 1/10, Loss: 2926.1137
+Epoch 2/10, Loss: 32.2986
+Epoch 3/10, Loss: 15.9821
+Epoch 4/10, Loss: 9.8041
+Epoch 5/10, Loss: 6.5711
+Epoch 6/10, Loss: 5.2036
+Epoch 7/10, Loss: 4.6235
+Epoch 8/10, Loss: 4.2319
+Epoch 9/10, Loss: 4.2207
+Epoch 10/10, Loss: 3.7901
+Performance Metrics:
+RMSE (test data): 165.314208984375
+MAE (test data): 139.8095703125
+MAPE (test data): 184.20066833496094
+MSE (test data): 27328.7890625
+R2 (test data): -1.3815491847916026
+loss (test data): 27328.789270316727
+Epoch 1/10, Loss: 3348.7018
+Epoch 2/10, Loss: 26.1287
+Epoch 3/10, Loss: 11.9390
+Epoch 4/10, Loss: 7.8423
+Epoch 5/10, Loss: 6.3317
+Epoch 6/10, Loss: 5.4628
+Epoch 7/10, Loss: 4.8483
+Epoch 8/10, Loss: 4.4375
+Epoch 9/10, Loss: 4.1300
+Epoch 10/10, Loss: 3.7425
+Performance Metrics:
+RMSE (test data): 171.14291381835938
+MAE (test data): 146.72047424316406
+MAPE (test data): 188.38956356048584
+MSE (test data): 29289.896484375
+R2 (test data): -1.5524485172520848
+loss (test data): 29289.895978922454
+Epoch 1/10, Loss: 3147.6163
+Epoch 2/10, Loss: 42.4921
+Epoch 3/10, Loss: 22.9543
+Epoch 4/10, Loss: 16.1938
+Epoch 5/10, Loss: 13.3297
+Epoch 6/10, Loss: 12.1617
+Epoch 7/10, Loss: 10.3889
+Epoch 8/10, Loss: 9.7223
+Epoch 9/10, Loss: 8.8774
+Epoch 10/10, Loss: 8.9962
+Performance Metrics:
+RMSE (test data): 161.09429931640625
+MAE (test data): 140.1467742919922
+MAPE (test data): 183.76188278198242
+MSE (test data): 25951.373046875
+R2 (test data): -1.2615151515521221
+loss (test data): 25951.37318072306
+Epoch 1/10, Loss: 2596.3018
+Epoch 2/10, Loss: 30.8937
+Epoch 3/10, Loss: 17.8350
+Epoch 4/10, Loss: 11.7572
+Epoch 5/10, Loss: 8.6520
+Epoch 6/10, Loss: 7.2435
+Epoch 7/10, Loss: 6.3725
+Epoch 8/10, Loss: 5.7341
+Epoch 9/10, Loss: 5.5184
+Epoch 10/10, Loss: 4.8908
+Performance Metrics:
+RMSE (test data): 167.73268127441406
+MAE (test data): 145.9102020263672
+MAPE (test data): 187.81813383102417
+MSE (test data): 28134.251953125
+R2 (test data): -1.4517406383708291
+loss (test data): 28134.251419493914
+Epoch 1/10, Loss: 1982.8462
+Epoch 2/10, Loss: 30.9897
+Epoch 3/10, Loss: 20.0859
+Epoch 4/10, Loss: 10.8759
+Epoch 5/10, Loss: 7.1890
+Epoch 6/10, Loss: 5.7925
+Epoch 7/10, Loss: 4.5807
+Epoch 8/10, Loss: 3.6174
+Epoch 9/10, Loss: 3.0024
+Epoch 10/10, Loss: 2.5988
+Performance Metrics:
+RMSE (test data): 164.80686950683594
+MAE (test data): 144.35093688964844
+MAPE (test data): 186.36585474014282
+MSE (test data): 27161.302734375
+R2 (test data): -1.3669535151634968
+loss (test data): 27161.300112009692
+Epoch 1/10, Loss: 2341.2980
+Epoch 2/10, Loss: 21.7229
+Epoch 3/10, Loss: 11.5082
+Epoch 4/10, Loss: 6.3562
+Epoch 5/10, Loss: 4.3201
+Epoch 6/10, Loss: 3.4175
+Epoch 7/10, Loss: 2.5778
+Epoch 8/10, Loss: 2.1493
+Epoch 9/10, Loss: 1.8193
+Epoch 10/10, Loss: 1.6529
+Performance Metrics:
+RMSE (test data): 169.54542541503906
+MAE (test data): 147.5673370361328
+MAPE (test data): 188.67197036743164
+MSE (test data): 28745.650390625
+R2 (test data): -1.5050206182883086
+loss (test data): 28745.650492772205
+Epoch 1/10, Loss: 2846.6206
+Epoch 2/10, Loss: 23.6095
+Epoch 3/10, Loss: 11.8945
+Epoch 4/10, Loss: 7.4372
+Epoch 5/10, Loss: 4.9303
+Epoch 6/10, Loss: 3.8054
+Epoch 7/10, Loss: 3.1653
+Epoch 8/10, Loss: 2.6882
+Epoch 9/10, Loss: 2.4335
+Epoch 10/10, Loss: 2.1647
+Performance Metrics:
+RMSE (test data): 164.36734008789062
+MAE (test data): 141.58848571777344
+MAPE (test data): 185.38464307785034
+MSE (test data): 27016.62109375
+R2 (test data): -1.3543454665706793
+loss (test data): 27016.620937006875
+Epoch 1/10, Loss: 2748.2784
+Epoch 2/10, Loss: 19.6942
+Epoch 3/10, Loss: 9.6124
+Epoch 4/10, Loss: 5.3899
+Epoch 5/10, Loss: 3.6661
+Epoch 6/10, Loss: 2.7247
+Epoch 7/10, Loss: 2.2394
+Epoch 8/10, Loss: 1.8132
+Epoch 9/10, Loss: 1.5466
+Epoch 10/10, Loss: 1.3340
+Performance Metrics:
+RMSE (test data): 171.90679931640625
+MAE (test data): 149.82688903808594
+MAPE (test data): 189.87888097763062
+MSE (test data): 29551.94921875
+R2 (test data): -1.575284795178272
+loss (test data): 29551.947094792606
+Epoch 1/10, Loss: 1917.0565
+Epoch 2/10, Loss: 18.6695
+Epoch 3/10, Loss: 8.3700
+Epoch 4/10, Loss: 5.6259
+Epoch 5/10, Loss: 4.2250
+Epoch 6/10, Loss: 3.3290
+Epoch 7/10, Loss: 2.7071
+Epoch 8/10, Loss: 2.3301
+Epoch 9/10, Loss: 2.0422
+Epoch 10/10, Loss: 1.8287
+Performance Metrics:
+RMSE (test data): 171.06802368164062
+MAE (test data): 147.3699493408203
+MAPE (test data): 189.8558259010315
+MSE (test data): 29264.267578125
+R2 (test data): -1.5502149519897381
+loss (test data): 29264.265103697024
+Epoch 1/10, Loss: 2523.0635
+Epoch 2/10, Loss: 18.2559
+Epoch 3/10, Loss: 9.0749
+Epoch 4/10, Loss: 5.2142
+Epoch 5/10, Loss: 3.4505
+Epoch 6/10, Loss: 2.5557
+Epoch 7/10, Loss: 2.0528
+Epoch 8/10, Loss: 1.6767
+Epoch 9/10, Loss: 1.3912
+Epoch 10/10, Loss: 1.2078
+Performance Metrics:
+RMSE (test data): 172.18582153320312
+MAE (test data): 149.77085876464844
+MAPE (test data): 189.65808153152466
+MSE (test data): 29647.958984375
+R2 (test data): -1.5836516743421463
+loss (test data): 29647.95883819883
+Epoch 1/10, Loss: 2269.1066
+Epoch 2/10, Loss: 25.8543
+Epoch 3/10, Loss: 8.5236
+Epoch 4/10, Loss: 5.5904
+Epoch 5/10, Loss: 4.1531
+Epoch 6/10, Loss: 3.3144
+Epoch 7/10, Loss: 2.6822
+Epoch 8/10, Loss: 2.2511
+Epoch 9/10, Loss: 1.9450
+Epoch 10/10, Loss: 1.7361
+Performance Metrics:
+RMSE (test data): 170.83399963378906
+MAE (test data): 146.13999938964844
+MAPE (test data): 189.33591842651367
+MSE (test data): 29184.255859375
+R2 (test data): -1.5432425895473822
+loss (test data): 29184.256178144726
+Epoch 1/10, Loss: 1793.5480
+Epoch 2/10, Loss: 30.9391
+Epoch 3/10, Loss: 11.6931
+Epoch 4/10, Loss: 5.3108
+Epoch 5/10, Loss: 3.1140
+Epoch 6/10, Loss: 2.1228
+Epoch 7/10, Loss: 1.6138
+Epoch 8/10, Loss: 1.3196
+Epoch 9/10, Loss: 1.0979
+Epoch 10/10, Loss: 0.9405
+Performance Metrics:
+RMSE (test data): 174.5259552001953
+MAE (test data): 152.0520477294922
+MAPE (test data): 191.60815477371216
+MSE (test data): 30459.306640625
+R2 (test data): -1.6543562032146273
+loss (test data): 30459.30902523388
+Epoch 1/10, Loss: 2819.7835
+Epoch 2/10, Loss: 32.6652
+Epoch 3/10, Loss: 12.6859
+Epoch 4/10, Loss: 6.7773
+Epoch 5/10, Loss: 4.6836
+Epoch 6/10, Loss: 3.4710
+Epoch 7/10, Loss: 2.7703
+Epoch 8/10, Loss: 2.2887
+Epoch 9/10, Loss: 1.9763
+Epoch 10/10, Loss: 1.7334
+Performance Metrics:
+RMSE (test data): 171.2295379638672
+MAE (test data): 146.40737915039062
+MAPE (test data): 189.9030327796936
+MSE (test data): 29319.5546875
+R2 (test data): -1.5550331951430358
+loss (test data): 29319.555900938347
+Epoch 1/10, Loss: 2257.3587
+Epoch 2/10, Loss: 20.6881
+Epoch 3/10, Loss: 11.2106
+Epoch 4/10, Loss: 7.0701
+Epoch 5/10, Loss: 4.4740
+Epoch 6/10, Loss: 3.1397
+Epoch 7/10, Loss: 2.3419
+Epoch 8/10, Loss: 1.9085
+Epoch 9/10, Loss: 1.5033
+Epoch 10/10, Loss: 1.2195
+Performance Metrics:
+RMSE (test data): 172.27389526367188
+MAE (test data): 150.4142303466797
+MAPE (test data): 190.31380414962769
+MSE (test data): 29678.29296875
+R2 (test data): -1.5862950754944376
+loss (test data): 29678.292773261383
+Epoch 1/10, Loss: 2284.2094
+Epoch 2/10, Loss: 31.6504
+Epoch 3/10, Loss: 12.0001
+Epoch 4/10, Loss: 6.5853
+Epoch 5/10, Loss: 4.3002
+Epoch 6/10, Loss: 3.1703
+Epoch 7/10, Loss: 2.4702
+Epoch 8/10, Loss: 1.9700
+Epoch 9/10, Loss: 1.6579
+Epoch 10/10, Loss: 1.4670
+Performance Metrics:
+RMSE (test data): 169.15626525878906
+MAE (test data): 143.9034881591797
+MAPE (test data): 188.67788314819336
+MSE (test data): 28613.83984375
+R2 (test data): -1.493534163494279
+loss (test data): 28613.841081844566
+Epoch 1/10, Loss: 2236.4031
+Epoch 2/10, Loss: 36.5632
+Epoch 3/10, Loss: 18.9424
+Epoch 4/10, Loss: 11.3007
+Epoch 5/10, Loss: 6.2747
+Epoch 6/10, Loss: 3.4969
+Epoch 7/10, Loss: 2.3081
+Epoch 8/10, Loss: 1.8472
+Epoch 9/10, Loss: 1.5361
+Epoch 10/10, Loss: 1.3014
+Performance Metrics:
+RMSE (test data): 170.516845703125
+MAE (test data): 147.3585968017578
+MAPE (test data): 189.3375039100647
+MSE (test data): 29075.9921875
+R2 (test data): -1.533808030311402
+loss (test data): 29075.992293169522
+Epoch 1/10, Loss: 2486.9082
+Epoch 2/10, Loss: 32.3304
+Epoch 3/10, Loss: 14.1882
+Epoch 4/10, Loss: 8.3889
+Epoch 5/10, Loss: 4.1978
+Epoch 6/10, Loss: 2.1000
+Epoch 7/10, Loss: 1.5328
+Epoch 8/10, Loss: 1.1748
+Epoch 9/10, Loss: 0.9972
+Epoch 10/10, Loss: 0.8505
+Performance Metrics:
+RMSE (test data): 171.60635375976562
+MAE (test data): 148.22911071777344
+MAPE (test data): 190.6598448753357
+MSE (test data): 29448.73828125
+R2 (test data): -1.5662905718490978
+loss (test data): 29448.736351020063
+Epoch 1/10, Loss: 2349.4840
+Epoch 2/10, Loss: 33.7262
+Epoch 3/10, Loss: 17.4179
+Epoch 4/10, Loss: 10.6501
+Epoch 5/10, Loss: 7.1679
+Epoch 6/10, Loss: 4.8898
+Epoch 7/10, Loss: 3.2785
+Epoch 8/10, Loss: 2.4833
+Epoch 9/10, Loss: 1.9366
+Epoch 10/10, Loss: 1.5674
+Performance Metrics:
+RMSE (test data): 174.32142639160156
+MAE (test data): 150.23348999023438
+MAPE (test data): 192.32932329177856
+MSE (test data): 30387.9609375
+R2 (test data): -1.6481385576991738
+loss (test data): 30387.959139356964
+Epoch 1/10, Loss: 2610.2936
+Epoch 2/10, Loss: 32.4770
+Epoch 3/10, Loss: 18.3378
+Epoch 4/10, Loss: 12.3354
+Epoch 5/10, Loss: 8.4219
+Epoch 6/10, Loss: 5.7525
+Epoch 7/10, Loss: 3.9952
+Epoch 8/10, Loss: 2.7778
+Epoch 9/10, Loss: 1.9967
+Epoch 10/10, Loss: 1.6146
+Performance Metrics:
+RMSE (test data): 172.014892578125
+MAE (test data): 147.90065002441406
+MAPE (test data): 189.98680114746094
+MSE (test data): 29589.125
+R2 (test data): -1.578524734811138
+loss (test data): 29589.126336719455
+Epoch 1/10, Loss: 2125.1842
+Epoch 2/10, Loss: 30.7781
+Epoch 3/10, Loss: 18.2758
+Epoch 4/10, Loss: 10.7372
+Epoch 5/10, Loss: 4.5451
+Epoch 6/10, Loss: 2.9013
+Epoch 7/10, Loss: 2.1376
+Epoch 8/10, Loss: 1.6556
+Epoch 9/10, Loss: 1.3875
+Epoch 10/10, Loss: 1.1778
+Performance Metrics:
+RMSE (test data): 170.59303283691406
+MAE (test data): 146.38864135742188
+MAPE (test data): 188.93567323684692
+MSE (test data): 29101.98046875
+R2 (test data): -1.5360727698168972
+loss (test data): 29101.980785758566
+Epoch 1/10, Loss: 1937.0807
+Epoch 2/10, Loss: 29.5457
+Epoch 3/10, Loss: 16.3710
+Epoch 4/10, Loss: 10.2350
+Epoch 5/10, Loss: 5.4332
+Epoch 6/10, Loss: 2.5777
+Epoch 7/10, Loss: 1.8672
+Epoch 8/10, Loss: 1.5068
+Epoch 9/10, Loss: 1.2270
+Epoch 10/10, Loss: 1.0380
+Performance Metrics:
+RMSE (test data): 170.65843200683594
+MAE (test data): 146.0160369873047
+MAPE (test data): 189.60988521575928
+MSE (test data): 29124.298828125
+R2 (test data): -1.5380177399785442
+loss (test data): 29124.299488559514
+Epoch 1/10, Loss: 2245.4515
+Epoch 2/10, Loss: 23.0538
+Epoch 3/10, Loss: 13.9391
+Epoch 4/10, Loss: 10.3579
+Epoch 5/10, Loss: 7.2162
+Epoch 6/10, Loss: 5.0388
+Epoch 7/10, Loss: 3.6218
+Epoch 8/10, Loss: 2.8258
+Epoch 9/10, Loss: 2.2495
+Epoch 10/10, Loss: 1.8254
+Performance Metrics:
+RMSE (test data): 170.9816436767578
+MAE (test data): 146.84689331054688
+MAPE (test data): 189.31769132614136
+MSE (test data): 29234.72265625
+R2 (test data): -1.5476405606962231
+loss (test data): 29234.723496322702
+Epoch 1/10, Loss: 2578.6273
+Epoch 2/10, Loss: 31.3825
+Epoch 3/10, Loss: 16.4385
+Epoch 4/10, Loss: 10.8909
+Epoch 5/10, Loss: 5.9860
+Epoch 6/10, Loss: 3.7344
+Epoch 7/10, Loss: 2.9280
+Epoch 8/10, Loss: 2.3517
+Epoch 9/10, Loss: 1.9711
+Epoch 10/10, Loss: 1.7567
+Performance Metrics:
+RMSE (test data): 172.70050048828125
+MAE (test data): 150.37510681152344
+MAPE (test data): 191.0966396331787
+MSE (test data): 29825.4609375
+R2 (test data): -1.5991199628247488
+loss (test data): 29825.460863531334
+Epoch 1/10, Loss: 1973.2927
+Epoch 2/10, Loss: 37.4869
+Epoch 3/10, Loss: 20.3672
+Epoch 4/10, Loss: 12.1167
+Epoch 5/10, Loss: 5.9882
+Epoch 6/10, Loss: 3.9130
+Epoch 7/10, Loss: 2.9337
+Epoch 8/10, Loss: 2.2798
+Epoch 9/10, Loss: 1.9281
+Epoch 10/10, Loss: 1.6242
+Performance Metrics:
+RMSE (test data): 171.48681640625
+MAE (test data): 148.22113037109375
+MAPE (test data): 190.45472145080566
+MSE (test data): 29407.7265625
+R2 (test data): -1.562716859278264
+loss (test data): 29407.72730923129
+Epoch 1/10, Loss: 1912.7021
+Epoch 2/10, Loss: 32.2768
+Epoch 3/10, Loss: 18.3404
+Epoch 4/10, Loss: 11.8268
+Epoch 5/10, Loss: 8.1797
+Epoch 6/10, Loss: 6.0098
+Epoch 7/10, Loss: 4.0219
+Epoch 8/10, Loss: 1.9176
+Epoch 9/10, Loss: 1.4025
+Epoch 10/10, Loss: 1.1541
+Performance Metrics:
+RMSE (test data): 172.53675842285156
+MAE (test data): 149.0127410888672
+MAPE (test data): 191.4018154144287
+MSE (test data): 29768.931640625
+R2 (test data): -1.5941938550135872
+loss (test data): 29768.933088297454
+Epoch 1/10, Loss: 2244.9181
+Epoch 2/10, Loss: 28.6038
+Epoch 3/10, Loss: 18.2139
+Epoch 4/10, Loss: 13.2022
+Epoch 5/10, Loss: 9.6688
+Epoch 6/10, Loss: 7.3537
+Epoch 7/10, Loss: 5.4360
+Epoch 8/10, Loss: 3.9631
+Epoch 9/10, Loss: 3.1068
+Epoch 10/10, Loss: 2.4701
+Performance Metrics:
+RMSE (test data): 170.4585723876953
+MAE (test data): 145.29811096191406
+MAPE (test data): 189.27454948425293
+MSE (test data): 29056.126953125
+R2 (test data): -1.5320769136357946
+loss (test data): 29056.12711339044
+Epoch 1/10, Loss: 2120.4401
+Epoch 2/10, Loss: 28.7649
+Epoch 3/10, Loss: 18.6356
+Epoch 4/10, Loss: 13.4291
+Epoch 5/10, Loss: 9.4988
+Epoch 6/10, Loss: 7.0448
+Epoch 7/10, Loss: 5.4582
+Epoch 8/10, Loss: 4.1959
+Epoch 9/10, Loss: 3.1523
+Epoch 10/10, Loss: 2.4000
+Performance Metrics:
+RMSE (test data): 172.24485778808594
+MAE (test data): 147.19393920898438
+MAPE (test data): 190.531587600708
+MSE (test data): 29668.291015625
+R2 (test data): -1.585423454287377
+loss (test data): 29668.290425636835
+Epoch 1/10, Loss: 2649.5987
+Epoch 2/10, Loss: 32.2055
+Epoch 3/10, Loss: 17.6395
+Epoch 4/10, Loss: 11.5324
+Epoch 5/10, Loss: 8.1044
+Epoch 6/10, Loss: 5.4241
+Epoch 7/10, Loss: 3.8526
+Epoch 8/10, Loss: 2.7761
+Epoch 9/10, Loss: 1.8966
+Epoch 10/10, Loss: 1.4095
+Performance Metrics:
+RMSE (test data): 171.73220825195312
+MAE (test data): 146.54664611816406
+MAPE (test data): 190.0696873664856
+MSE (test data): 29491.953125
+R2 (test data): -1.570056712804746
+loss (test data): 29491.95353182766
+Epoch 1/10, Loss: 2390.5667
+Epoch 2/10, Loss: 36.8889
+Epoch 3/10, Loss: 20.2655
+Epoch 4/10, Loss: 13.3045
+Epoch 5/10, Loss: 9.2674
+Epoch 6/10, Loss: 6.5921
+Epoch 7/10, Loss: 4.8959
+Epoch 8/10, Loss: 3.6934
+Epoch 9/10, Loss: 2.7120
+Epoch 10/10, Loss: 2.0005
+Performance Metrics:
+RMSE (test data): 172.8065948486328
+MAE (test data): 147.72084045410156
+MAPE (test data): 190.95146656036377
+MSE (test data): 29862.119140625
+R2 (test data): -1.6023144679566412
+loss (test data): 29862.11805399008
+Epoch 1/10, Loss: 2199.9836
+Epoch 2/10, Loss: 32.1911
+Epoch 3/10, Loss: 18.8765
+Epoch 4/10, Loss: 13.1153
+Epoch 5/10, Loss: 9.7505
+Epoch 6/10, Loss: 7.5007
+Epoch 7/10, Loss: 5.7071
+Epoch 8/10, Loss: 4.0788
+Epoch 9/10, Loss: 2.5998
+Epoch 10/10, Loss: 1.8593
+Performance Metrics:
+RMSE (test data): 167.82281494140625
+MAE (test data): 143.39244079589844
+MAPE (test data): 187.76599168777466
+MSE (test data): 28164.498046875
+R2 (test data): -1.4543763681696937
+loss (test data): 28164.497199757665
+Epoch 1/10, Loss: 2286.1560
+Epoch 2/10, Loss: 34.5855
+Epoch 3/10, Loss: 21.1517
+Epoch 4/10, Loss: 14.3181
+Epoch 5/10, Loss: 10.0009
+Epoch 6/10, Loss: 7.5916
+Epoch 7/10, Loss: 5.6821
+Epoch 8/10, Loss: 4.2616
+Epoch 9/10, Loss: 2.7816
+Epoch 10/10, Loss: 2.0471
+Performance Metrics:
+RMSE (test data): 171.39784240722656
+MAE (test data): 146.13565063476562
+MAPE (test data): 189.8506999015808
+MSE (test data): 29377.21875
+R2 (test data): -1.560058157559474
+loss (test data): 29377.21803320841
+Epoch 1/10, Loss: 2162.3146
+Epoch 2/10, Loss: 29.8809
+Epoch 3/10, Loss: 18.9248
+Epoch 4/10, Loss: 13.4866
+Epoch 5/10, Loss: 9.8039
+Epoch 6/10, Loss: 7.5764
+Epoch 7/10, Loss: 6.1720
+Epoch 8/10, Loss: 5.0362
+Epoch 9/10, Loss: 3.7790
+Epoch 10/10, Loss: 2.5953
+Performance Metrics:
+RMSE (test data): 171.89466857910156
+MAE (test data): 146.65086364746094
+MAPE (test data): 190.30747413635254
+MSE (test data): 29547.77734375
+R2 (test data): -1.5749212886020132
+loss (test data): 29547.77536420762
+Epoch 1/10, Loss: 2045.1539
+Epoch 2/10, Loss: 30.5867
+Epoch 3/10, Loss: 18.1163
+Epoch 4/10, Loss: 12.5934
+Epoch 5/10, Loss: 9.3348
+Epoch 6/10, Loss: 7.2334
+Epoch 7/10, Loss: 5.6784
+Epoch 8/10, Loss: 4.3666
+Epoch 9/10, Loss: 3.0089
+Epoch 10/10, Loss: 2.1755
+Performance Metrics:
+RMSE (test data): 173.5770721435547
+MAE (test data): 148.15298461914062
+MAPE (test data): 191.37160778045654
+MSE (test data): 30128.998046875
+R2 (test data): -1.6255713343406333
+loss (test data): 30128.99597046889
+Epoch 1/10, Loss: 2567.9790
+Epoch 2/10, Loss: 37.8500
+Epoch 3/10, Loss: 22.7338
+Epoch 4/10, Loss: 16.7244
+Epoch 5/10, Loss: 11.8581
+Epoch 6/10, Loss: 9.2663
+Epoch 7/10, Loss: 7.4614
+Epoch 8/10, Loss: 6.1278
+Epoch 9/10, Loss: 5.1332
+Epoch 10/10, Loss: 4.3582
+Performance Metrics:
+RMSE (test data): 172.1781463623047
+MAE (test data): 146.68829345703125
+MAPE (test data): 190.3133511543274
+MSE (test data): 29645.3125
+R2 (test data): -1.5834211580172535
+loss (test data): 29645.313606007665
+Epoch 1/10, Loss: 2309.6628
+Epoch 2/10, Loss: 27.4184
+Epoch 3/10, Loss: 15.7198
+Epoch 4/10, Loss: 11.5819
+Epoch 5/10, Loss: 8.9795
+Epoch 6/10, Loss: 7.2405
+Epoch 7/10, Loss: 5.8037
+Epoch 8/10, Loss: 4.7477
+Epoch 9/10, Loss: 3.2192
+Epoch 10/10, Loss: 2.1929
+Performance Metrics:
+RMSE (test data): 172.4734344482422
+MAE (test data): 146.96755981445312
+MAPE (test data): 190.50980806350708
+MSE (test data): 29747.0859375
+R2 (test data): -1.592290014351018
+loss (test data): 29747.08532461677
+Epoch 1/10, Loss: 2218.0061
+Epoch 2/10, Loss: 31.4395
+Epoch 3/10, Loss: 18.4022
+Epoch 4/10, Loss: 13.5176
+Epoch 5/10, Loss: 10.0883
+Epoch 6/10, Loss: 7.8724
+Epoch 7/10, Loss: 6.2410
+Epoch 8/10, Loss: 4.4591
+Epoch 9/10, Loss: 2.5471
+Epoch 10/10, Loss: 1.9634
+Performance Metrics:
+RMSE (test data): 172.74864196777344
+MAE (test data): 147.16070556640625
+MAPE (test data): 190.74318408966064
+MSE (test data): 29842.09375
+R2 (test data): -1.6005693460388128
+loss (test data): 29842.092566501353
+Epoch 1/10, Loss: 2148.6433
+Epoch 2/10, Loss: 33.8659
+Epoch 3/10, Loss: 18.2669
+Epoch 4/10, Loss: 13.2072
+Epoch 5/10, Loss: 10.1021
+Epoch 6/10, Loss: 7.8855
+Epoch 7/10, Loss: 6.3000
+Epoch 8/10, Loss: 5.1965
+Epoch 9/10, Loss: 3.6979
+Epoch 10/10, Loss: 1.9674
+Performance Metrics:
+RMSE (test data): 172.15164184570312
+MAE (test data): 146.75611877441406
+MAPE (test data): 190.37073850631714
+MSE (test data): 29636.185546875
+R2 (test data): -1.582625698118778
+loss (test data): 29636.185199926735
+Epoch 1/10, Loss: 1847.1265
+Epoch 2/10, Loss: 31.6575
+Epoch 3/10, Loss: 19.3666
+Epoch 4/10, Loss: 14.3744
+Epoch 5/10, Loss: 10.9600
+Epoch 6/10, Loss: 8.7414
+Epoch 7/10, Loss: 7.2097
+Epoch 8/10, Loss: 5.9227
+Epoch 9/10, Loss: 4.8865
+Epoch 10/10, Loss: 4.0414
+Performance Metrics:
+RMSE (test data): 172.08865356445312
+MAE (test data): 147.4399871826172
+MAPE (test data): 190.6933307647705
+MSE (test data): 29614.50390625
+R2 (test data): -1.5807362031861616
+loss (test data): 29614.50345891569
+Epoch 1/10, Loss: 2247.1187
+Epoch 2/10, Loss: 31.3309
+Epoch 3/10, Loss: 20.5764
+Epoch 4/10, Loss: 14.6640
+Epoch 5/10, Loss: 11.1857
+Epoch 6/10, Loss: 8.9076
+Epoch 7/10, Loss: 7.2482
+Epoch 8/10, Loss: 5.9535
+Epoch 9/10, Loss: 4.9013
+Epoch 10/10, Loss: 3.9437
+Performance Metrics:
+RMSE (test data): 169.8038787841797
+MAE (test data): 144.89126586914062
+MAPE (test data): 188.91679048538208
+MSE (test data): 28833.357421875
+R2 (test data): -1.5126638051563073
+loss (test data): 28833.357592707394
+Epoch 1/10, Loss: 2001.6588
+Epoch 2/10, Loss: 32.0918
+Epoch 3/10, Loss: 17.8882
+Epoch 4/10, Loss: 12.3183
+Epoch 5/10, Loss: 9.2455
+Epoch 6/10, Loss: 7.2274
+Epoch 7/10, Loss: 5.7494
+Epoch 8/10, Loss: 4.1932
+Epoch 9/10, Loss: 2.5444
+Epoch 10/10, Loss: 1.9812
+Performance Metrics:
+RMSE (test data): 172.2209930419922
+MAE (test data): 146.5755157470703
+MAPE (test data): 190.35282135009766
+MSE (test data): 29660.072265625
+R2 (test data): -1.584707243096855
+loss (test data): 29660.071879931245
+Epoch 1/10, Loss: 2230.8376
+Epoch 2/10, Loss: 29.0014
+Epoch 3/10, Loss: 17.3741
+Epoch 4/10, Loss: 12.4415
+Epoch 5/10, Loss: 9.6151
+Epoch 6/10, Loss: 7.6781
+Epoch 7/10, Loss: 6.2399
+Epoch 8/10, Loss: 5.0982
+Epoch 9/10, Loss: 4.2239
+Epoch 10/10, Loss: 3.3464
+Performance Metrics:
+RMSE (test data): 172.86424255371094
+MAE (test data): 147.22410583496094
+MAPE (test data): 190.73400497436523
+MSE (test data): 29882.046875
+R2 (test data): -1.6040511490057145
+loss (test data): 29882.047068727457
+Epoch 1/10, Loss: 2366.3777
+Epoch 2/10, Loss: 37.3959
+Epoch 3/10, Loss: 20.8221
+Epoch 4/10, Loss: 14.3281
+Epoch 5/10, Loss: 10.6401
+Epoch 6/10, Loss: 8.3209
+Epoch 7/10, Loss: 6.6572
+Epoch 8/10, Loss: 5.3507
+Epoch 9/10, Loss: 4.1842
+Epoch 10/10, Loss: 2.4689
+Performance Metrics:
+RMSE (test data): 173.97528076171875
+MAE (test data): 148.6747283935547
+MAPE (test data): 191.63323640823364
+MSE (test data): 30267.400390625
+R2 (test data): -1.6376326258328335
+loss (test data): 30267.40162519725
+Epoch 1/10, Loss: 2201.9754
+Epoch 2/10, Loss: 30.0843
+Epoch 3/10, Loss: 18.2590
+Epoch 4/10, Loss: 12.6581
+Epoch 5/10, Loss: 9.5966
+Epoch 6/10, Loss: 7.8071
+Epoch 7/10, Loss: 6.4255
+Epoch 8/10, Loss: 5.3340
+Epoch 9/10, Loss: 4.2004
+Epoch 10/10, Loss: 3.0569
+Performance Metrics:
+RMSE (test data): 172.5211944580078
+MAE (test data): 146.9451904296875
+MAPE (test data): 190.56636095046997
+MSE (test data): 29763.560546875
+R2 (test data): -1.5937255654304159
+loss (test data): 29763.55889138582
+Epoch 1/10, Loss: 1951.4664
+Epoch 2/10, Loss: 32.1724
+Epoch 3/10, Loss: 19.0261
+Epoch 4/10, Loss: 14.0679
+Epoch 5/10, Loss: 10.7993
+Epoch 6/10, Loss: 8.4096
+Epoch 7/10, Loss: 6.6819
+Epoch 8/10, Loss: 4.7353
+Epoch 9/10, Loss: 3.4797
+Epoch 10/10, Loss: 2.7439
+Performance Metrics:
+RMSE (test data): 173.54408264160156
+MAE (test data): 148.18373107910156
+MAPE (test data): 191.51920080184937
+MSE (test data): 30117.546875
+R2 (test data): -1.6245737456363272
+loss (test data): 30117.54858332394
+Epoch 1/10, Loss: 2636.7345
+Epoch 2/10, Loss: 34.6189
+Epoch 3/10, Loss: 20.3250
+Epoch 4/10, Loss: 13.4196
+Epoch 5/10, Loss: 9.8754
+Epoch 6/10, Loss: 7.8246
+Epoch 7/10, Loss: 5.8816
+Epoch 8/10, Loss: 3.7760
+Epoch 9/10, Loss: 2.8645
+Epoch 10/10, Loss: 2.3191
+Performance Metrics:
+RMSE (test data): 173.65283203125
+MAE (test data): 148.5343475341797
+MAPE (test data): 191.58217906951904
+MSE (test data): 30155.3046875
+R2 (test data): -1.6278639295218733
+loss (test data): 30155.304042915915
+Epoch 1/10, Loss: 2525.8940
+Epoch 2/10, Loss: 30.8617
+Epoch 3/10, Loss: 18.9132
+Epoch 4/10, Loss: 12.9156
+Epoch 5/10, Loss: 10.1085
+Epoch 6/10, Loss: 8.1048
+Epoch 7/10, Loss: 6.5025
+Epoch 8/10, Loss: 5.1783
+Epoch 9/10, Loss: 3.2483
+Epoch 10/10, Loss: 2.4237
+Performance Metrics:
+RMSE (test data): 172.00650024414062
+MAE (test data): 146.6578826904297
+MAPE (test data): 190.4245376586914
+MSE (test data): 29586.234375
+R2 (test data): -1.57827271607972
+loss (test data): 29586.234316881764
+Epoch 1/10, Loss: 1977.2649
+Epoch 2/10, Loss: 33.0821
+Epoch 3/10, Loss: 20.9694
+Epoch 4/10, Loss: 15.0398
+Epoch 5/10, Loss: 10.9741
+Epoch 6/10, Loss: 8.3190
+Epoch 7/10, Loss: 6.2729
+Epoch 8/10, Loss: 4.1976
+Epoch 9/10, Loss: 3.0991
+Epoch 10/10, Loss: 2.5225
+Performance Metrics:
+RMSE (test data): 171.60092163085938
+MAE (test data): 146.17581176757812
+MAPE (test data): 189.96002674102783
+MSE (test data): 29446.875
+R2 (test data): -1.5661284261757236
+loss (test data): 29446.876063739855
+Epoch 1/10, Loss: 2316.0177
+Epoch 2/10, Loss: 36.7531
+Epoch 3/10, Loss: 18.1449
+Epoch 4/10, Loss: 12.5570
+Epoch 5/10, Loss: 8.3619
+Epoch 6/10, Loss: 5.9521
+Epoch 7/10, Loss: 4.5456
+Epoch 8/10, Loss: 3.6449
+Epoch 9/10, Loss: 2.9243
+Epoch 10/10, Loss: 2.4170
+Performance Metrics:
+RMSE (test data): 171.82794189453125
+MAE (test data): 146.34490966796875
+MAPE (test data): 190.0345802307129
+MSE (test data): 29524.83984375
+R2 (test data): -1.5729225919492653
+loss (test data): 29524.8402787562
+Epoch 1/10, Loss: 2127.1467
+Epoch 2/10, Loss: 36.5461
+Epoch 3/10, Loss: 21.2193
+Epoch 4/10, Loss: 14.3514
+Epoch 5/10, Loss: 10.2927
+Epoch 6/10, Loss: 6.9447
+Epoch 7/10, Loss: 5.0098
+Epoch 8/10, Loss: 3.9027
+Epoch 9/10, Loss: 3.2584
+Epoch 10/10, Loss: 2.8303
+Performance Metrics:
+RMSE (test data): 171.5314178466797
+MAE (test data): 145.88182067871094
+MAPE (test data): 189.85801935195923
+MSE (test data): 29423.029296875
+R2 (test data): -1.5640503894062618
+loss (test data): 29423.02963677863
+Epoch 1/10, Loss: 2629.6820
+Epoch 2/10, Loss: 35.6408
+Epoch 3/10, Loss: 22.2393
+Epoch 4/10, Loss: 15.8241
+Epoch 5/10, Loss: 11.9521
+Epoch 6/10, Loss: 9.0005
+Epoch 7/10, Loss: 6.3113
+Epoch 8/10, Loss: 4.7198
+Epoch 9/10, Loss: 3.7634
+Epoch 10/10, Loss: 3.0775
+Performance Metrics:
+RMSE (test data): 171.349365234375
+MAE (test data): 145.84182739257812
+MAPE (test data): 189.66703414916992
+MSE (test data): 29360.607421875
+R2 (test data): -1.5586106367447874
+loss (test data): 29360.607487037872
+Epoch 1/10, Loss: 2187.8935
+Epoch 2/10, Loss: 37.4966
+Epoch 3/10, Loss: 22.3876
+Epoch 4/10, Loss: 15.1388
+Epoch 5/10, Loss: 10.5161
+Epoch 6/10, Loss: 7.0212
+Epoch 7/10, Loss: 5.2893
+Epoch 8/10, Loss: 4.1183
+Epoch 9/10, Loss: 3.3163
+Epoch 10/10, Loss: 2.7305
+Performance Metrics:
+RMSE (test data): 170.316650390625
+MAE (test data): 145.13510131835938
+MAPE (test data): 189.13140296936035
+MSE (test data): 29007.763671875
+R2 (test data): -1.5278623055593563
+loss (test data): 29007.7640003311
+Epoch 1/10, Loss: 1940.1815
+Epoch 2/10, Loss: 34.4873
+Epoch 3/10, Loss: 18.9887
+Epoch 4/10, Loss: 13.5560
+Epoch 5/10, Loss: 10.1773
+Epoch 6/10, Loss: 6.7052
+Epoch 7/10, Loss: 5.0509
+Epoch 8/10, Loss: 3.8848
+Epoch 9/10, Loss: 3.0470
+Epoch 10/10, Loss: 2.3947
+Performance Metrics:
+RMSE (test data): 171.6726837158203
+MAE (test data): 146.03956604003906
+MAPE (test data): 189.8775577545166
+MSE (test data): 29471.509765625
+R2 (test data): -1.568275148329683
+loss (test data): 29471.51007911125
+Epoch 1/10, Loss: 1994.4712
+Epoch 2/10, Loss: 28.5948
+Epoch 3/10, Loss: 17.2954
+Epoch 4/10, Loss: 12.6889
+Epoch 5/10, Loss: 8.6828
+Epoch 6/10, Loss: 6.2008
+Epoch 7/10, Loss: 4.7917
+Epoch 8/10, Loss: 3.8201
+Epoch 9/10, Loss: 3.1534
+Epoch 10/10, Loss: 2.6493
+Performance Metrics:
+RMSE (test data): 171.29080200195312
+MAE (test data): 145.80133056640625
+MAPE (test data): 189.6520495414734
+MSE (test data): 29340.541015625
+R2 (test data): -1.556861995911988
+loss (test data): 29340.541899726668
+Epoch 1/10, Loss: 1978.9288
+Epoch 2/10, Loss: 24.9926
+Epoch 3/10, Loss: 15.2625
+Epoch 4/10, Loss: 10.1461
+Epoch 5/10, Loss: 7.4186
+Epoch 6/10, Loss: 5.6853
+Epoch 7/10, Loss: 4.5059
+Epoch 8/10, Loss: 3.6599
+Epoch 9/10, Loss: 3.0175
+Epoch 10/10, Loss: 2.4846
+Performance Metrics:
+RMSE (test data): 170.45236206054688
+MAE (test data): 145.31631469726562
+MAPE (test data): 189.14073705673218
+MSE (test data): 29054.005859375
+R2 (test data): -1.5318919201852421
+loss (test data): 29054.004751606175
+Epoch 1/10, Loss: 2237.3501
+Epoch 2/10, Loss: 32.9514
+Epoch 3/10, Loss: 19.9124
+Epoch 4/10, Loss: 13.4202
+Epoch 5/10, Loss: 9.1912
+Epoch 6/10, Loss: 6.7197
+Epoch 7/10, Loss: 5.3583
+Epoch 8/10, Loss: 4.3819
+Epoch 9/10, Loss: 3.5591
+Epoch 10/10, Loss: 2.9261
+Performance Metrics:
+RMSE (test data): 169.947021484375
+MAE (test data): 144.7794952392578
+MAPE (test data): 188.74399662017822
+MSE (test data): 28881.990234375
+R2 (test data): -1.5169018729466424
+loss (test data): 28881.99057427863
+Epoch 1/10, Loss: 2043.3167
+Epoch 2/10, Loss: 33.9213
+Epoch 3/10, Loss: 21.0338
+Epoch 4/10, Loss: 14.4216
+Epoch 5/10, Loss: 10.2107
+Epoch 6/10, Loss: 6.1934
+Epoch 7/10, Loss: 4.7767
+Epoch 8/10, Loss: 3.9491
+Epoch 9/10, Loss: 3.2248
+Epoch 10/10, Loss: 2.6541
+Performance Metrics:
+RMSE (test data): 168.95193481445312
+MAE (test data): 144.17208862304688
+MAPE (test data): 188.2580280303955
+MSE (test data): 28544.7578125
+R2 (test data): -1.4875138861161745
+loss (test data): 28544.757030545537
+Epoch 1/10, Loss: 2401.1405
+Epoch 2/10, Loss: 33.1050
+Epoch 3/10, Loss: 20.6717
+Epoch 4/10, Loss: 14.0345
+Epoch 5/10, Loss: 9.6876
+Epoch 6/10, Loss: 7.0759
+Epoch 7/10, Loss: 5.6160
+Epoch 8/10, Loss: 4.6503
+Epoch 9/10, Loss: 3.9287
+Epoch 10/10, Loss: 3.3711
+Performance Metrics:
+RMSE (test data): 168.32505798339844
+MAE (test data): 143.19366455078125
+MAPE (test data): 187.84829378128052
+MSE (test data): 28333.326171875
+R2 (test data): -1.4690887623500282
+loss (test data): 28333.324615010708
+Epoch 1/10, Loss: 2131.7503
+Epoch 2/10, Loss: 29.4039
+Epoch 3/10, Loss: 18.8769
+Epoch 4/10, Loss: 13.5088
+Epoch 5/10, Loss: 8.9937
+Epoch 6/10, Loss: 6.7268
+Epoch 7/10, Loss: 5.5383
+Epoch 8/10, Loss: 4.5969
+Epoch 9/10, Loss: 3.8275
+Epoch 10/10, Loss: 3.2275
+Performance Metrics:
+RMSE (test data): 167.0723419189453
+MAE (test data): 142.5425567626953
+MAPE (test data): 187.20412254333496
+MSE (test data): 27913.169921875
+R2 (test data): -1.4324747352314482
+loss (test data): 27913.17059815994
+Epoch 1/10, Loss: 1770.9448
+Epoch 2/10, Loss: 34.6270
+Epoch 3/10, Loss: 19.4735
+Epoch 4/10, Loss: 13.6646
+Epoch 5/10, Loss: 9.3380
+Epoch 6/10, Loss: 6.7415
+Epoch 7/10, Loss: 5.2802
+Epoch 8/10, Loss: 4.3263
+Epoch 9/10, Loss: 3.6193
+Epoch 10/10, Loss: 2.9916
+Performance Metrics:
+RMSE (test data): 170.82470703125
+MAE (test data): 145.1130828857422
+MAPE (test data): 189.43709135055542
+MSE (test data): 29181.08203125
+R2 (test data): -1.5429659975305468
+loss (test data): 29181.0820611897
+Epoch 1/10, Loss: 2287.9473
+Epoch 2/10, Loss: 27.8481
+Epoch 3/10, Loss: 17.2065
+Epoch 4/10, Loss: 11.8985
+Epoch 5/10, Loss: 8.0206
+Epoch 6/10, Loss: 6.1092
+Epoch 7/10, Loss: 5.0847
+Epoch 8/10, Loss: 4.2238
+Epoch 9/10, Loss: 3.6226
+Epoch 10/10, Loss: 3.0674
+Performance Metrics:
+RMSE (test data): 172.94834899902344
+MAE (test data): 147.13392639160156
+MAPE (test data): 190.70781469345093
+MSE (test data): 29911.12890625
+R2 (test data): -1.6065855356190548
+loss (test data): 29911.12940641907
+Epoch 1/10, Loss: 2268.4866
+Epoch 2/10, Loss: 27.6813
+Epoch 3/10, Loss: 15.3026
+Epoch 4/10, Loss: 10.7286
+Epoch 5/10, Loss: 8.0743
+Epoch 6/10, Loss: 6.4254
+Epoch 7/10, Loss: 5.3833
+Epoch 8/10, Loss: 4.5189
+Epoch 9/10, Loss: 3.8477
+Epoch 10/10, Loss: 3.2807
+Performance Metrics:
+RMSE (test data): 171.71298217773438
+MAE (test data): 145.9389190673828
+MAPE (test data): 189.89211320877075
+MSE (test data): 29485.349609375
+R2 (test data): -1.569481158030675
+loss (test data): 29485.349125056357
+Epoch 1/10, Loss: 1845.1716
+Epoch 2/10, Loss: 29.6461
+Epoch 3/10, Loss: 18.0368
+Epoch 4/10, Loss: 11.9960
+Epoch 5/10, Loss: 8.2629
+Epoch 6/10, Loss: 6.4975
+Epoch 7/10, Loss: 5.3825
+Epoch 8/10, Loss: 4.4526
+Epoch 9/10, Loss: 3.7420
+Epoch 10/10, Loss: 3.2533
+Performance Metrics:
+RMSE (test data): 172.2196044921875
+MAE (test data): 146.382080078125
+MAPE (test data): 190.20053148269653
+MSE (test data): 29659.59375
+R2 (test data): -1.584665723887325
+loss (test data): 29659.59533504283
+Epoch 1/10, Loss: 1867.7268
+Epoch 2/10, Loss: 31.0091
+Epoch 3/10, Loss: 19.7563
+Epoch 4/10, Loss: 14.2870
+Epoch 5/10, Loss: 9.5729
+Epoch 6/10, Loss: 6.8542
+Epoch 7/10, Loss: 5.3549
+Epoch 8/10, Loss: 4.4006
+Epoch 9/10, Loss: 3.6898
+Epoch 10/10, Loss: 3.1265
+Performance Metrics:
+RMSE (test data): 172.36416625976562
+MAE (test data): 146.5169677734375
+MAPE (test data): 190.27345180511475
+MSE (test data): 29709.40625
+R2 (test data): -1.5890065442729622
+loss (test data): 29709.406664752874
+Epoch 1/10, Loss: 1926.6350
+Epoch 2/10, Loss: 29.5986
+Epoch 3/10, Loss: 18.8377
+Epoch 4/10, Loss: 13.6197
+Epoch 5/10, Loss: 9.4541
+Epoch 6/10, Loss: 7.1137
+Epoch 7/10, Loss: 5.5986
+Epoch 8/10, Loss: 4.5715
+Epoch 9/10, Loss: 3.8382
+Epoch 10/10, Loss: 3.1833
+Performance Metrics:
+RMSE (test data): 173.20587158203125
+MAE (test data): 147.80194091796875
+MAPE (test data): 191.15092754364014
+MSE (test data): 30000.2734375
+R2 (test data): -1.6143537887969392
+loss (test data): 30000.272206450067
+Epoch 1/10, Loss: 1931.5636
+Epoch 2/10, Loss: 29.4520
+Epoch 3/10, Loss: 18.1503
+Epoch 4/10, Loss: 13.2870
+Epoch 5/10, Loss: 10.1231
+Epoch 6/10, Loss: 7.9875
+Epoch 7/10, Loss: 6.3767
+Epoch 8/10, Loss: 5.2175
+Epoch 9/10, Loss: 4.3179
+Epoch 10/10, Loss: 3.6493
+Performance Metrics:
+RMSE (test data): 170.9578857421875
+MAE (test data): 145.17825317382812
+MAPE (test data): 189.35399055480957
+MSE (test data): 29226.599609375
+R2 (test data): -1.546932409805768
+loss (test data): 29226.59742553821
+Epoch 1/10, Loss: 2099.2428
+Epoch 2/10, Loss: 31.7887
+Epoch 3/10, Loss: 19.7915
+Epoch 4/10, Loss: 13.6951
+Epoch 5/10, Loss: 10.6547
+Epoch 6/10, Loss: 8.3177
+Epoch 7/10, Loss: 6.5693
+Epoch 8/10, Loss: 5.4028
+Epoch 9/10, Loss: 4.5638
+Epoch 10/10, Loss: 3.8892
+Performance Metrics:
+RMSE (test data): 170.65293884277344
+MAE (test data): 144.72471618652344
+MAPE (test data): 189.27288055419922
+MSE (test data): 29122.427734375
+R2 (test data): -1.5378545935791577
+loss (test data): 29122.427725569207
+Epoch 1/10, Loss: 2258.9206
+Epoch 2/10, Loss: 34.3137
+Epoch 3/10, Loss: 19.9614
+Epoch 4/10, Loss: 13.6012
+Epoch 5/10, Loss: 10.1205
+Epoch 6/10, Loss: 7.9098
+Epoch 7/10, Loss: 6.5209
+Epoch 8/10, Loss: 5.3222
+Epoch 9/10, Loss: 4.4097
+Epoch 10/10, Loss: 3.6729
+Performance Metrics:
+RMSE (test data): 173.07644653320312
+MAE (test data): 147.56092834472656
+MAPE (test data): 190.98666906356812
+MSE (test data): 29955.455078125
+R2 (test data): -1.610448200161195
+loss (test data): 29955.454967172
+Epoch 1/10, Loss: 2068.8426
+Epoch 2/10, Loss: 30.0184
+Epoch 3/10, Loss: 19.3610
+Epoch 4/10, Loss: 13.1616
+Epoch 5/10, Loss: 9.6791
+Epoch 6/10, Loss: 7.7310
+Epoch 7/10, Loss: 6.4123
+Epoch 8/10, Loss: 5.3117
+Epoch 9/10, Loss: 4.5036
+Epoch 10/10, Loss: 3.8899
+Performance Metrics:
+RMSE (test data): 172.4630889892578
+MAE (test data): 146.88153076171875
+MAPE (test data): 190.40287733078003
+MSE (test data): 29743.515625
+R2 (test data): -1.5919787734839743
+loss (test data): 29743.514061091075
+Epoch 1/10, Loss: 2202.9490
+Epoch 2/10, Loss: 30.5468
+Epoch 3/10, Loss: 20.2774
+Epoch 4/10, Loss: 14.0012
+Epoch 5/10, Loss: 10.2943
+Epoch 6/10, Loss: 8.0449
+Epoch 7/10, Loss: 6.5535
+Epoch 8/10, Loss: 5.4405
+Epoch 9/10, Loss: 4.5056
+Epoch 10/10, Loss: 3.8290
+Performance Metrics:
+RMSE (test data): 172.02915954589844
+MAE (test data): 146.2539520263672
+MAPE (test data): 190.03655910491943
+MSE (test data): 29594.029296875
+R2 (test data): -1.5789519738150335
+loss (test data): 29594.028949926735
+Epoch 1/10, Loss: 2254.6787
+Epoch 2/10, Loss: 31.3600
+Epoch 3/10, Loss: 18.6084
+Epoch 4/10, Loss: 13.2302
+Epoch 5/10, Loss: 10.1865
+Epoch 6/10, Loss: 8.1676
+Epoch 7/10, Loss: 6.7331
+Epoch 8/10, Loss: 5.5352
+Epoch 9/10, Loss: 4.5722
+Epoch 10/10, Loss: 4.6259
+Performance Metrics:
+RMSE (test data): 173.3939208984375
+MAE (test data): 147.8539581298828
+MAPE (test data): 191.12497568130493
+MSE (test data): 30065.44921875
+R2 (test data): -1.6200336489504958
+loss (test data): 30065.448875324055
+Epoch 1/10, Loss: 1967.8866
+Epoch 2/10, Loss: 31.5509
+Epoch 3/10, Loss: 20.5460
+Epoch 4/10, Loss: 15.3367
+Epoch 5/10, Loss: 10.9601
+Epoch 6/10, Loss: 8.5239
+Epoch 7/10, Loss: 6.9355
+Epoch 8/10, Loss: 5.7214
+Epoch 9/10, Loss: 4.7009
+Epoch 10/10, Loss: 3.9515
+Performance Metrics:
+RMSE (test data): 170.86898803710938
+MAE (test data): 145.57225036621094
+MAPE (test data): 189.39344882965088
+MSE (test data): 29196.2109375
+R2 (test data): -1.5442844796741726
+loss (test data): 29196.211772289225
+Epoch 1/10, Loss: 2508.6723
+Epoch 2/10, Loss: 33.6539
+Epoch 3/10, Loss: 21.1363
+Epoch 4/10, Loss: 14.8856
+Epoch 5/10, Loss: 11.3783
+Epoch 6/10, Loss: 9.1679
+Epoch 7/10, Loss: 7.5545
+Epoch 8/10, Loss: 6.3102
+Epoch 9/10, Loss: 5.3367
+Epoch 10/10, Loss: 4.5821
+Performance Metrics:
+RMSE (test data): 171.29510498046875
+MAE (test data): 145.65269470214844
+MAPE (test data): 189.61039781570435
+MSE (test data): 29342.01171875
+R2 (test data): -1.5569901281141525
+loss (test data): 29342.01181737489
+Epoch 1/10, Loss: 2151.9439
+Epoch 2/10, Loss: 30.7426
+Epoch 3/10, Loss: 20.2693
+Epoch 4/10, Loss: 15.4567
+Epoch 5/10, Loss: 11.8130
+Epoch 6/10, Loss: 9.3027
+Epoch 7/10, Loss: 7.6019
+Epoch 8/10, Loss: 6.3019
+Epoch 9/10, Loss: 5.2867
+Epoch 10/10, Loss: 4.3646
+Performance Metrics:
+RMSE (test data): 172.02012634277344
+MAE (test data): 146.55377197265625
+MAPE (test data): 190.19417762756348
+MSE (test data): 29590.92578125
+R2 (test data): -1.578681378839891
+loss (test data): 29590.92370660505
+Epoch 1/10, Loss: 2444.4099
+Epoch 2/10, Loss: 30.3525
+Epoch 3/10, Loss: 20.6960
+Epoch 4/10, Loss: 16.0696
+Epoch 5/10, Loss: 11.5491
+Epoch 6/10, Loss: 9.1391
+Epoch 7/10, Loss: 7.6175
+Epoch 8/10, Loss: 6.4150
+Epoch 9/10, Loss: 5.4793
+Epoch 10/10, Loss: 4.6762
+Performance Metrics:
+RMSE (test data): 171.0559539794922
+MAE (test data): 145.72000122070312
+MAPE (test data): 189.54787254333496
+MSE (test data): 29260.140625
+R2 (test data): -1.549855553587502
+loss (test data): 29260.141119885597
+Epoch 1/10, Loss: 2225.7850
+Epoch 2/10, Loss: 30.7011
+Epoch 3/10, Loss: 19.2385
+Epoch 4/10, Loss: 14.2300
+Epoch 5/10, Loss: 11.1366
+Epoch 6/10, Loss: 8.9972
+Epoch 7/10, Loss: 7.3908
+Epoch 8/10, Loss: 6.1951
+Epoch 9/10, Loss: 5.2462
+Epoch 10/10, Loss: 4.4398
+Performance Metrics:
+RMSE (test data): 157.258056640625
+MAE (test data): 134.9610595703125
+MAPE (test data): 181.38073682785034
+MSE (test data): 24730.09765625
+R2 (test data): -1.155087937590376
+loss (test data): 24730.097267033925
+Epoch 1/10, Loss: 1828.3606
+Epoch 2/10, Loss: 26.8483
+Epoch 3/10, Loss: 17.5133
+Epoch 4/10, Loss: 13.1645
+Epoch 5/10, Loss: 10.3720
+Epoch 6/10, Loss: 8.3221
+Epoch 7/10, Loss: 6.7646
+Epoch 8/10, Loss: 5.6227
+Epoch 9/10, Loss: 4.7117
+Epoch 10/10, Loss: 3.9169
+Performance Metrics:
+RMSE (test data): 171.35960388183594
+MAE (test data): 146.10977172851562
+MAPE (test data): 189.76885080337524
+MSE (test data): 29364.111328125
+R2 (test data): -1.5589159217888264
+loss (test data): 29364.110544409377
+Epoch 1/10, Loss: 2639.8342
+Epoch 2/10, Loss: 35.1474
+Epoch 3/10, Loss: 21.9441
+Epoch 4/10, Loss: 16.2911
+Epoch 5/10, Loss: 12.8384
+Epoch 6/10, Loss: 10.1871
+Epoch 7/10, Loss: 8.3737
+Epoch 8/10, Loss: 7.0318
+Epoch 9/10, Loss: 5.9133
+Epoch 10/10, Loss: 5.0381
+Performance Metrics:
+RMSE (test data): 170.36351013183594
+MAE (test data): 144.99053955078125
+MAPE (test data): 188.97110223770142
+MSE (test data): 29023.7265625
+R2 (test data): -1.529253486607422
+loss (test data): 29023.728320136383
+Epoch 1/10, Loss: 1869.7394
+Epoch 2/10, Loss: 26.2807
+Epoch 3/10, Loss: 16.9771
+Epoch 4/10, Loss: 12.6302
+Epoch 5/10, Loss: 9.8292
+Epoch 6/10, Loss: 7.8330
+Epoch 7/10, Loss: 6.3989
+Epoch 8/10, Loss: 5.3360
+Epoch 9/10, Loss: 4.5241
+Epoch 10/10, Loss: 3.8375
+Performance Metrics:
+RMSE (test data): 170.2501983642578
+MAE (test data): 145.0358428955078
+MAPE (test data): 188.9836072921753
+MSE (test data): 28985.130859375
+R2 (test data): -1.5258899576081646
+loss (test data): 28985.130850569207
+Epoch 1/10, Loss: 2089.2510
+Epoch 2/10, Loss: 29.6328
+Epoch 3/10, Loss: 18.5750
+Epoch 4/10, Loss: 13.8433
+Epoch 5/10, Loss: 10.3250
+Epoch 6/10, Loss: 8.1088
+Epoch 7/10, Loss: 6.6584
+Epoch 8/10, Loss: 5.5025
+Epoch 9/10, Loss: 4.6072
+Epoch 10/10, Loss: 3.9779
+Performance Metrics:
+RMSE (test data): 172.10488891601562
+MAE (test data): 146.99070739746094
+MAPE (test data): 190.38516283035278
+MSE (test data): 29620.091796875
+R2 (test data): -1.5812232863894913
+loss (test data): 29620.092735572587
+Epoch 1/10, Loss: 2201.6860
+Epoch 2/10, Loss: 33.0258
+Epoch 3/10, Loss: 19.5849
+Epoch 4/10, Loss: 12.3677
+Epoch 5/10, Loss: 7.6033
+Epoch 6/10, Loss: 5.8935
+Epoch 7/10, Loss: 4.6237
+Epoch 8/10, Loss: 3.7229
+Epoch 9/10, Loss: 2.9637
+Epoch 10/10, Loss: 2.4732
+Performance Metrics:
+RMSE (test data): 170.97840881347656
+MAE (test data): 145.582275390625
+MAPE (test data): 189.39200639724731
+MSE (test data): 29233.615234375
+R2 (test data): -1.5475440971731045
+loss (test data): 29233.616623929214
+Epoch 1/10, Loss: 2324.2428
+Epoch 2/10, Loss: 37.4021
+Epoch 3/10, Loss: 21.3601
+Epoch 4/10, Loss: 15.1017
+Epoch 5/10, Loss: 11.2101
+Epoch 6/10, Loss: 8.6283
+Epoch 7/10, Loss: 6.5994
+Epoch 8/10, Loss: 5.3989
+Epoch 9/10, Loss: 4.4298
+Epoch 10/10, Loss: 3.6682
+Performance Metrics:
+RMSE (test data): 170.7860107421875
+MAE (test data): 145.31842041015625
+MAPE (test data): 189.2008662223816
+MSE (test data): 29167.86328125
+R2 (test data): -1.5418141100739988
+loss (test data): 29167.86365109333
+Epoch 1/10, Loss: 2197.3328
+Epoch 2/10, Loss: 36.2585
+Epoch 3/10, Loss: 20.1568
+Epoch 4/10, Loss: 14.0148
+Epoch 5/10, Loss: 10.3420
+Epoch 6/10, Loss: 8.0501
+Epoch 7/10, Loss: 6.3139
+Epoch 8/10, Loss: 5.1106
+Epoch 9/10, Loss: 4.2341
+Epoch 10/10, Loss: 3.5372
+Performance Metrics:
+RMSE (test data): 171.35279846191406
+MAE (test data): 146.4518280029297
+MAPE (test data): 189.926278591156
+MSE (test data): 29361.783203125
+R2 (test data): -1.55871310303491
+loss (test data): 29361.782750507213
+Epoch 1/10, Loss: 2103.0583
+Epoch 2/10, Loss: 38.2696
+Epoch 3/10, Loss: 23.8041
+Epoch 4/10, Loss: 17.4870
+Epoch 5/10, Loss: 13.2600
+Epoch 6/10, Loss: 10.3371
+Epoch 7/10, Loss: 7.9843
+Epoch 8/10, Loss: 6.2996
+Epoch 9/10, Loss: 5.1964
+Epoch 10/10, Loss: 4.2841
+Performance Metrics:
+RMSE (test data): 169.3153839111328
+MAE (test data): 143.9199981689453
+MAPE (test data): 188.26026916503906
+MSE (test data): 28667.701171875
+R2 (test data): -1.4982277395053663
+loss (test data): 28667.70088656729
+Epoch 1/10, Loss: 1619.9270
+Epoch 2/10, Loss: 29.1638
+Epoch 3/10, Loss: 17.1791
+Epoch 4/10, Loss: 11.9469
+Epoch 5/10, Loss: 8.6305
+Epoch 6/10, Loss: 6.4100
+Epoch 7/10, Loss: 4.9783
+Epoch 8/10, Loss: 4.1200
+Epoch 9/10, Loss: 3.3382
+Epoch 10/10, Loss: 2.8532
+Performance Metrics:
+RMSE (test data): 167.2373046875
+MAE (test data): 141.87767028808594
+MAPE (test data): 186.749267578125
+MSE (test data): 27968.314453125
+R2 (test data): -1.4372800356293518
+loss (test data): 27968.31248414957
+Epoch 1/10, Loss: 2111.9557
+Epoch 2/10, Loss: 33.4509
+Epoch 3/10, Loss: 20.6445
+Epoch 4/10, Loss: 14.2440
+Epoch 5/10, Loss: 10.4189
+Epoch 6/10, Loss: 7.6626
+Epoch 7/10, Loss: 5.8891
+Epoch 8/10, Loss: 4.5610
+Epoch 9/10, Loss: 3.6736
+Epoch 10/10, Loss: 3.0638
+Performance Metrics:
+RMSE (test data): 164.22193908691406
+MAE (test data): 140.2886199951172
+MAPE (test data): 184.91392135620117
+MSE (test data): 26968.845703125
+R2 (test data): -1.350182098695031
+loss (test data): 26968.84513250958
+Epoch 1/10, Loss: 1887.9384
+Epoch 2/10, Loss: 30.0408
+Epoch 3/10, Loss: 19.1321
+Epoch 4/10, Loss: 13.0702
+Epoch 5/10, Loss: 9.7347
+Epoch 6/10, Loss: 7.8203
+Epoch 7/10, Loss: 6.4715
+Epoch 8/10, Loss: 5.2069
+Epoch 9/10, Loss: 4.2157
+Epoch 10/10, Loss: 3.4860
+Performance Metrics:
+RMSE (test data): 161.1030731201172
+MAE (test data): 137.6313934326172
+MAPE (test data): 183.1366777420044
+MSE (test data): 25954.19921875
+R2 (test data): -1.2617616328919654
+loss (test data): 25954.201717834196
+Epoch 1/10, Loss: 1911.4329
+Epoch 2/10, Loss: 33.1205
+Epoch 3/10, Loss: 20.3226
+Epoch 4/10, Loss: 13.4792
+Epoch 5/10, Loss: 10.4233
+Epoch 6/10, Loss: 8.5932
+Epoch 7/10, Loss: 7.5314
+Epoch 8/10, Loss: 6.2303
+Epoch 9/10, Loss: 5.1932
+Epoch 10/10, Loss: 4.2317
+Performance Metrics:
+RMSE (test data): 169.90174865722656
+MAE (test data): 145.7198486328125
+MAPE (test data): 189.3831968307495
+MSE (test data): 28866.60546875
+R2 (test data): -1.5155612428057088
+loss (test data): 28866.606352851668
+Epoch 1/10, Loss: 2119.1850
+Epoch 2/10, Loss: 38.5957
+Epoch 3/10, Loss: 23.2548
+Epoch 4/10, Loss: 16.6238
+Epoch 5/10, Loss: 12.3697
+Epoch 6/10, Loss: 9.7767
+Epoch 7/10, Loss: 8.0973
+Epoch 8/10, Loss: 6.8128
+Epoch 9/10, Loss: 5.8271
+Epoch 10/10, Loss: 4.6710
+Performance Metrics:
+RMSE (test data): 171.3843231201172
+MAE (test data): 146.0303192138672
+MAPE (test data): 189.9099588394165
+MSE (test data): 29372.587890625
+R2 (test data): -1.5596546596696874
+loss (test data): 29372.588043845808
+Epoch 1/10, Loss: 2009.6699
+Epoch 2/10, Loss: 33.3837
+Epoch 3/10, Loss: 20.6243
+Epoch 4/10, Loss: 13.6358
+Epoch 5/10, Loss: 10.2054
+Epoch 6/10, Loss: 8.2658
+Epoch 7/10, Loss: 6.8461
+Epoch 8/10, Loss: 5.7282
+Epoch 9/10, Loss: 4.7298
+Epoch 10/10, Loss: 3.8169
+Performance Metrics:
+RMSE (test data): 171.88931274414062
+MAE (test data): 146.45892333984375
+MAPE (test data): 190.18323421478271
+MSE (test data): 29545.93359375
+R2 (test data): -1.574760862872508
+loss (test data): 29545.935134763862
+Epoch 1/10, Loss: 2029.9654
+Epoch 2/10, Loss: 33.2419
+Epoch 3/10, Loss: 18.0763
+Epoch 4/10, Loss: 12.0636
+Epoch 5/10, Loss: 9.2440
+Epoch 6/10, Loss: 7.6581
+Epoch 7/10, Loss: 6.4012
+Epoch 8/10, Loss: 5.3058
+Epoch 9/10, Loss: 4.4451
+Epoch 10/10, Loss: 3.7094
+Performance Metrics:
+RMSE (test data): 171.824951171875
+MAE (test data): 146.32664489746094
+MAPE (test data): 190.10286331176758
+MSE (test data): 29523.8125
+R2 (test data): -1.5728328632109903
+loss (test data): 29523.810555680793
+Epoch 1/10, Loss: 1977.7205
+Epoch 2/10, Loss: 40.0329
+Epoch 3/10, Loss: 20.9160
+Epoch 4/10, Loss: 14.6520
+Epoch 5/10, Loss: 11.2569
+Epoch 6/10, Loss: 9.0953
+Epoch 7/10, Loss: 7.4062
+Epoch 8/10, Loss: 6.0502
+Epoch 9/10, Loss: 4.8810
+Epoch 10/10, Loss: 3.9953
+Performance Metrics:
+RMSE (test data): 172.74913024902344
+MAE (test data): 147.07574462890625
+MAPE (test data): 190.70498943328857
+MSE (test data): 29842.26171875
+R2 (test data): -1.6005840742953392
+loss (test data): 29842.26190895514
+Epoch 1/10, Loss: 2450.9025
+Epoch 2/10, Loss: 39.7406
+Epoch 3/10, Loss: 21.9897
+Epoch 4/10, Loss: 15.8277
+Epoch 5/10, Loss: 12.2292
+Epoch 6/10, Loss: 9.9073
+Epoch 7/10, Loss: 8.2265
+Epoch 8/10, Loss: 6.8245
+Epoch 9/10, Loss: 5.6309
+Epoch 10/10, Loss: 4.6188
+Performance Metrics:
+RMSE (test data): 172.42898559570312
+MAE (test data): 146.78627014160156
+MAPE (test data): 190.44679403305054
+MSE (test data): 29731.75390625
+R2 (test data): -1.5909539269011805
+loss (test data): 29731.753714283703
+Epoch 1/10, Loss: 2301.2286
+Epoch 2/10, Loss: 29.7323
+Epoch 3/10, Loss: 18.9625
+Epoch 4/10, Loss: 13.9641
+Epoch 5/10, Loss: 11.0726
+Epoch 6/10, Loss: 9.0960
+Epoch 7/10, Loss: 7.5413
+Epoch 8/10, Loss: 6.2972
+Epoch 9/10, Loss: 5.2456
+Epoch 10/10, Loss: 4.3491
+Performance Metrics:
+RMSE (test data): 171.7264862060547
+MAE (test data): 145.99241638183594
+MAPE (test data): 189.9757981300354
+MSE (test data): 29489.98828125
+R2 (test data): -1.5698852796226461
+loss (test data): 29489.98627176792
+Epoch 1/10, Loss: 2070.2596
+Epoch 2/10, Loss: 35.3629
+Epoch 3/10, Loss: 19.2299
+Epoch 4/10, Loss: 13.9861
+Epoch 5/10, Loss: 11.0098
+Epoch 6/10, Loss: 8.9422
+Epoch 7/10, Loss: 7.3486
+Epoch 8/10, Loss: 6.0436
+Epoch 9/10, Loss: 5.0042
+Epoch 10/10, Loss: 4.0997
+Performance Metrics:
+RMSE (test data): 171.7232666015625
+MAE (test data): 146.18215942382812
+MAPE (test data): 189.9832010269165
+MSE (test data): 29488.8828125
+R2 (test data): -1.5697890131406909
+loss (test data): 29488.881588494703
+Epoch 1/10, Loss: 2314.5733
+Epoch 2/10, Loss: 34.4662
+Epoch 3/10, Loss: 19.2566
+Epoch 4/10, Loss: 13.7512
+Epoch 5/10, Loss: 10.9238
+Epoch 6/10, Loss: 8.8793
+Epoch 7/10, Loss: 7.4645
+Epoch 8/10, Loss: 6.1379
+Epoch 9/10, Loss: 5.0326
+Epoch 10/10, Loss: 4.1418
+Performance Metrics:
+RMSE (test data): 172.1579132080078
+MAE (test data): 146.44142150878906
+MAPE (test data): 190.25365114212036
+MSE (test data): 29638.349609375
+DEBUG flwr 2024-03-09 13:44:51,375 | connection.py:141 | gRPC channel closed
+INFO flwr 2024-03-09 13:44:51,376 | app.py:304 | Disconnect and shut down
+R2 (test data): -1.5828143621714625
+loss (test data): 29638.350595623873
+wandb: Network error (ConnectionError), entering retry loop.
+wandb: - 0.001 MB of 0.001 MB uploadedwandb: \ 0.001 MB of 0.001 MB uploadedwandb: | 0.001 MB of 0.001 MB uploadedwandb: / 0.001 MB of 0.001 MB uploadedwandb: - 0.001 MB of 0.001 MB uploadedwandb: \ 0.001 MB of 0.001 MB uploadedwandb: | 0.001 MB of 0.001 MB uploadedwandb: / 0.001 MB of 0.001 MB uploadedwandb: - 0.001 MB of 0.001 MB uploadedwandb: \ 0.001 MB of 0.001 MB uploadedwandb: | 0.001 MB of 0.001 MB uploadedwandb: / 0.001 MB of 0.001 MB uploadedwandb: - 0.001 MB of 0.001 MB uploadedwandb: \ 0.001 MB of 0.001 MB uploadedwandb: | 0.001 MB of 0.001 MB uploadedwandb: / 0.001 MB of 0.001 MB uploadedwandb: - 0.001 MB of 0.001 MB uploadedwandb: \ 0.001 MB of 0.001 MB uploadedwandb: | 0.001 MB of 0.001 MB uploadedwandb: / 0.001 MB of 0.001 MB uploadedwandb: - 0.001 MB of 0.001 MB uploadedwandb: \ 0.001 MB of 0.001 MB uploadedwandb: | 0.001 MB of 0.001 MB uploadedwandb: / 0.001 MB of 0.001 MB uploadedwandb: - 0.001 MB of 0.001 MB uploadedwandb: \ 0.001 MB of 0.001 MB uploadedwandb: | 0.001 MB of 0.001 MB uploadedwandb: / 0.001 MB of 0.001 MB uploadedwandb: - 0.001 MB of 0.001 MB uploadedwandb: \ 0.001 MB of 0.001 MB uploadedwandb: | 0.001 MB of 0.001 MB uploadedwandb: / 0.001 MB of 0.001 MB uploadedwandb: - 0.001 MB of 0.001 MB uploadedwandb: \ 0.001 MB of 0.001 MB uploadedwandb: | 0.001 MB of 0.001 MB uploadedwandb: / 0.001 MB of 0.001 MB uploadedwandb: - 0.001 MB of 0.001 MB uploadedwandb: \ 0.001 MB of 0.001 MB uploadedwandb: | 0.001 MB of 0.001 MB uploadedwandb: / 0.001 MB of 0.001 MB uploadedwandb: - 0.001 MB of 0.001 MB uploadedwandb: \ 0.001 MB of 0.001 MB uploadedwandb: | 0.001 MB of 0.001 MB uploadedwandb: / 0.001 MB of 0.001 MB uploadedwandb: - 0.001 MB of 0.001 MB uploadedwandb: \ 0.001 MB of 0.001 MB uploadedwandb: | 0.001 MB of 0.001 MB uploadedwandb: Network error (ConnectionError), entering retry loop.
+wandb: / 0.001 MB of 0.001 MB uploadedwandb: - 0.001 MB of 0.001 MB uploadedwandb: \ 0.001 MB of 0.001 MB uploadedwandb: | 0.001 MB of 0.001 MB uploadedwandb: / 0.001 MB of 0.001 MB uploadedwandb: - 0.001 MB of 0.001 MB uploadedwandb: \ 0.001 MB of 0.063 MB uploadedwandb: | 0.059 MB of 0.063 MB uploadedwandb: / 0.059 MB of 0.063 MB uploadedwandb: - 0.059 MB of 0.063 MB uploadedwandb: \ 0.059 MB of 0.063 MB uploadedwandb: | 0.059 MB of 0.063 MB uploadedwandb: / 0.059 MB of 0.063 MB uploadedwandb: - 0.059 MB of 0.063 MB uploadedwandb: \ 0.059 MB of 0.063 MB uploadedwandb: | 0.059 MB of 0.063 MB uploadedwandb: / 0.059 MB of 0.063 MB uploadedwandb: - 0.059 MB of 0.063 MB uploadedwandb: \ 0.059 MB of 0.063 MB uploadedwandb: | 0.059 MB of 0.063 MB uploadedwandb: / 0.059 MB of 0.063 MB uploadedwandb: - 0.059 MB of 0.063 MB uploadedwandb: \ 0.059 MB of 0.063 MB uploadedwandb: | 0.059 MB of 0.063 MB uploadedwandb: / 0.059 MB of 0.063 MB uploadedwandb: - 0.058 MB of 0.063 MB uploadedwandb: \ 0.058 MB of 0.063 MB uploadedwandb: Network error (TransientError), entering retry loop.
+wandb: Network error (ConnectionError), entering retry loop.
+wandb: | 0.058 MB of 0.063 MB uploadedwandb: / 0.058 MB of 0.063 MB uploadedwandb: - 0.058 MB of 0.063 MB uploadedwandb: \ 0.058 MB of 0.063 MB uploadedwandb: | 0.058 MB of 0.063 MB uploadedwandb: / 0.058 MB of 0.063 MB uploadedwandb: - 0.058 MB of 0.063 MB uploadedwandb: \ 0.058 MB of 0.063 MB uploadedwandb: | 0.058 MB of 0.063 MB uploadedwandb: / 0.058 MB of 0.063 MB uploadedwandb: - 0.058 MB of 0.063 MB uploadedwandb: \ 0.058 MB of 0.063 MB uploadedwandb: | 0.058 MB of 0.063 MB uploadedwandb: / 0.058 MB of 0.063 MB uploadedwandb: - 0.058 MB of 0.063 MB uploadedwandb: \ 0.058 MB of 0.063 MB uploadedwandb: | 0.058 MB of 0.063 MB uploadedwandb: / 0.058 MB of 0.063 MB uploadedwandb: - 0.058 MB of 0.063 MB uploadedwandb: \ 0.058 MB of 0.063 MB uploadedwandb: | 0.058 MB of 0.063 MB uploadedwandb: / 0.058 MB of 0.063 MB uploadedwandb: - 0.058 MB of 0.063 MB uploadedwandb: \ 0.058 MB of 0.063 MB uploadedwandb: | 0.058 MB of 0.063 MB uploadedwandb: / 0.058 MB of 0.063 MB uploadedwandb: - 0.058 MB of 0.063 MB uploadedwandb: \ 0.058 MB of 0.063 MB uploadedwandb: | 0.058 MB of 0.063 MB uploadedwandb: / 0.058 MB of 0.063 MB uploadedwandb: - 0.058 MB of 0.063 MB uploadedwandb: \ 0.058 MB of 0.063 MB uploadedwandb: | 0.058 MB of 0.063 MB uploadedwandb: / 0.058 MB of 0.063 MB uploadedwandb: - 0.058 MB of 0.063 MB uploadedwandb: \ 0.058 MB of 0.063 MB uploadedwandb: | 0.058 MB of 0.063 MB uploadedwandb: / 0.058 MB of 0.063 MB uploadedwandb: - 0.058 MB of 0.063 MB uploadedwandb: \ 0.058 MB of 0.063 MB uploadedwandb: | 0.058 MB of 0.063 MB uploadedwandb: / 0.058 MB of 0.063 MB uploadedwandb: - 0.058 MB of 0.063 MB uploadedwandb: \ 0.058 MB of 0.063 MB uploadedwandb: | 0.058 MB of 0.063 MB uploadedwandb: / 0.058 MB of 0.063 MB uploadedwandb: - 0.058 MB of 0.063 MB uploadedwandb: \ 0.058 MB of 0.063 MB uploadedwandb: | 0.058 MB of 0.063 MB uploadedwandb: / 0.058 MB of 0.063 MB uploadedwandb: - 0.058 MB of 0.063 MB uploadedwandb: \ 0.058 MB of 0.063 MB uploadedwandb: | 0.058 MB of 0.063 MB uploadedwandb: / 0.058 MB of 0.063 MB uploadedwandb: - 0.058 MB of 0.063 MB uploadedwandb: \ 0.058 MB of 0.063 MB uploadedwandb: | 0.058 MB of 0.063 MB uploadedwandb: / 0.058 MB of 0.063 MB uploadedwandb: - 0.058 MB of 0.063 MB uploadedwandb: \ 0.058 MB of 0.063 MB uploadedwandb: | 0.058 MB of 0.063 MB uploadedwandb: / 0.058 MB of 0.063 MB uploadedwandb: - 0.058 MB of 0.063 MB uploadedwandb: \ 0.058 MB of 0.063 MB uploadedwandb: | 0.058 MB of 0.063 MB uploadedwandb: / 0.058 MB of 0.063 MB uploadedwandb: - 0.058 MB of 0.063 MB uploadedwandb: \ 0.058 MB of 0.063 MB uploadedwandb: | 0.058 MB of 0.063 MB uploadedwandb: / 0.058 MB of 0.063 MB uploadedwandb: - 0.058 MB of 0.063 MB uploadedwandb: \ 0.058 MB of 0.063 MB uploadedwandb: | 0.058 MB of 0.063 MB uploadedwandb: / 0.058 MB of 0.063 MB uploadedwandb: - 0.058 MB of 0.063 MB uploadedwandb: \ 0.058 MB of 0.063 MB uploadedwandb: | 0.058 MB of 0.063 MB uploadedwandb: / 0.058 MB of 0.063 MB uploadedwandb: - 0.058 MB of 0.063 MB uploadedwandb: \ 0.058 MB of 0.063 MB uploadedwandb: | 0.058 MB of 0.063 MB uploadedwandb: / 0.058 MB of 0.063 MB uploadedwandb: - 0.058 MB of 0.063 MB uploadedwandb: \ 0.058 MB of 0.063 MB uploadedwandb: | 0.058 MB of 0.063 MB uploadedwandb: / 0.058 MB of 0.063 MB uploadedwandb: - 0.058 MB of 0.063 MB uploadedwandb: \ 0.058 MB of 0.063 MB uploadedwandb: | 0.058 MB of 0.063 MB uploadedwandb: / 0.058 MB of 0.063 MB uploadedwandb: - 0.058 MB of 0.063 MB uploadedwandb: \ 0.058 MB of 0.063 MB uploadedwandb: | 0.058 MB of 0.063 MB uploadedwandb: / 0.058 MB of 0.063 MB uploadedwandb: - 0.058 MB of 0.063 MB uploadedwandb: \ 0.058 MB of 0.063 MB uploadedwandb: | 0.058 MB of 0.063 MB uploadedwandb: / 0.058 MB of 0.063 MB uploadedwandb: - 0.058 MB of 0.063 MB uploadedwandb: \ 0.058 MB of 0.063 MB uploadedwandb: | 0.058 MB of 0.063 MB uploadedwandb: / 0.058 MB of 0.063 MB uploadedwandb: - 0.058 MB of 0.063 MB uploadedwandb: \ 0.058 MB of 0.063 MB uploadedwandb: | 0.058 MB of 0.063 MB uploadedwandb: / 0.058 MB of 0.063 MB uploadedwandb: - 0.058 MB of 0.063 MB uploadedwandb: \ 0.058 MB of 0.063 MB uploadedwandb: | 0.058 MB of 0.063 MB uploadedwandb: / 0.058 MB of 0.063 MB uploadedwandb: - 0.058 MB of 0.063 MB uploadedwandb: \ 0.058 MB of 0.063 MB uploadedwandb: | 0.058 MB of 0.063 MB uploadedwandb: / 0.058 MB of 0.063 MB uploadedwandb: - 0.058 MB of 0.063 MB uploadedwandb: \ 0.058 MB of 0.063 MB uploadedwandb: | 0.058 MB of 0.063 MB uploadedwandb: / 0.058 MB of 0.063 MB uploadedwandb: - 0.058 MB of 0.063 MB uploadedwandb: \ 0.058 MB of 0.063 MB uploadedwandb: | 0.058 MB of 0.063 MB uploadedwandb: / 0.058 MB of 0.063 MB uploadedwandb: - 0.058 MB of 0.063 MB uploadedwandb: \ 0.058 MB of 0.063 MB uploadedwandb: | 0.058 MB of 0.063 MB uploadedwandb: / 0.058 MB of 0.063 MB uploadedwandb: - 0.058 MB of 0.063 MB uploadedwandb: \ 0.058 MB of 0.063 MB uploadedwandb: | 0.058 MB of 0.063 MB uploadedwandb: / 0.058 MB of 0.063 MB uploadedwandb: - 0.058 MB of 0.063 MB uploadedwandb: \ 0.058 MB of 0.063 MB uploadedwandb: | 0.058 MB of 0.063 MB uploadedwandb: / 0.058 MB of 0.063 MB uploadedwandb: - 0.058 MB of 0.063 MB uploadedwandb: \ 0.058 MB of 0.063 MB uploadedwandb: | 0.058 MB of 0.063 MB uploadedwandb: / 0.058 MB of 0.063 MB uploadedwandb: - 0.058 MB of 0.063 MB uploadedwandb: \ 0.058 MB of 0.063 MB uploadedwandb: | 0.058 MB of 0.063 MB uploadedwandb: / 0.058 MB of 0.063 MB uploadedwandb: - 0.058 MB of 0.063 MB uploadedwandb: \ 0.058 MB of 0.063 MB uploadedwandb: | 0.058 MB of 0.063 MB uploadedwandb: / 0.058 MB of 0.063 MB uploadedwandb: - 0.058 MB of 0.063 MB uploadedwandb: \ 0.058 MB of 0.063 MB uploadedwandb: | 0.058 MB of 0.063 MB uploadedwandb: / 0.058 MB of 0.063 MB uploadedwandb: - 0.058 MB of 0.063 MB uploadedwandb: \ 0.058 MB of 0.063 MB uploadedwandb: | 0.058 MB of 0.063 MB uploadedwandb: / 0.058 MB of 0.063 MB uploadedwandb: - 0.058 MB of 0.063 MB uploadedwandb: \ 0.058 MB of 0.063 MB uploadedwandb: | 0.058 MB of 0.063 MB uploadedwandb: / 0.058 MB of 0.063 MB uploadedwandb: - 0.058 MB of 0.063 MB uploadedwandb: \ 0.058 MB of 0.063 MB uploadedwandb: | 0.058 MB of 0.063 MB uploadedwandb: / 0.058 MB of 0.063 MB uploadedwandb: - 0.058 MB of 0.063 MB uploadedwandb: \ 0.058 MB of 0.063 MB uploadedwandb: | 0.058 MB of 0.063 MB uploadedwandb: / 0.058 MB of 0.063 MB uploadedwandb: - 0.058 MB of 0.063 MB uploadedwandb: \ 0.058 MB of 0.063 MB uploadedwandb: | 0.058 MB of 0.063 MB uploadedwandb: / 0.058 MB of 0.063 MB uploadedwandb: - 0.058 MB of 0.063 MB uploadedwandb: \ 0.058 MB of 0.063 MB uploadedwandb: | 0.058 MB of 0.063 MB uploadedwandb: / 0.058 MB of 0.063 MB uploadedwandb: - 0.058 MB of 0.063 MB uploadedwandb: \ 0.058 MB of 0.063 MB uploadedwandb: | 0.058 MB of 0.063 MB uploadedwandb: / 0.058 MB of 0.063 MB uploadedwandb: - 0.058 MB of 0.063 MB uploadedwandb: \ 0.058 MB of 0.063 MB uploadedwandb: | 0.058 MB of 0.063 MB uploadedwandb: / 0.058 MB of 0.063 MB uploadedwandb: - 0.058 MB of 0.063 MB uploadedwandb: \ 0.058 MB of 0.063 MB uploadedwandb: | 0.058 MB of 0.063 MB uploadedwandb: / 0.058 MB of 0.063 MB uploadedwandb: - 0.058 MB of 0.063 MB uploadedwandb: \ 0.058 MB of 0.063 MB uploadedwandb: | 0.058 MB of 0.063 MB uploadedwandb: / 0.058 MB of 0.063 MB uploadedwandb: - 0.058 MB of 0.063 MB uploadedwandb: \ 0.058 MB of 0.063 MB uploadedwandb: | 0.058 MB of 0.063 MB uploadedwandb: / 0.058 MB of 0.063 MB uploadedwandb: - 0.058 MB of 0.063 MB uploadedwandb: \ 0.058 MB of 0.063 MB uploadedwandb: | 0.058 MB of 0.063 MB uploadedwandb: / 0.058 MB of 0.063 MB uploadedwandb: - 0.058 MB of 0.063 MB uploadedwandb: \ 0.058 MB of 0.063 MB uploadedwandb: | 0.058 MB of 0.063 MB uploadedwandb: / 0.058 MB of 0.063 MB uploadedwandb: - 0.058 MB of 0.063 MB uploadedwandb: \ 0.058 MB of 0.063 MB uploadedwandb: | 0.058 MB of 0.063 MB uploadedwandb: / 0.058 MB of 0.063 MB uploadedwandb: - 0.058 MB of 0.063 MB uploadedwandb: \ 0.058 MB of 0.063 MB uploadedwandb: | 0.058 MB of 0.063 MB uploadedwandb: / 0.058 MB of 0.063 MB uploadedwandb: - 0.058 MB of 0.063 MB uploadedwandb: \ 0.058 MB of 0.063 MB uploadedwandb: | 0.058 MB of 0.063 MB uploadedwandb: / 0.058 MB of 0.063 MB uploadedwandb: - 0.058 MB of 0.063 MB uploadedwandb: \ 0.058 MB of 0.063 MB uploadedwandb: | 0.058 MB of 0.063 MB uploadedwandb: / 0.058 MB of 0.063 MB uploadedwandb: - 0.058 MB of 0.063 MB uploadedwandb: \ 0.058 MB of 0.063 MB uploadedwandb: | 0.058 MB of 0.063 MB uploadedwandb: / 0.058 MB of 0.063 MB uploadedwandb: - 0.058 MB of 0.063 MB uploadedwandb: \ 0.058 MB of 0.063 MB uploadedwandb: | 0.058 MB of 0.063 MB uploadedwandb: / 0.058 MB of 0.063 MB uploadedwandb: - 0.058 MB of 0.063 MB uploadedwandb: \ 0.058 MB of 0.063 MB uploadedwandb: | 0.058 MB of 0.063 MB uploadedwandb: / 0.058 MB of 0.063 MB uploadedwandb: - 0.058 MB of 0.063 MB uploadedwandb: \ 0.058 MB of 0.063 MB uploadedwandb: | 0.058 MB of 0.063 MB uploadedwandb: / 0.058 MB of 0.063 MB uploadedwandb: - 0.058 MB of 0.063 MB uploadedwandb: \ 0.058 MB of 0.063 MB uploadedwandb: | 0.058 MB of 0.063 MB uploadedwandb: / 0.058 MB of 0.063 MB uploadedwandb: - 0.058 MB of 0.063 MB uploadedwandb: \ 0.058 MB of 0.063 MB uploadedwandb: | 0.058 MB of 0.063 MB uploadedwandb: / 0.058 MB of 0.063 MB uploadedwandb: - 0.058 MB of 0.063 MB uploadedwandb: \ 0.058 MB of 0.063 MB uploadedwandb: | 0.058 MB of 0.063 MB uploadedwandb: / 0.058 MB of 0.063 MB uploadedwandb: - 0.058 MB of 0.063 MB uploadedwandb: \ 0.058 MB of 0.063 MB uploadedwandb: | 0.058 MB of 0.063 MB uploadedwandb: / 0.058 MB of 0.063 MB uploadedwandb: - 0.058 MB of 0.063 MB uploadedwandb: \ 0.058 MB of 0.063 MB uploadedwandb: | 0.058 MB of 0.063 MB uploadedwandb: / 0.058 MB of 0.063 MB uploadedwandb: - 0.058 MB of 0.063 MB uploadedwandb: \ 0.058 MB of 0.063 MB uploadedwandb: | 0.058 MB of 0.063 MB uploadedwandb: / 0.058 MB of 0.063 MB uploadedwandb: - 0.058 MB of 0.063 MB uploadedwandb: \ 0.058 MB of 0.063 MB uploadedwandb: | 0.058 MB of 0.063 MB uploadedwandb: / 0.058 MB of 0.063 MB uploadedwandb: - 0.058 MB of 0.063 MB uploadedwandb: \ 0.058 MB of 0.063 MB uploadedwandb: | 0.058 MB of 0.063 MB uploadedwandb: / 0.058 MB of 0.063 MB uploadedwandb: - 0.058 MB of 0.063 MB uploadedwandb: \ 0.058 MB of 0.063 MB uploadedwandb: | 0.058 MB of 0.063 MB uploadedwandb: / 0.058 MB of 0.063 MB uploadedwandb: - 0.058 MB of 0.063 MB uploadedwandb: \ 0.058 MB of 0.063 MB uploadedwandb: | 0.058 MB of 0.063 MB uploadedwandb: / 0.058 MB of 0.063 MB uploadedwandb: - 0.058 MB of 0.063 MB uploadedwandb: \ 0.058 MB of 0.063 MB uploadedwandb: | 0.058 MB of 0.063 MB uploadedwandb: / 0.058 MB of 0.063 MB uploadedwandb: - 0.058 MB of 0.063 MB uploadedwandb: \ 0.058 MB of 0.063 MB uploadedwandb: | 0.058 MB of 0.063 MB uploadedwandb: / 0.058 MB of 0.063 MB uploadedwandb: - 0.058 MB of 0.063 MB uploadedwandb: \ 0.058 MB of 0.063 MB uploadedwandb: | 0.058 MB of 0.063 MB uploadedwandb: / 0.058 MB of 0.063 MB uploadedwandb: - 0.058 MB of 0.063 MB uploadedwandb: \ 0.058 MB of 0.063 MB uploadedwandb: | 0.058 MB of 0.063 MB uploadedwandb: / 0.058 MB of 0.063 MB uploadedwandb: - 0.058 MB of 0.063 MB uploadedwandb: \ 0.062 MB of 0.063 MB uploadedwandb: | 0.062 MB of 0.063 MB uploadedwandb: / 0.062 MB of 0.063 MB uploadedwandb: - 0.062 MB of 0.063 MB uploadedwandb: \ 0.062 MB of 0.063 MB uploadedwandb: | 0.062 MB of 0.063 MB uploadedwandb: / 0.062 MB of 0.063 MB uploadedwandb: - 0.062 MB of 0.063 MB uploadedwandb: \ 0.062 MB of 0.063 MB uploadedwandb: | 0.062 MB of 0.063 MB uploadedwandb: / 0.062 MB of 0.063 MB uploadedwandb: - 0.062 MB of 0.063 MB uploadedwandb: \ 0.062 MB of 0.063 MB uploadedwandb: | 0.062 MB of 0.063 MB uploadedwandb: / 0.062 MB of 0.063 MB uploadedwandb: - 0.062 MB of 0.063 MB uploadedwandb: \ 0.062 MB of 0.063 MB uploadedwandb: | 0.062 MB of 0.063 MB uploadedwandb: / 0.062 MB of 0.063 MB uploadedwandb: - 0.062 MB of 0.063 MB uploadedwandb: \ 0.062 MB of 0.063 MB uploadedwandb: | 0.062 MB of 0.063 MB uploadedwandb: / 0.062 MB of 0.063 MB uploadedwandb: - 0.062 MB of 0.063 MB uploadedwandb: \ 0.062 MB of 0.063 MB uploadedwandb: | 0.062 MB of 0.063 MB uploadedwandb: / 0.062 MB of 0.063 MB uploadedwandb: - 0.062 MB of 0.063 MB uploadedwandb: \ 0.062 MB of 0.063 MB uploadedwandb: | 0.062 MB of 0.063 MB uploadedwandb: / 0.062 MB of 0.063 MB uploadedwandb: - 0.062 MB of 0.063 MB uploadedwandb: \ 0.062 MB of 0.063 MB uploadedwandb: | 0.062 MB of 0.063 MB uploadedwandb: / 0.062 MB of 0.063 MB uploadedwandb: - 0.062 MB of 0.063 MB uploadedwandb: \ 0.062 MB of 0.063 MB uploadedwandb: | 0.062 MB of 0.063 MB uploadedwandb: / 0.062 MB of 0.063 MB uploadedwandb: - 0.062 MB of 0.063 MB uploadedwandb: \ 0.062 MB of 0.063 MB uploadedwandb: | 0.062 MB of 0.063 MB uploadedwandb: / 0.062 MB of 0.063 MB uploadedwandb: - 0.062 MB of 0.063 MB uploadedwandb: \ 0.062 MB of 0.063 MB uploadedwandb: | 0.062 MB of 0.063 MB uploadedwandb: / 0.062 MB of 0.063 MB uploadedwandb: - 0.062 MB of 0.063 MB uploadedwandb: \ 0.062 MB of 0.063 MB uploadedwandb: | 0.062 MB of 0.063 MB uploadedwandb: / 0.062 MB of 0.063 MB uploadedwandb: - 0.062 MB of 0.063 MB uploadedwandb: \ 0.062 MB of 0.063 MB uploadedwandb: | 0.062 MB of 0.063 MB uploadedwandb: / 0.062 MB of 0.063 MB uploadedwandb: - 0.062 MB of 0.063 MB uploadedwandb: \ 0.062 MB of 0.063 MB uploadedwandb: | 0.062 MB of 0.063 MB uploadedwandb: / 0.062 MB of 0.063 MB uploadedwandb: - 0.062 MB of 0.063 MB uploadedwandb: \ 0.062 MB of 0.063 MB uploadedwandb: | 0.062 MB of 0.063 MB uploadedwandb: / 0.062 MB of 0.063 MB uploadedwandb: - 0.062 MB of 0.063 MB uploadedwandb: \ 0.062 MB of 0.063 MB uploadedwandb: | 0.062 MB of 0.063 MB uploadedwandb: / 0.062 MB of 0.063 MB uploadedwandb: - 0.062 MB of 0.063 MB uploadedwandb: \ 0.062 MB of 0.063 MB uploadedwandb: | 0.062 MB of 0.063 MB uploadedwandb: / 0.062 MB of 0.063 MB uploadedwandb: - 0.062 MB of 0.063 MB uploadedwandb: \ 0.062 MB of 0.063 MB uploadedwandb: | 0.062 MB of 0.063 MB uploadedwandb: / 0.062 MB of 0.063 MB uploadedwandb: - 0.062 MB of 0.063 MB uploadedwandb: \ 0.062 MB of 0.063 MB uploadedwandb: | 0.062 MB of 0.063 MB uploadedwandb: / 0.062 MB of 0.063 MB uploadedwandb: - 0.062 MB of 0.063 MB uploadedwandb: \ 0.062 MB of 0.063 MB uploadedwandb: | 0.062 MB of 0.063 MB uploadedwandb: / 0.062 MB of 0.063 MB uploadedwandb: - 0.062 MB of 0.063 MB uploadedwandb: \ 0.062 MB of 0.063 MB uploadedwandb: | 0.062 MB of 0.063 MB uploadedwandb: / 0.062 MB of 0.063 MB uploadedwandb: - 0.062 MB of 0.063 MB uploadedwandb: \ 0.062 MB of 0.063 MB uploadedwandb: | 0.062 MB of 0.063 MB uploadedwandb: / 0.062 MB of 0.063 MB uploadedwandb: - 0.062 MB of 0.063 MB uploadedwandb: \ 0.062 MB of 0.063 MB uploadedwandb: | 0.062 MB of 0.063 MB uploadedwandb: / 0.062 MB of 0.063 MB uploadedwandb: - 0.062 MB of 0.063 MB uploadedwandb: \ 0.062 MB of 0.063 MB uploadedwandb: | 0.062 MB of 0.063 MB uploadedwandb: / 0.062 MB of 0.063 MB uploadedwandb: - 0.062 MB of 0.063 MB uploadedwandb: \ 0.062 MB of 0.063 MB uploadedwandb: | 0.062 MB of 0.063 MB uploadedwandb: / 0.062 MB of 0.063 MB uploadedwandb: - 0.062 MB of 0.063 MB uploadedwandb: \ 0.062 MB of 0.063 MB uploadedwandb: | 0.062 MB of 0.063 MB uploadedwandb: / 0.062 MB of 0.063 MB uploadedwandb: - 0.062 MB of 0.063 MB uploadedwandb: \ 0.062 MB of 0.063 MB uploadedwandb: | 0.062 MB of 0.063 MB uploadedwandb: / 0.062 MB of 0.063 MB uploadedwandb: - 0.062 MB of 0.063 MB uploadedwandb: \ 0.062 MB of 0.063 MB uploadedwandb: | 0.062 MB of 0.063 MB uploadedwandb: / 0.062 MB of 0.063 MB uploadedwandb: - 0.062 MB of 0.063 MB uploadedwandb: \ 0.062 MB of 0.063 MB uploadedwandb: | 0.062 MB of 0.063 MB uploadedwandb: / 0.062 MB of 0.063 MB uploadedwandb: - 0.062 MB of 0.063 MB uploadedwandb: \ 0.062 MB of 0.063 MB uploadedwandb: | 0.062 MB of 0.063 MB uploadedwandb: / 0.062 MB of 0.063 MB uploadedwandb: - 0.062 MB of 0.063 MB uploadedwandb: \ 0.062 MB of 0.063 MB uploadedwandb: | 0.062 MB of 0.063 MB uploadedwandb: / 0.062 MB of 0.063 MB uploadedwandb: - 0.062 MB of 0.063 MB uploadedwandb: \ 0.062 MB of 0.063 MB uploadedwandb: | 0.062 MB of 0.063 MB uploadedwandb: / 0.062 MB of 0.063 MB uploadedwandb: - 0.062 MB of 0.063 MB uploadedwandb: \ 0.062 MB of 0.063 MB uploadedwandb: | 0.062 MB of 0.063 MB uploadedwandb: / 0.062 MB of 0.063 MB uploadedwandb: - 0.062 MB of 0.063 MB uploadedwandb: \ 0.062 MB of 0.063 MB uploadedwandb: | 0.062 MB of 0.063 MB uploadedwandb: / 0.062 MB of 0.063 MB uploadedwandb: - 0.062 MB of 0.063 MB uploadedwandb: \ 0.062 MB of 0.063 MB uploadedwandb: | 0.062 MB of 0.063 MB uploadedwandb: / 0.062 MB of 0.063 MB uploadedwandb: - 0.062 MB of 0.063 MB uploadedwandb: \ 0.062 MB of 0.063 MB uploadedwandb: | 0.062 MB of 0.063 MB uploadedwandb: / 0.062 MB of 0.063 MB uploadedwandb: - 0.062 MB of 0.063 MB uploadedwandb: \ 0.062 MB of 0.063 MB uploadedwandb: | 0.062 MB of 0.063 MB uploadedwandb: / 0.062 MB of 0.063 MB uploadedwandb: - 0.062 MB of 0.063 MB uploadedwandb: \ 0.062 MB of 0.063 MB uploadedwandb: | 0.062 MB of 0.063 MB uploadedwandb: / 0.062 MB of 0.063 MB uploadedwandb: - 0.062 MB of 0.063 MB uploadedwandb: \ 0.062 MB of 0.063 MB uploadedwandb: | 0.062 MB of 0.063 MB uploadedwandb: / 0.062 MB of 0.063 MB uploadedwandb: - 0.062 MB of 0.063 MB uploadedwandb: \ 0.062 MB of 0.063 MB uploadedwandb: | 0.062 MB of 0.063 MB uploadedwandb: / 0.062 MB of 0.063 MB uploadedwandb: - 0.062 MB of 0.063 MB uploadedwandb: \ 0.062 MB of 0.063 MB uploadedwandb: | 0.062 MB of 0.063 MB uploadedwandb: / 0.062 MB of 0.063 MB uploadedwandb: - 0.062 MB of 0.063 MB uploadedwandb: \ 0.062 MB of 0.063 MB uploadedwandb: | 0.062 MB of 0.063 MB uploadedwandb: / 0.062 MB of 0.063 MB uploadedwandb: - 0.062 MB of 0.063 MB uploadedwandb: \ 0.062 MB of 0.063 MB uploadedwandb: | 0.062 MB of 0.063 MB uploadedwandb: / 0.062 MB of 0.063 MB uploadedwandb: - 0.062 MB of 0.063 MB uploadedwandb: \ 0.062 MB of 0.063 MB uploadedwandb: | 0.062 MB of 0.063 MB uploadedwandb: / 0.062 MB of 0.063 MB uploadedwandb: - 0.062 MB of 0.063 MB uploadedwandb: \ 0.062 MB of 0.063 MB uploadedwandb: | 0.062 MB of 0.063 MB uploadedwandb: / 0.062 MB of 0.063 MB uploadedwandb: - 0.062 MB of 0.063 MB uploadedwandb: \ 0.062 MB of 0.063 MB uploadedwandb: | 0.062 MB of 0.063 MB uploadedwandb: / 0.062 MB of 0.063 MB uploadedwandb: - 0.062 MB of 0.063 MB uploadedwandb: \ 0.062 MB of 0.063 MB uploadedwandb: | 0.062 MB of 0.063 MB uploadedwandb: / 0.062 MB of 0.063 MB uploadedwandb: - 0.062 MB of 0.063 MB uploadedwandb: \ 0.062 MB of 0.063 MB uploadedwandb: | 0.062 MB of 0.063 MB uploadedwandb: / 0.062 MB of 0.063 MB uploadedwandb: - 0.062 MB of 0.063 MB uploadedwandb: \ 0.062 MB of 0.063 MB uploadedwandb: | 0.062 MB of 0.063 MB uploadedwandb: / 0.062 MB of 0.063 MB uploadedwandb: - 0.062 MB of 0.063 MB uploadedwandb: \ 0.062 MB of 0.063 MB uploadedwandb: | 0.062 MB of 0.063 MB uploadedwandb: / 0.062 MB of 0.063 MB uploadedwandb: - 0.062 MB of 0.063 MB uploadedwandb: \ 0.062 MB of 0.063 MB uploadedwandb: | 0.062 MB of 0.063 MB uploadedwandb: / 0.062 MB of 0.063 MB uploadedwandb: - 0.062 MB of 0.063 MB uploadedwandb: \ 0.062 MB of 0.063 MB uploadedwandb: | 0.062 MB of 0.063 MB uploadedwandb: / 0.062 MB of 0.063 MB uploadedwandb: - 0.062 MB of 0.063 MB uploadedwandb: \ 0.062 MB of 0.063 MB uploadedwandb: | 0.062 MB of 0.063 MB uploadedwandb: / 0.062 MB of 0.063 MB uploadedwandb: - 0.062 MB of 0.063 MB uploadedwandb: \ 0.062 MB of 0.063 MB uploadedwandb: | 0.062 MB of 0.063 MB uploadedwandb: / 0.062 MB of 0.063 MB uploadedwandb: - 0.062 MB of 0.063 MB uploadedwandb: \ 0.062 MB of 0.063 MB uploadedwandb: | 0.062 MB of 0.063 MB uploadedwandb: / 0.062 MB of 0.063 MB uploadedwandb: - 0.062 MB of 0.063 MB uploadedwandb: \ 0.062 MB of 0.063 MB uploadedwandb: | 0.062 MB of 0.063 MB uploadedwandb: / 0.062 MB of 0.063 MB uploadedwandb: - 0.062 MB of 0.063 MB uploadedwandb: \ 0.062 MB of 0.063 MB uploadedwandb: | 0.062 MB of 0.063 MB uploadedwandb: / 0.062 MB of 0.063 MB uploadedwandb: - 0.062 MB of 0.063 MB uploadedwandb: \ 0.062 MB of 0.063 MB uploadedwandb: | 0.062 MB of 0.063 MB uploadedwandb: / 0.062 MB of 0.063 MB uploadedwandb: - 0.062 MB of 0.063 MB uploadedwandb: \ 0.062 MB of 0.063 MB uploadedwandb: | 0.062 MB of 0.063 MB uploadedwandb: / 0.062 MB of 0.063 MB uploadedwandb: - 0.062 MB of 0.063 MB uploadedwandb: \ 0.062 MB of 0.063 MB uploadedwandb: | 0.062 MB of 0.063 MB uploadedwandb: / 0.062 MB of 0.063 MB uploadedwandb: - 0.062 MB of 0.063 MB uploadedwandb: \ 0.062 MB of 0.063 MB uploadedwandb: | 0.062 MB of 0.063 MB uploadedwandb: / 0.062 MB of 0.063 MB uploadedwandb: - 0.062 MB of 0.063 MB uploadedwandb: \ 0.062 MB of 0.063 MB uploadedwandb: | 0.062 MB of 0.063 MB uploadedwandb: / 0.062 MB of 0.063 MB uploadedwandb: - 0.062 MB of 0.063 MB uploadedwandb: \ 0.062 MB of 0.063 MB uploadedwandb: | 0.062 MB of 0.063 MB uploadedwandb: / 0.062 MB of 0.063 MB uploadedwandb: - 0.062 MB of 0.063 MB uploadedwandb: \ 0.062 MB of 0.063 MB uploadedwandb: | 0.062 MB of 0.063 MB uploadedwandb: / 0.063 MB of 0.063 MB uploadedwandb: - 0.063 MB of 0.063 MB uploadedwandb: \ 0.063 MB of 0.063 MB uploadedwandb: | 0.063 MB of 0.063 MB uploadedwandb: / 0.063 MB of 0.063 MB uploadedwandb: - 0.063 MB of 0.063 MB uploadedwandb: \ 0.063 MB of 0.063 MB uploadedwandb: | 0.063 MB of 0.063 MB uploadedwandb: / 0.063 MB of 0.063 MB uploadedwandb: - 0.063 MB of 0.063 MB uploadedwandb: \ 0.063 MB of 0.063 MB uploadedwandb: | 0.063 MB of 0.063 MB uploadedwandb: / 0.063 MB of 0.063 MB uploadedwandb: - 0.063 MB of 0.063 MB uploadedwandb: \ 0.063 MB of 0.063 MB uploadedwandb: | 0.063 MB of 0.063 MB uploadedwandb: / 0.063 MB of 0.063 MB uploadedwandb: - 0.063 MB of 0.063 MB uploadedwandb: \ 0.062 MB of 0.063 MB uploadedwandb: | 0.062 MB of 0.063 MB uploadedwandb: / 0.062 MB of 0.063 MB uploadedwandb: - 0.062 MB of 0.063 MB uploadedwandb: \ 0.062 MB of 0.063 MB uploadedwandb: | 0.062 MB of 0.063 MB uploadedwandb: / 0.062 MB of 0.063 MB uploadedwandb: - 0.062 MB of 0.063 MB uploadedwandb: \ 0.062 MB of 0.063 MB uploadedwandb: | 0.062 MB of 0.063 MB uploadedwandb: / 0.062 MB of 0.063 MB uploadedwandb: - 0.062 MB of 0.063 MB uploadedwandb: \ 0.062 MB of 0.063 MB uploadedwandb: | 0.062 MB of 0.063 MB uploadedwandb: / 0.062 MB of 0.063 MB uploadedwandb: - 0.062 MB of 0.063 MB uploadedwandb: \ 0.062 MB of 0.063 MB uploadedwandb: | 0.062 MB of 0.063 MB uploadedwandb: / 0.062 MB of 0.063 MB uploadedwandb: - 0.062 MB of 0.063 MB uploadedwandb: \ 0.062 MB of 0.063 MB uploadedwandb: | 0.062 MB of 0.063 MB uploadedwandb: / 0.062 MB of 0.063 MB uploadedwandb: - 0.062 MB of 0.063 MB uploadedwandb: \ 0.062 MB of 0.063 MB uploadedwandb: | 0.062 MB of 0.063 MB uploadedwandb: / 0.062 MB of 0.063 MB uploadedwandb: - 0.062 MB of 0.063 MB uploadedwandb: \ 0.062 MB of 0.063 MB uploadedwandb: | 0.062 MB of 0.063 MB uploadedwandb: / 0.062 MB of 0.063 MB uploadedwandb: - 0.062 MB of 0.063 MB uploadedwandb: \ 0.062 MB of 0.063 MB uploadedwandb: | 0.062 MB of 0.063 MB uploadedwandb: / 0.062 MB of 0.063 MB uploadedwandb: - 0.062 MB of 0.063 MB uploadedwandb: \ 0.062 MB of 0.063 MB uploadedwandb: | 0.062 MB of 0.063 MB uploadedwandb: / 0.062 MB of 0.063 MB uploadedwandb: - 0.062 MB of 0.063 MB uploadedwandb: \ 0.062 MB of 0.063 MB uploadedwandb: | 0.062 MB of 0.063 MB uploadedwandb: / 0.062 MB of 0.063 MB uploadedwandb: - 0.062 MB of 0.063 MB uploadedwandb: \ 0.062 MB of 0.063 MB uploadedwandb: | 0.062 MB of 0.063 MB uploadedwandb: / 0.062 MB of 0.063 MB uploadedwandb: - 0.062 MB of 0.063 MB uploadedwandb: \ 0.062 MB of 0.063 MB uploadedwandb: | 0.062 MB of 0.063 MB uploadedwandb: / 0.062 MB of 0.063 MB uploadedwandb: - 0.062 MB of 0.063 MB uploadedwandb: \ 0.062 MB of 0.063 MB uploadedwandb: | 0.062 MB of 0.063 MB uploadedwandb: / 0.062 MB of 0.063 MB uploadedwandb: - 0.062 MB of 0.063 MB uploadedwandb: \ 0.062 MB of 0.063 MB uploadedwandb: | 0.062 MB of 0.063 MB uploadedwandb: / 0.062 MB of 0.063 MB uploadedwandb: - 0.062 MB of 0.063 MB uploadedwandb: \ 0.062 MB of 0.063 MB uploadedwandb: | 0.062 MB of 0.063 MB uploadedwandb: / 0.062 MB of 0.063 MB uploadedwandb: - 0.062 MB of 0.063 MB uploadedwandb: \ 0.062 MB of 0.063 MB uploadedwandb: | 0.062 MB of 0.063 MB uploadedwandb: / 0.062 MB of 0.063 MB uploadedwandb: - 0.062 MB of 0.063 MB uploadedwandb: \ 0.062 MB of 0.063 MB uploadedwandb: | 0.062 MB of 0.063 MB uploadedwandb: / 0.062 MB of 0.063 MB uploadedwandb: - 0.062 MB of 0.063 MB uploadedwandb: \ 0.062 MB of 0.063 MB uploadedwandb: | 0.062 MB of 0.063 MB uploadedwandb: / 0.062 MB of 0.063 MB uploadedwandb: - 0.062 MB of 0.063 MB uploadedwandb: \ 0.062 MB of 0.063 MB uploadedwandb: | 0.062 MB of 0.063 MB uploadedwandb: / 0.062 MB of 0.063 MB uploadedwandb: - 0.062 MB of 0.063 MB uploadedwandb: \ 0.062 MB of 0.063 MB uploadedwandb: | 0.062 MB of 0.063 MB uploadedwandb: / 0.062 MB of 0.063 MB uploadedwandb: - 0.062 MB of 0.063 MB uploadedwandb: \ 0.062 MB of 0.063 MB uploadedwandb: | 0.062 MB of 0.063 MB uploadedwandb: / 0.062 MB of 0.063 MB uploadedwandb: - 0.062 MB of 0.063 MB uploadedwandb: \ 0.062 MB of 0.063 MB uploadedwandb: | 0.062 MB of 0.063 MB uploadedwandb: / 0.062 MB of 0.063 MB uploadedwandb: - 0.062 MB of 0.063 MB uploadedwandb: \ 0.062 MB of 0.063 MB uploadedwandb: | 0.062 MB of 0.063 MB uploadedwandb: / 0.062 MB of 0.063 MB uploadedwandb: - 0.062 MB of 0.063 MB uploadedwandb: \ 0.062 MB of 0.063 MB uploadedwandb: | 0.062 MB of 0.063 MB uploadedwandb: / 0.062 MB of 0.063 MB uploadedwandb: - 0.062 MB of 0.063 MB uploadedwandb: \ 0.062 MB of 0.063 MB uploadedwandb: | 0.062 MB of 0.063 MB uploadedwandb: / 0.062 MB of 0.063 MB uploadedwandb: - 0.062 MB of 0.063 MB uploadedwandb: \ 0.062 MB of 0.063 MB uploadedwandb: | 0.062 MB of 0.063 MB uploadedwandb: / 0.062 MB of 0.063 MB uploadedwandb: - 0.062 MB of 0.063 MB uploadedwandb: \ 0.062 MB of 0.063 MB uploadedwandb: | 0.062 MB of 0.063 MB uploadedwandb: / 0.062 MB of 0.063 MB uploadedwandb: - 0.062 MB of 0.063 MB uploadedwandb: \ 0.062 MB of 0.063 MB uploadedwandb: | 0.062 MB of 0.063 MB uploadedwandb: / 0.062 MB of 0.063 MB uploadedwandb: - 0.062 MB of 0.063 MB uploadedwandb: \ 0.062 MB of 0.063 MB uploadedwandb: | 0.062 MB of 0.063 MB uploadedwandb: / 0.062 MB of 0.063 MB uploadedwandb: - 0.062 MB of 0.063 MB uploadedwandb: \ 0.062 MB of 0.063 MB uploadedwandb: | 0.062 MB of 0.063 MB uploadedwandb: / 0.062 MB of 0.063 MB uploadedwandb: - 0.062 MB of 0.063 MB uploadedwandb: \ 0.062 MB of 0.063 MB uploadedwandb: | 0.062 MB of 0.063 MB uploadedwandb: / 0.062 MB of 0.063 MB uploadedwandb: - 0.062 MB of 0.063 MB uploadedwandb: \ 0.062 MB of 0.063 MB uploadedwandb: | 0.062 MB of 0.063 MB uploadedwandb: / 0.062 MB of 0.063 MB uploadedwandb: - 0.062 MB of 0.063 MB uploadedwandb: \ 0.062 MB of 0.063 MB uploadedwandb: | 0.062 MB of 0.063 MB uploadedwandb: / 0.062 MB of 0.063 MB uploadedwandb: - 0.062 MB of 0.063 MB uploadedwandb: \ 0.062 MB of 0.063 MB uploadedwandb: | 0.062 MB of 0.063 MB uploadedwandb: / 0.062 MB of 0.063 MB uploadedwandb: - 0.062 MB of 0.063 MB uploadedwandb: \ 0.062 MB of 0.063 MB uploadedwandb: | 0.062 MB of 0.063 MB uploadedwandb: / 0.062 MB of 0.063 MB uploadedwandb: - 0.062 MB of 0.063 MB uploadedwandb: \ 0.062 MB of 0.063 MB uploadedwandb: | 0.062 MB of 0.063 MB uploadedwandb: / 0.062 MB of 0.063 MB uploadedwandb: - 0.062 MB of 0.063 MB uploadedwandb: \ 0.062 MB of 0.063 MB uploadedwandb: | 0.062 MB of 0.063 MB uploadedwandb: / 0.062 MB of 0.063 MB uploadedwandb: - 0.062 MB of 0.063 MB uploadedwandb: \ 0.062 MB of 0.063 MB uploadedwandb: | 0.062 MB of 0.063 MB uploadedwandb: / 0.062 MB of 0.063 MB uploadedwandb: - 0.062 MB of 0.063 MB uploadedwandb: \ 0.062 MB of 0.063 MB uploadedwandb: | 0.062 MB of 0.063 MB uploadedwandb: / 0.062 MB of 0.063 MB uploadedwandb: - 0.062 MB of 0.063 MB uploadedwandb: \ 0.062 MB of 0.063 MB uploadedwandb: | 0.062 MB of 0.063 MB uploadedwandb: / 0.062 MB of 0.063 MB uploadedwandb: - 0.062 MB of 0.063 MB uploadedwandb: \ 0.062 MB of 0.063 MB uploadedwandb: | 0.062 MB of 0.063 MB uploadedwandb: / 0.062 MB of 0.063 MB uploadedwandb: - 0.062 MB of 0.063 MB uploadedwandb: \ 0.062 MB of 0.063 MB uploadedwandb: | 0.062 MB of 0.063 MB uploadedwandb: / 0.062 MB of 0.063 MB uploadedwandb: - 0.062 MB of 0.063 MB uploadedwandb: \ 0.062 MB of 0.063 MB uploadedwandb: | 0.062 MB of 0.063 MB uploadedwandb: / 0.062 MB of 0.063 MB uploadedwandb: - 0.062 MB of 0.063 MB uploadedwandb: \ 0.062 MB of 0.063 MB uploadedwandb: | 0.062 MB of 0.063 MB uploadedwandb: / 0.062 MB of 0.063 MB uploadedwandb: - 0.062 MB of 0.063 MB uploadedwandb: \ 0.062 MB of 0.063 MB uploadedwandb: | 0.062 MB of 0.063 MB uploadedwandb: / 0.062 MB of 0.063 MB uploadedwandb: - 0.062 MB of 0.063 MB uploadedwandb: \ 0.062 MB of 0.063 MB uploadedwandb: | 0.062 MB of 0.063 MB uploadedwandb: / 0.062 MB of 0.063 MB uploadedwandb: - 0.062 MB of 0.063 MB uploadedwandb: \ 0.062 MB of 0.063 MB uploadedwandb: | 0.062 MB of 0.063 MB uploadedwandb: / 0.062 MB of 0.063 MB uploadedwandb: - 0.062 MB of 0.063 MB uploadedwandb: \ 0.062 MB of 0.063 MB uploadedwandb: | 0.062 MB of 0.063 MB uploadedwandb: / 0.062 MB of 0.063 MB uploadedwandb: - 0.062 MB of 0.063 MB uploadedwandb: \ 0.062 MB of 0.063 MB uploadedwandb: | 0.062 MB of 0.063 MB uploadedwandb: / 0.062 MB of 0.063 MB uploadedwandb: - 0.062 MB of 0.063 MB uploadedwandb: \ 0.062 MB of 0.063 MB uploadedwandb: | 0.062 MB of 0.063 MB uploadedwandb: / 0.062 MB of 0.063 MB uploadedwandb: - 0.062 MB of 0.063 MB uploadedwandb: \ 0.062 MB of 0.063 MB uploadedwandb: | 0.062 MB of 0.063 MB uploadedwandb: / 0.062 MB of 0.063 MB uploadedwandb: - 0.062 MB of 0.063 MB uploadedwandb: \ 0.062 MB of 0.063 MB uploadedwandb: | 0.062 MB of 0.063 MB uploadedwandb: / 0.062 MB of 0.063 MB uploadedwandb: - 0.062 MB of 0.063 MB uploadedwandb: \ 0.062 MB of 0.063 MB uploadedwandb: | 0.062 MB of 0.063 MB uploadedwandb: / 0.062 MB of 0.063 MB uploadedwandb: - 0.062 MB of 0.063 MB uploadedwandb: \ 0.062 MB of 0.063 MB uploadedwandb: | 0.062 MB of 0.063 MB uploadedwandb: / 0.062 MB of 0.063 MB uploadedwandb: - 0.062 MB of 0.063 MB uploadedwandb: \ 0.062 MB of 0.063 MB uploadedwandb: | 0.062 MB of 0.063 MB uploadedwandb: / 0.062 MB of 0.063 MB uploadedwandb: - 0.062 MB of 0.063 MB uploadedwandb: \ 0.062 MB of 0.063 MB uploadedwandb: | 0.062 MB of 0.063 MB uploadedwandb: / 0.062 MB of 0.063 MB uploadedwandb: - 0.062 MB of 0.063 MB uploadedwandb: \ 0.062 MB of 0.063 MB uploadedwandb: | 0.062 MB of 0.063 MB uploadedwandb: / 0.062 MB of 0.063 MB uploadedwandb: - 0.062 MB of 0.063 MB uploadedwandb: \ 0.062 MB of 0.063 MB uploadedwandb: | 0.062 MB of 0.063 MB uploadedwandb: / 0.062 MB of 0.063 MB uploadedwandb: - 0.062 MB of 0.063 MB uploadedwandb: \ 0.062 MB of 0.063 MB uploadedwandb: | 0.062 MB of 0.063 MB uploadedwandb: / 0.062 MB of 0.063 MB uploadedwandb: - 0.062 MB of 0.063 MB uploadedwandb: \ 0.062 MB of 0.063 MB uploadedwandb: | 0.062 MB of 0.063 MB uploadedwandb: / 0.062 MB of 0.063 MB uploadedwandb: - 0.062 MB of 0.063 MB uploadedwandb: \ 0.062 MB of 0.063 MB uploadedwandb: | 0.062 MB of 0.063 MB uploadedwandb: / 0.062 MB of 0.063 MB uploadedwandb: - 0.062 MB of 0.063 MB uploadedwandb: \ 0.062 MB of 0.063 MB uploadedwandb: | 0.062 MB of 0.063 MB uploadedwandb: / 0.062 MB of 0.063 MB uploadedwandb: - 0.062 MB of 0.063 MB uploadedwandb: \ 0.062 MB of 0.063 MB uploadedwandb: | 0.062 MB of 0.063 MB uploadedwandb: / 0.062 MB of 0.063 MB uploadedwandb: - 0.062 MB of 0.063 MB uploadedwandb: \ 0.062 MB of 0.063 MB uploadedwandb: | 0.062 MB of 0.063 MB uploadedwandb: / 0.062 MB of 0.063 MB uploadedwandb: - 0.062 MB of 0.063 MB uploadedwandb: \ 0.062 MB of 0.063 MB uploadedwandb: | 0.062 MB of 0.063 MB uploadedwandb: / 0.062 MB of 0.063 MB uploadedwandb: - 0.062 MB of 0.063 MB uploadedwandb: \ 0.062 MB of 0.063 MB uploadedwandb: | 0.062 MB of 0.063 MB uploadedwandb: / 0.062 MB of 0.063 MB uploadedwandb: - 0.062 MB of 0.063 MB uploadedwandb: \ 0.062 MB of 0.063 MB uploadedwandb: | 0.062 MB of 0.063 MB uploadedwandb: / 0.062 MB of 0.063 MB uploadedwandb: - 0.062 MB of 0.063 MB uploadedwandb: \ 0.062 MB of 0.063 MB uploadedwandb: | 0.062 MB of 0.063 MB uploadedwandb: / 0.062 MB of 0.063 MB uploadedwandb: - 0.062 MB of 0.063 MB uploadedwandb: \ 0.062 MB of 0.063 MB uploadedwandb: | 0.062 MB of 0.063 MB uploadedwandb: / 0.062 MB of 0.063 MB uploadedwandb: - 0.062 MB of 0.063 MB uploadedwandb: \ 0.062 MB of 0.063 MB uploadedwandb: | 0.062 MB of 0.063 MB uploadedwandb: / 0.062 MB of 0.063 MB uploadedwandb: - 0.062 MB of 0.063 MB uploadedwandb: \ 0.062 MB of 0.063 MB uploadedwandb: | 0.062 MB of 0.063 MB uploadedwandb: / 0.062 MB of 0.063 MB uploadedwandb: - 0.062 MB of 0.063 MB uploadedwandb: \ 0.062 MB of 0.063 MB uploadedwandb: | 0.062 MB of 0.063 MB uploadedwandb: / 0.062 MB of 0.063 MB uploadedwandb: - 0.062 MB of 0.063 MB uploadedwandb: \ 0.062 MB of 0.063 MB uploadedwandb: | 0.062 MB of 0.063 MB uploadedwandb: / 0.062 MB of 0.063 MB uploadedwandb: - 0.062 MB of 0.063 MB uploadedwandb: \ 0.062 MB of 0.063 MB uploadedwandb: | 0.062 MB of 0.063 MB uploadedwandb: / 0.062 MB of 0.063 MB uploadedwandb: - 0.062 MB of 0.063 MB uploadedwandb: \ 0.062 MB of 0.063 MB uploadedwandb: | 0.062 MB of 0.063 MB uploadedwandb: / 0.062 MB of 0.063 MB uploadedwandb: - 0.062 MB of 0.063 MB uploadedwandb: \ 0.062 MB of 0.063 MB uploadedwandb: | 0.062 MB of 0.063 MB uploadedwandb: / 0.062 MB of 0.063 MB uploadedwandb: - 0.062 MB of 0.063 MB uploadedwandb: \ 0.062 MB of 0.063 MB uploadedwandb: | 0.062 MB of 0.063 MB uploadedwandb: / 0.062 MB of 0.063 MB uploadedwandb: - 0.062 MB of 0.063 MB uploadedwandb: \ 0.062 MB of 0.063 MB uploadedwandb: | 0.062 MB of 0.063 MB uploadedwandb: / 0.062 MB of 0.063 MB uploadedwandb: - 0.062 MB of 0.063 MB uploadedwandb: \ 0.062 MB of 0.063 MB uploadedwandb: | 0.062 MB of 0.063 MB uploadedwandb: / 0.062 MB of 0.063 MB uploadedwandb: - 0.062 MB of 0.063 MB uploadedwandb: \ 0.062 MB of 0.063 MB uploadedwandb: | 0.062 MB of 0.063 MB uploadedwandb: / 0.062 MB of 0.063 MB uploadedwandb: - 0.062 MB of 0.063 MB uploadedwandb: \ 0.062 MB of 0.063 MB uploadedwandb: | 0.062 MB of 0.063 MB uploadedwandb: / 0.062 MB of 0.063 MB uploadedwandb: - 0.062 MB of 0.063 MB uploadedwandb: \ 0.062 MB of 0.063 MB uploadedwandb: | 0.062 MB of 0.063 MB uploadedwandb: / 0.062 MB of 0.063 MB uploadedwandb: - 0.062 MB of 0.063 MB uploadedwandb: \ 0.062 MB of 0.063 MB uploadedwandb: | 0.062 MB of 0.063 MB uploadedwandb: / 0.062 MB of 0.063 MB uploadedwandb: - 0.062 MB of 0.063 MB uploadedwandb: \ 0.062 MB of 0.063 MB uploadedwandb: | 0.062 MB of 0.063 MB uploadedwandb: / 0.062 MB of 0.063 MB uploadedwandb: - 0.062 MB of 0.063 MB uploadedwandb: \ 0.062 MB of 0.063 MB uploadedwandb: | 0.062 MB of 0.063 MB uploadedwandb: / 0.062 MB of 0.063 MB uploadedwandb: - 0.062 MB of 0.063 MB uploadedwandb: \ 0.062 MB of 0.063 MB uploadedwandb: | 0.062 MB of 0.063 MB uploadedwandb: / 0.062 MB of 0.063 MB uploadedwandb: - 0.062 MB of 0.063 MB uploadedwandb: \ 0.062 MB of 0.063 MB uploadedwandb: | 0.062 MB of 0.063 MB uploadedwandb: / 0.062 MB of 0.063 MB uploadedwandb: - 0.062 MB of 0.063 MB uploadedwandb: \ 0.062 MB of 0.063 MB uploadedwandb: | 0.062 MB of 0.063 MB uploadedwandb: / 0.062 MB of 0.063 MB uploadedwandb: - 0.062 MB of 0.063 MB uploadedwandb: \ 0.062 MB of 0.063 MB uploadedwandb: | 0.062 MB of 0.063 MB uploadedwandb: / 0.062 MB of 0.063 MB uploadedwandb: - 0.062 MB of 0.063 MB uploadedwandb: \ 0.062 MB of 0.063 MB uploadedwandb: | 0.062 MB of 0.063 MB uploadedwandb: / 0.062 MB of 0.063 MB uploadedwandb: - 0.062 MB of 0.063 MB uploadedwandb: \ 0.062 MB of 0.063 MB uploadedwandb: | 0.062 MB of 0.063 MB uploadedwandb: / 0.062 MB of 0.063 MB uploadedwandb: - 0.062 MB of 0.063 MB uploadedwandb: \ 0.062 MB of 0.063 MB uploadedwandb: | 0.062 MB of 0.063 MB uploadedwandb: / 0.062 MB of 0.063 MB uploadedwandb: - 0.062 MB of 0.063 MB uploadedwandb: \ 0.062 MB of 0.063 MB uploadedwandb: | 0.062 MB of 0.063 MB uploadedwandb: / 0.063 MB of 0.063 MB uploadedwandb: 
+wandb: Run history:
+wandb: Communication Time ▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁█▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁
+wandb:    MAE (test data) ▁▂▇▇██▇▇██▇█▇█▇▇█▇██▇▇▇▇▇▇▇██▇▇▇▇█▇▇▇▇▇▇
+wandb:   MAPE (test data) ▁▆██████████████████████████████████████
+wandb:    MSE (test data) ▁▃▇▆▇█▇█▇█▇█▇████▇████▇▇▇▇██████▇██▇▇███
+wandb:     R2 (test data) █▆▂▃▂▁▂▁▂▁▂▁▂▁▁▁▁▂▁▁▁▁▂▂▂▂▁▁▁▁▁▁▂▁▁▂▂▁▁▁
+wandb:   RMSE (test data) ▁▃▇▆▇████████████▇████▇█▇██████████▇▇███
+wandb:    loss(test data) ▁▃▇▆▇█▇█▇█▇█▇████▇████▇▇▇▇██████▇██▇▇███
+wandb: 
+wandb: Run summary:
+wandb: Communication Time 1.95355
+wandb:    MAE (test data) 146.44142
+wandb:   MAPE (test data) 190.25365
+wandb:    MSE (test data) 29638.34961
+wandb:     R2 (test data) -1.58281
+wandb:   RMSE (test data) 172.15791
+wandb:    loss(test data) 29638.3506
+wandb: 
+wandb: 🚀 View run icy-firefly-23 at: https://wandb.ai/digitalai/CFL/runs/xypgs7i9
+wandb: ️⚡ View job at https://wandb.ai/digitalai/CFL/jobs/QXJ0aWZhY3RDb2xsZWN0aW9uOjE0NzEyNzUxNA==/version_details/v5
+wandb: Synced 6 W&B file(s), 0 media file(s), 0 artifact file(s) and 0 other file(s)
+wandb: Find logs at: ./wandb/run-20240309_123333-xypgs7i9/logs

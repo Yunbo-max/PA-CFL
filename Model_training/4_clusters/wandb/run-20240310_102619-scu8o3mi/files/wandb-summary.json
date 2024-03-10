@@ -1,0 +1,1 @@
+{"train_loss": 12886.529974412548, "_timestamp": 1710066470.000536, "_runtime": 90.94058203697205, "_step": 6, "Communication Time": 4.559158086776733, "RMSE (test data)": 65.99723815917969, "MAE (test data)": 52.68263626098633, "MAPE (test data)": 85.83726286888123, "MSE (test data)": 4355.6357421875, "R2 (test data)": 0.6437889712892503, "loss(test data)": 4355.6357421875}

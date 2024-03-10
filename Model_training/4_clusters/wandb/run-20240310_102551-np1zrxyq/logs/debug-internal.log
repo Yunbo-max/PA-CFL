@@ -1,0 +1,69 @@
+2024-03-10 10:25:51,930 INFO    StreamThr :35344 [internal.py:wandb_internal():86] W&B internal server running at pid: 35344, started at: 2024-03-10 10:25:51.929892
+2024-03-10 10:25:51,930 DEBUG   HandlerThread:35344 [handler.py:handle_request():146] handle_request: status
+2024-03-10 10:25:51,933 INFO    WriterThread:35344 [datastore.py:open_for_write():87] open: /Users/yunbo/Documents/GitHub/PFL_Optimiozation/Model_training/4_clusters/wandb/run-20240310_102551-np1zrxyq/run-np1zrxyq.wandb
+2024-03-10 10:25:51,933 DEBUG   SenderThread:35344 [sender.py:send():382] send: header
+2024-03-10 10:25:51,982 DEBUG   SenderThread:35344 [sender.py:send():382] send: run
+2024-03-10 10:25:52,358 INFO    SenderThread:35344 [dir_watcher.py:__init__():211] watching files in: /Users/yunbo/Documents/GitHub/PFL_Optimiozation/Model_training/4_clusters/wandb/run-20240310_102551-np1zrxyq/files
+2024-03-10 10:25:52,358 INFO    SenderThread:35344 [sender.py:_start_run_threads():1136] run started: np1zrxyq with start time 1710066351.929849
+2024-03-10 10:25:52,365 DEBUG   HandlerThread:35344 [handler.py:handle_request():146] handle_request: check_version
+2024-03-10 10:25:52,365 DEBUG   SenderThread:35344 [sender.py:send_request():409] send_request: check_version
+2024-03-10 10:25:52,424 DEBUG   HandlerThread:35344 [handler.py:handle_request():146] handle_request: run_start
+2024-03-10 10:25:52,439 DEBUG   HandlerThread:35344 [system_info.py:__init__():27] System info init
+2024-03-10 10:25:52,440 DEBUG   HandlerThread:35344 [system_info.py:__init__():42] System info init done
+2024-03-10 10:25:52,440 INFO    HandlerThread:35344 [system_monitor.py:start():194] Starting system monitor
+2024-03-10 10:25:52,440 INFO    SystemMonitor:35344 [system_monitor.py:_start():158] Starting system asset monitoring threads
+2024-03-10 10:25:52,441 INFO    HandlerThread:35344 [system_monitor.py:probe():214] Collecting system info
+2024-03-10 10:25:52,441 INFO    SystemMonitor:35344 [interfaces.py:start():190] Started cpu monitoring
+2024-03-10 10:25:52,442 DEBUG   HandlerThread:35344 [system_info.py:probe():151] Probing system
+2024-03-10 10:25:52,442 INFO    SystemMonitor:35344 [interfaces.py:start():190] Started disk monitoring
+2024-03-10 10:25:52,448 INFO    SystemMonitor:35344 [interfaces.py:start():190] Started gpuapple monitoring
+2024-03-10 10:25:52,455 INFO    SystemMonitor:35344 [interfaces.py:start():190] Started memory monitoring
+2024-03-10 10:25:52,457 INFO    SystemMonitor:35344 [interfaces.py:start():190] Started network monitoring
+2024-03-10 10:25:52,460 DEBUG   HandlerThread:35344 [system_info.py:_probe_git():136] Probing git
+2024-03-10 10:25:52,510 DEBUG   HandlerThread:35344 [system_info.py:_probe_git():144] Probing git done
+2024-03-10 10:25:52,511 DEBUG   HandlerThread:35344 [system_info.py:probe():199] Probing system done
+2024-03-10 10:25:52,511 DEBUG   HandlerThread:35344 [system_monitor.py:probe():223] {'os': 'macOS-14.2-arm64-arm-64bit', 'python': '3.9.18', 'heartbeatAt': '2024-03-10T10:25:52.444745', 'startedAt': '2024-03-10T10:25:51.925375', 'docker': None, 'cuda': None, 'args': ('--client_number=Central America', '--config_file=config.json'), 'state': 'running', 'program': '/Users/yunbo/Documents/GitHub/PFL_Optimiozation/Model_training/4_clusters/client.py', 'codePathLocal': 'client.py', 'codePath': 'Model_training/4_clusters/client.py', 'git': {'remote': 'https://github.com/Yunbo-max/PFL_Optimiozation.git', 'commit': '406fded0406405b436908435d22a52c9b01b0299'}, 'email': '82950147+Yunbo-max@users.noreply.github.com', 'root': '/Users/yunbo/Documents/GitHub/PFL_Optimiozation', 'host': 'dhcp-10-249-98-185.eduroam.wireless.private.cam.ac.uk', 'username': 'yunbo', 'executable': '/Users/yunbo/anaconda3/envs/basic/bin/python', 'cpu_count': 10, 'cpu_count_logical': 10, 'disk': {'/': {'total': 460.4317207336426, 'used': 173.23252868652344}}, 'gpuapple': {'type': 'arm', 'vendor': 'Apple'}, 'memory': {'total': 16.0}}
+2024-03-10 10:25:52,511 INFO    HandlerThread:35344 [system_monitor.py:probe():224] Finished collecting system info
+2024-03-10 10:25:52,511 INFO    HandlerThread:35344 [system_monitor.py:probe():227] Publishing system info
+2024-03-10 10:25:52,511 DEBUG   HandlerThread:35344 [system_info.py:_save_conda():208] Saving list of conda packages installed into the current environment
+2024-03-10 10:25:53,362 INFO    Thread-13 :35344 [dir_watcher.py:_on_file_created():271] file/dir created: /Users/yunbo/Documents/GitHub/PFL_Optimiozation/Model_training/4_clusters/wandb/run-20240310_102551-np1zrxyq/files/conda-environment.yaml
+2024-03-10 10:26:05,291 DEBUG   HandlerThread:35344 [system_info.py:_save_conda():220] Saving conda packages done
+2024-03-10 10:26:05,294 INFO    HandlerThread:35344 [system_monitor.py:probe():229] Finished publishing system info
+2024-03-10 10:26:05,306 DEBUG   HandlerThread:35344 [handler.py:handle_request():146] handle_request: status_report
+2024-03-10 10:26:05,307 DEBUG   HandlerThread:35344 [handler.py:handle_request():146] handle_request: status_report
+2024-03-10 10:26:05,310 DEBUG   SenderThread:35344 [sender.py:send():382] send: files
+2024-03-10 10:26:05,311 INFO    SenderThread:35344 [sender.py:_save_file():1403] saving file wandb-metadata.json with policy now
+2024-03-10 10:26:05,403 INFO    Thread-13 :35344 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/yunbo/Documents/GitHub/PFL_Optimiozation/Model_training/4_clusters/wandb/run-20240310_102551-np1zrxyq/files/conda-environment.yaml
+2024-03-10 10:26:05,404 INFO    Thread-13 :35344 [dir_watcher.py:_on_file_created():271] file/dir created: /Users/yunbo/Documents/GitHub/PFL_Optimiozation/Model_training/4_clusters/wandb/run-20240310_102551-np1zrxyq/files/wandb-metadata.json
+2024-03-10 10:26:05,797 INFO    wandb-upload_0:35344 [upload_job.py:push():131] Uploaded file /var/folders/_y/0xw7_0ss0s3f4kfhj9xl96zw0000gn/T/tmpi23fg3ntwandb/h0vep6vz-wandb-metadata.json
+2024-03-10 10:26:08,328 DEBUG   HandlerThread:35344 [handler.py:handle_request():146] handle_request: status_report
+2024-03-10 10:26:13,359 DEBUG   HandlerThread:35344 [handler.py:handle_request():146] handle_request: status_report
+2024-03-10 10:26:18,409 DEBUG   HandlerThread:35344 [handler.py:handle_request():146] handle_request: status_report
+2024-03-10 10:26:23,432 DEBUG   HandlerThread:35344 [handler.py:handle_request():146] handle_request: status_report
+2024-03-10 10:26:28,456 DEBUG   HandlerThread:35344 [handler.py:handle_request():146] handle_request: status_report
+2024-03-10 10:26:33,485 DEBUG   HandlerThread:35344 [handler.py:handle_request():146] handle_request: status_report
+2024-03-10 10:26:38,556 DEBUG   HandlerThread:35344 [handler.py:handle_request():146] handle_request: status_report
+2024-03-10 10:26:43,580 DEBUG   HandlerThread:35344 [handler.py:handle_request():146] handle_request: status_report
+2024-03-10 10:26:48,644 DEBUG   HandlerThread:35344 [handler.py:handle_request():146] handle_request: status_report
+2024-03-10 10:26:52,463 DEBUG   SystemMonitor:35344 [system_monitor.py:_start():172] Starting system metrics aggregation loop
+2024-03-10 10:26:52,549 DEBUG   SenderThread:35344 [sender.py:send():382] send: telemetry
+2024-03-10 10:26:52,565 DEBUG   SenderThread:35344 [sender.py:send():382] send: stats
+2024-03-10 10:26:54,614 DEBUG   HandlerThread:35344 [handler.py:handle_request():146] handle_request: status_report
+2024-03-10 10:26:55,907 INFO    Thread-13 :35344 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/yunbo/Documents/GitHub/PFL_Optimiozation/Model_training/4_clusters/wandb/run-20240310_102551-np1zrxyq/files/config.yaml
+2024-03-10 10:26:59,975 DEBUG   HandlerThread:35344 [handler.py:handle_request():146] handle_request: status_report
+2024-03-10 10:27:05,004 DEBUG   HandlerThread:35344 [handler.py:handle_request():146] handle_request: status_report
+2024-03-10 10:27:10,024 DEBUG   HandlerThread:35344 [handler.py:handle_request():146] handle_request: status_report
+2024-03-10 10:27:15,042 DEBUG   HandlerThread:35344 [handler.py:handle_request():146] handle_request: status_report
+2024-03-10 10:27:20,068 DEBUG   HandlerThread:35344 [handler.py:handle_request():146] handle_request: status_report
+2024-03-10 10:27:22,575 DEBUG   SenderThread:35344 [sender.py:send():382] send: stats
+2024-03-10 10:27:25,589 DEBUG   HandlerThread:35344 [handler.py:handle_request():146] handle_request: status_report
+2024-03-10 10:27:30,610 DEBUG   HandlerThread:35344 [handler.py:handle_request():146] handle_request: status_report
+2024-03-10 10:27:35,623 DEBUG   HandlerThread:35344 [handler.py:handle_request():146] handle_request: status_report
+2024-03-10 10:27:40,647 DEBUG   HandlerThread:35344 [handler.py:handle_request():146] handle_request: status_report
+2024-03-10 10:27:45,669 DEBUG   HandlerThread:35344 [handler.py:handle_request():146] handle_request: status_report
+2024-03-10 10:27:50,685 DEBUG   HandlerThread:35344 [handler.py:handle_request():146] handle_request: status_report
+2024-03-10 10:27:52,660 DEBUG   SenderThread:35344 [sender.py:send():382] send: stats
+2024-03-10 10:27:56,687 DEBUG   HandlerThread:35344 [handler.py:handle_request():146] handle_request: status_report
+2024-03-10 10:28:01,711 DEBUG   HandlerThread:35344 [handler.py:handle_request():146] handle_request: status_report
+2024-03-10 10:28:06,747 DEBUG   HandlerThread:35344 [handler.py:handle_request():146] handle_request: status_report
+2024-03-10 10:28:11,854 DEBUG   HandlerThread:35344 [handler.py:handle_request():146] handle_request: status_report

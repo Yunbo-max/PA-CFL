@@ -1,0 +1,16 @@
+Traceback (most recent call last):
+  File "/Users/yunbo/Documents/GitHub/PFL_Optimiozation/Model_training/9_clusters/client.py", line 95, in <module>
+    dataset = file[sheet_name][:]
+  File "h5py/_objects.pyx", line 54, in h5py._objects.with_phil.wrapper
+  File "h5py/_objects.pyx", line 55, in h5py._objects.with_phil.wrapper
+  File "/Users/yunbo/anaconda3/envs/basic/lib/python3.9/site-packages/h5py/_hl/group.py", line 359, in __getitem__
+    raise TypeError("Accessing a group is done with bytes or str, "
+TypeError: Accessing a group is done with bytes or str, not <class 'NoneType'>
+Traceback (most recent call last):
+  File "/Users/yunbo/Documents/GitHub/PFL_Optimiozation/Model_training/9_clusters/client.py", line 95, in <module>
+    dataset = file[sheet_name][:]
+  File "h5py/_objects.pyx", line 54, in h5py._objects.with_phil.wrapper
+  File "h5py/_objects.pyx", line 55, in h5py._objects.with_phil.wrapper
+  File "/Users/yunbo/anaconda3/envs/basic/lib/python3.9/site-packages/h5py/_hl/group.py", line 359, in __getitem__
+    raise TypeError("Accessing a group is done with bytes or str, "
+TypeError: Accessing a group is done with bytes or str, not <class 'NoneType'>

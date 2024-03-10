@@ -1,8 +1,0 @@
-Traceback (most recent call last):
-  File "/Users/yunbo/Documents/GitHub/PFL_Optimiozation/Model_training/client_CNN0_MLP.py", line 152, in <module>
-    train_targets = torch.tensor(train_labels, dtype=torch.float32)  # Remove .values
-ValueError: could not determine the shape of object type 'Series'
-Traceback (most recent call last):
-  File "/Users/yunbo/Documents/GitHub/PFL_Optimiozation/Model_training/client_CNN0_MLP.py", line 152, in <module>
-    train_targets = torch.tensor(train_labels, dtype=torch.float32)  # Remove .values
-ValueError: could not determine the shape of object type 'Series'

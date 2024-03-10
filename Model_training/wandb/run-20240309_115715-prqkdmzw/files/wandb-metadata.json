@@ -1,0 +1,40 @@
+{
+    "os": "macOS-14.2-arm64-arm-64bit",
+    "python": "3.9.18",
+    "heartbeatAt": "2024-03-09T11:57:16.524870",
+    "startedAt": "2024-03-09T11:57:15.974804",
+    "docker": null,
+    "cuda": null,
+    "args": [
+        "--client_number=South Asia",
+        "--config_file=config.json"
+    ],
+    "state": "running",
+    "program": "/Users/yunbo/Documents/GitHub/PFL_Optimiozation/Model_training/client.py",
+    "codePathLocal": "client.py",
+    "codePath": "Model_training/client.py",
+    "git": {
+        "remote": "https://github.com/Yunbo-max/PFL_Optimiozation.git",
+        "commit": "406fded0406405b436908435d22a52c9b01b0299"
+    },
+    "email": "82950147+Yunbo-max@users.noreply.github.com",
+    "root": "/Users/yunbo/Documents/GitHub/PFL_Optimiozation",
+    "host": "dhcp-10-249-75-6.eduroam.wireless.private.cam.ac.uk",
+    "username": "yunbo",
+    "executable": "/Users/yunbo/anaconda3/envs/basic/bin/python",
+    "cpu_count": 10,
+    "cpu_count_logical": 10,
+    "disk": {
+        "/": {
+            "total": 460.4317207336426,
+            "used": 156.992919921875
+        }
+    },
+    "gpuapple": {
+        "type": "arm",
+        "vendor": "Apple"
+    },
+    "memory": {
+        "total": 16.0
+    }
+}

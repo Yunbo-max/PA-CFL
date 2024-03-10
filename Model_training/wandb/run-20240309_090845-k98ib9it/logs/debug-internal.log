@@ -1,0 +1,192 @@
+2024-03-09 09:08:45,672 INFO    StreamThr :8828 [internal.py:wandb_internal():86] W&B internal server running at pid: 8828, started at: 2024-03-09 09:08:45.672552
+2024-03-09 09:08:45,674 DEBUG   HandlerThread:8828 [handler.py:handle_request():146] handle_request: status
+2024-03-09 09:08:45,675 INFO    WriterThread:8828 [datastore.py:open_for_write():87] open: /Users/yunbo/Documents/GitHub/PFL_Optimiozation/Model_training/wandb/run-20240309_090845-k98ib9it/run-k98ib9it.wandb
+2024-03-09 09:08:45,675 DEBUG   SenderThread:8828 [sender.py:send():382] send: header
+2024-03-09 09:08:45,695 DEBUG   SenderThread:8828 [sender.py:send():382] send: run
+2024-03-09 09:08:46,064 INFO    SenderThread:8828 [dir_watcher.py:__init__():211] watching files in: /Users/yunbo/Documents/GitHub/PFL_Optimiozation/Model_training/wandb/run-20240309_090845-k98ib9it/files
+2024-03-09 09:08:46,065 INFO    SenderThread:8828 [sender.py:_start_run_threads():1136] run started: k98ib9it with start time 1709975325.672083
+2024-03-09 09:08:46,070 DEBUG   HandlerThread:8828 [handler.py:handle_request():146] handle_request: check_version
+2024-03-09 09:08:46,070 DEBUG   SenderThread:8828 [sender.py:send_request():409] send_request: check_version
+2024-03-09 09:08:46,130 DEBUG   HandlerThread:8828 [handler.py:handle_request():146] handle_request: run_start
+2024-03-09 09:08:46,136 DEBUG   HandlerThread:8828 [system_info.py:__init__():27] System info init
+2024-03-09 09:08:46,136 DEBUG   HandlerThread:8828 [system_info.py:__init__():42] System info init done
+2024-03-09 09:08:46,136 INFO    HandlerThread:8828 [system_monitor.py:start():194] Starting system monitor
+2024-03-09 09:08:46,136 INFO    SystemMonitor:8828 [system_monitor.py:_start():158] Starting system asset monitoring threads
+2024-03-09 09:08:46,136 INFO    HandlerThread:8828 [system_monitor.py:probe():214] Collecting system info
+2024-03-09 09:08:46,137 DEBUG   HandlerThread:8828 [system_info.py:probe():151] Probing system
+2024-03-09 09:08:46,137 INFO    SystemMonitor:8828 [interfaces.py:start():190] Started cpu monitoring
+2024-03-09 09:08:46,138 INFO    SystemMonitor:8828 [interfaces.py:start():190] Started disk monitoring
+2024-03-09 09:08:46,140 INFO    SystemMonitor:8828 [interfaces.py:start():190] Started gpuapple monitoring
+2024-03-09 09:08:46,143 INFO    SystemMonitor:8828 [interfaces.py:start():190] Started memory monitoring
+2024-03-09 09:08:46,144 INFO    SystemMonitor:8828 [interfaces.py:start():190] Started network monitoring
+2024-03-09 09:08:46,149 DEBUG   HandlerThread:8828 [system_info.py:_probe_git():136] Probing git
+2024-03-09 09:08:46,172 DEBUG   HandlerThread:8828 [system_info.py:_probe_git():144] Probing git done
+2024-03-09 09:08:46,172 DEBUG   HandlerThread:8828 [system_info.py:probe():199] Probing system done
+2024-03-09 09:08:46,173 DEBUG   HandlerThread:8828 [system_monitor.py:probe():223] {'os': 'macOS-14.2-arm64-arm-64bit', 'python': '3.9.18', 'heartbeatAt': '2024-03-09T09:08:46.137550', 'startedAt': '2024-03-09T09:08:45.666534', 'docker': None, 'cuda': None, 'args': ('--client_number=Oceania', '--config_file=config.json'), 'state': 'running', 'program': '/Users/yunbo/Documents/GitHub/PFL_Optimiozation/Model_training/client_test.py', 'codePathLocal': 'client_test.py', 'codePath': 'Model_training/client_test.py', 'git': {'remote': 'https://github.com/Yunbo-max/PFL_Optimiozation.git', 'commit': '406fded0406405b436908435d22a52c9b01b0299'}, 'email': '82950147+Yunbo-max@users.noreply.github.com', 'root': '/Users/yunbo/Documents/GitHub/PFL_Optimiozation', 'host': 'dhcp-10-249-98-76.eduroam.wireless.private.cam.ac.uk', 'username': 'yunbo', 'executable': '/Users/yunbo/anaconda3/envs/basic/bin/python', 'cpu_count': 10, 'cpu_count_logical': 10, 'disk': {'/': {'total': 460.4317207336426, 'used': 157.33002090454102}}, 'gpuapple': {'type': 'arm', 'vendor': 'Apple'}, 'memory': {'total': 16.0}}
+2024-03-09 09:08:46,173 INFO    HandlerThread:8828 [system_monitor.py:probe():224] Finished collecting system info
+2024-03-09 09:08:46,173 INFO    HandlerThread:8828 [system_monitor.py:probe():227] Publishing system info
+2024-03-09 09:08:46,173 DEBUG   HandlerThread:8828 [system_info.py:_save_conda():208] Saving list of conda packages installed into the current environment
+2024-03-09 09:08:47,068 INFO    Thread-13 :8828 [dir_watcher.py:_on_file_created():271] file/dir created: /Users/yunbo/Documents/GitHub/PFL_Optimiozation/Model_training/wandb/run-20240309_090845-k98ib9it/files/conda-environment.yaml
+2024-03-09 09:08:52,050 DEBUG   HandlerThread:8828 [system_info.py:_save_conda():220] Saving conda packages done
+2024-03-09 09:08:52,051 INFO    HandlerThread:8828 [system_monitor.py:probe():229] Finished publishing system info
+2024-03-09 09:08:52,057 DEBUG   HandlerThread:8828 [handler.py:handle_request():146] handle_request: status_report
+2024-03-09 09:08:52,057 DEBUG   HandlerThread:8828 [handler.py:handle_request():146] handle_request: keepalive
+2024-03-09 09:08:52,057 DEBUG   SenderThread:8828 [sender.py:send():382] send: files
+2024-03-09 09:08:52,058 INFO    SenderThread:8828 [sender.py:_save_file():1403] saving file wandb-metadata.json with policy now
+2024-03-09 09:08:52,063 DEBUG   HandlerThread:8828 [handler.py:handle_request():146] handle_request: python_packages
+2024-03-09 09:08:52,063 DEBUG   SenderThread:8828 [sender.py:send_request():409] send_request: python_packages
+2024-03-09 09:08:52,064 DEBUG   HandlerThread:8828 [handler.py:handle_request():146] handle_request: stop_status
+2024-03-09 09:08:52,064 DEBUG   HandlerThread:8828 [handler.py:handle_request():146] handle_request: internal_messages
+2024-03-09 09:08:52,065 DEBUG   SenderThread:8828 [sender.py:send_request():409] send_request: stop_status
+2024-03-09 09:08:52,084 INFO    Thread-13 :8828 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/yunbo/Documents/GitHub/PFL_Optimiozation/Model_training/wandb/run-20240309_090845-k98ib9it/files/conda-environment.yaml
+2024-03-09 09:08:52,084 INFO    Thread-13 :8828 [dir_watcher.py:_on_file_created():271] file/dir created: /Users/yunbo/Documents/GitHub/PFL_Optimiozation/Model_training/wandb/run-20240309_090845-k98ib9it/files/wandb-metadata.json
+2024-03-09 09:08:52,084 INFO    Thread-13 :8828 [dir_watcher.py:_on_file_created():271] file/dir created: /Users/yunbo/Documents/GitHub/PFL_Optimiozation/Model_training/wandb/run-20240309_090845-k98ib9it/files/requirements.txt
+2024-03-09 09:08:52,314 DEBUG   SenderThread:8828 [sender.py:send():382] send: telemetry
+2024-03-09 09:08:52,315 DEBUG   SenderThread:8828 [sender.py:send():382] send: exit
+2024-03-09 09:08:52,315 INFO    SenderThread:8828 [sender.py:send_exit():589] handling exit code: 1
+2024-03-09 09:08:52,315 INFO    SenderThread:8828 [sender.py:send_exit():591] handling runtime: 5
+2024-03-09 09:08:52,316 INFO    SenderThread:8828 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-03-09 09:08:52,316 INFO    SenderThread:8828 [sender.py:send_exit():597] send defer
+2024-03-09 09:08:52,316 DEBUG   HandlerThread:8828 [handler.py:handle_request():146] handle_request: defer
+2024-03-09 09:08:52,316 INFO    HandlerThread:8828 [handler.py:handle_request_defer():172] handle defer: 0
+2024-03-09 09:08:52,316 DEBUG   SenderThread:8828 [sender.py:send_request():409] send_request: defer
+2024-03-09 09:08:52,316 INFO    SenderThread:8828 [sender.py:send_request_defer():613] handle sender defer: 0
+2024-03-09 09:08:52,316 INFO    SenderThread:8828 [sender.py:transition_state():617] send defer: 1
+2024-03-09 09:08:52,316 DEBUG   HandlerThread:8828 [handler.py:handle_request():146] handle_request: defer
+2024-03-09 09:08:52,317 INFO    HandlerThread:8828 [handler.py:handle_request_defer():172] handle defer: 1
+2024-03-09 09:08:52,317 DEBUG   SenderThread:8828 [sender.py:send_request():409] send_request: defer
+2024-03-09 09:08:52,317 INFO    SenderThread:8828 [sender.py:send_request_defer():613] handle sender defer: 1
+2024-03-09 09:08:52,317 INFO    SenderThread:8828 [sender.py:transition_state():617] send defer: 2
+2024-03-09 09:08:52,317 DEBUG   HandlerThread:8828 [handler.py:handle_request():146] handle_request: defer
+2024-03-09 09:08:52,317 INFO    HandlerThread:8828 [handler.py:handle_request_defer():172] handle defer: 2
+2024-03-09 09:08:52,317 INFO    HandlerThread:8828 [system_monitor.py:finish():203] Stopping system monitor
+2024-03-09 09:08:52,317 INFO    HandlerThread:8828 [interfaces.py:finish():202] Joined cpu monitor
+2024-03-09 09:08:52,317 DEBUG   SystemMonitor:8828 [system_monitor.py:_start():172] Starting system metrics aggregation loop
+2024-03-09 09:08:52,317 INFO    HandlerThread:8828 [interfaces.py:finish():202] Joined disk monitor
+2024-03-09 09:08:52,317 DEBUG   SystemMonitor:8828 [system_monitor.py:_start():179] Finished system metrics aggregation loop
+2024-03-09 09:08:52,317 INFO    HandlerThread:8828 [interfaces.py:finish():202] Joined gpuapple monitor
+2024-03-09 09:08:52,317 DEBUG   SystemMonitor:8828 [system_monitor.py:_start():183] Publishing last batch of metrics
+2024-03-09 09:08:52,317 INFO    HandlerThread:8828 [interfaces.py:finish():202] Joined memory monitor
+2024-03-09 09:08:52,318 INFO    HandlerThread:8828 [interfaces.py:finish():202] Joined network monitor
+2024-03-09 09:08:52,318 DEBUG   SenderThread:8828 [sender.py:send_request():409] send_request: defer
+2024-03-09 09:08:52,318 INFO    SenderThread:8828 [sender.py:send_request_defer():613] handle sender defer: 2
+2024-03-09 09:08:52,318 INFO    SenderThread:8828 [sender.py:transition_state():617] send defer: 3
+2024-03-09 09:08:52,319 DEBUG   SenderThread:8828 [sender.py:send():382] send: telemetry
+2024-03-09 09:08:52,319 DEBUG   SenderThread:8828 [sender.py:send():382] send: stats
+2024-03-09 09:08:52,319 DEBUG   HandlerThread:8828 [handler.py:handle_request():146] handle_request: defer
+2024-03-09 09:08:52,319 INFO    HandlerThread:8828 [handler.py:handle_request_defer():172] handle defer: 3
+2024-03-09 09:08:52,319 DEBUG   SenderThread:8828 [sender.py:send_request():409] send_request: defer
+2024-03-09 09:08:52,319 INFO    SenderThread:8828 [sender.py:send_request_defer():613] handle sender defer: 3
+2024-03-09 09:08:52,319 INFO    SenderThread:8828 [sender.py:transition_state():617] send defer: 4
+2024-03-09 09:08:52,319 DEBUG   HandlerThread:8828 [handler.py:handle_request():146] handle_request: defer
+2024-03-09 09:08:52,319 INFO    HandlerThread:8828 [handler.py:handle_request_defer():172] handle defer: 4
+2024-03-09 09:08:52,319 DEBUG   SenderThread:8828 [sender.py:send_request():409] send_request: defer
+2024-03-09 09:08:52,319 INFO    SenderThread:8828 [sender.py:send_request_defer():613] handle sender defer: 4
+2024-03-09 09:08:52,319 INFO    SenderThread:8828 [sender.py:transition_state():617] send defer: 5
+2024-03-09 09:08:52,319 DEBUG   HandlerThread:8828 [handler.py:handle_request():146] handle_request: defer
+2024-03-09 09:08:52,319 INFO    HandlerThread:8828 [handler.py:handle_request_defer():172] handle defer: 5
+2024-03-09 09:08:52,320 DEBUG   SenderThread:8828 [sender.py:send():382] send: summary
+2024-03-09 09:08:52,320 INFO    SenderThread:8828 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-03-09 09:08:52,320 DEBUG   SenderThread:8828 [sender.py:send_request():409] send_request: defer
+2024-03-09 09:08:52,320 INFO    SenderThread:8828 [sender.py:send_request_defer():613] handle sender defer: 5
+2024-03-09 09:08:52,320 INFO    SenderThread:8828 [sender.py:transition_state():617] send defer: 6
+2024-03-09 09:08:52,320 DEBUG   HandlerThread:8828 [handler.py:handle_request():146] handle_request: defer
+2024-03-09 09:08:52,320 INFO    HandlerThread:8828 [handler.py:handle_request_defer():172] handle defer: 6
+2024-03-09 09:08:52,320 DEBUG   SenderThread:8828 [sender.py:send_request():409] send_request: defer
+2024-03-09 09:08:52,320 INFO    SenderThread:8828 [sender.py:send_request_defer():613] handle sender defer: 6
+2024-03-09 09:08:52,322 DEBUG   HandlerThread:8828 [handler.py:handle_request():146] handle_request: status_report
+2024-03-09 09:08:52,486 INFO    SenderThread:8828 [sender.py:transition_state():617] send defer: 7
+2024-03-09 09:08:52,486 DEBUG   HandlerThread:8828 [handler.py:handle_request():146] handle_request: defer
+2024-03-09 09:08:52,486 INFO    HandlerThread:8828 [handler.py:handle_request_defer():172] handle defer: 7
+2024-03-09 09:08:52,486 DEBUG   SenderThread:8828 [sender.py:send_request():409] send_request: defer
+2024-03-09 09:08:52,486 INFO    SenderThread:8828 [sender.py:send_request_defer():613] handle sender defer: 7
+2024-03-09 09:08:52,550 INFO    wandb-upload_0:8828 [upload_job.py:push():131] Uploaded file /var/folders/_y/0xw7_0ss0s3f4kfhj9xl96zw0000gn/T/tmpm9j_6zaewandb/3dd6ptto-wandb-metadata.json
+2024-03-09 09:08:53,071 DEBUG   HandlerThread:8828 [handler.py:handle_request():146] handle_request: poll_exit
+2024-03-09 09:08:53,087 INFO    Thread-13 :8828 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/yunbo/Documents/GitHub/PFL_Optimiozation/Model_training/wandb/run-20240309_090845-k98ib9it/files/config.yaml
+2024-03-09 09:08:53,087 INFO    Thread-13 :8828 [dir_watcher.py:_on_file_created():271] file/dir created: /Users/yunbo/Documents/GitHub/PFL_Optimiozation/Model_training/wandb/run-20240309_090845-k98ib9it/files/wandb-summary.json
+2024-03-09 09:08:53,087 INFO    Thread-13 :8828 [dir_watcher.py:_on_file_created():271] file/dir created: /Users/yunbo/Documents/GitHub/PFL_Optimiozation/Model_training/wandb/run-20240309_090845-k98ib9it/files/output.log
+2024-03-09 09:08:54,319 INFO    SenderThread:8828 [sender.py:transition_state():617] send defer: 8
+2024-03-09 09:08:54,319 DEBUG   SenderThread:8828 [sender.py:send_request():409] send_request: poll_exit
+2024-03-09 09:08:54,319 DEBUG   HandlerThread:8828 [handler.py:handle_request():146] handle_request: defer
+2024-03-09 09:08:54,319 INFO    HandlerThread:8828 [handler.py:handle_request_defer():172] handle defer: 8
+2024-03-09 09:08:54,319 DEBUG   SenderThread:8828 [sender.py:send_request():409] send_request: defer
+2024-03-09 09:08:54,319 INFO    SenderThread:8828 [sender.py:send_request_defer():613] handle sender defer: 8
+2024-03-09 09:08:54,320 INFO    SenderThread:8828 [job_builder.py:build():296] Attempting to build job artifact
+2024-03-09 09:08:54,320 INFO    SenderThread:8828 [job_builder.py:_get_source_type():426] is repo sourced job
+2024-03-09 09:08:54,340 INFO    SenderThread:8828 [job_builder.py:build():402] adding wandb-job metadata file
+2024-03-09 09:08:54,342 INFO    SenderThread:8828 [sender.py:transition_state():617] send defer: 9
+2024-03-09 09:08:54,342 DEBUG   HandlerThread:8828 [handler.py:handle_request():146] handle_request: defer
+2024-03-09 09:08:54,342 INFO    HandlerThread:8828 [handler.py:handle_request_defer():172] handle defer: 9
+2024-03-09 09:08:54,342 DEBUG   SenderThread:8828 [sender.py:send():382] send: artifact
+2024-03-09 09:08:55,082 DEBUG   HandlerThread:8828 [handler.py:handle_request():146] handle_request: poll_exit
+2024-03-09 09:08:55,097 INFO    Thread-13 :8828 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/yunbo/Documents/GitHub/PFL_Optimiozation/Model_training/wandb/run-20240309_090845-k98ib9it/files/output.log
+2024-03-09 09:08:55,243 INFO    wandb-upload_1:8828 [upload_job.py:push():86] Skipped uploading /Users/yunbo/Library/Application Support/wandb/artifacts/staging/tmpwpefvzem
+2024-03-09 09:08:55,485 INFO    wandb-upload_0:8828 [upload_job.py:push():89] Uploaded file /Users/yunbo/Library/Application Support/wandb/artifacts/staging/tmp_gzh7jxd
+2024-03-09 09:08:56,521 INFO    SenderThread:8828 [sender.py:send_artifact():1494] sent artifact job-https___github.com_Yunbo-max_PFL_Optimiozation.git_Model_training_client_test.py - {'id': 'QXJ0aWZhY3Q6NzQ4NDkxNjA3', 'state': 'PENDING', 'artifactSequence': {'id': 'QXJ0aWZhY3RDb2xsZWN0aW9uOjE0NzA4NDgzNQ==', 'latestArtifact': {'id': 'QXJ0aWZhY3Q6NzQ4NDgzOTE4', 'versionIndex': 2}}}
+2024-03-09 09:08:56,521 DEBUG   SenderThread:8828 [sender.py:send_request():409] send_request: defer
+2024-03-09 09:08:56,521 INFO    SenderThread:8828 [sender.py:send_request_defer():613] handle sender defer: 9
+2024-03-09 09:08:56,521 INFO    SenderThread:8828 [dir_watcher.py:finish():358] shutting down directory watcher
+2024-03-09 09:08:57,105 INFO    SenderThread:8828 [dir_watcher.py:finish():388] scan: /Users/yunbo/Documents/GitHub/PFL_Optimiozation/Model_training/wandb/run-20240309_090845-k98ib9it/files
+2024-03-09 09:08:57,105 INFO    SenderThread:8828 [dir_watcher.py:finish():402] scan save: /Users/yunbo/Documents/GitHub/PFL_Optimiozation/Model_training/wandb/run-20240309_090845-k98ib9it/files/requirements.txt requirements.txt
+2024-03-09 09:08:57,105 INFO    SenderThread:8828 [dir_watcher.py:finish():402] scan save: /Users/yunbo/Documents/GitHub/PFL_Optimiozation/Model_training/wandb/run-20240309_090845-k98ib9it/files/output.log output.log
+2024-03-09 09:08:57,106 INFO    SenderThread:8828 [dir_watcher.py:finish():402] scan save: /Users/yunbo/Documents/GitHub/PFL_Optimiozation/Model_training/wandb/run-20240309_090845-k98ib9it/files/config.yaml config.yaml
+2024-03-09 09:08:57,107 INFO    SenderThread:8828 [dir_watcher.py:finish():402] scan save: /Users/yunbo/Documents/GitHub/PFL_Optimiozation/Model_training/wandb/run-20240309_090845-k98ib9it/files/wandb-summary.json wandb-summary.json
+2024-03-09 09:08:57,108 INFO    SenderThread:8828 [dir_watcher.py:finish():402] scan save: /Users/yunbo/Documents/GitHub/PFL_Optimiozation/Model_training/wandb/run-20240309_090845-k98ib9it/files/conda-environment.yaml conda-environment.yaml
+2024-03-09 09:08:57,109 INFO    SenderThread:8828 [dir_watcher.py:finish():402] scan save: /Users/yunbo/Documents/GitHub/PFL_Optimiozation/Model_training/wandb/run-20240309_090845-k98ib9it/files/wandb-metadata.json wandb-metadata.json
+2024-03-09 09:08:57,109 INFO    SenderThread:8828 [sender.py:transition_state():617] send defer: 10
+2024-03-09 09:08:57,109 DEBUG   SenderThread:8828 [sender.py:send_request():409] send_request: poll_exit
+2024-03-09 09:08:57,110 DEBUG   HandlerThread:8828 [handler.py:handle_request():146] handle_request: defer
+2024-03-09 09:08:57,112 INFO    HandlerThread:8828 [handler.py:handle_request_defer():172] handle defer: 10
+2024-03-09 09:08:57,113 DEBUG   SenderThread:8828 [sender.py:send_request():409] send_request: defer
+2024-03-09 09:08:57,113 INFO    SenderThread:8828 [sender.py:send_request_defer():613] handle sender defer: 10
+2024-03-09 09:08:57,113 INFO    SenderThread:8828 [file_pusher.py:finish():175] shutting down file pusher
+2024-03-09 09:08:57,450 INFO    wandb-upload_1:8828 [upload_job.py:push():131] Uploaded file /Users/yunbo/Documents/GitHub/PFL_Optimiozation/Model_training/wandb/run-20240309_090845-k98ib9it/files/requirements.txt
+2024-03-09 09:08:57,483 INFO    wandb-upload_0:8828 [upload_job.py:push():131] Uploaded file /Users/yunbo/Documents/GitHub/PFL_Optimiozation/Model_training/wandb/run-20240309_090845-k98ib9it/files/output.log
+2024-03-09 09:08:57,495 INFO    wandb-upload_2:8828 [upload_job.py:push():131] Uploaded file /Users/yunbo/Documents/GitHub/PFL_Optimiozation/Model_training/wandb/run-20240309_090845-k98ib9it/files/config.yaml
+2024-03-09 09:08:57,505 INFO    wandb-upload_4:8828 [upload_job.py:push():131] Uploaded file /Users/yunbo/Documents/GitHub/PFL_Optimiozation/Model_training/wandb/run-20240309_090845-k98ib9it/files/conda-environment.yaml
+2024-03-09 09:08:57,519 INFO    wandb-upload_3:8828 [upload_job.py:push():131] Uploaded file /Users/yunbo/Documents/GitHub/PFL_Optimiozation/Model_training/wandb/run-20240309_090845-k98ib9it/files/wandb-summary.json
+2024-03-09 09:08:57,724 INFO    Thread-12 :8828 [sender.py:transition_state():617] send defer: 11
+2024-03-09 09:08:57,725 DEBUG   HandlerThread:8828 [handler.py:handle_request():146] handle_request: defer
+2024-03-09 09:08:57,725 INFO    HandlerThread:8828 [handler.py:handle_request_defer():172] handle defer: 11
+2024-03-09 09:08:57,725 DEBUG   SenderThread:8828 [sender.py:send_request():409] send_request: defer
+2024-03-09 09:08:57,725 INFO    SenderThread:8828 [sender.py:send_request_defer():613] handle sender defer: 11
+2024-03-09 09:08:57,725 INFO    SenderThread:8828 [file_pusher.py:join():181] waiting for file pusher
+2024-03-09 09:08:57,725 INFO    SenderThread:8828 [sender.py:transition_state():617] send defer: 12
+2024-03-09 09:08:57,725 DEBUG   HandlerThread:8828 [handler.py:handle_request():146] handle_request: defer
+2024-03-09 09:08:57,725 INFO    HandlerThread:8828 [handler.py:handle_request_defer():172] handle defer: 12
+2024-03-09 09:08:57,725 DEBUG   SenderThread:8828 [sender.py:send_request():409] send_request: defer
+2024-03-09 09:08:57,725 INFO    SenderThread:8828 [sender.py:send_request_defer():613] handle sender defer: 12
+2024-03-09 09:08:57,725 INFO    SenderThread:8828 [file_stream.py:finish():595] file stream finish called
+2024-03-09 09:08:57,862 INFO    SenderThread:8828 [file_stream.py:finish():599] file stream finish is done
+2024-03-09 09:08:57,862 INFO    SenderThread:8828 [sender.py:transition_state():617] send defer: 13
+2024-03-09 09:08:57,862 DEBUG   HandlerThread:8828 [handler.py:handle_request():146] handle_request: defer
+2024-03-09 09:08:57,862 INFO    HandlerThread:8828 [handler.py:handle_request_defer():172] handle defer: 13
+2024-03-09 09:08:57,862 DEBUG   SenderThread:8828 [sender.py:send_request():409] send_request: defer
+2024-03-09 09:08:57,862 INFO    SenderThread:8828 [sender.py:send_request_defer():613] handle sender defer: 13
+2024-03-09 09:08:57,862 INFO    SenderThread:8828 [sender.py:transition_state():617] send defer: 14
+2024-03-09 09:08:57,862 DEBUG   HandlerThread:8828 [handler.py:handle_request():146] handle_request: defer
+2024-03-09 09:08:57,862 INFO    HandlerThread:8828 [handler.py:handle_request_defer():172] handle defer: 14
+2024-03-09 09:08:57,863 DEBUG   SenderThread:8828 [sender.py:send():382] send: final
+2024-03-09 09:08:57,863 DEBUG   SenderThread:8828 [sender.py:send():382] send: footer
+2024-03-09 09:08:57,863 DEBUG   SenderThread:8828 [sender.py:send_request():409] send_request: defer
+2024-03-09 09:08:57,863 INFO    SenderThread:8828 [sender.py:send_request_defer():613] handle sender defer: 14
+2024-03-09 09:08:57,863 DEBUG   HandlerThread:8828 [handler.py:handle_request():146] handle_request: poll_exit
+2024-03-09 09:08:57,863 DEBUG   SenderThread:8828 [sender.py:send_request():409] send_request: poll_exit
+2024-03-09 09:08:57,864 DEBUG   HandlerThread:8828 [handler.py:handle_request():146] handle_request: poll_exit
+2024-03-09 09:08:57,864 DEBUG   SenderThread:8828 [sender.py:send_request():409] send_request: poll_exit
+2024-03-09 09:08:57,864 DEBUG   HandlerThread:8828 [handler.py:handle_request():146] handle_request: server_info
+2024-03-09 09:08:57,864 DEBUG   HandlerThread:8828 [handler.py:handle_request():146] handle_request: get_summary
+2024-03-09 09:08:57,864 DEBUG   SenderThread:8828 [sender.py:send_request():409] send_request: server_info
+2024-03-09 09:08:57,865 DEBUG   HandlerThread:8828 [handler.py:handle_request():146] handle_request: sampled_history
+2024-03-09 09:08:57,865 DEBUG   HandlerThread:8828 [handler.py:handle_request():146] handle_request: internal_messages
+2024-03-09 09:08:57,865 DEBUG   HandlerThread:8828 [handler.py:handle_request():146] handle_request: job_info
+2024-03-09 09:08:57,988 DEBUG   SenderThread:8828 [sender.py:send_request():409] send_request: job_info
+2024-03-09 09:08:57,989 INFO    MainThread:8828 [wandb_run.py:_footer_history_summary_info():3857] rendering history
+2024-03-09 09:08:57,989 INFO    MainThread:8828 [wandb_run.py:_footer_history_summary_info():3889] rendering summary
+2024-03-09 09:08:57,989 INFO    MainThread:8828 [wandb_run.py:_footer_sync_info():3816] logging synced files
+2024-03-09 09:08:57,989 DEBUG   HandlerThread:8828 [handler.py:handle_request():146] handle_request: shutdown
+2024-03-09 09:08:57,989 INFO    HandlerThread:8828 [handler.py:finish():869] shutting down handler
+2024-03-09 09:08:58,870 INFO    WriterThread:8828 [datastore.py:close():296] close: /Users/yunbo/Documents/GitHub/PFL_Optimiozation/Model_training/wandb/run-20240309_090845-k98ib9it/run-k98ib9it.wandb
+2024-03-09 09:08:58,994 INFO    SenderThread:8828 [sender.py:finish():1572] shutting down sender
+2024-03-09 09:08:58,994 INFO    SenderThread:8828 [file_pusher.py:finish():175] shutting down file pusher
+2024-03-09 09:08:58,994 INFO    SenderThread:8828 [file_pusher.py:join():181] waiting for file pusher

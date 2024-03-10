@@ -1,0 +1,186 @@
+2024-03-10 09:56:22,136 INFO    StreamThr :20175 [internal.py:wandb_internal():86] W&B internal server running at pid: 20175, started at: 2024-03-10 09:56:22.135818
+2024-03-10 09:56:22,137 DEBUG   HandlerThread:20175 [handler.py:handle_request():146] handle_request: status
+2024-03-10 09:56:22,141 INFO    WriterThread:20175 [datastore.py:open_for_write():87] open: /Users/yunbo/Documents/GitHub/PFL_Optimiozation/Model_training/4_clusters/wandb/run-20240310_095622-mqz15wbv/run-mqz15wbv.wandb
+2024-03-10 09:56:22,142 DEBUG   SenderThread:20175 [sender.py:send():382] send: header
+2024-03-10 09:56:22,168 DEBUG   SenderThread:20175 [sender.py:send():382] send: run
+2024-03-10 09:56:22,566 INFO    SenderThread:20175 [dir_watcher.py:__init__():211] watching files in: /Users/yunbo/Documents/GitHub/PFL_Optimiozation/Model_training/4_clusters/wandb/run-20240310_095622-mqz15wbv/files
+2024-03-10 09:56:22,566 INFO    SenderThread:20175 [sender.py:_start_run_threads():1136] run started: mqz15wbv with start time 1710064582.135443
+2024-03-10 09:56:22,573 DEBUG   HandlerThread:20175 [handler.py:handle_request():146] handle_request: check_version
+2024-03-10 09:56:22,573 DEBUG   SenderThread:20175 [sender.py:send_request():409] send_request: check_version
+2024-03-10 09:56:22,651 DEBUG   HandlerThread:20175 [handler.py:handle_request():146] handle_request: run_start
+2024-03-10 09:56:22,660 DEBUG   HandlerThread:20175 [system_info.py:__init__():27] System info init
+2024-03-10 09:56:22,661 DEBUG   HandlerThread:20175 [system_info.py:__init__():42] System info init done
+2024-03-10 09:56:22,661 INFO    HandlerThread:20175 [system_monitor.py:start():194] Starting system monitor
+2024-03-10 09:56:22,661 INFO    SystemMonitor:20175 [system_monitor.py:_start():158] Starting system asset monitoring threads
+2024-03-10 09:56:22,662 INFO    HandlerThread:20175 [system_monitor.py:probe():214] Collecting system info
+2024-03-10 09:56:22,662 DEBUG   HandlerThread:20175 [system_info.py:probe():151] Probing system
+2024-03-10 09:56:22,662 INFO    SystemMonitor:20175 [interfaces.py:start():190] Started cpu monitoring
+2024-03-10 09:56:22,663 INFO    SystemMonitor:20175 [interfaces.py:start():190] Started disk monitoring
+2024-03-10 09:56:22,666 INFO    SystemMonitor:20175 [interfaces.py:start():190] Started gpuapple monitoring
+2024-03-10 09:56:22,673 INFO    SystemMonitor:20175 [interfaces.py:start():190] Started memory monitoring
+2024-03-10 09:56:22,675 INFO    SystemMonitor:20175 [interfaces.py:start():190] Started network monitoring
+2024-03-10 09:56:22,678 DEBUG   HandlerThread:20175 [system_info.py:_probe_git():136] Probing git
+2024-03-10 09:56:22,718 DEBUG   HandlerThread:20175 [system_info.py:_probe_git():144] Probing git done
+2024-03-10 09:56:22,718 DEBUG   HandlerThread:20175 [system_info.py:probe():199] Probing system done
+2024-03-10 09:56:22,719 DEBUG   HandlerThread:20175 [system_monitor.py:probe():223] {'os': 'macOS-14.2-arm64-arm-64bit', 'python': '3.9.18', 'heartbeatAt': '2024-03-10T09:56:22.662243', 'startedAt': '2024-03-10T09:56:22.128494', 'docker': None, 'cuda': None, 'args': ('--client_number=Central America', '--config_file=config.json'), 'state': 'running', 'program': '/Users/yunbo/Documents/GitHub/PFL_Optimiozation/Model_training/4_clusters/client.py', 'codePathLocal': 'client.py', 'codePath': 'Model_training/4_clusters/client.py', 'git': {'remote': 'https://github.com/Yunbo-max/PFL_Optimiozation.git', 'commit': '406fded0406405b436908435d22a52c9b01b0299'}, 'email': '82950147+Yunbo-max@users.noreply.github.com', 'root': '/Users/yunbo/Documents/GitHub/PFL_Optimiozation', 'host': 'dhcp-10-249-98-185.eduroam.wireless.private.cam.ac.uk', 'username': 'yunbo', 'executable': '/Users/yunbo/anaconda3/envs/basic/bin/python', 'cpu_count': 10, 'cpu_count_logical': 10, 'disk': {'/': {'total': 460.4317207336426, 'used': 159.18751525878906}}, 'gpuapple': {'type': 'arm', 'vendor': 'Apple'}, 'memory': {'total': 16.0}}
+2024-03-10 09:56:22,719 INFO    HandlerThread:20175 [system_monitor.py:probe():224] Finished collecting system info
+2024-03-10 09:56:22,719 INFO    HandlerThread:20175 [system_monitor.py:probe():227] Publishing system info
+2024-03-10 09:56:22,719 DEBUG   HandlerThread:20175 [system_info.py:_save_conda():208] Saving list of conda packages installed into the current environment
+2024-03-10 09:56:23,573 INFO    Thread-13 :20175 [dir_watcher.py:_on_file_created():271] file/dir created: /Users/yunbo/Documents/GitHub/PFL_Optimiozation/Model_training/4_clusters/wandb/run-20240310_095622-mqz15wbv/files/conda-environment.yaml
+2024-03-10 09:56:31,612 INFO    Thread-13 :20175 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/yunbo/Documents/GitHub/PFL_Optimiozation/Model_training/4_clusters/wandb/run-20240310_095622-mqz15wbv/files/conda-environment.yaml
+2024-03-10 09:56:31,754 DEBUG   HandlerThread:20175 [system_info.py:_save_conda():220] Saving conda packages done
+2024-03-10 09:56:31,754 INFO    HandlerThread:20175 [system_monitor.py:probe():229] Finished publishing system info
+2024-03-10 09:56:31,764 DEBUG   HandlerThread:20175 [handler.py:handle_request():146] handle_request: status_report
+2024-03-10 09:56:31,764 DEBUG   HandlerThread:20175 [handler.py:handle_request():146] handle_request: keepalive
+2024-03-10 09:56:31,765 DEBUG   SenderThread:20175 [sender.py:send():382] send: files
+2024-03-10 09:56:31,765 INFO    SenderThread:20175 [sender.py:_save_file():1403] saving file wandb-metadata.json with policy now
+2024-03-10 09:56:31,781 DEBUG   HandlerThread:20175 [handler.py:handle_request():146] handle_request: python_packages
+2024-03-10 09:56:31,781 DEBUG   HandlerThread:20175 [handler.py:handle_request():146] handle_request: stop_status
+2024-03-10 09:56:31,782 DEBUG   SenderThread:20175 [sender.py:send_request():409] send_request: python_packages
+2024-03-10 09:56:31,783 DEBUG   HandlerThread:20175 [handler.py:handle_request():146] handle_request: internal_messages
+2024-03-10 09:56:31,784 DEBUG   SenderThread:20175 [sender.py:send_request():409] send_request: stop_status
+2024-03-10 09:56:32,019 DEBUG   SenderThread:20175 [sender.py:send():382] send: telemetry
+2024-03-10 09:56:32,113 DEBUG   SenderThread:20175 [sender.py:send():382] send: exit
+2024-03-10 09:56:32,113 INFO    SenderThread:20175 [sender.py:send_exit():589] handling exit code: 0
+2024-03-10 09:56:32,113 INFO    SenderThread:20175 [sender.py:send_exit():591] handling runtime: 9
+2024-03-10 09:56:32,114 INFO    SenderThread:20175 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-03-10 09:56:32,114 INFO    SenderThread:20175 [sender.py:send_exit():597] send defer
+2024-03-10 09:56:32,114 DEBUG   HandlerThread:20175 [handler.py:handle_request():146] handle_request: defer
+2024-03-10 09:56:32,114 INFO    HandlerThread:20175 [handler.py:handle_request_defer():172] handle defer: 0
+2024-03-10 09:56:32,114 DEBUG   SenderThread:20175 [sender.py:send_request():409] send_request: defer
+2024-03-10 09:56:32,114 INFO    SenderThread:20175 [sender.py:send_request_defer():613] handle sender defer: 0
+2024-03-10 09:56:32,114 INFO    SenderThread:20175 [sender.py:transition_state():617] send defer: 1
+2024-03-10 09:56:32,114 DEBUG   HandlerThread:20175 [handler.py:handle_request():146] handle_request: defer
+2024-03-10 09:56:32,115 INFO    HandlerThread:20175 [handler.py:handle_request_defer():172] handle defer: 1
+2024-03-10 09:56:32,115 DEBUG   SenderThread:20175 [sender.py:send_request():409] send_request: defer
+2024-03-10 09:56:32,115 INFO    SenderThread:20175 [sender.py:send_request_defer():613] handle sender defer: 1
+2024-03-10 09:56:32,115 INFO    SenderThread:20175 [sender.py:transition_state():617] send defer: 2
+2024-03-10 09:56:32,115 DEBUG   HandlerThread:20175 [handler.py:handle_request():146] handle_request: defer
+2024-03-10 09:56:32,115 INFO    HandlerThread:20175 [handler.py:handle_request_defer():172] handle defer: 2
+2024-03-10 09:56:32,115 INFO    HandlerThread:20175 [system_monitor.py:finish():203] Stopping system monitor
+2024-03-10 09:56:32,115 DEBUG   SystemMonitor:20175 [system_monitor.py:_start():172] Starting system metrics aggregation loop
+2024-03-10 09:56:32,116 DEBUG   SystemMonitor:20175 [system_monitor.py:_start():179] Finished system metrics aggregation loop
+2024-03-10 09:56:32,117 DEBUG   SystemMonitor:20175 [system_monitor.py:_start():183] Publishing last batch of metrics
+2024-03-10 09:56:32,116 INFO    HandlerThread:20175 [interfaces.py:finish():202] Joined cpu monitor
+2024-03-10 09:56:32,118 INFO    HandlerThread:20175 [interfaces.py:finish():202] Joined disk monitor
+2024-03-10 09:56:32,118 INFO    HandlerThread:20175 [interfaces.py:finish():202] Joined gpuapple monitor
+2024-03-10 09:56:32,118 INFO    HandlerThread:20175 [interfaces.py:finish():202] Joined memory monitor
+2024-03-10 09:56:32,118 INFO    HandlerThread:20175 [interfaces.py:finish():202] Joined network monitor
+2024-03-10 09:56:32,119 DEBUG   SenderThread:20175 [sender.py:send_request():409] send_request: defer
+2024-03-10 09:56:32,119 INFO    SenderThread:20175 [sender.py:send_request_defer():613] handle sender defer: 2
+2024-03-10 09:56:32,119 INFO    SenderThread:20175 [sender.py:transition_state():617] send defer: 3
+2024-03-10 09:56:32,119 DEBUG   SenderThread:20175 [sender.py:send():382] send: telemetry
+2024-03-10 09:56:32,119 DEBUG   SenderThread:20175 [sender.py:send():382] send: stats
+2024-03-10 09:56:32,119 DEBUG   HandlerThread:20175 [handler.py:handle_request():146] handle_request: defer
+2024-03-10 09:56:32,119 INFO    HandlerThread:20175 [handler.py:handle_request_defer():172] handle defer: 3
+2024-03-10 09:56:32,120 DEBUG   SenderThread:20175 [sender.py:send_request():409] send_request: defer
+2024-03-10 09:56:32,120 INFO    SenderThread:20175 [sender.py:send_request_defer():613] handle sender defer: 3
+2024-03-10 09:56:32,120 INFO    SenderThread:20175 [sender.py:transition_state():617] send defer: 4
+2024-03-10 09:56:32,120 DEBUG   HandlerThread:20175 [handler.py:handle_request():146] handle_request: defer
+2024-03-10 09:56:32,120 INFO    HandlerThread:20175 [handler.py:handle_request_defer():172] handle defer: 4
+2024-03-10 09:56:32,120 DEBUG   SenderThread:20175 [sender.py:send_request():409] send_request: defer
+2024-03-10 09:56:32,120 INFO    SenderThread:20175 [sender.py:send_request_defer():613] handle sender defer: 4
+2024-03-10 09:56:32,120 INFO    SenderThread:20175 [sender.py:transition_state():617] send defer: 5
+2024-03-10 09:56:32,120 DEBUG   HandlerThread:20175 [handler.py:handle_request():146] handle_request: defer
+2024-03-10 09:56:32,121 INFO    HandlerThread:20175 [handler.py:handle_request_defer():172] handle defer: 5
+2024-03-10 09:56:32,121 DEBUG   SenderThread:20175 [sender.py:send():382] send: summary
+2024-03-10 09:56:32,122 INFO    SenderThread:20175 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-03-10 09:56:32,122 DEBUG   SenderThread:20175 [sender.py:send_request():409] send_request: defer
+2024-03-10 09:56:32,122 INFO    SenderThread:20175 [sender.py:send_request_defer():613] handle sender defer: 5
+2024-03-10 09:56:32,122 INFO    SenderThread:20175 [sender.py:transition_state():617] send defer: 6
+2024-03-10 09:56:32,122 DEBUG   HandlerThread:20175 [handler.py:handle_request():146] handle_request: defer
+2024-03-10 09:56:32,122 INFO    HandlerThread:20175 [handler.py:handle_request_defer():172] handle defer: 6
+2024-03-10 09:56:32,122 DEBUG   SenderThread:20175 [sender.py:send_request():409] send_request: defer
+2024-03-10 09:56:32,123 INFO    SenderThread:20175 [sender.py:send_request_defer():613] handle sender defer: 6
+2024-03-10 09:56:32,124 DEBUG   HandlerThread:20175 [handler.py:handle_request():146] handle_request: status_report
+2024-03-10 09:56:32,250 INFO    wandb-upload_0:20175 [upload_job.py:push():131] Uploaded file /var/folders/_y/0xw7_0ss0s3f4kfhj9xl96zw0000gn/T/tmpu11g3vnfwandb/hfrfr7zm-wandb-metadata.json
+2024-03-10 09:56:32,278 INFO    SenderThread:20175 [sender.py:transition_state():617] send defer: 7
+2024-03-10 09:56:32,279 DEBUG   HandlerThread:20175 [handler.py:handle_request():146] handle_request: defer
+2024-03-10 09:56:32,279 INFO    HandlerThread:20175 [handler.py:handle_request_defer():172] handle defer: 7
+2024-03-10 09:56:32,280 DEBUG   SenderThread:20175 [sender.py:send_request():409] send_request: defer
+2024-03-10 09:56:32,280 INFO    SenderThread:20175 [sender.py:send_request_defer():613] handle sender defer: 7
+2024-03-10 09:56:32,280 INFO    SenderThread:20175 [sender.py:transition_state():617] send defer: 8
+2024-03-10 09:56:32,281 DEBUG   HandlerThread:20175 [handler.py:handle_request():146] handle_request: defer
+2024-03-10 09:56:32,281 INFO    HandlerThread:20175 [handler.py:handle_request_defer():172] handle defer: 8
+2024-03-10 09:56:32,281 DEBUG   SenderThread:20175 [sender.py:send_request():409] send_request: defer
+2024-03-10 09:56:32,281 INFO    SenderThread:20175 [sender.py:send_request_defer():613] handle sender defer: 8
+2024-03-10 09:56:32,281 INFO    SenderThread:20175 [job_builder.py:build():296] Attempting to build job artifact
+2024-03-10 09:56:32,281 INFO    SenderThread:20175 [job_builder.py:_get_source_type():426] is repo sourced job
+2024-03-10 09:56:32,325 INFO    SenderThread:20175 [job_builder.py:build():402] adding wandb-job metadata file
+2024-03-10 09:56:32,330 INFO    SenderThread:20175 [sender.py:transition_state():617] send defer: 9
+2024-03-10 09:56:32,331 DEBUG   SenderThread:20175 [sender.py:send():382] send: artifact
+2024-03-10 09:56:32,332 DEBUG   HandlerThread:20175 [handler.py:handle_request():146] handle_request: defer
+2024-03-10 09:56:32,332 INFO    HandlerThread:20175 [handler.py:handle_request_defer():172] handle defer: 9
+2024-03-10 09:56:32,616 INFO    Thread-13 :20175 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/yunbo/Documents/GitHub/PFL_Optimiozation/Model_training/4_clusters/wandb/run-20240310_095622-mqz15wbv/files/config.yaml
+2024-03-10 09:56:32,616 INFO    Thread-13 :20175 [dir_watcher.py:_on_file_created():271] file/dir created: /Users/yunbo/Documents/GitHub/PFL_Optimiozation/Model_training/4_clusters/wandb/run-20240310_095622-mqz15wbv/files/wandb-summary.json
+2024-03-10 09:56:32,616 INFO    Thread-13 :20175 [dir_watcher.py:_on_file_created():271] file/dir created: /Users/yunbo/Documents/GitHub/PFL_Optimiozation/Model_training/4_clusters/wandb/run-20240310_095622-mqz15wbv/files/wandb-metadata.json
+2024-03-10 09:56:32,617 INFO    Thread-13 :20175 [dir_watcher.py:_on_file_created():271] file/dir created: /Users/yunbo/Documents/GitHub/PFL_Optimiozation/Model_training/4_clusters/wandb/run-20240310_095622-mqz15wbv/files/requirements.txt
+2024-03-10 09:56:33,018 INFO    SenderThread:20175 [sender.py:send_artifact():1494] sent artifact job-https___github.com_Yunbo-max_PFL_Optimiozation.git_Model_training_4_clusters_client.py - {'id': 'QXJ0aWZhY3Q6NzUwMDY1MjUz', 'state': 'COMMITTED', 'artifactSequence': {'id': 'QXJ0aWZhY3RDb2xsZWN0aW9uOjE0NzM3MjYxOA==', 'latestArtifact': {'id': 'QXJ0aWZhY3Q6NzUwMDY1MjUz', 'versionIndex': 3}}}
+2024-03-10 09:56:33,019 DEBUG   SenderThread:20175 [sender.py:send_request():409] send_request: defer
+2024-03-10 09:56:33,019 INFO    SenderThread:20175 [sender.py:send_request_defer():613] handle sender defer: 9
+2024-03-10 09:56:33,019 INFO    SenderThread:20175 [dir_watcher.py:finish():358] shutting down directory watcher
+2024-03-10 09:56:33,119 DEBUG   HandlerThread:20175 [handler.py:handle_request():146] handle_request: poll_exit
+2024-03-10 09:56:33,622 INFO    SenderThread:20175 [dir_watcher.py:finish():388] scan: /Users/yunbo/Documents/GitHub/PFL_Optimiozation/Model_training/4_clusters/wandb/run-20240310_095622-mqz15wbv/files
+2024-03-10 09:56:33,622 INFO    SenderThread:20175 [dir_watcher.py:finish():402] scan save: /Users/yunbo/Documents/GitHub/PFL_Optimiozation/Model_training/4_clusters/wandb/run-20240310_095622-mqz15wbv/files/requirements.txt requirements.txt
+2024-03-10 09:56:33,622 INFO    SenderThread:20175 [dir_watcher.py:finish():402] scan save: /Users/yunbo/Documents/GitHub/PFL_Optimiozation/Model_training/4_clusters/wandb/run-20240310_095622-mqz15wbv/files/config.yaml config.yaml
+2024-03-10 09:56:33,623 INFO    SenderThread:20175 [dir_watcher.py:finish():402] scan save: /Users/yunbo/Documents/GitHub/PFL_Optimiozation/Model_training/4_clusters/wandb/run-20240310_095622-mqz15wbv/files/wandb-summary.json wandb-summary.json
+2024-03-10 09:56:33,623 INFO    SenderThread:20175 [dir_watcher.py:finish():402] scan save: /Users/yunbo/Documents/GitHub/PFL_Optimiozation/Model_training/4_clusters/wandb/run-20240310_095622-mqz15wbv/files/conda-environment.yaml conda-environment.yaml
+2024-03-10 09:56:33,623 INFO    SenderThread:20175 [dir_watcher.py:finish():402] scan save: /Users/yunbo/Documents/GitHub/PFL_Optimiozation/Model_training/4_clusters/wandb/run-20240310_095622-mqz15wbv/files/wandb-metadata.json wandb-metadata.json
+2024-03-10 09:56:33,623 INFO    SenderThread:20175 [sender.py:transition_state():617] send defer: 10
+2024-03-10 09:56:33,624 DEBUG   SenderThread:20175 [sender.py:send_request():409] send_request: poll_exit
+2024-03-10 09:56:33,624 DEBUG   HandlerThread:20175 [handler.py:handle_request():146] handle_request: defer
+2024-03-10 09:56:33,624 INFO    HandlerThread:20175 [handler.py:handle_request_defer():172] handle defer: 10
+2024-03-10 09:56:33,624 DEBUG   SenderThread:20175 [sender.py:send_request():409] send_request: defer
+2024-03-10 09:56:33,624 INFO    SenderThread:20175 [sender.py:send_request_defer():613] handle sender defer: 10
+2024-03-10 09:56:33,624 INFO    SenderThread:20175 [file_pusher.py:finish():175] shutting down file pusher
+2024-03-10 09:56:33,965 INFO    wandb-upload_1:20175 [upload_job.py:push():131] Uploaded file /Users/yunbo/Documents/GitHub/PFL_Optimiozation/Model_training/4_clusters/wandb/run-20240310_095622-mqz15wbv/files/config.yaml
+2024-03-10 09:56:33,998 INFO    wandb-upload_0:20175 [upload_job.py:push():131] Uploaded file /Users/yunbo/Documents/GitHub/PFL_Optimiozation/Model_training/4_clusters/wandb/run-20240310_095622-mqz15wbv/files/requirements.txt
+2024-03-10 09:56:34,038 INFO    wandb-upload_2:20175 [upload_job.py:push():131] Uploaded file /Users/yunbo/Documents/GitHub/PFL_Optimiozation/Model_training/4_clusters/wandb/run-20240310_095622-mqz15wbv/files/wandb-summary.json
+2024-03-10 09:56:34,052 INFO    wandb-upload_3:20175 [upload_job.py:push():131] Uploaded file /Users/yunbo/Documents/GitHub/PFL_Optimiozation/Model_training/4_clusters/wandb/run-20240310_095622-mqz15wbv/files/conda-environment.yaml
+2024-03-10 09:56:34,124 DEBUG   HandlerThread:20175 [handler.py:handle_request():146] handle_request: poll_exit
+2024-03-10 09:56:34,124 DEBUG   SenderThread:20175 [sender.py:send_request():409] send_request: poll_exit
+2024-03-10 09:56:34,257 INFO    Thread-12 :20175 [sender.py:transition_state():617] send defer: 11
+2024-03-10 09:56:34,258 DEBUG   HandlerThread:20175 [handler.py:handle_request():146] handle_request: defer
+2024-03-10 09:56:34,258 INFO    HandlerThread:20175 [handler.py:handle_request_defer():172] handle defer: 11
+2024-03-10 09:56:34,258 DEBUG   SenderThread:20175 [sender.py:send_request():409] send_request: defer
+2024-03-10 09:56:34,258 INFO    SenderThread:20175 [sender.py:send_request_defer():613] handle sender defer: 11
+2024-03-10 09:56:34,258 INFO    SenderThread:20175 [file_pusher.py:join():181] waiting for file pusher
+2024-03-10 09:56:34,258 INFO    SenderThread:20175 [sender.py:transition_state():617] send defer: 12
+2024-03-10 09:56:34,258 DEBUG   HandlerThread:20175 [handler.py:handle_request():146] handle_request: defer
+2024-03-10 09:56:34,258 INFO    HandlerThread:20175 [handler.py:handle_request_defer():172] handle defer: 12
+2024-03-10 09:56:34,259 DEBUG   SenderThread:20175 [sender.py:send_request():409] send_request: defer
+2024-03-10 09:56:34,259 INFO    SenderThread:20175 [sender.py:send_request_defer():613] handle sender defer: 12
+2024-03-10 09:56:34,259 INFO    SenderThread:20175 [file_stream.py:finish():595] file stream finish called
+2024-03-10 09:56:34,642 INFO    SenderThread:20175 [file_stream.py:finish():599] file stream finish is done
+2024-03-10 09:56:34,642 INFO    SenderThread:20175 [sender.py:transition_state():617] send defer: 13
+2024-03-10 09:56:34,642 DEBUG   HandlerThread:20175 [handler.py:handle_request():146] handle_request: defer
+2024-03-10 09:56:34,642 INFO    HandlerThread:20175 [handler.py:handle_request_defer():172] handle defer: 13
+2024-03-10 09:56:34,642 DEBUG   SenderThread:20175 [sender.py:send_request():409] send_request: defer
+2024-03-10 09:56:34,642 INFO    SenderThread:20175 [sender.py:send_request_defer():613] handle sender defer: 13
+2024-03-10 09:56:34,642 INFO    SenderThread:20175 [sender.py:transition_state():617] send defer: 14
+2024-03-10 09:56:34,642 DEBUG   HandlerThread:20175 [handler.py:handle_request():146] handle_request: defer
+2024-03-10 09:56:34,642 INFO    HandlerThread:20175 [handler.py:handle_request_defer():172] handle defer: 14
+2024-03-10 09:56:34,642 DEBUG   SenderThread:20175 [sender.py:send():382] send: final
+2024-03-10 09:56:34,642 DEBUG   SenderThread:20175 [sender.py:send():382] send: footer
+2024-03-10 09:56:34,643 DEBUG   SenderThread:20175 [sender.py:send_request():409] send_request: defer
+2024-03-10 09:56:34,643 INFO    SenderThread:20175 [sender.py:send_request_defer():613] handle sender defer: 14
+2024-03-10 09:56:34,643 DEBUG   HandlerThread:20175 [handler.py:handle_request():146] handle_request: poll_exit
+2024-03-10 09:56:34,643 DEBUG   SenderThread:20175 [sender.py:send_request():409] send_request: poll_exit
+2024-03-10 09:56:34,643 DEBUG   HandlerThread:20175 [handler.py:handle_request():146] handle_request: poll_exit
+2024-03-10 09:56:34,643 DEBUG   SenderThread:20175 [sender.py:send_request():409] send_request: poll_exit
+2024-03-10 09:56:34,643 DEBUG   HandlerThread:20175 [handler.py:handle_request():146] handle_request: server_info
+2024-03-10 09:56:34,643 DEBUG   HandlerThread:20175 [handler.py:handle_request():146] handle_request: get_summary
+2024-03-10 09:56:34,644 DEBUG   HandlerThread:20175 [handler.py:handle_request():146] handle_request: sampled_history
+2024-03-10 09:56:34,644 DEBUG   HandlerThread:20175 [handler.py:handle_request():146] handle_request: internal_messages
+2024-03-10 09:56:34,644 DEBUG   SenderThread:20175 [sender.py:send_request():409] send_request: server_info
+2024-03-10 09:56:34,645 DEBUG   HandlerThread:20175 [handler.py:handle_request():146] handle_request: job_info
+2024-03-10 09:56:34,767 DEBUG   SenderThread:20175 [sender.py:send_request():409] send_request: job_info
+2024-03-10 09:56:34,767 INFO    MainThread:20175 [wandb_run.py:_footer_history_summary_info():3857] rendering history
+2024-03-10 09:56:34,768 INFO    MainThread:20175 [wandb_run.py:_footer_history_summary_info():3889] rendering summary
+2024-03-10 09:56:34,768 INFO    MainThread:20175 [wandb_run.py:_footer_sync_info():3816] logging synced files
+2024-03-10 09:56:34,768 DEBUG   HandlerThread:20175 [handler.py:handle_request():146] handle_request: shutdown
+2024-03-10 09:56:34,768 INFO    HandlerThread:20175 [handler.py:finish():869] shutting down handler
+2024-03-10 09:56:35,650 INFO    WriterThread:20175 [datastore.py:close():296] close: /Users/yunbo/Documents/GitHub/PFL_Optimiozation/Model_training/4_clusters/wandb/run-20240310_095622-mqz15wbv/run-mqz15wbv.wandb
+2024-03-10 09:56:35,772 INFO    SenderThread:20175 [sender.py:finish():1572] shutting down sender
+2024-03-10 09:56:35,772 INFO    SenderThread:20175 [file_pusher.py:finish():175] shutting down file pusher
+2024-03-10 09:56:35,772 INFO    SenderThread:20175 [file_pusher.py:join():181] waiting for file pusher

@@ -1,0 +1,206 @@
+2024-03-09 11:57:15,982 INFO    StreamThr :25073 [internal.py:wandb_internal():86] W&B internal server running at pid: 25073, started at: 2024-03-09 11:57:15.981842
+2024-03-09 11:57:15,983 DEBUG   HandlerThread:25073 [handler.py:handle_request():146] handle_request: status
+2024-03-09 11:57:15,986 INFO    WriterThread:25073 [datastore.py:open_for_write():87] open: /Users/yunbo/Documents/GitHub/PFL_Optimiozation/Model_training/wandb/run-20240309_115715-ti31las4/run-ti31las4.wandb
+2024-03-09 11:57:15,986 DEBUG   SenderThread:25073 [sender.py:send():382] send: header
+2024-03-09 11:57:16,004 DEBUG   SenderThread:25073 [sender.py:send():382] send: run
+2024-03-09 11:57:16,376 INFO    SenderThread:25073 [dir_watcher.py:__init__():211] watching files in: /Users/yunbo/Documents/GitHub/PFL_Optimiozation/Model_training/wandb/run-20240309_115715-ti31las4/files
+2024-03-09 11:57:16,376 INFO    SenderThread:25073 [sender.py:_start_run_threads():1136] run started: ti31las4 with start time 1709985435.981141
+2024-03-09 11:57:16,383 DEBUG   HandlerThread:25073 [handler.py:handle_request():146] handle_request: check_version
+2024-03-09 11:57:16,383 DEBUG   SenderThread:25073 [sender.py:send_request():409] send_request: check_version
+2024-03-09 11:57:16,502 DEBUG   HandlerThread:25073 [handler.py:handle_request():146] handle_request: run_start
+2024-03-09 11:57:16,513 DEBUG   HandlerThread:25073 [system_info.py:__init__():27] System info init
+2024-03-09 11:57:16,513 DEBUG   HandlerThread:25073 [system_info.py:__init__():42] System info init done
+2024-03-09 11:57:16,513 INFO    HandlerThread:25073 [system_monitor.py:start():194] Starting system monitor
+2024-03-09 11:57:16,514 INFO    SystemMonitor:25073 [system_monitor.py:_start():158] Starting system asset monitoring threads
+2024-03-09 11:57:16,514 INFO    HandlerThread:25073 [system_monitor.py:probe():214] Collecting system info
+2024-03-09 11:57:16,515 DEBUG   HandlerThread:25073 [system_info.py:probe():151] Probing system
+2024-03-09 11:57:16,515 INFO    SystemMonitor:25073 [interfaces.py:start():190] Started cpu monitoring
+2024-03-09 11:57:16,517 INFO    SystemMonitor:25073 [interfaces.py:start():190] Started disk monitoring
+2024-03-09 11:57:16,519 INFO    SystemMonitor:25073 [interfaces.py:start():190] Started gpuapple monitoring
+2024-03-09 11:57:16,521 INFO    SystemMonitor:25073 [interfaces.py:start():190] Started memory monitoring
+2024-03-09 11:57:16,522 INFO    SystemMonitor:25073 [interfaces.py:start():190] Started network monitoring
+2024-03-09 11:57:16,527 DEBUG   HandlerThread:25073 [system_info.py:_probe_git():136] Probing git
+2024-03-09 11:57:16,564 DEBUG   HandlerThread:25073 [system_info.py:_probe_git():144] Probing git done
+2024-03-09 11:57:16,564 DEBUG   HandlerThread:25073 [system_info.py:probe():199] Probing system done
+2024-03-09 11:57:16,564 DEBUG   HandlerThread:25073 [system_monitor.py:probe():223] {'os': 'macOS-14.2-arm64-arm-64bit', 'python': '3.9.18', 'heartbeatAt': '2024-03-09T11:57:16.515344', 'startedAt': '2024-03-09T11:57:15.975333', 'docker': None, 'cuda': None, 'args': ('--client_number=Southeast Asia', '--config_file=config.json'), 'state': 'running', 'program': '/Users/yunbo/Documents/GitHub/PFL_Optimiozation/Model_training/client.py', 'codePathLocal': 'client.py', 'codePath': 'Model_training/client.py', 'git': {'remote': 'https://github.com/Yunbo-max/PFL_Optimiozation.git', 'commit': '406fded0406405b436908435d22a52c9b01b0299'}, 'email': '82950147+Yunbo-max@users.noreply.github.com', 'root': '/Users/yunbo/Documents/GitHub/PFL_Optimiozation', 'host': 'dhcp-10-249-75-6.eduroam.wireless.private.cam.ac.uk', 'username': 'yunbo', 'executable': '/Users/yunbo/anaconda3/envs/basic/bin/python', 'cpu_count': 10, 'cpu_count_logical': 10, 'disk': {'/': {'total': 460.4317207336426, 'used': 156.992919921875}}, 'gpuapple': {'type': 'arm', 'vendor': 'Apple'}, 'memory': {'total': 16.0}}
+2024-03-09 11:57:16,565 INFO    HandlerThread:25073 [system_monitor.py:probe():224] Finished collecting system info
+2024-03-09 11:57:16,565 INFO    HandlerThread:25073 [system_monitor.py:probe():227] Publishing system info
+2024-03-09 11:57:16,565 DEBUG   HandlerThread:25073 [system_info.py:_save_conda():208] Saving list of conda packages installed into the current environment
+2024-03-09 11:57:17,390 INFO    Thread-13 :25073 [dir_watcher.py:_on_file_created():271] file/dir created: /Users/yunbo/Documents/GitHub/PFL_Optimiozation/Model_training/wandb/run-20240309_115715-ti31las4/files/conda-environment.yaml
+2024-03-09 11:57:23,888 DEBUG   HandlerThread:25073 [system_info.py:_save_conda():220] Saving conda packages done
+2024-03-09 11:57:23,889 INFO    HandlerThread:25073 [system_monitor.py:probe():229] Finished publishing system info
+2024-03-09 11:57:23,897 DEBUG   HandlerThread:25073 [handler.py:handle_request():146] handle_request: status_report
+2024-03-09 11:57:23,897 DEBUG   HandlerThread:25073 [handler.py:handle_request():146] handle_request: keepalive
+2024-03-09 11:57:23,898 DEBUG   SenderThread:25073 [sender.py:send():382] send: files
+2024-03-09 11:57:23,898 INFO    SenderThread:25073 [sender.py:_save_file():1403] saving file wandb-metadata.json with policy now
+2024-03-09 11:57:23,906 DEBUG   HandlerThread:25073 [handler.py:handle_request():146] handle_request: python_packages
+2024-03-09 11:57:23,906 DEBUG   HandlerThread:25073 [handler.py:handle_request():146] handle_request: internal_messages
+2024-03-09 11:57:23,906 DEBUG   HandlerThread:25073 [handler.py:handle_request():146] handle_request: stop_status
+2024-03-09 11:57:23,906 DEBUG   SenderThread:25073 [sender.py:send_request():409] send_request: python_packages
+2024-03-09 11:57:23,907 DEBUG   SenderThread:25073 [sender.py:send_request():409] send_request: stop_status
+2024-03-09 11:57:24,244 DEBUG   SenderThread:25073 [sender.py:send():382] send: telemetry
+2024-03-09 11:57:24,416 INFO    Thread-13 :25073 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/yunbo/Documents/GitHub/PFL_Optimiozation/Model_training/wandb/run-20240309_115715-ti31las4/files/conda-environment.yaml
+2024-03-09 11:57:24,416 INFO    Thread-13 :25073 [dir_watcher.py:_on_file_created():271] file/dir created: /Users/yunbo/Documents/GitHub/PFL_Optimiozation/Model_training/wandb/run-20240309_115715-ti31las4/files/requirements.txt
+2024-03-09 11:57:24,416 INFO    Thread-13 :25073 [dir_watcher.py:_on_file_created():271] file/dir created: /Users/yunbo/Documents/GitHub/PFL_Optimiozation/Model_training/wandb/run-20240309_115715-ti31las4/files/wandb-metadata.json
+2024-03-09 11:57:24,416 INFO    Thread-13 :25073 [dir_watcher.py:_on_file_created():271] file/dir created: /Users/yunbo/Documents/GitHub/PFL_Optimiozation/Model_training/wandb/run-20240309_115715-ti31las4/files/output.log
+2024-03-09 11:57:24,491 INFO    wandb-upload_0:25073 [upload_job.py:push():131] Uploaded file /var/folders/_y/0xw7_0ss0s3f4kfhj9xl96zw0000gn/T/tmpi04xu6ugwandb/kqs5jey5-wandb-metadata.json
+2024-03-09 11:57:26,424 INFO    Thread-13 :25073 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/yunbo/Documents/GitHub/PFL_Optimiozation/Model_training/wandb/run-20240309_115715-ti31las4/files/output.log
+2024-03-09 11:57:27,260 DEBUG   HandlerThread:25073 [handler.py:handle_request():146] handle_request: status_report
+2024-03-09 11:57:32,284 DEBUG   HandlerThread:25073 [handler.py:handle_request():146] handle_request: status_report
+2024-03-09 11:57:37,303 DEBUG   HandlerThread:25073 [handler.py:handle_request():146] handle_request: status_report
+2024-03-09 11:57:38,912 DEBUG   HandlerThread:25073 [handler.py:handle_request():146] handle_request: stop_status
+2024-03-09 11:57:38,913 DEBUG   HandlerThread:25073 [handler.py:handle_request():146] handle_request: internal_messages
+2024-03-09 11:57:38,913 DEBUG   SenderThread:25073 [sender.py:send_request():409] send_request: stop_status
+2024-03-09 11:57:43,075 DEBUG   HandlerThread:25073 [handler.py:handle_request():146] handle_request: status_report
+2024-03-09 11:57:44,412 DEBUG   SenderThread:25073 [sender.py:send():382] send: exit
+2024-03-09 11:57:44,412 INFO    SenderThread:25073 [sender.py:send_exit():589] handling exit code: 1
+2024-03-09 11:57:44,412 INFO    SenderThread:25073 [sender.py:send_exit():591] handling runtime: 27
+2024-03-09 11:57:44,413 INFO    SenderThread:25073 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-03-09 11:57:44,413 INFO    SenderThread:25073 [sender.py:send_exit():597] send defer
+2024-03-09 11:57:44,413 DEBUG   HandlerThread:25073 [handler.py:handle_request():146] handle_request: defer
+2024-03-09 11:57:44,413 INFO    HandlerThread:25073 [handler.py:handle_request_defer():172] handle defer: 0
+2024-03-09 11:57:44,414 DEBUG   SenderThread:25073 [sender.py:send_request():409] send_request: defer
+2024-03-09 11:57:44,414 INFO    SenderThread:25073 [sender.py:send_request_defer():613] handle sender defer: 0
+2024-03-09 11:57:44,414 INFO    SenderThread:25073 [sender.py:transition_state():617] send defer: 1
+2024-03-09 11:57:44,414 DEBUG   HandlerThread:25073 [handler.py:handle_request():146] handle_request: defer
+2024-03-09 11:57:44,414 INFO    HandlerThread:25073 [handler.py:handle_request_defer():172] handle defer: 1
+2024-03-09 11:57:44,414 DEBUG   SenderThread:25073 [sender.py:send_request():409] send_request: defer
+2024-03-09 11:57:44,414 INFO    SenderThread:25073 [sender.py:send_request_defer():613] handle sender defer: 1
+2024-03-09 11:57:44,414 INFO    SenderThread:25073 [sender.py:transition_state():617] send defer: 2
+2024-03-09 11:57:44,415 DEBUG   HandlerThread:25073 [handler.py:handle_request():146] handle_request: defer
+2024-03-09 11:57:44,415 INFO    HandlerThread:25073 [handler.py:handle_request_defer():172] handle defer: 2
+2024-03-09 11:57:44,415 INFO    HandlerThread:25073 [system_monitor.py:finish():203] Stopping system monitor
+2024-03-09 11:57:44,415 DEBUG   SystemMonitor:25073 [system_monitor.py:_start():172] Starting system metrics aggregation loop
+2024-03-09 11:57:44,415 INFO    HandlerThread:25073 [interfaces.py:finish():202] Joined cpu monitor
+2024-03-09 11:57:44,415 DEBUG   SystemMonitor:25073 [system_monitor.py:_start():179] Finished system metrics aggregation loop
+2024-03-09 11:57:44,415 INFO    HandlerThread:25073 [interfaces.py:finish():202] Joined disk monitor
+2024-03-09 11:57:44,415 DEBUG   SystemMonitor:25073 [system_monitor.py:_start():183] Publishing last batch of metrics
+2024-03-09 11:57:44,504 INFO    Thread-13 :25073 [dir_watcher.py:_on_file_created():271] file/dir created: /Users/yunbo/Documents/GitHub/PFL_Optimiozation/Model_training/wandb/run-20240309_115715-ti31las4/files/wandb-summary.json
+2024-03-09 11:57:46,509 INFO    Thread-13 :25073 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/yunbo/Documents/GitHub/PFL_Optimiozation/Model_training/wandb/run-20240309_115715-ti31las4/files/output.log
+2024-03-09 11:57:48,345 INFO    HandlerThread:25073 [interfaces.py:finish():202] Joined gpuapple monitor
+2024-03-09 11:57:48,345 INFO    HandlerThread:25073 [interfaces.py:finish():202] Joined memory monitor
+2024-03-09 11:57:48,345 INFO    HandlerThread:25073 [interfaces.py:finish():202] Joined network monitor
+2024-03-09 11:57:48,345 DEBUG   HandlerThread:25073 [handler.py:handle_request():146] handle_request: poll_exit
+2024-03-09 11:57:48,346 DEBUG   SenderThread:25073 [sender.py:send_request():409] send_request: defer
+2024-03-09 11:57:48,346 INFO    SenderThread:25073 [sender.py:send_request_defer():613] handle sender defer: 2
+2024-03-09 11:57:48,346 INFO    SenderThread:25073 [sender.py:transition_state():617] send defer: 3
+2024-03-09 11:57:48,347 DEBUG   HandlerThread:25073 [handler.py:handle_request():146] handle_request: defer
+2024-03-09 11:57:48,347 INFO    HandlerThread:25073 [handler.py:handle_request_defer():172] handle defer: 3
+2024-03-09 11:57:48,348 DEBUG   HandlerThread:25073 [handler.py:handle_request():146] handle_request: status_report
+2024-03-09 11:57:48,502 DEBUG   SenderThread:25073 [sender.py:send():382] send: telemetry
+2024-03-09 11:57:48,502 DEBUG   SenderThread:25073 [sender.py:send():382] send: stats
+2024-03-09 11:57:48,503 DEBUG   SenderThread:25073 [sender.py:send_request():409] send_request: poll_exit
+2024-03-09 11:57:48,503 DEBUG   SenderThread:25073 [sender.py:send_request():409] send_request: defer
+2024-03-09 11:57:48,503 INFO    SenderThread:25073 [sender.py:send_request_defer():613] handle sender defer: 3
+2024-03-09 11:57:48,503 INFO    SenderThread:25073 [sender.py:transition_state():617] send defer: 4
+2024-03-09 11:57:48,503 DEBUG   HandlerThread:25073 [handler.py:handle_request():146] handle_request: defer
+2024-03-09 11:57:48,503 INFO    HandlerThread:25073 [handler.py:handle_request_defer():172] handle defer: 4
+2024-03-09 11:57:48,503 DEBUG   SenderThread:25073 [sender.py:send_request():409] send_request: defer
+2024-03-09 11:57:48,503 INFO    SenderThread:25073 [sender.py:send_request_defer():613] handle sender defer: 4
+2024-03-09 11:57:48,504 INFO    SenderThread:25073 [sender.py:transition_state():617] send defer: 5
+2024-03-09 11:57:48,504 DEBUG   HandlerThread:25073 [handler.py:handle_request():146] handle_request: defer
+2024-03-09 11:57:48,504 INFO    HandlerThread:25073 [handler.py:handle_request_defer():172] handle defer: 5
+2024-03-09 11:57:48,504 DEBUG   SenderThread:25073 [sender.py:send():382] send: summary
+2024-03-09 11:57:48,504 INFO    SenderThread:25073 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-03-09 11:57:48,505 DEBUG   SenderThread:25073 [sender.py:send_request():409] send_request: defer
+2024-03-09 11:57:48,505 INFO    SenderThread:25073 [sender.py:send_request_defer():613] handle sender defer: 5
+2024-03-09 11:57:48,505 INFO    SenderThread:25073 [sender.py:transition_state():617] send defer: 6
+2024-03-09 11:57:48,505 DEBUG   HandlerThread:25073 [handler.py:handle_request():146] handle_request: defer
+2024-03-09 11:57:48,505 INFO    HandlerThread:25073 [handler.py:handle_request_defer():172] handle defer: 6
+2024-03-09 11:57:48,505 DEBUG   SenderThread:25073 [sender.py:send_request():409] send_request: defer
+2024-03-09 11:57:48,505 INFO    SenderThread:25073 [sender.py:send_request_defer():613] handle sender defer: 6
+2024-03-09 11:57:48,506 DEBUG   HandlerThread:25073 [handler.py:handle_request():146] handle_request: status_report
+2024-03-09 11:57:48,515 INFO    Thread-13 :25073 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/yunbo/Documents/GitHub/PFL_Optimiozation/Model_training/wandb/run-20240309_115715-ti31las4/files/wandb-summary.json
+2024-03-09 11:57:48,515 INFO    Thread-13 :25073 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/yunbo/Documents/GitHub/PFL_Optimiozation/Model_training/wandb/run-20240309_115715-ti31las4/files/config.yaml
+2024-03-09 11:57:48,660 INFO    SenderThread:25073 [sender.py:transition_state():617] send defer: 7
+2024-03-09 11:57:48,660 DEBUG   HandlerThread:25073 [handler.py:handle_request():146] handle_request: defer
+2024-03-09 11:57:48,660 INFO    HandlerThread:25073 [handler.py:handle_request_defer():172] handle defer: 7
+2024-03-09 11:57:48,660 DEBUG   SenderThread:25073 [sender.py:send_request():409] send_request: defer
+2024-03-09 11:57:48,660 INFO    SenderThread:25073 [sender.py:send_request_defer():613] handle sender defer: 7
+2024-03-09 11:57:49,433 DEBUG   HandlerThread:25073 [handler.py:handle_request():146] handle_request: poll_exit
+2024-03-09 11:57:49,516 INFO    Thread-13 :25073 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/yunbo/Documents/GitHub/PFL_Optimiozation/Model_training/wandb/run-20240309_115715-ti31las4/files/config.yaml
+2024-03-09 11:57:50,314 INFO    SenderThread:25073 [sender.py:transition_state():617] send defer: 8
+2024-03-09 11:57:50,314 DEBUG   SenderThread:25073 [sender.py:send_request():409] send_request: poll_exit
+2024-03-09 11:57:50,314 DEBUG   HandlerThread:25073 [handler.py:handle_request():146] handle_request: defer
+2024-03-09 11:57:50,315 INFO    HandlerThread:25073 [handler.py:handle_request_defer():172] handle defer: 8
+2024-03-09 11:57:50,315 DEBUG   SenderThread:25073 [sender.py:send_request():409] send_request: defer
+2024-03-09 11:57:50,315 INFO    SenderThread:25073 [sender.py:send_request_defer():613] handle sender defer: 8
+2024-03-09 11:57:50,315 INFO    SenderThread:25073 [job_builder.py:build():296] Attempting to build job artifact
+2024-03-09 11:57:50,315 INFO    SenderThread:25073 [job_builder.py:_get_source_type():426] is repo sourced job
+2024-03-09 11:57:50,338 INFO    SenderThread:25073 [job_builder.py:build():402] adding wandb-job metadata file
+2024-03-09 11:57:50,340 INFO    SenderThread:25073 [sender.py:transition_state():617] send defer: 9
+2024-03-09 11:57:50,341 DEBUG   HandlerThread:25073 [handler.py:handle_request():146] handle_request: defer
+2024-03-09 11:57:50,341 DEBUG   SenderThread:25073 [sender.py:send():382] send: artifact
+2024-03-09 11:57:50,341 INFO    HandlerThread:25073 [handler.py:handle_request_defer():172] handle defer: 9
+2024-03-09 11:57:50,436 DEBUG   HandlerThread:25073 [handler.py:handle_request():146] handle_request: poll_exit
+2024-03-09 11:57:50,521 INFO    Thread-13 :25073 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/yunbo/Documents/GitHub/PFL_Optimiozation/Model_training/wandb/run-20240309_115715-ti31las4/files/output.log
+2024-03-09 11:57:51,206 INFO    wandb-upload_1:25073 [upload_job.py:push():86] Skipped uploading /Users/yunbo/Library/Application Support/wandb/artifacts/staging/tmpw998mi7b
+2024-03-09 11:57:51,462 INFO    wandb-upload_0:25073 [upload_job.py:push():89] Uploaded file /Users/yunbo/Library/Application Support/wandb/artifacts/staging/tmppl8_s3wq
+2024-03-09 11:57:52,376 INFO    SenderThread:25073 [sender.py:send_artifact():1494] sent artifact job-https___github.com_Yunbo-max_PFL_Optimiozation.git_Model_training_client.py - {'id': 'QXJ0aWZhY3Q6NzQ4NjgxMDY1', 'state': 'PENDING', 'artifactSequence': {'id': 'QXJ0aWZhY3RDb2xsZWN0aW9uOjE0NjkwNjYzNg==', 'latestArtifact': {'id': 'QXJ0aWZhY3Q6NzQ4NTM2MzU3', 'versionIndex': 5}}}
+2024-03-09 11:57:52,376 DEBUG   SenderThread:25073 [sender.py:send_request():409] send_request: defer
+2024-03-09 11:57:52,377 INFO    SenderThread:25073 [sender.py:send_request_defer():613] handle sender defer: 9
+2024-03-09 11:57:52,377 INFO    SenderThread:25073 [dir_watcher.py:finish():358] shutting down directory watcher
+2024-03-09 11:57:52,531 INFO    SenderThread:25073 [dir_watcher.py:finish():388] scan: /Users/yunbo/Documents/GitHub/PFL_Optimiozation/Model_training/wandb/run-20240309_115715-ti31las4/files
+2024-03-09 11:57:52,531 INFO    SenderThread:25073 [dir_watcher.py:finish():402] scan save: /Users/yunbo/Documents/GitHub/PFL_Optimiozation/Model_training/wandb/run-20240309_115715-ti31las4/files/requirements.txt requirements.txt
+2024-03-09 11:57:52,531 INFO    SenderThread:25073 [dir_watcher.py:finish():402] scan save: /Users/yunbo/Documents/GitHub/PFL_Optimiozation/Model_training/wandb/run-20240309_115715-ti31las4/files/output.log output.log
+2024-03-09 11:57:52,533 INFO    SenderThread:25073 [dir_watcher.py:finish():402] scan save: /Users/yunbo/Documents/GitHub/PFL_Optimiozation/Model_training/wandb/run-20240309_115715-ti31las4/files/config.yaml config.yaml
+2024-03-09 11:57:52,534 INFO    SenderThread:25073 [dir_watcher.py:finish():402] scan save: /Users/yunbo/Documents/GitHub/PFL_Optimiozation/Model_training/wandb/run-20240309_115715-ti31las4/files/wandb-summary.json wandb-summary.json
+2024-03-09 11:57:52,536 INFO    SenderThread:25073 [dir_watcher.py:finish():402] scan save: /Users/yunbo/Documents/GitHub/PFL_Optimiozation/Model_training/wandb/run-20240309_115715-ti31las4/files/conda-environment.yaml conda-environment.yaml
+2024-03-09 11:57:52,536 INFO    SenderThread:25073 [dir_watcher.py:finish():402] scan save: /Users/yunbo/Documents/GitHub/PFL_Optimiozation/Model_training/wandb/run-20240309_115715-ti31las4/files/wandb-metadata.json wandb-metadata.json
+2024-03-09 11:57:52,536 INFO    SenderThread:25073 [sender.py:transition_state():617] send defer: 10
+2024-03-09 11:57:52,536 DEBUG   SenderThread:25073 [sender.py:send_request():409] send_request: poll_exit
+2024-03-09 11:57:52,537 DEBUG   HandlerThread:25073 [handler.py:handle_request():146] handle_request: defer
+2024-03-09 11:57:52,538 INFO    HandlerThread:25073 [handler.py:handle_request_defer():172] handle defer: 10
+2024-03-09 11:57:52,539 DEBUG   SenderThread:25073 [sender.py:send_request():409] send_request: defer
+2024-03-09 11:57:52,539 INFO    SenderThread:25073 [sender.py:send_request_defer():613] handle sender defer: 10
+2024-03-09 11:57:52,539 INFO    SenderThread:25073 [file_pusher.py:finish():175] shutting down file pusher
+2024-03-09 11:57:52,877 INFO    wandb-upload_1:25073 [upload_job.py:push():131] Uploaded file /Users/yunbo/Documents/GitHub/PFL_Optimiozation/Model_training/wandb/run-20240309_115715-ti31las4/files/requirements.txt
+2024-03-09 11:57:52,926 INFO    wandb-upload_0:25073 [upload_job.py:push():131] Uploaded file /Users/yunbo/Documents/GitHub/PFL_Optimiozation/Model_training/wandb/run-20240309_115715-ti31las4/files/output.log
+2024-03-09 11:57:52,947 INFO    wandb-upload_2:25073 [upload_job.py:push():131] Uploaded file /Users/yunbo/Documents/GitHub/PFL_Optimiozation/Model_training/wandb/run-20240309_115715-ti31las4/files/config.yaml
+2024-03-09 11:57:52,953 INFO    wandb-upload_3:25073 [upload_job.py:push():131] Uploaded file /Users/yunbo/Documents/GitHub/PFL_Optimiozation/Model_training/wandb/run-20240309_115715-ti31las4/files/wandb-summary.json
+2024-03-09 11:57:52,981 INFO    wandb-upload_4:25073 [upload_job.py:push():131] Uploaded file /Users/yunbo/Documents/GitHub/PFL_Optimiozation/Model_training/wandb/run-20240309_115715-ti31las4/files/conda-environment.yaml
+2024-03-09 11:57:53,186 INFO    Thread-12 :25073 [sender.py:transition_state():617] send defer: 11
+2024-03-09 11:57:53,186 DEBUG   HandlerThread:25073 [handler.py:handle_request():146] handle_request: defer
+2024-03-09 11:57:53,187 INFO    HandlerThread:25073 [handler.py:handle_request_defer():172] handle defer: 11
+2024-03-09 11:57:53,187 DEBUG   SenderThread:25073 [sender.py:send_request():409] send_request: defer
+2024-03-09 11:57:53,187 INFO    SenderThread:25073 [sender.py:send_request_defer():613] handle sender defer: 11
+2024-03-09 11:57:53,187 INFO    SenderThread:25073 [file_pusher.py:join():181] waiting for file pusher
+2024-03-09 11:57:53,187 INFO    SenderThread:25073 [sender.py:transition_state():617] send defer: 12
+2024-03-09 11:57:53,187 DEBUG   HandlerThread:25073 [handler.py:handle_request():146] handle_request: defer
+2024-03-09 11:57:53,187 INFO    HandlerThread:25073 [handler.py:handle_request_defer():172] handle defer: 12
+2024-03-09 11:57:53,187 DEBUG   SenderThread:25073 [sender.py:send_request():409] send_request: defer
+2024-03-09 11:57:53,187 INFO    SenderThread:25073 [sender.py:send_request_defer():613] handle sender defer: 12
+2024-03-09 11:57:53,187 INFO    SenderThread:25073 [file_stream.py:finish():595] file stream finish called
+2024-03-09 11:57:53,317 INFO    SenderThread:25073 [file_stream.py:finish():599] file stream finish is done
+2024-03-09 11:57:53,317 INFO    SenderThread:25073 [sender.py:transition_state():617] send defer: 13
+2024-03-09 11:57:53,317 DEBUG   HandlerThread:25073 [handler.py:handle_request():146] handle_request: defer
+2024-03-09 11:57:53,317 INFO    HandlerThread:25073 [handler.py:handle_request_defer():172] handle defer: 13
+2024-03-09 11:57:53,318 DEBUG   SenderThread:25073 [sender.py:send_request():409] send_request: defer
+2024-03-09 11:57:53,318 INFO    SenderThread:25073 [sender.py:send_request_defer():613] handle sender defer: 13
+2024-03-09 11:57:53,318 INFO    SenderThread:25073 [sender.py:transition_state():617] send defer: 14
+2024-03-09 11:57:53,318 DEBUG   HandlerThread:25073 [handler.py:handle_request():146] handle_request: defer
+2024-03-09 11:57:53,318 INFO    HandlerThread:25073 [handler.py:handle_request_defer():172] handle defer: 14
+2024-03-09 11:57:53,318 DEBUG   SenderThread:25073 [sender.py:send():382] send: final
+2024-03-09 11:57:53,318 DEBUG   SenderThread:25073 [sender.py:send():382] send: footer
+2024-03-09 11:57:53,318 DEBUG   SenderThread:25073 [sender.py:send_request():409] send_request: defer
+2024-03-09 11:57:53,318 INFO    SenderThread:25073 [sender.py:send_request_defer():613] handle sender defer: 14
+2024-03-09 11:57:53,319 DEBUG   HandlerThread:25073 [handler.py:handle_request():146] handle_request: poll_exit
+2024-03-09 11:57:53,319 DEBUG   SenderThread:25073 [sender.py:send_request():409] send_request: poll_exit
+2024-03-09 11:57:53,319 DEBUG   HandlerThread:25073 [handler.py:handle_request():146] handle_request: poll_exit
+2024-03-09 11:57:53,320 DEBUG   HandlerThread:25073 [handler.py:handle_request():146] handle_request: server_info
+2024-03-09 11:57:53,320 DEBUG   SenderThread:25073 [sender.py:send_request():409] send_request: poll_exit
+2024-03-09 11:57:53,320 DEBUG   SenderThread:25073 [sender.py:send_request():409] send_request: server_info
+2024-03-09 11:57:53,321 DEBUG   HandlerThread:25073 [handler.py:handle_request():146] handle_request: get_summary
+2024-03-09 11:57:53,321 DEBUG   HandlerThread:25073 [handler.py:handle_request():146] handle_request: sampled_history
+2024-03-09 11:57:53,322 DEBUG   HandlerThread:25073 [handler.py:handle_request():146] handle_request: internal_messages
+2024-03-09 11:57:53,322 DEBUG   HandlerThread:25073 [handler.py:handle_request():146] handle_request: job_info
+2024-03-09 11:57:53,442 DEBUG   SenderThread:25073 [sender.py:send_request():409] send_request: job_info
+2024-03-09 11:57:53,443 INFO    MainThread:25073 [wandb_run.py:_footer_history_summary_info():3857] rendering history
+2024-03-09 11:57:53,443 INFO    MainThread:25073 [wandb_run.py:_footer_history_summary_info():3889] rendering summary
+2024-03-09 11:57:53,443 INFO    MainThread:25073 [wandb_run.py:_footer_sync_info():3816] logging synced files
+2024-03-09 11:57:53,443 DEBUG   HandlerThread:25073 [handler.py:handle_request():146] handle_request: shutdown
+2024-03-09 11:57:53,443 INFO    HandlerThread:25073 [handler.py:finish():869] shutting down handler
+2024-03-09 11:57:54,327 INFO    WriterThread:25073 [datastore.py:close():296] close: /Users/yunbo/Documents/GitHub/PFL_Optimiozation/Model_training/wandb/run-20240309_115715-ti31las4/run-ti31las4.wandb
+2024-03-09 11:57:54,448 INFO    SenderThread:25073 [sender.py:finish():1572] shutting down sender
+2024-03-09 11:57:54,448 INFO    SenderThread:25073 [file_pusher.py:finish():175] shutting down file pusher
+2024-03-09 11:57:54,448 INFO    SenderThread:25073 [file_pusher.py:join():181] waiting for file pusher

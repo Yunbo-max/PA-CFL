@@ -1,0 +1,17 @@
+wandb: Currently logged in as: longyunbo218 (digitalai). Use `wandb login --relogin` to force relogin
+wandb: wandb version 0.16.4 is available!  To upgrade, please run:
+wandb:  $ pip install wandb --upgrade
+wandb: Tracking run with wandb version 0.16.2
+wandb: Run data is saved locally in /Users/yunbo/Documents/GitHub/PFL_Optimiozation/Model_training/4_clusters/wandb/run-20240310_102619-rsm22vw9
+wandb: Run `wandb offline` to turn off syncing.
+wandb: Syncing run silver-resonance-93
+wandb: ⭐️ View project at https://wandb.ai/digitalai/CFL4-df
+wandb: 🚀 View run at https://wandb.ai/digitalai/CFL4-df/runs/rsm22vw9
+INFO flwr 2024-03-10 10:26:31,446 | grpc.py:52 | Opened insecure gRPC connection (no certificates were passed)
+03/10/2024 10:26:31:INFO:Opened insecure gRPC connection (no certificates were passed)
+DEBUG flwr 2024-03-10 10:26:31,464 | connection.py:42 | ChannelConnectivity.IDLE
+03/10/2024 10:26:31:DEBUG:ChannelConnectivity.IDLE
+DEBUG flwr 2024-03-10 10:26:31,464 | connection.py:42 | ChannelConnectivity.CONNECTING
+03/10/2024 10:26:31:DEBUG:ChannelConnectivity.CONNECTING
+DEBUG flwr 2024-03-10 10:26:31,473 | connection.py:42 | ChannelConnectivity.READY
+03/10/2024 10:26:31:DEBUG:ChannelConnectivity.READY

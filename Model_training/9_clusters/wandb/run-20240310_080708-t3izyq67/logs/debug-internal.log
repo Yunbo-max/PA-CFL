@@ -1,0 +1,1212 @@
+2024-03-10 08:07:08,270 INFO    StreamThr :85382 [internal.py:wandb_internal():86] W&B internal server running at pid: 85382, started at: 2024-03-10 08:07:08.270275
+2024-03-10 08:07:08,271 DEBUG   HandlerThread:85382 [handler.py:handle_request():146] handle_request: status
+2024-03-10 08:07:08,272 INFO    WriterThread:85382 [datastore.py:open_for_write():87] open: /Users/yunbo/Documents/GitHub/PFL_Optimiozation/Model_training/9_clusters/wandb/run-20240310_080708-t3izyq67/run-t3izyq67.wandb
+2024-03-10 08:07:08,272 DEBUG   SenderThread:85382 [sender.py:send():382] send: header
+2024-03-10 08:07:08,291 DEBUG   SenderThread:85382 [sender.py:send():382] send: run
+2024-03-10 08:07:08,729 INFO    SenderThread:85382 [dir_watcher.py:__init__():211] watching files in: /Users/yunbo/Documents/GitHub/PFL_Optimiozation/Model_training/9_clusters/wandb/run-20240310_080708-t3izyq67/files
+2024-03-10 08:07:08,729 INFO    SenderThread:85382 [sender.py:_start_run_threads():1136] run started: t3izyq67 with start time 1710058028.269614
+2024-03-10 08:07:08,736 DEBUG   HandlerThread:85382 [handler.py:handle_request():146] handle_request: check_version
+2024-03-10 08:07:08,737 DEBUG   SenderThread:85382 [sender.py:send_request():409] send_request: check_version
+2024-03-10 08:07:08,800 DEBUG   HandlerThread:85382 [handler.py:handle_request():146] handle_request: run_start
+2024-03-10 08:07:08,806 DEBUG   HandlerThread:85382 [system_info.py:__init__():27] System info init
+2024-03-10 08:07:08,806 DEBUG   HandlerThread:85382 [system_info.py:__init__():42] System info init done
+2024-03-10 08:07:08,806 INFO    HandlerThread:85382 [system_monitor.py:start():194] Starting system monitor
+2024-03-10 08:07:08,807 INFO    SystemMonitor:85382 [system_monitor.py:_start():158] Starting system asset monitoring threads
+2024-03-10 08:07:08,807 INFO    HandlerThread:85382 [system_monitor.py:probe():214] Collecting system info
+2024-03-10 08:07:08,807 DEBUG   HandlerThread:85382 [system_info.py:probe():151] Probing system
+2024-03-10 08:07:08,807 INFO    SystemMonitor:85382 [interfaces.py:start():190] Started cpu monitoring
+2024-03-10 08:07:08,808 INFO    SystemMonitor:85382 [interfaces.py:start():190] Started disk monitoring
+2024-03-10 08:07:08,810 INFO    SystemMonitor:85382 [interfaces.py:start():190] Started gpuapple monitoring
+2024-03-10 08:07:08,812 INFO    SystemMonitor:85382 [interfaces.py:start():190] Started memory monitoring
+2024-03-10 08:07:08,813 INFO    SystemMonitor:85382 [interfaces.py:start():190] Started network monitoring
+2024-03-10 08:07:08,817 DEBUG   HandlerThread:85382 [system_info.py:_probe_git():136] Probing git
+2024-03-10 08:07:08,837 DEBUG   HandlerThread:85382 [system_info.py:_probe_git():144] Probing git done
+2024-03-10 08:07:08,837 DEBUG   HandlerThread:85382 [system_info.py:probe():199] Probing system done
+2024-03-10 08:07:08,837 DEBUG   HandlerThread:85382 [system_monitor.py:probe():223] {'os': 'macOS-14.2-arm64-arm-64bit', 'python': '3.9.18', 'heartbeatAt': '2024-03-10T08:07:08.807950', 'startedAt': '2024-03-10T08:07:08.265044', 'docker': None, 'cuda': None, 'args': ('--client_number=West Africa', '--config_file=config.json'), 'state': 'running', 'program': '/Users/yunbo/Documents/GitHub/PFL_Optimiozation/Model_training/9_clusters/client.py', 'codePathLocal': 'client.py', 'codePath': 'Model_training/9_clusters/client.py', 'git': {'remote': 'https://github.com/Yunbo-max/PFL_Optimiozation.git', 'commit': '406fded0406405b436908435d22a52c9b01b0299'}, 'email': '82950147+Yunbo-max@users.noreply.github.com', 'root': '/Users/yunbo/Documents/GitHub/PFL_Optimiozation', 'host': 'dhcp-10-249-98-185.eduroam.wireless.private.cam.ac.uk', 'username': 'yunbo', 'executable': '/Users/yunbo/anaconda3/envs/basic/bin/python', 'cpu_count': 10, 'cpu_count_logical': 10, 'disk': {'/': {'total': 460.4317207336426, 'used': 158.08574295043945}}, 'gpuapple': {'type': 'arm', 'vendor': 'Apple'}, 'memory': {'total': 16.0}}
+2024-03-10 08:07:08,837 INFO    HandlerThread:85382 [system_monitor.py:probe():224] Finished collecting system info
+2024-03-10 08:07:08,837 INFO    HandlerThread:85382 [system_monitor.py:probe():227] Publishing system info
+2024-03-10 08:07:08,837 DEBUG   HandlerThread:85382 [system_info.py:_save_conda():208] Saving list of conda packages installed into the current environment
+2024-03-10 08:07:09,731 INFO    Thread-13 :85382 [dir_watcher.py:_on_file_created():271] file/dir created: /Users/yunbo/Documents/GitHub/PFL_Optimiozation/Model_training/9_clusters/wandb/run-20240310_080708-t3izyq67/files/conda-environment.yaml
+2024-03-10 08:07:15,745 DEBUG   HandlerThread:85382 [system_info.py:_save_conda():220] Saving conda packages done
+2024-03-10 08:07:15,746 INFO    HandlerThread:85382 [system_monitor.py:probe():229] Finished publishing system info
+2024-03-10 08:07:15,755 DEBUG   HandlerThread:85382 [handler.py:handle_request():146] handle_request: status_report
+2024-03-10 08:07:15,755 DEBUG   HandlerThread:85382 [handler.py:handle_request():146] handle_request: keepalive
+2024-03-10 08:07:15,756 DEBUG   SenderThread:85382 [sender.py:send():382] send: files
+2024-03-10 08:07:15,756 INFO    SenderThread:85382 [sender.py:_save_file():1403] saving file wandb-metadata.json with policy now
+2024-03-10 08:07:15,759 INFO    Thread-13 :85382 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/yunbo/Documents/GitHub/PFL_Optimiozation/Model_training/9_clusters/wandb/run-20240310_080708-t3izyq67/files/conda-environment.yaml
+2024-03-10 08:07:15,759 INFO    Thread-13 :85382 [dir_watcher.py:_on_file_created():271] file/dir created: /Users/yunbo/Documents/GitHub/PFL_Optimiozation/Model_training/9_clusters/wandb/run-20240310_080708-t3izyq67/files/wandb-metadata.json
+2024-03-10 08:07:15,762 DEBUG   HandlerThread:85382 [handler.py:handle_request():146] handle_request: python_packages
+2024-03-10 08:07:15,763 DEBUG   HandlerThread:85382 [handler.py:handle_request():146] handle_request: stop_status
+2024-03-10 08:07:15,763 DEBUG   SenderThread:85382 [sender.py:send_request():409] send_request: python_packages
+2024-03-10 08:07:15,763 DEBUG   HandlerThread:85382 [handler.py:handle_request():146] handle_request: internal_messages
+2024-03-10 08:07:15,765 DEBUG   SenderThread:85382 [sender.py:send_request():409] send_request: stop_status
+2024-03-10 08:07:16,001 DEBUG   SenderThread:85382 [sender.py:send():382] send: telemetry
+2024-03-10 08:07:16,234 INFO    wandb-upload_0:85382 [upload_job.py:push():131] Uploaded file /var/folders/_y/0xw7_0ss0s3f4kfhj9xl96zw0000gn/T/tmpu1_chzciwandb/j27rvxfd-wandb-metadata.json
+2024-03-10 08:07:16,764 INFO    Thread-13 :85382 [dir_watcher.py:_on_file_created():271] file/dir created: /Users/yunbo/Documents/GitHub/PFL_Optimiozation/Model_training/9_clusters/wandb/run-20240310_080708-t3izyq67/files/requirements.txt
+2024-03-10 08:07:16,765 INFO    Thread-13 :85382 [dir_watcher.py:_on_file_created():271] file/dir created: /Users/yunbo/Documents/GitHub/PFL_Optimiozation/Model_training/9_clusters/wandb/run-20240310_080708-t3izyq67/files/output.log
+2024-03-10 08:07:16,947 DEBUG   HandlerThread:85382 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-10 08:07:16,948 DEBUG   SenderThread:85382 [sender.py:send():382] send: history
+2024-03-10 08:07:16,948 DEBUG   SenderThread:85382 [sender.py:send_request():409] send_request: summary_record
+2024-03-10 08:07:16,949 INFO    SenderThread:85382 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-03-10 08:07:17,632 DEBUG   HandlerThread:85382 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-10 08:07:17,635 DEBUG   SenderThread:85382 [sender.py:send():382] send: history
+2024-03-10 08:07:17,635 DEBUG   SenderThread:85382 [sender.py:send_request():409] send_request: summary_record
+2024-03-10 08:07:17,635 INFO    SenderThread:85382 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-03-10 08:07:17,768 INFO    Thread-13 :85382 [dir_watcher.py:_on_file_created():271] file/dir created: /Users/yunbo/Documents/GitHub/PFL_Optimiozation/Model_training/9_clusters/wandb/run-20240310_080708-t3izyq67/files/wandb-summary.json
+2024-03-10 08:07:18,255 DEBUG   HandlerThread:85382 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-10 08:07:18,256 DEBUG   SenderThread:85382 [sender.py:send():382] send: history
+2024-03-10 08:07:18,256 DEBUG   SenderThread:85382 [sender.py:send_request():409] send_request: summary_record
+2024-03-10 08:07:18,256 INFO    SenderThread:85382 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-03-10 08:07:18,769 INFO    Thread-13 :85382 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/yunbo/Documents/GitHub/PFL_Optimiozation/Model_training/9_clusters/wandb/run-20240310_080708-t3izyq67/files/wandb-summary.json
+2024-03-10 08:07:18,769 INFO    Thread-13 :85382 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/yunbo/Documents/GitHub/PFL_Optimiozation/Model_training/9_clusters/wandb/run-20240310_080708-t3izyq67/files/output.log
+2024-03-10 08:07:18,855 DEBUG   HandlerThread:85382 [handler.py:handle_request():146] handle_request: status_report
+2024-03-10 08:07:18,856 DEBUG   HandlerThread:85382 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-10 08:07:18,857 DEBUG   SenderThread:85382 [sender.py:send():382] send: history
+2024-03-10 08:07:18,857 DEBUG   SenderThread:85382 [sender.py:send_request():409] send_request: summary_record
+2024-03-10 08:07:18,857 INFO    SenderThread:85382 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-03-10 08:07:19,438 DEBUG   HandlerThread:85382 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-10 08:07:19,439 DEBUG   SenderThread:85382 [sender.py:send():382] send: history
+2024-03-10 08:07:19,439 DEBUG   SenderThread:85382 [sender.py:send_request():409] send_request: summary_record
+2024-03-10 08:07:19,440 INFO    SenderThread:85382 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-03-10 08:07:19,774 INFO    Thread-13 :85382 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/yunbo/Documents/GitHub/PFL_Optimiozation/Model_training/9_clusters/wandb/run-20240310_080708-t3izyq67/files/wandb-summary.json
+2024-03-10 08:07:20,023 DEBUG   HandlerThread:85382 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-10 08:07:20,024 DEBUG   SenderThread:85382 [sender.py:send():382] send: history
+2024-03-10 08:07:20,025 DEBUG   SenderThread:85382 [sender.py:send_request():409] send_request: summary_record
+2024-03-10 08:07:20,025 INFO    SenderThread:85382 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-03-10 08:07:20,625 DEBUG   HandlerThread:85382 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-10 08:07:20,625 DEBUG   SenderThread:85382 [sender.py:send():382] send: history
+2024-03-10 08:07:20,625 DEBUG   SenderThread:85382 [sender.py:send_request():409] send_request: summary_record
+2024-03-10 08:07:20,626 INFO    SenderThread:85382 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-03-10 08:07:20,779 INFO    Thread-13 :85382 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/yunbo/Documents/GitHub/PFL_Optimiozation/Model_training/9_clusters/wandb/run-20240310_080708-t3izyq67/files/wandb-summary.json
+2024-03-10 08:07:20,780 INFO    Thread-13 :85382 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/yunbo/Documents/GitHub/PFL_Optimiozation/Model_training/9_clusters/wandb/run-20240310_080708-t3izyq67/files/output.log
+2024-03-10 08:07:21,253 DEBUG   HandlerThread:85382 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-10 08:07:21,256 DEBUG   SenderThread:85382 [sender.py:send():382] send: history
+2024-03-10 08:07:21,256 DEBUG   SenderThread:85382 [sender.py:send_request():409] send_request: summary_record
+2024-03-10 08:07:21,256 INFO    SenderThread:85382 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-03-10 08:07:21,785 INFO    Thread-13 :85382 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/yunbo/Documents/GitHub/PFL_Optimiozation/Model_training/9_clusters/wandb/run-20240310_080708-t3izyq67/files/wandb-summary.json
+2024-03-10 08:07:21,914 DEBUG   HandlerThread:85382 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-10 08:07:21,914 DEBUG   SenderThread:85382 [sender.py:send():382] send: history
+2024-03-10 08:07:21,915 DEBUG   SenderThread:85382 [sender.py:send_request():409] send_request: summary_record
+2024-03-10 08:07:21,916 INFO    SenderThread:85382 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-03-10 08:07:22,539 DEBUG   HandlerThread:85382 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-10 08:07:22,540 DEBUG   SenderThread:85382 [sender.py:send():382] send: history
+2024-03-10 08:07:22,540 DEBUG   SenderThread:85382 [sender.py:send_request():409] send_request: summary_record
+2024-03-10 08:07:22,540 INFO    SenderThread:85382 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-03-10 08:07:22,790 INFO    Thread-13 :85382 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/yunbo/Documents/GitHub/PFL_Optimiozation/Model_training/9_clusters/wandb/run-20240310_080708-t3izyq67/files/wandb-summary.json
+2024-03-10 08:07:22,790 INFO    Thread-13 :85382 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/yunbo/Documents/GitHub/PFL_Optimiozation/Model_training/9_clusters/wandb/run-20240310_080708-t3izyq67/files/output.log
+2024-03-10 08:07:23,205 DEBUG   HandlerThread:85382 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-10 08:07:23,206 DEBUG   SenderThread:85382 [sender.py:send():382] send: history
+2024-03-10 08:07:23,206 DEBUG   SenderThread:85382 [sender.py:send_request():409] send_request: summary_record
+2024-03-10 08:07:23,206 INFO    SenderThread:85382 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-03-10 08:07:23,795 INFO    Thread-13 :85382 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/yunbo/Documents/GitHub/PFL_Optimiozation/Model_training/9_clusters/wandb/run-20240310_080708-t3izyq67/files/wandb-summary.json
+2024-03-10 08:07:23,839 DEBUG   HandlerThread:85382 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-10 08:07:23,841 DEBUG   SenderThread:85382 [sender.py:send():382] send: history
+2024-03-10 08:07:23,841 DEBUG   SenderThread:85382 [sender.py:send_request():409] send_request: summary_record
+2024-03-10 08:07:23,841 INFO    SenderThread:85382 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-03-10 08:07:23,938 DEBUG   HandlerThread:85382 [handler.py:handle_request():146] handle_request: status_report
+2024-03-10 08:07:24,737 DEBUG   HandlerThread:85382 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-10 08:07:24,738 DEBUG   SenderThread:85382 [sender.py:send():382] send: history
+2024-03-10 08:07:24,738 DEBUG   SenderThread:85382 [sender.py:send_request():409] send_request: summary_record
+2024-03-10 08:07:24,738 INFO    SenderThread:85382 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-03-10 08:07:24,800 INFO    Thread-13 :85382 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/yunbo/Documents/GitHub/PFL_Optimiozation/Model_training/9_clusters/wandb/run-20240310_080708-t3izyq67/files/wandb-summary.json
+2024-03-10 08:07:24,801 INFO    Thread-13 :85382 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/yunbo/Documents/GitHub/PFL_Optimiozation/Model_training/9_clusters/wandb/run-20240310_080708-t3izyq67/files/output.log
+2024-03-10 08:07:25,370 DEBUG   HandlerThread:85382 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-10 08:07:25,371 DEBUG   SenderThread:85382 [sender.py:send():382] send: history
+2024-03-10 08:07:25,371 DEBUG   SenderThread:85382 [sender.py:send_request():409] send_request: summary_record
+2024-03-10 08:07:25,372 INFO    SenderThread:85382 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-03-10 08:07:25,806 INFO    Thread-13 :85382 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/yunbo/Documents/GitHub/PFL_Optimiozation/Model_training/9_clusters/wandb/run-20240310_080708-t3izyq67/files/wandb-summary.json
+2024-03-10 08:07:26,216 DEBUG   HandlerThread:85382 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-10 08:07:26,217 DEBUG   SenderThread:85382 [sender.py:send():382] send: history
+2024-03-10 08:07:26,217 DEBUG   SenderThread:85382 [sender.py:send_request():409] send_request: summary_record
+2024-03-10 08:07:26,218 INFO    SenderThread:85382 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-03-10 08:07:26,811 INFO    Thread-13 :85382 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/yunbo/Documents/GitHub/PFL_Optimiozation/Model_training/9_clusters/wandb/run-20240310_080708-t3izyq67/files/wandb-summary.json
+2024-03-10 08:07:26,811 INFO    Thread-13 :85382 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/yunbo/Documents/GitHub/PFL_Optimiozation/Model_training/9_clusters/wandb/run-20240310_080708-t3izyq67/files/output.log
+2024-03-10 08:07:26,991 DEBUG   HandlerThread:85382 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-10 08:07:26,993 DEBUG   SenderThread:85382 [sender.py:send():382] send: history
+2024-03-10 08:07:26,993 DEBUG   SenderThread:85382 [sender.py:send_request():409] send_request: summary_record
+2024-03-10 08:07:26,993 INFO    SenderThread:85382 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-03-10 08:07:27,683 DEBUG   HandlerThread:85382 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-10 08:07:27,684 DEBUG   SenderThread:85382 [sender.py:send():382] send: history
+2024-03-10 08:07:27,684 DEBUG   SenderThread:85382 [sender.py:send_request():409] send_request: summary_record
+2024-03-10 08:07:27,685 INFO    SenderThread:85382 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-03-10 08:07:27,816 INFO    Thread-13 :85382 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/yunbo/Documents/GitHub/PFL_Optimiozation/Model_training/9_clusters/wandb/run-20240310_080708-t3izyq67/files/wandb-summary.json
+2024-03-10 08:07:28,311 DEBUG   HandlerThread:85382 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-10 08:07:28,312 DEBUG   SenderThread:85382 [sender.py:send():382] send: history
+2024-03-10 08:07:28,312 DEBUG   SenderThread:85382 [sender.py:send_request():409] send_request: summary_record
+2024-03-10 08:07:28,313 INFO    SenderThread:85382 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-03-10 08:07:28,818 INFO    Thread-13 :85382 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/yunbo/Documents/GitHub/PFL_Optimiozation/Model_training/9_clusters/wandb/run-20240310_080708-t3izyq67/files/wandb-summary.json
+2024-03-10 08:07:28,818 INFO    Thread-13 :85382 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/yunbo/Documents/GitHub/PFL_Optimiozation/Model_training/9_clusters/wandb/run-20240310_080708-t3izyq67/files/output.log
+2024-03-10 08:07:28,921 DEBUG   HandlerThread:85382 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-10 08:07:28,922 DEBUG   SenderThread:85382 [sender.py:send():382] send: history
+2024-03-10 08:07:28,922 DEBUG   SenderThread:85382 [sender.py:send_request():409] send_request: summary_record
+2024-03-10 08:07:28,922 INFO    SenderThread:85382 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-03-10 08:07:29,511 DEBUG   HandlerThread:85382 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-10 08:07:29,513 DEBUG   HandlerThread:85382 [handler.py:handle_request():146] handle_request: status_report
+2024-03-10 08:07:29,513 DEBUG   SenderThread:85382 [sender.py:send():382] send: history
+2024-03-10 08:07:29,513 DEBUG   SenderThread:85382 [sender.py:send_request():409] send_request: summary_record
+2024-03-10 08:07:29,514 INFO    SenderThread:85382 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-03-10 08:07:29,823 INFO    Thread-13 :85382 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/yunbo/Documents/GitHub/PFL_Optimiozation/Model_training/9_clusters/wandb/run-20240310_080708-t3izyq67/files/wandb-summary.json
+2024-03-10 08:07:30,094 DEBUG   HandlerThread:85382 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-10 08:07:30,095 DEBUG   SenderThread:85382 [sender.py:send():382] send: history
+2024-03-10 08:07:30,096 DEBUG   SenderThread:85382 [sender.py:send_request():409] send_request: summary_record
+2024-03-10 08:07:30,096 INFO    SenderThread:85382 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-03-10 08:07:30,630 DEBUG   HandlerThread:85382 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-10 08:07:30,632 DEBUG   SenderThread:85382 [sender.py:send():382] send: history
+2024-03-10 08:07:30,632 DEBUG   SenderThread:85382 [sender.py:send_request():409] send_request: summary_record
+2024-03-10 08:07:30,633 INFO    SenderThread:85382 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-03-10 08:07:30,764 DEBUG   HandlerThread:85382 [handler.py:handle_request():146] handle_request: internal_messages
+2024-03-10 08:07:30,767 DEBUG   HandlerThread:85382 [handler.py:handle_request():146] handle_request: stop_status
+2024-03-10 08:07:30,768 DEBUG   SenderThread:85382 [sender.py:send_request():409] send_request: stop_status
+2024-03-10 08:07:30,828 INFO    Thread-13 :85382 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/yunbo/Documents/GitHub/PFL_Optimiozation/Model_training/9_clusters/wandb/run-20240310_080708-t3izyq67/files/wandb-summary.json
+2024-03-10 08:07:30,828 INFO    Thread-13 :85382 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/yunbo/Documents/GitHub/PFL_Optimiozation/Model_training/9_clusters/wandb/run-20240310_080708-t3izyq67/files/output.log
+2024-03-10 08:07:31,231 DEBUG   HandlerThread:85382 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-10 08:07:31,231 DEBUG   SenderThread:85382 [sender.py:send():382] send: history
+2024-03-10 08:07:31,232 DEBUG   SenderThread:85382 [sender.py:send_request():409] send_request: summary_record
+2024-03-10 08:07:31,232 INFO    SenderThread:85382 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-03-10 08:07:31,790 DEBUG   HandlerThread:85382 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-10 08:07:31,791 DEBUG   SenderThread:85382 [sender.py:send():382] send: history
+2024-03-10 08:07:31,792 DEBUG   SenderThread:85382 [sender.py:send_request():409] send_request: summary_record
+2024-03-10 08:07:31,792 INFO    SenderThread:85382 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-03-10 08:07:31,831 INFO    Thread-13 :85382 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/yunbo/Documents/GitHub/PFL_Optimiozation/Model_training/9_clusters/wandb/run-20240310_080708-t3izyq67/files/wandb-summary.json
+2024-03-10 08:07:32,473 DEBUG   HandlerThread:85382 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-10 08:07:32,473 DEBUG   SenderThread:85382 [sender.py:send():382] send: history
+2024-03-10 08:07:32,473 DEBUG   SenderThread:85382 [sender.py:send_request():409] send_request: summary_record
+2024-03-10 08:07:32,474 INFO    SenderThread:85382 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-03-10 08:07:32,837 INFO    Thread-13 :85382 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/yunbo/Documents/GitHub/PFL_Optimiozation/Model_training/9_clusters/wandb/run-20240310_080708-t3izyq67/files/wandb-summary.json
+2024-03-10 08:07:32,837 INFO    Thread-13 :85382 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/yunbo/Documents/GitHub/PFL_Optimiozation/Model_training/9_clusters/wandb/run-20240310_080708-t3izyq67/files/output.log
+2024-03-10 08:07:33,048 DEBUG   HandlerThread:85382 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-10 08:07:33,050 DEBUG   SenderThread:85382 [sender.py:send():382] send: history
+2024-03-10 08:07:33,050 DEBUG   SenderThread:85382 [sender.py:send_request():409] send_request: summary_record
+2024-03-10 08:07:33,051 INFO    SenderThread:85382 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-03-10 08:07:33,728 DEBUG   HandlerThread:85382 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-10 08:07:33,730 DEBUG   SenderThread:85382 [sender.py:send():382] send: history
+2024-03-10 08:07:33,730 DEBUG   SenderThread:85382 [sender.py:send_request():409] send_request: summary_record
+2024-03-10 08:07:33,730 INFO    SenderThread:85382 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-03-10 08:07:33,839 INFO    Thread-13 :85382 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/yunbo/Documents/GitHub/PFL_Optimiozation/Model_training/9_clusters/wandb/run-20240310_080708-t3izyq67/files/wandb-summary.json
+2024-03-10 08:07:34,247 DEBUG   HandlerThread:85382 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-10 08:07:34,249 DEBUG   SenderThread:85382 [sender.py:send():382] send: history
+2024-03-10 08:07:34,250 DEBUG   SenderThread:85382 [sender.py:send_request():409] send_request: summary_record
+2024-03-10 08:07:34,250 INFO    SenderThread:85382 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-03-10 08:07:34,556 DEBUG   HandlerThread:85382 [handler.py:handle_request():146] handle_request: status_report
+2024-03-10 08:07:34,839 DEBUG   HandlerThread:85382 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-10 08:07:34,840 DEBUG   SenderThread:85382 [sender.py:send():382] send: history
+2024-03-10 08:07:34,840 DEBUG   SenderThread:85382 [sender.py:send_request():409] send_request: summary_record
+2024-03-10 08:07:34,840 INFO    SenderThread:85382 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-03-10 08:07:34,844 INFO    Thread-13 :85382 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/yunbo/Documents/GitHub/PFL_Optimiozation/Model_training/9_clusters/wandb/run-20240310_080708-t3izyq67/files/wandb-summary.json
+2024-03-10 08:07:34,844 INFO    Thread-13 :85382 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/yunbo/Documents/GitHub/PFL_Optimiozation/Model_training/9_clusters/wandb/run-20240310_080708-t3izyq67/files/output.log
+2024-03-10 08:07:35,423 DEBUG   HandlerThread:85382 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-10 08:07:35,426 DEBUG   SenderThread:85382 [sender.py:send():382] send: history
+2024-03-10 08:07:35,426 DEBUG   SenderThread:85382 [sender.py:send_request():409] send_request: summary_record
+2024-03-10 08:07:35,427 INFO    SenderThread:85382 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-03-10 08:07:35,848 INFO    Thread-13 :85382 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/yunbo/Documents/GitHub/PFL_Optimiozation/Model_training/9_clusters/wandb/run-20240310_080708-t3izyq67/files/wandb-summary.json
+2024-03-10 08:07:36,041 DEBUG   HandlerThread:85382 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-10 08:07:36,041 DEBUG   SenderThread:85382 [sender.py:send():382] send: history
+2024-03-10 08:07:36,041 DEBUG   SenderThread:85382 [sender.py:send_request():409] send_request: summary_record
+2024-03-10 08:07:36,041 INFO    SenderThread:85382 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-03-10 08:07:36,552 DEBUG   HandlerThread:85382 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-10 08:07:36,554 DEBUG   SenderThread:85382 [sender.py:send():382] send: history
+2024-03-10 08:07:36,554 DEBUG   SenderThread:85382 [sender.py:send_request():409] send_request: summary_record
+2024-03-10 08:07:36,555 INFO    SenderThread:85382 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-03-10 08:07:36,853 INFO    Thread-13 :85382 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/yunbo/Documents/GitHub/PFL_Optimiozation/Model_training/9_clusters/wandb/run-20240310_080708-t3izyq67/files/wandb-summary.json
+2024-03-10 08:07:36,853 INFO    Thread-13 :85382 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/yunbo/Documents/GitHub/PFL_Optimiozation/Model_training/9_clusters/wandb/run-20240310_080708-t3izyq67/files/output.log
+2024-03-10 08:07:37,158 DEBUG   HandlerThread:85382 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-10 08:07:37,158 DEBUG   SenderThread:85382 [sender.py:send():382] send: history
+2024-03-10 08:07:37,159 DEBUG   SenderThread:85382 [sender.py:send_request():409] send_request: summary_record
+2024-03-10 08:07:37,159 INFO    SenderThread:85382 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-03-10 08:07:37,770 DEBUG   HandlerThread:85382 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-10 08:07:37,771 DEBUG   SenderThread:85382 [sender.py:send():382] send: history
+2024-03-10 08:07:37,771 DEBUG   SenderThread:85382 [sender.py:send_request():409] send_request: summary_record
+2024-03-10 08:07:37,772 INFO    SenderThread:85382 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-03-10 08:07:37,858 INFO    Thread-13 :85382 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/yunbo/Documents/GitHub/PFL_Optimiozation/Model_training/9_clusters/wandb/run-20240310_080708-t3izyq67/files/wandb-summary.json
+2024-03-10 08:07:38,401 DEBUG   HandlerThread:85382 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-10 08:07:38,402 DEBUG   SenderThread:85382 [sender.py:send():382] send: history
+2024-03-10 08:07:38,402 DEBUG   SenderThread:85382 [sender.py:send_request():409] send_request: summary_record
+2024-03-10 08:07:38,402 INFO    SenderThread:85382 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-03-10 08:07:38,861 INFO    Thread-13 :85382 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/yunbo/Documents/GitHub/PFL_Optimiozation/Model_training/9_clusters/wandb/run-20240310_080708-t3izyq67/files/wandb-summary.json
+2024-03-10 08:07:38,861 INFO    Thread-13 :85382 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/yunbo/Documents/GitHub/PFL_Optimiozation/Model_training/9_clusters/wandb/run-20240310_080708-t3izyq67/files/output.log
+2024-03-10 08:07:38,936 DEBUG   HandlerThread:85382 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-10 08:07:38,938 DEBUG   SenderThread:85382 [sender.py:send():382] send: history
+2024-03-10 08:07:38,938 DEBUG   SenderThread:85382 [sender.py:send_request():409] send_request: summary_record
+2024-03-10 08:07:38,938 INFO    SenderThread:85382 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-03-10 08:07:39,522 DEBUG   HandlerThread:85382 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-10 08:07:39,523 DEBUG   SenderThread:85382 [sender.py:send():382] send: history
+2024-03-10 08:07:39,523 DEBUG   SenderThread:85382 [sender.py:send_request():409] send_request: summary_record
+2024-03-10 08:07:39,523 INFO    SenderThread:85382 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-03-10 08:07:39,866 INFO    Thread-13 :85382 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/yunbo/Documents/GitHub/PFL_Optimiozation/Model_training/9_clusters/wandb/run-20240310_080708-t3izyq67/files/wandb-summary.json
+2024-03-10 08:07:40,070 DEBUG   HandlerThread:85382 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-10 08:07:40,074 DEBUG   HandlerThread:85382 [handler.py:handle_request():146] handle_request: status_report
+2024-03-10 08:07:40,242 DEBUG   SenderThread:85382 [sender.py:send():382] send: history
+2024-03-10 08:07:40,242 DEBUG   SenderThread:85382 [sender.py:send_request():409] send_request: summary_record
+2024-03-10 08:07:40,242 INFO    SenderThread:85382 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-03-10 08:07:40,632 DEBUG   HandlerThread:85382 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-10 08:07:40,633 DEBUG   SenderThread:85382 [sender.py:send():382] send: history
+2024-03-10 08:07:40,633 DEBUG   SenderThread:85382 [sender.py:send_request():409] send_request: summary_record
+2024-03-10 08:07:40,633 INFO    SenderThread:85382 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-03-10 08:07:40,871 INFO    Thread-13 :85382 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/yunbo/Documents/GitHub/PFL_Optimiozation/Model_training/9_clusters/wandb/run-20240310_080708-t3izyq67/files/config.yaml
+2024-03-10 08:07:40,871 INFO    Thread-13 :85382 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/yunbo/Documents/GitHub/PFL_Optimiozation/Model_training/9_clusters/wandb/run-20240310_080708-t3izyq67/files/wandb-summary.json
+2024-03-10 08:07:40,871 INFO    Thread-13 :85382 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/yunbo/Documents/GitHub/PFL_Optimiozation/Model_training/9_clusters/wandb/run-20240310_080708-t3izyq67/files/output.log
+2024-03-10 08:07:41,158 DEBUG   HandlerThread:85382 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-10 08:07:41,159 DEBUG   SenderThread:85382 [sender.py:send():382] send: history
+2024-03-10 08:07:41,159 DEBUG   SenderThread:85382 [sender.py:send_request():409] send_request: summary_record
+2024-03-10 08:07:41,160 INFO    SenderThread:85382 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-03-10 08:07:41,775 DEBUG   HandlerThread:85382 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-10 08:07:41,776 DEBUG   SenderThread:85382 [sender.py:send():382] send: history
+2024-03-10 08:07:41,776 DEBUG   SenderThread:85382 [sender.py:send_request():409] send_request: summary_record
+2024-03-10 08:07:41,777 INFO    SenderThread:85382 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-03-10 08:07:41,874 INFO    Thread-13 :85382 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/yunbo/Documents/GitHub/PFL_Optimiozation/Model_training/9_clusters/wandb/run-20240310_080708-t3izyq67/files/wandb-summary.json
+2024-03-10 08:07:42,311 DEBUG   HandlerThread:85382 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-10 08:07:42,312 DEBUG   SenderThread:85382 [sender.py:send():382] send: history
+2024-03-10 08:07:42,312 DEBUG   SenderThread:85382 [sender.py:send_request():409] send_request: summary_record
+2024-03-10 08:07:42,313 INFO    SenderThread:85382 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-03-10 08:07:42,875 INFO    Thread-13 :85382 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/yunbo/Documents/GitHub/PFL_Optimiozation/Model_training/9_clusters/wandb/run-20240310_080708-t3izyq67/files/wandb-summary.json
+2024-03-10 08:07:42,876 INFO    Thread-13 :85382 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/yunbo/Documents/GitHub/PFL_Optimiozation/Model_training/9_clusters/wandb/run-20240310_080708-t3izyq67/files/output.log
+2024-03-10 08:07:42,992 DEBUG   HandlerThread:85382 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-10 08:07:42,993 DEBUG   SenderThread:85382 [sender.py:send():382] send: history
+2024-03-10 08:07:42,993 DEBUG   SenderThread:85382 [sender.py:send_request():409] send_request: summary_record
+2024-03-10 08:07:42,993 INFO    SenderThread:85382 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-03-10 08:07:43,486 DEBUG   HandlerThread:85382 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-10 08:07:43,487 DEBUG   SenderThread:85382 [sender.py:send():382] send: history
+2024-03-10 08:07:43,488 DEBUG   SenderThread:85382 [sender.py:send_request():409] send_request: summary_record
+2024-03-10 08:07:43,488 INFO    SenderThread:85382 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-03-10 08:07:43,880 INFO    Thread-13 :85382 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/yunbo/Documents/GitHub/PFL_Optimiozation/Model_training/9_clusters/wandb/run-20240310_080708-t3izyq67/files/wandb-summary.json
+2024-03-10 08:07:44,255 DEBUG   HandlerThread:85382 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-10 08:07:44,257 DEBUG   SenderThread:85382 [sender.py:send():382] send: history
+2024-03-10 08:07:44,257 DEBUG   SenderThread:85382 [sender.py:send_request():409] send_request: summary_record
+2024-03-10 08:07:44,257 INFO    SenderThread:85382 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-03-10 08:07:44,768 DEBUG   HandlerThread:85382 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-10 08:07:44,770 DEBUG   SenderThread:85382 [sender.py:send():382] send: history
+2024-03-10 08:07:44,770 DEBUG   SenderThread:85382 [sender.py:send_request():409] send_request: summary_record
+2024-03-10 08:07:44,771 INFO    SenderThread:85382 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-03-10 08:07:44,886 INFO    Thread-13 :85382 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/yunbo/Documents/GitHub/PFL_Optimiozation/Model_training/9_clusters/wandb/run-20240310_080708-t3izyq67/files/wandb-summary.json
+2024-03-10 08:07:44,886 INFO    Thread-13 :85382 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/yunbo/Documents/GitHub/PFL_Optimiozation/Model_training/9_clusters/wandb/run-20240310_080708-t3izyq67/files/output.log
+2024-03-10 08:07:45,286 DEBUG   HandlerThread:85382 [handler.py:handle_request():146] handle_request: status_report
+2024-03-10 08:07:45,397 DEBUG   HandlerThread:85382 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-10 08:07:45,397 DEBUG   SenderThread:85382 [sender.py:send():382] send: history
+2024-03-10 08:07:45,398 DEBUG   SenderThread:85382 [sender.py:send_request():409] send_request: summary_record
+2024-03-10 08:07:45,398 INFO    SenderThread:85382 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-03-10 08:07:45,765 DEBUG   HandlerThread:85382 [handler.py:handle_request():146] handle_request: internal_messages
+2024-03-10 08:07:45,770 DEBUG   HandlerThread:85382 [handler.py:handle_request():146] handle_request: stop_status
+2024-03-10 08:07:45,771 DEBUG   SenderThread:85382 [sender.py:send_request():409] send_request: stop_status
+2024-03-10 08:07:45,891 INFO    Thread-13 :85382 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/yunbo/Documents/GitHub/PFL_Optimiozation/Model_training/9_clusters/wandb/run-20240310_080708-t3izyq67/files/wandb-summary.json
+2024-03-10 08:07:45,916 DEBUG   HandlerThread:85382 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-10 08:07:45,951 DEBUG   SenderThread:85382 [sender.py:send():382] send: history
+2024-03-10 08:07:45,951 DEBUG   SenderThread:85382 [sender.py:send_request():409] send_request: summary_record
+2024-03-10 08:07:45,951 INFO    SenderThread:85382 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-03-10 08:07:46,503 DEBUG   HandlerThread:85382 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-10 08:07:46,503 DEBUG   SenderThread:85382 [sender.py:send():382] send: history
+2024-03-10 08:07:46,503 DEBUG   SenderThread:85382 [sender.py:send_request():409] send_request: summary_record
+2024-03-10 08:07:46,503 INFO    SenderThread:85382 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-03-10 08:07:46,894 INFO    Thread-13 :85382 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/yunbo/Documents/GitHub/PFL_Optimiozation/Model_training/9_clusters/wandb/run-20240310_080708-t3izyq67/files/wandb-summary.json
+2024-03-10 08:07:46,894 INFO    Thread-13 :85382 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/yunbo/Documents/GitHub/PFL_Optimiozation/Model_training/9_clusters/wandb/run-20240310_080708-t3izyq67/files/output.log
+2024-03-10 08:07:47,014 DEBUG   HandlerThread:85382 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-10 08:07:47,015 DEBUG   SenderThread:85382 [sender.py:send():382] send: history
+2024-03-10 08:07:47,015 DEBUG   SenderThread:85382 [sender.py:send_request():409] send_request: summary_record
+2024-03-10 08:07:47,016 INFO    SenderThread:85382 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-03-10 08:07:47,607 DEBUG   HandlerThread:85382 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-10 08:07:47,608 DEBUG   SenderThread:85382 [sender.py:send():382] send: history
+2024-03-10 08:07:47,608 DEBUG   SenderThread:85382 [sender.py:send_request():409] send_request: summary_record
+2024-03-10 08:07:47,609 INFO    SenderThread:85382 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-03-10 08:07:47,896 INFO    Thread-13 :85382 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/yunbo/Documents/GitHub/PFL_Optimiozation/Model_training/9_clusters/wandb/run-20240310_080708-t3izyq67/files/wandb-summary.json
+2024-03-10 08:07:48,173 DEBUG   HandlerThread:85382 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-10 08:07:48,175 DEBUG   SenderThread:85382 [sender.py:send():382] send: history
+2024-03-10 08:07:48,175 DEBUG   SenderThread:85382 [sender.py:send_request():409] send_request: summary_record
+2024-03-10 08:07:48,176 INFO    SenderThread:85382 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-03-10 08:07:48,895 DEBUG   HandlerThread:85382 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-10 08:07:48,895 DEBUG   SenderThread:85382 [sender.py:send():382] send: history
+2024-03-10 08:07:48,895 DEBUG   SenderThread:85382 [sender.py:send_request():409] send_request: summary_record
+2024-03-10 08:07:48,896 INFO    SenderThread:85382 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-03-10 08:07:48,901 INFO    Thread-13 :85382 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/yunbo/Documents/GitHub/PFL_Optimiozation/Model_training/9_clusters/wandb/run-20240310_080708-t3izyq67/files/wandb-summary.json
+2024-03-10 08:07:48,901 INFO    Thread-13 :85382 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/yunbo/Documents/GitHub/PFL_Optimiozation/Model_training/9_clusters/wandb/run-20240310_080708-t3izyq67/files/output.log
+2024-03-10 08:07:49,469 DEBUG   HandlerThread:85382 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-10 08:07:49,471 DEBUG   SenderThread:85382 [sender.py:send():382] send: history
+2024-03-10 08:07:49,472 DEBUG   SenderThread:85382 [sender.py:send_request():409] send_request: summary_record
+2024-03-10 08:07:49,472 INFO    SenderThread:85382 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-03-10 08:07:49,906 INFO    Thread-13 :85382 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/yunbo/Documents/GitHub/PFL_Optimiozation/Model_training/9_clusters/wandb/run-20240310_080708-t3izyq67/files/wandb-summary.json
+2024-03-10 08:07:50,057 DEBUG   HandlerThread:85382 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-10 08:07:50,058 DEBUG   SenderThread:85382 [sender.py:send():382] send: history
+2024-03-10 08:07:50,058 DEBUG   SenderThread:85382 [sender.py:send_request():409] send_request: summary_record
+2024-03-10 08:07:50,058 INFO    SenderThread:85382 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-03-10 08:07:50,578 DEBUG   HandlerThread:85382 [handler.py:handle_request():146] handle_request: status_report
+2024-03-10 08:07:50,579 DEBUG   HandlerThread:85382 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-10 08:07:50,580 DEBUG   SenderThread:85382 [sender.py:send():382] send: history
+2024-03-10 08:07:50,581 DEBUG   SenderThread:85382 [sender.py:send_request():409] send_request: summary_record
+2024-03-10 08:07:50,581 INFO    SenderThread:85382 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-03-10 08:07:50,912 INFO    Thread-13 :85382 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/yunbo/Documents/GitHub/PFL_Optimiozation/Model_training/9_clusters/wandb/run-20240310_080708-t3izyq67/files/wandb-summary.json
+2024-03-10 08:07:50,912 INFO    Thread-13 :85382 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/yunbo/Documents/GitHub/PFL_Optimiozation/Model_training/9_clusters/wandb/run-20240310_080708-t3izyq67/files/output.log
+2024-03-10 08:07:51,173 DEBUG   HandlerThread:85382 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-10 08:07:51,174 DEBUG   SenderThread:85382 [sender.py:send():382] send: history
+2024-03-10 08:07:51,175 DEBUG   SenderThread:85382 [sender.py:send_request():409] send_request: summary_record
+2024-03-10 08:07:51,175 INFO    SenderThread:85382 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-03-10 08:07:51,652 DEBUG   HandlerThread:85382 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-10 08:07:51,654 DEBUG   SenderThread:85382 [sender.py:send():382] send: history
+2024-03-10 08:07:51,654 DEBUG   SenderThread:85382 [sender.py:send_request():409] send_request: summary_record
+2024-03-10 08:07:51,655 INFO    SenderThread:85382 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-03-10 08:07:51,917 INFO    Thread-13 :85382 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/yunbo/Documents/GitHub/PFL_Optimiozation/Model_training/9_clusters/wandb/run-20240310_080708-t3izyq67/files/wandb-summary.json
+2024-03-10 08:07:52,249 DEBUG   HandlerThread:85382 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-10 08:07:52,249 DEBUG   SenderThread:85382 [sender.py:send():382] send: history
+2024-03-10 08:07:52,249 DEBUG   SenderThread:85382 [sender.py:send_request():409] send_request: summary_record
+2024-03-10 08:07:52,250 INFO    SenderThread:85382 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-03-10 08:07:52,755 DEBUG   HandlerThread:85382 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-10 08:07:52,757 DEBUG   SenderThread:85382 [sender.py:send():382] send: history
+2024-03-10 08:07:52,757 DEBUG   SenderThread:85382 [sender.py:send_request():409] send_request: summary_record
+2024-03-10 08:07:52,757 INFO    SenderThread:85382 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-03-10 08:07:52,921 INFO    Thread-13 :85382 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/yunbo/Documents/GitHub/PFL_Optimiozation/Model_training/9_clusters/wandb/run-20240310_080708-t3izyq67/files/wandb-summary.json
+2024-03-10 08:07:52,921 INFO    Thread-13 :85382 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/yunbo/Documents/GitHub/PFL_Optimiozation/Model_training/9_clusters/wandb/run-20240310_080708-t3izyq67/files/output.log
+2024-03-10 08:07:53,327 DEBUG   HandlerThread:85382 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-10 08:07:53,328 DEBUG   SenderThread:85382 [sender.py:send():382] send: history
+2024-03-10 08:07:53,328 DEBUG   SenderThread:85382 [sender.py:send_request():409] send_request: summary_record
+2024-03-10 08:07:53,329 INFO    SenderThread:85382 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-03-10 08:07:53,845 DEBUG   HandlerThread:85382 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-10 08:07:53,846 DEBUG   SenderThread:85382 [sender.py:send():382] send: history
+2024-03-10 08:07:53,847 DEBUG   SenderThread:85382 [sender.py:send_request():409] send_request: summary_record
+2024-03-10 08:07:53,847 INFO    SenderThread:85382 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-03-10 08:07:53,923 INFO    Thread-13 :85382 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/yunbo/Documents/GitHub/PFL_Optimiozation/Model_training/9_clusters/wandb/run-20240310_080708-t3izyq67/files/wandb-summary.json
+2024-03-10 08:07:54,422 DEBUG   HandlerThread:85382 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-10 08:07:54,423 DEBUG   SenderThread:85382 [sender.py:send():382] send: history
+2024-03-10 08:07:54,423 DEBUG   SenderThread:85382 [sender.py:send_request():409] send_request: summary_record
+2024-03-10 08:07:54,423 INFO    SenderThread:85382 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-03-10 08:07:54,924 INFO    Thread-13 :85382 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/yunbo/Documents/GitHub/PFL_Optimiozation/Model_training/9_clusters/wandb/run-20240310_080708-t3izyq67/files/wandb-summary.json
+2024-03-10 08:07:54,924 INFO    Thread-13 :85382 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/yunbo/Documents/GitHub/PFL_Optimiozation/Model_training/9_clusters/wandb/run-20240310_080708-t3izyq67/files/output.log
+2024-03-10 08:07:54,952 DEBUG   HandlerThread:85382 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-10 08:07:54,953 DEBUG   SenderThread:85382 [sender.py:send():382] send: history
+2024-03-10 08:07:54,954 DEBUG   SenderThread:85382 [sender.py:send_request():409] send_request: summary_record
+2024-03-10 08:07:54,954 INFO    SenderThread:85382 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-03-10 08:07:55,547 DEBUG   HandlerThread:85382 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-10 08:07:55,549 DEBUG   SenderThread:85382 [sender.py:send():382] send: history
+2024-03-10 08:07:55,549 DEBUG   SenderThread:85382 [sender.py:send_request():409] send_request: summary_record
+2024-03-10 08:07:55,549 INFO    SenderThread:85382 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-03-10 08:07:55,926 INFO    Thread-13 :85382 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/yunbo/Documents/GitHub/PFL_Optimiozation/Model_training/9_clusters/wandb/run-20240310_080708-t3izyq67/files/wandb-summary.json
+2024-03-10 08:07:56,034 DEBUG   HandlerThread:85382 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-10 08:07:56,037 DEBUG   HandlerThread:85382 [handler.py:handle_request():146] handle_request: status_report
+2024-03-10 08:07:56,037 DEBUG   SenderThread:85382 [sender.py:send():382] send: history
+2024-03-10 08:07:56,037 DEBUG   SenderThread:85382 [sender.py:send_request():409] send_request: summary_record
+2024-03-10 08:07:56,038 INFO    SenderThread:85382 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-03-10 08:07:56,671 DEBUG   HandlerThread:85382 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-10 08:07:56,671 DEBUG   SenderThread:85382 [sender.py:send():382] send: history
+2024-03-10 08:07:56,671 DEBUG   SenderThread:85382 [sender.py:send_request():409] send_request: summary_record
+2024-03-10 08:07:56,672 INFO    SenderThread:85382 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-03-10 08:07:56,930 INFO    Thread-13 :85382 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/yunbo/Documents/GitHub/PFL_Optimiozation/Model_training/9_clusters/wandb/run-20240310_080708-t3izyq67/files/wandb-summary.json
+2024-03-10 08:07:56,930 INFO    Thread-13 :85382 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/yunbo/Documents/GitHub/PFL_Optimiozation/Model_training/9_clusters/wandb/run-20240310_080708-t3izyq67/files/output.log
+2024-03-10 08:07:57,182 DEBUG   HandlerThread:85382 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-10 08:07:57,184 DEBUG   SenderThread:85382 [sender.py:send():382] send: history
+2024-03-10 08:07:57,184 DEBUG   SenderThread:85382 [sender.py:send_request():409] send_request: summary_record
+2024-03-10 08:07:57,184 INFO    SenderThread:85382 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-03-10 08:07:57,718 DEBUG   HandlerThread:85382 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-10 08:07:57,719 DEBUG   SenderThread:85382 [sender.py:send():382] send: history
+2024-03-10 08:07:57,719 DEBUG   SenderThread:85382 [sender.py:send_request():409] send_request: summary_record
+2024-03-10 08:07:57,720 INFO    SenderThread:85382 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-03-10 08:07:57,934 INFO    Thread-13 :85382 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/yunbo/Documents/GitHub/PFL_Optimiozation/Model_training/9_clusters/wandb/run-20240310_080708-t3izyq67/files/wandb-summary.json
+2024-03-10 08:07:58,249 DEBUG   HandlerThread:85382 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-10 08:07:58,250 DEBUG   SenderThread:85382 [sender.py:send():382] send: history
+2024-03-10 08:07:58,251 DEBUG   SenderThread:85382 [sender.py:send_request():409] send_request: summary_record
+2024-03-10 08:07:58,251 INFO    SenderThread:85382 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-03-10 08:07:58,832 DEBUG   HandlerThread:85382 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-10 08:07:58,833 DEBUG   SenderThread:85382 [sender.py:send():382] send: history
+2024-03-10 08:07:58,833 DEBUG   SenderThread:85382 [sender.py:send_request():409] send_request: summary_record
+2024-03-10 08:07:58,833 INFO    SenderThread:85382 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-03-10 08:07:58,935 INFO    Thread-13 :85382 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/yunbo/Documents/GitHub/PFL_Optimiozation/Model_training/9_clusters/wandb/run-20240310_080708-t3izyq67/files/wandb-summary.json
+2024-03-10 08:07:58,936 INFO    Thread-13 :85382 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/yunbo/Documents/GitHub/PFL_Optimiozation/Model_training/9_clusters/wandb/run-20240310_080708-t3izyq67/files/output.log
+2024-03-10 08:07:59,353 DEBUG   HandlerThread:85382 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-10 08:07:59,354 DEBUG   SenderThread:85382 [sender.py:send():382] send: history
+2024-03-10 08:07:59,354 DEBUG   SenderThread:85382 [sender.py:send_request():409] send_request: summary_record
+2024-03-10 08:07:59,354 INFO    SenderThread:85382 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-03-10 08:07:59,941 INFO    Thread-13 :85382 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/yunbo/Documents/GitHub/PFL_Optimiozation/Model_training/9_clusters/wandb/run-20240310_080708-t3izyq67/files/wandb-summary.json
+2024-03-10 08:07:59,961 DEBUG   HandlerThread:85382 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-10 08:07:59,962 DEBUG   SenderThread:85382 [sender.py:send():382] send: history
+2024-03-10 08:07:59,962 DEBUG   SenderThread:85382 [sender.py:send_request():409] send_request: summary_record
+2024-03-10 08:07:59,963 INFO    SenderThread:85382 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-03-10 08:08:00,446 DEBUG   HandlerThread:85382 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-10 08:08:00,448 DEBUG   SenderThread:85382 [sender.py:send():382] send: history
+2024-03-10 08:08:00,448 DEBUG   SenderThread:85382 [sender.py:send_request():409] send_request: summary_record
+2024-03-10 08:08:00,448 INFO    SenderThread:85382 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-03-10 08:08:00,766 DEBUG   HandlerThread:85382 [handler.py:handle_request():146] handle_request: internal_messages
+2024-03-10 08:08:00,771 DEBUG   HandlerThread:85382 [handler.py:handle_request():146] handle_request: stop_status
+2024-03-10 08:08:00,771 DEBUG   SenderThread:85382 [sender.py:send_request():409] send_request: stop_status
+2024-03-10 08:08:00,946 INFO    Thread-13 :85382 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/yunbo/Documents/GitHub/PFL_Optimiozation/Model_training/9_clusters/wandb/run-20240310_080708-t3izyq67/files/wandb-summary.json
+2024-03-10 08:08:00,947 INFO    Thread-13 :85382 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/yunbo/Documents/GitHub/PFL_Optimiozation/Model_training/9_clusters/wandb/run-20240310_080708-t3izyq67/files/output.log
+2024-03-10 08:08:01,042 DEBUG   HandlerThread:85382 [handler.py:handle_request():146] handle_request: status_report
+2024-03-10 08:08:01,042 DEBUG   HandlerThread:85382 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-10 08:08:01,043 DEBUG   SenderThread:85382 [sender.py:send():382] send: history
+2024-03-10 08:08:01,043 DEBUG   SenderThread:85382 [sender.py:send_request():409] send_request: summary_record
+2024-03-10 08:08:01,044 INFO    SenderThread:85382 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-03-10 08:08:01,585 DEBUG   HandlerThread:85382 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-10 08:08:01,587 DEBUG   SenderThread:85382 [sender.py:send():382] send: history
+2024-03-10 08:08:01,587 DEBUG   SenderThread:85382 [sender.py:send_request():409] send_request: summary_record
+2024-03-10 08:08:01,587 INFO    SenderThread:85382 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-03-10 08:08:01,951 INFO    Thread-13 :85382 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/yunbo/Documents/GitHub/PFL_Optimiozation/Model_training/9_clusters/wandb/run-20240310_080708-t3izyq67/files/wandb-summary.json
+2024-03-10 08:08:02,160 DEBUG   HandlerThread:85382 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-10 08:08:02,160 DEBUG   SenderThread:85382 [sender.py:send():382] send: history
+2024-03-10 08:08:02,160 DEBUG   SenderThread:85382 [sender.py:send_request():409] send_request: summary_record
+2024-03-10 08:08:02,161 INFO    SenderThread:85382 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-03-10 08:08:02,680 DEBUG   HandlerThread:85382 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-10 08:08:02,682 DEBUG   SenderThread:85382 [sender.py:send():382] send: history
+2024-03-10 08:08:02,682 DEBUG   SenderThread:85382 [sender.py:send_request():409] send_request: summary_record
+2024-03-10 08:08:02,682 INFO    SenderThread:85382 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-03-10 08:08:02,956 INFO    Thread-13 :85382 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/yunbo/Documents/GitHub/PFL_Optimiozation/Model_training/9_clusters/wandb/run-20240310_080708-t3izyq67/files/wandb-summary.json
+2024-03-10 08:08:02,956 INFO    Thread-13 :85382 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/yunbo/Documents/GitHub/PFL_Optimiozation/Model_training/9_clusters/wandb/run-20240310_080708-t3izyq67/files/output.log
+2024-03-10 08:08:03,278 DEBUG   HandlerThread:85382 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-10 08:08:03,279 DEBUG   SenderThread:85382 [sender.py:send():382] send: history
+2024-03-10 08:08:03,279 DEBUG   SenderThread:85382 [sender.py:send_request():409] send_request: summary_record
+2024-03-10 08:08:03,279 INFO    SenderThread:85382 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-03-10 08:08:03,770 DEBUG   HandlerThread:85382 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-10 08:08:03,773 DEBUG   SenderThread:85382 [sender.py:send():382] send: history
+2024-03-10 08:08:03,773 DEBUG   SenderThread:85382 [sender.py:send_request():409] send_request: summary_record
+2024-03-10 08:08:03,773 INFO    SenderThread:85382 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-03-10 08:08:03,959 INFO    Thread-13 :85382 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/yunbo/Documents/GitHub/PFL_Optimiozation/Model_training/9_clusters/wandb/run-20240310_080708-t3izyq67/files/wandb-summary.json
+2024-03-10 08:08:04,353 DEBUG   HandlerThread:85382 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-10 08:08:04,354 DEBUG   SenderThread:85382 [sender.py:send():382] send: history
+2024-03-10 08:08:04,354 DEBUG   SenderThread:85382 [sender.py:send_request():409] send_request: summary_record
+2024-03-10 08:08:04,354 INFO    SenderThread:85382 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-03-10 08:08:04,871 DEBUG   HandlerThread:85382 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-10 08:08:04,872 DEBUG   SenderThread:85382 [sender.py:send():382] send: history
+2024-03-10 08:08:04,872 DEBUG   SenderThread:85382 [sender.py:send_request():409] send_request: summary_record
+2024-03-10 08:08:04,873 INFO    SenderThread:85382 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-03-10 08:08:04,961 INFO    Thread-13 :85382 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/yunbo/Documents/GitHub/PFL_Optimiozation/Model_training/9_clusters/wandb/run-20240310_080708-t3izyq67/files/wandb-summary.json
+2024-03-10 08:08:04,961 INFO    Thread-13 :85382 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/yunbo/Documents/GitHub/PFL_Optimiozation/Model_training/9_clusters/wandb/run-20240310_080708-t3izyq67/files/output.log
+2024-03-10 08:08:05,506 DEBUG   HandlerThread:85382 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-10 08:08:05,507 DEBUG   SenderThread:85382 [sender.py:send():382] send: history
+2024-03-10 08:08:05,507 DEBUG   SenderThread:85382 [sender.py:send_request():409] send_request: summary_record
+2024-03-10 08:08:05,507 INFO    SenderThread:85382 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-03-10 08:08:05,963 INFO    Thread-13 :85382 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/yunbo/Documents/GitHub/PFL_Optimiozation/Model_training/9_clusters/wandb/run-20240310_080708-t3izyq67/files/wandb-summary.json
+2024-03-10 08:08:05,976 DEBUG   HandlerThread:85382 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-10 08:08:05,977 DEBUG   SenderThread:85382 [sender.py:send():382] send: history
+2024-03-10 08:08:05,978 DEBUG   SenderThread:85382 [sender.py:send_request():409] send_request: summary_record
+2024-03-10 08:08:05,978 INFO    SenderThread:85382 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-03-10 08:08:06,055 DEBUG   HandlerThread:85382 [handler.py:handle_request():146] handle_request: status_report
+2024-03-10 08:08:06,585 DEBUG   HandlerThread:85382 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-10 08:08:06,586 DEBUG   SenderThread:85382 [sender.py:send():382] send: history
+2024-03-10 08:08:06,586 DEBUG   SenderThread:85382 [sender.py:send_request():409] send_request: summary_record
+2024-03-10 08:08:06,586 INFO    SenderThread:85382 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-03-10 08:08:06,967 INFO    Thread-13 :85382 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/yunbo/Documents/GitHub/PFL_Optimiozation/Model_training/9_clusters/wandb/run-20240310_080708-t3izyq67/files/wandb-summary.json
+2024-03-10 08:08:06,967 INFO    Thread-13 :85382 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/yunbo/Documents/GitHub/PFL_Optimiozation/Model_training/9_clusters/wandb/run-20240310_080708-t3izyq67/files/output.log
+2024-03-10 08:08:07,058 DEBUG   HandlerThread:85382 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-10 08:08:07,060 DEBUG   SenderThread:85382 [sender.py:send():382] send: history
+2024-03-10 08:08:07,061 DEBUG   SenderThread:85382 [sender.py:send_request():409] send_request: summary_record
+2024-03-10 08:08:07,061 INFO    SenderThread:85382 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-03-10 08:08:07,640 DEBUG   HandlerThread:85382 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-10 08:08:07,641 DEBUG   SenderThread:85382 [sender.py:send():382] send: history
+2024-03-10 08:08:07,641 DEBUG   SenderThread:85382 [sender.py:send_request():409] send_request: summary_record
+2024-03-10 08:08:07,641 INFO    SenderThread:85382 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-03-10 08:08:07,973 INFO    Thread-13 :85382 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/yunbo/Documents/GitHub/PFL_Optimiozation/Model_training/9_clusters/wandb/run-20240310_080708-t3izyq67/files/wandb-summary.json
+2024-03-10 08:08:08,125 DEBUG   HandlerThread:85382 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-10 08:08:08,127 DEBUG   SenderThread:85382 [sender.py:send():382] send: history
+2024-03-10 08:08:08,127 DEBUG   SenderThread:85382 [sender.py:send_request():409] send_request: summary_record
+2024-03-10 08:08:08,127 INFO    SenderThread:85382 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-03-10 08:08:08,698 DEBUG   HandlerThread:85382 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-10 08:08:08,698 DEBUG   SenderThread:85382 [sender.py:send():382] send: history
+2024-03-10 08:08:08,698 DEBUG   SenderThread:85382 [sender.py:send_request():409] send_request: summary_record
+2024-03-10 08:08:08,699 INFO    SenderThread:85382 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-03-10 08:08:08,816 DEBUG   SystemMonitor:85382 [system_monitor.py:_start():172] Starting system metrics aggregation loop
+2024-03-10 08:08:08,817 DEBUG   SenderThread:85382 [sender.py:send():382] send: telemetry
+2024-03-10 08:08:08,817 DEBUG   SenderThread:85382 [sender.py:send():382] send: stats
+2024-03-10 08:08:08,978 INFO    Thread-13 :85382 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/yunbo/Documents/GitHub/PFL_Optimiozation/Model_training/9_clusters/wandb/run-20240310_080708-t3izyq67/files/wandb-summary.json
+2024-03-10 08:08:08,979 INFO    Thread-13 :85382 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/yunbo/Documents/GitHub/PFL_Optimiozation/Model_training/9_clusters/wandb/run-20240310_080708-t3izyq67/files/output.log
+2024-03-10 08:08:09,206 DEBUG   HandlerThread:85382 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-10 08:08:09,207 DEBUG   SenderThread:85382 [sender.py:send():382] send: history
+2024-03-10 08:08:09,207 DEBUG   SenderThread:85382 [sender.py:send_request():409] send_request: summary_record
+2024-03-10 08:08:09,208 INFO    SenderThread:85382 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-03-10 08:08:09,789 DEBUG   HandlerThread:85382 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-10 08:08:09,790 DEBUG   SenderThread:85382 [sender.py:send():382] send: history
+2024-03-10 08:08:09,790 DEBUG   SenderThread:85382 [sender.py:send_request():409] send_request: summary_record
+2024-03-10 08:08:09,790 INFO    SenderThread:85382 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-03-10 08:08:09,984 INFO    Thread-13 :85382 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/yunbo/Documents/GitHub/PFL_Optimiozation/Model_training/9_clusters/wandb/run-20240310_080708-t3izyq67/files/wandb-summary.json
+2024-03-10 08:08:10,315 DEBUG   HandlerThread:85382 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-10 08:08:10,317 DEBUG   SenderThread:85382 [sender.py:send():382] send: history
+2024-03-10 08:08:10,317 DEBUG   SenderThread:85382 [sender.py:send_request():409] send_request: summary_record
+2024-03-10 08:08:10,317 INFO    SenderThread:85382 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-03-10 08:08:10,947 DEBUG   HandlerThread:85382 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-10 08:08:10,948 DEBUG   SenderThread:85382 [sender.py:send():382] send: history
+2024-03-10 08:08:10,948 DEBUG   SenderThread:85382 [sender.py:send_request():409] send_request: summary_record
+2024-03-10 08:08:10,948 INFO    SenderThread:85382 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-03-10 08:08:10,985 INFO    Thread-13 :85382 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/yunbo/Documents/GitHub/PFL_Optimiozation/Model_training/9_clusters/wandb/run-20240310_080708-t3izyq67/files/wandb-summary.json
+2024-03-10 08:08:10,986 INFO    Thread-13 :85382 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/yunbo/Documents/GitHub/PFL_Optimiozation/Model_training/9_clusters/wandb/run-20240310_080708-t3izyq67/files/output.log
+2024-03-10 08:08:11,424 DEBUG   HandlerThread:85382 [handler.py:handle_request():146] handle_request: status_report
+2024-03-10 08:08:11,424 DEBUG   HandlerThread:85382 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-10 08:08:11,561 DEBUG   SenderThread:85382 [sender.py:send():382] send: history
+2024-03-10 08:08:11,561 DEBUG   SenderThread:85382 [sender.py:send_request():409] send_request: summary_record
+2024-03-10 08:08:11,561 INFO    SenderThread:85382 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-03-10 08:08:11,991 INFO    Thread-13 :85382 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/yunbo/Documents/GitHub/PFL_Optimiozation/Model_training/9_clusters/wandb/run-20240310_080708-t3izyq67/files/config.yaml
+2024-03-10 08:08:11,991 INFO    Thread-13 :85382 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/yunbo/Documents/GitHub/PFL_Optimiozation/Model_training/9_clusters/wandb/run-20240310_080708-t3izyq67/files/wandb-summary.json
+2024-03-10 08:08:12,030 DEBUG   HandlerThread:85382 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-10 08:08:12,031 DEBUG   SenderThread:85382 [sender.py:send():382] send: history
+2024-03-10 08:08:12,031 DEBUG   SenderThread:85382 [sender.py:send_request():409] send_request: summary_record
+2024-03-10 08:08:12,031 INFO    SenderThread:85382 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-03-10 08:08:12,503 DEBUG   HandlerThread:85382 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-10 08:08:12,505 DEBUG   SenderThread:85382 [sender.py:send():382] send: history
+2024-03-10 08:08:12,505 DEBUG   SenderThread:85382 [sender.py:send_request():409] send_request: summary_record
+2024-03-10 08:08:12,505 INFO    SenderThread:85382 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-03-10 08:08:12,993 INFO    Thread-13 :85382 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/yunbo/Documents/GitHub/PFL_Optimiozation/Model_training/9_clusters/wandb/run-20240310_080708-t3izyq67/files/wandb-summary.json
+2024-03-10 08:08:12,993 INFO    Thread-13 :85382 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/yunbo/Documents/GitHub/PFL_Optimiozation/Model_training/9_clusters/wandb/run-20240310_080708-t3izyq67/files/output.log
+2024-03-10 08:08:13,080 DEBUG   HandlerThread:85382 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-10 08:08:13,081 DEBUG   SenderThread:85382 [sender.py:send():382] send: history
+2024-03-10 08:08:13,081 DEBUG   SenderThread:85382 [sender.py:send_request():409] send_request: summary_record
+2024-03-10 08:08:13,081 INFO    SenderThread:85382 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-03-10 08:08:13,584 DEBUG   HandlerThread:85382 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-10 08:08:13,585 DEBUG   SenderThread:85382 [sender.py:send():382] send: history
+2024-03-10 08:08:13,586 DEBUG   SenderThread:85382 [sender.py:send_request():409] send_request: summary_record
+2024-03-10 08:08:13,586 INFO    SenderThread:85382 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-03-10 08:08:13,999 INFO    Thread-13 :85382 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/yunbo/Documents/GitHub/PFL_Optimiozation/Model_training/9_clusters/wandb/run-20240310_080708-t3izyq67/files/wandb-summary.json
+2024-03-10 08:08:14,153 DEBUG   HandlerThread:85382 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-10 08:08:14,154 DEBUG   SenderThread:85382 [sender.py:send():382] send: history
+2024-03-10 08:08:14,154 DEBUG   SenderThread:85382 [sender.py:send_request():409] send_request: summary_record
+2024-03-10 08:08:14,154 INFO    SenderThread:85382 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-03-10 08:08:14,621 DEBUG   HandlerThread:85382 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-10 08:08:14,622 DEBUG   SenderThread:85382 [sender.py:send():382] send: history
+2024-03-10 08:08:14,622 DEBUG   SenderThread:85382 [sender.py:send_request():409] send_request: summary_record
+2024-03-10 08:08:14,623 INFO    SenderThread:85382 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-03-10 08:08:15,002 INFO    Thread-13 :85382 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/yunbo/Documents/GitHub/PFL_Optimiozation/Model_training/9_clusters/wandb/run-20240310_080708-t3izyq67/files/wandb-summary.json
+2024-03-10 08:08:15,002 INFO    Thread-13 :85382 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/yunbo/Documents/GitHub/PFL_Optimiozation/Model_training/9_clusters/wandb/run-20240310_080708-t3izyq67/files/output.log
+2024-03-10 08:08:15,248 DEBUG   HandlerThread:85382 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-10 08:08:15,249 DEBUG   SenderThread:85382 [sender.py:send():382] send: history
+2024-03-10 08:08:15,249 DEBUG   SenderThread:85382 [sender.py:send_request():409] send_request: summary_record
+2024-03-10 08:08:15,249 INFO    SenderThread:85382 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-03-10 08:08:15,714 DEBUG   HandlerThread:85382 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-10 08:08:15,717 DEBUG   SenderThread:85382 [sender.py:send():382] send: history
+2024-03-10 08:08:15,717 DEBUG   SenderThread:85382 [sender.py:send_request():409] send_request: summary_record
+2024-03-10 08:08:15,717 INFO    SenderThread:85382 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-03-10 08:08:15,771 DEBUG   HandlerThread:85382 [handler.py:handle_request():146] handle_request: internal_messages
+2024-03-10 08:08:15,777 DEBUG   HandlerThread:85382 [handler.py:handle_request():146] handle_request: stop_status
+2024-03-10 08:08:15,777 DEBUG   SenderThread:85382 [sender.py:send_request():409] send_request: stop_status
+2024-03-10 08:08:16,008 INFO    Thread-13 :85382 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/yunbo/Documents/GitHub/PFL_Optimiozation/Model_training/9_clusters/wandb/run-20240310_080708-t3izyq67/files/wandb-summary.json
+2024-03-10 08:08:16,348 DEBUG   HandlerThread:85382 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-10 08:08:16,349 DEBUG   SenderThread:85382 [sender.py:send():382] send: history
+2024-03-10 08:08:16,349 DEBUG   SenderThread:85382 [sender.py:send_request():409] send_request: summary_record
+2024-03-10 08:08:16,350 INFO    SenderThread:85382 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-03-10 08:08:16,834 DEBUG   HandlerThread:85382 [handler.py:handle_request():146] handle_request: status_report
+2024-03-10 08:08:16,836 DEBUG   HandlerThread:85382 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-10 08:08:16,838 DEBUG   SenderThread:85382 [sender.py:send():382] send: history
+2024-03-10 08:08:16,838 DEBUG   SenderThread:85382 [sender.py:send_request():409] send_request: summary_record
+2024-03-10 08:08:16,838 INFO    SenderThread:85382 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-03-10 08:08:17,010 INFO    Thread-13 :85382 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/yunbo/Documents/GitHub/PFL_Optimiozation/Model_training/9_clusters/wandb/run-20240310_080708-t3izyq67/files/wandb-summary.json
+2024-03-10 08:08:17,010 INFO    Thread-13 :85382 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/yunbo/Documents/GitHub/PFL_Optimiozation/Model_training/9_clusters/wandb/run-20240310_080708-t3izyq67/files/output.log
+2024-03-10 08:08:17,449 DEBUG   HandlerThread:85382 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-10 08:08:17,450 DEBUG   SenderThread:85382 [sender.py:send():382] send: history
+2024-03-10 08:08:17,450 DEBUG   SenderThread:85382 [sender.py:send_request():409] send_request: summary_record
+2024-03-10 08:08:17,450 INFO    SenderThread:85382 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-03-10 08:08:17,961 DEBUG   HandlerThread:85382 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-10 08:08:17,962 DEBUG   SenderThread:85382 [sender.py:send():382] send: history
+2024-03-10 08:08:17,963 DEBUG   SenderThread:85382 [sender.py:send_request():409] send_request: summary_record
+2024-03-10 08:08:17,963 INFO    SenderThread:85382 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-03-10 08:08:18,015 INFO    Thread-13 :85382 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/yunbo/Documents/GitHub/PFL_Optimiozation/Model_training/9_clusters/wandb/run-20240310_080708-t3izyq67/files/wandb-summary.json
+2024-03-10 08:08:18,544 DEBUG   HandlerThread:85382 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-10 08:08:18,545 DEBUG   SenderThread:85382 [sender.py:send():382] send: history
+2024-03-10 08:08:18,545 DEBUG   SenderThread:85382 [sender.py:send_request():409] send_request: summary_record
+2024-03-10 08:08:18,546 INFO    SenderThread:85382 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-03-10 08:08:19,019 INFO    Thread-13 :85382 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/yunbo/Documents/GitHub/PFL_Optimiozation/Model_training/9_clusters/wandb/run-20240310_080708-t3izyq67/files/wandb-summary.json
+2024-03-10 08:08:19,020 INFO    Thread-13 :85382 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/yunbo/Documents/GitHub/PFL_Optimiozation/Model_training/9_clusters/wandb/run-20240310_080708-t3izyq67/files/output.log
+2024-03-10 08:08:19,051 DEBUG   HandlerThread:85382 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-10 08:08:19,053 DEBUG   SenderThread:85382 [sender.py:send():382] send: history
+2024-03-10 08:08:19,053 DEBUG   SenderThread:85382 [sender.py:send_request():409] send_request: summary_record
+2024-03-10 08:08:19,053 INFO    SenderThread:85382 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-03-10 08:08:19,626 DEBUG   HandlerThread:85382 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-10 08:08:19,626 DEBUG   SenderThread:85382 [sender.py:send():382] send: history
+2024-03-10 08:08:19,626 DEBUG   SenderThread:85382 [sender.py:send_request():409] send_request: summary_record
+2024-03-10 08:08:19,627 INFO    SenderThread:85382 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-03-10 08:08:20,024 INFO    Thread-13 :85382 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/yunbo/Documents/GitHub/PFL_Optimiozation/Model_training/9_clusters/wandb/run-20240310_080708-t3izyq67/files/wandb-summary.json
+2024-03-10 08:08:20,096 DEBUG   HandlerThread:85382 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-10 08:08:20,097 DEBUG   SenderThread:85382 [sender.py:send():382] send: history
+2024-03-10 08:08:20,097 DEBUG   SenderThread:85382 [sender.py:send_request():409] send_request: summary_record
+2024-03-10 08:08:20,098 INFO    SenderThread:85382 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-03-10 08:08:20,692 DEBUG   HandlerThread:85382 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-10 08:08:20,693 DEBUG   SenderThread:85382 [sender.py:send():382] send: history
+2024-03-10 08:08:20,693 DEBUG   SenderThread:85382 [sender.py:send_request():409] send_request: summary_record
+2024-03-10 08:08:20,694 INFO    SenderThread:85382 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-03-10 08:08:21,028 INFO    Thread-13 :85382 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/yunbo/Documents/GitHub/PFL_Optimiozation/Model_training/9_clusters/wandb/run-20240310_080708-t3izyq67/files/wandb-summary.json
+2024-03-10 08:08:21,028 INFO    Thread-13 :85382 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/yunbo/Documents/GitHub/PFL_Optimiozation/Model_training/9_clusters/wandb/run-20240310_080708-t3izyq67/files/output.log
+2024-03-10 08:08:21,179 DEBUG   HandlerThread:85382 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-10 08:08:21,181 DEBUG   SenderThread:85382 [sender.py:send():382] send: history
+2024-03-10 08:08:21,181 DEBUG   SenderThread:85382 [sender.py:send_request():409] send_request: summary_record
+2024-03-10 08:08:21,181 INFO    SenderThread:85382 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-03-10 08:08:21,783 DEBUG   HandlerThread:85382 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-10 08:08:21,784 DEBUG   SenderThread:85382 [sender.py:send():382] send: history
+2024-03-10 08:08:21,784 DEBUG   SenderThread:85382 [sender.py:send_request():409] send_request: summary_record
+2024-03-10 08:08:21,784 INFO    SenderThread:85382 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-03-10 08:08:22,033 INFO    Thread-13 :85382 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/yunbo/Documents/GitHub/PFL_Optimiozation/Model_training/9_clusters/wandb/run-20240310_080708-t3izyq67/files/wandb-summary.json
+2024-03-10 08:08:22,326 DEBUG   HandlerThread:85382 [handler.py:handle_request():146] handle_request: status_report
+2024-03-10 08:08:22,327 DEBUG   HandlerThread:85382 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-10 08:08:22,328 DEBUG   SenderThread:85382 [sender.py:send():382] send: history
+2024-03-10 08:08:22,328 DEBUG   SenderThread:85382 [sender.py:send_request():409] send_request: summary_record
+2024-03-10 08:08:22,329 INFO    SenderThread:85382 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-03-10 08:08:22,910 DEBUG   HandlerThread:85382 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-10 08:08:22,910 DEBUG   SenderThread:85382 [sender.py:send():382] send: history
+2024-03-10 08:08:22,910 DEBUG   SenderThread:85382 [sender.py:send_request():409] send_request: summary_record
+2024-03-10 08:08:22,911 INFO    SenderThread:85382 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-03-10 08:08:23,035 INFO    Thread-13 :85382 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/yunbo/Documents/GitHub/PFL_Optimiozation/Model_training/9_clusters/wandb/run-20240310_080708-t3izyq67/files/wandb-summary.json
+2024-03-10 08:08:23,035 INFO    Thread-13 :85382 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/yunbo/Documents/GitHub/PFL_Optimiozation/Model_training/9_clusters/wandb/run-20240310_080708-t3izyq67/files/output.log
+2024-03-10 08:08:23,419 DEBUG   HandlerThread:85382 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-10 08:08:23,420 DEBUG   SenderThread:85382 [sender.py:send():382] send: history
+2024-03-10 08:08:23,421 DEBUG   SenderThread:85382 [sender.py:send_request():409] send_request: summary_record
+2024-03-10 08:08:23,421 INFO    SenderThread:85382 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-03-10 08:08:24,015 DEBUG   HandlerThread:85382 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-10 08:08:24,016 DEBUG   SenderThread:85382 [sender.py:send():382] send: history
+2024-03-10 08:08:24,016 DEBUG   SenderThread:85382 [sender.py:send_request():409] send_request: summary_record
+2024-03-10 08:08:24,017 INFO    SenderThread:85382 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-03-10 08:08:24,036 INFO    Thread-13 :85382 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/yunbo/Documents/GitHub/PFL_Optimiozation/Model_training/9_clusters/wandb/run-20240310_080708-t3izyq67/files/wandb-summary.json
+2024-03-10 08:08:24,478 DEBUG   HandlerThread:85382 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-10 08:08:24,481 DEBUG   SenderThread:85382 [sender.py:send():382] send: history
+2024-03-10 08:08:24,481 DEBUG   SenderThread:85382 [sender.py:send_request():409] send_request: summary_record
+2024-03-10 08:08:24,481 INFO    SenderThread:85382 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-03-10 08:08:25,040 INFO    Thread-13 :85382 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/yunbo/Documents/GitHub/PFL_Optimiozation/Model_training/9_clusters/wandb/run-20240310_080708-t3izyq67/files/wandb-summary.json
+2024-03-10 08:08:25,040 INFO    Thread-13 :85382 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/yunbo/Documents/GitHub/PFL_Optimiozation/Model_training/9_clusters/wandb/run-20240310_080708-t3izyq67/files/output.log
+2024-03-10 08:08:25,041 DEBUG   HandlerThread:85382 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-10 08:08:25,041 DEBUG   SenderThread:85382 [sender.py:send():382] send: history
+2024-03-10 08:08:25,041 DEBUG   SenderThread:85382 [sender.py:send_request():409] send_request: summary_record
+2024-03-10 08:08:25,042 INFO    SenderThread:85382 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-03-10 08:08:25,507 DEBUG   HandlerThread:85382 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-10 08:08:25,509 DEBUG   SenderThread:85382 [sender.py:send():382] send: history
+2024-03-10 08:08:25,509 DEBUG   SenderThread:85382 [sender.py:send_request():409] send_request: summary_record
+2024-03-10 08:08:25,510 INFO    SenderThread:85382 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-03-10 08:08:26,045 INFO    Thread-13 :85382 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/yunbo/Documents/GitHub/PFL_Optimiozation/Model_training/9_clusters/wandb/run-20240310_080708-t3izyq67/files/wandb-summary.json
+2024-03-10 08:08:26,114 DEBUG   HandlerThread:85382 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-10 08:08:26,116 DEBUG   SenderThread:85382 [sender.py:send():382] send: history
+2024-03-10 08:08:26,116 DEBUG   SenderThread:85382 [sender.py:send_request():409] send_request: summary_record
+2024-03-10 08:08:26,116 INFO    SenderThread:85382 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-03-10 08:08:26,622 DEBUG   HandlerThread:85382 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-10 08:08:26,623 DEBUG   SenderThread:85382 [sender.py:send():382] send: history
+2024-03-10 08:08:26,624 DEBUG   SenderThread:85382 [sender.py:send_request():409] send_request: summary_record
+2024-03-10 08:08:26,624 INFO    SenderThread:85382 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-03-10 08:08:27,050 INFO    Thread-13 :85382 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/yunbo/Documents/GitHub/PFL_Optimiozation/Model_training/9_clusters/wandb/run-20240310_080708-t3izyq67/files/wandb-summary.json
+2024-03-10 08:08:27,051 INFO    Thread-13 :85382 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/yunbo/Documents/GitHub/PFL_Optimiozation/Model_training/9_clusters/wandb/run-20240310_080708-t3izyq67/files/output.log
+2024-03-10 08:08:27,226 DEBUG   HandlerThread:85382 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-10 08:08:27,227 DEBUG   SenderThread:85382 [sender.py:send():382] send: history
+2024-03-10 08:08:27,227 DEBUG   SenderThread:85382 [sender.py:send_request():409] send_request: summary_record
+2024-03-10 08:08:27,227 INFO    SenderThread:85382 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-03-10 08:08:27,710 DEBUG   HandlerThread:85382 [handler.py:handle_request():146] handle_request: status_report
+2024-03-10 08:08:27,711 DEBUG   HandlerThread:85382 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-10 08:08:27,712 DEBUG   SenderThread:85382 [sender.py:send():382] send: history
+2024-03-10 08:08:27,712 DEBUG   SenderThread:85382 [sender.py:send_request():409] send_request: summary_record
+2024-03-10 08:08:27,713 INFO    SenderThread:85382 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-03-10 08:08:28,056 INFO    Thread-13 :85382 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/yunbo/Documents/GitHub/PFL_Optimiozation/Model_training/9_clusters/wandb/run-20240310_080708-t3izyq67/files/wandb-summary.json
+2024-03-10 08:08:28,383 DEBUG   HandlerThread:85382 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-10 08:08:28,385 DEBUG   SenderThread:85382 [sender.py:send():382] send: history
+2024-03-10 08:08:28,385 DEBUG   SenderThread:85382 [sender.py:send_request():409] send_request: summary_record
+2024-03-10 08:08:28,385 INFO    SenderThread:85382 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-03-10 08:08:28,865 DEBUG   HandlerThread:85382 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-10 08:08:28,868 DEBUG   SenderThread:85382 [sender.py:send():382] send: history
+2024-03-10 08:08:28,868 DEBUG   SenderThread:85382 [sender.py:send_request():409] send_request: summary_record
+2024-03-10 08:08:28,868 INFO    SenderThread:85382 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-03-10 08:08:29,058 INFO    Thread-13 :85382 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/yunbo/Documents/GitHub/PFL_Optimiozation/Model_training/9_clusters/wandb/run-20240310_080708-t3izyq67/files/wandb-summary.json
+2024-03-10 08:08:29,059 INFO    Thread-13 :85382 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/yunbo/Documents/GitHub/PFL_Optimiozation/Model_training/9_clusters/wandb/run-20240310_080708-t3izyq67/files/output.log
+2024-03-10 08:08:29,459 DEBUG   HandlerThread:85382 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-10 08:08:29,460 DEBUG   SenderThread:85382 [sender.py:send():382] send: history
+2024-03-10 08:08:29,460 DEBUG   SenderThread:85382 [sender.py:send_request():409] send_request: summary_record
+2024-03-10 08:08:29,460 INFO    SenderThread:85382 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-03-10 08:08:29,959 DEBUG   HandlerThread:85382 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-10 08:08:29,960 DEBUG   SenderThread:85382 [sender.py:send():382] send: history
+2024-03-10 08:08:29,960 DEBUG   SenderThread:85382 [sender.py:send_request():409] send_request: summary_record
+2024-03-10 08:08:29,960 INFO    SenderThread:85382 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-03-10 08:08:30,063 INFO    Thread-13 :85382 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/yunbo/Documents/GitHub/PFL_Optimiozation/Model_training/9_clusters/wandb/run-20240310_080708-t3izyq67/files/wandb-summary.json
+2024-03-10 08:08:30,544 DEBUG   HandlerThread:85382 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-10 08:08:30,545 DEBUG   SenderThread:85382 [sender.py:send():382] send: history
+2024-03-10 08:08:30,545 DEBUG   SenderThread:85382 [sender.py:send_request():409] send_request: summary_record
+2024-03-10 08:08:30,545 INFO    SenderThread:85382 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-03-10 08:08:30,773 DEBUG   HandlerThread:85382 [handler.py:handle_request():146] handle_request: internal_messages
+2024-03-10 08:08:30,781 DEBUG   HandlerThread:85382 [handler.py:handle_request():146] handle_request: stop_status
+2024-03-10 08:08:30,781 DEBUG   SenderThread:85382 [sender.py:send_request():409] send_request: stop_status
+2024-03-10 08:08:31,064 INFO    Thread-13 :85382 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/yunbo/Documents/GitHub/PFL_Optimiozation/Model_training/9_clusters/wandb/run-20240310_080708-t3izyq67/files/wandb-summary.json
+2024-03-10 08:08:31,064 INFO    Thread-13 :85382 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/yunbo/Documents/GitHub/PFL_Optimiozation/Model_training/9_clusters/wandb/run-20240310_080708-t3izyq67/files/output.log
+2024-03-10 08:08:31,148 DEBUG   HandlerThread:85382 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-10 08:08:31,149 DEBUG   SenderThread:85382 [sender.py:send():382] send: history
+2024-03-10 08:08:31,150 DEBUG   SenderThread:85382 [sender.py:send_request():409] send_request: summary_record
+2024-03-10 08:08:31,150 INFO    SenderThread:85382 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-03-10 08:08:31,823 DEBUG   HandlerThread:85382 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-10 08:08:31,823 DEBUG   SenderThread:85382 [sender.py:send():382] send: history
+2024-03-10 08:08:31,823 DEBUG   SenderThread:85382 [sender.py:send_request():409] send_request: summary_record
+2024-03-10 08:08:31,824 INFO    SenderThread:85382 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-03-10 08:08:32,066 INFO    Thread-13 :85382 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/yunbo/Documents/GitHub/PFL_Optimiozation/Model_training/9_clusters/wandb/run-20240310_080708-t3izyq67/files/wandb-summary.json
+2024-03-10 08:08:32,294 DEBUG   HandlerThread:85382 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-10 08:08:32,296 DEBUG   SenderThread:85382 [sender.py:send():382] send: history
+2024-03-10 08:08:32,296 DEBUG   SenderThread:85382 [sender.py:send_request():409] send_request: summary_record
+2024-03-10 08:08:32,297 INFO    SenderThread:85382 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-03-10 08:08:32,717 DEBUG   HandlerThread:85382 [handler.py:handle_request():146] handle_request: status_report
+2024-03-10 08:08:32,975 DEBUG   HandlerThread:85382 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-10 08:08:32,976 DEBUG   SenderThread:85382 [sender.py:send():382] send: history
+2024-03-10 08:08:32,976 DEBUG   SenderThread:85382 [sender.py:send_request():409] send_request: summary_record
+2024-03-10 08:08:32,977 INFO    SenderThread:85382 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-03-10 08:08:33,070 INFO    Thread-13 :85382 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/yunbo/Documents/GitHub/PFL_Optimiozation/Model_training/9_clusters/wandb/run-20240310_080708-t3izyq67/files/wandb-summary.json
+2024-03-10 08:08:33,070 INFO    Thread-13 :85382 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/yunbo/Documents/GitHub/PFL_Optimiozation/Model_training/9_clusters/wandb/run-20240310_080708-t3izyq67/files/output.log
+2024-03-10 08:08:33,447 DEBUG   HandlerThread:85382 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-10 08:08:33,449 DEBUG   SenderThread:85382 [sender.py:send():382] send: history
+2024-03-10 08:08:33,449 DEBUG   SenderThread:85382 [sender.py:send_request():409] send_request: summary_record
+2024-03-10 08:08:33,449 INFO    SenderThread:85382 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-03-10 08:08:34,030 DEBUG   HandlerThread:85382 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-10 08:08:34,031 DEBUG   SenderThread:85382 [sender.py:send():382] send: history
+2024-03-10 08:08:34,031 DEBUG   SenderThread:85382 [sender.py:send_request():409] send_request: summary_record
+2024-03-10 08:08:34,032 INFO    SenderThread:85382 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-03-10 08:08:34,072 INFO    Thread-13 :85382 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/yunbo/Documents/GitHub/PFL_Optimiozation/Model_training/9_clusters/wandb/run-20240310_080708-t3izyq67/files/wandb-summary.json
+2024-03-10 08:08:34,517 DEBUG   HandlerThread:85382 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-10 08:08:34,518 DEBUG   SenderThread:85382 [sender.py:send():382] send: history
+2024-03-10 08:08:34,518 DEBUG   SenderThread:85382 [sender.py:send_request():409] send_request: summary_record
+2024-03-10 08:08:34,518 INFO    SenderThread:85382 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-03-10 08:08:35,074 INFO    Thread-13 :85382 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/yunbo/Documents/GitHub/PFL_Optimiozation/Model_training/9_clusters/wandb/run-20240310_080708-t3izyq67/files/wandb-summary.json
+2024-03-10 08:08:35,074 INFO    Thread-13 :85382 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/yunbo/Documents/GitHub/PFL_Optimiozation/Model_training/9_clusters/wandb/run-20240310_080708-t3izyq67/files/output.log
+2024-03-10 08:08:35,097 DEBUG   HandlerThread:85382 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-10 08:08:35,098 DEBUG   SenderThread:85382 [sender.py:send():382] send: history
+2024-03-10 08:08:35,098 DEBUG   SenderThread:85382 [sender.py:send_request():409] send_request: summary_record
+2024-03-10 08:08:35,099 INFO    SenderThread:85382 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-03-10 08:08:35,571 DEBUG   HandlerThread:85382 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-10 08:08:35,572 DEBUG   SenderThread:85382 [sender.py:send():382] send: history
+2024-03-10 08:08:35,572 DEBUG   SenderThread:85382 [sender.py:send_request():409] send_request: summary_record
+2024-03-10 08:08:35,572 INFO    SenderThread:85382 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-03-10 08:08:36,079 INFO    Thread-13 :85382 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/yunbo/Documents/GitHub/PFL_Optimiozation/Model_training/9_clusters/wandb/run-20240310_080708-t3izyq67/files/wandb-summary.json
+2024-03-10 08:08:36,161 DEBUG   HandlerThread:85382 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-10 08:08:36,161 DEBUG   SenderThread:85382 [sender.py:send():382] send: history
+2024-03-10 08:08:36,161 DEBUG   SenderThread:85382 [sender.py:send_request():409] send_request: summary_record
+2024-03-10 08:08:36,162 INFO    SenderThread:85382 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-03-10 08:08:36,608 DEBUG   HandlerThread:85382 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-10 08:08:36,610 DEBUG   SenderThread:85382 [sender.py:send():382] send: history
+2024-03-10 08:08:36,610 DEBUG   SenderThread:85382 [sender.py:send_request():409] send_request: summary_record
+2024-03-10 08:08:36,610 INFO    SenderThread:85382 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-03-10 08:08:37,082 INFO    Thread-13 :85382 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/yunbo/Documents/GitHub/PFL_Optimiozation/Model_training/9_clusters/wandb/run-20240310_080708-t3izyq67/files/wandb-summary.json
+2024-03-10 08:08:37,083 INFO    Thread-13 :85382 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/yunbo/Documents/GitHub/PFL_Optimiozation/Model_training/9_clusters/wandb/run-20240310_080708-t3izyq67/files/output.log
+2024-03-10 08:08:37,215 DEBUG   HandlerThread:85382 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-10 08:08:37,216 DEBUG   SenderThread:85382 [sender.py:send():382] send: history
+2024-03-10 08:08:37,216 DEBUG   SenderThread:85382 [sender.py:send_request():409] send_request: summary_record
+2024-03-10 08:08:37,217 INFO    SenderThread:85382 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-03-10 08:08:37,676 DEBUG   HandlerThread:85382 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-10 08:08:37,677 DEBUG   SenderThread:85382 [sender.py:send():382] send: history
+2024-03-10 08:08:37,678 DEBUG   SenderThread:85382 [sender.py:send_request():409] send_request: summary_record
+2024-03-10 08:08:37,678 INFO    SenderThread:85382 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-03-10 08:08:37,750 DEBUG   HandlerThread:85382 [handler.py:handle_request():146] handle_request: status_report
+2024-03-10 08:08:38,091 INFO    Thread-13 :85382 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/yunbo/Documents/GitHub/PFL_Optimiozation/Model_training/9_clusters/wandb/run-20240310_080708-t3izyq67/files/wandb-summary.json
+2024-03-10 08:08:38,298 DEBUG   HandlerThread:85382 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-10 08:08:38,299 DEBUG   SenderThread:85382 [sender.py:send():382] send: history
+2024-03-10 08:08:38,299 DEBUG   SenderThread:85382 [sender.py:send_request():409] send_request: summary_record
+2024-03-10 08:08:38,300 INFO    SenderThread:85382 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-03-10 08:08:38,785 DEBUG   HandlerThread:85382 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-10 08:08:38,788 DEBUG   SenderThread:85382 [sender.py:send():382] send: history
+2024-03-10 08:08:38,788 DEBUG   SenderThread:85382 [sender.py:send_request():409] send_request: summary_record
+2024-03-10 08:08:38,788 INFO    SenderThread:85382 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-03-10 08:08:38,822 DEBUG   SenderThread:85382 [sender.py:send():382] send: stats
+2024-03-10 08:08:39,092 INFO    Thread-13 :85382 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/yunbo/Documents/GitHub/PFL_Optimiozation/Model_training/9_clusters/wandb/run-20240310_080708-t3izyq67/files/wandb-summary.json
+2024-03-10 08:08:39,092 INFO    Thread-13 :85382 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/yunbo/Documents/GitHub/PFL_Optimiozation/Model_training/9_clusters/wandb/run-20240310_080708-t3izyq67/files/output.log
+2024-03-10 08:08:39,434 DEBUG   HandlerThread:85382 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-10 08:08:39,435 DEBUG   SenderThread:85382 [sender.py:send():382] send: history
+2024-03-10 08:08:39,435 DEBUG   SenderThread:85382 [sender.py:send_request():409] send_request: summary_record
+2024-03-10 08:08:39,435 INFO    SenderThread:85382 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-03-10 08:08:39,925 DEBUG   HandlerThread:85382 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-10 08:08:39,927 DEBUG   SenderThread:85382 [sender.py:send():382] send: history
+2024-03-10 08:08:39,927 DEBUG   SenderThread:85382 [sender.py:send_request():409] send_request: summary_record
+2024-03-10 08:08:39,928 INFO    SenderThread:85382 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-03-10 08:08:40,097 INFO    Thread-13 :85382 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/yunbo/Documents/GitHub/PFL_Optimiozation/Model_training/9_clusters/wandb/run-20240310_080708-t3izyq67/files/wandb-summary.json
+2024-03-10 08:08:40,528 DEBUG   HandlerThread:85382 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-10 08:08:40,528 DEBUG   SenderThread:85382 [sender.py:send():382] send: history
+2024-03-10 08:08:40,529 DEBUG   SenderThread:85382 [sender.py:send_request():409] send_request: summary_record
+2024-03-10 08:08:40,529 INFO    SenderThread:85382 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-03-10 08:08:40,998 DEBUG   HandlerThread:85382 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-10 08:08:40,999 DEBUG   SenderThread:85382 [sender.py:send():382] send: history
+2024-03-10 08:08:41,000 DEBUG   SenderThread:85382 [sender.py:send_request():409] send_request: summary_record
+2024-03-10 08:08:41,000 INFO    SenderThread:85382 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-03-10 08:08:41,098 INFO    Thread-13 :85382 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/yunbo/Documents/GitHub/PFL_Optimiozation/Model_training/9_clusters/wandb/run-20240310_080708-t3izyq67/files/wandb-summary.json
+2024-03-10 08:08:41,098 INFO    Thread-13 :85382 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/yunbo/Documents/GitHub/PFL_Optimiozation/Model_training/9_clusters/wandb/run-20240310_080708-t3izyq67/files/output.log
+2024-03-10 08:08:41,578 DEBUG   HandlerThread:85382 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-10 08:08:41,580 DEBUG   SenderThread:85382 [sender.py:send():382] send: history
+2024-03-10 08:08:41,580 DEBUG   SenderThread:85382 [sender.py:send_request():409] send_request: summary_record
+2024-03-10 08:08:41,580 INFO    SenderThread:85382 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-03-10 08:08:42,046 DEBUG   HandlerThread:85382 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-10 08:08:42,048 DEBUG   SenderThread:85382 [sender.py:send():382] send: history
+2024-03-10 08:08:42,049 DEBUG   SenderThread:85382 [sender.py:send_request():409] send_request: summary_record
+2024-03-10 08:08:42,049 INFO    SenderThread:85382 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-03-10 08:08:42,103 INFO    Thread-13 :85382 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/yunbo/Documents/GitHub/PFL_Optimiozation/Model_training/9_clusters/wandb/run-20240310_080708-t3izyq67/files/wandb-summary.json
+2024-03-10 08:08:42,622 DEBUG   HandlerThread:85382 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-10 08:08:42,623 DEBUG   SenderThread:85382 [sender.py:send():382] send: history
+2024-03-10 08:08:42,623 DEBUG   SenderThread:85382 [sender.py:send_request():409] send_request: summary_record
+2024-03-10 08:08:42,623 INFO    SenderThread:85382 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-03-10 08:08:43,108 INFO    Thread-13 :85382 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/yunbo/Documents/GitHub/PFL_Optimiozation/Model_training/9_clusters/wandb/run-20240310_080708-t3izyq67/files/wandb-summary.json
+2024-03-10 08:08:43,110 INFO    Thread-13 :85382 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/yunbo/Documents/GitHub/PFL_Optimiozation/Model_training/9_clusters/wandb/run-20240310_080708-t3izyq67/files/output.log
+2024-03-10 08:08:43,181 DEBUG   HandlerThread:85382 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-10 08:08:43,182 DEBUG   HandlerThread:85382 [handler.py:handle_request():146] handle_request: status_report
+2024-03-10 08:08:43,183 DEBUG   SenderThread:85382 [sender.py:send():382] send: history
+2024-03-10 08:08:43,183 DEBUG   SenderThread:85382 [sender.py:send_request():409] send_request: summary_record
+2024-03-10 08:08:43,184 INFO    SenderThread:85382 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-03-10 08:08:43,795 DEBUG   HandlerThread:85382 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-10 08:08:43,796 DEBUG   SenderThread:85382 [sender.py:send():382] send: history
+2024-03-10 08:08:43,796 DEBUG   SenderThread:85382 [sender.py:send_request():409] send_request: summary_record
+2024-03-10 08:08:43,796 INFO    SenderThread:85382 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-03-10 08:08:44,114 INFO    Thread-13 :85382 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/yunbo/Documents/GitHub/PFL_Optimiozation/Model_training/9_clusters/wandb/run-20240310_080708-t3izyq67/files/wandb-summary.json
+2024-03-10 08:08:44,291 DEBUG   HandlerThread:85382 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-10 08:08:44,292 DEBUG   SenderThread:85382 [sender.py:send():382] send: history
+2024-03-10 08:08:44,292 DEBUG   SenderThread:85382 [sender.py:send_request():409] send_request: summary_record
+2024-03-10 08:08:44,293 INFO    SenderThread:85382 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-03-10 08:08:44,916 DEBUG   HandlerThread:85382 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-10 08:08:44,917 DEBUG   SenderThread:85382 [sender.py:send():382] send: history
+2024-03-10 08:08:44,917 DEBUG   SenderThread:85382 [sender.py:send_request():409] send_request: summary_record
+2024-03-10 08:08:44,917 INFO    SenderThread:85382 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-03-10 08:08:45,114 INFO    Thread-13 :85382 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/yunbo/Documents/GitHub/PFL_Optimiozation/Model_training/9_clusters/wandb/run-20240310_080708-t3izyq67/files/wandb-summary.json
+2024-03-10 08:08:45,114 INFO    Thread-13 :85382 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/yunbo/Documents/GitHub/PFL_Optimiozation/Model_training/9_clusters/wandb/run-20240310_080708-t3izyq67/files/output.log
+2024-03-10 08:08:45,439 DEBUG   HandlerThread:85382 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-10 08:08:45,441 DEBUG   SenderThread:85382 [sender.py:send():382] send: history
+2024-03-10 08:08:45,441 DEBUG   SenderThread:85382 [sender.py:send_request():409] send_request: summary_record
+2024-03-10 08:08:45,441 INFO    SenderThread:85382 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-03-10 08:08:45,779 DEBUG   HandlerThread:85382 [handler.py:handle_request():146] handle_request: internal_messages
+2024-03-10 08:08:45,787 DEBUG   HandlerThread:85382 [handler.py:handle_request():146] handle_request: stop_status
+2024-03-10 08:08:45,788 DEBUG   SenderThread:85382 [sender.py:send_request():409] send_request: stop_status
+2024-03-10 08:08:46,118 INFO    Thread-13 :85382 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/yunbo/Documents/GitHub/PFL_Optimiozation/Model_training/9_clusters/wandb/run-20240310_080708-t3izyq67/files/wandb-summary.json
+2024-03-10 08:08:46,176 DEBUG   HandlerThread:85382 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-10 08:08:46,178 DEBUG   SenderThread:85382 [sender.py:send():382] send: history
+2024-03-10 08:08:46,178 DEBUG   SenderThread:85382 [sender.py:send_request():409] send_request: summary_record
+2024-03-10 08:08:46,178 INFO    SenderThread:85382 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-03-10 08:08:46,628 DEBUG   HandlerThread:85382 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-10 08:08:46,630 DEBUG   SenderThread:85382 [sender.py:send():382] send: history
+2024-03-10 08:08:46,630 DEBUG   SenderThread:85382 [sender.py:send_request():409] send_request: summary_record
+2024-03-10 08:08:46,630 INFO    SenderThread:85382 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-03-10 08:08:47,124 INFO    Thread-13 :85382 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/yunbo/Documents/GitHub/PFL_Optimiozation/Model_training/9_clusters/wandb/run-20240310_080708-t3izyq67/files/wandb-summary.json
+2024-03-10 08:08:47,124 INFO    Thread-13 :85382 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/yunbo/Documents/GitHub/PFL_Optimiozation/Model_training/9_clusters/wandb/run-20240310_080708-t3izyq67/files/output.log
+2024-03-10 08:08:47,226 DEBUG   HandlerThread:85382 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-10 08:08:47,226 DEBUG   SenderThread:85382 [sender.py:send():382] send: history
+2024-03-10 08:08:47,226 DEBUG   SenderThread:85382 [sender.py:send_request():409] send_request: summary_record
+2024-03-10 08:08:47,227 INFO    SenderThread:85382 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-03-10 08:08:47,686 DEBUG   HandlerThread:85382 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-10 08:08:47,687 DEBUG   SenderThread:85382 [sender.py:send():382] send: history
+2024-03-10 08:08:47,687 DEBUG   SenderThread:85382 [sender.py:send_request():409] send_request: summary_record
+2024-03-10 08:08:47,688 INFO    SenderThread:85382 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-03-10 08:08:48,129 INFO    Thread-13 :85382 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/yunbo/Documents/GitHub/PFL_Optimiozation/Model_training/9_clusters/wandb/run-20240310_080708-t3izyq67/files/wandb-summary.json
+2024-03-10 08:08:48,227 DEBUG   HandlerThread:85382 [handler.py:handle_request():146] handle_request: status_report
+2024-03-10 08:08:48,285 DEBUG   HandlerThread:85382 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-10 08:08:48,285 DEBUG   SenderThread:85382 [sender.py:send():382] send: history
+2024-03-10 08:08:48,286 DEBUG   SenderThread:85382 [sender.py:send_request():409] send_request: summary_record
+2024-03-10 08:08:48,286 INFO    SenderThread:85382 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-03-10 08:08:48,768 DEBUG   HandlerThread:85382 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-10 08:08:48,770 DEBUG   SenderThread:85382 [sender.py:send():382] send: history
+2024-03-10 08:08:48,770 DEBUG   SenderThread:85382 [sender.py:send_request():409] send_request: summary_record
+2024-03-10 08:08:48,770 INFO    SenderThread:85382 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-03-10 08:08:49,135 INFO    Thread-13 :85382 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/yunbo/Documents/GitHub/PFL_Optimiozation/Model_training/9_clusters/wandb/run-20240310_080708-t3izyq67/files/wandb-summary.json
+2024-03-10 08:08:49,135 INFO    Thread-13 :85382 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/yunbo/Documents/GitHub/PFL_Optimiozation/Model_training/9_clusters/wandb/run-20240310_080708-t3izyq67/files/output.log
+2024-03-10 08:08:49,402 DEBUG   HandlerThread:85382 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-10 08:08:49,403 DEBUG   SenderThread:85382 [sender.py:send():382] send: history
+2024-03-10 08:08:49,403 DEBUG   SenderThread:85382 [sender.py:send_request():409] send_request: summary_record
+2024-03-10 08:08:49,403 INFO    SenderThread:85382 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-03-10 08:08:49,907 DEBUG   HandlerThread:85382 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-10 08:08:49,909 DEBUG   SenderThread:85382 [sender.py:send():382] send: history
+2024-03-10 08:08:49,909 DEBUG   SenderThread:85382 [sender.py:send_request():409] send_request: summary_record
+2024-03-10 08:08:49,910 INFO    SenderThread:85382 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-03-10 08:08:50,137 INFO    Thread-13 :85382 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/yunbo/Documents/GitHub/PFL_Optimiozation/Model_training/9_clusters/wandb/run-20240310_080708-t3izyq67/files/wandb-summary.json
+2024-03-10 08:08:50,473 DEBUG   HandlerThread:85382 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-10 08:08:50,474 DEBUG   SenderThread:85382 [sender.py:send():382] send: history
+2024-03-10 08:08:50,474 DEBUG   SenderThread:85382 [sender.py:send_request():409] send_request: summary_record
+2024-03-10 08:08:50,474 INFO    SenderThread:85382 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-03-10 08:08:50,962 DEBUG   HandlerThread:85382 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-10 08:08:50,964 DEBUG   SenderThread:85382 [sender.py:send():382] send: history
+2024-03-10 08:08:50,964 DEBUG   SenderThread:85382 [sender.py:send_request():409] send_request: summary_record
+2024-03-10 08:08:50,964 INFO    SenderThread:85382 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-03-10 08:08:51,142 INFO    Thread-13 :85382 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/yunbo/Documents/GitHub/PFL_Optimiozation/Model_training/9_clusters/wandb/run-20240310_080708-t3izyq67/files/wandb-summary.json
+2024-03-10 08:08:51,142 INFO    Thread-13 :85382 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/yunbo/Documents/GitHub/PFL_Optimiozation/Model_training/9_clusters/wandb/run-20240310_080708-t3izyq67/files/output.log
+2024-03-10 08:08:51,577 DEBUG   HandlerThread:85382 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-10 08:08:51,578 DEBUG   SenderThread:85382 [sender.py:send():382] send: history
+2024-03-10 08:08:51,579 DEBUG   SenderThread:85382 [sender.py:send_request():409] send_request: summary_record
+2024-03-10 08:08:51,579 INFO    SenderThread:85382 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-03-10 08:08:52,060 DEBUG   HandlerThread:85382 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-10 08:08:52,062 DEBUG   SenderThread:85382 [sender.py:send():382] send: history
+2024-03-10 08:08:52,062 DEBUG   SenderThread:85382 [sender.py:send_request():409] send_request: summary_record
+2024-03-10 08:08:52,062 INFO    SenderThread:85382 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-03-10 08:08:52,153 INFO    Thread-13 :85382 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/yunbo/Documents/GitHub/PFL_Optimiozation/Model_training/9_clusters/wandb/run-20240310_080708-t3izyq67/files/wandb-summary.json
+2024-03-10 08:08:52,827 DEBUG   HandlerThread:85382 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-10 08:08:52,828 DEBUG   SenderThread:85382 [sender.py:send():382] send: history
+2024-03-10 08:08:52,828 DEBUG   SenderThread:85382 [sender.py:send_request():409] send_request: summary_record
+2024-03-10 08:08:52,828 INFO    SenderThread:85382 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-03-10 08:08:53,158 INFO    Thread-13 :85382 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/yunbo/Documents/GitHub/PFL_Optimiozation/Model_training/9_clusters/wandb/run-20240310_080708-t3izyq67/files/wandb-summary.json
+2024-03-10 08:08:53,158 INFO    Thread-13 :85382 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/yunbo/Documents/GitHub/PFL_Optimiozation/Model_training/9_clusters/wandb/run-20240310_080708-t3izyq67/files/output.log
+2024-03-10 08:08:53,308 DEBUG   HandlerThread:85382 [handler.py:handle_request():146] handle_request: status_report
+2024-03-10 08:08:53,308 DEBUG   HandlerThread:85382 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-10 08:08:53,310 DEBUG   SenderThread:85382 [sender.py:send():382] send: history
+2024-03-10 08:08:53,310 DEBUG   SenderThread:85382 [sender.py:send_request():409] send_request: summary_record
+2024-03-10 08:08:53,310 INFO    SenderThread:85382 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-03-10 08:08:53,927 DEBUG   HandlerThread:85382 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-10 08:08:53,929 DEBUG   SenderThread:85382 [sender.py:send():382] send: history
+2024-03-10 08:08:53,929 DEBUG   SenderThread:85382 [sender.py:send_request():409] send_request: summary_record
+2024-03-10 08:08:53,930 INFO    SenderThread:85382 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-03-10 08:08:54,162 INFO    Thread-13 :85382 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/yunbo/Documents/GitHub/PFL_Optimiozation/Model_training/9_clusters/wandb/run-20240310_080708-t3izyq67/files/wandb-summary.json
+2024-03-10 08:08:54,419 DEBUG   HandlerThread:85382 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-10 08:08:54,421 DEBUG   SenderThread:85382 [sender.py:send():382] send: history
+2024-03-10 08:08:54,421 DEBUG   SenderThread:85382 [sender.py:send_request():409] send_request: summary_record
+2024-03-10 08:08:54,421 INFO    SenderThread:85382 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-03-10 08:08:55,010 DEBUG   HandlerThread:85382 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-10 08:08:55,010 DEBUG   SenderThread:85382 [sender.py:send():382] send: history
+2024-03-10 08:08:55,010 DEBUG   SenderThread:85382 [sender.py:send_request():409] send_request: summary_record
+2024-03-10 08:08:55,011 INFO    SenderThread:85382 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-03-10 08:08:55,162 INFO    Thread-13 :85382 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/yunbo/Documents/GitHub/PFL_Optimiozation/Model_training/9_clusters/wandb/run-20240310_080708-t3izyq67/files/wandb-summary.json
+2024-03-10 08:08:55,162 INFO    Thread-13 :85382 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/yunbo/Documents/GitHub/PFL_Optimiozation/Model_training/9_clusters/wandb/run-20240310_080708-t3izyq67/files/output.log
+2024-03-10 08:08:55,508 DEBUG   HandlerThread:85382 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-10 08:08:55,510 DEBUG   SenderThread:85382 [sender.py:send():382] send: history
+2024-03-10 08:08:55,510 DEBUG   SenderThread:85382 [sender.py:send_request():409] send_request: summary_record
+2024-03-10 08:08:55,510 INFO    SenderThread:85382 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-03-10 08:08:56,168 INFO    Thread-13 :85382 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/yunbo/Documents/GitHub/PFL_Optimiozation/Model_training/9_clusters/wandb/run-20240310_080708-t3izyq67/files/wandb-summary.json
+2024-03-10 08:08:56,173 DEBUG   HandlerThread:85382 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-10 08:08:56,174 DEBUG   SenderThread:85382 [sender.py:send():382] send: history
+2024-03-10 08:08:56,174 DEBUG   SenderThread:85382 [sender.py:send_request():409] send_request: summary_record
+2024-03-10 08:08:56,174 INFO    SenderThread:85382 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-03-10 08:08:56,631 DEBUG   HandlerThread:85382 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-10 08:08:56,632 DEBUG   SenderThread:85382 [sender.py:send():382] send: history
+2024-03-10 08:08:56,632 DEBUG   SenderThread:85382 [sender.py:send_request():409] send_request: summary_record
+2024-03-10 08:08:56,633 INFO    SenderThread:85382 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-03-10 08:08:57,173 INFO    Thread-13 :85382 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/yunbo/Documents/GitHub/PFL_Optimiozation/Model_training/9_clusters/wandb/run-20240310_080708-t3izyq67/files/wandb-summary.json
+2024-03-10 08:08:57,173 INFO    Thread-13 :85382 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/yunbo/Documents/GitHub/PFL_Optimiozation/Model_training/9_clusters/wandb/run-20240310_080708-t3izyq67/files/output.log
+2024-03-10 08:08:57,236 DEBUG   HandlerThread:85382 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-10 08:08:57,237 DEBUG   SenderThread:85382 [sender.py:send():382] send: history
+2024-03-10 08:08:57,237 DEBUG   SenderThread:85382 [sender.py:send_request():409] send_request: summary_record
+2024-03-10 08:08:57,238 INFO    SenderThread:85382 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-03-10 08:08:57,700 DEBUG   HandlerThread:85382 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-10 08:08:57,702 DEBUG   SenderThread:85382 [sender.py:send():382] send: history
+2024-03-10 08:08:57,702 DEBUG   SenderThread:85382 [sender.py:send_request():409] send_request: summary_record
+2024-03-10 08:08:57,702 INFO    SenderThread:85382 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-03-10 08:08:58,176 INFO    Thread-13 :85382 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/yunbo/Documents/GitHub/PFL_Optimiozation/Model_training/9_clusters/wandb/run-20240310_080708-t3izyq67/files/wandb-summary.json
+2024-03-10 08:08:58,298 DEBUG   HandlerThread:85382 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-10 08:08:58,299 DEBUG   SenderThread:85382 [sender.py:send():382] send: history
+2024-03-10 08:08:58,299 DEBUG   SenderThread:85382 [sender.py:send_request():409] send_request: summary_record
+2024-03-10 08:08:58,299 INFO    SenderThread:85382 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-03-10 08:08:58,777 DEBUG   HandlerThread:85382 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-10 08:08:58,780 DEBUG   SenderThread:85382 [sender.py:send():382] send: history
+2024-03-10 08:08:58,780 DEBUG   SenderThread:85382 [sender.py:send_request():409] send_request: summary_record
+2024-03-10 08:08:58,780 DEBUG   HandlerThread:85382 [handler.py:handle_request():146] handle_request: status_report
+2024-03-10 08:08:58,780 INFO    SenderThread:85382 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-03-10 08:08:59,177 INFO    Thread-13 :85382 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/yunbo/Documents/GitHub/PFL_Optimiozation/Model_training/9_clusters/wandb/run-20240310_080708-t3izyq67/files/wandb-summary.json
+2024-03-10 08:08:59,178 INFO    Thread-13 :85382 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/yunbo/Documents/GitHub/PFL_Optimiozation/Model_training/9_clusters/wandb/run-20240310_080708-t3izyq67/files/output.log
+2024-03-10 08:08:59,463 DEBUG   HandlerThread:85382 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-10 08:08:59,464 DEBUG   SenderThread:85382 [sender.py:send():382] send: history
+2024-03-10 08:08:59,464 DEBUG   SenderThread:85382 [sender.py:send_request():409] send_request: summary_record
+2024-03-10 08:08:59,464 INFO    SenderThread:85382 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-03-10 08:08:59,946 DEBUG   HandlerThread:85382 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-10 08:08:59,948 DEBUG   SenderThread:85382 [sender.py:send():382] send: history
+2024-03-10 08:08:59,948 DEBUG   SenderThread:85382 [sender.py:send_request():409] send_request: summary_record
+2024-03-10 08:08:59,949 INFO    SenderThread:85382 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-03-10 08:09:00,182 INFO    Thread-13 :85382 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/yunbo/Documents/GitHub/PFL_Optimiozation/Model_training/9_clusters/wandb/run-20240310_080708-t3izyq67/files/wandb-summary.json
+2024-03-10 08:09:00,545 DEBUG   HandlerThread:85382 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-10 08:09:00,546 DEBUG   SenderThread:85382 [sender.py:send():382] send: history
+2024-03-10 08:09:00,546 DEBUG   SenderThread:85382 [sender.py:send_request():409] send_request: summary_record
+2024-03-10 08:09:00,546 INFO    SenderThread:85382 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-03-10 08:09:00,780 DEBUG   HandlerThread:85382 [handler.py:handle_request():146] handle_request: internal_messages
+2024-03-10 08:09:00,791 DEBUG   HandlerThread:85382 [handler.py:handle_request():146] handle_request: stop_status
+2024-03-10 08:09:00,791 DEBUG   SenderThread:85382 [sender.py:send_request():409] send_request: stop_status
+2024-03-10 08:09:01,015 DEBUG   HandlerThread:85382 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-10 08:09:01,027 DEBUG   SenderThread:85382 [sender.py:send():382] send: history
+2024-03-10 08:09:01,027 DEBUG   SenderThread:85382 [sender.py:send_request():409] send_request: summary_record
+2024-03-10 08:09:01,027 INFO    SenderThread:85382 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-03-10 08:09:01,186 INFO    Thread-13 :85382 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/yunbo/Documents/GitHub/PFL_Optimiozation/Model_training/9_clusters/wandb/run-20240310_080708-t3izyq67/files/wandb-summary.json
+2024-03-10 08:09:01,186 INFO    Thread-13 :85382 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/yunbo/Documents/GitHub/PFL_Optimiozation/Model_training/9_clusters/wandb/run-20240310_080708-t3izyq67/files/output.log
+2024-03-10 08:09:01,628 DEBUG   HandlerThread:85382 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-10 08:09:01,629 DEBUG   SenderThread:85382 [sender.py:send():382] send: history
+2024-03-10 08:09:01,629 DEBUG   SenderThread:85382 [sender.py:send_request():409] send_request: summary_record
+2024-03-10 08:09:01,630 INFO    SenderThread:85382 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-03-10 08:09:02,078 DEBUG   HandlerThread:85382 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-10 08:09:02,080 DEBUG   SenderThread:85382 [sender.py:send():382] send: history
+2024-03-10 08:09:02,080 DEBUG   SenderThread:85382 [sender.py:send_request():409] send_request: summary_record
+2024-03-10 08:09:02,080 INFO    SenderThread:85382 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-03-10 08:09:02,191 INFO    Thread-13 :85382 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/yunbo/Documents/GitHub/PFL_Optimiozation/Model_training/9_clusters/wandb/run-20240310_080708-t3izyq67/files/wandb-summary.json
+2024-03-10 08:09:02,666 DEBUG   HandlerThread:85382 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-10 08:09:02,667 DEBUG   SenderThread:85382 [sender.py:send():382] send: history
+2024-03-10 08:09:02,667 DEBUG   SenderThread:85382 [sender.py:send_request():409] send_request: summary_record
+2024-03-10 08:09:02,667 INFO    SenderThread:85382 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-03-10 08:09:03,188 DEBUG   HandlerThread:85382 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-10 08:09:03,191 DEBUG   SenderThread:85382 [sender.py:send():382] send: history
+2024-03-10 08:09:03,191 DEBUG   SenderThread:85382 [sender.py:send_request():409] send_request: summary_record
+2024-03-10 08:09:03,191 INFO    SenderThread:85382 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-03-10 08:09:03,192 INFO    Thread-13 :85382 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/yunbo/Documents/GitHub/PFL_Optimiozation/Model_training/9_clusters/wandb/run-20240310_080708-t3izyq67/files/wandb-summary.json
+2024-03-10 08:09:03,193 INFO    Thread-13 :85382 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/yunbo/Documents/GitHub/PFL_Optimiozation/Model_training/9_clusters/wandb/run-20240310_080708-t3izyq67/files/output.log
+2024-03-10 08:09:03,835 DEBUG   HandlerThread:85382 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-10 08:09:03,836 DEBUG   SenderThread:85382 [sender.py:send():382] send: history
+2024-03-10 08:09:03,836 DEBUG   SenderThread:85382 [sender.py:send_request():409] send_request: summary_record
+2024-03-10 08:09:03,836 DEBUG   HandlerThread:85382 [handler.py:handle_request():146] handle_request: status_report
+2024-03-10 08:09:03,837 INFO    SenderThread:85382 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-03-10 08:09:04,197 INFO    Thread-13 :85382 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/yunbo/Documents/GitHub/PFL_Optimiozation/Model_training/9_clusters/wandb/run-20240310_080708-t3izyq67/files/wandb-summary.json
+2024-03-10 08:09:04,330 DEBUG   HandlerThread:85382 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-10 08:09:04,331 DEBUG   SenderThread:85382 [sender.py:send():382] send: history
+2024-03-10 08:09:04,331 DEBUG   SenderThread:85382 [sender.py:send_request():409] send_request: summary_record
+2024-03-10 08:09:04,332 INFO    SenderThread:85382 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-03-10 08:09:04,927 DEBUG   HandlerThread:85382 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-10 08:09:04,928 DEBUG   SenderThread:85382 [sender.py:send():382] send: history
+2024-03-10 08:09:04,928 DEBUG   SenderThread:85382 [sender.py:send_request():409] send_request: summary_record
+2024-03-10 08:09:04,928 INFO    SenderThread:85382 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-03-10 08:09:05,202 INFO    Thread-13 :85382 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/yunbo/Documents/GitHub/PFL_Optimiozation/Model_training/9_clusters/wandb/run-20240310_080708-t3izyq67/files/wandb-summary.json
+2024-03-10 08:09:05,202 INFO    Thread-13 :85382 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/yunbo/Documents/GitHub/PFL_Optimiozation/Model_training/9_clusters/wandb/run-20240310_080708-t3izyq67/files/output.log
+2024-03-10 08:09:05,429 DEBUG   HandlerThread:85382 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-10 08:09:05,431 DEBUG   SenderThread:85382 [sender.py:send():382] send: history
+2024-03-10 08:09:05,431 DEBUG   SenderThread:85382 [sender.py:send_request():409] send_request: summary_record
+2024-03-10 08:09:05,431 INFO    SenderThread:85382 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-03-10 08:09:06,027 DEBUG   HandlerThread:85382 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-10 08:09:06,027 DEBUG   SenderThread:85382 [sender.py:send():382] send: history
+2024-03-10 08:09:06,027 DEBUG   SenderThread:85382 [sender.py:send_request():409] send_request: summary_record
+2024-03-10 08:09:06,028 INFO    SenderThread:85382 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-03-10 08:09:06,207 INFO    Thread-13 :85382 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/yunbo/Documents/GitHub/PFL_Optimiozation/Model_training/9_clusters/wandb/run-20240310_080708-t3izyq67/files/wandb-summary.json
+2024-03-10 08:09:06,571 DEBUG   HandlerThread:85382 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-10 08:09:06,574 DEBUG   SenderThread:85382 [sender.py:send():382] send: history
+2024-03-10 08:09:06,574 DEBUG   SenderThread:85382 [sender.py:send_request():409] send_request: summary_record
+2024-03-10 08:09:06,575 INFO    SenderThread:85382 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-03-10 08:09:07,207 INFO    Thread-13 :85382 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/yunbo/Documents/GitHub/PFL_Optimiozation/Model_training/9_clusters/wandb/run-20240310_080708-t3izyq67/files/wandb-summary.json
+2024-03-10 08:09:07,208 INFO    Thread-13 :85382 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/yunbo/Documents/GitHub/PFL_Optimiozation/Model_training/9_clusters/wandb/run-20240310_080708-t3izyq67/files/output.log
+2024-03-10 08:09:07,232 DEBUG   HandlerThread:85382 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-10 08:09:07,233 DEBUG   SenderThread:85382 [sender.py:send():382] send: history
+2024-03-10 08:09:07,233 DEBUG   SenderThread:85382 [sender.py:send_request():409] send_request: summary_record
+2024-03-10 08:09:07,233 INFO    SenderThread:85382 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-03-10 08:09:07,744 DEBUG   HandlerThread:85382 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-10 08:09:07,745 DEBUG   SenderThread:85382 [sender.py:send():382] send: history
+2024-03-10 08:09:07,746 DEBUG   SenderThread:85382 [sender.py:send_request():409] send_request: summary_record
+2024-03-10 08:09:07,746 INFO    SenderThread:85382 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-03-10 08:09:08,212 INFO    Thread-13 :85382 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/yunbo/Documents/GitHub/PFL_Optimiozation/Model_training/9_clusters/wandb/run-20240310_080708-t3izyq67/files/wandb-summary.json
+2024-03-10 08:09:08,329 DEBUG   HandlerThread:85382 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-10 08:09:08,330 DEBUG   SenderThread:85382 [sender.py:send():382] send: history
+2024-03-10 08:09:08,330 DEBUG   SenderThread:85382 [sender.py:send_request():409] send_request: summary_record
+2024-03-10 08:09:08,332 INFO    SenderThread:85382 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-03-10 08:09:08,798 DEBUG   HandlerThread:85382 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-10 08:09:08,799 DEBUG   SenderThread:85382 [sender.py:send():382] send: history
+2024-03-10 08:09:08,799 DEBUG   SenderThread:85382 [sender.py:send_request():409] send_request: summary_record
+2024-03-10 08:09:08,799 INFO    SenderThread:85382 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-03-10 08:09:08,827 DEBUG   SenderThread:85382 [sender.py:send():382] send: stats
+2024-03-10 08:09:08,959 DEBUG   HandlerThread:85382 [handler.py:handle_request():146] handle_request: status_report
+2024-03-10 08:09:09,216 INFO    Thread-13 :85382 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/yunbo/Documents/GitHub/PFL_Optimiozation/Model_training/9_clusters/wandb/run-20240310_080708-t3izyq67/files/wandb-summary.json
+2024-03-10 08:09:09,217 INFO    Thread-13 :85382 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/yunbo/Documents/GitHub/PFL_Optimiozation/Model_training/9_clusters/wandb/run-20240310_080708-t3izyq67/files/output.log
+2024-03-10 08:09:09,586 DEBUG   HandlerThread:85382 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-10 08:09:09,587 DEBUG   SenderThread:85382 [sender.py:send():382] send: history
+2024-03-10 08:09:09,587 DEBUG   SenderThread:85382 [sender.py:send_request():409] send_request: summary_record
+2024-03-10 08:09:09,588 INFO    SenderThread:85382 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-03-10 08:09:10,056 DEBUG   HandlerThread:85382 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-10 08:09:10,059 DEBUG   SenderThread:85382 [sender.py:send():382] send: history
+2024-03-10 08:09:10,059 DEBUG   SenderThread:85382 [sender.py:send_request():409] send_request: summary_record
+2024-03-10 08:09:10,059 INFO    SenderThread:85382 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-03-10 08:09:10,212 DEBUG   SenderThread:85382 [sender.py:send():382] send: exit
+2024-03-10 08:09:10,212 INFO    SenderThread:85382 [sender.py:send_exit():589] handling exit code: 0
+2024-03-10 08:09:10,213 INFO    SenderThread:85382 [sender.py:send_exit():591] handling runtime: 121
+2024-03-10 08:09:10,214 INFO    SenderThread:85382 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-03-10 08:09:10,214 INFO    SenderThread:85382 [sender.py:send_exit():597] send defer
+2024-03-10 08:09:10,215 DEBUG   HandlerThread:85382 [handler.py:handle_request():146] handle_request: defer
+2024-03-10 08:09:10,215 INFO    HandlerThread:85382 [handler.py:handle_request_defer():172] handle defer: 0
+2024-03-10 08:09:10,216 DEBUG   SenderThread:85382 [sender.py:send_request():409] send_request: defer
+2024-03-10 08:09:10,216 INFO    SenderThread:85382 [sender.py:send_request_defer():613] handle sender defer: 0
+2024-03-10 08:09:10,216 INFO    SenderThread:85382 [sender.py:transition_state():617] send defer: 1
+2024-03-10 08:09:10,216 DEBUG   HandlerThread:85382 [handler.py:handle_request():146] handle_request: defer
+2024-03-10 08:09:10,216 INFO    HandlerThread:85382 [handler.py:handle_request_defer():172] handle defer: 1
+2024-03-10 08:09:10,217 DEBUG   SenderThread:85382 [sender.py:send_request():409] send_request: defer
+2024-03-10 08:09:10,217 INFO    SenderThread:85382 [sender.py:send_request_defer():613] handle sender defer: 1
+2024-03-10 08:09:10,217 INFO    SenderThread:85382 [sender.py:transition_state():617] send defer: 2
+2024-03-10 08:09:10,218 DEBUG   HandlerThread:85382 [handler.py:handle_request():146] handle_request: defer
+2024-03-10 08:09:10,218 INFO    HandlerThread:85382 [handler.py:handle_request_defer():172] handle defer: 2
+2024-03-10 08:09:10,218 INFO    HandlerThread:85382 [system_monitor.py:finish():203] Stopping system monitor
+2024-03-10 08:09:10,218 DEBUG   SystemMonitor:85382 [system_monitor.py:_start():179] Finished system metrics aggregation loop
+2024-03-10 08:09:10,218 DEBUG   SystemMonitor:85382 [system_monitor.py:_start():183] Publishing last batch of metrics
+2024-03-10 08:09:10,219 INFO    Thread-13 :85382 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/yunbo/Documents/GitHub/PFL_Optimiozation/Model_training/9_clusters/wandb/run-20240310_080708-t3izyq67/files/wandb-summary.json
+2024-03-10 08:09:10,220 INFO    HandlerThread:85382 [interfaces.py:finish():202] Joined cpu monitor
+2024-03-10 08:09:10,220 INFO    HandlerThread:85382 [interfaces.py:finish():202] Joined disk monitor
+2024-03-10 08:09:10,221 INFO    HandlerThread:85382 [interfaces.py:finish():202] Joined gpuapple monitor
+2024-03-10 08:09:10,221 INFO    HandlerThread:85382 [interfaces.py:finish():202] Joined memory monitor
+2024-03-10 08:09:10,221 INFO    HandlerThread:85382 [interfaces.py:finish():202] Joined network monitor
+2024-03-10 08:09:10,221 DEBUG   SenderThread:85382 [sender.py:send_request():409] send_request: defer
+2024-03-10 08:09:10,221 INFO    SenderThread:85382 [sender.py:send_request_defer():613] handle sender defer: 2
+2024-03-10 08:09:10,221 INFO    SenderThread:85382 [sender.py:transition_state():617] send defer: 3
+2024-03-10 08:09:10,221 DEBUG   SenderThread:85382 [sender.py:send():382] send: stats
+2024-03-10 08:09:10,221 DEBUG   HandlerThread:85382 [handler.py:handle_request():146] handle_request: defer
+2024-03-10 08:09:10,221 INFO    HandlerThread:85382 [handler.py:handle_request_defer():172] handle defer: 3
+2024-03-10 08:09:10,221 DEBUG   SenderThread:85382 [sender.py:send_request():409] send_request: defer
+2024-03-10 08:09:10,221 INFO    SenderThread:85382 [sender.py:send_request_defer():613] handle sender defer: 3
+2024-03-10 08:09:10,221 INFO    SenderThread:85382 [sender.py:transition_state():617] send defer: 4
+2024-03-10 08:09:10,221 DEBUG   HandlerThread:85382 [handler.py:handle_request():146] handle_request: defer
+2024-03-10 08:09:10,222 INFO    HandlerThread:85382 [handler.py:handle_request_defer():172] handle defer: 4
+2024-03-10 08:09:10,222 DEBUG   SenderThread:85382 [sender.py:send_request():409] send_request: defer
+2024-03-10 08:09:10,222 INFO    SenderThread:85382 [sender.py:send_request_defer():613] handle sender defer: 4
+2024-03-10 08:09:10,222 INFO    SenderThread:85382 [sender.py:transition_state():617] send defer: 5
+2024-03-10 08:09:10,222 DEBUG   HandlerThread:85382 [handler.py:handle_request():146] handle_request: defer
+2024-03-10 08:09:10,222 INFO    HandlerThread:85382 [handler.py:handle_request_defer():172] handle defer: 5
+2024-03-10 08:09:10,223 DEBUG   SenderThread:85382 [sender.py:send():382] send: summary
+2024-03-10 08:09:10,223 INFO    SenderThread:85382 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-03-10 08:09:10,224 DEBUG   SenderThread:85382 [sender.py:send_request():409] send_request: defer
+2024-03-10 08:09:10,224 INFO    SenderThread:85382 [sender.py:send_request_defer():613] handle sender defer: 5
+2024-03-10 08:09:10,224 INFO    SenderThread:85382 [sender.py:transition_state():617] send defer: 6
+2024-03-10 08:09:10,224 DEBUG   HandlerThread:85382 [handler.py:handle_request():146] handle_request: defer
+2024-03-10 08:09:10,224 INFO    HandlerThread:85382 [handler.py:handle_request_defer():172] handle defer: 6
+2024-03-10 08:09:10,224 DEBUG   SenderThread:85382 [sender.py:send_request():409] send_request: defer
+2024-03-10 08:09:10,224 INFO    SenderThread:85382 [sender.py:send_request_defer():613] handle sender defer: 6
+2024-03-10 08:09:10,224 INFO    SenderThread:85382 [sender.py:transition_state():617] send defer: 7
+2024-03-10 08:09:10,224 DEBUG   HandlerThread:85382 [handler.py:handle_request():146] handle_request: status_report
+2024-03-10 08:09:10,224 DEBUG   HandlerThread:85382 [handler.py:handle_request():146] handle_request: defer
+2024-03-10 08:09:10,224 INFO    HandlerThread:85382 [handler.py:handle_request_defer():172] handle defer: 7
+2024-03-10 08:09:10,224 DEBUG   SenderThread:85382 [sender.py:send_request():409] send_request: defer
+2024-03-10 08:09:10,224 INFO    SenderThread:85382 [sender.py:send_request_defer():613] handle sender defer: 7
+2024-03-10 08:09:11,210 DEBUG   HandlerThread:85382 [handler.py:handle_request():146] handle_request: poll_exit
+2024-03-10 08:09:11,224 INFO    Thread-13 :85382 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/yunbo/Documents/GitHub/PFL_Optimiozation/Model_training/9_clusters/wandb/run-20240310_080708-t3izyq67/files/wandb-summary.json
+2024-03-10 08:09:11,224 INFO    Thread-13 :85382 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/yunbo/Documents/GitHub/PFL_Optimiozation/Model_training/9_clusters/wandb/run-20240310_080708-t3izyq67/files/output.log
+2024-03-10 08:09:12,230 INFO    Thread-13 :85382 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/yunbo/Documents/GitHub/PFL_Optimiozation/Model_training/9_clusters/wandb/run-20240310_080708-t3izyq67/files/output.log
+2024-03-10 08:09:12,606 INFO    SenderThread:85382 [sender.py:transition_state():617] send defer: 8
+2024-03-10 08:09:12,606 DEBUG   SenderThread:85382 [sender.py:send_request():409] send_request: poll_exit
+2024-03-10 08:09:12,607 DEBUG   HandlerThread:85382 [handler.py:handle_request():146] handle_request: defer
+2024-03-10 08:09:12,607 INFO    HandlerThread:85382 [handler.py:handle_request_defer():172] handle defer: 8
+2024-03-10 08:09:12,607 DEBUG   SenderThread:85382 [sender.py:send_request():409] send_request: defer
+2024-03-10 08:09:12,607 INFO    SenderThread:85382 [sender.py:send_request_defer():613] handle sender defer: 8
+2024-03-10 08:09:12,607 INFO    SenderThread:85382 [job_builder.py:build():296] Attempting to build job artifact
+2024-03-10 08:09:12,608 INFO    SenderThread:85382 [job_builder.py:_get_source_type():426] is repo sourced job
+2024-03-10 08:09:12,633 INFO    SenderThread:85382 [job_builder.py:build():402] adding wandb-job metadata file
+2024-03-10 08:09:12,637 INFO    SenderThread:85382 [sender.py:transition_state():617] send defer: 9
+2024-03-10 08:09:12,637 DEBUG   HandlerThread:85382 [handler.py:handle_request():146] handle_request: defer
+2024-03-10 08:09:12,637 DEBUG   SenderThread:85382 [sender.py:send():382] send: artifact
+2024-03-10 08:09:12,638 INFO    HandlerThread:85382 [handler.py:handle_request_defer():172] handle defer: 9
+2024-03-10 08:09:13,215 DEBUG   HandlerThread:85382 [handler.py:handle_request():146] handle_request: poll_exit
+2024-03-10 08:09:13,235 INFO    Thread-13 :85382 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/yunbo/Documents/GitHub/PFL_Optimiozation/Model_training/9_clusters/wandb/run-20240310_080708-t3izyq67/files/output.log
+2024-03-10 08:09:13,548 INFO    wandb-upload_0:85382 [upload_job.py:push():86] Skipped uploading /Users/yunbo/Library/Application Support/wandb/artifacts/staging/tmpx0ga8fhg
+2024-03-10 08:09:13,781 INFO    wandb-upload_1:85382 [upload_job.py:push():89] Uploaded file /Users/yunbo/Library/Application Support/wandb/artifacts/staging/tmpnacwe__g
+2024-03-10 08:09:14,718 INFO    SenderThread:85382 [sender.py:send_artifact():1494] sent artifact job-https___github.com_Yunbo-max_PFL_Optimiozation.git_Model_training_9_clusters_client.py - {'id': 'QXJ0aWZhY3Q6NzQ5OTYzODU4', 'state': 'PENDING', 'artifactSequence': {'id': 'QXJ0aWZhY3RDb2xsZWN0aW9uOjE0NzM1NzYzNA==', 'latestArtifact': {'id': 'QXJ0aWZhY3Q6NzQ5OTU5NTg1', 'versionIndex': 0}}}
+2024-03-10 08:09:14,719 DEBUG   SenderThread:85382 [sender.py:send_request():409] send_request: defer
+2024-03-10 08:09:14,719 INFO    SenderThread:85382 [sender.py:send_request_defer():613] handle sender defer: 9
+2024-03-10 08:09:14,719 INFO    SenderThread:85382 [dir_watcher.py:finish():358] shutting down directory watcher
+2024-03-10 08:09:15,238 INFO    SenderThread:85382 [dir_watcher.py:finish():388] scan: /Users/yunbo/Documents/GitHub/PFL_Optimiozation/Model_training/9_clusters/wandb/run-20240310_080708-t3izyq67/files
+2024-03-10 08:09:15,239 INFO    SenderThread:85382 [dir_watcher.py:finish():402] scan save: /Users/yunbo/Documents/GitHub/PFL_Optimiozation/Model_training/9_clusters/wandb/run-20240310_080708-t3izyq67/files/requirements.txt requirements.txt
+2024-03-10 08:09:15,239 INFO    SenderThread:85382 [dir_watcher.py:finish():402] scan save: /Users/yunbo/Documents/GitHub/PFL_Optimiozation/Model_training/9_clusters/wandb/run-20240310_080708-t3izyq67/files/output.log output.log
+2024-03-10 08:09:15,239 INFO    SenderThread:85382 [dir_watcher.py:finish():402] scan save: /Users/yunbo/Documents/GitHub/PFL_Optimiozation/Model_training/9_clusters/wandb/run-20240310_080708-t3izyq67/files/config.yaml config.yaml
+2024-03-10 08:09:15,240 INFO    SenderThread:85382 [dir_watcher.py:finish():402] scan save: /Users/yunbo/Documents/GitHub/PFL_Optimiozation/Model_training/9_clusters/wandb/run-20240310_080708-t3izyq67/files/wandb-summary.json wandb-summary.json
+2024-03-10 08:09:15,241 INFO    SenderThread:85382 [dir_watcher.py:finish():402] scan save: /Users/yunbo/Documents/GitHub/PFL_Optimiozation/Model_training/9_clusters/wandb/run-20240310_080708-t3izyq67/files/conda-environment.yaml conda-environment.yaml
+2024-03-10 08:09:15,244 INFO    SenderThread:85382 [dir_watcher.py:finish():402] scan save: /Users/yunbo/Documents/GitHub/PFL_Optimiozation/Model_training/9_clusters/wandb/run-20240310_080708-t3izyq67/files/wandb-metadata.json wandb-metadata.json
+2024-03-10 08:09:15,244 INFO    SenderThread:85382 [sender.py:transition_state():617] send defer: 10
+2024-03-10 08:09:15,246 DEBUG   SenderThread:85382 [sender.py:send_request():409] send_request: poll_exit
+2024-03-10 08:09:15,246 DEBUG   HandlerThread:85382 [handler.py:handle_request():146] handle_request: defer
+2024-03-10 08:09:15,246 INFO    HandlerThread:85382 [handler.py:handle_request_defer():172] handle defer: 10
+2024-03-10 08:09:15,247 DEBUG   SenderThread:85382 [sender.py:send_request():409] send_request: defer
+2024-03-10 08:09:15,248 INFO    SenderThread:85382 [sender.py:send_request_defer():613] handle sender defer: 10
+2024-03-10 08:09:15,248 INFO    SenderThread:85382 [file_pusher.py:finish():175] shutting down file pusher
+2024-03-10 08:09:15,631 INFO    wandb-upload_2:85382 [upload_job.py:push():131] Uploaded file /Users/yunbo/Documents/GitHub/PFL_Optimiozation/Model_training/9_clusters/wandb/run-20240310_080708-t3izyq67/files/config.yaml
+2024-03-10 08:09:15,644 INFO    wandb-upload_0:85382 [upload_job.py:push():131] Uploaded file /Users/yunbo/Documents/GitHub/PFL_Optimiozation/Model_training/9_clusters/wandb/run-20240310_080708-t3izyq67/files/requirements.txt
+2024-03-10 08:09:15,649 INFO    wandb-upload_3:85382 [upload_job.py:push():131] Uploaded file /Users/yunbo/Documents/GitHub/PFL_Optimiozation/Model_training/9_clusters/wandb/run-20240310_080708-t3izyq67/files/wandb-summary.json
+2024-03-10 08:09:15,675 INFO    wandb-upload_4:85382 [upload_job.py:push():131] Uploaded file /Users/yunbo/Documents/GitHub/PFL_Optimiozation/Model_training/9_clusters/wandb/run-20240310_080708-t3izyq67/files/conda-environment.yaml
+2024-03-10 08:09:15,710 INFO    wandb-upload_1:85382 [upload_job.py:push():131] Uploaded file /Users/yunbo/Documents/GitHub/PFL_Optimiozation/Model_training/9_clusters/wandb/run-20240310_080708-t3izyq67/files/output.log
+2024-03-10 08:09:15,915 INFO    Thread-12 :85382 [sender.py:transition_state():617] send defer: 11
+2024-03-10 08:09:15,916 DEBUG   HandlerThread:85382 [handler.py:handle_request():146] handle_request: defer
+2024-03-10 08:09:15,916 INFO    HandlerThread:85382 [handler.py:handle_request_defer():172] handle defer: 11
+2024-03-10 08:09:15,916 DEBUG   SenderThread:85382 [sender.py:send_request():409] send_request: defer
+2024-03-10 08:09:15,916 INFO    SenderThread:85382 [sender.py:send_request_defer():613] handle sender defer: 11
+2024-03-10 08:09:15,916 INFO    SenderThread:85382 [file_pusher.py:join():181] waiting for file pusher
+2024-03-10 08:09:15,916 INFO    SenderThread:85382 [sender.py:transition_state():617] send defer: 12
+2024-03-10 08:09:15,916 DEBUG   HandlerThread:85382 [handler.py:handle_request():146] handle_request: defer
+2024-03-10 08:09:15,916 INFO    HandlerThread:85382 [handler.py:handle_request_defer():172] handle defer: 12
+2024-03-10 08:09:15,916 DEBUG   SenderThread:85382 [sender.py:send_request():409] send_request: defer
+2024-03-10 08:09:15,916 INFO    SenderThread:85382 [sender.py:send_request_defer():613] handle sender defer: 12
+2024-03-10 08:09:15,916 INFO    SenderThread:85382 [file_stream.py:finish():595] file stream finish called
+2024-03-10 08:09:16,223 DEBUG   HandlerThread:85382 [handler.py:handle_request():146] handle_request: poll_exit
+2024-03-10 08:09:16,326 INFO    SenderThread:85382 [file_stream.py:finish():599] file stream finish is done
+2024-03-10 08:09:16,326 INFO    SenderThread:85382 [sender.py:transition_state():617] send defer: 13
+2024-03-10 08:09:16,327 DEBUG   SenderThread:85382 [sender.py:send_request():409] send_request: poll_exit
+2024-03-10 08:09:16,327 DEBUG   HandlerThread:85382 [handler.py:handle_request():146] handle_request: defer
+2024-03-10 08:09:16,327 INFO    HandlerThread:85382 [handler.py:handle_request_defer():172] handle defer: 13
+2024-03-10 08:09:16,327 DEBUG   SenderThread:85382 [sender.py:send_request():409] send_request: defer
+2024-03-10 08:09:16,327 INFO    SenderThread:85382 [sender.py:send_request_defer():613] handle sender defer: 13
+2024-03-10 08:09:16,327 INFO    SenderThread:85382 [sender.py:transition_state():617] send defer: 14
+2024-03-10 08:09:16,328 DEBUG   HandlerThread:85382 [handler.py:handle_request():146] handle_request: defer
+2024-03-10 08:09:16,328 DEBUG   SenderThread:85382 [sender.py:send():382] send: final
+2024-03-10 08:09:16,328 DEBUG   SenderThread:85382 [sender.py:send():382] send: footer
+2024-03-10 08:09:16,328 INFO    HandlerThread:85382 [handler.py:handle_request_defer():172] handle defer: 14
+2024-03-10 08:09:16,328 DEBUG   SenderThread:85382 [sender.py:send_request():409] send_request: defer
+2024-03-10 08:09:16,328 INFO    SenderThread:85382 [sender.py:send_request_defer():613] handle sender defer: 14
+2024-03-10 08:09:16,328 DEBUG   HandlerThread:85382 [handler.py:handle_request():146] handle_request: poll_exit
+2024-03-10 08:09:16,328 DEBUG   SenderThread:85382 [sender.py:send_request():409] send_request: poll_exit
+2024-03-10 08:09:16,328 DEBUG   HandlerThread:85382 [handler.py:handle_request():146] handle_request: poll_exit
+2024-03-10 08:09:16,329 DEBUG   SenderThread:85382 [sender.py:send_request():409] send_request: poll_exit
+2024-03-10 08:09:16,329 DEBUG   HandlerThread:85382 [handler.py:handle_request():146] handle_request: server_info
+2024-03-10 08:09:16,329 DEBUG   HandlerThread:85382 [handler.py:handle_request():146] handle_request: get_summary
+2024-03-10 08:09:16,329 DEBUG   SenderThread:85382 [sender.py:send_request():409] send_request: server_info
+2024-03-10 08:09:16,330 DEBUG   HandlerThread:85382 [handler.py:handle_request():146] handle_request: sampled_history
+2024-03-10 08:09:16,331 DEBUG   HandlerThread:85382 [handler.py:handle_request():146] handle_request: internal_messages
+2024-03-10 08:09:16,332 DEBUG   HandlerThread:85382 [handler.py:handle_request():146] handle_request: job_info
+2024-03-10 08:09:16,455 DEBUG   SenderThread:85382 [sender.py:send_request():409] send_request: job_info
+2024-03-10 08:09:16,455 INFO    MainThread:85382 [wandb_run.py:_footer_history_summary_info():3857] rendering history
+2024-03-10 08:09:16,455 INFO    MainThread:85382 [wandb_run.py:_footer_history_summary_info():3889] rendering summary
+2024-03-10 08:09:16,455 INFO    MainThread:85382 [wandb_run.py:_footer_sync_info():3816] logging synced files
+2024-03-10 08:09:16,456 DEBUG   HandlerThread:85382 [handler.py:handle_request():146] handle_request: shutdown
+2024-03-10 08:09:16,456 INFO    HandlerThread:85382 [handler.py:finish():869] shutting down handler
+2024-03-10 08:09:17,333 INFO    WriterThread:85382 [datastore.py:close():296] close: /Users/yunbo/Documents/GitHub/PFL_Optimiozation/Model_training/9_clusters/wandb/run-20240310_080708-t3izyq67/run-t3izyq67.wandb
+2024-03-10 08:09:17,460 INFO    SenderThread:85382 [sender.py:finish():1572] shutting down sender
+2024-03-10 08:09:17,460 INFO    SenderThread:85382 [file_pusher.py:finish():175] shutting down file pusher
+2024-03-10 08:09:17,460 INFO    SenderThread:85382 [file_pusher.py:join():181] waiting for file pusher

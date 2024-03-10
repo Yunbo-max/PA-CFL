@@ -1,0 +1,37 @@
+{
+    "os": "macOS-14.2-arm64-arm-64bit",
+    "python": "3.9.18",
+    "heartbeatAt": "2024-03-09T09:27:00.195383",
+    "startedAt": "2024-03-09T09:26:59.721681",
+    "docker": null,
+    "cuda": null,
+    "args": [],
+    "state": "running",
+    "program": "/Users/yunbo/Documents/GitHub/PFL_Optimiozation/Model_training/server_CNN.py",
+    "codePathLocal": "server_CNN.py",
+    "codePath": "Model_training/server_CNN.py",
+    "git": {
+        "remote": "https://github.com/Yunbo-max/PFL_Optimiozation.git",
+        "commit": "406fded0406405b436908435d22a52c9b01b0299"
+    },
+    "email": "82950147+Yunbo-max@users.noreply.github.com",
+    "root": "/Users/yunbo/Documents/GitHub/PFL_Optimiozation",
+    "host": "dhcp-10-249-98-76.eduroam.wireless.private.cam.ac.uk",
+    "username": "yunbo",
+    "executable": "/Users/yunbo/anaconda3/envs/basic/bin/python",
+    "cpu_count": 10,
+    "cpu_count_logical": 10,
+    "disk": {
+        "/": {
+            "total": 460.4317207336426,
+            "used": 157.28454971313477
+        }
+    },
+    "gpuapple": {
+        "type": "arm",
+        "vendor": "Apple"
+    },
+    "memory": {
+        "total": 16.0
+    }
+}

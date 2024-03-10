@@ -1,0 +1,414 @@
+INFO flwr 2024-03-10 08:07:15,547 | app.py:163 | Starting Flower server, config: ServerConfig(num_rounds=100, round_timeout=None)
+INFO flwr 2024-03-10 08:07:15,563 | app.py:176 | Flower ECE: gRPC server running (100 rounds), SSL is disabled
+INFO flwr 2024-03-10 08:07:15,565 | server.py:89 | Initializing global parameters
+INFO flwr 2024-03-10 08:07:15,566 | server.py:276 | Requesting initial parameters from one random client
+INFO flwr 2024-03-10 08:07:15,828 | server.py:280 | Received initial parameters from one random client
+INFO flwr 2024-03-10 08:07:15,829 | server.py:91 | Evaluating initial parameters
+INFO flwr 2024-03-10 08:07:15,829 | server.py:104 | FL starting
+DEBUG flwr 2024-03-10 08:07:16,198 | server.py:222 | fit_round 1: strategy sampled 4 clients (out of 4)
+DEBUG flwr 2024-03-10 08:07:17,611 | server.py:236 | fit_round 1 received 4 results and 0 failures
+WARNING flwr 2024-03-10 08:07:17,613 | fedavg.py:242 | No fit_metrics_aggregation_fn provided
+DEBUG flwr 2024-03-10 08:07:17,613 | server.py:173 | evaluate_round 1: strategy sampled 4 clients (out of 4)
+DEBUG flwr 2024-03-10 08:07:17,648 | server.py:187 | evaluate_round 1 received 4 results and 0 failures
+DEBUG flwr 2024-03-10 08:07:17,649 | server.py:222 | fit_round 2: strategy sampled 4 clients (out of 4)
+DEBUG flwr 2024-03-10 08:07:18,839 | server.py:236 | fit_round 2 received 4 results and 0 failures
+DEBUG flwr 2024-03-10 08:07:18,840 | server.py:173 | evaluate_round 2: strategy sampled 4 clients (out of 4)
+DEBUG flwr 2024-03-10 08:07:18,866 | server.py:187 | evaluate_round 2 received 4 results and 0 failures
+DEBUG flwr 2024-03-10 08:07:18,867 | server.py:222 | fit_round 3: strategy sampled 4 clients (out of 4)
+DEBUG flwr 2024-03-10 08:07:20,006 | server.py:236 | fit_round 3 received 4 results and 0 failures
+DEBUG flwr 2024-03-10 08:07:20,007 | server.py:173 | evaluate_round 3: strategy sampled 4 clients (out of 4)
+DEBUG flwr 2024-03-10 08:07:20,036 | server.py:187 | evaluate_round 3 received 4 results and 0 failures
+DEBUG flwr 2024-03-10 08:07:20,037 | server.py:222 | fit_round 4: strategy sampled 4 clients (out of 4)
+DEBUG flwr 2024-03-10 08:07:21,232 | server.py:236 | fit_round 4 received 4 results and 0 failures
+DEBUG flwr 2024-03-10 08:07:21,234 | server.py:173 | evaluate_round 4: strategy sampled 4 clients (out of 4)
+DEBUG flwr 2024-03-10 08:07:21,272 | server.py:187 | evaluate_round 4 received 4 results and 0 failures
+DEBUG flwr 2024-03-10 08:07:21,272 | server.py:222 | fit_round 5: strategy sampled 4 clients (out of 4)
+DEBUG flwr 2024-03-10 08:07:22,520 | server.py:236 | fit_round 5 received 4 results and 0 failures
+DEBUG flwr 2024-03-10 08:07:22,521 | server.py:173 | evaluate_round 5: strategy sampled 4 clients (out of 4)
+DEBUG flwr 2024-03-10 08:07:22,553 | server.py:187 | evaluate_round 5 received 4 results and 0 failures
+DEBUG flwr 2024-03-10 08:07:22,553 | server.py:222 | fit_round 6: strategy sampled 4 clients (out of 4)
+DEBUG flwr 2024-03-10 08:07:23,814 | server.py:236 | fit_round 6 received 4 results and 0 failures
+DEBUG flwr 2024-03-10 08:07:23,818 | server.py:173 | evaluate_round 6: strategy sampled 4 clients (out of 4)
+DEBUG flwr 2024-03-10 08:07:23,851 | server.py:187 | evaluate_round 6 received 4 results and 0 failures
+DEBUG flwr 2024-03-10 08:07:23,852 | server.py:222 | fit_round 7: strategy sampled 4 clients (out of 4)
+DEBUG flwr 2024-03-10 08:07:25,348 | server.py:236 | fit_round 7 received 4 results and 0 failures
+DEBUG flwr 2024-03-10 08:07:25,351 | server.py:173 | evaluate_round 7: strategy sampled 4 clients (out of 4)
+DEBUG flwr 2024-03-10 08:07:25,395 | server.py:187 | evaluate_round 7 received 4 results and 0 failures
+DEBUG flwr 2024-03-10 08:07:25,398 | server.py:222 | fit_round 8: strategy sampled 4 clients (out of 4)
+DEBUG flwr 2024-03-10 08:07:26,970 | server.py:236 | fit_round 8 received 4 results and 0 failures
+DEBUG flwr 2024-03-10 08:07:26,971 | server.py:173 | evaluate_round 8: strategy sampled 4 clients (out of 4)
+DEBUG flwr 2024-03-10 08:07:27,001 | server.py:187 | evaluate_round 8 received 4 results and 0 failures
+DEBUG flwr 2024-03-10 08:07:27,001 | server.py:222 | fit_round 9: strategy sampled 4 clients (out of 4)
+DEBUG flwr 2024-03-10 08:07:28,293 | server.py:236 | fit_round 9 received 4 results and 0 failures
+DEBUG flwr 2024-03-10 08:07:28,295 | server.py:173 | evaluate_round 9: strategy sampled 4 clients (out of 4)
+DEBUG flwr 2024-03-10 08:07:28,331 | server.py:187 | evaluate_round 9 received 4 results and 0 failures
+DEBUG flwr 2024-03-10 08:07:28,331 | server.py:222 | fit_round 10: strategy sampled 4 clients (out of 4)
+DEBUG flwr 2024-03-10 08:07:29,495 | server.py:236 | fit_round 10 received 4 results and 0 failures
+DEBUG flwr 2024-03-10 08:07:29,496 | server.py:173 | evaluate_round 10: strategy sampled 4 clients (out of 4)
+DEBUG flwr 2024-03-10 08:07:29,522 | server.py:187 | evaluate_round 10 received 4 results and 0 failures
+DEBUG flwr 2024-03-10 08:07:29,523 | server.py:222 | fit_round 11: strategy sampled 4 clients (out of 4)
+DEBUG flwr 2024-03-10 08:07:30,611 | server.py:236 | fit_round 11 received 4 results and 0 failures
+DEBUG flwr 2024-03-10 08:07:30,613 | server.py:173 | evaluate_round 11: strategy sampled 4 clients (out of 4)
+DEBUG flwr 2024-03-10 08:07:30,646 | server.py:187 | evaluate_round 11 received 4 results and 0 failures
+DEBUG flwr 2024-03-10 08:07:30,647 | server.py:222 | fit_round 12: strategy sampled 4 clients (out of 4)
+DEBUG flwr 2024-03-10 08:07:31,768 | server.py:236 | fit_round 12 received 4 results and 0 failures
+DEBUG flwr 2024-03-10 08:07:31,771 | server.py:173 | evaluate_round 12: strategy sampled 4 clients (out of 4)
+DEBUG flwr 2024-03-10 08:07:31,806 | server.py:187 | evaluate_round 12 received 4 results and 0 failures
+DEBUG flwr 2024-03-10 08:07:31,807 | server.py:222 | fit_round 13: strategy sampled 4 clients (out of 4)
+DEBUG flwr 2024-03-10 08:07:33,027 | server.py:236 | fit_round 13 received 4 results and 0 failures
+DEBUG flwr 2024-03-10 08:07:33,029 | server.py:173 | evaluate_round 13: strategy sampled 4 clients (out of 4)
+DEBUG flwr 2024-03-10 08:07:33,062 | server.py:187 | evaluate_round 13 received 4 results and 0 failures
+DEBUG flwr 2024-03-10 08:07:33,062 | server.py:222 | fit_round 14: strategy sampled 4 clients (out of 4)
+DEBUG flwr 2024-03-10 08:07:34,224 | server.py:236 | fit_round 14 received 4 results and 0 failures
+DEBUG flwr 2024-03-10 08:07:34,227 | server.py:173 | evaluate_round 14: strategy sampled 4 clients (out of 4)
+DEBUG flwr 2024-03-10 08:07:34,269 | server.py:187 | evaluate_round 14 received 4 results and 0 failures
+DEBUG flwr 2024-03-10 08:07:34,271 | server.py:222 | fit_round 15: strategy sampled 4 clients (out of 4)
+DEBUG flwr 2024-03-10 08:07:35,402 | server.py:236 | fit_round 15 received 4 results and 0 failures
+DEBUG flwr 2024-03-10 08:07:35,404 | server.py:173 | evaluate_round 15: strategy sampled 4 clients (out of 4)
+DEBUG flwr 2024-03-10 08:07:35,443 | server.py:187 | evaluate_round 15 received 4 results and 0 failures
+DEBUG flwr 2024-03-10 08:07:35,444 | server.py:222 | fit_round 16: strategy sampled 4 clients (out of 4)
+DEBUG flwr 2024-03-10 08:07:36,530 | server.py:236 | fit_round 16 received 4 results and 0 failures
+DEBUG flwr 2024-03-10 08:07:36,532 | server.py:173 | evaluate_round 16: strategy sampled 4 clients (out of 4)
+DEBUG flwr 2024-03-10 08:07:36,566 | server.py:187 | evaluate_round 16 received 4 results and 0 failures
+DEBUG flwr 2024-03-10 08:07:36,567 | server.py:222 | fit_round 17: strategy sampled 4 clients (out of 4)
+DEBUG flwr 2024-03-10 08:07:37,750 | server.py:236 | fit_round 17 received 4 results and 0 failures
+DEBUG flwr 2024-03-10 08:07:37,752 | server.py:173 | evaluate_round 17: strategy sampled 4 clients (out of 4)
+DEBUG flwr 2024-03-10 08:07:37,784 | server.py:187 | evaluate_round 17 received 4 results and 0 failures
+DEBUG flwr 2024-03-10 08:07:37,785 | server.py:222 | fit_round 18: strategy sampled 4 clients (out of 4)
+DEBUG flwr 2024-03-10 08:07:38,918 | server.py:236 | fit_round 18 received 4 results and 0 failures
+DEBUG flwr 2024-03-10 08:07:38,919 | server.py:173 | evaluate_round 18: strategy sampled 4 clients (out of 4)
+DEBUG flwr 2024-03-10 08:07:38,950 | server.py:187 | evaluate_round 18 received 4 results and 0 failures
+DEBUG flwr 2024-03-10 08:07:38,951 | server.py:222 | fit_round 19: strategy sampled 4 clients (out of 4)
+DEBUG flwr 2024-03-10 08:07:40,053 | server.py:236 | fit_round 19 received 4 results and 0 failures
+DEBUG flwr 2024-03-10 08:07:40,055 | server.py:173 | evaluate_round 19: strategy sampled 4 clients (out of 4)
+DEBUG flwr 2024-03-10 08:07:40,085 | server.py:187 | evaluate_round 19 received 4 results and 0 failures
+DEBUG flwr 2024-03-10 08:07:40,086 | server.py:222 | fit_round 20: strategy sampled 4 clients (out of 4)
+DEBUG flwr 2024-03-10 08:07:41,140 | server.py:236 | fit_round 20 received 4 results and 0 failures
+DEBUG flwr 2024-03-10 08:07:41,141 | server.py:173 | evaluate_round 20: strategy sampled 4 clients (out of 4)
+DEBUG flwr 2024-03-10 08:07:41,175 | server.py:187 | evaluate_round 20 received 4 results and 0 failures
+DEBUG flwr 2024-03-10 08:07:41,175 | server.py:222 | fit_round 21: strategy sampled 4 clients (out of 4)
+DEBUG flwr 2024-03-10 08:07:42,294 | server.py:236 | fit_round 21 received 4 results and 0 failures
+DEBUG flwr 2024-03-10 08:07:42,296 | server.py:173 | evaluate_round 21: strategy sampled 4 clients (out of 4)
+DEBUG flwr 2024-03-10 08:07:42,326 | server.py:187 | evaluate_round 21 received 4 results and 0 failures
+DEBUG flwr 2024-03-10 08:07:42,327 | server.py:222 | fit_round 22: strategy sampled 4 clients (out of 4)
+DEBUG flwr 2024-03-10 08:07:43,470 | server.py:236 | fit_round 22 received 4 results and 0 failures
+DEBUG flwr 2024-03-10 08:07:43,471 | server.py:173 | evaluate_round 22: strategy sampled 4 clients (out of 4)
+DEBUG flwr 2024-03-10 08:07:43,500 | server.py:187 | evaluate_round 22 received 4 results and 0 failures
+DEBUG flwr 2024-03-10 08:07:43,500 | server.py:222 | fit_round 23: strategy sampled 4 clients (out of 4)
+DEBUG flwr 2024-03-10 08:07:44,751 | server.py:236 | fit_round 23 received 4 results and 0 failures
+DEBUG flwr 2024-03-10 08:07:44,753 | server.py:173 | evaluate_round 23: strategy sampled 4 clients (out of 4)
+DEBUG flwr 2024-03-10 08:07:44,782 | server.py:187 | evaluate_round 23 received 4 results and 0 failures
+DEBUG flwr 2024-03-10 08:07:44,782 | server.py:222 | fit_round 24: strategy sampled 4 clients (out of 4)
+DEBUG flwr 2024-03-10 08:07:45,893 | server.py:236 | fit_round 24 received 4 results and 0 failures
+DEBUG flwr 2024-03-10 08:07:45,894 | server.py:173 | evaluate_round 24: strategy sampled 4 clients (out of 4)
+DEBUG flwr 2024-03-10 08:07:45,934 | server.py:187 | evaluate_round 24 received 4 results and 0 failures
+DEBUG flwr 2024-03-10 08:07:45,934 | server.py:222 | fit_round 25: strategy sampled 4 clients (out of 4)
+DEBUG flwr 2024-03-10 08:07:46,999 | server.py:236 | fit_round 25 received 4 results and 0 failures
+DEBUG flwr 2024-03-10 08:07:47,000 | server.py:173 | evaluate_round 25: strategy sampled 4 clients (out of 4)
+DEBUG flwr 2024-03-10 08:07:47,028 | server.py:187 | evaluate_round 25 received 4 results and 0 failures
+DEBUG flwr 2024-03-10 08:07:47,028 | server.py:222 | fit_round 26: strategy sampled 4 clients (out of 4)
+DEBUG flwr 2024-03-10 08:07:48,151 | server.py:236 | fit_round 26 received 4 results and 0 failures
+DEBUG flwr 2024-03-10 08:07:48,153 | server.py:173 | evaluate_round 26: strategy sampled 4 clients (out of 4)
+DEBUG flwr 2024-03-10 08:07:48,188 | server.py:187 | evaluate_round 26 received 4 results and 0 failures
+DEBUG flwr 2024-03-10 08:07:48,189 | server.py:222 | fit_round 27: strategy sampled 4 clients (out of 4)
+DEBUG flwr 2024-03-10 08:07:49,450 | server.py:236 | fit_round 27 received 4 results and 0 failures
+DEBUG flwr 2024-03-10 08:07:49,451 | server.py:173 | evaluate_round 27: strategy sampled 4 clients (out of 4)
+DEBUG flwr 2024-03-10 08:07:49,481 | server.py:187 | evaluate_round 27 received 4 results and 0 failures
+DEBUG flwr 2024-03-10 08:07:49,482 | server.py:222 | fit_round 28: strategy sampled 4 clients (out of 4)
+DEBUG flwr 2024-03-10 08:07:50,562 | server.py:236 | fit_round 28 received 4 results and 0 failures
+DEBUG flwr 2024-03-10 08:07:50,564 | server.py:173 | evaluate_round 28: strategy sampled 4 clients (out of 4)
+DEBUG flwr 2024-03-10 08:07:50,594 | server.py:187 | evaluate_round 28 received 4 results and 0 failures
+DEBUG flwr 2024-03-10 08:07:50,594 | server.py:222 | fit_round 29: strategy sampled 4 clients (out of 4)
+DEBUG flwr 2024-03-10 08:07:51,636 | server.py:236 | fit_round 29 received 4 results and 0 failures
+DEBUG flwr 2024-03-10 08:07:51,638 | server.py:173 | evaluate_round 29: strategy sampled 4 clients (out of 4)
+DEBUG flwr 2024-03-10 08:07:51,666 | server.py:187 | evaluate_round 29 received 4 results and 0 failures
+DEBUG flwr 2024-03-10 08:07:51,666 | server.py:222 | fit_round 30: strategy sampled 4 clients (out of 4)
+DEBUG flwr 2024-03-10 08:07:52,739 | server.py:236 | fit_round 30 received 4 results and 0 failures
+DEBUG flwr 2024-03-10 08:07:52,741 | server.py:173 | evaluate_round 30: strategy sampled 4 clients (out of 4)
+DEBUG flwr 2024-03-10 08:07:52,775 | server.py:187 | evaluate_round 30 received 4 results and 0 failures
+DEBUG flwr 2024-03-10 08:07:52,776 | server.py:222 | fit_round 31: strategy sampled 4 clients (out of 4)
+DEBUG flwr 2024-03-10 08:07:53,828 | server.py:236 | fit_round 31 received 4 results and 0 failures
+DEBUG flwr 2024-03-10 08:07:53,829 | server.py:173 | evaluate_round 31: strategy sampled 4 clients (out of 4)
+DEBUG flwr 2024-03-10 08:07:53,860 | server.py:187 | evaluate_round 31 received 4 results and 0 failures
+DEBUG flwr 2024-03-10 08:07:53,861 | server.py:222 | fit_round 32: strategy sampled 4 clients (out of 4)
+DEBUG flwr 2024-03-10 08:07:54,937 | server.py:236 | fit_round 32 received 4 results and 0 failures
+DEBUG flwr 2024-03-10 08:07:54,939 | server.py:173 | evaluate_round 32: strategy sampled 4 clients (out of 4)
+DEBUG flwr 2024-03-10 08:07:54,968 | server.py:187 | evaluate_round 32 received 4 results and 0 failures
+DEBUG flwr 2024-03-10 08:07:54,969 | server.py:222 | fit_round 33: strategy sampled 4 clients (out of 4)
+DEBUG flwr 2024-03-10 08:07:56,018 | server.py:236 | fit_round 33 received 4 results and 0 failures
+DEBUG flwr 2024-03-10 08:07:56,020 | server.py:173 | evaluate_round 33: strategy sampled 4 clients (out of 4)
+DEBUG flwr 2024-03-10 08:07:56,050 | server.py:187 | evaluate_round 33 received 4 results and 0 failures
+DEBUG flwr 2024-03-10 08:07:56,050 | server.py:222 | fit_round 34: strategy sampled 4 clients (out of 4)
+DEBUG flwr 2024-03-10 08:07:57,167 | server.py:236 | fit_round 34 received 4 results and 0 failures
+DEBUG flwr 2024-03-10 08:07:57,168 | server.py:173 | evaluate_round 34: strategy sampled 4 clients (out of 4)
+DEBUG flwr 2024-03-10 08:07:57,196 | server.py:187 | evaluate_round 34 received 4 results and 0 failures
+DEBUG flwr 2024-03-10 08:07:57,196 | server.py:222 | fit_round 35: strategy sampled 4 clients (out of 4)
+DEBUG flwr 2024-03-10 08:07:58,232 | server.py:236 | fit_round 35 received 4 results and 0 failures
+DEBUG flwr 2024-03-10 08:07:58,234 | server.py:173 | evaluate_round 35: strategy sampled 4 clients (out of 4)
+DEBUG flwr 2024-03-10 08:07:58,265 | server.py:187 | evaluate_round 35 received 4 results and 0 failures
+DEBUG flwr 2024-03-10 08:07:58,265 | server.py:222 | fit_round 36: strategy sampled 4 clients (out of 4)
+DEBUG flwr 2024-03-10 08:07:59,334 | server.py:236 | fit_round 36 received 4 results and 0 failures
+DEBUG flwr 2024-03-10 08:07:59,336 | server.py:173 | evaluate_round 36: strategy sampled 4 clients (out of 4)
+DEBUG flwr 2024-03-10 08:07:59,367 | server.py:187 | evaluate_round 36 received 4 results and 0 failures
+DEBUG flwr 2024-03-10 08:07:59,368 | server.py:222 | fit_round 37: strategy sampled 4 clients (out of 4)
+DEBUG flwr 2024-03-10 08:08:00,431 | server.py:236 | fit_round 37 received 4 results and 0 failures
+DEBUG flwr 2024-03-10 08:08:00,432 | server.py:173 | evaluate_round 37: strategy sampled 4 clients (out of 4)
+DEBUG flwr 2024-03-10 08:08:00,461 | server.py:187 | evaluate_round 37 received 4 results and 0 failures
+DEBUG flwr 2024-03-10 08:08:00,461 | server.py:222 | fit_round 38: strategy sampled 4 clients (out of 4)
+DEBUG flwr 2024-03-10 08:08:01,569 | server.py:236 | fit_round 38 received 4 results and 0 failures
+DEBUG flwr 2024-03-10 08:08:01,571 | server.py:173 | evaluate_round 38: strategy sampled 4 clients (out of 4)
+DEBUG flwr 2024-03-10 08:08:01,599 | server.py:187 | evaluate_round 38 received 4 results and 0 failures
+DEBUG flwr 2024-03-10 08:08:01,600 | server.py:222 | fit_round 39: strategy sampled 4 clients (out of 4)
+DEBUG flwr 2024-03-10 08:08:02,665 | server.py:236 | fit_round 39 received 4 results and 0 failures
+DEBUG flwr 2024-03-10 08:08:02,666 | server.py:173 | evaluate_round 39: strategy sampled 4 clients (out of 4)
+DEBUG flwr 2024-03-10 08:08:02,695 | server.py:187 | evaluate_round 39 received 4 results and 0 failures
+DEBUG flwr 2024-03-10 08:08:02,695 | server.py:222 | fit_round 40: strategy sampled 4 clients (out of 4)
+DEBUG flwr 2024-03-10 08:08:03,753 | server.py:236 | fit_round 40 received 4 results and 0 failures
+DEBUG flwr 2024-03-10 08:08:03,755 | server.py:173 | evaluate_round 40: strategy sampled 4 clients (out of 4)
+DEBUG flwr 2024-03-10 08:08:03,783 | server.py:187 | evaluate_round 40 received 4 results and 0 failures
+DEBUG flwr 2024-03-10 08:08:03,783 | server.py:222 | fit_round 41: strategy sampled 4 clients (out of 4)
+DEBUG flwr 2024-03-10 08:08:04,851 | server.py:236 | fit_round 41 received 4 results and 0 failures
+DEBUG flwr 2024-03-10 08:08:04,853 | server.py:173 | evaluate_round 41: strategy sampled 4 clients (out of 4)
+DEBUG flwr 2024-03-10 08:08:04,883 | server.py:187 | evaluate_round 41 received 4 results and 0 failures
+DEBUG flwr 2024-03-10 08:08:04,884 | server.py:222 | fit_round 42: strategy sampled 4 clients (out of 4)
+DEBUG flwr 2024-03-10 08:08:05,958 | server.py:236 | fit_round 42 received 4 results and 0 failures
+DEBUG flwr 2024-03-10 08:08:05,960 | server.py:173 | evaluate_round 42: strategy sampled 4 clients (out of 4)
+DEBUG flwr 2024-03-10 08:08:05,990 | server.py:187 | evaluate_round 42 received 4 results and 0 failures
+DEBUG flwr 2024-03-10 08:08:05,990 | server.py:222 | fit_round 43: strategy sampled 4 clients (out of 4)
+DEBUG flwr 2024-03-10 08:08:07,041 | server.py:236 | fit_round 43 received 4 results and 0 failures
+DEBUG flwr 2024-03-10 08:08:07,043 | server.py:173 | evaluate_round 43: strategy sampled 4 clients (out of 4)
+DEBUG flwr 2024-03-10 08:08:07,072 | server.py:187 | evaluate_round 43 received 4 results and 0 failures
+DEBUG flwr 2024-03-10 08:08:07,073 | server.py:222 | fit_round 44: strategy sampled 4 clients (out of 4)
+DEBUG flwr 2024-03-10 08:08:08,109 | server.py:236 | fit_round 44 received 4 results and 0 failures
+DEBUG flwr 2024-03-10 08:08:08,111 | server.py:173 | evaluate_round 44: strategy sampled 4 clients (out of 4)
+DEBUG flwr 2024-03-10 08:08:08,138 | server.py:187 | evaluate_round 44 received 4 results and 0 failures
+DEBUG flwr 2024-03-10 08:08:08,138 | server.py:222 | fit_round 45: strategy sampled 4 clients (out of 4)
+DEBUG flwr 2024-03-10 08:08:09,188 | server.py:236 | fit_round 45 received 4 results and 0 failures
+DEBUG flwr 2024-03-10 08:08:09,190 | server.py:173 | evaluate_round 45: strategy sampled 4 clients (out of 4)
+DEBUG flwr 2024-03-10 08:08:09,219 | server.py:187 | evaluate_round 45 received 4 results and 0 failures
+DEBUG flwr 2024-03-10 08:08:09,219 | server.py:222 | fit_round 46: strategy sampled 4 clients (out of 4)
+DEBUG flwr 2024-03-10 08:08:10,300 | server.py:236 | fit_round 46 received 4 results and 0 failures
+DEBUG flwr 2024-03-10 08:08:10,302 | server.py:173 | evaluate_round 46: strategy sampled 4 clients (out of 4)
+DEBUG flwr 2024-03-10 08:08:10,329 | server.py:187 | evaluate_round 46 received 4 results and 0 failures
+DEBUG flwr 2024-03-10 08:08:10,330 | server.py:222 | fit_round 47: strategy sampled 4 clients (out of 4)
+DEBUG flwr 2024-03-10 08:08:11,406 | server.py:236 | fit_round 47 received 4 results and 0 failures
+DEBUG flwr 2024-03-10 08:08:11,408 | server.py:173 | evaluate_round 47: strategy sampled 4 clients (out of 4)
+DEBUG flwr 2024-03-10 08:08:11,434 | server.py:187 | evaluate_round 47 received 4 results and 0 failures
+DEBUG flwr 2024-03-10 08:08:11,435 | server.py:222 | fit_round 48: strategy sampled 4 clients (out of 4)
+DEBUG flwr 2024-03-10 08:08:12,489 | server.py:236 | fit_round 48 received 4 results and 0 failures
+DEBUG flwr 2024-03-10 08:08:12,491 | server.py:173 | evaluate_round 48: strategy sampled 4 clients (out of 4)
+DEBUG flwr 2024-03-10 08:08:12,516 | server.py:187 | evaluate_round 48 received 4 results and 0 failures
+DEBUG flwr 2024-03-10 08:08:12,516 | server.py:222 | fit_round 49: strategy sampled 4 clients (out of 4)
+DEBUG flwr 2024-03-10 08:08:13,566 | server.py:236 | fit_round 49 received 4 results and 0 failures
+DEBUG flwr 2024-03-10 08:08:13,568 | server.py:173 | evaluate_round 49: strategy sampled 4 clients (out of 4)
+DEBUG flwr 2024-03-10 08:08:13,596 | server.py:187 | evaluate_round 49 received 4 results and 0 failures
+DEBUG flwr 2024-03-10 08:08:13,597 | server.py:222 | fit_round 50: strategy sampled 4 clients (out of 4)
+DEBUG flwr 2024-03-10 08:08:14,604 | server.py:236 | fit_round 50 received 4 results and 0 failures
+DEBUG flwr 2024-03-10 08:08:14,606 | server.py:173 | evaluate_round 50: strategy sampled 4 clients (out of 4)
+DEBUG flwr 2024-03-10 08:08:14,636 | server.py:187 | evaluate_round 50 received 4 results and 0 failures
+DEBUG flwr 2024-03-10 08:08:14,637 | server.py:222 | fit_round 51: strategy sampled 4 clients (out of 4)
+DEBUG flwr 2024-03-10 08:08:15,696 | server.py:236 | fit_round 51 received 4 results and 0 failures
+DEBUG flwr 2024-03-10 08:08:15,698 | server.py:173 | evaluate_round 51: strategy sampled 4 clients (out of 4)
+DEBUG flwr 2024-03-10 08:08:15,724 | server.py:187 | evaluate_round 51 received 4 results and 0 failures
+DEBUG flwr 2024-03-10 08:08:15,725 | server.py:222 | fit_round 52: strategy sampled 4 clients (out of 4)
+DEBUG flwr 2024-03-10 08:08:16,822 | server.py:236 | fit_round 52 received 4 results and 0 failures
+DEBUG flwr 2024-03-10 08:08:16,824 | server.py:173 | evaluate_round 52: strategy sampled 4 clients (out of 4)
+DEBUG flwr 2024-03-10 08:08:16,852 | server.py:187 | evaluate_round 52 received 4 results and 0 failures
+DEBUG flwr 2024-03-10 08:08:16,852 | server.py:222 | fit_round 53: strategy sampled 4 clients (out of 4)
+DEBUG flwr 2024-03-10 08:08:17,944 | server.py:236 | fit_round 53 received 4 results and 0 failures
+DEBUG flwr 2024-03-10 08:08:17,946 | server.py:173 | evaluate_round 53: strategy sampled 4 clients (out of 4)
+DEBUG flwr 2024-03-10 08:08:17,976 | server.py:187 | evaluate_round 53 received 4 results and 0 failures
+DEBUG flwr 2024-03-10 08:08:17,977 | server.py:222 | fit_round 54: strategy sampled 4 clients (out of 4)
+DEBUG flwr 2024-03-10 08:08:19,033 | server.py:236 | fit_round 54 received 4 results and 0 failures
+DEBUG flwr 2024-03-10 08:08:19,035 | server.py:173 | evaluate_round 54: strategy sampled 4 clients (out of 4)
+DEBUG flwr 2024-03-10 08:08:19,062 | server.py:187 | evaluate_round 54 received 4 results and 0 failures
+DEBUG flwr 2024-03-10 08:08:19,062 | server.py:222 | fit_round 55: strategy sampled 4 clients (out of 4)
+DEBUG flwr 2024-03-10 08:08:20,079 | server.py:236 | fit_round 55 received 4 results and 0 failures
+DEBUG flwr 2024-03-10 08:08:20,080 | server.py:173 | evaluate_round 55: strategy sampled 4 clients (out of 4)
+DEBUG flwr 2024-03-10 08:08:20,109 | server.py:187 | evaluate_round 55 received 4 results and 0 failures
+DEBUG flwr 2024-03-10 08:08:20,109 | server.py:222 | fit_round 56: strategy sampled 4 clients (out of 4)
+DEBUG flwr 2024-03-10 08:08:21,163 | server.py:236 | fit_round 56 received 4 results and 0 failures
+DEBUG flwr 2024-03-10 08:08:21,165 | server.py:173 | evaluate_round 56: strategy sampled 4 clients (out of 4)
+DEBUG flwr 2024-03-10 08:08:21,192 | server.py:187 | evaluate_round 56 received 4 results and 0 failures
+DEBUG flwr 2024-03-10 08:08:21,192 | server.py:222 | fit_round 57: strategy sampled 4 clients (out of 4)
+DEBUG flwr 2024-03-10 08:08:22,274 | server.py:236 | fit_round 57 received 4 results and 0 failures
+DEBUG flwr 2024-03-10 08:08:22,276 | server.py:173 | evaluate_round 57: strategy sampled 4 clients (out of 4)
+DEBUG flwr 2024-03-10 08:08:22,308 | server.py:187 | evaluate_round 57 received 4 results and 0 failures
+DEBUG flwr 2024-03-10 08:08:22,308 | server.py:222 | fit_round 58: strategy sampled 4 clients (out of 4)
+DEBUG flwr 2024-03-10 08:08:23,400 | server.py:236 | fit_round 58 received 4 results and 0 failures
+DEBUG flwr 2024-03-10 08:08:23,402 | server.py:173 | evaluate_round 58: strategy sampled 4 clients (out of 4)
+DEBUG flwr 2024-03-10 08:08:23,430 | server.py:187 | evaluate_round 58 received 4 results and 0 failures
+DEBUG flwr 2024-03-10 08:08:23,430 | server.py:222 | fit_round 59: strategy sampled 4 clients (out of 4)
+DEBUG flwr 2024-03-10 08:08:24,463 | server.py:236 | fit_round 59 received 4 results and 0 failures
+DEBUG flwr 2024-03-10 08:08:24,464 | server.py:173 | evaluate_round 59: strategy sampled 4 clients (out of 4)
+DEBUG flwr 2024-03-10 08:08:24,489 | server.py:187 | evaluate_round 59 received 4 results and 0 failures
+DEBUG flwr 2024-03-10 08:08:24,489 | server.py:222 | fit_round 60: strategy sampled 4 clients (out of 4)
+DEBUG flwr 2024-03-10 08:08:25,494 | server.py:236 | fit_round 60 received 4 results and 0 failures
+DEBUG flwr 2024-03-10 08:08:25,495 | server.py:173 | evaluate_round 60: strategy sampled 4 clients (out of 4)
+DEBUG flwr 2024-03-10 08:08:25,520 | server.py:187 | evaluate_round 60 received 4 results and 0 failures
+DEBUG flwr 2024-03-10 08:08:25,520 | server.py:222 | fit_round 61: strategy sampled 4 clients (out of 4)
+DEBUG flwr 2024-03-10 08:08:26,604 | server.py:236 | fit_round 61 received 4 results and 0 failures
+DEBUG flwr 2024-03-10 08:08:26,607 | server.py:173 | evaluate_round 61: strategy sampled 4 clients (out of 4)
+DEBUG flwr 2024-03-10 08:08:26,639 | server.py:187 | evaluate_round 61 received 4 results and 0 failures
+DEBUG flwr 2024-03-10 08:08:26,639 | server.py:222 | fit_round 62: strategy sampled 4 clients (out of 4)
+DEBUG flwr 2024-03-10 08:08:27,692 | server.py:236 | fit_round 62 received 4 results and 0 failures
+DEBUG flwr 2024-03-10 08:08:27,694 | server.py:173 | evaluate_round 62: strategy sampled 4 clients (out of 4)
+DEBUG flwr 2024-03-10 08:08:27,723 | server.py:187 | evaluate_round 62 received 4 results and 0 failures
+DEBUG flwr 2024-03-10 08:08:27,724 | server.py:222 | fit_round 63: strategy sampled 4 clients (out of 4)
+DEBUG flwr 2024-03-10 08:08:28,848 | server.py:236 | fit_round 63 received 4 results and 0 failures
+DEBUG flwr 2024-03-10 08:08:28,849 | server.py:173 | evaluate_round 63: strategy sampled 4 clients (out of 4)
+DEBUG flwr 2024-03-10 08:08:28,878 | server.py:187 | evaluate_round 63 received 4 results and 0 failures
+DEBUG flwr 2024-03-10 08:08:28,878 | server.py:222 | fit_round 64: strategy sampled 4 clients (out of 4)
+DEBUG flwr 2024-03-10 08:08:29,941 | server.py:236 | fit_round 64 received 4 results and 0 failures
+DEBUG flwr 2024-03-10 08:08:29,942 | server.py:173 | evaluate_round 64: strategy sampled 4 clients (out of 4)
+DEBUG flwr 2024-03-10 08:08:29,971 | server.py:187 | evaluate_round 64 received 4 results and 0 failures
+DEBUG flwr 2024-03-10 08:08:29,971 | server.py:222 | fit_round 65: strategy sampled 4 clients (out of 4)
+DEBUG flwr 2024-03-10 08:08:31,127 | server.py:236 | fit_round 65 received 4 results and 0 failures
+DEBUG flwr 2024-03-10 08:08:31,129 | server.py:173 | evaluate_round 65: strategy sampled 4 clients (out of 4)
+DEBUG flwr 2024-03-10 08:08:31,164 | server.py:187 | evaluate_round 65 received 4 results and 0 failures
+DEBUG flwr 2024-03-10 08:08:31,165 | server.py:222 | fit_round 66: strategy sampled 4 clients (out of 4)
+DEBUG flwr 2024-03-10 08:08:32,278 | server.py:236 | fit_round 66 received 4 results and 0 failures
+DEBUG flwr 2024-03-10 08:08:32,279 | server.py:173 | evaluate_round 66: strategy sampled 4 clients (out of 4)
+DEBUG flwr 2024-03-10 08:08:32,309 | server.py:187 | evaluate_round 66 received 4 results and 0 failures
+DEBUG flwr 2024-03-10 08:08:32,309 | server.py:222 | fit_round 67: strategy sampled 4 clients (out of 4)
+DEBUG flwr 2024-03-10 08:08:33,430 | server.py:236 | fit_round 67 received 4 results and 0 failures
+DEBUG flwr 2024-03-10 08:08:33,432 | server.py:173 | evaluate_round 67: strategy sampled 4 clients (out of 4)
+DEBUG flwr 2024-03-10 08:08:33,458 | server.py:187 | evaluate_round 67 received 4 results and 0 failures
+DEBUG flwr 2024-03-10 08:08:33,459 | server.py:222 | fit_round 68: strategy sampled 4 clients (out of 4)
+DEBUG flwr 2024-03-10 08:08:34,497 | server.py:236 | fit_round 68 received 4 results and 0 failures
+DEBUG flwr 2024-03-10 08:08:34,499 | server.py:173 | evaluate_round 68: strategy sampled 4 clients (out of 4)
+DEBUG flwr 2024-03-10 08:08:34,530 | server.py:187 | evaluate_round 68 received 4 results and 0 failures
+DEBUG flwr 2024-03-10 08:08:34,530 | server.py:222 | fit_round 69: strategy sampled 4 clients (out of 4)
+DEBUG flwr 2024-03-10 08:08:35,552 | server.py:236 | fit_round 69 received 4 results and 0 failures
+DEBUG flwr 2024-03-10 08:08:35,554 | server.py:173 | evaluate_round 69: strategy sampled 4 clients (out of 4)
+DEBUG flwr 2024-03-10 08:08:35,584 | server.py:187 | evaluate_round 69 received 4 results and 0 failures
+DEBUG flwr 2024-03-10 08:08:35,585 | server.py:222 | fit_round 70: strategy sampled 4 clients (out of 4)
+DEBUG flwr 2024-03-10 08:08:36,592 | server.py:236 | fit_round 70 received 4 results and 0 failures
+DEBUG flwr 2024-03-10 08:08:36,594 | server.py:173 | evaluate_round 70: strategy sampled 4 clients (out of 4)
+DEBUG flwr 2024-03-10 08:08:36,621 | server.py:187 | evaluate_round 70 received 4 results and 0 failures
+DEBUG flwr 2024-03-10 08:08:36,622 | server.py:222 | fit_round 71: strategy sampled 4 clients (out of 4)
+DEBUG flwr 2024-03-10 08:08:37,661 | server.py:236 | fit_round 71 received 4 results and 0 failures
+DEBUG flwr 2024-03-10 08:08:37,662 | server.py:173 | evaluate_round 71: strategy sampled 4 clients (out of 4)
+DEBUG flwr 2024-03-10 08:08:37,691 | server.py:187 | evaluate_round 71 received 4 results and 0 failures
+DEBUG flwr 2024-03-10 08:08:37,691 | server.py:222 | fit_round 72: strategy sampled 4 clients (out of 4)
+DEBUG flwr 2024-03-10 08:08:38,768 | server.py:236 | fit_round 72 received 4 results and 0 failures
+DEBUG flwr 2024-03-10 08:08:38,770 | server.py:173 | evaluate_round 72: strategy sampled 4 clients (out of 4)
+DEBUG flwr 2024-03-10 08:08:38,800 | server.py:187 | evaluate_round 72 received 4 results and 0 failures
+DEBUG flwr 2024-03-10 08:08:38,800 | server.py:222 | fit_round 73: strategy sampled 4 clients (out of 4)
+DEBUG flwr 2024-03-10 08:08:39,910 | server.py:236 | fit_round 73 received 4 results and 0 failures
+DEBUG flwr 2024-03-10 08:08:39,911 | server.py:173 | evaluate_round 73: strategy sampled 4 clients (out of 4)
+DEBUG flwr 2024-03-10 08:08:39,939 | server.py:187 | evaluate_round 73 received 4 results and 0 failures
+DEBUG flwr 2024-03-10 08:08:39,939 | server.py:222 | fit_round 74: strategy sampled 4 clients (out of 4)
+DEBUG flwr 2024-03-10 08:08:40,983 | server.py:236 | fit_round 74 received 4 results and 0 failures
+DEBUG flwr 2024-03-10 08:08:40,985 | server.py:173 | evaluate_round 74: strategy sampled 4 clients (out of 4)
+DEBUG flwr 2024-03-10 08:08:41,011 | server.py:187 | evaluate_round 74 received 4 results and 0 failures
+DEBUG flwr 2024-03-10 08:08:41,012 | server.py:222 | fit_round 75: strategy sampled 4 clients (out of 4)
+DEBUG flwr 2024-03-10 08:08:42,031 | server.py:236 | fit_round 75 received 4 results and 0 failures
+DEBUG flwr 2024-03-10 08:08:42,033 | server.py:173 | evaluate_round 75: strategy sampled 4 clients (out of 4)
+DEBUG flwr 2024-03-10 08:08:42,061 | server.py:187 | evaluate_round 75 received 4 results and 0 failures
+DEBUG flwr 2024-03-10 08:08:42,062 | server.py:222 | fit_round 76: strategy sampled 4 clients (out of 4)
+DEBUG flwr 2024-03-10 08:08:43,159 | server.py:236 | fit_round 76 received 4 results and 0 failures
+DEBUG flwr 2024-03-10 08:08:43,160 | server.py:173 | evaluate_round 76: strategy sampled 4 clients (out of 4)
+DEBUG flwr 2024-03-10 08:08:43,193 | server.py:187 | evaluate_round 76 received 4 results and 0 failures
+DEBUG flwr 2024-03-10 08:08:43,194 | server.py:222 | fit_round 77: strategy sampled 4 clients (out of 4)
+DEBUG flwr 2024-03-10 08:08:44,274 | server.py:236 | fit_round 77 received 4 results and 0 failures
+DEBUG flwr 2024-03-10 08:08:44,276 | server.py:173 | evaluate_round 77: strategy sampled 4 clients (out of 4)
+DEBUG flwr 2024-03-10 08:08:44,305 | server.py:187 | evaluate_round 77 received 4 results and 0 failures
+DEBUG flwr 2024-03-10 08:08:44,305 | server.py:222 | fit_round 78: strategy sampled 4 clients (out of 4)
+DEBUG flwr 2024-03-10 08:08:45,420 | server.py:236 | fit_round 78 received 4 results and 0 failures
+DEBUG flwr 2024-03-10 08:08:45,422 | server.py:173 | evaluate_round 78: strategy sampled 4 clients (out of 4)
+DEBUG flwr 2024-03-10 08:08:45,450 | server.py:187 | evaluate_round 78 received 4 results and 0 failures
+DEBUG flwr 2024-03-10 08:08:45,451 | server.py:222 | fit_round 79: strategy sampled 4 clients (out of 4)
+DEBUG flwr 2024-03-10 08:08:46,612 | server.py:236 | fit_round 79 received 4 results and 0 failures
+DEBUG flwr 2024-03-10 08:08:46,614 | server.py:173 | evaluate_round 79: strategy sampled 4 clients (out of 4)
+DEBUG flwr 2024-03-10 08:08:46,644 | server.py:187 | evaluate_round 79 received 4 results and 0 failures
+DEBUG flwr 2024-03-10 08:08:46,645 | server.py:222 | fit_round 80: strategy sampled 4 clients (out of 4)
+DEBUG flwr 2024-03-10 08:08:47,669 | server.py:236 | fit_round 80 received 4 results and 0 failures
+DEBUG flwr 2024-03-10 08:08:47,671 | server.py:173 | evaluate_round 80: strategy sampled 4 clients (out of 4)
+DEBUG flwr 2024-03-10 08:08:47,700 | server.py:187 | evaluate_round 80 received 4 results and 0 failures
+DEBUG flwr 2024-03-10 08:08:47,700 | server.py:222 | fit_round 81: strategy sampled 4 clients (out of 4)
+DEBUG flwr 2024-03-10 08:08:48,751 | server.py:236 | fit_round 81 received 4 results and 0 failures
+DEBUG flwr 2024-03-10 08:08:48,753 | server.py:173 | evaluate_round 81: strategy sampled 4 clients (out of 4)
+DEBUG flwr 2024-03-10 08:08:48,780 | server.py:187 | evaluate_round 81 received 4 results and 0 failures
+DEBUG flwr 2024-03-10 08:08:48,780 | server.py:222 | fit_round 82: strategy sampled 4 clients (out of 4)
+DEBUG flwr 2024-03-10 08:08:49,890 | server.py:236 | fit_round 82 received 4 results and 0 failures
+DEBUG flwr 2024-03-10 08:08:49,892 | server.py:173 | evaluate_round 82: strategy sampled 4 clients (out of 4)
+DEBUG flwr 2024-03-10 08:08:49,918 | server.py:187 | evaluate_round 82 received 4 results and 0 failures
+DEBUG flwr 2024-03-10 08:08:49,919 | server.py:222 | fit_round 83: strategy sampled 4 clients (out of 4)
+DEBUG flwr 2024-03-10 08:08:50,947 | server.py:236 | fit_round 83 received 4 results and 0 failures
+DEBUG flwr 2024-03-10 08:08:50,948 | server.py:173 | evaluate_round 83: strategy sampled 4 clients (out of 4)
+DEBUG flwr 2024-03-10 08:08:50,975 | server.py:187 | evaluate_round 83 received 4 results and 0 failures
+DEBUG flwr 2024-03-10 08:08:50,975 | server.py:222 | fit_round 84: strategy sampled 4 clients (out of 4)
+DEBUG flwr 2024-03-10 08:08:52,041 | server.py:236 | fit_round 84 received 4 results and 0 failures
+DEBUG flwr 2024-03-10 08:08:52,043 | server.py:173 | evaluate_round 84: strategy sampled 4 clients (out of 4)
+DEBUG flwr 2024-03-10 08:08:52,073 | server.py:187 | evaluate_round 84 received 4 results and 0 failures
+DEBUG flwr 2024-03-10 08:08:52,074 | server.py:222 | fit_round 85: strategy sampled 4 clients (out of 4)
+DEBUG flwr 2024-03-10 08:08:53,292 | server.py:236 | fit_round 85 received 4 results and 0 failures
+DEBUG flwr 2024-03-10 08:08:53,293 | server.py:173 | evaluate_round 85: strategy sampled 4 clients (out of 4)
+DEBUG flwr 2024-03-10 08:08:53,321 | server.py:187 | evaluate_round 85 received 4 results and 0 failures
+DEBUG flwr 2024-03-10 08:08:53,322 | server.py:222 | fit_round 86: strategy sampled 4 clients (out of 4)
+DEBUG flwr 2024-03-10 08:08:54,402 | server.py:236 | fit_round 86 received 4 results and 0 failures
+DEBUG flwr 2024-03-10 08:08:54,404 | server.py:173 | evaluate_round 86: strategy sampled 4 clients (out of 4)
+DEBUG flwr 2024-03-10 08:08:54,435 | server.py:187 | evaluate_round 86 received 4 results and 0 failures
+DEBUG flwr 2024-03-10 08:08:54,435 | server.py:222 | fit_round 87: strategy sampled 4 clients (out of 4)
+DEBUG flwr 2024-03-10 08:08:55,493 | server.py:236 | fit_round 87 received 4 results and 0 failures
+DEBUG flwr 2024-03-10 08:08:55,494 | server.py:173 | evaluate_round 87: strategy sampled 4 clients (out of 4)
+DEBUG flwr 2024-03-10 08:08:55,519 | server.py:187 | evaluate_round 87 received 4 results and 0 failures
+DEBUG flwr 2024-03-10 08:08:55,520 | server.py:222 | fit_round 88: strategy sampled 4 clients (out of 4)
+DEBUG flwr 2024-03-10 08:08:56,614 | server.py:236 | fit_round 88 received 4 results and 0 failures
+DEBUG flwr 2024-03-10 08:08:56,616 | server.py:173 | evaluate_round 88: strategy sampled 4 clients (out of 4)
+DEBUG flwr 2024-03-10 08:08:56,648 | server.py:187 | evaluate_round 88 received 4 results and 0 failures
+DEBUG flwr 2024-03-10 08:08:56,649 | server.py:222 | fit_round 89: strategy sampled 4 clients (out of 4)
+DEBUG flwr 2024-03-10 08:08:57,685 | server.py:236 | fit_round 89 received 4 results and 0 failures
+DEBUG flwr 2024-03-10 08:08:57,687 | server.py:173 | evaluate_round 89: strategy sampled 4 clients (out of 4)
+DEBUG flwr 2024-03-10 08:08:57,714 | server.py:187 | evaluate_round 89 received 4 results and 0 failures
+DEBUG flwr 2024-03-10 08:08:57,714 | server.py:222 | fit_round 90: strategy sampled 4 clients (out of 4)
+DEBUG flwr 2024-03-10 08:08:58,760 | server.py:236 | fit_round 90 received 4 results and 0 failures
+DEBUG flwr 2024-03-10 08:08:58,761 | server.py:173 | evaluate_round 90: strategy sampled 4 clients (out of 4)
+DEBUG flwr 2024-03-10 08:08:58,791 | server.py:187 | evaluate_round 90 received 4 results and 0 failures
+DEBUG flwr 2024-03-10 08:08:58,791 | server.py:222 | fit_round 91: strategy sampled 4 clients (out of 4)
+DEBUG flwr 2024-03-10 08:08:59,927 | server.py:236 | fit_round 91 received 4 results and 0 failures
+DEBUG flwr 2024-03-10 08:08:59,929 | server.py:173 | evaluate_round 91: strategy sampled 4 clients (out of 4)
+DEBUG flwr 2024-03-10 08:08:59,958 | server.py:187 | evaluate_round 91 received 4 results and 0 failures
+DEBUG flwr 2024-03-10 08:08:59,959 | server.py:222 | fit_round 92: strategy sampled 4 clients (out of 4)
+DEBUG flwr 2024-03-10 08:09:00,999 | server.py:236 | fit_round 92 received 4 results and 0 failures
+DEBUG flwr 2024-03-10 08:09:01,000 | server.py:173 | evaluate_round 92: strategy sampled 4 clients (out of 4)
+DEBUG flwr 2024-03-10 08:09:01,032 | server.py:187 | evaluate_round 92 received 4 results and 0 failures
+DEBUG flwr 2024-03-10 08:09:01,032 | server.py:222 | fit_round 93: strategy sampled 4 clients (out of 4)
+DEBUG flwr 2024-03-10 08:09:02,061 | server.py:236 | fit_round 93 received 4 results and 0 failures
+DEBUG flwr 2024-03-10 08:09:02,063 | server.py:173 | evaluate_round 93: strategy sampled 4 clients (out of 4)
+DEBUG flwr 2024-03-10 08:09:02,091 | server.py:187 | evaluate_round 93 received 4 results and 0 failures
+DEBUG flwr 2024-03-10 08:09:02,091 | server.py:222 | fit_round 94: strategy sampled 4 clients (out of 4)
+DEBUG flwr 2024-03-10 08:09:03,173 | server.py:236 | fit_round 94 received 4 results and 0 failures
+DEBUG flwr 2024-03-10 08:09:03,175 | server.py:173 | evaluate_round 94: strategy sampled 4 clients (out of 4)
+DEBUG flwr 2024-03-10 08:09:03,204 | server.py:187 | evaluate_round 94 received 4 results and 0 failures
+DEBUG flwr 2024-03-10 08:09:03,204 | server.py:222 | fit_round 95: strategy sampled 4 clients (out of 4)
+DEBUG flwr 2024-03-10 08:09:04,312 | server.py:236 | fit_round 95 received 4 results and 0 failures
+DEBUG flwr 2024-03-10 08:09:04,314 | server.py:173 | evaluate_round 95: strategy sampled 4 clients (out of 4)
+DEBUG flwr 2024-03-10 08:09:04,343 | server.py:187 | evaluate_round 95 received 4 results and 0 failures
+DEBUG flwr 2024-03-10 08:09:04,343 | server.py:222 | fit_round 96: strategy sampled 4 clients (out of 4)
+DEBUG flwr 2024-03-10 08:09:05,411 | server.py:236 | fit_round 96 received 4 results and 0 failures
+DEBUG flwr 2024-03-10 08:09:05,413 | server.py:173 | evaluate_round 96: strategy sampled 4 clients (out of 4)
+DEBUG flwr 2024-03-10 08:09:05,441 | server.py:187 | evaluate_round 96 received 4 results and 0 failures
+DEBUG flwr 2024-03-10 08:09:05,441 | server.py:222 | fit_round 97: strategy sampled 4 clients (out of 4)
+DEBUG flwr 2024-03-10 08:09:06,552 | server.py:236 | fit_round 97 received 4 results and 0 failures
+DEBUG flwr 2024-03-10 08:09:06,554 | server.py:173 | evaluate_round 97: strategy sampled 4 clients (out of 4)
+DEBUG flwr 2024-03-10 08:09:06,586 | server.py:187 | evaluate_round 97 received 4 results and 0 failures
+DEBUG flwr 2024-03-10 08:09:06,587 | server.py:222 | fit_round 98: strategy sampled 4 clients (out of 4)
+DEBUG flwr 2024-03-10 08:09:07,729 | server.py:236 | fit_round 98 received 4 results and 0 failures
+DEBUG flwr 2024-03-10 08:09:07,731 | server.py:173 | evaluate_round 98: strategy sampled 4 clients (out of 4)
+DEBUG flwr 2024-03-10 08:09:07,759 | server.py:187 | evaluate_round 98 received 4 results and 0 failures
+DEBUG flwr 2024-03-10 08:09:07,759 | server.py:222 | fit_round 99: strategy sampled 4 clients (out of 4)
+DEBUG flwr 2024-03-10 08:09:08,780 | server.py:236 | fit_round 99 received 4 results and 0 failures
+DEBUG flwr 2024-03-10 08:09:08,781 | server.py:173 | evaluate_round 99: strategy sampled 4 clients (out of 4)
+DEBUG flwr 2024-03-10 08:09:08,811 | server.py:187 | evaluate_round 99 received 4 results and 0 failures
+DEBUG flwr 2024-03-10 08:09:08,811 | server.py:222 | fit_round 100: strategy sampled 4 clients (out of 4)
+DEBUG flwr 2024-03-10 08:09:10,038 | server.py:236 | fit_round 100 received 4 results and 0 failures
+DEBUG flwr 2024-03-10 08:09:10,040 | server.py:173 | evaluate_round 100: strategy sampled 4 clients (out of 4)
+DEBUG flwr 2024-03-10 08:09:10,069 | server.py:187 | evaluate_round 100 received 4 results and 0 failures
+INFO flwr 2024-03-10 08:09:10,070 | server.py:153 | FL finished in 114.240924334
+INFO flwr 2024-03-10 08:09:10,070 | app.py:226 | app_fit: losses_distributed [(1, 7739.904921601057), (2, 82.88174701883526), (3, 14.069749407828516), (4, 10.136709811103918), (5, 18.765532862243465), (6, 6.120191228558779), (7, 5.939249555882338), (8, 4.9733035370395156), (9, 3.49294872091378), (10, 4.932829035636676), (11, 1.4707904410365917), (12, 2.0812127842819352), (13, 0.7560391209229514), (14, 0.9202067269754175), (15, 1.704957759666972), (16, 0.9656258838391334), (17, 0.6215477489307063), (18, 2.537402872074253), (19, 0.5893342738876949), (20, 1.113342548563213), (21, 1.6895008914530938), (22, 1.6117429111598451), (23, 2.1219060524618287), (24, 2.8115938468830506), (25, 0.8228858004332177), (26, 0.5906650024511003), (27, 0.8505948084313537), (28, 0.700629269743267), (29, 0.4528908730265208), (30, 5.065157090030087), (31, 2.0393970413765103), (32, 4.798190988094974), (33, 0.43850982626704854), (34, 0.39167000568080257), (35, 0.4072341204548551), (36, 2.0484896589957096), (37, 4.240237957525783), (38, 1.3310245114542847), (39, 1.291792389588791), (40, 1.473808448968407), (41, 1.8987435314129077), (42, 0.4859038747240744), (43, 9.450506684371486), (44, 0.8796357168700045), (45, 0.374650732332751), (46, 0.517434508848646), (47, 2.4116584705108486), (48, 0.49255962015282356), (49, 0.36408435062961203), (50, 2.06945740437978), (51, 0.5334918795316567), (52, 8.95359237508621), (53, 0.5290784845645419), (54, 0.4104782823776383), (55, 0.4241678392728182), (56, 0.4346739076417854), (57, 10.623453811784854), (58, 0.6494835030411528), (59, 5.6338949345337035), (60, 0.6049763375500495), (61, 0.35681085502120186), (62, 0.42620001757418696), (63, 0.5872658778041712), (64, 10.955400837628968), (65, 0.5905711144305371), (66, 0.41293599989848573), (67, 1.05156468278493), (68, 0.5293805377900086), (69, 0.4805142939499546), (70, 0.9245743934529043), (71, 0.6505339067433897), (72, 1.115642151670156), (73, 0.594536025274623), (74, 1.800156999292121), (75, 0.4764071319174164), (76, 1.9399680700313884), (77, 0.9822825103924689), (78, 0.4988309518559279), (79, 0.5342654513215828), (80, 0.3430099492070395), (81, 0.3730774586830798), (82, 2.684455911379707), (83, 0.3850584818766844), (84, 0.5169724324665294), (85, 0.37643403077610615), (86, 1.407258108974826), (87, 0.40209918314735743), (88, 0.3584669550602886), (89, 0.5707594065131153), (90, 0.39628652381135376), (91, 0.4268005542553566), (92, 0.9398466169870885), (93, 0.3902301661711549), (94, 0.37389238177007467), (95, 0.39647917413760236), (96, 0.5183087431638514), (97, 0.40380153031135496), (98, 0.33842879901071676), (99, 0.6008711913703917), (100, 0.37255701984126127)]
+INFO flwr 2024-03-10 08:09:10,071 | app.py:227 | app_fit: metrics_distributed_fit {}
+INFO flwr 2024-03-10 08:09:10,071 | app.py:228 | app_fit: metrics_distributed {'loss': [(1, 7739.905015674972), (2, 82.8817490496559), (3, 14.069749413891874), (4, 10.136709625730532), (5, 18.765532933680845), (6, 6.120191366233749), (7, 5.939249478510217), (8, 4.973303606501711), (9, 3.4929486433028), (10, 4.932829045080815), (11, 1.4707904427177956), (12, 2.0812127279110815), (13, 0.7560391164535218), (14, 0.9202067196534536), (15, 1.7049577780775313), (16, 0.9656258493606759), (17, 0.6215477461998986), (18, 2.5374028613169606), (19, 0.589334256565784), (20, 1.1133425382646915), (21, 1.6895008653439076), (22, 1.6117429078893069), (23, 2.121906055860984), (24, 2.8115938591751304), (25, 0.8228857931709687), (26, 0.5906649887832812), (27, 0.8505947977010477), (28, 0.7006292671755269), (29, 0.45289086588370153), (30, 5.065157056993974), (31, 2.039397089984429), (32, 4.79819094912412), (33, 0.4385098240828617), (34, 0.3916700000848286), (35, 0.4072341191342374), (36, 2.0484896330243267), (37, 4.240238051011736), (38, 1.3310245449313693), (39, 1.2917923662540505), (40, 1.4738084399193048), (41, 1.8987435198649671), (42, 0.48590386885708675), (43, 9.45050691624899), (44, 0.8796357100590623), (45, 0.3746507420214915), (46, 0.517434514691518), (47, 2.4116584892153887), (48, 0.4925596237494972), (49, 0.36408434399695316), (50, 2.0694574478981527), (51, 0.5334918786589006), (52, 8.953592245808071), (53, 0.5290784720473828), (54, 0.41047828441942813), (55, 0.42416784610098596), (56, 0.4346739208272919), (57, 10.623453816562046), (58, 0.6494835201976993), (59, 5.633894955663587), (60, 0.6049763331862692), (61, 0.3568108476601936), (62, 0.42620000840106154), (63, 0.5872658857324708), (64, 10.955401028349131), (65, 0.5905711248473399), (66, 0.4129359970425064), (67, 1.0515647128444858), (68, 0.5293805458423315), (69, 0.4805142982218658), (70, 0.9245743731314686), (71, 0.6505339117479567), (72, 1.1156421483169354), (73, 0.5945360323347602), (74, 1.8001569733115512), (75, 0.4764071331117141), (76, 1.9399681247302254), (77, 0.982282535729955), (78, 0.4988309636404313), (79, 0.5342654596586998), (80, 0.3430099484072045), (81, 0.37307745574728923), (82, 2.6844559047375744), (83, 0.38505847213626754), (84, 0.5169724385987889), (85, 0.3764340288617847), (86, 1.4072581381478453), (87, 0.4020991887439056), (88, 0.35846694928373446), (89, 0.5707594119517636), (90, 0.3962865257876869), (91, 0.4268005640830491), (92, 0.9398466294950607), (93, 0.39023017406959715), (94, 0.37389239665573293), (95, 0.39647916893365087), (96, 0.518308740971626), (97, 0.4038015233614607), (98, 0.3384288000772591), (99, 0.6008711983088023), (100, 0.372557022790258)], 'rmse': [(1, 9.378168814164466), (2, 2.98624772011732), (3, 1.7593196155740072), (4, 1.6678833230682708), (5, 2.0774445412834814), (6, 1.5184447898662177), (7, 1.5499829035638457), (8, 1.4839793886244188), (9, 1.3172988668758114), (10, 1.4449819890882039), (11, 1.080116979286327), (12, 1.1572152318884377), (13, 0.8998240103816381), (14, 0.9637034194994312), (15, 1.1363821237787721), (16, 0.9704982018453236), (17, 0.8608686443148825), (18, 1.2497953093351377), (19, 0.8509265316991436), (20, 1.0206907911560017), (21, 1.1188408362771296), (22, 1.1140233415635827), (23, 1.1998800131436622), (24, 1.2860845742488514), (25, 0.9424126473749964), (26, 0.8456683802093802), (27, 0.9496055891409745), (28, 0.8874373010737431), (29, 0.7862401411968396), (30, 1.4991478080585277), (31, 1.1695618808854698), (32, 1.469091118665668), (33, 0.7740103367651188), (34, 0.7454395600318502), (35, 0.7639301504262129), (36, 1.183663479296545), (37, 1.4250663387880589), (38, 1.0523360979632428), (39, 1.0419824873232804), (40, 1.0841437378633711), (41, 1.1634522272341483), (42, 0.7966085042736696), (43, 1.746837116538074), (44, 0.9550081903389516), (45, 0.7255197090556689), (46, 0.817386908237041), (47, 1.2394232987289404), (48, 0.8013770834313836), (49, 0.7274517982740442), (50, 1.1888569833802456), (51, 0.8255574406389542), (52, 1.7216748459041702), (53, 0.8349369168820895), (54, 0.763088827822391), (55, 0.762439452756625), (56, 0.7741678457163825), (57, 1.798537468399319), (58, 0.8663305492256094), (59, 1.5309234599829042), (60, 0.8520057094768896), (61, 0.7175709107035138), (62, 0.7735996731152138), (63, 0.846855207869235), (64, 1.8114203907795499), (65, 0.8452907763470985), (66, 0.7661136653221021), (67, 0.990676878352273), (68, 0.8269064916023663), (69, 0.8012354680839119), (70, 0.9404094655620886), (71, 0.8758432498904398), (72, 1.0014460740804583), (73, 0.8424303071839657), (74, 1.1405733142816212), (75, 0.7973166646377357), (76, 1.1527994899580096), (77, 0.970804849782263), (78, 0.8063198390185058), (79, 0.8210394553986543), (80, 0.7015250334638288), (81, 0.7241987879134558), (82, 1.2671131407035037), (83, 0.7322140139207137), (84, 0.8026223022028861), (85, 0.7171189829893225), (86, 1.044282820705523), (87, 0.7441388944237478), (88, 0.7075459519157141), (89, 0.8363900941502609), (90, 0.7382623203278963), (91, 0.7625698200879264), (92, 0.959769733446812), (93, 0.7384875055060371), (94, 0.720886247644348), (95, 0.7331398005647374), (96, 0.8102679729010145), (97, 0.7401150433117352), (98, 0.6845916000744572), (99, 0.8525416677561848), (100, 0.7139315260014246)], 'r_squared': [(1, 0.36114048882121896), (2, 0.993080691804388), (3, 0.9987932235987977), (4, 0.9991351950452861), (5, 0.9984408489447952), (6, 0.9994821206099888), (7, 0.9995039077722383), (8, 0.9995847496992496), (9, 0.9997052214723403), (10, 0.9995856408427144), (11, 0.9998763143368798), (12, 0.9998244569991974), (13, 0.9999360075306011), (14, 0.9999228119204483), (15, 0.9998580275152357), (16, 0.999919399504881), (17, 0.9999476735775689), (18, 0.9997901120795356), (19, 0.9999505117396608), (20, 0.9999070768473264), (21, 0.9998601363599728), (22, 0.9998663561334229), (23, 0.9998233581983307), (24, 0.9997673148631953), (25, 0.9999310536071173), (26, 0.9999499997266658), (27, 0.9999289182200506), (28, 0.9999407812497967), (29, 0.9999616075256084), (30, 0.9995814506396737), (31, 0.9998295357749729), (32, 0.999603666447345), (33, 0.9999627208954429), (34, 0.9999666500321844), (35, 0.9999655362164456), (36, 0.9998305078357167), (37, 0.99964998555316), (38, 0.9998885530303995), (39, 0.999891641266519), (40, 0.9998777685033444), (41, 0.9998427280321436), (42, 0.9999587122249886), (43, 0.9992199395832323), (44, 0.9999264919973685), (45, 0.9999679850438455), (46, 0.9999564822604502), (47, 0.9998003150459596), (48, 0.9999585503171736), (49, 0.9999690682844522), (50, 0.9998286214510818), (51, 0.9999552014974176), (52, 0.9992610948599189), (53, 0.9999554425088768), (54, 0.9999651066834727), (55, 0.999963854663899), (56, 0.9999631902375661), (57, 0.9991232034293519), (58, 0.9999451231559008), (59, 0.9995350391825253), (60, 0.9999487862654892), (61, 0.9999695094231842), (62, 0.9999638365991715), (63, 0.9999503579591833), (64, 0.9990912909950362), (65, 0.9999505444308955), (66, 0.9999649365142321), (67, 0.999912638987586), (68, 0.9999552190293299), (69, 0.9999594912941385), (70, 0.9999221468792673), (71, 0.9999451272102118), (72, 0.9999064047162651), (73, 0.9999495843975272), (74, 0.9998498583564959), (75, 0.9999595962435659), (76, 0.9998378958092414), (77, 0.9999175273763763), (78, 0.999957668840662), (79, 0.9999551158423976), (80, 0.9999706424578885), (81, 0.9999682672136219), (82, 0.999776447653131), (83, 0.9999672924503094), (84, 0.9999560244126033), (85, 0.9999677630064253), (86, 0.9998816243648833), (87, 0.9999657872148342), (88, 0.9999693412257111), (89, 0.9999516237583073), (90, 0.9999662019046609), (91, 0.9999636269951887), (92, 0.9999217818904562), (93, 0.9999669638616648), (94, 0.999968065249721), (95, 0.9999662573585927), (96, 0.9999564353422977), (97, 0.9999656538268002), (98, 0.9999709992946166), (99, 0.9999491685282441), (100, 0.9999680941208721)], 'mse': [(1, 7739.905233023346), (2, 82.88174773262108), (3, 14.069749472761567), (4, 10.136709335295693), (5, 18.765533121975665), (6, 6.1201912042686), (7, 5.9392496451055665), (8, 4.9733034721064655), (9, 3.4929486336749225), (10, 4.932829123757476), (11, 1.4707903523645771), (12, 2.081212647562403), (13, 0.7560391177488756), (14, 0.9202067269754175), (15, 1.704957759666972), (16, 0.9656258736508548), (17, 0.6215477631773005), (18, 2.53740289245081), (19, 0.5893342628725948), (20, 1.1133425323299504), (21, 1.6895008245632328), (22, 1.6117429207969094), (23, 2.1219060557691147), (24, 2.81159375876225), (25, 0.8228858166664802), (26, 0.5906649654829914), (27, 0.8505948048484605), (28, 0.700629258728167), (29, 0.4528908359895101), (30, 5.065157008523859), (31, 2.0393970854369106), (32, 4.798190858118631), (33, 0.4385098178679199), (34, 0.3916700029270276), (35, 0.40723410620826095), (36, 2.048489570323695), (37, 4.240238222990612), (38, 1.331024552207399), (39, 1.291792316369152), (40, 1.4738084266901603), (41, 1.8987435314129077), (42, 0.4859038635711708), (43, 9.45050695534846), (44, 0.8796356964934475), (45, 0.37465075270930803), (46, 0.5174345209661747), (47, 2.4116584908874055), (48, 0.4925596424586308), (49, 0.3640843424704913), (50, 2.069457537112195), (51, 0.5334918835899722), (52, 8.953592022603008), (53, 0.5290784815282695), (54, 0.4104782894722263), (55, 0.42416786240315024), (56, 0.4346739497017368), (57, 10.623453730499113), (58, 0.6494834936796957), (59, 5.63389489378059), (60, 0.6049763346515807), (61, 0.35681085502120186), (62, 0.426200010479599), (63, 0.5872658888192712), (64, 10.955400837628968), (65, 0.5905711144305371), (66, 0.4129360091221391), (67, 1.051564704112332), (68, 0.5293805625670935), (69, 0.4805143137040988), (70, 0.9245743392547535), (71, 0.6505339271199468), (72, 1.1156421352164079), (73, 0.594536025274623), (74, 1.8001569585390067), (75, 0.4764071319174164), (76, 1.9399681024979134), (77, 0.9822824883622688), (78, 0.49883095997255916), (79, 0.5342654553798984), (80, 0.3430099485547692), (81, 0.3730774661175833), (82, 2.684455911379707), (83, 0.3850584873842344), (84, 0.5169724528430863), (85, 0.37643399721748766), (86, 1.407258108974826), (87, 0.40209918314735743), (88, 0.35846693468373153), (89, 0.5707594008677618), (90, 0.3962865369934152), (91, 0.4268005746319137), (92, 0.9398466220812277), (93, 0.39023019050612), (94, 0.37389239292297827), (95, 0.39647917413760236), (96, 0.5183087654696586), (97, 0.403801535818905), (98, 0.33842879901071676), (99, 0.6008711803552916), (100, 0.3725570086883576)], 'mae': [(1, 70.57665382742735), (2, 6.537632034165939), (3, 2.081756963168355), (4, 1.9991081307209229), (5, 3.6609298327774655), (6, 1.669523547503422), (7, 1.9200544062767606), (8, 1.60045345259874), (9, 1.2947499431789142), (10, 1.8094223816907802), (11, 0.8403743983931959), (12, 1.1288623397873598), (13, 0.6219492089899048), (14, 0.6923463117473664), (15, 1.005097836954232), (16, 0.788377317488561), (17, 0.5951018827598721), (18, 1.2986627529144434), (19, 0.5863765927373848), (20, 0.6977871733495986), (21, 1.1086576151329697), (22, 1.012667149746315), (23, 1.093264128879613), (24, 1.3877206296555504), (25, 0.6610934468659166), (26, 0.5795165120673386), (27, 0.6754547102990045), (28, 0.6110071262250553), (29, 0.46706676260831176), (30, 1.678570390390703), (31, 1.2245555339259373), (32, 1.8989513498970965), (33, 0.46298198781806504), (34, 0.44098744181279925), (35, 0.4468377294379451), (36, 1.1576297136549591), (37, 1.6860520476808383), (38, 0.9596145341469092), (39, 0.9111437559973002), (40, 0.9861525152103675), (41, 1.0728840633271362), (42, 0.5093714455154101), (43, 2.5914309651357765), (44, 0.7289378127834212), (45, 0.4267467877720787), (46, 0.5690552320345116), (47, 1.2006283323986757), (48, 0.5627194468056009), (49, 0.42660133419592855), (50, 1.1797503548066801), (51, 0.552035432832566), (52, 2.629709921308716), (53, 0.5247835967639225), (54, 0.47645324635355013), (55, 0.4757410460341212), (56, 0.4713514352012908), (57, 2.8059533914750956), (58, 0.6615195143072143), (59, 2.022872935957591), (60, 0.6164081897931093), (61, 0.41483762662779683), (62, 0.48559535523984493), (63, 0.6289628153591061), (64, 2.806653693226498), (65, 0.6182354121536715), (66, 0.4629012260737607), (67, 0.8315589002823932), (68, 0.52595215143335), (69, 0.5270881229223805), (70, 0.7946876119799297), (71, 0.6074303487630426), (72, 0.8361656343892823), (73, 0.5601107633905772), (74, 1.088621393672929), (75, 0.5186585859934146), (76, 1.1715614594491577), (77, 0.7631908228894198), (78, 0.5370379340514523), (79, 0.5825436066987703), (80, 0.39617090884472084), (81, 0.4362755280640321), (82, 1.2707754946262122), (83, 0.43528558139984397), (84, 0.559838337123247), (85, 0.4226600380864743), (86, 0.9809680980539498), (87, 0.45003659450408856), (88, 0.3938002564890354), (89, 0.5302389233284681), (90, 0.4365692241748958), (91, 0.47364413603203215), (92, 0.7918111346937652), (93, 0.4378775122280332), (94, 0.4096429547944948), (95, 0.4256331415596601), (96, 0.554032497608669), (97, 0.44878439186772495), (98, 0.383144407026681), (99, 0.5675562400412177), (100, 0.4172593581819799)]}
+INFO flwr 2024-03-10 08:09:10,071 | app.py:229 | app_fit: losses_centralized []
+INFO flwr 2024-03-10 08:09:10,071 | app.py:230 | app_fit: metrics_centralized {}
