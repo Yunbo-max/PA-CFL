@@ -1,0 +1,186 @@
+2
+Region:  Southeast Asia, Cluster: 1
+Region:  South Asia, Cluster: 2
+Region:  Oceania, Cluster: 2
+Region:  Eastern Asia, Cluster: 1
+Region:  West of USA, Cluster: 2
+Region:  US Center, Cluster: 2
+Region:  West Africa, Cluster: 2
+Region:  North Africa, Cluster: 2
+Region:  Western Europe, Cluster: 2
+Region:  Central America, Cluster: 2
+Region:  South America, Cluster: 2
+Region:  Southern Europe, Cluster: 2
+Region:  East of USA, Cluster: 2
+Region:  South of USA, Cluster: 2
+
+
+
+
+
+
+3
+Region:  Southeast Asia, Cluster: 1
+Region:  South Asia, Cluster: 2
+Region:  Oceania, Cluster: 3
+Region:  Eastern Asia, Cluster: 1
+Region:  West of USA, Cluster: 3
+Region:  US Center, Cluster: 3
+Region:  West Africa, Cluster: 3
+Region:  North Africa, Cluster: 3
+Region:  Western Europe, Cluster: 2
+Region:  Central America, Cluster: 3
+Region:  South America, Cluster: 3
+Region:  Southern Europe, Cluster: 2
+Region:  East of USA, Cluster: 3
+Region:  South of USA, Cluster: 3
+
+4
+Region:  Southeast Asia, Cluster: 1
+Region:  South Asia, Cluster: 2
+Region:  Oceania, Cluster: 4
+Region:  Eastern Asia, Cluster: 1
+Region:  West of USA, Cluster: 3
+Region:  US Center, Cluster: 3
+Region:  West Africa, Cluster: 3
+Region:  North Africa, Cluster: 3
+Region:  Western Europe, Cluster: 2
+Region:  Central America, Cluster: 3
+Region:  South America, Cluster: 3
+Region:  Southern Europe, Cluster: 2
+Region:  East of USA, Cluster: 3
+Region:  South of USA, Cluster: 3
+
+5
+Region:  Southeast Asia, Cluster: 1
+Region:  South Asia, Cluster: 2
+Region:  Oceania, Cluster: 5
+Region:  Eastern Asia, Cluster: 1
+Region:  West of USA, Cluster: 4
+Region:  US Center, Cluster: 4
+Region:  West Africa, Cluster: 4
+Region:  North Africa, Cluster: 4
+Region:  Western Europe, Cluster: 2
+Region:  Central America, Cluster: 4
+Region:  South America, Cluster: 4
+Region:  Southern Europe, Cluster: 3
+Region:  East of USA, Cluster: 4
+Region:  South of USA, Cluster: 4
+
+6
+Region:  Southeast Asia, Cluster: 1
+Region:  South Asia, Cluster: 2
+Region:  Oceania, Cluster: 6
+Region:  Eastern Asia, Cluster: 1
+Region:  West of USA, Cluster: 5
+Region:  US Center, Cluster: 5
+Region:  West Africa, Cluster: 5
+Region:  North Africa, Cluster: 5
+Region:  Western Europe, Cluster: 3
+Region:  Central America, Cluster: 5
+Region:  South America, Cluster: 5
+Region:  Southern Europe, Cluster: 4
+Region:  East of USA, Cluster: 5
+Region:  South of USA, Cluster: 5
+
+7
+Region:  Southeast Asia, Cluster: 1
+Region:  South Asia, Cluster: 2
+Region:  Oceania, Cluster: 7
+Region:  Eastern Asia, Cluster: 1
+Region:  West of USA, Cluster: 6
+Region:  US Center, Cluster: 6
+Region:  West Africa, Cluster: 6
+Region:  North Africa, Cluster: 6
+Region:  Western Europe, Cluster: 3
+Region:  Central America, Cluster: 5
+Region:  South America, Cluster: 5
+Region:  Southern Europe, Cluster: 4
+Region:  East of USA, Cluster: 6
+Region:  South of USA, Cluster: 5
+
+8
+Region:  Southeast Asia, Cluster: 1
+Region:  South Asia, Cluster: 3
+Region:  Oceania, Cluster: 8
+Region:  Eastern Asia, Cluster: 2
+Region:  West of USA, Cluster: 7
+Region:  US Center, Cluster: 7
+Region:  West Africa, Cluster: 7
+Region:  North Africa, Cluster: 7
+Region:  Western Europe, Cluster: 4
+Region:  Central America, Cluster: 6
+Region:  South America, Cluster: 6
+Region:  Southern Europe, Cluster: 5
+Region:  East of USA, Cluster: 7
+Region:  South of USA, Cluster: 6
+
+9
+Region:  Southeast Asia, Cluster: 1
+Region:  South Asia, Cluster: 3
+Region:  Oceania, Cluster: 9
+Region:  Eastern Asia, Cluster: 2
+Region:  West of USA, Cluster: 8
+Region:  US Center, Cluster: 8
+Region:  West Africa, Cluster: 8
+Region:  North Africa, Cluster: 7
+Region:  Western Europe, Cluster: 4
+Region:  Central America, Cluster: 6
+Region:  South America, Cluster: 6
+Region:  Southern Europe, Cluster: 5
+Region:  East of USA, Cluster: 7
+Region:  South of USA, Cluster: 6
+
+
+10
+Region:  Southeast Asia, Cluster: 1
+Region:  South Asia, Cluster: 3
+Region:  Oceania, Cluster: 10
+Region:  Eastern Asia, Cluster: 2
+Region:  West of USA, Cluster: 9
+Region:  US Center, Cluster: 9
+Region:  West Africa, Cluster: 9
+Region:  North Africa, Cluster: 8
+Region:  Western Europe, Cluster: 4
+Region:  Central America, Cluster: 6
+Region:  South America, Cluster: 6
+Region:  Southern Europe, Cluster: 5
+Region:  East of USA, Cluster: 8
+Region:  South of USA, Cluster: 7
+
+
+11
+Region:  Southeast Asia, Cluster: 1
+Region:  South Asia, Cluster: 3
+Region:  Oceania, Cluster: 11
+Region:  Eastern Asia, Cluster: 2
+Region:  West of USA, Cluster: 9
+Region:  US Center, Cluster: 9
+Region:  West Africa, Cluster: 10
+Region:  North Africa, Cluster: 8
+Region:  Western Europe, Cluster: 4
+Region:  Central America, Cluster: 6
+Region:  South America, Cluster: 6
+Region:  Southern Europe, Cluster: 5
+Region:  East of USA, Cluster: 8
+Region:  South of USA, Cluster: 7
+
+12
+Region:  Southeast Asia, Cluster: 1
+Region:  South Asia, Cluster: 3
+Region:  Oceania, Cluster: 12
+Region:  Eastern Asia, Cluster: 2
+Region:  West of USA, Cluster: 9
+Region:  US Center, Cluster: 10
+Region:  West Africa, Cluster: 11
+Region:  North Africa, Cluster: 8
+Region:  Western Europe, Cluster: 4
+Region:  Central America, Cluster: 6
+Region:  South America, Cluster: 6
+Region:  Southern Europe, Cluster: 5
+Region:  East of USA, Cluster: 8
+Region:  South of USA, Cluster: 7
+
+13
+14
+no changes
