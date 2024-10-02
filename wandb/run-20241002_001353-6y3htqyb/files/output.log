@@ -1,0 +1,431 @@
+(10148, 28)
+torch.Size([7103, 27])
+torch.Size([7103])
+torch.Size([3045, 27])
+torch.Size([3045])
+Epoch 1/100, Loss: 55580.3819
+Performance Metrics:
+RMSE (test data): 231.06856535870045
+MAE (test data): 197.88770876878039
+MAPE (test data): 101.5025574831848
+MSE (test data): 53392.68189692803
+R2 (test data): -2.495330846133117
+loss (test data): 53305.00925697865
+Epoch 2/100, Loss: 52023.7410
+Performance Metrics:
+RMSE (test data): 219.82915555056945
+MAE (test data): 191.32775424654645
+MAPE (test data): 104.54874247511425
+MSE (test data): 48324.85763007646
+R2 (test data): -2.1606082249861873
+loss (test data): 48245.506239737275
+Epoch 3/100, Loss: 46028.8797
+Performance Metrics:
+RMSE (test data): 203.7393699258588
+MAE (test data): 177.8243415862518
+MAPE (test data): 98.27611251168179
+MSE (test data): 41509.73085778594
+R2 (test data): -1.7150086445093518
+loss (test data): 41441.570032840726
+Epoch 4/100, Loss: 37967.6722
+Performance Metrics:
+RMSE (test data): 180.01554816947
+MAE (test data): 156.36271415746918
+MAPE (test data): 84.37725149780091
+MSE (test data): 32405.597582754774
+R2 (test data): -1.1176666865032638
+loss (test data): 32352.38623768473
+Epoch 5/100, Loss: 28436.8640
+Performance Metrics:
+RMSE (test data): 151.17011825955868
+MAE (test data): 131.71655123670047
+MAPE (test data): 74.93821116401196
+MSE (test data): 22852.404654608952
+R2 (test data): -0.49484222189332283
+loss (test data): 22814.879946633824
+Epoch 6/100, Loss: 19370.1896
+Performance Metrics:
+RMSE (test data): 120.55553863408292
+MAE (test data): 105.85502443762594
+MAPE (test data): 65.27635737651173
+MSE (test data): 14533.63789535386
+R2 (test data): 0.04778604656858709
+loss (test data): 14509.773214285715
+Epoch 7/100, Loss: 12093.6181
+Performance Metrics:
+RMSE (test data): 93.79105479369754
+MAE (test data): 81.2553210019085
+MAPE (test data): 52.85133932847932
+MSE (test data): 8796.761959314374
+R2 (test data): 0.4245691690793446
+loss (test data): 8782.31732861248
+Epoch 8/100, Loss: 7351.9264
+Performance Metrics:
+RMSE (test data): 68.8449104026449
+MAE (test data): 59.153102141932436
+MAPE (test data): 40.238594880408385
+MSE (test data): 4739.621688348203
+R2 (test data): 0.6897258359529602
+loss (test data): 4731.8390900810755
+Epoch 9/100, Loss: 4300.8010
+Performance Metrics:
+RMSE (test data): 52.60640270465385
+MAE (test data): 42.22110596456026
+MAPE (test data): 29.801098205585596
+MSE (test data): 2767.4336055242125
+R2 (test data): 0.8189312963044854
+loss (test data): 2762.8893697403532
+Epoch 10/100, Loss: 2875.9429
+Performance Metrics:
+RMSE (test data): 41.38441238057628
+MAE (test data): 31.807785542564172
+MAPE (test data): 24.703051556741574
+MSE (test data): 1712.6695880855955
+R2 (test data): 0.8880260704613377
+loss (test data): 1709.8573489936114
+Epoch 11/100, Loss: 2016.0882
+Performance Metrics:
+RMSE (test data): 36.380529808950314
+MAE (test data): 26.168116541148017
+MAPE (test data): 21.16271773807678
+MSE (test data): 1323.5429491799225
+R2 (test data): 0.9134512264965282
+loss (test data): 1321.369584648245
+Epoch 12/100, Loss: 1821.5712
+Performance Metrics:
+RMSE (test data): 34.1191611262296
+MAE (test data): 24.287840067477603
+MAPE (test data): 20.695715956998846
+MSE (test data): 1164.117155957617
+R2 (test data): 0.9238536351325749
+loss (test data): 1162.2056372831998
+Epoch 13/100, Loss: 1522.9540
+Performance Metrics:
+RMSE (test data): 31.187537430847062
+MAE (test data): 22.650889424744406
+MAPE (test data): 19.94865112958074
+MSE (test data): 972.6624910004866
+R2 (test data): 0.9364408730812817
+loss (test data): 971.0653548417616
+Epoch 14/100, Loss: 1690.4063
+Performance Metrics:
+RMSE (test data): 27.970914609001916
+MAE (test data): 19.951076423592472
+MAPE (test data): 16.55451677502359
+MSE (test data): 782.3720640640769
+R2 (test data): 0.9488987838267583
+loss (test data): 781.0873796535047
+Epoch 15/100, Loss: 1490.1904
+Performance Metrics:
+RMSE (test data): 28.128270493137304
+MAE (test data): 19.301450591259883
+MAPE (test data): 16.707604878704352
+MSE (test data): 791.1996009350987
+R2 (test data): 0.9482842497465763
+loss (test data): 789.9004190880286
+Epoch 16/100, Loss: 1459.6896
+Performance Metrics:
+RMSE (test data): 29.600828349166683
+MAE (test data): 21.476988220685406
+MAPE (test data): 18.57724411281746
+MSE (test data): 876.20903895683
+R2 (test data): 0.9426359626286498
+loss (test data): 874.7702670393319
+Epoch 17/100, Loss: 1404.3008
+Performance Metrics:
+RMSE (test data): 29.563451508927248
+MAE (test data): 20.690831078196826
+MAPE (test data): 17.40269846510972
+MSE (test data): 873.9976651206928
+R2 (test data): 0.9428448208597414
+loss (test data): 872.5625411310807
+Epoch 18/100, Loss: 1395.2313
+Performance Metrics:
+RMSE (test data): 29.037080698131145
+MAE (test data): 20.367412189864798
+MAPE (test data): 18.66606702187895
+MSE (test data): 843.1520554697803
+R2 (test data): 0.9449099172924637
+loss (test data): 841.7675784056214
+Epoch 19/100, Loss: 1307.7058
+Performance Metrics:
+RMSE (test data): 30.88801833055741
+MAE (test data): 21.802665404347998
+MAPE (test data): 19.318847568783486
+MSE (test data): 954.0696763888507
+R2 (test data): 0.9376413037569097
+loss (test data): 952.5030676329665
+Epoch 20/100, Loss: 1511.0421
+Performance Metrics:
+RMSE (test data): 26.75669500776034
+MAE (test data): 19.408187476349504
+MAPE (test data): 16.9729469350309
+MSE (test data): 715.920727738307
+R2 (test data): 0.953176944784065
+loss (test data): 714.745179405275
+Epoch 21/100, Loss: 1529.1730
+Performance Metrics:
+RMSE (test data): 28.84417565301673
+MAE (test data): 20.06552471075403
+MAPE (test data): 18.06257400852672
+MSE (test data): 831.9864691020831
+R2 (test data): 0.9456075563827302
+loss (test data): 830.6203263306265
+Epoch 22/100, Loss: 1423.9319
+Performance Metrics:
+RMSE (test data): 27.455170034022657
+MAE (test data): 19.463837457997233
+MAPE (test data): 18.776027501270203
+MSE (test data): 753.7863615970957
+R2 (test data): 0.9506341533841727
+loss (test data): 752.5486074763958
+Epoch 23/100, Loss: 1414.9173
+Performance Metrics:
+RMSE (test data): 27.628165020923305
+MAE (test data): 19.612082729919962
+MAPE (test data): 17.197807075179202
+MSE (test data): 763.31550242337
+R2 (test data): 0.9500467352188126
+loss (test data): 762.0621026400862
+Epoch 24/100, Loss: 1371.2169
+Performance Metrics:
+RMSE (test data): 25.863282768232843
+MAE (test data): 18.061775882581347
+MAPE (test data): 17.366863493656233
+MSE (test data): 668.9093955495699
+R2 (test data): 0.9562282465876611
+loss (test data): 667.8110073747306
+Epoch 25/100, Loss: 1329.9658
+Performance Metrics:
+RMSE (test data): 27.579346481635476
+MAE (test data): 19.45333950731315
+MAPE (test data): 18.533804924659023
+MSE (test data): 760.6203523540992
+R2 (test data): 0.9502976476569367
+loss (test data): 759.3713850350216
+Epoch 26/100, Loss: 1278.3139
+Performance Metrics:
+RMSE (test data): 28.43621396382387
+MAE (test data): 20.538420477156578
+MAPE (test data): 17.862625307317863
+MSE (test data): 808.6182645963717
+R2 (test data): 0.9470222106984965
+loss (test data): 807.2904874955101
+Epoch 27/100, Loss: 1272.6199
+Performance Metrics:
+RMSE (test data): 26.50294400376911
+MAE (test data): 17.74055799081137
+MAPE (test data): 15.235888394410784
+MSE (test data): 702.4060408669209
+R2 (test data): 0.9540693377590975
+loss (test data): 701.2526666249744
+Epoch 28/100, Loss: 1241.0148
+Performance Metrics:
+RMSE (test data): 29.147417472040793
+MAE (test data): 21.742189158656096
+MAPE (test data): 19.124723711961362
+MSE (test data): 849.571945289429
+R2 (test data): 0.9444680701059647
+loss (test data): 848.1769308757313
+Epoch 29/100, Loss: 1229.2769
+Performance Metrics:
+RMSE (test data): 26.45201957783796
+MAE (test data): 20.073896761395428
+MAPE (test data): 17.592568291485556
+MSE (test data): 699.7093397463227
+R2 (test data): 0.9542191309099709
+loss (test data): 698.560386640176
+Epoch 30/100, Loss: 1169.5152
+Performance Metrics:
+RMSE (test data): 27.03016121945635
+MAE (test data): 19.799912052836856
+MAPE (test data): 17.59333090889221
+MSE (test data): 730.629615549802
+R2 (test data): 0.9521907495702445
+loss (test data): 729.4298934761135
+Epoch 31/100, Loss: 1222.9357
+Performance Metrics:
+RMSE (test data): 24.536088517023543
+MAE (test data): 17.329536031813998
+MAPE (test data): 16.34597490682685
+MSE (test data): 602.0196397152146
+R2 (test data): 0.9606561224208495
+loss (test data): 601.0310908475728
+Epoch 32/100, Loss: 1205.7277
+Performance Metrics:
+RMSE (test data): 27.926020229545728
+MAE (test data): 19.39050442341127
+MAPE (test data): 17.31610261599508
+MSE (test data): 779.8626058609973
+R2 (test data): 0.9489551728010152
+loss (test data): 778.5820325328407
+Epoch 33/100, Loss: 1164.1917
+Performance Metrics:
+RMSE (test data): 30.072295440211324
+MAE (test data): 22.06474001580163
+MAPE (test data): 19.008113630654545
+MSE (test data): 904.3429530433548
+R2 (test data): 0.9409176844046141
+loss (test data): 902.8579933805419
+Epoch 34/100, Loss: 1299.0348
+Performance Metrics:
+RMSE (test data): 26.265754872477963
+MAE (test data): 18.351087370044308
+MAPE (test data): 16.4298966993349
+MSE (test data): 689.8898790210999
+R2 (test data): 0.9548682932836491
+loss (test data): 688.757057147347
+Epoch 35/100, Loss: 1247.5909
+Performance Metrics:
+RMSE (test data): 26.64337241197915
+MAE (test data): 20.512189880640882
+MAPE (test data): 18.3939539074416
+MSE (test data): 709.8692934834118
+R2 (test data): 0.9536272151922254
+loss (test data): 708.703667040294
+Epoch 36/100, Loss: 1313.9693
+Performance Metrics:
+RMSE (test data): 26.042085136419658
+MAE (test data): 19.51447680188637
+MAPE (test data): 17.779494756053598
+MSE (test data): 678.1901982525297
+R2 (test data): 0.9556724535267987
+loss (test data): 677.0765752081409
+Epoch 37/100, Loss: 1372.8253
+Performance Metrics:
+RMSE (test data): 26.18586687277357
+MAE (test data): 19.169671131866544
+MAPE (test data): 16.604866886340314
+MSE (test data): 685.6996238786203
+R2 (test data): 0.9551414465970064
+loss (test data): 684.5736772108156
+Epoch 38/100, Loss: 1101.5112
+Performance Metrics:
+RMSE (test data): 26.97768844812395
+MAE (test data): 19.28724849588777
+MAPE (test data): 17.174379786362103
+MSE (test data): 727.7956740040403
+R2 (test data): 0.9523777448890276
+loss (test data): 726.6006087881003
+Epoch 39/100, Loss: 1122.4835
+Performance Metrics:
+RMSE (test data): 26.124129976443
+MAE (test data): 18.46034399145528
+MAPE (test data): 16.866624337786856
+MSE (test data): 682.4701670260878
+R2 (test data): 0.9553668204467817
+loss (test data): 681.3495294780763
+Epoch 40/100, Loss: 1209.1425
+Performance Metrics:
+RMSE (test data): 27.325001840357967
+MAE (test data): 19.932981336587353
+MAPE (test data): 16.75455078008437
+MSE (test data): 746.6557255755663
+R2 (test data): 0.951208596853694
+loss (test data): 745.4296884621306
+Epoch 41/100, Loss: 1207.6739
+Performance Metrics:
+RMSE (test data): 26.352508075897745
+MAE (test data): 18.409608323636807
+MAPE (test data): 16.527964067271704
+MSE (test data): 694.4546818902559
+R2 (test data): 0.9546082381430187
+loss (test data): 693.3143584553635
+Epoch 42/100, Loss: 1078.1800
+Performance Metrics:
+RMSE (test data): 26.583342386678467
+MAE (test data): 19.156523762290416
+MAPE (test data): 18.122454992679142
+MSE (test data): 706.674092447376
+R2 (test data): 0.953816556088029
+loss (test data): 705.5137085361825
+Epoch 43/100, Loss: 1135.2719
+Performance Metrics:
+RMSE (test data): 27.272057297979522
+MAE (test data): 19.74839091622516
+MAPE (test data): 17.1596019425587
+MSE (test data): 743.7651092642781
+R2 (test data): 0.9514049947634853
+loss (test data): 742.5438180306471
+Epoch 44/100, Loss: 1141.0380
+Performance Metrics:
+RMSE (test data): 26.644753558352473
+MAE (test data): 19.888165879484855
+MAPE (test data): 18.9603657183682
+MSE (test data): 709.9428921853369
+R2 (test data): 0.9535696796251769
+loss (test data): 708.7771366113121
+Epoch 45/100, Loss: 1182.5687
+Performance Metrics:
+RMSE (test data): 26.44872300069879
+MAE (test data): 18.96391666543327
+MAPE (test data): 17.547436154271026
+MSE (test data): 699.5349483676932
+R2 (test data): 0.9542502543678163
+loss (test data): 698.3862725218725
+Epoch 46/100, Loss: 1069.8385
+Performance Metrics:
+RMSE (test data): 27.13040433564843
+MAE (test data): 20.525981165821616
+MAPE (test data): 18.332357512359877
+MSE (test data): 736.058839415771
+R2 (test data): 0.9518503643500965
+loss (test data): 734.8502124704946
+Epoch 47/100, Loss: 1096.1040
+Performance Metrics:
+RMSE (test data): 24.124708739161928
+MAE (test data): 17.55951931923628
+MAPE (test data): 14.987295693112875
+MSE (test data): 582.0015717493959
+R2 (test data): 0.9619318361743701
+loss (test data): 581.0459173994894
+Epoch 48/100, Loss: 998.6728
+Performance Metrics:
+RMSE (test data): 27.160199424641963
+MAE (test data): 20.34326216311831
+MAPE (test data): 17.826097535138477
+MSE (test data): 737.6764327863216
+R2 (test data): 0.9517258011979629
+loss (test data): 736.4651660236427
+Epoch 49/100, Loss: 1080.9714
+Performance Metrics:
+RMSE (test data): 25.57306534418976
+MAE (test data): 18.605800837944997
+MAPE (test data): 15.563016736251251
+MSE (test data): 653.9816710981994
+R2 (test data): 0.9571550732801752
+loss (test data): 652.907820437577
+Epoch 50/100, Loss: 1131.8042
+Performance Metrics:
+RMSE (test data): 26.258940983278396
+MAE (test data): 19.50780188205995
+MAPE (test data): 16.86655938997312
+MSE (test data): 689.5319815632978
+R2 (test data): 0.9549249869203467
+loss (test data): 688.3997459574482
+Epoch 51/100, Loss: 1056.9537
+Performance Metrics:
+RMSE (test data): 26.456090050028003
+MAE (test data): 19.151910424899114
+MAPE (test data): 16.658142208198303
+MSE (test data): 699.9247007351908
+R2 (test data): 0.9542132871402949
+loss (test data): 698.775404896603
+Epoch 52/100, Loss: 1032.6275
+Performance Metrics:
+RMSE (test data): 25.942991329027446
+MAE (test data): 18.294470268958495
+MAPE (test data): 15.992845825308539
+MSE (test data): 673.0387990979932
+R2 (test data): 0.9560237783450518
+loss (test data): 671.9336392307125
+Traceback (most recent call last):
+  File "/Users/yunbo/Documents/GitHub/PFL_Optimiozation/Local_learning/Transformer_local.py", line 239, in <module>
+    loss.backward()
+  File "/Users/yunbo/anaconda3/envs/basic/lib/python3.9/site-packages/torch/_tensor.py", line 525, in backward
+    torch.autograd.backward(
+  File "/Users/yunbo/anaconda3/envs/basic/lib/python3.9/site-packages/torch/autograd/__init__.py", line 267, in backward
+    _engine_run_backward(
+  File "/Users/yunbo/anaconda3/envs/basic/lib/python3.9/site-packages/torch/autograd/graph.py", line 744, in _engine_run_backward
+    return Variable._execution_engine.run_backward(  # Calls into the C++ engine to run the backward pass
+KeyboardInterrupt

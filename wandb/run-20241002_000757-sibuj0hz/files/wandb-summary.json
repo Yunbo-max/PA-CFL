@@ -1,0 +1,1 @@
+{"Training Loss": 38210.927919286245, "_timestamp": 1727824095.2570271, "_runtime": 17.80871820449829, "_step": 9, "RMSE (test data)": 183.7444492140261, "MAE (test data)": 157.3605763054867, "MAPE (test data)": 87.93780087821243, "MSE (test data)": 33762.02261696582, "R2 (test data)": -0.9900615433254096, "Test Loss": 33529.18125, "_wandb": {"runtime": 17}}

@@ -2,7 +2,7 @@
 # @Author: Yunbo
 # @Date:   2024-03-10 08:14:24
 # @Last Modified by:   Yunbo
-# @Last Modified time: 2024-03-10 09:22:18
+# @Last Modified time: 2024-10-02 00:09:31
 
 # -*- coding: utf-8 -*-
 # @Author: Yunbo
@@ -126,7 +126,7 @@ for sheet_names in sheet_name:
         pd.set_option('display.max_rows', 500)
         pd.set_option('display.max_columns', 500)
         pd.set_option('display.width', 1000)
-        print(dataset.head(30))
+        # print(dataset.head(30))
 
         # Preprocess the data
         train_data = dataset # Drop the last 30 rows
@@ -202,14 +202,14 @@ for sheet_names in sheet_name:
         model = Net(input_neurons, output_neurons, hidden_layers, neurons_per_layer, dropout)
 
         criterion = nn.MSELoss()
-        learning_rate = 0.005
+        learning_rate = 0.001
         optimizer = optim.Adam(model.parameters(), lr=learning_rate)
 
         # # Save the initial parameters
         # torch.save(model.state_dict(), 'initial_parameters.pth')
 
 
-        num_epochs = 10
+        num_epochs = 100
         batch_size = 32
         evaluation_interval = 1  # Set the evaluation interval (e.g., every 5 epochs)
 

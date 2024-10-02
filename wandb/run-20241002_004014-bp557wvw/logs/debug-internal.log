@@ -1,0 +1,1093 @@
+2024-10-02 00:40:15,306 INFO    StreamThr :17129 [internal.py:wandb_internal():86] W&B internal server running at pid: 17129, started at: 2024-10-02 00:40:15.306106
+2024-10-02 00:40:15,307 DEBUG   HandlerThread:17129 [handler.py:handle_request():146] handle_request: status
+2024-10-02 00:40:15,308 INFO    WriterThread:17129 [datastore.py:open_for_write():87] open: /Users/yunbo/Documents/GitHub/PFL_Optimiozation/wandb/run-20241002_004014-bp557wvw/run-bp557wvw.wandb
+2024-10-02 00:40:15,309 DEBUG   SenderThread:17129 [sender.py:send():382] send: header
+2024-10-02 00:40:15,309 DEBUG   SenderThread:17129 [sender.py:send():382] send: run
+2024-10-02 00:40:15,629 INFO    SenderThread:17129 [dir_watcher.py:__init__():211] watching files in: /Users/yunbo/Documents/GitHub/PFL_Optimiozation/wandb/run-20241002_004014-bp557wvw/files
+2024-10-02 00:40:15,629 INFO    SenderThread:17129 [sender.py:_start_run_threads():1136] run started: bp557wvw with start time 1727826014.346776
+2024-10-02 00:40:15,636 DEBUG   HandlerThread:17129 [handler.py:handle_request():146] handle_request: check_version
+2024-10-02 00:40:15,636 DEBUG   SenderThread:17129 [sender.py:send_request():409] send_request: check_version
+2024-10-02 00:40:15,768 DEBUG   HandlerThread:17129 [handler.py:handle_request():146] handle_request: run_start
+2024-10-02 00:40:15,769 DEBUG   HandlerThread:17129 [system_info.py:__init__():27] System info init
+2024-10-02 00:40:15,770 DEBUG   HandlerThread:17129 [system_info.py:__init__():42] System info init done
+2024-10-02 00:40:15,770 INFO    HandlerThread:17129 [system_monitor.py:start():194] Starting system monitor
+2024-10-02 00:40:15,770 INFO    SystemMonitor:17129 [system_monitor.py:_start():158] Starting system asset monitoring threads
+2024-10-02 00:40:15,770 INFO    HandlerThread:17129 [system_monitor.py:probe():214] Collecting system info
+2024-10-02 00:40:15,770 DEBUG   HandlerThread:17129 [system_info.py:probe():151] Probing system
+2024-10-02 00:40:15,770 INFO    SystemMonitor:17129 [interfaces.py:start():190] Started cpu monitoring
+2024-10-02 00:40:15,772 INFO    SystemMonitor:17129 [interfaces.py:start():190] Started disk monitoring
+2024-10-02 00:40:15,774 INFO    SystemMonitor:17129 [interfaces.py:start():190] Started gpuapple monitoring
+2024-10-02 00:40:15,775 DEBUG   HandlerThread:17129 [system_info.py:_probe_git():136] Probing git
+2024-10-02 00:40:15,777 INFO    SystemMonitor:17129 [interfaces.py:start():190] Started memory monitoring
+2024-10-02 00:40:15,777 INFO    SystemMonitor:17129 [interfaces.py:start():190] Started network monitoring
+2024-10-02 00:40:15,802 DEBUG   HandlerThread:17129 [system_info.py:_probe_git():144] Probing git done
+2024-10-02 00:40:15,802 DEBUG   HandlerThread:17129 [system_info.py:probe():199] Probing system done
+2024-10-02 00:40:15,802 DEBUG   HandlerThread:17129 [system_monitor.py:probe():223] {'os': 'macOS-14.2-arm64-arm-64bit', 'python': '3.9.18', 'heartbeatAt': '2024-10-01T23:40:15.770798', 'startedAt': '2024-10-01T23:40:14.341233', 'docker': None, 'cuda': None, 'args': (), 'state': 'running', 'program': '/Users/yunbo/Documents/GitHub/PFL_Optimiozation/Local_learning/Transformer_local.py', 'codePathLocal': 'Local_learning/Transformer_local.py', 'codePath': 'Local_learning/Transformer_local.py', 'git': {'remote': 'https://github.com/Yunbo-max/PFL_Optimiozation.git', 'commit': '65f944b7eb38ecac440901e43dd06ac607b0394a'}, 'email': '82950147+Yunbo-max@users.noreply.github.com', 'root': '/Users/yunbo/Documents/GitHub/PFL_Optimiozation', 'host': 'yunbos-MBP.lan', 'username': 'yunbo', 'executable': '/Users/yunbo/anaconda3/envs/basic/bin/python', 'cpu_count': 10, 'cpu_count_logical': 10, 'disk': {'/': {'total': 460.4317207336426, 'used': 288.6841163635254}}, 'gpuapple': {'type': 'arm', 'vendor': 'Apple'}, 'memory': {'total': 16.0}}
+2024-10-02 00:40:15,802 INFO    HandlerThread:17129 [system_monitor.py:probe():224] Finished collecting system info
+2024-10-02 00:40:15,802 INFO    HandlerThread:17129 [system_monitor.py:probe():227] Publishing system info
+2024-10-02 00:40:15,802 DEBUG   HandlerThread:17129 [system_info.py:_save_conda():208] Saving list of conda packages installed into the current environment
+2024-10-02 00:40:16,635 INFO    Thread-38 :17129 [dir_watcher.py:_on_file_created():271] file/dir created: /Users/yunbo/Documents/GitHub/PFL_Optimiozation/wandb/run-20241002_004014-bp557wvw/files/conda-environment.yaml
+2024-10-02 00:40:25,397 DEBUG   HandlerThread:17129 [system_info.py:_save_conda():220] Saving conda packages done
+2024-10-02 00:40:25,398 INFO    HandlerThread:17129 [system_monitor.py:probe():229] Finished publishing system info
+2024-10-02 00:40:25,398 DEBUG   HandlerThread:17129 [handler.py:handle_request():146] handle_request: status_report
+2024-10-02 00:40:25,399 DEBUG   HandlerThread:17129 [handler.py:handle_request():146] handle_request: keepalive
+2024-10-02 00:40:25,399 DEBUG   SenderThread:17129 [sender.py:send():382] send: files
+2024-10-02 00:40:25,399 INFO    SenderThread:17129 [sender.py:_save_file():1403] saving file wandb-metadata.json with policy now
+2024-10-02 00:40:25,410 DEBUG   HandlerThread:17129 [handler.py:handle_request():146] handle_request: python_packages
+2024-10-02 00:40:25,410 DEBUG   HandlerThread:17129 [handler.py:handle_request():146] handle_request: stop_status
+2024-10-02 00:40:25,411 DEBUG   HandlerThread:17129 [handler.py:handle_request():146] handle_request: internal_messages
+2024-10-02 00:40:25,411 DEBUG   SenderThread:17129 [sender.py:send_request():409] send_request: python_packages
+2024-10-02 00:40:25,412 DEBUG   SenderThread:17129 [sender.py:send_request():409] send_request: stop_status
+2024-10-02 00:40:25,680 INFO    Thread-38 :17129 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/yunbo/Documents/GitHub/PFL_Optimiozation/wandb/run-20241002_004014-bp557wvw/files/conda-environment.yaml
+2024-10-02 00:40:25,680 INFO    Thread-38 :17129 [dir_watcher.py:_on_file_created():271] file/dir created: /Users/yunbo/Documents/GitHub/PFL_Optimiozation/wandb/run-20241002_004014-bp557wvw/files/requirements.txt
+2024-10-02 00:40:25,681 INFO    Thread-38 :17129 [dir_watcher.py:_on_file_created():271] file/dir created: /Users/yunbo/Documents/GitHub/PFL_Optimiozation/wandb/run-20241002_004014-bp557wvw/files/wandb-metadata.json
+2024-10-02 00:40:25,698 DEBUG   SenderThread:17129 [sender.py:send():382] send: telemetry
+2024-10-02 00:40:25,946 INFO    wandb-upload_0:17129 [upload_job.py:push():131] Uploaded file /var/folders/_y/0xw7_0ss0s3f4kfhj9xl96zw0000gn/T/tmpojjoigx1wandb/9kc8yysz-wandb-metadata.json
+2024-10-02 00:40:26,063 DEBUG   HandlerThread:17129 [handler.py:handle_request():146] handle_request: partial_history
+2024-10-02 00:40:26,064 DEBUG   HandlerThread:17129 [handler.py:handle_request():146] handle_request: status_report
+2024-10-02 00:40:26,064 DEBUG   SenderThread:17129 [sender.py:send():382] send: history
+2024-10-02 00:40:26,064 DEBUG   SenderThread:17129 [sender.py:send_request():409] send_request: summary_record
+2024-10-02 00:40:26,065 INFO    SenderThread:17129 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-10-02 00:40:26,131 DEBUG   HandlerThread:17129 [handler.py:handle_request():146] handle_request: partial_history
+2024-10-02 00:40:26,131 DEBUG   SenderThread:17129 [sender.py:send():382] send: history
+2024-10-02 00:40:26,131 DEBUG   SenderThread:17129 [sender.py:send_request():409] send_request: summary_record
+2024-10-02 00:40:26,132 INFO    SenderThread:17129 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-10-02 00:40:26,668 DEBUG   HandlerThread:17129 [handler.py:handle_request():146] handle_request: partial_history
+2024-10-02 00:40:26,668 DEBUG   SenderThread:17129 [sender.py:send():382] send: history
+2024-10-02 00:40:26,668 DEBUG   SenderThread:17129 [sender.py:send_request():409] send_request: summary_record
+2024-10-02 00:40:26,669 INFO    SenderThread:17129 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-10-02 00:40:26,685 INFO    Thread-38 :17129 [dir_watcher.py:_on_file_created():271] file/dir created: /Users/yunbo/Documents/GitHub/PFL_Optimiozation/wandb/run-20241002_004014-bp557wvw/files/output.log
+2024-10-02 00:40:26,685 INFO    Thread-38 :17129 [dir_watcher.py:_on_file_created():271] file/dir created: /Users/yunbo/Documents/GitHub/PFL_Optimiozation/wandb/run-20241002_004014-bp557wvw/files/wandb-summary.json
+2024-10-02 00:40:26,732 DEBUG   HandlerThread:17129 [handler.py:handle_request():146] handle_request: partial_history
+2024-10-02 00:40:26,733 DEBUG   SenderThread:17129 [sender.py:send():382] send: history
+2024-10-02 00:40:26,733 DEBUG   SenderThread:17129 [sender.py:send_request():409] send_request: summary_record
+2024-10-02 00:40:26,734 INFO    SenderThread:17129 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-10-02 00:40:27,232 DEBUG   HandlerThread:17129 [handler.py:handle_request():146] handle_request: partial_history
+2024-10-02 00:40:27,232 DEBUG   SenderThread:17129 [sender.py:send():382] send: history
+2024-10-02 00:40:27,233 DEBUG   SenderThread:17129 [sender.py:send_request():409] send_request: summary_record
+2024-10-02 00:40:27,234 INFO    SenderThread:17129 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-10-02 00:40:27,292 DEBUG   HandlerThread:17129 [handler.py:handle_request():146] handle_request: partial_history
+2024-10-02 00:40:27,293 DEBUG   SenderThread:17129 [sender.py:send():382] send: history
+2024-10-02 00:40:27,293 DEBUG   SenderThread:17129 [sender.py:send_request():409] send_request: summary_record
+2024-10-02 00:40:27,294 INFO    SenderThread:17129 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-10-02 00:40:27,686 INFO    Thread-38 :17129 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/yunbo/Documents/GitHub/PFL_Optimiozation/wandb/run-20241002_004014-bp557wvw/files/wandb-summary.json
+2024-10-02 00:40:27,767 DEBUG   HandlerThread:17129 [handler.py:handle_request():146] handle_request: partial_history
+2024-10-02 00:40:27,768 DEBUG   SenderThread:17129 [sender.py:send():382] send: history
+2024-10-02 00:40:27,768 DEBUG   SenderThread:17129 [sender.py:send_request():409] send_request: summary_record
+2024-10-02 00:40:27,768 INFO    SenderThread:17129 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-10-02 00:40:27,824 DEBUG   HandlerThread:17129 [handler.py:handle_request():146] handle_request: partial_history
+2024-10-02 00:40:27,825 DEBUG   SenderThread:17129 [sender.py:send():382] send: history
+2024-10-02 00:40:27,825 DEBUG   SenderThread:17129 [sender.py:send_request():409] send_request: summary_record
+2024-10-02 00:40:27,826 INFO    SenderThread:17129 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-10-02 00:40:28,300 DEBUG   HandlerThread:17129 [handler.py:handle_request():146] handle_request: partial_history
+2024-10-02 00:40:28,300 DEBUG   SenderThread:17129 [sender.py:send():382] send: history
+2024-10-02 00:40:28,300 DEBUG   SenderThread:17129 [sender.py:send_request():409] send_request: summary_record
+2024-10-02 00:40:28,301 INFO    SenderThread:17129 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-10-02 00:40:28,363 DEBUG   HandlerThread:17129 [handler.py:handle_request():146] handle_request: partial_history
+2024-10-02 00:40:28,364 DEBUG   SenderThread:17129 [sender.py:send():382] send: history
+2024-10-02 00:40:28,364 DEBUG   SenderThread:17129 [sender.py:send_request():409] send_request: summary_record
+2024-10-02 00:40:28,364 INFO    SenderThread:17129 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-10-02 00:40:28,691 INFO    Thread-38 :17129 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/yunbo/Documents/GitHub/PFL_Optimiozation/wandb/run-20241002_004014-bp557wvw/files/output.log
+2024-10-02 00:40:28,692 INFO    Thread-38 :17129 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/yunbo/Documents/GitHub/PFL_Optimiozation/wandb/run-20241002_004014-bp557wvw/files/wandb-summary.json
+2024-10-02 00:40:28,846 DEBUG   HandlerThread:17129 [handler.py:handle_request():146] handle_request: partial_history
+2024-10-02 00:40:28,847 DEBUG   SenderThread:17129 [sender.py:send():382] send: history
+2024-10-02 00:40:28,847 DEBUG   SenderThread:17129 [sender.py:send_request():409] send_request: summary_record
+2024-10-02 00:40:28,847 INFO    SenderThread:17129 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-10-02 00:40:28,906 DEBUG   HandlerThread:17129 [handler.py:handle_request():146] handle_request: partial_history
+2024-10-02 00:40:28,907 DEBUG   SenderThread:17129 [sender.py:send():382] send: history
+2024-10-02 00:40:28,907 DEBUG   SenderThread:17129 [sender.py:send_request():409] send_request: summary_record
+2024-10-02 00:40:28,908 INFO    SenderThread:17129 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-10-02 00:40:29,442 DEBUG   HandlerThread:17129 [handler.py:handle_request():146] handle_request: partial_history
+2024-10-02 00:40:29,442 DEBUG   SenderThread:17129 [sender.py:send():382] send: history
+2024-10-02 00:40:29,443 DEBUG   SenderThread:17129 [sender.py:send_request():409] send_request: summary_record
+2024-10-02 00:40:29,443 INFO    SenderThread:17129 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-10-02 00:40:29,513 DEBUG   HandlerThread:17129 [handler.py:handle_request():146] handle_request: partial_history
+2024-10-02 00:40:29,513 DEBUG   SenderThread:17129 [sender.py:send():382] send: history
+2024-10-02 00:40:29,514 DEBUG   SenderThread:17129 [sender.py:send_request():409] send_request: summary_record
+2024-10-02 00:40:29,514 INFO    SenderThread:17129 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-10-02 00:40:29,697 INFO    Thread-38 :17129 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/yunbo/Documents/GitHub/PFL_Optimiozation/wandb/run-20241002_004014-bp557wvw/files/wandb-summary.json
+2024-10-02 00:40:30,075 DEBUG   HandlerThread:17129 [handler.py:handle_request():146] handle_request: partial_history
+2024-10-02 00:40:30,076 DEBUG   SenderThread:17129 [sender.py:send():382] send: history
+2024-10-02 00:40:30,076 DEBUG   SenderThread:17129 [sender.py:send_request():409] send_request: summary_record
+2024-10-02 00:40:30,077 INFO    SenderThread:17129 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-10-02 00:40:30,149 DEBUG   HandlerThread:17129 [handler.py:handle_request():146] handle_request: partial_history
+2024-10-02 00:40:30,150 DEBUG   SenderThread:17129 [sender.py:send():382] send: history
+2024-10-02 00:40:30,150 DEBUG   SenderThread:17129 [sender.py:send_request():409] send_request: summary_record
+2024-10-02 00:40:30,150 INFO    SenderThread:17129 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-10-02 00:40:30,653 DEBUG   HandlerThread:17129 [handler.py:handle_request():146] handle_request: partial_history
+2024-10-02 00:40:30,654 DEBUG   SenderThread:17129 [sender.py:send():382] send: history
+2024-10-02 00:40:30,654 DEBUG   SenderThread:17129 [sender.py:send_request():409] send_request: summary_record
+2024-10-02 00:40:30,655 INFO    SenderThread:17129 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-10-02 00:40:30,697 INFO    Thread-38 :17129 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/yunbo/Documents/GitHub/PFL_Optimiozation/wandb/run-20241002_004014-bp557wvw/files/output.log
+2024-10-02 00:40:30,698 INFO    Thread-38 :17129 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/yunbo/Documents/GitHub/PFL_Optimiozation/wandb/run-20241002_004014-bp557wvw/files/wandb-summary.json
+2024-10-02 00:40:30,721 DEBUG   HandlerThread:17129 [handler.py:handle_request():146] handle_request: partial_history
+2024-10-02 00:40:30,722 DEBUG   SenderThread:17129 [sender.py:send():382] send: history
+2024-10-02 00:40:30,722 DEBUG   SenderThread:17129 [sender.py:send_request():409] send_request: summary_record
+2024-10-02 00:40:30,722 INFO    SenderThread:17129 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-10-02 00:40:31,258 DEBUG   HandlerThread:17129 [handler.py:handle_request():146] handle_request: status_report
+2024-10-02 00:40:31,258 DEBUG   HandlerThread:17129 [handler.py:handle_request():146] handle_request: partial_history
+2024-10-02 00:40:31,259 DEBUG   SenderThread:17129 [sender.py:send():382] send: history
+2024-10-02 00:40:31,259 DEBUG   SenderThread:17129 [sender.py:send_request():409] send_request: summary_record
+2024-10-02 00:40:31,259 INFO    SenderThread:17129 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-10-02 00:40:31,321 DEBUG   HandlerThread:17129 [handler.py:handle_request():146] handle_request: partial_history
+2024-10-02 00:40:31,322 DEBUG   SenderThread:17129 [sender.py:send():382] send: history
+2024-10-02 00:40:31,322 DEBUG   SenderThread:17129 [sender.py:send_request():409] send_request: summary_record
+2024-10-02 00:40:31,322 INFO    SenderThread:17129 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-10-02 00:40:31,703 INFO    Thread-38 :17129 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/yunbo/Documents/GitHub/PFL_Optimiozation/wandb/run-20241002_004014-bp557wvw/files/wandb-summary.json
+2024-10-02 00:40:31,802 DEBUG   HandlerThread:17129 [handler.py:handle_request():146] handle_request: partial_history
+2024-10-02 00:40:31,803 DEBUG   SenderThread:17129 [sender.py:send():382] send: history
+2024-10-02 00:40:31,803 DEBUG   SenderThread:17129 [sender.py:send_request():409] send_request: summary_record
+2024-10-02 00:40:31,804 INFO    SenderThread:17129 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-10-02 00:40:31,864 DEBUG   HandlerThread:17129 [handler.py:handle_request():146] handle_request: partial_history
+2024-10-02 00:40:31,865 DEBUG   SenderThread:17129 [sender.py:send():382] send: history
+2024-10-02 00:40:31,865 DEBUG   SenderThread:17129 [sender.py:send_request():409] send_request: summary_record
+2024-10-02 00:40:31,865 INFO    SenderThread:17129 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-10-02 00:40:32,336 DEBUG   HandlerThread:17129 [handler.py:handle_request():146] handle_request: partial_history
+2024-10-02 00:40:32,337 DEBUG   SenderThread:17129 [sender.py:send():382] send: history
+2024-10-02 00:40:32,337 DEBUG   SenderThread:17129 [sender.py:send_request():409] send_request: summary_record
+2024-10-02 00:40:32,337 INFO    SenderThread:17129 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-10-02 00:40:32,398 DEBUG   HandlerThread:17129 [handler.py:handle_request():146] handle_request: partial_history
+2024-10-02 00:40:32,398 DEBUG   SenderThread:17129 [sender.py:send():382] send: history
+2024-10-02 00:40:32,398 DEBUG   SenderThread:17129 [sender.py:send_request():409] send_request: summary_record
+2024-10-02 00:40:32,399 INFO    SenderThread:17129 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-10-02 00:40:32,708 INFO    Thread-38 :17129 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/yunbo/Documents/GitHub/PFL_Optimiozation/wandb/run-20241002_004014-bp557wvw/files/output.log
+2024-10-02 00:40:32,708 INFO    Thread-38 :17129 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/yunbo/Documents/GitHub/PFL_Optimiozation/wandb/run-20241002_004014-bp557wvw/files/wandb-summary.json
+2024-10-02 00:40:32,892 DEBUG   HandlerThread:17129 [handler.py:handle_request():146] handle_request: partial_history
+2024-10-02 00:40:32,892 DEBUG   SenderThread:17129 [sender.py:send():382] send: history
+2024-10-02 00:40:32,892 DEBUG   SenderThread:17129 [sender.py:send_request():409] send_request: summary_record
+2024-10-02 00:40:32,893 INFO    SenderThread:17129 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-10-02 00:40:32,953 DEBUG   HandlerThread:17129 [handler.py:handle_request():146] handle_request: partial_history
+2024-10-02 00:40:32,954 DEBUG   SenderThread:17129 [sender.py:send():382] send: history
+2024-10-02 00:40:32,954 DEBUG   SenderThread:17129 [sender.py:send_request():409] send_request: summary_record
+2024-10-02 00:40:32,954 INFO    SenderThread:17129 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-10-02 00:40:33,442 DEBUG   HandlerThread:17129 [handler.py:handle_request():146] handle_request: partial_history
+2024-10-02 00:40:33,442 DEBUG   SenderThread:17129 [sender.py:send():382] send: history
+2024-10-02 00:40:33,442 DEBUG   SenderThread:17129 [sender.py:send_request():409] send_request: summary_record
+2024-10-02 00:40:33,443 INFO    SenderThread:17129 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-10-02 00:40:33,500 DEBUG   HandlerThread:17129 [handler.py:handle_request():146] handle_request: partial_history
+2024-10-02 00:40:33,501 DEBUG   SenderThread:17129 [sender.py:send():382] send: history
+2024-10-02 00:40:33,501 DEBUG   SenderThread:17129 [sender.py:send_request():409] send_request: summary_record
+2024-10-02 00:40:33,502 INFO    SenderThread:17129 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-10-02 00:40:33,713 INFO    Thread-38 :17129 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/yunbo/Documents/GitHub/PFL_Optimiozation/wandb/run-20241002_004014-bp557wvw/files/wandb-summary.json
+2024-10-02 00:40:33,994 DEBUG   HandlerThread:17129 [handler.py:handle_request():146] handle_request: partial_history
+2024-10-02 00:40:33,995 DEBUG   SenderThread:17129 [sender.py:send():382] send: history
+2024-10-02 00:40:33,995 DEBUG   SenderThread:17129 [sender.py:send_request():409] send_request: summary_record
+2024-10-02 00:40:33,996 INFO    SenderThread:17129 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-10-02 00:40:34,065 DEBUG   HandlerThread:17129 [handler.py:handle_request():146] handle_request: partial_history
+2024-10-02 00:40:34,066 DEBUG   SenderThread:17129 [sender.py:send():382] send: history
+2024-10-02 00:40:34,066 DEBUG   SenderThread:17129 [sender.py:send_request():409] send_request: summary_record
+2024-10-02 00:40:34,067 INFO    SenderThread:17129 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-10-02 00:40:34,560 DEBUG   HandlerThread:17129 [handler.py:handle_request():146] handle_request: partial_history
+2024-10-02 00:40:34,560 DEBUG   SenderThread:17129 [sender.py:send():382] send: history
+2024-10-02 00:40:34,560 DEBUG   SenderThread:17129 [sender.py:send_request():409] send_request: summary_record
+2024-10-02 00:40:34,561 INFO    SenderThread:17129 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-10-02 00:40:34,620 DEBUG   HandlerThread:17129 [handler.py:handle_request():146] handle_request: partial_history
+2024-10-02 00:40:34,622 DEBUG   SenderThread:17129 [sender.py:send():382] send: history
+2024-10-02 00:40:34,622 DEBUG   SenderThread:17129 [sender.py:send_request():409] send_request: summary_record
+2024-10-02 00:40:34,622 INFO    SenderThread:17129 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-10-02 00:40:34,718 INFO    Thread-38 :17129 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/yunbo/Documents/GitHub/PFL_Optimiozation/wandb/run-20241002_004014-bp557wvw/files/output.log
+2024-10-02 00:40:34,719 INFO    Thread-38 :17129 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/yunbo/Documents/GitHub/PFL_Optimiozation/wandb/run-20241002_004014-bp557wvw/files/wandb-summary.json
+2024-10-02 00:40:35,101 DEBUG   HandlerThread:17129 [handler.py:handle_request():146] handle_request: partial_history
+2024-10-02 00:40:35,101 DEBUG   SenderThread:17129 [sender.py:send():382] send: history
+2024-10-02 00:40:35,102 DEBUG   SenderThread:17129 [sender.py:send_request():409] send_request: summary_record
+2024-10-02 00:40:35,102 INFO    SenderThread:17129 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-10-02 00:40:35,172 DEBUG   HandlerThread:17129 [handler.py:handle_request():146] handle_request: partial_history
+2024-10-02 00:40:35,173 DEBUG   SenderThread:17129 [sender.py:send():382] send: history
+2024-10-02 00:40:35,173 DEBUG   SenderThread:17129 [sender.py:send_request():409] send_request: summary_record
+2024-10-02 00:40:35,173 INFO    SenderThread:17129 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-10-02 00:40:35,702 DEBUG   HandlerThread:17129 [handler.py:handle_request():146] handle_request: partial_history
+2024-10-02 00:40:35,703 DEBUG   SenderThread:17129 [sender.py:send():382] send: history
+2024-10-02 00:40:35,703 DEBUG   SenderThread:17129 [sender.py:send_request():409] send_request: summary_record
+2024-10-02 00:40:35,704 INFO    SenderThread:17129 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-10-02 00:40:35,722 INFO    Thread-38 :17129 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/yunbo/Documents/GitHub/PFL_Optimiozation/wandb/run-20241002_004014-bp557wvw/files/output.log
+2024-10-02 00:40:35,722 INFO    Thread-38 :17129 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/yunbo/Documents/GitHub/PFL_Optimiozation/wandb/run-20241002_004014-bp557wvw/files/wandb-summary.json
+2024-10-02 00:40:35,767 DEBUG   HandlerThread:17129 [handler.py:handle_request():146] handle_request: partial_history
+2024-10-02 00:40:35,768 DEBUG   SenderThread:17129 [sender.py:send():382] send: history
+2024-10-02 00:40:35,768 DEBUG   SenderThread:17129 [sender.py:send_request():409] send_request: summary_record
+2024-10-02 00:40:35,768 INFO    SenderThread:17129 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-10-02 00:40:36,263 DEBUG   HandlerThread:17129 [handler.py:handle_request():146] handle_request: partial_history
+2024-10-02 00:40:36,264 DEBUG   HandlerThread:17129 [handler.py:handle_request():146] handle_request: status_report
+2024-10-02 00:40:36,264 DEBUG   SenderThread:17129 [sender.py:send():382] send: history
+2024-10-02 00:40:36,264 DEBUG   SenderThread:17129 [sender.py:send_request():409] send_request: summary_record
+2024-10-02 00:40:36,265 INFO    SenderThread:17129 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-10-02 00:40:36,326 DEBUG   HandlerThread:17129 [handler.py:handle_request():146] handle_request: partial_history
+2024-10-02 00:40:36,327 DEBUG   SenderThread:17129 [sender.py:send():382] send: history
+2024-10-02 00:40:36,327 DEBUG   SenderThread:17129 [sender.py:send_request():409] send_request: summary_record
+2024-10-02 00:40:36,328 INFO    SenderThread:17129 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-10-02 00:40:36,727 INFO    Thread-38 :17129 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/yunbo/Documents/GitHub/PFL_Optimiozation/wandb/run-20241002_004014-bp557wvw/files/wandb-summary.json
+2024-10-02 00:40:36,824 DEBUG   HandlerThread:17129 [handler.py:handle_request():146] handle_request: partial_history
+2024-10-02 00:40:36,824 DEBUG   SenderThread:17129 [sender.py:send():382] send: history
+2024-10-02 00:40:36,825 DEBUG   SenderThread:17129 [sender.py:send_request():409] send_request: summary_record
+2024-10-02 00:40:36,825 INFO    SenderThread:17129 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-10-02 00:40:36,883 DEBUG   HandlerThread:17129 [handler.py:handle_request():146] handle_request: partial_history
+2024-10-02 00:40:36,884 DEBUG   SenderThread:17129 [sender.py:send():382] send: history
+2024-10-02 00:40:36,884 DEBUG   SenderThread:17129 [sender.py:send_request():409] send_request: summary_record
+2024-10-02 00:40:36,885 INFO    SenderThread:17129 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-10-02 00:40:37,348 DEBUG   HandlerThread:17129 [handler.py:handle_request():146] handle_request: partial_history
+2024-10-02 00:40:37,349 DEBUG   SenderThread:17129 [sender.py:send():382] send: history
+2024-10-02 00:40:37,349 DEBUG   SenderThread:17129 [sender.py:send_request():409] send_request: summary_record
+2024-10-02 00:40:37,350 INFO    SenderThread:17129 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-10-02 00:40:37,405 DEBUG   HandlerThread:17129 [handler.py:handle_request():146] handle_request: partial_history
+2024-10-02 00:40:37,406 DEBUG   SenderThread:17129 [sender.py:send():382] send: history
+2024-10-02 00:40:37,406 DEBUG   SenderThread:17129 [sender.py:send_request():409] send_request: summary_record
+2024-10-02 00:40:37,406 INFO    SenderThread:17129 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-10-02 00:40:37,727 INFO    Thread-38 :17129 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/yunbo/Documents/GitHub/PFL_Optimiozation/wandb/run-20241002_004014-bp557wvw/files/output.log
+2024-10-02 00:40:37,728 INFO    Thread-38 :17129 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/yunbo/Documents/GitHub/PFL_Optimiozation/wandb/run-20241002_004014-bp557wvw/files/wandb-summary.json
+2024-10-02 00:40:37,879 DEBUG   HandlerThread:17129 [handler.py:handle_request():146] handle_request: partial_history
+2024-10-02 00:40:37,880 DEBUG   SenderThread:17129 [sender.py:send():382] send: history
+2024-10-02 00:40:37,880 DEBUG   SenderThread:17129 [sender.py:send_request():409] send_request: summary_record
+2024-10-02 00:40:37,880 INFO    SenderThread:17129 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-10-02 00:40:37,938 DEBUG   HandlerThread:17129 [handler.py:handle_request():146] handle_request: partial_history
+2024-10-02 00:40:37,939 DEBUG   SenderThread:17129 [sender.py:send():382] send: history
+2024-10-02 00:40:37,939 DEBUG   SenderThread:17129 [sender.py:send_request():409] send_request: summary_record
+2024-10-02 00:40:37,939 INFO    SenderThread:17129 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-10-02 00:40:38,432 DEBUG   HandlerThread:17129 [handler.py:handle_request():146] handle_request: partial_history
+2024-10-02 00:40:38,432 DEBUG   SenderThread:17129 [sender.py:send():382] send: history
+2024-10-02 00:40:38,432 DEBUG   SenderThread:17129 [sender.py:send_request():409] send_request: summary_record
+2024-10-02 00:40:38,433 INFO    SenderThread:17129 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-10-02 00:40:38,493 DEBUG   HandlerThread:17129 [handler.py:handle_request():146] handle_request: partial_history
+2024-10-02 00:40:38,494 DEBUG   SenderThread:17129 [sender.py:send():382] send: history
+2024-10-02 00:40:38,494 DEBUG   SenderThread:17129 [sender.py:send_request():409] send_request: summary_record
+2024-10-02 00:40:38,495 INFO    SenderThread:17129 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-10-02 00:40:38,733 INFO    Thread-38 :17129 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/yunbo/Documents/GitHub/PFL_Optimiozation/wandb/run-20241002_004014-bp557wvw/files/wandb-summary.json
+2024-10-02 00:40:39,029 DEBUG   HandlerThread:17129 [handler.py:handle_request():146] handle_request: partial_history
+2024-10-02 00:40:39,030 DEBUG   SenderThread:17129 [sender.py:send():382] send: history
+2024-10-02 00:40:39,030 DEBUG   SenderThread:17129 [sender.py:send_request():409] send_request: summary_record
+2024-10-02 00:40:39,031 INFO    SenderThread:17129 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-10-02 00:40:39,097 DEBUG   HandlerThread:17129 [handler.py:handle_request():146] handle_request: partial_history
+2024-10-02 00:40:39,098 DEBUG   SenderThread:17129 [sender.py:send():382] send: history
+2024-10-02 00:40:39,098 DEBUG   SenderThread:17129 [sender.py:send_request():409] send_request: summary_record
+2024-10-02 00:40:39,099 INFO    SenderThread:17129 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-10-02 00:40:39,653 DEBUG   HandlerThread:17129 [handler.py:handle_request():146] handle_request: partial_history
+2024-10-02 00:40:39,653 DEBUG   SenderThread:17129 [sender.py:send():382] send: history
+2024-10-02 00:40:39,653 DEBUG   SenderThread:17129 [sender.py:send_request():409] send_request: summary_record
+2024-10-02 00:40:39,654 INFO    SenderThread:17129 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-10-02 00:40:39,723 DEBUG   HandlerThread:17129 [handler.py:handle_request():146] handle_request: partial_history
+2024-10-02 00:40:39,724 DEBUG   SenderThread:17129 [sender.py:send():382] send: history
+2024-10-02 00:40:39,724 DEBUG   SenderThread:17129 [sender.py:send_request():409] send_request: summary_record
+2024-10-02 00:40:39,725 INFO    SenderThread:17129 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-10-02 00:40:39,738 INFO    Thread-38 :17129 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/yunbo/Documents/GitHub/PFL_Optimiozation/wandb/run-20241002_004014-bp557wvw/files/output.log
+2024-10-02 00:40:39,739 INFO    Thread-38 :17129 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/yunbo/Documents/GitHub/PFL_Optimiozation/wandb/run-20241002_004014-bp557wvw/files/wandb-summary.json
+2024-10-02 00:40:40,247 DEBUG   HandlerThread:17129 [handler.py:handle_request():146] handle_request: partial_history
+2024-10-02 00:40:40,247 DEBUG   SenderThread:17129 [sender.py:send():382] send: history
+2024-10-02 00:40:40,247 DEBUG   SenderThread:17129 [sender.py:send_request():409] send_request: summary_record
+2024-10-02 00:40:40,248 INFO    SenderThread:17129 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-10-02 00:40:40,312 DEBUG   HandlerThread:17129 [handler.py:handle_request():146] handle_request: partial_history
+2024-10-02 00:40:40,314 DEBUG   SenderThread:17129 [sender.py:send():382] send: history
+2024-10-02 00:40:40,314 DEBUG   SenderThread:17129 [sender.py:send_request():409] send_request: summary_record
+2024-10-02 00:40:40,314 INFO    SenderThread:17129 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-10-02 00:40:40,413 DEBUG   HandlerThread:17129 [handler.py:handle_request():146] handle_request: internal_messages
+2024-10-02 00:40:40,413 DEBUG   HandlerThread:17129 [handler.py:handle_request():146] handle_request: stop_status
+2024-10-02 00:40:40,414 DEBUG   SenderThread:17129 [sender.py:send_request():409] send_request: stop_status
+2024-10-02 00:40:40,744 INFO    Thread-38 :17129 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/yunbo/Documents/GitHub/PFL_Optimiozation/wandb/run-20241002_004014-bp557wvw/files/wandb-summary.json
+2024-10-02 00:40:40,797 DEBUG   HandlerThread:17129 [handler.py:handle_request():146] handle_request: partial_history
+2024-10-02 00:40:40,798 DEBUG   SenderThread:17129 [sender.py:send():382] send: history
+2024-10-02 00:40:40,798 DEBUG   SenderThread:17129 [sender.py:send_request():409] send_request: summary_record
+2024-10-02 00:40:40,798 INFO    SenderThread:17129 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-10-02 00:40:40,854 DEBUG   HandlerThread:17129 [handler.py:handle_request():146] handle_request: partial_history
+2024-10-02 00:40:40,855 DEBUG   SenderThread:17129 [sender.py:send():382] send: history
+2024-10-02 00:40:40,855 DEBUG   SenderThread:17129 [sender.py:send_request():409] send_request: summary_record
+2024-10-02 00:40:40,855 INFO    SenderThread:17129 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-10-02 00:40:41,348 DEBUG   HandlerThread:17129 [handler.py:handle_request():146] handle_request: partial_history
+2024-10-02 00:40:41,348 DEBUG   HandlerThread:17129 [handler.py:handle_request():146] handle_request: status_report
+2024-10-02 00:40:41,349 DEBUG   SenderThread:17129 [sender.py:send():382] send: history
+2024-10-02 00:40:41,349 DEBUG   SenderThread:17129 [sender.py:send_request():409] send_request: summary_record
+2024-10-02 00:40:41,349 INFO    SenderThread:17129 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-10-02 00:40:41,405 DEBUG   HandlerThread:17129 [handler.py:handle_request():146] handle_request: partial_history
+2024-10-02 00:40:41,406 DEBUG   SenderThread:17129 [sender.py:send():382] send: history
+2024-10-02 00:40:41,406 DEBUG   SenderThread:17129 [sender.py:send_request():409] send_request: summary_record
+2024-10-02 00:40:41,406 INFO    SenderThread:17129 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-10-02 00:40:41,744 INFO    Thread-38 :17129 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/yunbo/Documents/GitHub/PFL_Optimiozation/wandb/run-20241002_004014-bp557wvw/files/output.log
+2024-10-02 00:40:41,745 INFO    Thread-38 :17129 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/yunbo/Documents/GitHub/PFL_Optimiozation/wandb/run-20241002_004014-bp557wvw/files/wandb-summary.json
+2024-10-02 00:40:41,889 DEBUG   HandlerThread:17129 [handler.py:handle_request():146] handle_request: partial_history
+2024-10-02 00:40:41,890 DEBUG   SenderThread:17129 [sender.py:send():382] send: history
+2024-10-02 00:40:41,890 DEBUG   SenderThread:17129 [sender.py:send_request():409] send_request: summary_record
+2024-10-02 00:40:41,890 INFO    SenderThread:17129 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-10-02 00:40:41,950 DEBUG   HandlerThread:17129 [handler.py:handle_request():146] handle_request: partial_history
+2024-10-02 00:40:41,951 DEBUG   SenderThread:17129 [sender.py:send():382] send: history
+2024-10-02 00:40:41,951 DEBUG   SenderThread:17129 [sender.py:send_request():409] send_request: summary_record
+2024-10-02 00:40:41,951 INFO    SenderThread:17129 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-10-02 00:40:42,445 DEBUG   HandlerThread:17129 [handler.py:handle_request():146] handle_request: partial_history
+2024-10-02 00:40:42,446 DEBUG   SenderThread:17129 [sender.py:send():382] send: history
+2024-10-02 00:40:42,446 DEBUG   SenderThread:17129 [sender.py:send_request():409] send_request: summary_record
+2024-10-02 00:40:42,446 INFO    SenderThread:17129 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-10-02 00:40:42,508 DEBUG   HandlerThread:17129 [handler.py:handle_request():146] handle_request: partial_history
+2024-10-02 00:40:42,509 DEBUG   SenderThread:17129 [sender.py:send():382] send: history
+2024-10-02 00:40:42,509 DEBUG   SenderThread:17129 [sender.py:send_request():409] send_request: summary_record
+2024-10-02 00:40:42,510 INFO    SenderThread:17129 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-10-02 00:40:42,750 INFO    Thread-38 :17129 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/yunbo/Documents/GitHub/PFL_Optimiozation/wandb/run-20241002_004014-bp557wvw/files/wandb-summary.json
+2024-10-02 00:40:43,020 DEBUG   HandlerThread:17129 [handler.py:handle_request():146] handle_request: partial_history
+2024-10-02 00:40:43,020 DEBUG   SenderThread:17129 [sender.py:send():382] send: history
+2024-10-02 00:40:43,020 DEBUG   SenderThread:17129 [sender.py:send_request():409] send_request: summary_record
+2024-10-02 00:40:43,021 INFO    SenderThread:17129 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-10-02 00:40:43,093 DEBUG   HandlerThread:17129 [handler.py:handle_request():146] handle_request: partial_history
+2024-10-02 00:40:43,094 DEBUG   SenderThread:17129 [sender.py:send():382] send: history
+2024-10-02 00:40:43,094 DEBUG   SenderThread:17129 [sender.py:send_request():409] send_request: summary_record
+2024-10-02 00:40:43,095 INFO    SenderThread:17129 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-10-02 00:40:43,610 DEBUG   HandlerThread:17129 [handler.py:handle_request():146] handle_request: partial_history
+2024-10-02 00:40:43,610 DEBUG   SenderThread:17129 [sender.py:send():382] send: history
+2024-10-02 00:40:43,610 DEBUG   SenderThread:17129 [sender.py:send_request():409] send_request: summary_record
+2024-10-02 00:40:43,611 INFO    SenderThread:17129 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-10-02 00:40:43,670 DEBUG   HandlerThread:17129 [handler.py:handle_request():146] handle_request: partial_history
+2024-10-02 00:40:43,673 DEBUG   SenderThread:17129 [sender.py:send():382] send: history
+2024-10-02 00:40:43,673 DEBUG   SenderThread:17129 [sender.py:send_request():409] send_request: summary_record
+2024-10-02 00:40:43,674 INFO    SenderThread:17129 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-10-02 00:40:43,755 INFO    Thread-38 :17129 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/yunbo/Documents/GitHub/PFL_Optimiozation/wandb/run-20241002_004014-bp557wvw/files/output.log
+2024-10-02 00:40:43,755 INFO    Thread-38 :17129 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/yunbo/Documents/GitHub/PFL_Optimiozation/wandb/run-20241002_004014-bp557wvw/files/wandb-summary.json
+2024-10-02 00:40:44,165 DEBUG   HandlerThread:17129 [handler.py:handle_request():146] handle_request: partial_history
+2024-10-02 00:40:44,166 DEBUG   SenderThread:17129 [sender.py:send():382] send: history
+2024-10-02 00:40:44,166 DEBUG   SenderThread:17129 [sender.py:send_request():409] send_request: summary_record
+2024-10-02 00:40:44,166 INFO    SenderThread:17129 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-10-02 00:40:44,225 DEBUG   HandlerThread:17129 [handler.py:handle_request():146] handle_request: partial_history
+2024-10-02 00:40:44,225 DEBUG   SenderThread:17129 [sender.py:send():382] send: history
+2024-10-02 00:40:44,225 DEBUG   SenderThread:17129 [sender.py:send_request():409] send_request: summary_record
+2024-10-02 00:40:44,226 INFO    SenderThread:17129 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-10-02 00:40:44,715 DEBUG   HandlerThread:17129 [handler.py:handle_request():146] handle_request: partial_history
+2024-10-02 00:40:44,716 DEBUG   SenderThread:17129 [sender.py:send():382] send: history
+2024-10-02 00:40:44,716 DEBUG   SenderThread:17129 [sender.py:send_request():409] send_request: summary_record
+2024-10-02 00:40:44,716 INFO    SenderThread:17129 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-10-02 00:40:44,760 INFO    Thread-38 :17129 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/yunbo/Documents/GitHub/PFL_Optimiozation/wandb/run-20241002_004014-bp557wvw/files/wandb-summary.json
+2024-10-02 00:40:44,782 DEBUG   HandlerThread:17129 [handler.py:handle_request():146] handle_request: partial_history
+2024-10-02 00:40:44,783 DEBUG   SenderThread:17129 [sender.py:send():382] send: history
+2024-10-02 00:40:44,783 DEBUG   SenderThread:17129 [sender.py:send_request():409] send_request: summary_record
+2024-10-02 00:40:44,783 INFO    SenderThread:17129 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-10-02 00:40:45,271 DEBUG   HandlerThread:17129 [handler.py:handle_request():146] handle_request: partial_history
+2024-10-02 00:40:45,272 DEBUG   SenderThread:17129 [sender.py:send():382] send: history
+2024-10-02 00:40:45,272 DEBUG   SenderThread:17129 [sender.py:send_request():409] send_request: summary_record
+2024-10-02 00:40:45,272 INFO    SenderThread:17129 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-10-02 00:40:45,328 DEBUG   HandlerThread:17129 [handler.py:handle_request():146] handle_request: partial_history
+2024-10-02 00:40:45,329 DEBUG   SenderThread:17129 [sender.py:send():382] send: history
+2024-10-02 00:40:45,329 DEBUG   SenderThread:17129 [sender.py:send_request():409] send_request: summary_record
+2024-10-02 00:40:45,330 INFO    SenderThread:17129 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-10-02 00:40:45,765 INFO    Thread-38 :17129 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/yunbo/Documents/GitHub/PFL_Optimiozation/wandb/run-20241002_004014-bp557wvw/files/output.log
+2024-10-02 00:40:45,765 INFO    Thread-38 :17129 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/yunbo/Documents/GitHub/PFL_Optimiozation/wandb/run-20241002_004014-bp557wvw/files/wandb-summary.json
+2024-10-02 00:40:45,818 DEBUG   HandlerThread:17129 [handler.py:handle_request():146] handle_request: partial_history
+2024-10-02 00:40:45,819 DEBUG   SenderThread:17129 [sender.py:send():382] send: history
+2024-10-02 00:40:45,819 DEBUG   SenderThread:17129 [sender.py:send_request():409] send_request: summary_record
+2024-10-02 00:40:45,819 INFO    SenderThread:17129 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-10-02 00:40:45,883 DEBUG   HandlerThread:17129 [handler.py:handle_request():146] handle_request: partial_history
+2024-10-02 00:40:45,884 DEBUG   SenderThread:17129 [sender.py:send():382] send: history
+2024-10-02 00:40:45,884 DEBUG   SenderThread:17129 [sender.py:send_request():409] send_request: summary_record
+2024-10-02 00:40:45,884 INFO    SenderThread:17129 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-10-02 00:40:46,374 DEBUG   HandlerThread:17129 [handler.py:handle_request():146] handle_request: partial_history
+2024-10-02 00:40:46,377 DEBUG   HandlerThread:17129 [handler.py:handle_request():146] handle_request: status_report
+2024-10-02 00:40:46,440 DEBUG   HandlerThread:17129 [handler.py:handle_request():146] handle_request: partial_history
+2024-10-02 00:40:46,527 DEBUG   SenderThread:17129 [sender.py:send():382] send: history
+2024-10-02 00:40:46,527 DEBUG   SenderThread:17129 [sender.py:send_request():409] send_request: summary_record
+2024-10-02 00:40:46,527 INFO    SenderThread:17129 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-10-02 00:40:46,527 DEBUG   SenderThread:17129 [sender.py:send():382] send: history
+2024-10-02 00:40:46,527 DEBUG   SenderThread:17129 [sender.py:send_request():409] send_request: summary_record
+2024-10-02 00:40:46,528 INFO    SenderThread:17129 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-10-02 00:40:46,768 INFO    Thread-38 :17129 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/yunbo/Documents/GitHub/PFL_Optimiozation/wandb/run-20241002_004014-bp557wvw/files/wandb-summary.json
+2024-10-02 00:40:46,768 INFO    Thread-38 :17129 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/yunbo/Documents/GitHub/PFL_Optimiozation/wandb/run-20241002_004014-bp557wvw/files/config.yaml
+2024-10-02 00:40:46,946 DEBUG   HandlerThread:17129 [handler.py:handle_request():146] handle_request: partial_history
+2024-10-02 00:40:46,946 DEBUG   SenderThread:17129 [sender.py:send():382] send: history
+2024-10-02 00:40:46,947 DEBUG   SenderThread:17129 [sender.py:send_request():409] send_request: summary_record
+2024-10-02 00:40:46,947 INFO    SenderThread:17129 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-10-02 00:40:47,010 DEBUG   HandlerThread:17129 [handler.py:handle_request():146] handle_request: partial_history
+2024-10-02 00:40:47,011 DEBUG   SenderThread:17129 [sender.py:send():382] send: history
+2024-10-02 00:40:47,011 DEBUG   SenderThread:17129 [sender.py:send_request():409] send_request: summary_record
+2024-10-02 00:40:47,012 INFO    SenderThread:17129 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-10-02 00:40:47,504 DEBUG   HandlerThread:17129 [handler.py:handle_request():146] handle_request: partial_history
+2024-10-02 00:40:47,505 DEBUG   SenderThread:17129 [sender.py:send():382] send: history
+2024-10-02 00:40:47,505 DEBUG   SenderThread:17129 [sender.py:send_request():409] send_request: summary_record
+2024-10-02 00:40:47,505 INFO    SenderThread:17129 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-10-02 00:40:47,561 DEBUG   HandlerThread:17129 [handler.py:handle_request():146] handle_request: partial_history
+2024-10-02 00:40:47,562 DEBUG   SenderThread:17129 [sender.py:send():382] send: history
+2024-10-02 00:40:47,562 DEBUG   SenderThread:17129 [sender.py:send_request():409] send_request: summary_record
+2024-10-02 00:40:47,563 INFO    SenderThread:17129 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-10-02 00:40:47,773 INFO    Thread-38 :17129 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/yunbo/Documents/GitHub/PFL_Optimiozation/wandb/run-20241002_004014-bp557wvw/files/output.log
+2024-10-02 00:40:47,773 INFO    Thread-38 :17129 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/yunbo/Documents/GitHub/PFL_Optimiozation/wandb/run-20241002_004014-bp557wvw/files/wandb-summary.json
+2024-10-02 00:40:48,028 DEBUG   HandlerThread:17129 [handler.py:handle_request():146] handle_request: partial_history
+2024-10-02 00:40:48,029 DEBUG   SenderThread:17129 [sender.py:send():382] send: history
+2024-10-02 00:40:48,029 DEBUG   SenderThread:17129 [sender.py:send_request():409] send_request: summary_record
+2024-10-02 00:40:48,030 INFO    SenderThread:17129 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-10-02 00:40:48,090 DEBUG   HandlerThread:17129 [handler.py:handle_request():146] handle_request: partial_history
+2024-10-02 00:40:48,092 DEBUG   SenderThread:17129 [sender.py:send():382] send: history
+2024-10-02 00:40:48,092 DEBUG   SenderThread:17129 [sender.py:send_request():409] send_request: summary_record
+2024-10-02 00:40:48,092 INFO    SenderThread:17129 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-10-02 00:40:48,562 DEBUG   HandlerThread:17129 [handler.py:handle_request():146] handle_request: partial_history
+2024-10-02 00:40:48,563 DEBUG   SenderThread:17129 [sender.py:send():382] send: history
+2024-10-02 00:40:48,563 DEBUG   SenderThread:17129 [sender.py:send_request():409] send_request: summary_record
+2024-10-02 00:40:48,564 INFO    SenderThread:17129 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-10-02 00:40:48,626 DEBUG   HandlerThread:17129 [handler.py:handle_request():146] handle_request: partial_history
+2024-10-02 00:40:48,627 DEBUG   SenderThread:17129 [sender.py:send():382] send: history
+2024-10-02 00:40:48,627 DEBUG   SenderThread:17129 [sender.py:send_request():409] send_request: summary_record
+2024-10-02 00:40:48,628 INFO    SenderThread:17129 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-10-02 00:40:48,778 INFO    Thread-38 :17129 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/yunbo/Documents/GitHub/PFL_Optimiozation/wandb/run-20241002_004014-bp557wvw/files/wandb-summary.json
+2024-10-02 00:40:49,103 DEBUG   HandlerThread:17129 [handler.py:handle_request():146] handle_request: partial_history
+2024-10-02 00:40:49,104 DEBUG   SenderThread:17129 [sender.py:send():382] send: history
+2024-10-02 00:40:49,104 DEBUG   SenderThread:17129 [sender.py:send_request():409] send_request: summary_record
+2024-10-02 00:40:49,105 INFO    SenderThread:17129 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-10-02 00:40:49,164 DEBUG   HandlerThread:17129 [handler.py:handle_request():146] handle_request: partial_history
+2024-10-02 00:40:49,165 DEBUG   SenderThread:17129 [sender.py:send():382] send: history
+2024-10-02 00:40:49,166 DEBUG   SenderThread:17129 [sender.py:send_request():409] send_request: summary_record
+2024-10-02 00:40:49,166 INFO    SenderThread:17129 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-10-02 00:40:49,644 DEBUG   HandlerThread:17129 [handler.py:handle_request():146] handle_request: partial_history
+2024-10-02 00:40:49,644 DEBUG   SenderThread:17129 [sender.py:send():382] send: history
+2024-10-02 00:40:49,644 DEBUG   SenderThread:17129 [sender.py:send_request():409] send_request: summary_record
+2024-10-02 00:40:49,645 INFO    SenderThread:17129 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-10-02 00:40:49,703 DEBUG   HandlerThread:17129 [handler.py:handle_request():146] handle_request: partial_history
+2024-10-02 00:40:49,704 DEBUG   SenderThread:17129 [sender.py:send():382] send: history
+2024-10-02 00:40:49,704 DEBUG   SenderThread:17129 [sender.py:send_request():409] send_request: summary_record
+2024-10-02 00:40:49,705 INFO    SenderThread:17129 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-10-02 00:40:49,779 INFO    Thread-38 :17129 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/yunbo/Documents/GitHub/PFL_Optimiozation/wandb/run-20241002_004014-bp557wvw/files/output.log
+2024-10-02 00:40:49,779 INFO    Thread-38 :17129 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/yunbo/Documents/GitHub/PFL_Optimiozation/wandb/run-20241002_004014-bp557wvw/files/wandb-summary.json
+2024-10-02 00:40:50,217 DEBUG   HandlerThread:17129 [handler.py:handle_request():146] handle_request: partial_history
+2024-10-02 00:40:50,217 DEBUG   SenderThread:17129 [sender.py:send():382] send: history
+2024-10-02 00:40:50,217 DEBUG   SenderThread:17129 [sender.py:send_request():409] send_request: summary_record
+2024-10-02 00:40:50,218 INFO    SenderThread:17129 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-10-02 00:40:50,276 DEBUG   HandlerThread:17129 [handler.py:handle_request():146] handle_request: partial_history
+2024-10-02 00:40:50,277 DEBUG   SenderThread:17129 [sender.py:send():382] send: history
+2024-10-02 00:40:50,277 DEBUG   SenderThread:17129 [sender.py:send_request():409] send_request: summary_record
+2024-10-02 00:40:50,277 INFO    SenderThread:17129 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-10-02 00:40:50,780 INFO    Thread-38 :17129 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/yunbo/Documents/GitHub/PFL_Optimiozation/wandb/run-20241002_004014-bp557wvw/files/wandb-summary.json
+2024-10-02 00:40:50,794 DEBUG   HandlerThread:17129 [handler.py:handle_request():146] handle_request: partial_history
+2024-10-02 00:40:50,795 DEBUG   SenderThread:17129 [sender.py:send():382] send: history
+2024-10-02 00:40:50,795 DEBUG   SenderThread:17129 [sender.py:send_request():409] send_request: summary_record
+2024-10-02 00:40:50,795 INFO    SenderThread:17129 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-10-02 00:40:50,860 DEBUG   HandlerThread:17129 [handler.py:handle_request():146] handle_request: partial_history
+2024-10-02 00:40:50,861 DEBUG   SenderThread:17129 [sender.py:send():382] send: history
+2024-10-02 00:40:50,861 DEBUG   SenderThread:17129 [sender.py:send_request():409] send_request: summary_record
+2024-10-02 00:40:50,862 INFO    SenderThread:17129 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-10-02 00:40:51,371 DEBUG   HandlerThread:17129 [handler.py:handle_request():146] handle_request: partial_history
+2024-10-02 00:40:51,371 DEBUG   SenderThread:17129 [sender.py:send():382] send: history
+2024-10-02 00:40:51,371 DEBUG   SenderThread:17129 [sender.py:send_request():409] send_request: summary_record
+2024-10-02 00:40:51,372 INFO    SenderThread:17129 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-10-02 00:40:51,433 DEBUG   HandlerThread:17129 [handler.py:handle_request():146] handle_request: partial_history
+2024-10-02 00:40:51,433 DEBUG   SenderThread:17129 [sender.py:send():382] send: history
+2024-10-02 00:40:51,433 DEBUG   SenderThread:17129 [sender.py:send_request():409] send_request: summary_record
+2024-10-02 00:40:51,434 INFO    SenderThread:17129 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-10-02 00:40:51,785 INFO    Thread-38 :17129 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/yunbo/Documents/GitHub/PFL_Optimiozation/wandb/run-20241002_004014-bp557wvw/files/output.log
+2024-10-02 00:40:51,785 INFO    Thread-38 :17129 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/yunbo/Documents/GitHub/PFL_Optimiozation/wandb/run-20241002_004014-bp557wvw/files/wandb-summary.json
+2024-10-02 00:40:51,917 DEBUG   HandlerThread:17129 [handler.py:handle_request():146] handle_request: partial_history
+2024-10-02 00:40:51,918 DEBUG   HandlerThread:17129 [handler.py:handle_request():146] handle_request: status_report
+2024-10-02 00:40:51,918 DEBUG   SenderThread:17129 [sender.py:send():382] send: history
+2024-10-02 00:40:51,918 DEBUG   SenderThread:17129 [sender.py:send_request():409] send_request: summary_record
+2024-10-02 00:40:51,919 INFO    SenderThread:17129 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-10-02 00:40:51,987 DEBUG   HandlerThread:17129 [handler.py:handle_request():146] handle_request: partial_history
+2024-10-02 00:40:51,988 DEBUG   SenderThread:17129 [sender.py:send():382] send: history
+2024-10-02 00:40:51,988 DEBUG   SenderThread:17129 [sender.py:send_request():409] send_request: summary_record
+2024-10-02 00:40:51,988 INFO    SenderThread:17129 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-10-02 00:40:52,463 DEBUG   HandlerThread:17129 [handler.py:handle_request():146] handle_request: partial_history
+2024-10-02 00:40:52,463 DEBUG   SenderThread:17129 [sender.py:send():382] send: history
+2024-10-02 00:40:52,463 DEBUG   SenderThread:17129 [sender.py:send_request():409] send_request: summary_record
+2024-10-02 00:40:52,464 INFO    SenderThread:17129 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-10-02 00:40:52,521 DEBUG   HandlerThread:17129 [handler.py:handle_request():146] handle_request: partial_history
+2024-10-02 00:40:52,522 DEBUG   SenderThread:17129 [sender.py:send():382] send: history
+2024-10-02 00:40:52,522 DEBUG   SenderThread:17129 [sender.py:send_request():409] send_request: summary_record
+2024-10-02 00:40:52,522 INFO    SenderThread:17129 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-10-02 00:40:52,790 INFO    Thread-38 :17129 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/yunbo/Documents/GitHub/PFL_Optimiozation/wandb/run-20241002_004014-bp557wvw/files/wandb-summary.json
+2024-10-02 00:40:53,061 DEBUG   HandlerThread:17129 [handler.py:handle_request():146] handle_request: partial_history
+2024-10-02 00:40:53,062 DEBUG   SenderThread:17129 [sender.py:send():382] send: history
+2024-10-02 00:40:53,063 DEBUG   SenderThread:17129 [sender.py:send_request():409] send_request: summary_record
+2024-10-02 00:40:53,063 INFO    SenderThread:17129 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-10-02 00:40:53,129 DEBUG   HandlerThread:17129 [handler.py:handle_request():146] handle_request: partial_history
+2024-10-02 00:40:53,130 DEBUG   SenderThread:17129 [sender.py:send():382] send: history
+2024-10-02 00:40:53,130 DEBUG   SenderThread:17129 [sender.py:send_request():409] send_request: summary_record
+2024-10-02 00:40:53,130 INFO    SenderThread:17129 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-10-02 00:40:53,604 DEBUG   HandlerThread:17129 [handler.py:handle_request():146] handle_request: partial_history
+2024-10-02 00:40:53,604 DEBUG   SenderThread:17129 [sender.py:send():382] send: history
+2024-10-02 00:40:53,604 DEBUG   SenderThread:17129 [sender.py:send_request():409] send_request: summary_record
+2024-10-02 00:40:53,605 INFO    SenderThread:17129 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-10-02 00:40:53,673 DEBUG   HandlerThread:17129 [handler.py:handle_request():146] handle_request: partial_history
+2024-10-02 00:40:53,674 DEBUG   SenderThread:17129 [sender.py:send():382] send: history
+2024-10-02 00:40:53,674 DEBUG   SenderThread:17129 [sender.py:send_request():409] send_request: summary_record
+2024-10-02 00:40:53,675 INFO    SenderThread:17129 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-10-02 00:40:53,796 INFO    Thread-38 :17129 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/yunbo/Documents/GitHub/PFL_Optimiozation/wandb/run-20241002_004014-bp557wvw/files/output.log
+2024-10-02 00:40:53,796 INFO    Thread-38 :17129 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/yunbo/Documents/GitHub/PFL_Optimiozation/wandb/run-20241002_004014-bp557wvw/files/wandb-summary.json
+2024-10-02 00:40:54,167 DEBUG   HandlerThread:17129 [handler.py:handle_request():146] handle_request: partial_history
+2024-10-02 00:40:54,167 DEBUG   SenderThread:17129 [sender.py:send():382] send: history
+2024-10-02 00:40:54,167 DEBUG   SenderThread:17129 [sender.py:send_request():409] send_request: summary_record
+2024-10-02 00:40:54,168 INFO    SenderThread:17129 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-10-02 00:40:54,229 DEBUG   HandlerThread:17129 [handler.py:handle_request():146] handle_request: partial_history
+2024-10-02 00:40:54,229 DEBUG   SenderThread:17129 [sender.py:send():382] send: history
+2024-10-02 00:40:54,230 DEBUG   SenderThread:17129 [sender.py:send_request():409] send_request: summary_record
+2024-10-02 00:40:54,230 INFO    SenderThread:17129 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-10-02 00:40:54,710 DEBUG   HandlerThread:17129 [handler.py:handle_request():146] handle_request: partial_history
+2024-10-02 00:40:54,711 DEBUG   SenderThread:17129 [sender.py:send():382] send: history
+2024-10-02 00:40:54,711 DEBUG   SenderThread:17129 [sender.py:send_request():409] send_request: summary_record
+2024-10-02 00:40:54,712 INFO    SenderThread:17129 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-10-02 00:40:54,770 DEBUG   HandlerThread:17129 [handler.py:handle_request():146] handle_request: partial_history
+2024-10-02 00:40:54,770 DEBUG   SenderThread:17129 [sender.py:send():382] send: history
+2024-10-02 00:40:54,771 DEBUG   SenderThread:17129 [sender.py:send_request():409] send_request: summary_record
+2024-10-02 00:40:54,771 INFO    SenderThread:17129 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-10-02 00:40:54,801 INFO    Thread-38 :17129 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/yunbo/Documents/GitHub/PFL_Optimiozation/wandb/run-20241002_004014-bp557wvw/files/wandb-summary.json
+2024-10-02 00:40:55,253 DEBUG   HandlerThread:17129 [handler.py:handle_request():146] handle_request: partial_history
+2024-10-02 00:40:55,254 DEBUG   SenderThread:17129 [sender.py:send():382] send: history
+2024-10-02 00:40:55,254 DEBUG   SenderThread:17129 [sender.py:send_request():409] send_request: summary_record
+2024-10-02 00:40:55,254 INFO    SenderThread:17129 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-10-02 00:40:55,317 DEBUG   HandlerThread:17129 [handler.py:handle_request():146] handle_request: partial_history
+2024-10-02 00:40:55,318 DEBUG   SenderThread:17129 [sender.py:send():382] send: history
+2024-10-02 00:40:55,318 DEBUG   SenderThread:17129 [sender.py:send_request():409] send_request: summary_record
+2024-10-02 00:40:55,318 INFO    SenderThread:17129 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-10-02 00:40:55,418 DEBUG   HandlerThread:17129 [handler.py:handle_request():146] handle_request: internal_messages
+2024-10-02 00:40:55,418 DEBUG   HandlerThread:17129 [handler.py:handle_request():146] handle_request: stop_status
+2024-10-02 00:40:55,419 DEBUG   SenderThread:17129 [sender.py:send_request():409] send_request: stop_status
+2024-10-02 00:40:55,803 INFO    Thread-38 :17129 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/yunbo/Documents/GitHub/PFL_Optimiozation/wandb/run-20241002_004014-bp557wvw/files/output.log
+2024-10-02 00:40:55,803 INFO    Thread-38 :17129 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/yunbo/Documents/GitHub/PFL_Optimiozation/wandb/run-20241002_004014-bp557wvw/files/wandb-summary.json
+2024-10-02 00:40:55,838 DEBUG   HandlerThread:17129 [handler.py:handle_request():146] handle_request: partial_history
+2024-10-02 00:40:55,839 DEBUG   SenderThread:17129 [sender.py:send():382] send: history
+2024-10-02 00:40:55,839 DEBUG   SenderThread:17129 [sender.py:send_request():409] send_request: summary_record
+2024-10-02 00:40:55,839 INFO    SenderThread:17129 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-10-02 00:40:55,915 DEBUG   HandlerThread:17129 [handler.py:handle_request():146] handle_request: partial_history
+2024-10-02 00:40:55,915 DEBUG   SenderThread:17129 [sender.py:send():382] send: history
+2024-10-02 00:40:55,915 DEBUG   SenderThread:17129 [sender.py:send_request():409] send_request: summary_record
+2024-10-02 00:40:55,916 INFO    SenderThread:17129 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-10-02 00:40:56,460 DEBUG   HandlerThread:17129 [handler.py:handle_request():146] handle_request: partial_history
+2024-10-02 00:40:56,460 DEBUG   SenderThread:17129 [sender.py:send():382] send: history
+2024-10-02 00:40:56,460 DEBUG   SenderThread:17129 [sender.py:send_request():409] send_request: summary_record
+2024-10-02 00:40:56,461 INFO    SenderThread:17129 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-10-02 00:40:56,521 DEBUG   HandlerThread:17129 [handler.py:handle_request():146] handle_request: partial_history
+2024-10-02 00:40:56,522 DEBUG   SenderThread:17129 [sender.py:send():382] send: history
+2024-10-02 00:40:56,522 DEBUG   SenderThread:17129 [sender.py:send_request():409] send_request: summary_record
+2024-10-02 00:40:56,522 INFO    SenderThread:17129 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-10-02 00:40:56,808 INFO    Thread-38 :17129 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/yunbo/Documents/GitHub/PFL_Optimiozation/wandb/run-20241002_004014-bp557wvw/files/wandb-summary.json
+2024-10-02 00:40:57,002 DEBUG   HandlerThread:17129 [handler.py:handle_request():146] handle_request: partial_history
+2024-10-02 00:40:57,002 DEBUG   HandlerThread:17129 [handler.py:handle_request():146] handle_request: status_report
+2024-10-02 00:40:57,003 DEBUG   SenderThread:17129 [sender.py:send():382] send: history
+2024-10-02 00:40:57,003 DEBUG   SenderThread:17129 [sender.py:send_request():409] send_request: summary_record
+2024-10-02 00:40:57,003 INFO    SenderThread:17129 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-10-02 00:40:57,063 DEBUG   HandlerThread:17129 [handler.py:handle_request():146] handle_request: partial_history
+2024-10-02 00:40:57,063 DEBUG   SenderThread:17129 [sender.py:send():382] send: history
+2024-10-02 00:40:57,063 DEBUG   SenderThread:17129 [sender.py:send_request():409] send_request: summary_record
+2024-10-02 00:40:57,064 INFO    SenderThread:17129 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-10-02 00:40:57,528 DEBUG   HandlerThread:17129 [handler.py:handle_request():146] handle_request: partial_history
+2024-10-02 00:40:57,528 DEBUG   SenderThread:17129 [sender.py:send():382] send: history
+2024-10-02 00:40:57,528 DEBUG   SenderThread:17129 [sender.py:send_request():409] send_request: summary_record
+2024-10-02 00:40:57,528 INFO    SenderThread:17129 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-10-02 00:40:57,586 DEBUG   HandlerThread:17129 [handler.py:handle_request():146] handle_request: partial_history
+2024-10-02 00:40:57,587 DEBUG   SenderThread:17129 [sender.py:send():382] send: history
+2024-10-02 00:40:57,587 DEBUG   SenderThread:17129 [sender.py:send_request():409] send_request: summary_record
+2024-10-02 00:40:57,587 INFO    SenderThread:17129 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-10-02 00:40:57,813 INFO    Thread-38 :17129 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/yunbo/Documents/GitHub/PFL_Optimiozation/wandb/run-20241002_004014-bp557wvw/files/output.log
+2024-10-02 00:40:57,813 INFO    Thread-38 :17129 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/yunbo/Documents/GitHub/PFL_Optimiozation/wandb/run-20241002_004014-bp557wvw/files/wandb-summary.json
+2024-10-02 00:40:58,051 DEBUG   HandlerThread:17129 [handler.py:handle_request():146] handle_request: partial_history
+2024-10-02 00:40:58,052 DEBUG   SenderThread:17129 [sender.py:send():382] send: history
+2024-10-02 00:40:58,052 DEBUG   SenderThread:17129 [sender.py:send_request():409] send_request: summary_record
+2024-10-02 00:40:58,052 INFO    SenderThread:17129 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-10-02 00:40:58,113 DEBUG   HandlerThread:17129 [handler.py:handle_request():146] handle_request: partial_history
+2024-10-02 00:40:58,114 DEBUG   SenderThread:17129 [sender.py:send():382] send: history
+2024-10-02 00:40:58,114 DEBUG   SenderThread:17129 [sender.py:send_request():409] send_request: summary_record
+2024-10-02 00:40:58,115 INFO    SenderThread:17129 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-10-02 00:40:58,592 DEBUG   HandlerThread:17129 [handler.py:handle_request():146] handle_request: partial_history
+2024-10-02 00:40:58,593 DEBUG   SenderThread:17129 [sender.py:send():382] send: history
+2024-10-02 00:40:58,593 DEBUG   SenderThread:17129 [sender.py:send_request():409] send_request: summary_record
+2024-10-02 00:40:58,593 INFO    SenderThread:17129 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-10-02 00:40:58,653 DEBUG   HandlerThread:17129 [handler.py:handle_request():146] handle_request: partial_history
+2024-10-02 00:40:58,654 DEBUG   SenderThread:17129 [sender.py:send():382] send: history
+2024-10-02 00:40:58,654 DEBUG   SenderThread:17129 [sender.py:send_request():409] send_request: summary_record
+2024-10-02 00:40:58,655 INFO    SenderThread:17129 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-10-02 00:40:58,819 INFO    Thread-38 :17129 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/yunbo/Documents/GitHub/PFL_Optimiozation/wandb/run-20241002_004014-bp557wvw/files/wandb-summary.json
+2024-10-02 00:40:59,179 DEBUG   HandlerThread:17129 [handler.py:handle_request():146] handle_request: partial_history
+2024-10-02 00:40:59,179 DEBUG   SenderThread:17129 [sender.py:send():382] send: history
+2024-10-02 00:40:59,179 DEBUG   SenderThread:17129 [sender.py:send_request():409] send_request: summary_record
+2024-10-02 00:40:59,180 INFO    SenderThread:17129 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-10-02 00:40:59,249 DEBUG   HandlerThread:17129 [handler.py:handle_request():146] handle_request: partial_history
+2024-10-02 00:40:59,250 DEBUG   SenderThread:17129 [sender.py:send():382] send: history
+2024-10-02 00:40:59,250 DEBUG   SenderThread:17129 [sender.py:send_request():409] send_request: summary_record
+2024-10-02 00:40:59,250 INFO    SenderThread:17129 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-10-02 00:40:59,766 DEBUG   HandlerThread:17129 [handler.py:handle_request():146] handle_request: partial_history
+2024-10-02 00:40:59,767 DEBUG   SenderThread:17129 [sender.py:send():382] send: history
+2024-10-02 00:40:59,767 DEBUG   SenderThread:17129 [sender.py:send_request():409] send_request: summary_record
+2024-10-02 00:40:59,767 INFO    SenderThread:17129 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-10-02 00:40:59,825 DEBUG   HandlerThread:17129 [handler.py:handle_request():146] handle_request: partial_history
+2024-10-02 00:40:59,826 INFO    Thread-38 :17129 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/yunbo/Documents/GitHub/PFL_Optimiozation/wandb/run-20241002_004014-bp557wvw/files/output.log
+2024-10-02 00:40:59,826 DEBUG   SenderThread:17129 [sender.py:send():382] send: history
+2024-10-02 00:40:59,827 INFO    Thread-38 :17129 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/yunbo/Documents/GitHub/PFL_Optimiozation/wandb/run-20241002_004014-bp557wvw/files/wandb-summary.json
+2024-10-02 00:40:59,827 DEBUG   SenderThread:17129 [sender.py:send_request():409] send_request: summary_record
+2024-10-02 00:40:59,827 INFO    SenderThread:17129 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-10-02 00:41:00,309 DEBUG   HandlerThread:17129 [handler.py:handle_request():146] handle_request: partial_history
+2024-10-02 00:41:00,309 DEBUG   SenderThread:17129 [sender.py:send():382] send: history
+2024-10-02 00:41:00,309 DEBUG   SenderThread:17129 [sender.py:send_request():409] send_request: summary_record
+2024-10-02 00:41:00,309 INFO    SenderThread:17129 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-10-02 00:41:00,371 DEBUG   HandlerThread:17129 [handler.py:handle_request():146] handle_request: partial_history
+2024-10-02 00:41:00,372 DEBUG   SenderThread:17129 [sender.py:send():382] send: history
+2024-10-02 00:41:00,372 DEBUG   SenderThread:17129 [sender.py:send_request():409] send_request: summary_record
+2024-10-02 00:41:00,373 INFO    SenderThread:17129 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-10-02 00:41:00,829 INFO    Thread-38 :17129 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/yunbo/Documents/GitHub/PFL_Optimiozation/wandb/run-20241002_004014-bp557wvw/files/wandb-summary.json
+2024-10-02 00:41:00,849 DEBUG   HandlerThread:17129 [handler.py:handle_request():146] handle_request: partial_history
+2024-10-02 00:41:00,849 DEBUG   SenderThread:17129 [sender.py:send():382] send: history
+2024-10-02 00:41:00,849 DEBUG   SenderThread:17129 [sender.py:send_request():409] send_request: summary_record
+2024-10-02 00:41:00,849 INFO    SenderThread:17129 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-10-02 00:41:00,911 DEBUG   HandlerThread:17129 [handler.py:handle_request():146] handle_request: partial_history
+2024-10-02 00:41:00,912 DEBUG   SenderThread:17129 [sender.py:send():382] send: history
+2024-10-02 00:41:00,912 DEBUG   SenderThread:17129 [sender.py:send_request():409] send_request: summary_record
+2024-10-02 00:41:00,912 INFO    SenderThread:17129 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-10-02 00:41:01,387 DEBUG   HandlerThread:17129 [handler.py:handle_request():146] handle_request: partial_history
+2024-10-02 00:41:01,388 DEBUG   SenderThread:17129 [sender.py:send():382] send: history
+2024-10-02 00:41:01,388 DEBUG   SenderThread:17129 [sender.py:send_request():409] send_request: summary_record
+2024-10-02 00:41:01,388 INFO    SenderThread:17129 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-10-02 00:41:01,448 DEBUG   HandlerThread:17129 [handler.py:handle_request():146] handle_request: partial_history
+2024-10-02 00:41:01,449 DEBUG   SenderThread:17129 [sender.py:send():382] send: history
+2024-10-02 00:41:01,449 DEBUG   SenderThread:17129 [sender.py:send_request():409] send_request: summary_record
+2024-10-02 00:41:01,450 INFO    SenderThread:17129 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-10-02 00:41:01,834 INFO    Thread-38 :17129 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/yunbo/Documents/GitHub/PFL_Optimiozation/wandb/run-20241002_004014-bp557wvw/files/output.log
+2024-10-02 00:41:01,835 INFO    Thread-38 :17129 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/yunbo/Documents/GitHub/PFL_Optimiozation/wandb/run-20241002_004014-bp557wvw/files/wandb-summary.json
+2024-10-02 00:41:01,947 DEBUG   HandlerThread:17129 [handler.py:handle_request():146] handle_request: partial_history
+2024-10-02 00:41:01,948 DEBUG   SenderThread:17129 [sender.py:send():382] send: history
+2024-10-02 00:41:01,948 DEBUG   SenderThread:17129 [sender.py:send_request():409] send_request: summary_record
+2024-10-02 00:41:01,948 INFO    SenderThread:17129 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-10-02 00:41:02,010 DEBUG   HandlerThread:17129 [handler.py:handle_request():146] handle_request: status_report
+2024-10-02 00:41:02,011 DEBUG   HandlerThread:17129 [handler.py:handle_request():146] handle_request: partial_history
+2024-10-02 00:41:02,013 DEBUG   SenderThread:17129 [sender.py:send():382] send: history
+2024-10-02 00:41:02,013 DEBUG   SenderThread:17129 [sender.py:send_request():409] send_request: summary_record
+2024-10-02 00:41:02,013 INFO    SenderThread:17129 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-10-02 00:41:02,500 DEBUG   HandlerThread:17129 [handler.py:handle_request():146] handle_request: partial_history
+2024-10-02 00:41:02,501 DEBUG   SenderThread:17129 [sender.py:send():382] send: history
+2024-10-02 00:41:02,501 DEBUG   SenderThread:17129 [sender.py:send_request():409] send_request: summary_record
+2024-10-02 00:41:02,501 INFO    SenderThread:17129 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-10-02 00:41:02,558 DEBUG   HandlerThread:17129 [handler.py:handle_request():146] handle_request: partial_history
+2024-10-02 00:41:02,559 DEBUG   SenderThread:17129 [sender.py:send():382] send: history
+2024-10-02 00:41:02,559 DEBUG   SenderThread:17129 [sender.py:send_request():409] send_request: summary_record
+2024-10-02 00:41:02,560 INFO    SenderThread:17129 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-10-02 00:41:02,836 INFO    Thread-38 :17129 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/yunbo/Documents/GitHub/PFL_Optimiozation/wandb/run-20241002_004014-bp557wvw/files/wandb-summary.json
+2024-10-02 00:41:03,031 DEBUG   HandlerThread:17129 [handler.py:handle_request():146] handle_request: partial_history
+2024-10-02 00:41:03,031 DEBUG   SenderThread:17129 [sender.py:send():382] send: history
+2024-10-02 00:41:03,031 DEBUG   SenderThread:17129 [sender.py:send_request():409] send_request: summary_record
+2024-10-02 00:41:03,032 INFO    SenderThread:17129 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-10-02 00:41:03,089 DEBUG   HandlerThread:17129 [handler.py:handle_request():146] handle_request: partial_history
+2024-10-02 00:41:03,090 DEBUG   SenderThread:17129 [sender.py:send():382] send: history
+2024-10-02 00:41:03,090 DEBUG   SenderThread:17129 [sender.py:send_request():409] send_request: summary_record
+2024-10-02 00:41:03,090 INFO    SenderThread:17129 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-10-02 00:41:03,548 DEBUG   HandlerThread:17129 [handler.py:handle_request():146] handle_request: partial_history
+2024-10-02 00:41:03,549 DEBUG   SenderThread:17129 [sender.py:send():382] send: history
+2024-10-02 00:41:03,549 DEBUG   SenderThread:17129 [sender.py:send_request():409] send_request: summary_record
+2024-10-02 00:41:03,549 INFO    SenderThread:17129 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-10-02 00:41:03,609 DEBUG   HandlerThread:17129 [handler.py:handle_request():146] handle_request: partial_history
+2024-10-02 00:41:03,610 DEBUG   SenderThread:17129 [sender.py:send():382] send: history
+2024-10-02 00:41:03,610 DEBUG   SenderThread:17129 [sender.py:send_request():409] send_request: summary_record
+2024-10-02 00:41:03,610 INFO    SenderThread:17129 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-10-02 00:41:03,841 INFO    Thread-38 :17129 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/yunbo/Documents/GitHub/PFL_Optimiozation/wandb/run-20241002_004014-bp557wvw/files/output.log
+2024-10-02 00:41:03,841 INFO    Thread-38 :17129 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/yunbo/Documents/GitHub/PFL_Optimiozation/wandb/run-20241002_004014-bp557wvw/files/wandb-summary.json
+2024-10-02 00:41:04,081 DEBUG   HandlerThread:17129 [handler.py:handle_request():146] handle_request: partial_history
+2024-10-02 00:41:04,082 DEBUG   SenderThread:17129 [sender.py:send():382] send: history
+2024-10-02 00:41:04,082 DEBUG   SenderThread:17129 [sender.py:send_request():409] send_request: summary_record
+2024-10-02 00:41:04,082 INFO    SenderThread:17129 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-10-02 00:41:04,141 DEBUG   HandlerThread:17129 [handler.py:handle_request():146] handle_request: partial_history
+2024-10-02 00:41:04,142 DEBUG   SenderThread:17129 [sender.py:send():382] send: history
+2024-10-02 00:41:04,142 DEBUG   SenderThread:17129 [sender.py:send_request():409] send_request: summary_record
+2024-10-02 00:41:04,142 INFO    SenderThread:17129 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-10-02 00:41:04,626 DEBUG   HandlerThread:17129 [handler.py:handle_request():146] handle_request: partial_history
+2024-10-02 00:41:04,627 DEBUG   SenderThread:17129 [sender.py:send():382] send: history
+2024-10-02 00:41:04,627 DEBUG   SenderThread:17129 [sender.py:send_request():409] send_request: summary_record
+2024-10-02 00:41:04,627 INFO    SenderThread:17129 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-10-02 00:41:04,683 DEBUG   HandlerThread:17129 [handler.py:handle_request():146] handle_request: partial_history
+2024-10-02 00:41:04,685 DEBUG   SenderThread:17129 [sender.py:send():382] send: history
+2024-10-02 00:41:04,685 DEBUG   SenderThread:17129 [sender.py:send_request():409] send_request: summary_record
+2024-10-02 00:41:04,685 INFO    SenderThread:17129 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-10-02 00:41:04,846 INFO    Thread-38 :17129 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/yunbo/Documents/GitHub/PFL_Optimiozation/wandb/run-20241002_004014-bp557wvw/files/wandb-summary.json
+2024-10-02 00:41:05,175 DEBUG   HandlerThread:17129 [handler.py:handle_request():146] handle_request: partial_history
+2024-10-02 00:41:05,176 DEBUG   SenderThread:17129 [sender.py:send():382] send: history
+2024-10-02 00:41:05,176 DEBUG   SenderThread:17129 [sender.py:send_request():409] send_request: summary_record
+2024-10-02 00:41:05,176 INFO    SenderThread:17129 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-10-02 00:41:05,239 DEBUG   HandlerThread:17129 [handler.py:handle_request():146] handle_request: partial_history
+2024-10-02 00:41:05,240 DEBUG   SenderThread:17129 [sender.py:send():382] send: history
+2024-10-02 00:41:05,240 DEBUG   SenderThread:17129 [sender.py:send_request():409] send_request: summary_record
+2024-10-02 00:41:05,241 INFO    SenderThread:17129 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-10-02 00:41:05,743 DEBUG   HandlerThread:17129 [handler.py:handle_request():146] handle_request: partial_history
+2024-10-02 00:41:05,744 DEBUG   SenderThread:17129 [sender.py:send():382] send: history
+2024-10-02 00:41:05,744 DEBUG   SenderThread:17129 [sender.py:send_request():409] send_request: summary_record
+2024-10-02 00:41:05,744 INFO    SenderThread:17129 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-10-02 00:41:05,809 DEBUG   HandlerThread:17129 [handler.py:handle_request():146] handle_request: partial_history
+2024-10-02 00:41:05,809 DEBUG   SenderThread:17129 [sender.py:send():382] send: history
+2024-10-02 00:41:05,809 DEBUG   SenderThread:17129 [sender.py:send_request():409] send_request: summary_record
+2024-10-02 00:41:05,810 INFO    SenderThread:17129 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-10-02 00:41:05,852 INFO    Thread-38 :17129 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/yunbo/Documents/GitHub/PFL_Optimiozation/wandb/run-20241002_004014-bp557wvw/files/output.log
+2024-10-02 00:41:05,852 INFO    Thread-38 :17129 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/yunbo/Documents/GitHub/PFL_Optimiozation/wandb/run-20241002_004014-bp557wvw/files/wandb-summary.json
+2024-10-02 00:41:06,294 DEBUG   HandlerThread:17129 [handler.py:handle_request():146] handle_request: partial_history
+2024-10-02 00:41:06,295 DEBUG   SenderThread:17129 [sender.py:send():382] send: history
+2024-10-02 00:41:06,295 DEBUG   SenderThread:17129 [sender.py:send_request():409] send_request: summary_record
+2024-10-02 00:41:06,295 INFO    SenderThread:17129 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-10-02 00:41:06,353 DEBUG   HandlerThread:17129 [handler.py:handle_request():146] handle_request: partial_history
+2024-10-02 00:41:06,354 DEBUG   SenderThread:17129 [sender.py:send():382] send: history
+2024-10-02 00:41:06,354 DEBUG   SenderThread:17129 [sender.py:send_request():409] send_request: summary_record
+2024-10-02 00:41:06,354 INFO    SenderThread:17129 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-10-02 00:41:06,806 DEBUG   HandlerThread:17129 [handler.py:handle_request():146] handle_request: partial_history
+2024-10-02 00:41:06,806 DEBUG   SenderThread:17129 [sender.py:send():382] send: history
+2024-10-02 00:41:06,806 DEBUG   SenderThread:17129 [sender.py:send_request():409] send_request: summary_record
+2024-10-02 00:41:06,806 INFO    SenderThread:17129 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-10-02 00:41:06,857 INFO    Thread-38 :17129 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/yunbo/Documents/GitHub/PFL_Optimiozation/wandb/run-20241002_004014-bp557wvw/files/wandb-summary.json
+2024-10-02 00:41:06,863 DEBUG   HandlerThread:17129 [handler.py:handle_request():146] handle_request: partial_history
+2024-10-02 00:41:06,864 DEBUG   SenderThread:17129 [sender.py:send():382] send: history
+2024-10-02 00:41:06,864 DEBUG   SenderThread:17129 [sender.py:send_request():409] send_request: summary_record
+2024-10-02 00:41:06,865 INFO    SenderThread:17129 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-10-02 00:41:07,332 DEBUG   HandlerThread:17129 [handler.py:handle_request():146] handle_request: partial_history
+2024-10-02 00:41:07,333 DEBUG   HandlerThread:17129 [handler.py:handle_request():146] handle_request: status_report
+2024-10-02 00:41:07,333 DEBUG   SenderThread:17129 [sender.py:send():382] send: history
+2024-10-02 00:41:07,333 DEBUG   SenderThread:17129 [sender.py:send_request():409] send_request: summary_record
+2024-10-02 00:41:07,334 INFO    SenderThread:17129 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-10-02 00:41:07,393 DEBUG   HandlerThread:17129 [handler.py:handle_request():146] handle_request: partial_history
+2024-10-02 00:41:07,394 DEBUG   SenderThread:17129 [sender.py:send():382] send: history
+2024-10-02 00:41:07,394 DEBUG   SenderThread:17129 [sender.py:send_request():409] send_request: summary_record
+2024-10-02 00:41:07,394 INFO    SenderThread:17129 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-10-02 00:41:07,847 DEBUG   HandlerThread:17129 [handler.py:handle_request():146] handle_request: partial_history
+2024-10-02 00:41:07,848 DEBUG   SenderThread:17129 [sender.py:send():382] send: history
+2024-10-02 00:41:07,848 DEBUG   SenderThread:17129 [sender.py:send_request():409] send_request: summary_record
+2024-10-02 00:41:07,848 INFO    SenderThread:17129 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-10-02 00:41:07,861 INFO    Thread-38 :17129 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/yunbo/Documents/GitHub/PFL_Optimiozation/wandb/run-20241002_004014-bp557wvw/files/output.log
+2024-10-02 00:41:07,861 INFO    Thread-38 :17129 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/yunbo/Documents/GitHub/PFL_Optimiozation/wandb/run-20241002_004014-bp557wvw/files/wandb-summary.json
+2024-10-02 00:41:07,907 DEBUG   HandlerThread:17129 [handler.py:handle_request():146] handle_request: partial_history
+2024-10-02 00:41:07,908 DEBUG   SenderThread:17129 [sender.py:send():382] send: history
+2024-10-02 00:41:07,908 DEBUG   SenderThread:17129 [sender.py:send_request():409] send_request: summary_record
+2024-10-02 00:41:07,908 INFO    SenderThread:17129 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-10-02 00:41:08,381 DEBUG   HandlerThread:17129 [handler.py:handle_request():146] handle_request: partial_history
+2024-10-02 00:41:08,383 DEBUG   SenderThread:17129 [sender.py:send():382] send: history
+2024-10-02 00:41:08,383 DEBUG   SenderThread:17129 [sender.py:send_request():409] send_request: summary_record
+2024-10-02 00:41:08,383 INFO    SenderThread:17129 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-10-02 00:41:08,451 DEBUG   HandlerThread:17129 [handler.py:handle_request():146] handle_request: partial_history
+2024-10-02 00:41:08,453 DEBUG   SenderThread:17129 [sender.py:send():382] send: history
+2024-10-02 00:41:08,453 DEBUG   SenderThread:17129 [sender.py:send_request():409] send_request: summary_record
+2024-10-02 00:41:08,453 INFO    SenderThread:17129 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-10-02 00:41:08,866 INFO    Thread-38 :17129 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/yunbo/Documents/GitHub/PFL_Optimiozation/wandb/run-20241002_004014-bp557wvw/files/wandb-summary.json
+2024-10-02 00:41:08,971 DEBUG   HandlerThread:17129 [handler.py:handle_request():146] handle_request: partial_history
+2024-10-02 00:41:08,971 DEBUG   SenderThread:17129 [sender.py:send():382] send: history
+2024-10-02 00:41:08,971 DEBUG   SenderThread:17129 [sender.py:send_request():409] send_request: summary_record
+2024-10-02 00:41:08,972 INFO    SenderThread:17129 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-10-02 00:41:09,070 DEBUG   HandlerThread:17129 [handler.py:handle_request():146] handle_request: partial_history
+2024-10-02 00:41:09,071 DEBUG   SenderThread:17129 [sender.py:send():382] send: history
+2024-10-02 00:41:09,071 DEBUG   SenderThread:17129 [sender.py:send_request():409] send_request: summary_record
+2024-10-02 00:41:09,071 INFO    SenderThread:17129 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-10-02 00:41:09,590 DEBUG   HandlerThread:17129 [handler.py:handle_request():146] handle_request: partial_history
+2024-10-02 00:41:09,591 DEBUG   SenderThread:17129 [sender.py:send():382] send: history
+2024-10-02 00:41:09,591 DEBUG   SenderThread:17129 [sender.py:send_request():409] send_request: summary_record
+2024-10-02 00:41:09,591 INFO    SenderThread:17129 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-10-02 00:41:09,649 DEBUG   HandlerThread:17129 [handler.py:handle_request():146] handle_request: partial_history
+2024-10-02 00:41:09,650 DEBUG   SenderThread:17129 [sender.py:send():382] send: history
+2024-10-02 00:41:09,650 DEBUG   SenderThread:17129 [sender.py:send_request():409] send_request: summary_record
+2024-10-02 00:41:09,651 INFO    SenderThread:17129 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-10-02 00:41:09,872 INFO    Thread-38 :17129 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/yunbo/Documents/GitHub/PFL_Optimiozation/wandb/run-20241002_004014-bp557wvw/files/output.log
+2024-10-02 00:41:09,872 INFO    Thread-38 :17129 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/yunbo/Documents/GitHub/PFL_Optimiozation/wandb/run-20241002_004014-bp557wvw/files/wandb-summary.json
+2024-10-02 00:41:10,132 DEBUG   HandlerThread:17129 [handler.py:handle_request():146] handle_request: partial_history
+2024-10-02 00:41:10,132 DEBUG   SenderThread:17129 [sender.py:send():382] send: history
+2024-10-02 00:41:10,132 DEBUG   SenderThread:17129 [sender.py:send_request():409] send_request: summary_record
+2024-10-02 00:41:10,132 INFO    SenderThread:17129 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-10-02 00:41:10,193 DEBUG   HandlerThread:17129 [handler.py:handle_request():146] handle_request: partial_history
+2024-10-02 00:41:10,194 DEBUG   SenderThread:17129 [sender.py:send():382] send: history
+2024-10-02 00:41:10,194 DEBUG   SenderThread:17129 [sender.py:send_request():409] send_request: summary_record
+2024-10-02 00:41:10,194 INFO    SenderThread:17129 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-10-02 00:41:10,420 DEBUG   HandlerThread:17129 [handler.py:handle_request():146] handle_request: internal_messages
+2024-10-02 00:41:10,423 DEBUG   HandlerThread:17129 [handler.py:handle_request():146] handle_request: stop_status
+2024-10-02 00:41:10,423 DEBUG   SenderThread:17129 [sender.py:send_request():409] send_request: stop_status
+2024-10-02 00:41:10,693 DEBUG   HandlerThread:17129 [handler.py:handle_request():146] handle_request: partial_history
+2024-10-02 00:41:10,693 DEBUG   SenderThread:17129 [sender.py:send():382] send: history
+2024-10-02 00:41:10,693 DEBUG   SenderThread:17129 [sender.py:send_request():409] send_request: summary_record
+2024-10-02 00:41:10,694 INFO    SenderThread:17129 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-10-02 00:41:10,752 DEBUG   HandlerThread:17129 [handler.py:handle_request():146] handle_request: partial_history
+2024-10-02 00:41:10,754 DEBUG   SenderThread:17129 [sender.py:send():382] send: history
+2024-10-02 00:41:10,754 DEBUG   SenderThread:17129 [sender.py:send_request():409] send_request: summary_record
+2024-10-02 00:41:10,755 INFO    SenderThread:17129 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-10-02 00:41:10,877 INFO    Thread-38 :17129 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/yunbo/Documents/GitHub/PFL_Optimiozation/wandb/run-20241002_004014-bp557wvw/files/wandb-summary.json
+2024-10-02 00:41:11,218 DEBUG   HandlerThread:17129 [handler.py:handle_request():146] handle_request: partial_history
+2024-10-02 00:41:11,218 DEBUG   SenderThread:17129 [sender.py:send():382] send: history
+2024-10-02 00:41:11,218 DEBUG   SenderThread:17129 [sender.py:send_request():409] send_request: summary_record
+2024-10-02 00:41:11,219 INFO    SenderThread:17129 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-10-02 00:41:11,277 DEBUG   HandlerThread:17129 [handler.py:handle_request():146] handle_request: partial_history
+2024-10-02 00:41:11,278 DEBUG   SenderThread:17129 [sender.py:send():382] send: history
+2024-10-02 00:41:11,279 DEBUG   SenderThread:17129 [sender.py:send_request():409] send_request: summary_record
+2024-10-02 00:41:11,279 INFO    SenderThread:17129 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-10-02 00:41:11,761 DEBUG   HandlerThread:17129 [handler.py:handle_request():146] handle_request: partial_history
+2024-10-02 00:41:11,761 DEBUG   SenderThread:17129 [sender.py:send():382] send: history
+2024-10-02 00:41:11,761 DEBUG   SenderThread:17129 [sender.py:send_request():409] send_request: summary_record
+2024-10-02 00:41:11,762 INFO    SenderThread:17129 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-10-02 00:41:11,826 DEBUG   HandlerThread:17129 [handler.py:handle_request():146] handle_request: partial_history
+2024-10-02 00:41:11,829 DEBUG   SenderThread:17129 [sender.py:send():382] send: history
+2024-10-02 00:41:11,829 DEBUG   SenderThread:17129 [sender.py:send_request():409] send_request: summary_record
+2024-10-02 00:41:11,830 INFO    SenderThread:17129 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-10-02 00:41:11,882 INFO    Thread-38 :17129 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/yunbo/Documents/GitHub/PFL_Optimiozation/wandb/run-20241002_004014-bp557wvw/files/output.log
+2024-10-02 00:41:11,882 INFO    Thread-38 :17129 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/yunbo/Documents/GitHub/PFL_Optimiozation/wandb/run-20241002_004014-bp557wvw/files/wandb-summary.json
+2024-10-02 00:41:12,316 DEBUG   HandlerThread:17129 [handler.py:handle_request():146] handle_request: partial_history
+2024-10-02 00:41:12,317 DEBUG   SenderThread:17129 [sender.py:send():382] send: history
+2024-10-02 00:41:12,317 DEBUG   SenderThread:17129 [sender.py:send_request():409] send_request: summary_record
+2024-10-02 00:41:12,317 INFO    SenderThread:17129 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-10-02 00:41:12,377 DEBUG   HandlerThread:17129 [handler.py:handle_request():146] handle_request: status_report
+2024-10-02 00:41:12,378 DEBUG   HandlerThread:17129 [handler.py:handle_request():146] handle_request: partial_history
+2024-10-02 00:41:12,380 DEBUG   SenderThread:17129 [sender.py:send():382] send: history
+2024-10-02 00:41:12,380 DEBUG   SenderThread:17129 [sender.py:send_request():409] send_request: summary_record
+2024-10-02 00:41:12,380 INFO    SenderThread:17129 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-10-02 00:41:12,851 DEBUG   HandlerThread:17129 [handler.py:handle_request():146] handle_request: partial_history
+2024-10-02 00:41:12,851 DEBUG   SenderThread:17129 [sender.py:send():382] send: history
+2024-10-02 00:41:12,851 DEBUG   SenderThread:17129 [sender.py:send_request():409] send_request: summary_record
+2024-10-02 00:41:12,852 INFO    SenderThread:17129 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-10-02 00:41:12,886 INFO    Thread-38 :17129 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/yunbo/Documents/GitHub/PFL_Optimiozation/wandb/run-20241002_004014-bp557wvw/files/wandb-summary.json
+2024-10-02 00:41:12,914 DEBUG   HandlerThread:17129 [handler.py:handle_request():146] handle_request: partial_history
+2024-10-02 00:41:12,915 DEBUG   SenderThread:17129 [sender.py:send():382] send: history
+2024-10-02 00:41:12,915 DEBUG   SenderThread:17129 [sender.py:send_request():409] send_request: summary_record
+2024-10-02 00:41:12,915 INFO    SenderThread:17129 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-10-02 00:41:13,549 DEBUG   HandlerThread:17129 [handler.py:handle_request():146] handle_request: partial_history
+2024-10-02 00:41:13,549 DEBUG   SenderThread:17129 [sender.py:send():382] send: history
+2024-10-02 00:41:13,549 DEBUG   SenderThread:17129 [sender.py:send_request():409] send_request: summary_record
+2024-10-02 00:41:13,550 INFO    SenderThread:17129 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-10-02 00:41:13,608 DEBUG   HandlerThread:17129 [handler.py:handle_request():146] handle_request: partial_history
+2024-10-02 00:41:13,609 DEBUG   SenderThread:17129 [sender.py:send():382] send: history
+2024-10-02 00:41:13,609 DEBUG   SenderThread:17129 [sender.py:send_request():409] send_request: summary_record
+2024-10-02 00:41:13,609 INFO    SenderThread:17129 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-10-02 00:41:13,891 INFO    Thread-38 :17129 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/yunbo/Documents/GitHub/PFL_Optimiozation/wandb/run-20241002_004014-bp557wvw/files/output.log
+2024-10-02 00:41:13,892 INFO    Thread-38 :17129 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/yunbo/Documents/GitHub/PFL_Optimiozation/wandb/run-20241002_004014-bp557wvw/files/wandb-summary.json
+2024-10-02 00:41:14,071 DEBUG   HandlerThread:17129 [handler.py:handle_request():146] handle_request: partial_history
+2024-10-02 00:41:14,071 DEBUG   SenderThread:17129 [sender.py:send():382] send: history
+2024-10-02 00:41:14,071 DEBUG   SenderThread:17129 [sender.py:send_request():409] send_request: summary_record
+2024-10-02 00:41:14,072 INFO    SenderThread:17129 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-10-02 00:41:14,127 DEBUG   HandlerThread:17129 [handler.py:handle_request():146] handle_request: partial_history
+2024-10-02 00:41:14,127 DEBUG   SenderThread:17129 [sender.py:send():382] send: history
+2024-10-02 00:41:14,128 DEBUG   SenderThread:17129 [sender.py:send_request():409] send_request: summary_record
+2024-10-02 00:41:14,128 INFO    SenderThread:17129 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-10-02 00:41:14,653 DEBUG   HandlerThread:17129 [handler.py:handle_request():146] handle_request: partial_history
+2024-10-02 00:41:14,653 DEBUG   SenderThread:17129 [sender.py:send():382] send: history
+2024-10-02 00:41:14,653 DEBUG   SenderThread:17129 [sender.py:send_request():409] send_request: summary_record
+2024-10-02 00:41:14,654 INFO    SenderThread:17129 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-10-02 00:41:14,716 DEBUG   HandlerThread:17129 [handler.py:handle_request():146] handle_request: partial_history
+2024-10-02 00:41:14,716 DEBUG   SenderThread:17129 [sender.py:send():382] send: history
+2024-10-02 00:41:14,717 DEBUG   SenderThread:17129 [sender.py:send_request():409] send_request: summary_record
+2024-10-02 00:41:14,717 INFO    SenderThread:17129 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-10-02 00:41:14,897 INFO    Thread-38 :17129 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/yunbo/Documents/GitHub/PFL_Optimiozation/wandb/run-20241002_004014-bp557wvw/files/wandb-summary.json
+2024-10-02 00:41:15,220 DEBUG   HandlerThread:17129 [handler.py:handle_request():146] handle_request: partial_history
+2024-10-02 00:41:15,221 DEBUG   SenderThread:17129 [sender.py:send():382] send: history
+2024-10-02 00:41:15,221 DEBUG   SenderThread:17129 [sender.py:send_request():409] send_request: summary_record
+2024-10-02 00:41:15,222 INFO    SenderThread:17129 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-10-02 00:41:15,284 DEBUG   HandlerThread:17129 [handler.py:handle_request():146] handle_request: partial_history
+2024-10-02 00:41:15,285 DEBUG   SenderThread:17129 [sender.py:send():382] send: history
+2024-10-02 00:41:15,285 DEBUG   SenderThread:17129 [sender.py:send_request():409] send_request: summary_record
+2024-10-02 00:41:15,285 INFO    SenderThread:17129 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-10-02 00:41:15,764 DEBUG   HandlerThread:17129 [handler.py:handle_request():146] handle_request: partial_history
+2024-10-02 00:41:15,764 DEBUG   SenderThread:17129 [sender.py:send():382] send: history
+2024-10-02 00:41:15,764 DEBUG   SenderThread:17129 [sender.py:send_request():409] send_request: summary_record
+2024-10-02 00:41:15,764 INFO    SenderThread:17129 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-10-02 00:41:15,783 DEBUG   SystemMonitor:17129 [system_monitor.py:_start():172] Starting system metrics aggregation loop
+2024-10-02 00:41:15,784 DEBUG   SenderThread:17129 [sender.py:send():382] send: telemetry
+2024-10-02 00:41:15,784 DEBUG   SenderThread:17129 [sender.py:send():382] send: stats
+2024-10-02 00:41:15,824 DEBUG   HandlerThread:17129 [handler.py:handle_request():146] handle_request: partial_history
+2024-10-02 00:41:15,824 DEBUG   SenderThread:17129 [sender.py:send():382] send: history
+2024-10-02 00:41:15,824 DEBUG   SenderThread:17129 [sender.py:send_request():409] send_request: summary_record
+2024-10-02 00:41:15,825 INFO    SenderThread:17129 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-10-02 00:41:15,902 INFO    Thread-38 :17129 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/yunbo/Documents/GitHub/PFL_Optimiozation/wandb/run-20241002_004014-bp557wvw/files/output.log
+2024-10-02 00:41:15,902 INFO    Thread-38 :17129 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/yunbo/Documents/GitHub/PFL_Optimiozation/wandb/run-20241002_004014-bp557wvw/files/wandb-summary.json
+2024-10-02 00:41:16,299 DEBUG   HandlerThread:17129 [handler.py:handle_request():146] handle_request: partial_history
+2024-10-02 00:41:16,300 DEBUG   SenderThread:17129 [sender.py:send():382] send: history
+2024-10-02 00:41:16,300 DEBUG   SenderThread:17129 [sender.py:send_request():409] send_request: summary_record
+2024-10-02 00:41:16,300 INFO    SenderThread:17129 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-10-02 00:41:16,362 DEBUG   HandlerThread:17129 [handler.py:handle_request():146] handle_request: partial_history
+2024-10-02 00:41:16,363 DEBUG   SenderThread:17129 [sender.py:send():382] send: history
+2024-10-02 00:41:16,364 DEBUG   SenderThread:17129 [sender.py:send_request():409] send_request: summary_record
+2024-10-02 00:41:16,364 INFO    SenderThread:17129 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-10-02 00:41:16,816 DEBUG   HandlerThread:17129 [handler.py:handle_request():146] handle_request: partial_history
+2024-10-02 00:41:16,816 DEBUG   SenderThread:17129 [sender.py:send():382] send: history
+2024-10-02 00:41:16,817 DEBUG   SenderThread:17129 [sender.py:send_request():409] send_request: summary_record
+2024-10-02 00:41:16,817 INFO    SenderThread:17129 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-10-02 00:41:16,873 DEBUG   HandlerThread:17129 [handler.py:handle_request():146] handle_request: partial_history
+2024-10-02 00:41:16,874 DEBUG   SenderThread:17129 [sender.py:send():382] send: history
+2024-10-02 00:41:16,874 DEBUG   SenderThread:17129 [sender.py:send_request():409] send_request: summary_record
+2024-10-02 00:41:16,875 INFO    SenderThread:17129 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-10-02 00:41:16,907 INFO    Thread-38 :17129 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/yunbo/Documents/GitHub/PFL_Optimiozation/wandb/run-20241002_004014-bp557wvw/files/wandb-summary.json
+2024-10-02 00:41:17,346 DEBUG   HandlerThread:17129 [handler.py:handle_request():146] handle_request: partial_history
+2024-10-02 00:41:17,347 DEBUG   SenderThread:17129 [sender.py:send():382] send: history
+2024-10-02 00:41:17,347 DEBUG   SenderThread:17129 [sender.py:send_request():409] send_request: summary_record
+2024-10-02 00:41:17,347 INFO    SenderThread:17129 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-10-02 00:41:17,431 DEBUG   HandlerThread:17129 [handler.py:handle_request():146] handle_request: status_report
+2024-10-02 00:41:17,432 DEBUG   HandlerThread:17129 [handler.py:handle_request():146] handle_request: partial_history
+2024-10-02 00:41:17,744 DEBUG   SenderThread:17129 [sender.py:send():382] send: history
+2024-10-02 00:41:17,744 DEBUG   SenderThread:17129 [sender.py:send_request():409] send_request: summary_record
+2024-10-02 00:41:17,744 INFO    SenderThread:17129 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-10-02 00:41:17,894 DEBUG   HandlerThread:17129 [handler.py:handle_request():146] handle_request: partial_history
+2024-10-02 00:41:17,895 DEBUG   SenderThread:17129 [sender.py:send():382] send: history
+2024-10-02 00:41:17,895 DEBUG   SenderThread:17129 [sender.py:send_request():409] send_request: summary_record
+2024-10-02 00:41:17,895 INFO    SenderThread:17129 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-10-02 00:41:17,913 INFO    Thread-38 :17129 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/yunbo/Documents/GitHub/PFL_Optimiozation/wandb/run-20241002_004014-bp557wvw/files/output.log
+2024-10-02 00:41:17,913 INFO    Thread-38 :17129 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/yunbo/Documents/GitHub/PFL_Optimiozation/wandb/run-20241002_004014-bp557wvw/files/wandb-summary.json
+2024-10-02 00:41:17,913 INFO    Thread-38 :17129 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/yunbo/Documents/GitHub/PFL_Optimiozation/wandb/run-20241002_004014-bp557wvw/files/config.yaml
+2024-10-02 00:41:17,955 DEBUG   HandlerThread:17129 [handler.py:handle_request():146] handle_request: partial_history
+2024-10-02 00:41:17,956 DEBUG   SenderThread:17129 [sender.py:send():382] send: history
+2024-10-02 00:41:17,956 DEBUG   SenderThread:17129 [sender.py:send_request():409] send_request: summary_record
+2024-10-02 00:41:17,956 INFO    SenderThread:17129 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-10-02 00:41:18,468 DEBUG   HandlerThread:17129 [handler.py:handle_request():146] handle_request: partial_history
+2024-10-02 00:41:18,469 DEBUG   SenderThread:17129 [sender.py:send():382] send: history
+2024-10-02 00:41:18,469 DEBUG   SenderThread:17129 [sender.py:send_request():409] send_request: summary_record
+2024-10-02 00:41:18,470 INFO    SenderThread:17129 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-10-02 00:41:18,535 DEBUG   HandlerThread:17129 [handler.py:handle_request():146] handle_request: partial_history
+2024-10-02 00:41:18,536 DEBUG   SenderThread:17129 [sender.py:send():382] send: history
+2024-10-02 00:41:18,536 DEBUG   SenderThread:17129 [sender.py:send_request():409] send_request: summary_record
+2024-10-02 00:41:18,536 INFO    SenderThread:17129 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-10-02 00:41:18,918 INFO    Thread-38 :17129 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/yunbo/Documents/GitHub/PFL_Optimiozation/wandb/run-20241002_004014-bp557wvw/files/wandb-summary.json
+2024-10-02 00:41:19,066 DEBUG   HandlerThread:17129 [handler.py:handle_request():146] handle_request: partial_history
+2024-10-02 00:41:19,067 DEBUG   SenderThread:17129 [sender.py:send():382] send: history
+2024-10-02 00:41:19,067 DEBUG   SenderThread:17129 [sender.py:send_request():409] send_request: summary_record
+2024-10-02 00:41:19,067 INFO    SenderThread:17129 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-10-02 00:41:19,134 DEBUG   HandlerThread:17129 [handler.py:handle_request():146] handle_request: partial_history
+2024-10-02 00:41:19,134 DEBUG   SenderThread:17129 [sender.py:send():382] send: history
+2024-10-02 00:41:19,134 DEBUG   SenderThread:17129 [sender.py:send_request():409] send_request: summary_record
+2024-10-02 00:41:19,135 INFO    SenderThread:17129 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-10-02 00:41:19,640 DEBUG   HandlerThread:17129 [handler.py:handle_request():146] handle_request: partial_history
+2024-10-02 00:41:19,641 DEBUG   SenderThread:17129 [sender.py:send():382] send: history
+2024-10-02 00:41:19,641 DEBUG   SenderThread:17129 [sender.py:send_request():409] send_request: summary_record
+2024-10-02 00:41:19,642 INFO    SenderThread:17129 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-10-02 00:41:19,703 DEBUG   HandlerThread:17129 [handler.py:handle_request():146] handle_request: partial_history
+2024-10-02 00:41:19,703 DEBUG   SenderThread:17129 [sender.py:send():382] send: history
+2024-10-02 00:41:19,704 DEBUG   SenderThread:17129 [sender.py:send_request():409] send_request: summary_record
+2024-10-02 00:41:19,704 INFO    SenderThread:17129 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-10-02 00:41:19,923 INFO    Thread-38 :17129 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/yunbo/Documents/GitHub/PFL_Optimiozation/wandb/run-20241002_004014-bp557wvw/files/output.log
+2024-10-02 00:41:19,923 INFO    Thread-38 :17129 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/yunbo/Documents/GitHub/PFL_Optimiozation/wandb/run-20241002_004014-bp557wvw/files/wandb-summary.json
+2024-10-02 00:41:20,201 DEBUG   HandlerThread:17129 [handler.py:handle_request():146] handle_request: partial_history
+2024-10-02 00:41:20,201 DEBUG   SenderThread:17129 [sender.py:send():382] send: history
+2024-10-02 00:41:20,201 DEBUG   SenderThread:17129 [sender.py:send_request():409] send_request: summary_record
+2024-10-02 00:41:20,202 INFO    SenderThread:17129 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-10-02 00:41:20,258 DEBUG   HandlerThread:17129 [handler.py:handle_request():146] handle_request: partial_history
+2024-10-02 00:41:20,259 DEBUG   SenderThread:17129 [sender.py:send():382] send: history
+2024-10-02 00:41:20,259 DEBUG   SenderThread:17129 [sender.py:send_request():409] send_request: summary_record
+2024-10-02 00:41:20,259 INFO    SenderThread:17129 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-10-02 00:41:20,721 DEBUG   HandlerThread:17129 [handler.py:handle_request():146] handle_request: partial_history
+2024-10-02 00:41:20,722 DEBUG   SenderThread:17129 [sender.py:send():382] send: history
+2024-10-02 00:41:20,722 DEBUG   SenderThread:17129 [sender.py:send_request():409] send_request: summary_record
+2024-10-02 00:41:20,722 INFO    SenderThread:17129 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-10-02 00:41:20,779 DEBUG   HandlerThread:17129 [handler.py:handle_request():146] handle_request: partial_history
+2024-10-02 00:41:20,781 DEBUG   SenderThread:17129 [sender.py:send():382] send: history
+2024-10-02 00:41:20,781 DEBUG   SenderThread:17129 [sender.py:send_request():409] send_request: summary_record
+2024-10-02 00:41:20,781 INFO    SenderThread:17129 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-10-02 00:41:20,928 INFO    Thread-38 :17129 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/yunbo/Documents/GitHub/PFL_Optimiozation/wandb/run-20241002_004014-bp557wvw/files/wandb-summary.json
+2024-10-02 00:41:21,235 DEBUG   HandlerThread:17129 [handler.py:handle_request():146] handle_request: partial_history
+2024-10-02 00:41:21,235 DEBUG   SenderThread:17129 [sender.py:send():382] send: history
+2024-10-02 00:41:21,236 DEBUG   SenderThread:17129 [sender.py:send_request():409] send_request: summary_record
+2024-10-02 00:41:21,236 INFO    SenderThread:17129 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-10-02 00:41:21,296 DEBUG   HandlerThread:17129 [handler.py:handle_request():146] handle_request: partial_history
+2024-10-02 00:41:21,298 DEBUG   SenderThread:17129 [sender.py:send():382] send: history
+2024-10-02 00:41:21,298 DEBUG   SenderThread:17129 [sender.py:send_request():409] send_request: summary_record
+2024-10-02 00:41:21,298 INFO    SenderThread:17129 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-10-02 00:41:21,299 DEBUG   SenderThread:17129 [sender.py:send():382] send: telemetry
+2024-10-02 00:41:21,299 DEBUG   SenderThread:17129 [sender.py:send():382] send: exit
+2024-10-02 00:41:21,299 INFO    SenderThread:17129 [sender.py:send_exit():589] handling exit code: 0
+2024-10-02 00:41:21,299 INFO    SenderThread:17129 [sender.py:send_exit():591] handling runtime: 65
+2024-10-02 00:41:21,299 INFO    SenderThread:17129 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-10-02 00:41:21,299 INFO    SenderThread:17129 [sender.py:send_exit():597] send defer
+2024-10-02 00:41:21,299 DEBUG   HandlerThread:17129 [handler.py:handle_request():146] handle_request: defer
+2024-10-02 00:41:21,299 INFO    HandlerThread:17129 [handler.py:handle_request_defer():172] handle defer: 0
+2024-10-02 00:41:21,299 DEBUG   SenderThread:17129 [sender.py:send_request():409] send_request: defer
+2024-10-02 00:41:21,299 INFO    SenderThread:17129 [sender.py:send_request_defer():613] handle sender defer: 0
+2024-10-02 00:41:21,299 INFO    SenderThread:17129 [sender.py:transition_state():617] send defer: 1
+2024-10-02 00:41:21,299 DEBUG   HandlerThread:17129 [handler.py:handle_request():146] handle_request: defer
+2024-10-02 00:41:21,299 INFO    HandlerThread:17129 [handler.py:handle_request_defer():172] handle defer: 1
+2024-10-02 00:41:21,300 DEBUG   SenderThread:17129 [sender.py:send_request():409] send_request: defer
+2024-10-02 00:41:21,300 INFO    SenderThread:17129 [sender.py:send_request_defer():613] handle sender defer: 1
+2024-10-02 00:41:21,300 INFO    SenderThread:17129 [sender.py:transition_state():617] send defer: 2
+2024-10-02 00:41:21,300 DEBUG   HandlerThread:17129 [handler.py:handle_request():146] handle_request: defer
+2024-10-02 00:41:21,300 INFO    HandlerThread:17129 [handler.py:handle_request_defer():172] handle defer: 2
+2024-10-02 00:41:21,300 INFO    HandlerThread:17129 [system_monitor.py:finish():203] Stopping system monitor
+2024-10-02 00:41:21,300 INFO    HandlerThread:17129 [interfaces.py:finish():202] Joined cpu monitor
+2024-10-02 00:41:21,300 INFO    HandlerThread:17129 [interfaces.py:finish():202] Joined disk monitor
+2024-10-02 00:41:21,300 DEBUG   SystemMonitor:17129 [system_monitor.py:_start():179] Finished system metrics aggregation loop
+2024-10-02 00:41:21,300 INFO    HandlerThread:17129 [interfaces.py:finish():202] Joined gpuapple monitor
+2024-10-02 00:41:21,300 DEBUG   SystemMonitor:17129 [system_monitor.py:_start():183] Publishing last batch of metrics
+2024-10-02 00:41:21,300 INFO    HandlerThread:17129 [interfaces.py:finish():202] Joined memory monitor
+2024-10-02 00:41:21,301 INFO    HandlerThread:17129 [interfaces.py:finish():202] Joined network monitor
+2024-10-02 00:41:21,301 DEBUG   SenderThread:17129 [sender.py:send_request():409] send_request: defer
+2024-10-02 00:41:21,301 INFO    SenderThread:17129 [sender.py:send_request_defer():613] handle sender defer: 2
+2024-10-02 00:41:21,301 INFO    SenderThread:17129 [sender.py:transition_state():617] send defer: 3
+2024-10-02 00:41:21,301 DEBUG   SenderThread:17129 [sender.py:send():382] send: stats
+2024-10-02 00:41:21,302 DEBUG   HandlerThread:17129 [handler.py:handle_request():146] handle_request: defer
+2024-10-02 00:41:21,302 INFO    HandlerThread:17129 [handler.py:handle_request_defer():172] handle defer: 3
+2024-10-02 00:41:21,302 DEBUG   SenderThread:17129 [sender.py:send_request():409] send_request: defer
+2024-10-02 00:41:21,302 INFO    SenderThread:17129 [sender.py:send_request_defer():613] handle sender defer: 3
+2024-10-02 00:41:21,302 INFO    SenderThread:17129 [sender.py:transition_state():617] send defer: 4
+2024-10-02 00:41:21,302 DEBUG   HandlerThread:17129 [handler.py:handle_request():146] handle_request: defer
+2024-10-02 00:41:21,302 INFO    HandlerThread:17129 [handler.py:handle_request_defer():172] handle defer: 4
+2024-10-02 00:41:21,302 DEBUG   SenderThread:17129 [sender.py:send_request():409] send_request: defer
+2024-10-02 00:41:21,302 INFO    SenderThread:17129 [sender.py:send_request_defer():613] handle sender defer: 4
+2024-10-02 00:41:21,302 INFO    SenderThread:17129 [sender.py:transition_state():617] send defer: 5
+2024-10-02 00:41:21,302 DEBUG   HandlerThread:17129 [handler.py:handle_request():146] handle_request: defer
+2024-10-02 00:41:21,302 INFO    HandlerThread:17129 [handler.py:handle_request_defer():172] handle defer: 5
+2024-10-02 00:41:21,303 DEBUG   SenderThread:17129 [sender.py:send():382] send: summary
+2024-10-02 00:41:21,303 INFO    SenderThread:17129 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-10-02 00:41:21,304 DEBUG   SenderThread:17129 [sender.py:send_request():409] send_request: defer
+2024-10-02 00:41:21,304 INFO    SenderThread:17129 [sender.py:send_request_defer():613] handle sender defer: 5
+2024-10-02 00:41:21,304 INFO    SenderThread:17129 [sender.py:transition_state():617] send defer: 6
+2024-10-02 00:41:21,304 DEBUG   HandlerThread:17129 [handler.py:handle_request():146] handle_request: defer
+2024-10-02 00:41:21,304 INFO    HandlerThread:17129 [handler.py:handle_request_defer():172] handle defer: 6
+2024-10-02 00:41:21,304 DEBUG   SenderThread:17129 [sender.py:send_request():409] send_request: defer
+2024-10-02 00:41:21,304 INFO    SenderThread:17129 [sender.py:send_request_defer():613] handle sender defer: 6
+2024-10-02 00:41:21,306 DEBUG   HandlerThread:17129 [handler.py:handle_request():146] handle_request: status_report
+2024-10-02 00:41:21,504 INFO    SenderThread:17129 [sender.py:transition_state():617] send defer: 7
+2024-10-02 00:41:21,504 DEBUG   HandlerThread:17129 [handler.py:handle_request():146] handle_request: defer
+2024-10-02 00:41:21,504 INFO    HandlerThread:17129 [handler.py:handle_request_defer():172] handle defer: 7
+2024-10-02 00:41:21,505 DEBUG   SenderThread:17129 [sender.py:send_request():409] send_request: defer
+2024-10-02 00:41:21,505 INFO    SenderThread:17129 [sender.py:send_request_defer():613] handle sender defer: 7
+2024-10-02 00:41:21,856 INFO    SenderThread:17129 [sender.py:transition_state():617] send defer: 8
+2024-10-02 00:41:21,856 DEBUG   HandlerThread:17129 [handler.py:handle_request():146] handle_request: defer
+2024-10-02 00:41:21,856 INFO    HandlerThread:17129 [handler.py:handle_request_defer():172] handle defer: 8
+2024-10-02 00:41:21,856 DEBUG   SenderThread:17129 [sender.py:send_request():409] send_request: defer
+2024-10-02 00:41:21,856 INFO    SenderThread:17129 [sender.py:send_request_defer():613] handle sender defer: 8
+2024-10-02 00:41:21,856 INFO    SenderThread:17129 [job_builder.py:build():296] Attempting to build job artifact
+2024-10-02 00:41:21,856 INFO    SenderThread:17129 [job_builder.py:_get_source_type():426] is repo sourced job
+2024-10-02 00:41:21,857 INFO    SenderThread:17129 [job_builder.py:build():402] adding wandb-job metadata file
+2024-10-02 00:41:21,859 INFO    SenderThread:17129 [sender.py:transition_state():617] send defer: 9
+2024-10-02 00:41:21,859 DEBUG   HandlerThread:17129 [handler.py:handle_request():146] handle_request: defer
+2024-10-02 00:41:21,859 INFO    HandlerThread:17129 [handler.py:handle_request_defer():172] handle defer: 9
+2024-10-02 00:41:21,859 DEBUG   SenderThread:17129 [sender.py:send():382] send: artifact
+2024-10-02 00:41:21,933 INFO    Thread-38 :17129 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/yunbo/Documents/GitHub/PFL_Optimiozation/wandb/run-20241002_004014-bp557wvw/files/output.log
+2024-10-02 00:41:21,934 INFO    Thread-38 :17129 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/yunbo/Documents/GitHub/PFL_Optimiozation/wandb/run-20241002_004014-bp557wvw/files/wandb-summary.json
+2024-10-02 00:41:21,934 INFO    Thread-38 :17129 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/yunbo/Documents/GitHub/PFL_Optimiozation/wandb/run-20241002_004014-bp557wvw/files/config.yaml
+2024-10-02 00:41:22,303 DEBUG   HandlerThread:17129 [handler.py:handle_request():146] handle_request: poll_exit
+2024-10-02 00:41:22,628 INFO    SenderThread:17129 [sender.py:send_artifact():1494] sent artifact job-https___github.com_Yunbo-max_PFL_Optimiozation.git_Local_learning_Transformer_local.py - {'id': 'QXJ0aWZhY3Q6MTI1NjgxMjMzNQ==', 'state': 'COMMITTED', 'artifactSequence': {'id': 'QXJ0aWZhY3RDb2xsZWN0aW9uOjE0NzM2OTQ3OA==', 'latestArtifact': {'id': 'QXJ0aWZhY3Q6MTI1NjgyNzg1MA==', 'versionIndex': 2}}}
+2024-10-02 00:41:22,628 DEBUG   SenderThread:17129 [sender.py:send_request():409] send_request: defer
+2024-10-02 00:41:22,628 INFO    SenderThread:17129 [sender.py:send_request_defer():613] handle sender defer: 9
+2024-10-02 00:41:22,628 INFO    SenderThread:17129 [dir_watcher.py:finish():358] shutting down directory watcher
+2024-10-02 00:41:22,939 INFO    SenderThread:17129 [dir_watcher.py:finish():388] scan: /Users/yunbo/Documents/GitHub/PFL_Optimiozation/wandb/run-20241002_004014-bp557wvw/files
+2024-10-02 00:41:22,939 INFO    SenderThread:17129 [dir_watcher.py:finish():402] scan save: /Users/yunbo/Documents/GitHub/PFL_Optimiozation/wandb/run-20241002_004014-bp557wvw/files/requirements.txt requirements.txt
+2024-10-02 00:41:22,939 INFO    SenderThread:17129 [dir_watcher.py:finish():402] scan save: /Users/yunbo/Documents/GitHub/PFL_Optimiozation/wandb/run-20241002_004014-bp557wvw/files/output.log output.log
+2024-10-02 00:41:22,939 INFO    SenderThread:17129 [dir_watcher.py:finish():402] scan save: /Users/yunbo/Documents/GitHub/PFL_Optimiozation/wandb/run-20241002_004014-bp557wvw/files/config.yaml config.yaml
+2024-10-02 00:41:22,941 INFO    SenderThread:17129 [dir_watcher.py:finish():402] scan save: /Users/yunbo/Documents/GitHub/PFL_Optimiozation/wandb/run-20241002_004014-bp557wvw/files/wandb-summary.json wandb-summary.json
+2024-10-02 00:41:22,942 INFO    SenderThread:17129 [dir_watcher.py:finish():402] scan save: /Users/yunbo/Documents/GitHub/PFL_Optimiozation/wandb/run-20241002_004014-bp557wvw/files/conda-environment.yaml conda-environment.yaml
+2024-10-02 00:41:22,943 INFO    SenderThread:17129 [dir_watcher.py:finish():402] scan save: /Users/yunbo/Documents/GitHub/PFL_Optimiozation/wandb/run-20241002_004014-bp557wvw/files/wandb-metadata.json wandb-metadata.json
+2024-10-02 00:41:22,944 INFO    SenderThread:17129 [sender.py:transition_state():617] send defer: 10
+2024-10-02 00:41:22,946 DEBUG   SenderThread:17129 [sender.py:send_request():409] send_request: poll_exit
+2024-10-02 00:41:22,947 DEBUG   HandlerThread:17129 [handler.py:handle_request():146] handle_request: defer
+2024-10-02 00:41:22,947 INFO    HandlerThread:17129 [handler.py:handle_request_defer():172] handle defer: 10
+2024-10-02 00:41:22,947 DEBUG   SenderThread:17129 [sender.py:send_request():409] send_request: defer
+2024-10-02 00:41:22,947 INFO    SenderThread:17129 [sender.py:send_request_defer():613] handle sender defer: 10
+2024-10-02 00:41:22,947 INFO    SenderThread:17129 [file_pusher.py:finish():175] shutting down file pusher
+2024-10-02 00:41:23,304 DEBUG   HandlerThread:17129 [handler.py:handle_request():146] handle_request: poll_exit
+2024-10-02 00:41:23,304 DEBUG   SenderThread:17129 [sender.py:send_request():409] send_request: poll_exit
+2024-10-02 00:41:23,307 INFO    wandb-upload_0:17129 [upload_job.py:push():131] Uploaded file /Users/yunbo/Documents/GitHub/PFL_Optimiozation/wandb/run-20241002_004014-bp557wvw/files/requirements.txt
+2024-10-02 00:41:23,341 INFO    wandb-upload_3:17129 [upload_job.py:push():131] Uploaded file /Users/yunbo/Documents/GitHub/PFL_Optimiozation/wandb/run-20241002_004014-bp557wvw/files/wandb-summary.json
+2024-10-02 00:41:23,373 INFO    wandb-upload_4:17129 [upload_job.py:push():131] Uploaded file /Users/yunbo/Documents/GitHub/PFL_Optimiozation/wandb/run-20241002_004014-bp557wvw/files/conda-environment.yaml
+2024-10-02 00:41:23,415 INFO    wandb-upload_1:17129 [upload_job.py:push():131] Uploaded file /Users/yunbo/Documents/GitHub/PFL_Optimiozation/wandb/run-20241002_004014-bp557wvw/files/output.log
+2024-10-02 00:41:23,757 INFO    wandb-upload_2:17129 [upload_job.py:push():131] Uploaded file /Users/yunbo/Documents/GitHub/PFL_Optimiozation/wandb/run-20241002_004014-bp557wvw/files/config.yaml
+2024-10-02 00:41:23,963 INFO    Thread-37 :17129 [sender.py:transition_state():617] send defer: 11
+2024-10-02 00:41:23,963 DEBUG   HandlerThread:17129 [handler.py:handle_request():146] handle_request: defer
+2024-10-02 00:41:23,963 INFO    HandlerThread:17129 [handler.py:handle_request_defer():172] handle defer: 11
+2024-10-02 00:41:23,963 DEBUG   SenderThread:17129 [sender.py:send_request():409] send_request: defer
+2024-10-02 00:41:23,963 INFO    SenderThread:17129 [sender.py:send_request_defer():613] handle sender defer: 11
+2024-10-02 00:41:23,963 INFO    SenderThread:17129 [file_pusher.py:join():181] waiting for file pusher
+2024-10-02 00:41:23,963 INFO    SenderThread:17129 [sender.py:transition_state():617] send defer: 12
+2024-10-02 00:41:23,964 DEBUG   HandlerThread:17129 [handler.py:handle_request():146] handle_request: defer
+2024-10-02 00:41:23,964 INFO    HandlerThread:17129 [handler.py:handle_request_defer():172] handle defer: 12
+2024-10-02 00:41:23,964 DEBUG   SenderThread:17129 [sender.py:send_request():409] send_request: defer
+2024-10-02 00:41:23,964 INFO    SenderThread:17129 [sender.py:send_request_defer():613] handle sender defer: 12
+2024-10-02 00:41:23,964 INFO    SenderThread:17129 [file_stream.py:finish():595] file stream finish called
+2024-10-02 00:41:24,309 DEBUG   HandlerThread:17129 [handler.py:handle_request():146] handle_request: poll_exit
+2024-10-02 00:41:24,791 INFO    SenderThread:17129 [file_stream.py:finish():599] file stream finish is done
+2024-10-02 00:41:24,792 INFO    SenderThread:17129 [sender.py:transition_state():617] send defer: 13
+2024-10-02 00:41:24,792 DEBUG   SenderThread:17129 [sender.py:send_request():409] send_request: poll_exit
+2024-10-02 00:41:24,792 DEBUG   HandlerThread:17129 [handler.py:handle_request():146] handle_request: defer
+2024-10-02 00:41:24,792 INFO    HandlerThread:17129 [handler.py:handle_request_defer():172] handle defer: 13
+2024-10-02 00:41:24,792 DEBUG   SenderThread:17129 [sender.py:send_request():409] send_request: defer
+2024-10-02 00:41:24,792 INFO    SenderThread:17129 [sender.py:send_request_defer():613] handle sender defer: 13
+2024-10-02 00:41:24,792 INFO    SenderThread:17129 [sender.py:transition_state():617] send defer: 14
+2024-10-02 00:41:24,792 DEBUG   HandlerThread:17129 [handler.py:handle_request():146] handle_request: defer
+2024-10-02 00:41:24,793 INFO    HandlerThread:17129 [handler.py:handle_request_defer():172] handle defer: 14
+2024-10-02 00:41:24,793 DEBUG   SenderThread:17129 [sender.py:send():382] send: final
+2024-10-02 00:41:24,793 DEBUG   SenderThread:17129 [sender.py:send():382] send: footer
+2024-10-02 00:41:24,793 DEBUG   SenderThread:17129 [sender.py:send_request():409] send_request: defer
+2024-10-02 00:41:24,793 INFO    SenderThread:17129 [sender.py:send_request_defer():613] handle sender defer: 14
+2024-10-02 00:41:24,794 DEBUG   HandlerThread:17129 [handler.py:handle_request():146] handle_request: poll_exit
+2024-10-02 00:41:24,794 DEBUG   SenderThread:17129 [sender.py:send_request():409] send_request: poll_exit
+2024-10-02 00:41:24,795 DEBUG   HandlerThread:17129 [handler.py:handle_request():146] handle_request: internal_messages
+2024-10-02 00:41:24,795 DEBUG   HandlerThread:17129 [handler.py:handle_request():146] handle_request: server_info
+2024-10-02 00:41:24,796 DEBUG   HandlerThread:17129 [handler.py:handle_request():146] handle_request: get_summary
+2024-10-02 00:41:24,796 DEBUG   HandlerThread:17129 [handler.py:handle_request():146] handle_request: sampled_history
+2024-10-02 00:41:24,796 DEBUG   SenderThread:17129 [sender.py:send_request():409] send_request: server_info
+2024-10-02 00:41:24,797 DEBUG   HandlerThread:17129 [handler.py:handle_request():146] handle_request: job_info
+2024-10-02 00:41:24,923 DEBUG   SenderThread:17129 [sender.py:send_request():409] send_request: job_info
+2024-10-02 00:41:24,924 DEBUG   HandlerThread:17129 [handler.py:handle_request():146] handle_request: shutdown
+2024-10-02 00:41:24,924 INFO    HandlerThread:17129 [handler.py:finish():869] shutting down handler
+2024-10-02 00:41:25,804 INFO    WriterThread:17129 [datastore.py:close():296] close: /Users/yunbo/Documents/GitHub/PFL_Optimiozation/wandb/run-20241002_004014-bp557wvw/run-bp557wvw.wandb
+2024-10-02 00:41:25,928 INFO    SenderThread:17129 [sender.py:finish():1572] shutting down sender
+2024-10-02 00:41:25,928 INFO    SenderThread:17129 [file_pusher.py:finish():175] shutting down file pusher
+2024-10-02 00:41:25,928 INFO    SenderThread:17129 [file_pusher.py:join():181] waiting for file pusher

@@ -521,3 +521,62 @@ Region:  South of USA, Cluster: 11
 
 14
 no changes
+
+
+
+
+
+
+
+
+
+
+Region:  Southeast Asia, Cluster: 1
+Region:  South Asia, Cluster: 3
+Region:  Oceania, Cluster: 8
+Region:  Eastern Asia, Cluster: 1
+Region:  West Asia, Cluster: 6
+Region:  West of USA, Cluster: 6
+Region:  US Center, Cluster: 6
+Region:  West Africa, Cluster: 6
+Region:  Central Africa, Cluster: 6
+Region:  North Africa, Cluster: 7
+Region:  Western Europe, Cluster: 4
+Region:  Northern Europe, Cluster: 2
+Region:  Central America, Cluster: 5
+Region:  Caribbean, Cluster: 5
+Region:  South America, Cluster: 5
+Region:  East Africa, Cluster: 5
+Region:  Southern Europe, Cluster: 2
+Region:  East of USA, Cluster: 7
+Region:  Canada, Cluster: 6
+Region:  Southern Africa, Cluster: 7
+Region:  Central Asia, Cluster: 7
+Region:  Eastern Europe, Cluster: 5
+Region:  South of USA, Cluster: 5
+
+
+Region: Southeast Asia, Cluster: 1
+Region: South Asia, Cluster: 5
+Region: Oceania, Cluster: 8
+Region: Eastern Asia, Cluster: 2
+Region: West Asia, Cluster: 6
+Region: West of USA, Cluster: 6
+Region: US Center, Cluster: 6
+Region: West Africa, Cluster: 6
+Region: Central Africa, Cluster: 6
+Region: North Africa, Cluster: 6
+Region: Western Europe, Cluster: 4
+Region: Northern Europe, Cluster: 3
+Region: Central America, Cluster: 6
+Region: Caribbean, Cluster: 6
+Region: South America, Cluster: 6
+Region: East Africa, Cluster: 6
+Region: Southern Europe, Cluster: 3
+Region: East of USA, Cluster: 6
+Region: Canada, Cluster: 6
+Region: Southern Africa, Cluster: 6
+Region: Central Asia, Cluster: 7
+Region: Eastern Europe, Cluster: 6
+Region: South of  USA, Cluster: 6
+

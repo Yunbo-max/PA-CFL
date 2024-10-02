@@ -1,0 +1,37 @@
+(9539, 28)
+torch.Size([6677, 27])
+torch.Size([6677])
+torch.Size([2862, 27])
+torch.Size([2862])
+Traceback (most recent call last):
+  File "/Users/yunbo/Documents/GitHub/PFL_Optimiozation/Local_learning/Transformer_local.py", line 237, in <module>
+    outputs = model(batch_inputs)
+  File "/Users/yunbo/anaconda3/envs/basic/lib/python3.9/site-packages/torch/nn/modules/module.py", line 1532, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/Users/yunbo/anaconda3/envs/basic/lib/python3.9/site-packages/torch/nn/modules/module.py", line 1541, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/Users/yunbo/Documents/GitHub/PFL_Optimiozation/Local_learning/Transformer_local.py", line 89, in forward
+    x = self.transformer(x)
+  File "/Users/yunbo/anaconda3/envs/basic/lib/python3.9/site-packages/torch/nn/modules/module.py", line 1532, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/Users/yunbo/anaconda3/envs/basic/lib/python3.9/site-packages/torch/nn/modules/module.py", line 1541, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/Users/yunbo/anaconda3/envs/basic/lib/python3.9/site-packages/torch/nn/modules/transformer.py", line 415, in forward
+    output = mod(output, src_mask=mask, is_causal=is_causal, src_key_padding_mask=src_key_padding_mask_for_layers)
+  File "/Users/yunbo/anaconda3/envs/basic/lib/python3.9/site-packages/torch/nn/modules/module.py", line 1532, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/Users/yunbo/anaconda3/envs/basic/lib/python3.9/site-packages/torch/nn/modules/module.py", line 1541, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/Users/yunbo/anaconda3/envs/basic/lib/python3.9/site-packages/torch/nn/modules/transformer.py", line 749, in forward
+    x = self.norm1(x + self._sa_block(x, src_mask, src_key_padding_mask, is_causal=is_causal))
+  File "/Users/yunbo/anaconda3/envs/basic/lib/python3.9/site-packages/torch/nn/modules/transformer.py", line 757, in _sa_block
+    x = self.self_attn(x, x, x,
+  File "/Users/yunbo/anaconda3/envs/basic/lib/python3.9/site-packages/torch/nn/modules/module.py", line 1532, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/Users/yunbo/anaconda3/envs/basic/lib/python3.9/site-packages/torch/nn/modules/module.py", line 1541, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/Users/yunbo/anaconda3/envs/basic/lib/python3.9/site-packages/torch/nn/modules/activation.py", line 1266, in forward
+    attn_output, attn_output_weights = F.multi_head_attention_forward(
+  File "/Users/yunbo/anaconda3/envs/basic/lib/python3.9/site-packages/torch/nn/functional.py", line 5344, in multi_head_attention_forward
+    assert embed_dim == embed_dim_to_check, \
+AssertionError: was expecting embedding dimension of 64, but got 32

@@ -1,0 +1,75 @@
+(7731, 28)
+torch.Size([5411, 27])
+torch.Size([5411])
+torch.Size([2320, 27])
+torch.Size([2320])
+Epoch 1/40, Loss: 57427.0189
+Performance Metrics:
+RMSE (test data): 237.95566896235601
+MAE (test data): 198.56808248893745
+MAPE (test data): 100.20617012948134
+MSE (test data): 56622.900391322364
+R2 (test data): -2.2030992219066046
+loss (test data): 56232.397386853445
+Epoch 2/40, Loss: 55433.2028
+Performance Metrics:
+RMSE (test data): 231.153488285492
+MAE (test data): 194.80807679392294
+MAPE (test data): 101.50706107062246
+MSE (test data): 53431.93514655108
+R2 (test data): -2.013459880325872
+loss (test data): 53063.4396012931
+Epoch 3/40, Loss: 51193.5928
+Performance Metrics:
+RMSE (test data): 219.49739294522837
+MAE (test data): 185.94441707634704
+MAPE (test data): 99.7568301486168
+MSE (test data): 48179.105509751986
+R2 (test data): -1.723328343844579
+loss (test data): 47846.83661099138
+Epoch 4/40, Loss: 45278.0481
+Performance Metrics:
+RMSE (test data): 204.22423739025405
+MAE (test data): 173.54631327161204
+MAPE (test data): 94.2286286394399
+MSE (test data): 41707.53913763084
+R2 (test data): -1.359911459967611
+loss (test data): 41419.90072737069
+Epoch 5/40, Loss: 38210.9279
+Performance Metrics:
+RMSE (test data): 183.7444492140261
+MAE (test data): 157.3605763054867
+MAPE (test data): 87.93780087821243
+MSE (test data): 33762.02261696582
+R2 (test data): -0.9900615433254096
+loss (test data): 33529.18125
+Traceback (most recent call last):
+  File "/Users/yunbo/Documents/GitHub/PFL_Optimiozation/Local_learning/Transformer_local.py", line 237, in <module>
+    outputs = model(batch_inputs)
+  File "/Users/yunbo/anaconda3/envs/basic/lib/python3.9/site-packages/torch/nn/modules/module.py", line 1532, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/Users/yunbo/anaconda3/envs/basic/lib/python3.9/site-packages/torch/nn/modules/module.py", line 1541, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/Users/yunbo/Documents/GitHub/PFL_Optimiozation/Local_learning/Transformer_local.py", line 89, in forward
+    x = self.transformer(x)
+  File "/Users/yunbo/anaconda3/envs/basic/lib/python3.9/site-packages/torch/nn/modules/module.py", line 1532, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/Users/yunbo/anaconda3/envs/basic/lib/python3.9/site-packages/torch/nn/modules/module.py", line 1541, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/Users/yunbo/anaconda3/envs/basic/lib/python3.9/site-packages/torch/nn/modules/transformer.py", line 415, in forward
+    output = mod(output, src_mask=mask, is_causal=is_causal, src_key_padding_mask=src_key_padding_mask_for_layers)
+  File "/Users/yunbo/anaconda3/envs/basic/lib/python3.9/site-packages/torch/nn/modules/module.py", line 1532, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/Users/yunbo/anaconda3/envs/basic/lib/python3.9/site-packages/torch/nn/modules/module.py", line 1541, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/Users/yunbo/anaconda3/envs/basic/lib/python3.9/site-packages/torch/nn/modules/transformer.py", line 749, in forward
+    x = self.norm1(x + self._sa_block(x, src_mask, src_key_padding_mask, is_causal=is_causal))
+  File "/Users/yunbo/anaconda3/envs/basic/lib/python3.9/site-packages/torch/nn/modules/transformer.py", line 761, in _sa_block
+    return self.dropout1(x)
+  File "/Users/yunbo/anaconda3/envs/basic/lib/python3.9/site-packages/torch/nn/modules/module.py", line 1532, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/Users/yunbo/anaconda3/envs/basic/lib/python3.9/site-packages/torch/nn/modules/module.py", line 1541, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/Users/yunbo/anaconda3/envs/basic/lib/python3.9/site-packages/torch/nn/modules/dropout.py", line 59, in forward
+    return F.dropout(input, self.p, self.training, self.inplace)
+KeyboardInterrupt

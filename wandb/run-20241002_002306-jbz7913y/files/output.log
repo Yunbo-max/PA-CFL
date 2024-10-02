@@ -1,0 +1,233 @@
+(9539, 28)
+torch.Size([6677, 27])
+torch.Size([6677])
+torch.Size([2862, 27])
+torch.Size([2862])
+Epoch 1/100, Loss: 54305.3635
+Performance Metrics:
+RMSE (test data): 184.81653150278453
+MAE (test data): 148.16457699772934
+MAPE (test data): 75.00958128878558
+MSE (test data): 34157.150316719744
+R2 (test data): -0.6978544289035307
+loss (test data): 33990.064530922435
+Epoch 2/100, Loss: 18188.7426
+Performance Metrics:
+RMSE (test data): 89.47419750513319
+MAE (test data): 53.636878224947814
+MAPE (test data): 47.35038507930735
+MSE (test data): 8005.632019187583
+R2 (test data): 0.6021504156352289
+loss (test data): 7966.471090747292
+Epoch 3/100, Loss: 6374.0087
+Performance Metrics:
+RMSE (test data): 69.60913978276545
+MAE (test data): 41.8373504188121
+MAPE (test data): 44.5319053685024
+MSE (test data): 4845.43234129658
+R2 (test data): 0.7591697537526803
+loss (test data): 4821.7298996003665
+Epoch 4/100, Loss: 4612.2726
+Performance Metrics:
+RMSE (test data): 66.98476870318619
+MAE (test data): 34.722065642685365
+MAPE (test data): 34.92162593961849
+MSE (test data): 4486.959238219352
+R2 (test data): 0.7768968726133468
+loss (test data): 4465.010475697174
+Epoch 5/100, Loss: 4092.6147
+Performance Metrics:
+RMSE (test data): 60.57755865352582
+MAE (test data): 33.47695778251699
+MAPE (test data): 32.86311947982208
+MSE (test data): 3669.6406124213613
+R2 (test data): 0.817275001433286
+loss (test data): 3651.68982283341
+Epoch 6/100, Loss: 4271.0814
+Performance Metrics:
+RMSE (test data): 62.838156417196956
+MAE (test data): 32.79693814907014
+MAPE (test data): 34.262454032205866
+MSE (test data): 3948.6339019121106
+R2 (test data): 0.803943473016313
+loss (test data): 3929.318439902166
+Epoch 7/100, Loss: 4248.0059
+Performance Metrics:
+RMSE (test data): 55.25633508574799
+MAE (test data): 33.27930455809731
+MAPE (test data): 37.63155148585273
+MSE (test data): 3053.2625671084643
+R2 (test data): 0.8481239572023195
+loss (test data): 3038.327001714273
+Epoch 8/100, Loss: 3411.9202
+Performance Metrics:
+RMSE (test data): 56.762378728064675
+MAE (test data): 32.13626164583008
+MAPE (test data): 31.928347462414266
+MSE (test data): 3221.967638868249
+R2 (test data): 0.8393743783014517
+loss (test data): 3206.206780796864
+Epoch 9/100, Loss: 3453.5354
+Performance Metrics:
+RMSE (test data): 67.0783319914212
+MAE (test data): 34.634032867011726
+MAPE (test data): 33.660287577807104
+MSE (test data): 4499.50262275132
+R2 (test data): 0.776163319388454
+loss (test data): 4477.492400419287
+Epoch 10/100, Loss: 4400.1258
+Performance Metrics:
+RMSE (test data): 56.670373992275714
+MAE (test data): 37.71652614986628
+MAPE (test data): 38.25523352017421
+MSE (test data): 3211.5312884243995
+R2 (test data): 0.8403828216622227
+loss (test data): 3195.8214883331148
+Epoch 11/100, Loss: 4056.3040
+Performance Metrics:
+RMSE (test data): 66.12584945701535
+MAE (test data): 45.75167545115345
+MAPE (test data): 51.96774743321959
+MSE (test data): 4372.6279664118565
+R2 (test data): 0.7824907813170432
+loss (test data): 4351.238401358316
+Epoch 12/100, Loss: 6054.5469
+Performance Metrics:
+RMSE (test data): 89.15460842080836
+MAE (test data): 63.57902641996239
+MAPE (test data): 72.77526790591956
+MSE (test data): 7948.544202667674
+R2 (test data): 0.6039390681907193
+loss (test data): 7909.6623536862335
+Epoch 13/100, Loss: 10571.9158
+Performance Metrics:
+RMSE (test data): 88.8516009892019
+MAE (test data): 60.279665825239725
+MAPE (test data): 70.07475005216374
+MSE (test data): 7894.606998344344
+R2 (test data): 0.6067820868306235
+loss (test data): 7855.989212089448
+Epoch 14/100, Loss: 5280.6588
+Performance Metrics:
+RMSE (test data): 64.28791611288338
+MAE (test data): 41.363222843935986
+MAPE (test data): 47.52513272507275
+MSE (test data): 4132.93615813713
+R2 (test data): 0.7942141760228801
+loss (test data): 4112.719162872336
+Epoch 15/100, Loss: 4062.6725
+Performance Metrics:
+RMSE (test data): 57.21416984460178
+MAE (test data): 36.15079848162746
+MAPE (test data): 40.05531913276531
+MSE (test data): 3273.4612310069397
+R2 (test data): 0.8372862891036001
+loss (test data): 3257.4484796743973
+Epoch 16/100, Loss: 3060.0699
+Performance Metrics:
+RMSE (test data): 47.868699000784396
+MAE (test data): 30.490123581141233
+MAPE (test data): 33.47637436792508
+MSE (test data): 2291.412344027697
+R2 (test data): 0.8825714545117231
+loss (test data): 2280.2035010209206
+Epoch 17/100, Loss: 3258.3327
+Performance Metrics:
+RMSE (test data): 54.43744646888961
+MAE (test data): 33.64430768067917
+MAPE (test data): 34.79167816535368
+MSE (test data): 2963.435578053222
+R2 (test data): 0.8525041694094662
+loss (test data): 2948.939327557215
+Epoch 18/100, Loss: 3361.0358
+Performance Metrics:
+RMSE (test data): 52.22798958399672
+MAE (test data): 31.609509056161965
+MAPE (test data): 38.01051412981165
+MSE (test data): 2727.76289598607
+R2 (test data): 0.8640072621897407
+loss (test data): 2714.4194202862946
+Epoch 19/100, Loss: 2738.3964
+Performance Metrics:
+RMSE (test data): 59.44646799085074
+MAE (test data): 39.76516573959857
+MAPE (test data): 38.36789593581307
+MSE (test data): 3533.8825565872417
+R2 (test data): 0.8240058053894016
+loss (test data): 3516.595903760482
+Epoch 20/100, Loss: 3408.1655
+Performance Metrics:
+RMSE (test data): 61.311018062864356
+MAE (test data): 34.855110054438036
+MAPE (test data): 39.58431084560541
+MSE (test data): 3759.040935904879
+R2 (test data): 0.8131564540926162
+loss (test data): 3740.65294633888
+Epoch 21/100, Loss: 3319.8513
+Performance Metrics:
+RMSE (test data): 53.71026278082233
+MAE (test data): 36.100914333141255
+MAPE (test data): 40.69991061954825
+MSE (test data): 2884.792327984989
+R2 (test data): 0.8564047575854918
+loss (test data): 2870.680829893868
+Epoch 22/100, Loss: 3062.4486
+Performance Metrics:
+RMSE (test data): 59.16444160822978
+MAE (test data): 32.31488715890753
+MAPE (test data): 32.22697509318521
+MSE (test data): 3500.4311508136316
+R2 (test data): 0.8257768471286371
+loss (test data): 3483.3080689585518
+Epoch 23/100, Loss: 2947.3144
+Performance Metrics:
+RMSE (test data): 48.472189292787725
+MAE (test data): 32.31618176990848
+MAPE (test data): 37.179662116409816
+MSE (test data): 2349.553134835845
+R2 (test data): 0.882898990379621
+loss (test data): 2338.059886791088
+Epoch 24/100, Loss: 2378.8441
+Performance Metrics:
+RMSE (test data): 52.34717514505019
+MAE (test data): 30.754191143961435
+MAPE (test data): 34.61855906687307
+MSE (test data): 2740.22674566656
+R2 (test data): 0.8637248241478734
+loss (test data): 2726.822453976677
+Epoch 25/100, Loss: 3040.0406
+Performance Metrics:
+RMSE (test data): 52.887815866825875
+MAE (test data): 37.68654657569662
+MAPE (test data): 38.28631444187345
+MSE (test data): 2797.121067163279
+R2 (test data): 0.8608169482056267
+loss (test data): 2783.4384315218817
+Epoch 26/100, Loss: 2781.6337
+Performance Metrics:
+RMSE (test data): 50.003872840101934
+MAE (test data): 35.63427895675884
+MAPE (test data): 33.889005414972594
+MSE (test data): 2500.3872990090836
+R2 (test data): 0.8754526097692061
+loss (test data): 2488.1561701552673
+Epoch 27/100, Loss: 2844.6454
+Performance Metrics:
+RMSE (test data): 58.07937834548763
+MAE (test data): 37.12587246466219
+MAPE (test data): 36.34994688394215
+MSE (test data): 3373.214188998298
+R2 (test data): 0.8323782793211597
+loss (test data): 3356.7135600923743
+Traceback (most recent call last):
+  File "/Users/yunbo/Documents/GitHub/PFL_Optimiozation/Local_learning/Transformer_local.py", line 231, in <module>
+    for batch_idx, (batch_inputs, batch_targets) in enumerate(train_loader):
+  File "/Users/yunbo/anaconda3/envs/basic/lib/python3.9/site-packages/torch/utils/data/dataloader.py", line 631, in __next__
+    data = self._next_data()
+  File "/Users/yunbo/anaconda3/envs/basic/lib/python3.9/site-packages/torch/utils/data/dataloader.py", line 674, in _next_data
+    index = self._next_index()  # may raise StopIteration
+  File "/Users/yunbo/anaconda3/envs/basic/lib/python3.9/site-packages/torch/utils/data/dataloader.py", line 621, in _next_index
+    return next(self._sampler_iter)  # may raise StopIteration
+  File "/Users/yunbo/anaconda3/envs/basic/lib/python3.9/site-packages/torch/utils/data/sampler.py", line 290, in __iter__
+    if idx_in_batch == self.batch_size:
+KeyboardInterrupt

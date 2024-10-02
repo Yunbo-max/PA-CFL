@@ -2,7 +2,7 @@
 # @Author: Yunbo
 # @Date:   2024-03-10 09:30:26
 # @Last Modified by:   Yunbo
-# @Last Modified time: 2024-03-10 09:31:31
+# @Last Modified time: 2024-10-02 00:37:58
 
 
 # -*- coding: utf-8 -*-
@@ -130,7 +130,7 @@ for sheet_names in sheet_name:
         pd.set_option('display.max_rows', 500)
         pd.set_option('display.max_columns', 500)
         pd.set_option('display.width', 1000)
-        print(dataset.head(30))
+        print(dataset.shape)
 
         # Preprocess the data
         # Preprocess the data
@@ -152,7 +152,7 @@ for sheet_names in sheet_name:
         test_targets = torch.tensor(ys_test.values, dtype=torch.float32)
 
         # Adjust the batch size
-        batch_size = 32
+        batch_size = 64
 
         # Create DataLoader for batch processing
         train_dataset = TensorDataset(train_inputs, train_targets)
@@ -170,13 +170,13 @@ for sheet_names in sheet_name:
         # Define the hyperparameters
         # Define the hyperparameters
         input_dim = train_inputs.size(1)
-        hidden_dim = 32  # Adjust the hidden dimension as desired
+        hidden_dim = 64  # Adjust the hidden dimension as desired
         output_dim = 1
-        num_layers = 3
-        num_heads = 4  # Adjust the number of heads as desired
+        num_layers = 2
+        num_heads = 8  # Adjust the number of heads as desired
         dropout = 0.5
         learning_rate = 0.001
-        num_epochs = 40
+        num_epochs = 100
 
         # Initialize the transformer model, loss function, and optimizer
         model = SalesPredictionTransformer(input_dim, hidden_dim, output_dim, num_layers, num_heads, dropout)
