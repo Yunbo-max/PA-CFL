@@ -2,13 +2,13 @@
 # @Author: Yunbo
 # @Date:   2024-02-13 14:13:17
 # @Last Modified by:   Yunbo
-# @Last Modified time: 2024-03-09 09:20:31
+# @Last Modified time: 2024-10-05 21:37:58
 #!/bin/bash
 set -e
 cd "$( cd "$( dirname "${BASH_SOURCE[0]}" )" >/dev/null 2>&1 && pwd )"/
 
 # Parse command-line arguments
-CONFIG_FILE="config.json"  # Default configuration file path
+CONFIG_FILE="Config.json"  # Default configuration file path
 while [[ $# -gt 0 ]]; do
     key="$1"
     case $key in
@@ -33,14 +33,17 @@ config=$(cat "$CONFIG_FILE")
 
 # Define the sheet names
 # sheet_names=('0' '1' '2' '3' '5' '6' '7' '9' '10' '12' '14' '16' '17' '22')
-sheet_names=('1' '3' '2')
+# # sheet_names=( '5' '6' '7' '9' '12' '14' '17' '22')
+# sheet_names=('5' '6' '7' '9' '17' '22')
+sheet_names=( '2' '5' '6' '7' '9' '12' '14' '17' '22')
+# sheet_names=('0' '3' )
 
 
 
 # Loop over the sheet names and start the clients
 for i in "${sheet_names[@]}"; do
     echo "Starting client $i"
-    python client_test.py --client_number="$i" --config_file="$CONFIG_FILE" > "client_$i.log" 2>&1 &
+    python client_CNN.py --client_number="$i" --config_file="$CONFIG_FILE" > "client_$i.log" 2>&1 &
 done
 
 # Enable CTRL+C to stop all background processes

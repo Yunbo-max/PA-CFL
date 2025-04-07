@@ -2,7 +2,7 @@
 # @Author: Yunbo
 # @Date:   2024-02-12 13:58:32
 # @Last Modified by:   Yunbo
-# @Last Modified time: 2024-03-09 09:26:51
+# @Last Modified time: 2024-10-04 01:25:40
 # -*- coding = utf-8 -*-
 # @time:03/07/2023 09:32
 # Author:Yunbo Long
@@ -282,9 +282,9 @@ def weighted_average(metrics):
 strategy = fl.server.strategy.FedAvg(
     # fraction_fit=0.5,
     # fraction_evaluate=0.5,
-    min_fit_clients=3,
-    min_evaluate_clients=3,
-    min_available_clients=3,
+    min_fit_clients=9,
+    min_evaluate_clients=9,
+    min_available_clients=9,
     # evaluate_fn=get_evaluate_fn(model, args.toy),
     # on_fit_config_fn=fit_config,
     # on_evaluate_config_fn=evaluate_config,
@@ -294,7 +294,7 @@ strategy = fl.server.strategy.FedAvg(
 
 # Start Flower server for four rounds of federated learning
 fl.server.start_server(
-    server_address="0.0.0.0:8029",
+    server_address="0.0.0.0:8002",
     config=fl.server.ServerConfig(num_rounds=100),
     strategy=strategy,
 )
