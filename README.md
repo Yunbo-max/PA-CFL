@@ -23,7 +23,7 @@ git clone https://github.com/your-repo/PA-CFL.git
 cd PA-CFL
 pip install -r requirements.txt
 python main.py --mode train --clusters 5
-
+```
 ## Citation
 @article{long2025bubble,
   title={PA-CFL: Privacy-Adaptive Clustered Federated Learning for Transformer-Based Sales Forecasting on Heterogeneous Retail Data},
