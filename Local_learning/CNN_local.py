@@ -2,7 +2,7 @@
 # @Author: Yunbo
 # @Date:   2024-03-10 09:30:26
 # @Last Modified by:   Yunbo
-# @Last Modified time: 2024-10-05 22:29:37
+# @Last Modified time: 2024-10-05 22:31:28
 
 
 # -*- coding: utf-8 -*-
@@ -69,32 +69,37 @@ region_map = {
     22: 'South of USA'
 }
 
-# Define the Transformer model for regression
-class SalesPredictionTransformer(nn.Module):
-    def __init__(self, input_dim, hidden_dim, output_dim, num_layers, num_heads, dropout):
-        super(SalesPredictionTransformer, self).__init__()
+# Define the CNN model for regression
+class SalesPredictionCNN(nn.Module):
+    def __init__(self, input_dim, output_dim):
+        super(SalesPredictionCNN, self).__init__()
+        
+        self.conv1 = nn.Conv1d(in_channels=1, out_channels=64, kernel_size=3, stride=1, padding=1)
 
-        self.encoder = nn.Linear(input_dim, hidden_dim)
-        self.transformer = nn.TransformerEncoder(
-            nn.TransformerEncoderLayer(hidden_dim, num_heads, dim_feedforward=hidden_dim, dropout=dropout),
-            num_layers
-        )
-        # self.fc = nn.Linear(hidden_dim, output_dim * 32)  # Adjust output dimension to output a sequence
-        self.fc = nn.Linear(hidden_dim, output_dim)
+        self.conv2 = nn.Conv1d(in_channels=64, out_channels=128, kernel_size=3, padding=1)
+        self.conv3 = nn.Conv1d(in_channels=128, out_channels=64, kernel_size=3, padding=1)
+        
+        self.fc1 = nn.Linear(64, 32)
+        self.fc2 = nn.Linear(32, output_dim)
 
+        self.relu = nn.ReLU()
+        self.dropout = nn.Dropout(0.5)
 
     def forward(self, x):
-        x = self.encoder(x)
-        x = x.transpose(0, 1)
-        x = self.transformer(x)
-        x = x.transpose(0, 1)
-        x = self.fc(x)
-
-        # Reshape the output to match the batch size
-        batch_size = x.size(0)
-        x = x.view(batch_size, -1, output_dim)
-
+        x = x.unsqueeze(1)  # Add channel dimension for CNN
+        
+        x = self.relu(self.conv1(x))
+        x = self.relu(self.conv2(x))
+        x = self.relu(self.conv3(x))
+        
+        x = torch.mean(x, dim=2)  # Global Average Pooling
+        
+        x = self.relu(self.fc1(x))
+        x = self.dropout(x)
+        x = self.fc2(x)
+        
         return x
+
 
 
 
@@ -137,7 +142,7 @@ for sheet_names in sheet_name:
         
 
         # Preprocess the data
-        # Preprocess the data
+        # # Preprocess the data
         # train_data = dataset # Drop the last 30 rows
         # xs = train_data.drop(['Sales'], axis=1)
         # ys = train_data['Sales']  # Use the updated train_data for ys
@@ -192,19 +197,22 @@ for sheet_names in sheet_name:
 
         # Define the hyperparameters
         # Define the hyperparameters
-        input_dim = train_inputs.size(1)
-        hidden_dim = 64  # Adjust the hidden dimension as desired
-        output_dim = 1
-        num_layers =2
-        num_heads = 8  # Adjust the number of heads as desired
-        dropout = 0.5
-        learning_rate = 0.00005
-        num_epochs = 100
-
-        # Initialize the transformer model, loss function, and optimizer
-        model = SalesPredictionTransformer(input_dim, hidden_dim, output_dim, num_layers, num_heads, dropout)
+        # Initialize the CNN model, loss function, and optimizer
+        input_dim = train_inputs.size(1)  # Make sure this matches your input features
+        learning_rate = 0.001
+        output_dim = 1  # Assuming you are predicting sales (regression)
+        model = SalesPredictionCNN(input_dim, output_dim)
         criterion = nn.MSELoss()
         optimizer = optim.Adam(model.parameters(), lr=learning_rate)
+
+# Rest of the training loop remains the same as before
+
+
+        # # Save the initial parameters
+        # torch.save(model.state_dict(), 'initial_parameters.pth')
+
+
+        num_epochs = 100
 
         def evaluate_model1(net, testloader):
             criterion = torch.nn.MSELoss()  # Use Mean Squared Error (MSE) for regression

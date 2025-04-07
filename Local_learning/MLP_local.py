@@ -2,7 +2,7 @@
 # @Author: Yunbo
 # @Date:   2024-03-10 09:30:26
 # @Last Modified by:   Yunbo
-# @Last Modified time: 2024-10-05 22:29:37
+# @Last Modified time: 2024-10-05 22:25:47
 
 
 # -*- coding: utf-8 -*-
@@ -69,32 +69,29 @@ region_map = {
     22: 'South of USA'
 }
 
-# Define the Transformer model for regression
-class SalesPredictionTransformer(nn.Module):
-    def __init__(self, input_dim, hidden_dim, output_dim, num_layers, num_heads, dropout):
-        super(SalesPredictionTransformer, self).__init__()
+import torch
+import torch.nn as nn
 
-        self.encoder = nn.Linear(input_dim, hidden_dim)
-        self.transformer = nn.TransformerEncoder(
-            nn.TransformerEncoderLayer(hidden_dim, num_heads, dim_feedforward=hidden_dim, dropout=dropout),
-            num_layers
-        )
-        # self.fc = nn.Linear(hidden_dim, output_dim * 32)  # Adjust output dimension to output a sequence
-        self.fc = nn.Linear(hidden_dim, output_dim)
-
+class MLP(nn.Module):
+    def __init__(self, input_size, hidden_size, output_size):
+        super(MLP, self).__init__()
+        # Define an MLP with 2 hidden layers
+        self.fc1 = nn.Linear(input_size, hidden_size)
+        self.relu = nn.ReLU()
+        self.fc2 = nn.Linear(hidden_size, hidden_size)
+        self.fc3 = nn.Linear(hidden_size, output_size)
 
     def forward(self, x):
-        x = self.encoder(x)
-        x = x.transpose(0, 1)
-        x = self.transformer(x)
-        x = x.transpose(0, 1)
-        x = self.fc(x)
-
-        # Reshape the output to match the batch size
-        batch_size = x.size(0)
-        x = x.view(batch_size, -1, output_dim)
-
+        # Flatten the input tensor
+        x = torch.flatten(x, start_dim=1)
+        # Forward pass through the fully connected layers
+        x = self.relu(self.fc1(x))
+        x = self.relu(self.fc2(x))
+        x = self.fc3(x)
         return x
+
+
+
 
 
 
@@ -138,29 +135,29 @@ for sheet_names in sheet_name:
 
         # Preprocess the data
         # Preprocess the data
-        # train_data = dataset # Drop the last 30 rows
-        # xs = train_data.drop(['Sales'], axis=1)
-        # ys = train_data['Sales']  # Use the updated train_data for ys
-        # xs_train, xs_test, ys_train, ys_test = train_test_split(xs, ys, test_size=0.2, random_state=42)
+        train_data = dataset # Drop the last 30 rows
+        xs = train_data.drop(['Sales'], axis=1)
+        ys = train_data['Sales']  # Use the updated train_data for ys
+        xs_train, xs_test, ys_train, ys_test = train_test_split(xs, ys, test_size=0.2, random_state=42)
 
 
 
-        # Ensure that the dataset is ordered by 'order_year' and 'order_month'
-        dataset = dataset.sort_values(by=['order_year', 'order_month'])
+        # # Ensure that the dataset is ordered by 'order_year' and 'order_month'
+        # dataset = dataset.sort_values(by=['order_year', 'order_month'])
 
-        # Preprocess the data
-        train_data = dataset
+        # # Preprocess the data
+        # train_data = dataset
 
-        # Split based on time sequence
-        split_index = int(len(train_data) * 0.8)  # 80% for training, 20% for testing
-        train_data = dataset.iloc[:split_index]
-        test_data = dataset.iloc[split_index:]
+        # # Split based on time sequence
+        # split_index = int(len(train_data) * 0.8)  # 80% for training, 20% for testing
+        # train_data = dataset.iloc[:split_index]
+        # test_data = dataset.iloc[split_index:]
 
-        # Separate features and target variable
-        xs_train = train_data.drop(['Sales'], axis=1)
-        ys_train = train_data['Sales']
-        xs_test = test_data.drop(['Sales'], axis=1)
-        ys_test = test_data['Sales']
+        # # Separate features and target variable
+        # xs_train = train_data.drop(['Sales'], axis=1)
+        # ys_train = train_data['Sales']
+        # xs_test = test_data.drop(['Sales'], axis=1)
+        # ys_test = test_data['Sales']
 
 
         # Scale the input features
@@ -192,19 +189,29 @@ for sheet_names in sheet_name:
 
         # Define the hyperparameters
         # Define the hyperparameters
-        input_dim = train_inputs.size(1)
-        hidden_dim = 64  # Adjust the hidden dimension as desired
-        output_dim = 1
-        num_layers =2
-        num_heads = 8  # Adjust the number of heads as desired
-        dropout = 0.5
-        learning_rate = 0.00005
-        num_epochs = 100
+       
+         # Example usage
+        input_size = 27  # This matches the expected input size in your example
+        hidden_size = 64
+        output_size = 10  # Adjust according to your output requirements
 
-        # Initialize the transformer model, loss function, and optimizer
-        model = SalesPredictionTransformer(input_dim, hidden_dim, output_dim, num_layers, num_heads, dropout)
+        model = MLP(input_size, hidden_size, output_size)
+
         criterion = nn.MSELoss()
+        learning_rate = 0.001
         optimizer = optim.Adam(model.parameters(), lr=learning_rate)
+
+
+       
+        
+
+        # # Save the initial parameters
+        # torch.save(model.state_dict(), 'initial_parameters.pth')
+
+
+        num_epochs = 100
+        
+        # evaluation_interval = 1  # Set the evaluation interval (e.g., every 5 epochs)
 
         def evaluate_model1(net, testloader):
             criterion = torch.nn.MSELoss()  # Use Mean Squared Error (MSE) for regression
@@ -250,23 +257,25 @@ for sheet_names in sheet_name:
         losses = []
         num_batches = len(train_loader)
         for epoch in range(num_epochs):
+            permutation = torch.randperm(train_inputs.size()[0])
             batch_losses = []
-            for batch_idx, (batch_inputs, batch_targets) in enumerate(train_loader):
-                # Skip the last incomplete batch
-                if batch_idx == num_batches - 1 and len(batch_inputs) < batch_size:
-                    continue
+
+            for i in range(0, train_inputs.size()[0], batch_size):
+                indices = permutation[i:i + batch_size]
+                batch_inputs, batch_targets = train_inputs[indices], train_targets[indices]
 
                 optimizer.zero_grad()
                 outputs = model(batch_inputs)
-                loss = criterion(outputs.squeeze(), batch_targets)
+                loss = criterion(outputs, batch_targets.unsqueeze(1))
                 loss.backward()
                 optimizer.step()
+
                 batch_losses.append(loss.item())
 
             epoch_loss = np.mean(batch_losses)
             losses.append(epoch_loss)
+
             print(f"Epoch {epoch + 1}/{num_epochs}, Loss: {epoch_loss:.4f}")
-            wandb.log({'Training Loss': epoch_loss})  # Log the training loss to Wandb
 
         # Evaluate the model
         # Evaluation function
