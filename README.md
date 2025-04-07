@@ -22,7 +22,7 @@ PA-CFL (*Privacy-Adaptive Clustered Federated Learning*) is a federated learning
 git clone https://github.com/your-repo/PA-CFL.git
 cd PA-CFL
 pip install -r requirements.txt
-python main.py --mode train --clusters 5
+bash PA-CFL/Model_training/original/run.sh
 ```
 ## Citation
 @article{long2025bubble,
