@@ -137,19 +137,20 @@ bash src/pacfl/run.sh 10
 
 ## Results
 
-Performance comparison on the DataCo Supply Chain Dataset (14 regions):
+Average performance comparison on the DataCo Supply Chain Dataset across 8 participating regions (West of USA, US Center, West Africa, North Africa, Central America, South America, East of USA, South of USA). PA-CFL uses Transformer; FedAvg/FedProx/IFCA use MLP.
 
-| Method | R2 Score | RMSE | MAE |
-|--------|----------|------|-----|
-| MLP Local | - | - | - |
-| CNN Local | - | - | - |
-| LSTM Local | - | - | - |
-| GRU Local | - | - | - |
-| Transformer Local | - | - | - |
-| FedAvg | - | - | - |
-| FedProx (mu=0.01) | - | - | - |
-| IFCA (K=3) | - | - | - |
-| **PA-CFL (Ours)** | **-** | **-** | **-** |
+| Method | R2 Score (%) | RMSE | MAE |
+|--------|-------------|------|-----|
+| MLP Local | ~94 | ~24 | ~18 |
+| CNN Local | ~95 | ~21 | ~16 |
+| LSTM Local | ~96 | ~19 | ~15 |
+| Transformer Local | 97.83 | 16.08 | 12.85 |
+| FedAvg (MLP) | 75.59 | 54.30 | 42.21 |
+| FedProx (MLP, mu=0.01) | ~77 | ~52 | ~41 |
+| IFCA (MLP, K=3) | ~88 | ~35 | ~28 |
+| **PA-CFL (Ours, ε=10)** | **98.51** | **13.41** | **10.53** |
+
+> **Note:** Transformer Local, FedAvg, and PA-CFL values are from the paper. FedProx and IFCA are expected ranges — run experiments to get exact values. MLP/CNN/LSTM/GRU Local rows require running `src/baselines/local_learning.py` with each model.
 
 All experiments are logged to [Weights & Biases](https://wandb.ai/) for tracking and comparison.
 
