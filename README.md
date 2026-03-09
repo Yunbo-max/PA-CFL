@@ -11,7 +11,7 @@ PA-CFL groups retailers into privacy-aware clusters ("bubbles") using differenti
 ## Overview
 
 <p align="center">
-  <img src="figures/framework.png" width="85%"/>
+  <img src="figures/flow.png" width="85%"/>
 </p>
 
 **Pipeline:**
