@@ -1,2 +1,38 @@
+# Data
+data/DataCoSupplyChainDataset.csv
+data/DescriptionDataCoSupplyChain.csv
+data/processed/
+*.pkl
+*.h5
+*.csv
+!requirements.txt
 
-Model_training/Data_prepare/datasets.pkl
+# Logs
+logs/
+wandb/
+*.log
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.egg-info/
+.eggs/
+dist/
+build/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+.DS_Store
+
+# Paper source (private)
+overleaf/
+
+# Claude Code
+.claude/
+
+# OS
+Thumbs.db
